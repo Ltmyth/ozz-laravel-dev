@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @guest
 	@section('content')
-    	<div class="d-flex justify-content-center contain">
+    	<div id="abt" class="d-flex justify-content-center contain">
     		<div class="well white-bg">
     			<STRONG><h5>About!</h5></STRONG>
     			<h3>

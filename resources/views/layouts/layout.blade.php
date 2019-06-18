@@ -9,272 +9,17 @@
         <!-- Fonts -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
 
+        <!-- styles -->
         <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/dist/css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/bootstrap/dist/css/bootstrap.min.css') }}">
-
-        <!-- Styles -->
-        <style>
-            
-            #navbar{
-                 overflow: hidden;
-                 position: sticky;
-            }
-            
-            #sach_form{
-                border:1;
-                border-radius:50px;
-                background-color:#6a89cc;
-                text-align:center;
-            }
-            .top_space{
-                    margin-top:5%;
-                } 
-            .btm{
-                border-bottom:2px solid;
-                border-color:black;
-            }
-
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-                overflow-x:hidden;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .curve{
-                border-radius:5%;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .right{
-                float:right;
-            }
-
-            .rt-al{
-                text-align:right;
-            }
-
-            .lt-al{
-                text-align:left;
-            }
-
-            .left{
-                float:left;
-            }
-
-            .blue{
-                background:#34ace0;
-                color:white;
-            }
-
-            .green{
-                color:green;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .dot {
-              height: 10%;
-              width: 10%;
-              border-radius: 100%;
-              text-align:center;
-              display: inline-block;
-              background:white;
-              color:black;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-
-            .black{
-                color:black;
-            }
-
-            .orange{
-                color:orange;
-            }
-
-            .red{
-                color:red;
-            }
-            .foot{
-                font-size:100%;
-            }
-
-            .white{
-                color:white;
-            }
-
-            .theme{
-                background-color:#34ace0;
-            }
-
-            .white-bg{
-                background: white;
-            }
-
-            .orange-bg{
-                background: orange;
-            }
-
-            .c_thru{
-                background:transparent;
-                border:0;
-            }
-
-            .center{
-                text-align:center;
-            }
-
-            .full{
-                width:100%;
-            }
-            .top-space{
-                padding-top:10%;
-            }
-            .btm-space{
-                padding-bottom:10%;
-            }
-            .right-space{
-                margin-right:10%;
-            }
-             #right-topbar button{
-                margin-top:3%;
-             }
-
-            .p-top{
-                padding-top:5%;
-            }
-
-            .p-right{
-                padding-right:5%;
-            }
-
-
-            .left-space{
-                padding-left:10%;
-            }
-
-            .left-mg{
-                margin-left:30%;
-            }
-
-            .contain{
-                margin:1% 5% 1% 5%;
-                padding: 1% 4% 1% 4%;
-            }
-
-            nav a{
-                color:white;
-            }
-
-            #right-topbar button:hover {
-                margin-top:5%;
-                background-color:  black;
-                color: white;
-            }
-
-            #messages_btn button:hover {
-                background-color:  black;
-                color: white;
-            }
-
-
-            /* On screens that are less than 700px wide, topbar */
-            @media screen and (max-width: 700px) {
-                .top_space{
-                    margin-top:5%;
-                } 
-  
-
-                #right-topbar{
-                    padding-bottom: 5%;
-                }
-
-
-
-                .left-space{
-                    padding-left:2%;
-                } 
-
-                .sidebar button{
-                    margin:5%;
-                }
-
-                          
-            }
-
-            /* On screens that are less than 400px,topbar */
-            @media screen and (max-width: 400px) {
-                .top_space{
-                    margin-top:5%;
-                } 
-
-                #right-topbar{
-                    padding-bottom: 5%;
-                }
-
-                .left-space{
-                    padding-left:2%;
-                } 
-
-                #settings_btn{
-                    float:right;
-                }
-
-                .contain{
-                    padding:2%;
-                }               
-
-            }
-        </style>
-    
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/mine.css') }}">
     </head> 
     
     <div id="navbar" class="blue container col-lg-12">
         <div class="row">
             <div class="col-sm-4">
                 <a href="{{ route('home') }}">
-                    <img class="white-bg" style="width:12%;border-radius:50%;margin:1% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" alt="Avator">
+                    <img class="white-bg" style="width:12%;border-radius:50%;margin:3% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" alt="Avator">
                 </a>
                 @auth
                 <a  id="right-topbar" href="/messages">
@@ -289,15 +34,14 @@
             </div>
 
             <div class="col-sm-4">
-                <form id="sach_form" class="top_space m-top" action="#">
+                <form id="sach_form" action="#">
                     <input style="color:white;" type="text" class="c_thru" placeholder="Search">
                     <button class="c_thru btn btn-outline-success my-2 my-sm-0" type="submit">
                         <i class='glyphicon glyphicon-search'></i>
                     </button>
-                    <br>
                 </form>
-                <br>
             </div>
+
             @auth
             <div id="right-topbar" class="col-sm-4">
                 <a class="nav-link" href="/wallet">
@@ -360,7 +104,7 @@
             @endif
                 
             <!-- Sidebar -->
-            <div style="margin-top:1%;" class="row">
+            <div class="row">
                 @include('layouts.sidenav')    
             </div>
 

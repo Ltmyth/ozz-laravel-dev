@@ -7,10 +7,13 @@
     border-radius:50px;
     background-color:#6a89cc;
     text-align:center;
+    margin:5% 0% 5% 0%;
 }
+
+
 .top_space{
-        margin-top:5%;
-    } 
+    margin-top:5%;
+} 
 .btm{
     border-bottom:2px solid;
     border-color:black;
@@ -91,16 +94,6 @@ html, body {
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.dot {
-  height: 10%;
-  width: 10%;
-  border-radius: 100%;
-  text-align:center;
-  display: inline-block;
-  background:white;
-  color:black;
 }
 
 .m-b-md {
@@ -201,8 +194,66 @@ nav a{
 }
 
 
+
+#hostel_btn_list{
+    list-style:none;
+}
+
+#apts_btn_list{
+    list-style:none;
+}
+
+#service_btn_list{
+    list-style:none;
+    text-align:left;
+    padding-left:10px;
+}
+
+#accoms_list{
+    list-style:none;
+}
+
+#sidebar
+{
+    margin-top:2%;
+    width:50%;
+}
+
+
+/* Sidebar links */
+
+
+/*icons*/
+.sidebar i {
+    color: black;
+}
+
+
+.sidebar button {
+    width:145px;
+    margin:0% 3% 0% 3%;
+}
+/* Active/current link */
+#active {
+  background-color: #34ace0;
+  color: white;
+}
+
+
+.sidebar button:hover:not(.active) {
+  background-color:  black;
+  color: white;
+}
+
+#abt
+{
+    margin-top:10%;
+}
+
+/*********************************************rpvns******************************************************/
+
 /* On screens that are less than 700px wide, topbar */
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .top_space{
         margin-top:5%;
     } 
@@ -222,11 +273,49 @@ nav a{
         margin:5%;
     }
 
+    #sidebar
+    {
+        width:80%;
+    }
+
+              
+}
+
+
+
+
+/* On screens that are less than 850px wide, topbar */
+@media only screen and (max-width: 850px) {
+    .top_space{
+        margin-top:5%;
+    } 
+
+
+    #right-topbar{
+        padding-bottom: 5%;
+    }
+
+   
+
+    .left-space{
+        padding-left:2%;
+    } 
+
+    .sidebar button{
+        margin:5%;
+    }
+
+    #navbar
+    {
+        width:110%;
+        height:20%;
+    }
+
               
 }
 
 /* On screens that are less than 400px,topbar */
-@media screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .top_space{
         margin-top:5%;
     } 
@@ -245,6 +334,11 @@ nav a{
 
     .contain{
         padding:2%;
-    }               
+    } 
+
+    #navbar
+    {
+        height:25%;  
+    }            
 
 }

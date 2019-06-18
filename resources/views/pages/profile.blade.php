@@ -136,14 +136,6 @@
 			<div class="row">
 				<a href="#">
 					<button class="btn btn-md btn-default">
-						<big>
-							Payments
-						</big>
-					</button>	
-				</a>
-				<br><br>
-				<a href="#">
-					<button class="btn btn-md btn-default">
 						Change Cover
 						<i class="glyphicon glyphicon-camera"></i>
 					</button>
@@ -169,6 +161,15 @@
 						<i class="glyphicon glyphicon-cog"></i>
 						<big>Privacy Settings</big>
 					</button>
+				</a>				
+				<br><br>
+				<a href="#">
+					<button class="btn btn-md btn-warning">
+						<i class="glyphicon glyphicon-briefcase black"></i>
+						<strong>
+							Payments
+						</strong>
+					</button>	
 				</a>
 			</div>
 			<br>	

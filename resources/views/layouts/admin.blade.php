@@ -13,264 +13,7 @@
         <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/bootstrap/dist/css/bootstrap.min.css') }}">
 
         <!-- Styles -->
-        <style>
-            
-            
-            #sach_form{
-                border:1;
-                border-radius:50px;
-                background-color:#6a89cc;
-                text-align:center;
-            }
-
-            .top_space{
-                margin-top:5%;
-            } 
-
-           
-
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-                overflow-x:hidden;
-            }
-
-            
-
-            .curve{
-                border-radius:5%;
-            }
-
-           
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .right{
-                float:right;
-            }
-
-            .rt-al{
-                text-align:right;
-            }
-
-            .lt-al{
-                text-align:left;
-            }
-
-            .left{
-                float:left;
-            }
-
-            .blue{
-                background:#34ace0;
-                color:white;
-            }
-
-            .green{
-                color:green;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-
-            
-            .black{
-                color:black;
-            }
-
-            .orange{
-                color:orange;
-            }
-
-            .red{
-                color:red;
-            }
-            .foot{
-                font-size:100%;
-            }
-
-            .white{
-                color:white;
-            }
-
-            .theme{
-                background-color:#34ace0;
-            }
-
-            .white-bg{
-                background: white;
-            }
-
-            .orange-bg{
-                background: orange;
-            }
-
-            .c_thru{
-                background:transparent;
-                border:0px;
-            }
-
-            .center{
-                text-align:center;
-            }
-
-            .full{
-                width:100%;
-            }
-
-            .fuller{
-                width:110%;
-            }
-
-            .top-space{
-                padding-top:10%;
-            }
-            .btm-space{
-                padding-bottom:10%;
-            }
-            .right-space{
-                margin-right:10%;
-            }
-             #right-topbar button{
-                margin-top:3%;
-             }
-
-            .p-top{
-                padding-top:5%;
-            }
-
-            .p-right{
-                padding-right:5%;
-            }
-
-
-            .left-space{
-                padding-left:10%;
-            }
-
-            .left-mg{
-                margin-left:20%;
-            }
-
-            .contain{
-                margin:2% 5% 1% 5%;
-                padding: 1% 4% 1% 4%;
-            }
-
-            nav a{
-                color:white;
-            }
-
-            #right-topbar button:hover {
-                margin-top:5%;
-                background-color:  black;
-                color: white;
-            }
-
-            #messages_btn button:hover {
-                background-color:  black;
-                color: white;
-            }
-
-            .sidebar button {
-                width:145px;
-                margin:0% 5% 0% 5%;
-            }
-
-            .sidebar div {
-                margin:0% 5% 0% 5%;
-            }
-
-            /* On screens that are less than 700px wide, topbar */
-            @media screen and (max-width: 700px) {
-                .top_space{
-                    margin-top:5%;
-                } 
-  
-             
-                #right-topbar{
-                    padding-bottom: 5%;
-                }
-
-               
-
-                .left-space{
-                    padding-left:2%;
-                } 
-
-               
-
-                .sidebar button{
-                    margin:2% 2% 2% 2%;
-
-                    padding:2% 2% 2% 2%;                
-                }
-
-                #sidebar{
-                    margin:15%;
-                }
-
-                          
-            }
-
-            /* On screens that are less than 400px,topbar */
-            @media screen and (max-width: 400px) {
-                .top_space{
-                    margin-top:5%;
-                } 
-
-                #right-topbar{
-                    padding-bottom: 5%;
-                }
-
-                .left-space{
-                    padding-left:2%;
-                } 
-                .sidebar button{
-                    margin:5% 2% 5% 2%;
-
-                    padding:5% 2% 5% 2%;                
-                }
-
-                #sidebar{
-                    margin-right:5%;
-                    padding-right:15%;
-                }
-
-                
-                #settings_btn{
-                    float:right;
-                }
-
-                .contain{
-                    padding:2%;
-                }               
-
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/mine.css') }}">
 
         <script type="text/javascript">
             function side_toggle(){
@@ -294,7 +37,7 @@
         <div  class="row fuller blue col-lg-12">
             <div class="col-sm-4">
                 <a href="/admin/">
-                    <img class="white-bg" style="width:12%;border-radius:50%;margin:1% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" alt="Avator">
+                    <img class="white-bg" style="width:12%;border-radius:50%;margin:3% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" alt="Avator">
                 </a>
                 <a  id="right-topbar" href="#">
                     <button id="messages_btn" class="btn btn-md btn-default c_thru white">
@@ -367,67 +110,57 @@
     </div>     
 
     <!-- Sidebar -->
-    <div class="contain">
+    <div id="sidebar" class="sidebar col-md-6 well theme left-mg" style="display:inline-block;">
+        <!-- <div class="col-md-2">
+            <a href="/home">
+                <button id="home_btn" class="btn btn-md btn-default">
+                    <i class="glyphicon glyphicon-house"></i>
+                    <strong>  
+                        People
+                    </strong>
+                </button>
+            </a>    
+        </div> -->
 
-        <div id="sidebar" class="row sidebar col-lg-7 well theme left-mg" style="display:inline-block;">
-            <!-- <div class="col-md-2">
-                <a href="/home">
-                    <button id="home_btn" class="btn btn-md btn-default">
-                        <i class="glyphicon glyphicon-house"></i>
-                        <strong>  
-                            People
-                        </strong>
-                    </button>
-                </a>    
-            </div> -->
-
-           
-            <div id="accoms_div" class="col-md-2">
-                <a href="/accoms_add/">
-                    <button id="accoms_btn" class="btn btn-md btn-default">
-                        <strong>  
-                            Accommodation
-                        </strong>
-                    </button>
-                </a>
-            </div>
-            
-            <div class="col-md-2">
-                <a href="/add_food/">
-                    <button id="food_btn" class="btn btn-md btn-default">
-                       <strong>Food</strong>
-                    </button>
-                </a>
-            </div>
+       
+        <a href="/accoms_add/">
+            <button id="accoms_btn" class="btn btn-md btn-default">
+                <strong>  
+                    Accommodation
+                </strong>
+            </button>
+        </a>
+    
+        <a href="/add_food/">
+            <button id="food_btn" class="btn btn-md btn-default">
+               <strong>Food</strong>
+            </button>
+        </a>
 
 
-            <div class="col-md-2">
-                <a href="/at/">
-                   <button id="at_btn" class="btn btn-md btn-default">
-                       <strong>Airtime</strong>
-                   </button>
-                </a>
-            </div>
+        <a href="/at/">
+           <button id="at_btn" class="btn btn-md btn-default">
+               <strong>Airtime</strong>
+           </button>
+        </a>
+        
+        <!-- <div class="col-md-2">
+            <a href="/transport/">
+                <button id="transport_btn" class="btn btn-md btn-default">
+                   <strong>Transport</strong>
+                </button>
+            </a> 
+        </div> -->
 
-            
-            <!-- <div class="col-md-2">
-                <a href="/transport/">
-                    <button id="transport_btn" class="btn btn-md btn-default">
-                       <strong>Transport</strong>
-                    </button>
-                </a> 
-            </div> -->
-
-            <!-- <div class="col-md-2">
-                <a href="/cleaning/">
-                    <button id="cleaning_btn" class="btn btn-md btn-default">
-                       <strong>Cleaning</strong>
-                    </button>
-                </a>
-            </div> 
-            -->
-        </div>                   
-    </div>
+        <!-- <div class="col-md-2">
+            <a href="/cleaning/">
+                <button id="cleaning_btn" class="btn btn-md btn-default">
+                   <strong>Cleaning</strong>
+                </button>
+            </a>
+        </div> 
+        -->
+    </div> 
 
     <div class="row col-md-12">
         @yield('content')  
