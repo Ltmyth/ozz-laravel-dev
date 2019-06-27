@@ -15,11 +15,11 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/mine.css') }}">
     </head> 
     
-    <div id="navbar" class="blue container col-lg-12">
+    <div id="navbar" class="container col-lg-12">
         <div class="row">
             <div class="col-sm-4">
                 <a href="{{ route('home') }}">
-                    <img class="white-bg" style="width:12%;border-radius:50%;margin:3% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" alt="Avator">
+                    <img style="width:15%;border-radius:50%;margin:1% 15% 0% 10%;" src="{{ asset('/imgs/ozz-app.png') }}" >
                 </a>
                 @auth
                 <a  id="right-topbar" href="/messages">
@@ -74,13 +74,13 @@
             @guest
                 <div id="right-topbar" class="col-sm-4">
                     <a class="nav-link" href="{{ route('register') }}">
-                        <button id="register-btn" style="color:white;" class="right-space c_thru btn btn-outline-success">
+                        <button id="register-btn"  class="right-space btn btn-md-success">
                             <b>Register</b>
                         </button>
                     </a>
                     
                     <a style="color:white;" id="login-btn" class="nav-link" href="{{ route('login') }}">
-                        <button id="login-btn" class="left-space c_thru btn btn-outline-success">
+                        <button id="login-btn" class="left-space btn btn-md-success">
                             <b>Login</b>
                         </button>
                     </a>
@@ -92,7 +92,7 @@
         
     </div>
 
-    <div class="container col-lg-12">
+    <div id="bud" class="container col-lg-12">
         <!-- background:#dff9fb; -->
         <div style="color:#130f40;"   class="row center">
             @if( session()->has('message') )
@@ -115,8 +115,8 @@
     </div>   
     <br><br>
     <div class="row">
-        <div style="bottom:0;position: absolute;width:100%;" class='blue container col-lg-12' >
-            <div class='left-space row'>
+        <div style="bottom:0;width:100%;background:#34495e;height:80px;" class='container col-lg-12' >
+            <div class='left-space row white'>
                 <div class='col-sm-4'>
                     <h5>
                         <b class="foot">

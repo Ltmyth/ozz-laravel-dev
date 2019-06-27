@@ -7,7 +7,7 @@
 
 
     	#messages_btn{
-    		background-color:black;
+    		background-color:#2980b9;
     		color:white;
     		pointer-events: none;
     	}

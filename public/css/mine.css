@@ -20,7 +20,6 @@
 }
 
 html, body {
-    background-color: #fff;
     color: #636b6f;
     font-family: 'Nunito', sans-serif;
     font-weight: 200;
@@ -178,18 +177,27 @@ html, body {
     padding: 1% 4% 1% 4%;
 }
 
-nav a{
+
+#navbar
+{
+    background:#a29bfe;  
+    opacity:0.9 ;  
+}
+
+#right-topbar button
+{
     color:white;
+    background:#5f27cd;
 }
 
 #right-topbar button:hover {
     margin-top:5%;
-    background-color:  black;
+    background-color: #2980b9;
     color: white;
 }
 
 #messages_btn button:hover {
-    background-color:  black;
+    background-color:  #2980b9;
     color: white;
 }
 
@@ -241,14 +249,30 @@ nav a{
 
 
 .sidebar button:hover:not(.active) {
-  background-color:  black;
+  background-color:  #2980b9;
   color: white;
 }
 
 #abt
 {
-    margin-top:2%;
+    margin-top:0%;
 }
+
+#bud
+{
+    background:#c8d6e5;  
+}
+
+#how
+{
+    color:#1B1464;
+}
+
+
+
+
+
+
 
 /*********************************************rpvns******************************************************/
 
