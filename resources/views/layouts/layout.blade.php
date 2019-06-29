@@ -74,13 +74,13 @@
             @guest
                 <div id="right-topbar" class="col-sm-4">
                     <a class="nav-link" href="{{ route('register') }}">
-                        <button id="register-btn"  class="right-space btn btn-md-success">
+                        <button id="register-btn"  class="right-space btn btn-md c_thru">
                             <b>Register</b>
                         </button>
                     </a>
                     
                     <a style="color:white;" id="login-btn" class="nav-link" href="{{ route('login') }}">
-                        <button id="login-btn" class="left-space btn btn-md-success">
+                        <button id="login-btn" class="left-space btn btn-md c_thru">
                             <b>Login</b>
                         </button>
                     </a>
@@ -92,7 +92,7 @@
         
     </div>
 
-    <div id="bud" class="container col-lg-12">
+    <div id="body" class="container col-lg-12">
         <!-- background:#dff9fb; -->
         <div style="color:#130f40;"   class="row center">
             @if( session()->has('message') )

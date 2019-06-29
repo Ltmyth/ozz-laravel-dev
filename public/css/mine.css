@@ -180,14 +180,13 @@ html, body {
 
 #navbar
 {
-    background:#a29bfe;  
+    background:#5f27cd;  
     opacity:0.9 ;  
 }
 
 #right-topbar button
 {
     color:white;
-    background:#5f27cd;
 }
 
 #right-topbar button:hover {
@@ -258,7 +257,7 @@ html, body {
     margin-top:0%;
 }
 
-#bud
+#body
 {
     background:#c8d6e5;  
 }

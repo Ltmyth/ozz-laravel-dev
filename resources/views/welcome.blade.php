@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 @guest
 	@section('content')
-    	<div id="abt" style="background:url({{asset('/imgs/bg1.jpg')}});background-repeat:no-repeat;background-size:100% 100%;" class="d-flex justify-content-center row">
+    	<div id="abt" style="background:url({{asset('/imgs/ozz-app.png')}});background-repeat:repeat-x;background-size:50% 100%;" class="d-flex justify-content-center row">
             <div class="col-md-6">
-                <div style="opacity: 0.8;margin:10% 5% 0% 5%;background:#5f27cd;padding:5%;border-radius:5%;" class="row white">
+                <div style="opacity: 0.9;margin:20% 5% 0% 15%;background:#5f27cd;padding:5%;border-radius:5%;" class="row white">
                    <STRONG><h5><b>About Us!</b></h5></STRONG>
                     <h4>
                         <p>
@@ -17,7 +17,7 @@
                 </div>                               
             </div>
             <div class="col-md-6">
-                <div style="opacity: 0.9;margin:5% 10% 5% 5%;background:#5f27cd;width:90%;padding:5% 5% 1% 5%;" class="row white white-bg">
+                <div style="opacity: 0.9;margin:5% 10% 5% 1%;background:#5f27cd;width:90%;padding:5% 5% 1% 5%;border-radius:5%;" class="row white white-bg">
                     <h3 class="center"><strong><u>Register</u></strong></h3>
                     <br><br>
                     <form method="POST" action="{{ route('register') }}">
