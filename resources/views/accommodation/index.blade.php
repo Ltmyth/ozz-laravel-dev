@@ -11,7 +11,7 @@
 		}
 
 		#accoms_btn{
-			background-color:#34ace0;
+			background-color:#5f27cd;
 			color:white;
 			pointer-events: none;
 		}
@@ -22,8 +22,8 @@
 		}
 	</style>
     <!-- right side -->
-    <div class="row contain white-bg">
-    	<div class="row center">
+    <div class="row contain">
+    	<div class="row center c_thru">
       		<img style="width:50%;" class="curve" src="{{ asset('/imgs/hotellong.jpeg') }}">	
     		<br>
       		<h2><strong>Accommodation Services</strong></h2>

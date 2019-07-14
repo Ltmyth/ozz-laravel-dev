@@ -119,7 +119,7 @@ html, body {
 }
 
 .theme{
-    background-color:#34ace0;
+    background-color:#5f27cd;
 }
 
 .white-bg{
@@ -186,7 +186,7 @@ html, body {
 
 #right-topbar button
 {
-    color:white;
+    color:#ffa502;
 }
 
 #right-topbar button:hover {
@@ -255,6 +255,11 @@ html, body {
 #abt
 {
     margin-top:0%;
+}
+
+.ozz
+{
+    color:#ffa502;
 }
 
 #body

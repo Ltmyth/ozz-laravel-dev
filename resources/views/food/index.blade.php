@@ -16,13 +16,13 @@
 		}
 
 		#food_btn{
-			 background-color:#34ace0;
+			 background-color:#5f27cd;
 			color:white;
 			pointer-events: none;
 		}
 	</style>
     <!-- right side -->
-    <div class="row contain white-bg">
+    <div class="row contain">
     	<div class="row center">
       		<img style="width:40%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
     		<br>
@@ -71,7 +71,7 @@
 				</h4>	
 			</div>
 
-			<div class="col-md-4">
+			<div class="col-md-4 curve">
 				<h4>
 					<a href="/provider/">
 						<button class="btn btn-md btn-default">

@@ -1,16 +1,16 @@
 @extends('layouts.layout')
 @guest
 	@section('content')
-    	<div id="abt" style="background:url({{asset('/imgs/ozz-app.png')}});background-repeat:repeat-x;background-size:50% 100%;" class="d-flex justify-content-center row">
+    	<div id="abt"  class="d-flex justify-content-center row">
             <div class="col-md-6">
                 <div style="opacity: 0.9;margin:20% 5% 0% 15%;background:#5f27cd;padding:5%;border-radius:5%;" class="row white">
-                   <STRONG><h5><b>About Us!</b></h5></STRONG>
+                   <STRONG><h5><b style="color:#ffa502;">About Us!</b></h5></STRONG>
                     <h4>
                         <p>
                             <strong>
                                 This platform is built to connect users<br><br>
-                                with each other and community based services<br><br>
-                                quick and click easy.
+                                with each other and community based<br><br>
+                                services quick and click easy.
                             </strong>
                         </p>              
                     </h4>  
@@ -18,7 +18,7 @@
             </div>
             <div class="col-md-6">
                 <div style="opacity: 0.9;margin:5% 10% 5% 1%;background:#5f27cd;width:90%;padding:5% 5% 1% 5%;border-radius:5%;" class="row white white-bg">
-                    <h3 class="center"><strong><u>Register</u></strong></h3>
+                    <h3 class="center"><strong style="color:#ffa502;"><u>Register</u></strong></h3>
                     <br><br>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
@@ -103,7 +103,7 @@
             <div class="row center" >
                 <strong>
                     <br><br>
-                    <h2><b>How it Works</b></h2>
+                    <h2><b class="black">How it Works</b></h2>
                 </strong>
                 <br>
             </div>
@@ -111,7 +111,6 @@
             <div class="row center">
                 <div class="col-md-4" >
                     <img style="width:15%;border-radius:50%;background:#ffa502;" src="{{ asset('/imgs/one.png') }}" >
-                    <br>
                     <h3 class="lt-al"><strong>Register & Login</strong></h3>
                     <h4>
                         <p class="lt-al">
@@ -131,7 +130,6 @@
                 </div>
                 <div class="col-md-4" >
                     <img style="width:15%;border-radius:50%;background:#ffa502;" src="{{ asset('/imgs/two.png') }}" >
-                    <br>
                     <h3 class="lt-al"><strong>Setup & Topup</strong></h3>
                     <h4>
                         <p class="lt-al">
@@ -148,7 +146,6 @@
                 </div>
                 <div class="col-md-4" >
                     <img style="width:15%;border-radius:50%;background:#ffa502;" src="{{ asset('/imgs/three.png') }}" >
-                    <br>
                     <h3 class="lt-al"><strong>Connect & Use</strong></h3>
                     <h4>
                         <p class="lt-al">Lastly!</p>
@@ -158,6 +155,95 @@
                             easy.
                         </p>
                     </h4>
+                </div>
+            </div>
+
+            <div class="row center" >
+                <div class="row center" >
+                    <strong>
+                        <br><br>
+                        <h2><b class="black">Pricing</b></h2>
+                    </strong>
+                    <br>
+                    <table style="margin:0% 40% 0% 40%;width:20%;border:2px solid;">
+                        <thead>
+                            <tr>
+                                <td  class="lt-al">
+                                    <b class="orange">0zz</b>
+                                </td>
+
+                                <td class="rt-al">
+                                    <b class="red">UGX</b>( <strong>Cost/Value</strong>) 
+                                </td>
+                            </tr>
+                        </thead>
+                            
+                        <tr style="border:1px solid;">
+                            <td class="lt-al">
+                                <strong>0.1</strong>
+                            </td>
+
+                            <td class="rt-al">
+                                <strong>500</strong>
+                            </td>
+                        </tr>
+                        <tr style="border:1px solid;" >
+                            <td class="lt-al">
+                                <strong>1</strong>
+                            </td>
+
+                            <td class="rt-al">
+                                <strong>5000</strong>
+                            </td>
+                        </tr>
+
+                        <tr style="border:1px solid;" >
+                            <td class="lt-al">
+                                <strong>1.1</strong>
+                            </td>
+
+                            <td class="rt-al">
+                                <strong>10500</strong>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <div class="row center" >
+                    <strong>
+                        <br><br>
+                        <h2><b class="black">Services</b></h2>
+                    </strong>
+                </div>
+
+                <div class="row center" >
+                    <div class="col-md-4" >
+                        <strong>
+                            <br>
+                            <h2><b>Accommodation</b></h2>
+                        </strong>
+                        <br>
+                        <p class="lt-al">
+                            Secure or book or pay for accommodation services 
+                            using your 0zz wallet.
+                        </p>
+                    </div>
+                    <div class="col-md-4" >
+                        <strong>
+                            <br>
+                            <h2><b>Airtime</b></h2>
+                        </strong>
+                        <br>
+                    </div>
+
+                    <div class="col-md-4" >
+                        <strong>
+                            <br>
+                            <h2><b>Food</b></h2>
+                        </strong>
+                        <br>
+                    </div>
                 </div>
             </div>           
         </div>

@@ -13,7 +13,7 @@
 		}
 
 		#at_btn{
-			background-color:#34ace0;
+			background-color:#5f27cd;
 			color:white;
 			pointer-events: none;
 		}
@@ -41,13 +41,14 @@
   	</script>
 
     <!-- right side -->
-    <div class="col-md-10 contain white-bg">
+    <div class="col-md-10 contain">
     	<div class="row center">
     		<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
     		<br>
     		<h2><strong> Buy Airtime for another</strong></h2>
     	</div>
     	<div class="row well curve center c_thru">
+    		<hr>
     		<input placeholder="Phone number" class="center form-control" type="number" name="phone" required>
 			<hr>
 			<form>
@@ -61,9 +62,9 @@
 					</h3>
 				</label>
 				<input id="cost-value" placeholder="0zz" type="hidden" class="form-control center" name="amount">
-				<br><br>
-				<input type="submit" class="btn btn-lg btn-success" value="Buy">
 				<hr>
+				<input type="submit" class="btn btn-lg btn-success" value="Buy">
+				<br><br>
 			</form>
     	</div>
 	</div>

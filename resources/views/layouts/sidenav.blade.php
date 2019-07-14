@@ -78,7 +78,7 @@
         </button>
     </div> -->
 
-    <div id="sidebar" class="sidebar well theme" style="display:inline-block;">
+    <div id="sidebar" class="sidebar well theme" style="display:inline-block;opacity: 0.8;">
         <!-- <div class="col-md-2">
             <a href="/home">
                 <button id="home_btn" class="btn btn-md btn-default">

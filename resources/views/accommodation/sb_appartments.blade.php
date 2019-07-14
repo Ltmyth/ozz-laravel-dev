@@ -3,7 +3,7 @@
 	@extends('layouts.layout')
 	<style type="text/css">
 	    #accoms_btn{
-	        background-color:#34ace0;
+	        background-color:#5f27cd;
 	        color:white;
 	    }
 	</style>

@@ -16,13 +16,13 @@
 		}
 
 		#food_btn{
-			 background-color:#34ace0;
+			 background-color:#5f27cd;
 			color:white;
 			pointer-events: none;
 		}
 	</style>
     <!-- right side -->
-    <div class="row contain white-bg">
+    <div class="row contain">
     	<div class="row center">
       		<img style="width:40%;" class="curve" src="{{ asset('/imgs/rolex.jpeg') }}">
     		<br>
