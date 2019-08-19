@@ -7,10 +7,9 @@
 @extends('layouts.layout')
 @section('content')
     
-    <div class="btm-space p-top d-flex justify-content-center">
-        <div class="center"><h1>Login</h1></div>
-
-        <div style="background:#5f27cd;opacity: 0.9;border-radius:3%;" class="card white contain">
+    <div class="container-fluid col-lg-8">
+        <div style="border-radius:3%;margin-top:20%;" class="card container ct">
+            <h1>Login</h1>
                     <form method="POST" style="padding:5%;" action="{{ route('login') }}">
                         @csrf
 
@@ -61,24 +60,20 @@
                             </div>
                         </div>
 
-                        <div class="form-group row">
-                            <input class="form-check-input" type="checkbox" name="remember" id="remember" checked>
-
-                            <label class="form-check-label" for="remember">
-                                {{ __('Remember Me') }}
-                            </label>
-                        </div>
-
-                        <div class="form-group row center">
-                            <button type="submit" class="btn btn-lg btn-success">
-                                {{ __('Login') }}
-                            </button>
-                            <br><br>
-                            @if (Route::has('password.request'))
-                                <a class="form-control btn btn-link red" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a>
-                            @endif
+                        <div class="row">
+                            <div class="col-md-3 ct">
+                            </div>
+                            <div class="col-md-5 ct">
+                                <button type="submit" class="btn btn-lg btn-success px100">
+                                    {{ __('Login') }}
+                                </button>
+                                <br><br>
+                                @if (Route::has('password.request'))
+                                    <a class="form-control btn btn-link red" href="{{ route('password.request') }}">
+                                        {{ __('Forgot Your Password?') }}
+                                    </a>
+                                @endif
+                            </div>                        
                         </div>
                     </form>
                 </div>

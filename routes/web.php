@@ -29,6 +29,8 @@ Route::get('/logout', function(){
 });
 Auth::routes();
 
+// Route::get('/signin','PageController@login');
+
 
 
 

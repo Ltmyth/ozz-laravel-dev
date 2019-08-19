@@ -8,31 +8,31 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="btm-space p-top d-flex justify-content-center">
-    <div class="center"><h1>Register</h1></div>
+<div class="container-fluid col-lg-8">
+        <div style="border-radius:3%;margin-top:20%;" class="card container ct">
+            <h1>Register</h1>
+                    <form method="POST" style="padding:5%;" action="{{ route('register') }}">
+                        @csrf
 
-    <div style="background:#5f27cd;opacity: 0.9;border-radius:3%;" class="card white contain">
-                <form method="POST" style="padding:5%;" action="{{ route('register') }}">
-                    @csrf
+                        <!-- <div class="form-group row">
+                            <label for="location" class="col-md-4 col-form-label text-md-right">Location</label>
 
-                    <!-- <div class="form-group row">
-                        <label for="location" class="col-md-4 col-form-label text-md-right">Location</label>
+                            <div class="col-md-6">
+                                <select id="location"  class="form-control @error('location') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="location" autofocus>
+                                    <option>
+                                        Mukono
+                                    </option>
+                                </select>
 
-                        <div class="col-md-6">
-                            <select id="location"  class="form-control @error('location') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="location" autofocus>
-                                <option>
-                                    Mukono
-                                </option>
-                            </select>
+                                @error('name')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div> -->
 
-                            @error('name')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                            @enderror
-                        </div>
-                    </div> -->
-                    <div class="form-group row">
+                        <div class="form-group row">
                         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                         <div class="col-md-6">
@@ -82,14 +82,19 @@
                         </div>
                     </div>
 
-                    <div class="form-group row center">
-                        <button type="submit" class="btn btn-lg btn-warning">
-                            {{ __('Register') }}
-                        </button>
+                    <div class="row">
+                        <div class="col-md-3 ct">
+                        </div>
+                        <div class="col-md-5 ct">
+                            <button type="submit" class="btn btn-lg btn-warning">
+                                {{ __('Register') }}
+                            </button>
+                        </div>                        
                     </div>
-                </form>
+
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 @endsection
