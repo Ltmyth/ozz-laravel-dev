@@ -52,6 +52,16 @@
                                             </strong>
                                         </button>
                                     </a>
+                                </li>
+                                <li>
+                                    <a  id="right-topbar" href="/logout">
+                                        <button id="logout_btn" class="btn btn-md btn-default c_thru white">
+                                            <i class="glyphicon glyphicon-envelope"></i>
+                                            <strong>  
+                                                Logout
+                                            </strong>
+                                        </button>
+                                    </a>
                                 </li>                            
                             @endauth
                             @guest

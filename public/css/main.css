@@ -95,6 +95,10 @@ $black			: #222;
   float:left;
 }
 
+#body{
+  margin-top:10%;
+}
+
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
