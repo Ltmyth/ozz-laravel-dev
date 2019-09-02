@@ -1,7 +1,7 @@
 @auth
 	@if($posts)
 		<h2 class="center">
-				<strong class="black">POSTS AROUND U!</strong>
+			<small class="black">POSTS AROUND U!</small>
 		</h2>
 
 		<hr class="container col-lg-5">
@@ -30,7 +30,7 @@
 						<div class="col-lg-6">
 							<a href="/posts_show/{{ $post->id }}">
 								<div class="row">
-									<div class="container col-md-6">
+									<div class="container col-md-6 lt-al">
 										<p>
 											<h3 style="width:100%;">
 												{{ $post->Post_content }}
