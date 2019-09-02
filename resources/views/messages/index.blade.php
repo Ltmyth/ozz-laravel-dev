@@ -34,9 +34,9 @@
             x.setAttribute("style", "display:none");*/
         }
     </script>
-    <div class="row contain white-bg center">
+        <br>
       	<h2>Messages</h2>
-      	<hr>
+      	<hr class="container col-lg-5">
       	<button id="compose_btn"  onclick="compose()" class="btn btn-md btn-success">
       		Compose 
       	</button>
@@ -45,12 +45,12 @@
 		<div id="new_msg" style="display:none;" class="well center">
             <form enctype="multipart/form-data" method="POST" action="#">
                 @csrf
-                <div class="row">   
+                <div class="container col-lg-5">   
                     <input placeholder="To" type="text" name="user">
                     <hr>
                     <textarea placeholder="Message" style="width:100%;" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
                 </div>
-                <div class="row">
+                <div class="container col-lg-5">
                     <br>
                    <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
                    &nbsp;&nbsp;
@@ -60,8 +60,7 @@
                 </div>
             </form>
         </div>
-        <hr>
-        <div class="row center">
+        <hr class="container col-lg-5">
             <big>
                 <a href="/inbox/">
                     <button class="btn btn-lg btn-default">
@@ -72,7 +71,7 @@
                 &nbsp;&nbsp;
                 <b class="red">0</b>
             </big>
-            <hr>
+        <hr class="container col-lg-5">
             <big>
                 <a href="/sent/">
                     <button class="btn btn-lg btn-default">
@@ -82,8 +81,6 @@
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
             </big>
-            <hr>   
-        </div>
-	</div>
+        <hr class="container col-lg-5"> 
     <br><br>
 @endsection

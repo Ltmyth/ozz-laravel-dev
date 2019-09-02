@@ -78,34 +78,31 @@
         </button>
     </div> -->
 
-    <div id="sidebar" class="sidebar well theme" style="display:inline-block;opacity: 0.8;">
-        <!-- <div class="col-md-2">
-            <a href="/home">
-                <button id="home_btn" class="btn btn-md btn-default">
-                    <i class="glyphicon glyphicon-house"></i>
-                    <strong>  
-                        People
-                    </strong>
-                </button>
-            </a>    
-        </div> -->
+        <a href="/home">
+            <button id="home_btn" class="btn btn-md btn-default col-lg-2">
+                <i class="glyphicon glyphicon-house"></i>
+                <strong>  
+                    People
+                </strong>
+            </button>
+        </a>
 
-       
-        <a href="/accommodation/">
-            <button id="accoms_btn" class="btn btn-md btn-default">
+       <a href="/accommodation/">
+            <button id="accoms_btn" class="btn btn-md btn-default col-lg-2">
                 <strong>  
                     Accommodation
                 </strong>
             </button>
         </a>
+
         <a href="/food/">
-            <button id="food_btn" class="btn btn-md btn-default">
+            <button id="food_btn" class="btn btn-md btn-default col-lg-2">
                <strong>Food</strong>
             </button>
         </a>
 
         <a href="/airtime/">
-           <button id="at_btn" class="btn btn-md btn-default">
+           <button id="at_btn" class="btn btn-md btn-default col-lg-2">
                <strong>Airtime</strong>
            </button>
         </a>
@@ -127,7 +124,6 @@
             </a>
         </div> 
         -->
-    </div>
         
             <!-- 
                        <hr>
@@ -140,6 +136,6 @@
                 <i class="glyphicon glyphicon-align-justify"></i>
             </button>
         </div> -->
-        @endauth
-    </div>
-   
+        @endauth 
+    <br> 
+        

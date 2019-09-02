@@ -1,67 +1,93 @@
 <!DOCTYPE html>
-    <html lang="zxx" class="no-js">
-    <head>
-        <!-- Mobile Specific Meta -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Favicon-->
-        <link rel="shortcut icon" href="img/fav.png">
-        <!-- Author Meta -->
-        <meta name="author" content="ltmyth">
-        <!-- meta character set -->
-        <meta charset="UTF-8">
-        <!-- Site Title -->
-        <title>Orz</title>
+    <html lang="en">
+        <head>
+            <!-- Mobile Specific Meta -->
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <!-- Favicon-->
+            <link rel="shortcut icon" href="img/fav.png">
+            <!-- Author Meta -->
+            <meta name="author" content="ltmyth">
+            <!-- meta character set -->
+            <meta charset="UTF-8">
+            <!-- Site Title -->
+            <title>theohzz.com</title>
 
-        <!-- Fonts -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+            <!-- Fonts -->
+            <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
 
-        <!-- styles -->
-        <link rel="stylesheet" href="css/linearicons.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/jquery-ui.css">                
-        <link rel="stylesheet" href="css/nice-select.css">                          
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">             
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap/dist/css/bootstrap.min.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/bootstrap/dist/css/bootstrap.min.css') }}">
-        <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/mine.css') }}"> -->
-    </head> 
-
-    <body>  
+            <!-- styles -->
+            <link rel="stylesheet" href="/css/linearicons.css">
+            <link rel="stylesheet" href="/css/font-awesome.min.css">
+            <link rel="stylesheet" href="/css/bootstrap.css">
+            <link rel="stylesheet" href="/css/magnific-popup.css">
+            <link rel="stylesheet" href="/css/jquery-ui.css">                
+            <link rel="stylesheet"  href="/css/nice-select.css">                          
+            <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+            <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">             
+            <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
+               
+        </head>
         <header id="header">
             <div class="container main-menu">
                 <div class="row align-items-center d-flex">
                   
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
+                            
+                            @guest
                             <li>
                                 <a id="logo" href="/">
-                                    <img src="imgs/ozz-app.png" alt="" title="" />
+                                    <img src="/imgs/ozz-app.png" alt="" title="" />
                                 </a>
                             </li>
+                            @endguest
+                            
                             @auth
                                 <li>
-                                    <a  id="right-topbar" href="/messages">
-                                        <button id="messages_btn" class="btn btn-md btn-default c_thru white">
-                                            <i class="glyphicon glyphicon-envelope"></i>
-                                            <strong>  
-                                                Messages&nbsp;<big><b style="color:#8e44ad;">0</b></big>
-                                            </strong>
-                                        </button>
+                                    <a id="logo" href="/home">
+                                        <img src="/imgs/ozz-app.png" alt="" title="" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a  id="right-topbar" href="/logout">
-                                        <button id="logout_btn" class="btn btn-md btn-default c_thru white">
-                                            <i class="glyphicon glyphicon-envelope"></i>
-                                            <strong>  
-                                                Logout
-                                            </strong>
-                                        </button>
+                                    <a  id="right-topbar" href="/messages">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                        <strong>  
+                                            Messages&nbsp;<big><b style="color:#8e44ad;">0</b></big>
+                                        </strong>
                                     </a>
+                                </li>
+                                <li>
+                                    <a  id="right-topbar" href="/wallet">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                        <strong>  
+                                            Wallet&nbsp;<big><b style="color:#8e44ad;">0</b></big>
+                                        </strong>
+                                    </a>
+                                </li>
+                                <li class="menu-has-children">
+                                    <a href="">
+                                        <strong>Settings</strong>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a  id="right-topbar" href="/profile">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                <strong>  
+                                                    Profile
+                                                </strong>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a  id="right-topbar" href="/logout">
+                                                <i class="glyphicon glyphicon-envelope"></i>
+                                                <strong>  
+                                                    Logout
+                                                </strong>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>                            
                             @endauth
                             @guest
@@ -122,29 +148,35 @@
                 </button>
             </div> -->
 
-        <div id="body" class="col-lg-12 col-sm-12">
+        <div class="col-lg-12 col-sm-12">
             <!-- background:#dff9fb; -->
-            <div style="color:#130f40;"   class="row center">
-                @if( session()->has('message') )
-                    <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-success" role="alert">
-                        {{ session()->get('message') }}
-                        <strong>Successfully</strong>
-                        <br>
-                    </div>
-                @endif
-                    
-                <!-- Sidebar -->
-                <div class="row justify-content-between">
-                    @include('layouts.sidenav')    
+            @if( session()->has('message') )
+                <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-success" role="alert">
+                    {{ session()->get('message') }}
+                    <strong>Successfully</strong>
+                    <br>
                 </div>
+            @endif
+              
 
-                @yield('content')
+            <div id="body" class="col-lg-12 col-sm-12 container">
+                @include('layouts.sidenav')
+                @auth
+                <hr class="container col-lg-9">
+                @endauth
+                @guest
+                <br>
+                @endguest
+                <body>
+                    @yield('content')
+                </body>
             </div>
         </div>   
         <br><br>
         
         <!-- start footer Area -->
-        <footer style="opacity: 0.9;" class="footer-area section-gap">
+        <footer style="opacity: 0.9;" class="footer-area">
+            <br>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-6 col-sm-6">
@@ -153,9 +185,8 @@
                             <p>
                                 We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
                             </p>
-                            <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            <p class="footer-text">
                                 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | 
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             </p>
                         </div>
                     </div>
@@ -164,7 +195,7 @@
                             <h4>Newsletter</h4>
                             <p>Stay updated with our latest trends</p>
                             <div class="" id="mc_embed_signup">
-                                 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
+                                 <form target="_blank" action="" method="get">
                                   <div class="input-group">
                                     <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
                                     <div class="input-group-btn">
@@ -192,6 +223,7 @@
                     </div>
                 </div>
             </div>
+            <br>
         </footer>
         <!-- End footer Area -->        
 
@@ -212,7 +244,6 @@
         <script src="js/owl.carousel.min.js"></script>                          
         <script src="js/mail-script.js"></script>   
         <script src="js/main.js"></script>  
-    </body>
 </html>
 
      

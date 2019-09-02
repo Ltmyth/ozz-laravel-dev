@@ -22,13 +22,10 @@
 		}
 	</style>
     <!-- right side -->
-    <div class="row contain">
-    	<div class="row center">
-      		<img style="width:40%;" class="curve" src="{{ asset('/imgs/rolex.jpeg') }}">
-    		<br>
-      		<h2><strong>Cafe Pora</strong></h2>
-      	</div>
-		<br><br>		
+  		<img style="width:40%;" class="curve" src="{{ asset('/imgs/rolex.jpeg') }}">
+		<br><br>
+  		<h2><strong>Cafe Pora</strong></h2>
+		<hr class="col-lg-8 container">		
 		<div class="row center">
 			<div class="col-md-8">
 				<big>Available</big>
@@ -39,5 +36,4 @@
 				</h4>	
 			</div>	
 		</div>
-	</div>
 @endsection

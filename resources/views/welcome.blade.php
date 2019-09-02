@@ -8,7 +8,7 @@
 @section('content')
     
     <!-- start banner Area -->
-    <section class="banner-area">
+    <section class="#">
         <div class="container">
             <div class="row fullscreen align-items-center">
                 <div class="col-lg-6 col-md-6 banner-left">
@@ -321,7 +321,7 @@
                     <div class="top-part">
                         <h1 class="package-no">01</h1>
                         <h4>Bronze</h4>
-                        <p class="mt-10">For the individuals</p>
+                        <p class="mt-10">For airtime</p>
                     </div>
                     <div class="package-list">
                         <ul>

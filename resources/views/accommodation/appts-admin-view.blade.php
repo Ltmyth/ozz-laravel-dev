@@ -8,10 +8,7 @@
             pointer-events: none;
         }
     </style>
-
-    <div class="d-flex justify-content-center" style="margin-top:0;">
         @if($appartments)
-            <div class="row contain">
                 <div class="well center">
                     <h3>Appartments!</h3>
                 </div>
@@ -48,6 +45,4 @@
                 @endforeach
             </div>
         @endif
-    </div>
-    <br><br>
 @endsection

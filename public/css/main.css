@@ -95,8 +95,28 @@ $black			: #222;
   float:left;
 }
 
+.ct-al{
+  text-align:center;
+}
+
+.lt-al{
+  text-align:left;
+}
+
 #body{
   margin-top:10%;
+  text-align:center;
+}
+
+.wyt{
+  color:white;
+}
+.orange{
+  color:orange;
+}
+
+.green{
+  color:green;
 }
 
 body {

@@ -17,41 +17,39 @@
     </script>
 
         <!-- right side -->
-            <div class="d-flex justify-content-center contain" style="margin-top:0;">
-                <div style="border-radius:2%;" class="well">
-                    <form enctype="multipart/form-data" method="POST" action="/posts_create">
-                        @csrf
-                        <div class="row">
-                           <label for="name" class="col-form-label text-md-right left">
-                                <h2>What's up?</h2>
-                            </label> 
-                        </div>
-                        <div class="row left-space">
-                            <textarea style="width:80%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
-                        </div>
-                        
-                        <div class="row">
-                            <div class="left-space col-md-7">
-                                <br>
-                                <div class="form-group row left-space" >
-                                    &nbsp;&nbsp;
-                                   <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
-                                   &nbsp;&nbsp;
-                                   <button type="submit" class="btn btn-lg btn-danger">
-                                        Post
-                                    </button> 
-                                </div> 
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                
-                <div class="row contain">
-                    <?php 
-                        use App\Http\Controllers\PostsController;
-                        echo PostsController::index();
-                    ?>   
-                </div>
-                
+        <br>
+        <form enctype="multipart/form-data" method="POST" action="/posts_create">
+            @csrf
+            <div class="container lt-al col-lg-10">
+                <label for="name" class="col-form-label text-md-right left">
+                    <h2>What's going on?</h2>
+                </label> 
             </div>
+            <div class="container col-lg-10">
+                <textarea style="width:80%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+            </div>
+            
+            <div class="container row">
+                <div class="col-lg-3"></div>
+                <div class="col-md-8">
+                    <br>
+                    <div class="form-group row left-space" >
+                        &nbsp;&nbsp;
+                       <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
+                       &nbsp;&nbsp;
+                       <button type="submit" class="btn btn-lg btn-danger">
+                            Post
+                        </button> 
+                    </div> 
+                </div>
+            </div>
+        </form>
+    <hr class="container col-lg-8">
+    <div class="container">
+        <br>
+        <?php 
+            use App\Http\Controllers\PostsController;
+            echo PostsController::index();
+        ?>   
+    </div>
 @endsection

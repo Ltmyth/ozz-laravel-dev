@@ -18,7 +18,7 @@ class AccommodationController extends Controller
      */
     public function index()
     {
-        return view('accommodation.index');
+        return view('accommodation.accommodation');
     }
 
     public function all_appartments()

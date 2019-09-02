@@ -41,36 +41,31 @@
   	</script>
 
     <!-- right side -->
-    <div class="col-md-10 contain">
-    	<div class="row center">
-    		<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
-    		<br>
-    		<h2><strong> Buy Airtime for Others</strong></h2>
-    	</div>
-    	<div class="row well curve center c_thru">
-			<form>
-				<!-- <input id="at-amount" onkeyup="calculate()" placeholder="amount" class="center form-control" type="number" name="amount" required> -->
-				<a href="#">
-					<button class="btn btn-md btn-default">
-						<b class="green">Download</b> Sample (.csv)
-					</button>
-				</a>
-				<hr>
-				<input id="at-csv"  placeholder="Others" class="center form-control"
-					type="file" name="amount" accept="*.csv" required>
-				<br>
-				<label id="cost-label" style="display:none;">
-					<h3>
-						<strong>
-							Cost(<b><i><b class="orange">0zz</b></i></b>)
-						</strong>
-					</h3>
-				</label>
-				<input id="cost-value" placeholder="0zz" type="hidden" class="form-control center" name="amount">
-				<hr>
-				<input type="submit" class="btn btn-lg btn-success" value="Buy">
-				<br><br>
-			</form>
-    	</div>
-	</div>
+	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
+	<br><br>
+	<h2><strong> Buy Airtime for Others</strong></h2>
+	<hr>
+	<form>
+		<!-- <input id="at-amount" onkeyup="calculate()" placeholder="amount" class="center form-control" type="number" name="amount" required> -->
+		<a href="#">
+			<button class="btn btn-md btn-default">
+				<b class="green">Download</b> Sample (.csv)
+			</button>
+		</a>
+		<hr class="container col-lg-8">
+		<input id="at-csv"  placeholder="Others" class="container col-lg-8 form-control"
+			type="file" name="amount" accept="*.csv" required>
+		<br>
+		<label id="cost-label" style="display:none;">
+			<h3>
+				<strong>
+					Cost(<b><i><b class="orange">0zz</b></i></b>)
+				</strong>
+			</h3>
+		</label>
+		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-8" name="amount">
+		<hr class="container col-lg-8">
+		<input type="submit" class="btn btn-lg btn-success" value="Buy">
+		<br><br>
+	</form>
 @endsection

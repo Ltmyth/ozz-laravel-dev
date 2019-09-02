@@ -8,7 +8,6 @@
 </style>
 @section('content')
 	@if($post)
-		<div class="c_thru  contain">
 			<h3>
 				<a href="{{ route('user') }}">
 					<img 
@@ -20,26 +19,21 @@
 					>
 					{{ Auth::user()->name }}
 				</a>
+				<small>
+				At {{ $post->created_at }}
+				</small>
 			</h3>
-			<br><br>
-			<div class="well">
-				<div class="row">
-					<div class="col-md-7">
-						<small>
-						At {{ $post->created_at }}
-						</small>
-						<h3>{{ $post->Post_content }}</h3>	
-					</div>
-				</div>
-
-				@if($post->Post_upload != "")
-				<div class="row">
-					<div class="center col-md-8">
-						<img id="post-pic" style="width:100%;" src="/storage/uploads/{{ $post->Post_upload }}">
-					</div>
-				</div>
-				@endif
+			<div class="container col-md-7">				
+				<h3>{{ $post->Post_content }}</h3>	
 			</div>
+
+			@if($post->Post_upload != "")
+			<div class="row">
+				<div class="container col-md-8">
+					<img id="post-pic" style="width:100%;" src="/storage/uploads/{{ $post->Post_upload }}">
+				</div>
+			</div>
+			@endif
 			<!-- <div class="row">
 				<form method="POST" action="/destroy_post/{{ $post->id }}">
 					@method('DELETE')
@@ -48,55 +42,49 @@
 				</form>		
 			</div> -->
 			
-			<hr>
-				<div class="row center">
-					<div class="row">
-						<div class="col-sm-2">
-							0
-							<small>Likes</small>
-							<br>
-							<small>
-								<a href="#">
-									<button>
-										<b class="green">Like</b>
-									</button>
-								</a>
-							</small>
-						</div>
-
-						<div class="col-sm-2">
-							0
-							<small>Shares</small>
-							<br>
-							<small>
-								<a href="#">
-									<button><B>Share</B></button>
-								</a>
-							</small>
-						</div>
-
-						<div class="col-sm-2">
-							0
-							<small>Dislikes</small>
-							<br>
-							<small>
-								<a href="#">
-									<button>
-										<b class="red">Dislike</b>
-									</button>
-								</a>
-							</small>
-						</div>
-					</div>
+			<hr class="container col-lg-9">
+			<div class="col-sm-2">
+					0
+					<small>Likes</small>
+					<br>
+					<small>
+						<a href="#">
+							<button>
+								<b class="green">Like</b>
+							</button>
+						</a>
+					</small>
 				</div>
-				<hr>
-				<form class="left-space contain">
-					<textarea class="theme white" style="width:80%;" required></textarea>
-					<br><br>
-					<input type="submit" class="btn btn-sm btn-success" value="Comment">
-					<br><br>
-				</form>
-		</div>
+
+				<div class="col-sm-2">
+					0
+					<small>Shares</small>
+					<br>
+					<small>
+						<a href="#">
+							<button><B>Share</B></button>
+						</a>
+					</small>
+				</div>
+
+				<div class="col-sm-2">
+					0
+					<small>Dislikes</small>
+					<br>
+					<small>
+						<a href="#">
+							<button>
+								<b class="red">Dislike</b>
+							</button>
+						</a>
+					</small>
+				</div>
+			<form class="container">
+				<textarea class="theme white" style="width:80%;" required></textarea>
+				<br><br>
+				<input type="submit" class="btn btn-sm btn-success" value="Comment">
+				<br><br>
+			</form>
 		<br><br>
 	@else
 		<h3>Post cannot be accessed</h3>

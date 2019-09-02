@@ -22,25 +22,22 @@
 		}
 	</style>
     <!-- right side -->
-    <div class="row contain">
-    	<div class="row center">
-      		<img style="width:40%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
-    		<br>
-      		<h2><strong>Food Services</strong></h2>
-      	</div>
-		<div class="well">
+  		<img style="width:40%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
+		<br><br>
+  		<h2><strong>Food Services</strong></h2>
+  		<hr class="container col-lg-8">
 			<form>
 				<label>
 					Location
 				</label>
-				<select class="form-control">
+				<select class="form-control container col-lg-8">
 					<option>Mukono</option>
 					<option disabled>Kampala</option>
 				</select>
 			</form>	
-		</div>
+		<br><br>
 		<h3>Available Restaurants / Service providers</h3>
-		<br><br>		
+		<hr class="container col-lg-8">	
 		<div class="row">
 			<div class="col-md-4">
 				
@@ -84,6 +81,4 @@
 					</a>
 				</h4>	
 			</div>	
-		</div>
-	</div>
-@endsection
+	@endsection
