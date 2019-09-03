@@ -17,6 +17,7 @@
     </script>
 
         <!-- right side -->
+        <div class=""></div>
         <br>
         <form enctype="multipart/form-data" method="POST" action="/posts_create">
             @csrf
