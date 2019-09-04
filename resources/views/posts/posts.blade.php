@@ -27,77 +27,81 @@
 							</h4>							
 						</div>
 
-						<div class="col-lg-8">
+						<div class="col-lg-6">
 							<a href="/posts_show/{{ $post->id }}">
-								<p>
-									<h3 style="width:100%;">
-										{{ $post->Post_content }}
-									</h3>
-								</p>
+								<div class="row">
+									<div class="container col-md-6 lt-al">
+										<p>
+											<h3 style="width:100%;">
+												{{ $post->Post_content }}
+											</h3>
+										</p>
 
-								@if($post->Post_upload != "")							
-									<img style="width:80%;border-radius:5%;" 
-										src="/storage/uploads/{{ $post->Post_upload }}"
-									>										
-								@endif
+										@if($post->Post_upload != "")							
+											<img style="width:120%;border-radius:5%;" 
+												src="/storage/uploads/{{ $post->Post_upload }}"
+											>										
+										@endif
+									</div>
+								</div>
 							</a>
-							<div class="col-sm-2">
-								0
-								<small>Likes</small>
-								<br>
-								<small>
-									<a href="#">
-										<button class="btn btn-sm btn-outline-warning" >
-											<b>Like</b>
-										</button>
-									</a>
-								</small>
-							</div>
-
-							<div class="col-sm-2">
-								0
-								<small>Shares</small>
-								<br>
-								<small>
-									<a href="#">
-										<button class="btn btn-sm btn-outline-info" ><B>Share</B></button>
-									</a>
-								</small>
-							</div>
-
-							<div class="col-sm-2">
-								0
-								<small>Dislikes</small>
-								<br>
-								<small>
-									<a href="#">
-										<button class="btn btn-sm btn-outline-danger">
-											<b class="red">Dislike</b>
-										</button>
-									</a>
-								</small>
-							</div>
-							<div class="col-sm-2">
-								0
-								<small>Comments</small>
-								<br>
-								<small>
-									<a href="#">
-										<button class="btn btn-sm btn-success">
-											<b class="white">Comment</b>
-										</button>
-									</a>
-								</small>
-							</div>
 						</div>						
 					</div>
 					
 					<hr class="container col-lg-9">
 
 					<div class="row col-lg-12">
-						
+						<div class="col-lg-2"></div>
+						<div class="col-sm-2">
+							0
+							<small>Likes</small>
+							<br>
+							<small>
+								<a href="#">
+									<button>
+										<b class="green">Like</b>
+									</button>
+								</a>
+							</small>
+						</div>
+
+						<div class="col-sm-2">
+							0
+							<small>Shares</small>
+							<br>
+							<small>
+								<a href="#">
+									<button><B>Share</B></button>
+								</a>
+							</small>
+						</div>
+
+						<div class="col-sm-2">
+							0
+							<small>Dislikes</small>
+							<br>
+							<small>
+								<a href="#">
+									<button>
+										<b class="red">Dislike</b>
+									</button>
+								</a>
+							</small>
+						</div>
+						<div class="col-sm-2">
+							0
+							<small>Comments</small>
+							<br>
+							<small>
+								<a href="#">
+									<button>
+										<b class="green">Comment</b>
+									</button>
+								</a>
+							</small>
+						</div>
 					</div>
-					<hr class="col-lg-8">
+					<hr class="col-lg-9">
 					<!-- <form class="left-space contain">
 						<textarea class="col-lg-8" style="width:80%;" required></textarea>
 						<br><br>

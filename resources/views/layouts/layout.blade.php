@@ -51,15 +51,19 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a  id="right-topbar" href="/messages">
+                                    <a   href="/messages">
                                         <i class="glyphicon glyphicon-envelope"></i>
-                                        <strong>  
-                                            Messages&nbsp;<big><b style="color:#8e44ad;">0</b></big>
-                                        </strong>
+                                        <button class="btn btn-md btn-outline-primary ct-al"> 
+                                            &nbsp; 
+                                            <strong class="white">
+                                                Messages
+                                            </strong>
+                                            <big><b style="color:#8e44ad;">0000</b></big>
+                                        </button>
                                     </a>
                                 </li>
                                 <li>
-                                    <a  id="right-topbar" href="/wallet">
+                                    <a   href="/wallet">
                                         <i class="glyphicon glyphicon-envelope"></i>
                                         <strong>  
                                             Wallet&nbsp;<big><b style="color:#8e44ad;">0</b></big>
@@ -72,7 +76,7 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a  id="right-topbar" href="/profile">
+                                            <a   href="/profile">
                                                 <i class="glyphicon glyphicon-envelope"></i>
                                                 <strong>  
                                                     Profile
@@ -80,7 +84,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a  id="right-topbar" href="/logout">
+                                            <a  href="/logout">
                                                 <i class="glyphicon glyphicon-envelope"></i>
                                                 <strong>  
                                                     Logout
