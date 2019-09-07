@@ -57,7 +57,7 @@
 							<small>
 								<a href="#">
 									<button class="px100 btn btn-sm btn-outline-danger">
-										<b>Like</b>
+										Like
 									</button>
 								</a>
 							</small>
@@ -69,7 +69,7 @@
 							<br>
 							<small>
 								<a href="#">
-									<button class="px100 btn btn-sm btn-outline-primary"><B>Share</B></button>
+									<button class="px100 btn btn-sm btn-outline-primary">Share</button>
 								</a>
 							</small>
 						</div>
@@ -81,7 +81,7 @@
 							<small>
 								<a href="#">
 									<button class="px100 btn btn-sm btn-outline-warning">
-										<b class="red">Dislike</b>
+										Dislike
 									</button>
 								</a>
 							</small>
