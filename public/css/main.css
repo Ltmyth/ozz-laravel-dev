@@ -103,6 +103,10 @@ $black			: #222;
   text-align:left;
 }
 
+.px100{
+  width:100px;
+}
+
 #body{
   margin-top:10%;
   text-align:center;

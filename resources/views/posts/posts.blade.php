@@ -47,8 +47,6 @@
 							</a>
 						</div>						
 					</div>
-					
-					<hr class="container col-lg-9">
 
 					<div class="row col-lg-12">
 						<div class="col-lg-2"></div>
@@ -58,8 +56,8 @@
 							<br>
 							<small>
 								<a href="#">
-									<button>
-										<b class="green">Like</b>
+									<button class="px100 btn btn-sm btn-outline-danger">
+										<b>Like</b>
 									</button>
 								</a>
 							</small>
@@ -71,7 +69,7 @@
 							<br>
 							<small>
 								<a href="#">
-									<button><B>Share</B></button>
+									<button class="px100 btn btn-sm btn-outline-primary"><B>Share</B></button>
 								</a>
 							</small>
 						</div>
@@ -82,7 +80,7 @@
 							<br>
 							<small>
 								<a href="#">
-									<button>
+									<button class="px100 btn btn-sm btn-outline-warning">
 										<b class="red">Dislike</b>
 									</button>
 								</a>
@@ -94,7 +92,7 @@
 							<br>
 							<small>
 								<a href="#">
-									<button>
+									<button class="px100 btn btn-sm btn-outline-success"> 
 										<b class="green">Comment</b>
 									</button>
 								</a>
