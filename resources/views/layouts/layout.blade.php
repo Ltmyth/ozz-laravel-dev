@@ -31,7 +31,7 @@
         </head>
         <header id="header">
             <div class="container main-menu">
-                <div class="row align-items-center d-flex">
+                <div class="row">
                   
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
@@ -53,7 +53,7 @@
                                 <li>
                                     <a   href="/messages">
                                         <i class="glyphicon glyphicon-envelope"></i>
-                                        <button class="btn btn-md btn-outline-primary ct-al"> 
+                                        <button class="btn btn-md btn-outline-warning ct-al"> 
                                             &nbsp; 
                                             <strong class="white">
                                                 Messages
@@ -65,14 +65,17 @@
                                 <li>
                                     <a   href="/wallet">
                                         <i class="glyphicon glyphicon-envelope"></i>
-                                        <strong>  
-                                            Wallet&nbsp;<big><b style="color:#8e44ad;">0</b></big>
-                                        </strong>
+                                        <button class="btn btn-md btn-outline-warning ct-al">
+                                            &nbsp;
+                                            <strong class="white">  
+                                                Wallet&nbsp;<big><b style="color:#8e44ad;">0</b></big>
+                                            </strong>
+                                        </button>
                                     </a>
                                 </li>
                                 <li class="menu-has-children">
                                     <a href="">
-                                        <strong>Settings</strong>
+                                        <strong>S</strong>
                                     </a>
                                     <ul>
                                         <li>
@@ -95,9 +98,19 @@
                                 </li>                            
                             @endauth
                             @guest
-                                <li><a href="/">About</a></li>
-                                <li><a href="/#pricing">Pricing</a></li>
-                                <li><a href="/register">Signup</a></li>
+                                <li>
+                                    <a href="/">
+                                        <button class="btn btn-md btn-outline-warning white px100">About</button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/#pricing">
+                                        <button class="btn btn-md btn-outline-warning white px100">
+                                            Pricing
+                                        </button>
+                                    </a>
+                                </li>
+                                <li><a href="/register"><button class="btn btn-md btn-outline-warning white px100">Signup</button></a></li>
                                 <!-- <li class="menu-has-children"><a href="">Blog</a>
                                     <ul>
                                       <li><a href="blog-home.html">Login</a></li>
@@ -115,7 +128,7 @@
                                       </li>                                         
                                     </ul>
                                 </li> -->                                                                         
-                                <li><a href="/login">Login</a></li>
+                                <li><a href="/login"><button class="btn btn-md btn-outline-warning white px100">Login</button></a></li>
 
                             @endguest
                         </ul>

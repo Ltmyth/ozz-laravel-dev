@@ -10,6 +10,12 @@
 						<div class="col-lg-1"></div>
 						<div class="col-lg-3">
 							<h4>
+
+								<small>
+									<b>{{ $post->created_at->diffForHumans() }}</b>
+								</small>
+								<br>
+								
 								<a href="{{ route('user') }}">
 									<img 
 										id="profile-pic" 
@@ -20,10 +26,7 @@
 									>
 									{{ Auth::user()->name }}									
 								</a>
-								<br>
-								<small>
-									<b>{{ $post->created_at->diffForHumans() }}</b>
-								</small>
+								
 							</h4>							
 						</div>
 
