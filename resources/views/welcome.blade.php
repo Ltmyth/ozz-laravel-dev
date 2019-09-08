@@ -16,7 +16,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right">
                     <div class="row">
-                        <h6>Welcome to</h6>
+                        <h6>Welcome to the</h6>
                         <h1>orz</h1>
                         <b>
                            <strong> Built to connect <br>
@@ -45,8 +45,8 @@
                     <img class="img-fluid" src="img/about-img.png" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
-                    <h6>About Me</h6>
-                    <h1 class="text-uppercase">Personal Details</h1>
+                    <h6>About ohzz</h6>
+                    <h1 class="text-uppercase">Birth</h1>
                     <p>
                         Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                     </p>
@@ -63,8 +63,8 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content  col-lg-7">
                     <div class="title text-center">
-                        <h1 class="mb-10">My Offered Services</h1>
-                        <p>At about this time of year, some months after New Year’s resolutions have been made and kept, or made and neglected.</p>
+                        <h1 class="mb-10">Accessible Services</h1>
+                        <p>Get the following life pack at your finger tips.</p>
                     </div>
                 </div>
             </div>                      
@@ -72,7 +72,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-pie-chart"></span>
-                        <a href="#"><h4>Web Design</h4></a>
+                        <a href="#"><h4>People</h4></a>
                         <p>
                             “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
                         </p>
@@ -81,7 +81,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-laptop-phone"></span>
-                        <a href="#"><h4>Web Development</h4></a>
+                        <a href="#"><h4>Accommodation</h4></a>
                         <p>
                             If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
                         </p>
@@ -90,7 +90,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-camera"></span>
-                        <a href="#"><h4>Photography</h4></a>
+                        <a href="#"><h4>Food</h4></a>
                         <p>
                             Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
                         </p>
@@ -99,7 +99,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-picture"></span>
-                        <a href="#"><h4>Clipping Path</h4></a>
+                        <a href="#"><h4>Airtime</h4></a>
                         <p>
                             Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
                         </p>
@@ -108,7 +108,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-tablet"></span>
-                        <a href="#"><h4>Apps Interface</h4></a>
+                        <a href="#"><h4>Payments</h4></a>
                         <p>
                             Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
                         </p>
@@ -117,7 +117,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-rocket"></span>
-                        <a href="#"><h4>Graphic Design</h4></a>
+                        <a href="#"><h4>And more</h4></a>
                         <p>
                             You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
                         </p>
@@ -130,12 +130,12 @@
 
    
     <!-- Start portfolio-area Area -->
-    <section class="portfolio-area section-gap" id="portfolio">
+    <section class="portfolio-area " id="portfolio">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Our Latest Featured Projects</h1>
+                        <h1 class="mb-10">How it works</h1>
                         <p>Who are in extremely love with eco friendly system.</p>
                     </div>
                 </div>
@@ -144,10 +144,10 @@
             <div class="filters">
                 <ul>
                     <li class="active" data-filter="*">All</li>
-                    <li data-filter=".vector">Vector</li>
-                    <li data-filter=".raster">Raster</li>
-                    <li data-filter=".ui">UI/UX</li>
-                    <li data-filter=".printing">Printing</li>
+                    <li data-filter=".vector">Register</li>
+                    <li data-filter=".raster">Setup</li>
+                    <li data-filter=".ui">Search</li>
+                    <li data-filter=".printing">Use</li>
                 </ul>
             </div>
             
@@ -264,7 +264,7 @@
     <!-- End portfolio-area Area -->    
 
     <!-- Start testimonial Area -->
-    <section class="testimonial-area section-gap">
+    <!-- <section class="testimonial-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
@@ -303,7 +303,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- End testimonial Area -->
 
     <!-- Start price Area -->
@@ -395,7 +395,7 @@
     <!-- End price Area -->         
 
     <!-- Start recent-blog Area -->
-    <section class="recent-blog-area section-gap">
+    <!-- <section class="recent-blog-area section-gap">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 pb-30 header-text">
@@ -479,7 +479,7 @@
                                         
             </div>
         </div>  
-    </section>
+    </section> -->
     <!-- end recent-blog Area -->       
 
     <!-- Start brands Area -->
