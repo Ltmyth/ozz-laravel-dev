@@ -38,7 +38,7 @@
                         &nbsp;&nbsp;
                        <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
                        &nbsp;&nbsp;
-                       <button type="submit" class="btn btn-lg btn-outline-danger">
+                       <button type="submit" class="btn btn-lg btn-outline-primary">
                             Post
                         </button> 
                     </div> 
