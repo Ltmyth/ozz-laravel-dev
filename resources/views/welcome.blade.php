@@ -307,8 +307,8 @@
     <!-- End testimonial Area -->
 
     <!-- Start price Area -->
-    <section class="price-area section-gap">
-        <div id="pricing" class="container">
+    <section id="pricing" class="price-area section-gap">
+        <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
