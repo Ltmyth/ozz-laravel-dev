@@ -17,19 +17,19 @@
     </script>
 
         <!-- right side -->
-        <div class=""></div>
         <br>
         <form enctype="multipart/form-data" method="POST" action="/posts_create">
             @csrf
-            <div class="container lt-al col-lg-12">
-                <label for="name" class="col-form-label">
-                    <h2>What's going on?</h2>
-                </label> 
-            </div>
-            <div class="container col-lg-12 ct-al">
-                <textarea style="width:100%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
-            </div>
-            
+            <div class="container lt-al row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-9">
+                     <label for="name" class="col-form-label">
+                        <h2>What's going on?</h2>
+                    </label> 
+                    <br>
+                    <textarea style="width:100%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+                </div>
+            </div>            
             <div class="container row">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-8">

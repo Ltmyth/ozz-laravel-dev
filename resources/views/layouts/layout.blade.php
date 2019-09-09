@@ -53,24 +53,19 @@
                                 <li>
                                     <a   href="/messages">
                                         <i class="glyphicon glyphicon-envelope"></i>
-                                        <button class="btn btn-md btn-outline-warning ct-al"> 
-                                            &nbsp; 
-                                            <strong class="white">
-                                                Messages
-                                            </strong>
-                                            <big><b style="color:#8e44ad;">0000</b></big>
-                                        </button>
+                                        &nbsp; 
+                                        <strong class="white">
+                                            Messages
+                                        </strong>
+                                        <big><b style="color:orange;">0000</b></big>
                                     </a>
                                 </li>
                                 <li>
                                     <a   href="/wallet">
-                                        <i class="glyphicon glyphicon-envelope"></i>
-                                        <button class="btn btn-md btn-outline-warning ct-al">
-                                            &nbsp;
-                                            <strong class="white">  
-                                                Wallet&nbsp;<big><b style="color:#8e44ad;">0</b></big>
-                                            </strong>
-                                        </button>
+                                        <i class="glyphicon glyphicon-envelope"></i>&nbsp;
+                                        <strong class="white">  
+                                            Wallet&nbsp;<big><b style="color:red;">0</b></big>
+                                        </strong>
                                     </a>
                                 </li>
                                 <li class="menu-has-children">
