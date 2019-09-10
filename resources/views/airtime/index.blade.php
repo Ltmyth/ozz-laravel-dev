@@ -28,7 +28,7 @@
 	<ul style="list-style:none;">
 		<li>
 			<a href="/at-self/">
-				<button class="btn btn-lg btn-success">
+				<button class="btn btn-lg btn-outline-success px100">
 					Self
 				</button>
 			</a>
@@ -36,7 +36,7 @@
 		<hr class="container col-lg-5">
 		<li>
 			<a href="/at-other/">
-				<button class="btn btn-lg btn-warning">
+				<button class="btn btn-lg btn-outline-warning px100">
 					Other
 				</button>
 			</a>
@@ -44,7 +44,7 @@
 		<hr class="container col-lg-5">
 		<li>
 			<a href="/at-others/">
-				<button class="btn btn-lg btn-danger">
+				<button class="btn btn-lg btn-outline-danger px100">
 					Others	
 				</button>
 			</a>

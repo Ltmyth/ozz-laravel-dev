@@ -61,12 +61,12 @@
 
       						<a href="/transactions/">
       							<button class="btn btn-md btn-info">
-      								<b class="wyt">History</b>
+      								<b class="white">History</b>
       							</button>
       						</a>
                   <a href="#">
                     <button class="btn btn-md btn-success">
-                      <b class="wyt">Withdraw</b>
+                      <b class="white">Withdraw</b>
                     </button>
                   </a>
 
@@ -83,7 +83,7 @@
       						</strong>
       					</h3>
       				</label>
-      				<input id="ozz-amount" placeholder="Ozz Amount" onkeyup="calculate()" type="number" value="ozz" class="form-control center" name="amount">
+      				<input id="ozz-amount" placeholder="Ozz Amount" onkeyup="calculate()" type="number" value="ozz" class="form-control col-lg-8 container" name="amount">
       				<br>
       				<label id="cost-label" style="display:none;">
       					<h3>
@@ -92,7 +92,7 @@
       						</strong>
       					</h3>
       				</label>
-      				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control center" name="amount">
+      				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
       				<br><br>
       				<input type="submit" class="btn btn-md btn-warning" value="Request top-Up">
       			</form>  		

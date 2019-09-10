@@ -37,13 +37,13 @@
 								<a href="/posts_show/{{ $post->id }}">
 									<div class="container col-md-7 lt-al">
 										<p>
-											<h3 style="width:100%;">
+											<h3 style="width:100%; background-color: #f9f9ff;">
 												{{ $post->Post_content }}
 											</h3>
 										</p>
 
 										@if($post->Post_upload != "")							
-											<img style="width:100%;border-radius:5%;" 
+											<img style="width:100%;background-color: #f9f9ff;" 
 												src="/storage/uploads/{{ $post->Post_upload }}"
 											>										
 										@endif
@@ -53,7 +53,7 @@
 						</div>
 					</div>
 
-					<div class="row col-lg-11">
+					<div class="row col-lg-12">
 						<div class="col-lg-2"></div>
 						<div class="col-sm-2">
 							0
@@ -96,21 +96,19 @@
 							<small>Comments</small>
 							<br>
 							<small>
-								<a href="#">
-									<button class="px100 btn btn-sm btn-outline-success"> 
-										<b class="green">Comment</b>
-									</button>
-								</a>
+								<button id="comment_btn" onclick="comment()" class="px100 btn btn-sm btn-outline-success">
+									Comment
+								</button>
 							</small>
 						</div>
 					</div>
 					<hr class="col-lg-9">
-					<!-- <form class="left-space contain">
+					<form id="comment" style="display:none;">
 						<textarea class="col-lg-8" style="width:80%;" required></textarea>
 						<br><br>
-						<input type="submit" class="btn btn-sm btn-success" value="Comment">
+						<input type="submit" class="btn btn-sm btn-success lt-al" value="Comment">
 						<br>
-					</form> -->
+					</form>
 				<br><br>
 		@endforeach
 	@else

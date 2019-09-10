@@ -96,7 +96,7 @@
                                 
                                 <li>
                                     <a href="/register">
-                                        <button class="btn btn-md btn-outline-warning white px100">
+                                        <button class="btn btn-lg btn-outline-primary white px100">
                                             Signup
                                         </button>
                                     </a>
@@ -120,14 +120,14 @@
                                 </li> -->                                                                         
                                 <li>
                                     <a href="/login">
-                                        <button class="btn btn-md btn-outline-warning white px100">
+                                        <button class="btn btn-lg btn-outline-primary white px100">
                                             Login
                                         </button>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="/#pricing">
-                                        <button class="btn btn-md btn-outline-warning white px100">
+                                        <button class="btn btn-lg btn-outline-primary white px100">
                                             Pricing
                                         </button>
                                     </a>
@@ -186,7 +186,7 @@
                 @guest
                 <br>
                 @endguest
-                <body>
+                <body style="background-color: #f9f9ff;">
                     @yield('content')
                 </body>
             </div>

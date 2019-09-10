@@ -22,7 +22,7 @@
 		}
 	</style>
     <!-- right side -->
-  		<img style="width:40%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
+  		<img style="width:35%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
 		<br><br>
   		<h2><strong>Food Services</strong></h2>
   		<hr class="container col-lg-8">

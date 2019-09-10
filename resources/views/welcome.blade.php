@@ -152,7 +152,7 @@
             </div>
             
             <div class="filters-content">
-                <div class="row grid">
+                <!-- <div class="row grid">
                     <div class="single-portfolio col-sm-4 all vector">
                         <div class="relative">
                             <div class="thumb">
@@ -257,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
         </div>
     </section>
@@ -307,10 +307,10 @@
     <!-- End testimonial Area -->
 
     <!-- Start price Area -->
-    <section id="pricing" class="price-area section-gap">
+    <section class="price-area section-gap">
         <div  class="container">
             <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-8">
+                <div id="pricing" class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Choose Your Plan</h1>
                     </div>

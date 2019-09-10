@@ -3,7 +3,7 @@
 @section('content')
     <style type="text/css">
         #home_btn{
-            background-color:#34ace0;
+            background-color:#5f27cd;
             color:white;
             pointer-events: none;
         }
@@ -13,6 +13,17 @@
             var x = document.getElementById("myBtn"); 
             x.setAttribute("type", "file");
             x.setAttribute("accept", "file_extension|audio/*|video/*|image/*|media_type");
+        }
+        function comment(){
+            var x = document.getElementById("comment_btn");
+            var y = document.getElementById("comment");
+            x.setAttribute("style", "background:green");
+            if(y.style.display == 'none'){
+                y.setAttribute("style", "display:inline");
+                y.setAttribute("style", "color:white");
+            }else{
+                y.setAttribute("style", "display:none");
+            }
         }
     </script>
 
