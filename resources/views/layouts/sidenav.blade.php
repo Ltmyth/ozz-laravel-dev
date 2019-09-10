@@ -79,7 +79,7 @@
     </div> -->
 
         <a href="/home">
-            <button id="home_btn" class="btn btn-md btn-default col-lg-2">
+            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
                 <i class="glyphicon glyphicon-house"></i>
                 <strong>  
                     People
@@ -88,7 +88,7 @@
         </a>
 
        <a href="/accommodation/">
-            <button id="accoms_btn" class="btn btn-md btn-default col-lg-2">
+            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
                 <strong>  
                     Accommodation
                 </strong>
@@ -96,13 +96,13 @@
         </a>
 
         <a href="/food/">
-            <button id="food_btn" class="btn btn-md btn-default col-lg-2">
+            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
                <strong>Food</strong>
             </button>
         </a>
 
         <a href="/airtime/">
-           <button id="at_btn" class="btn btn-md btn-default col-lg-2">
+           <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
                <strong>Airtime</strong>
            </button>
         </a>

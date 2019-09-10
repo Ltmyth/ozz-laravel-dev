@@ -142,7 +142,7 @@
 			</a>
 			<br><br>
 			<a href="#">
-				<button class="btn btn-md btn-default">
+				<button class="btn btn-md btn-outline-danger">
 					<i class="glyphicon glyphicon-cog"></i>
 					<big>Privacy Settings</big>
 				</button>
