@@ -1,5 +1,5 @@
 @auth
-	@if($posts)
+	@if(count($posts)>0)
 		<h2 class="center">
 			<small class="black">POSTS AROUND U!</small>
 		</h2>
@@ -112,6 +112,6 @@
 				<br><br>
 		@endforeach
 	@else
-		<h3>No posts</h3>
+		<h3>Post Something :(</h3>
 	@endif
 @endauth

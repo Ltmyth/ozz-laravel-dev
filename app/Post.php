@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     //table
-    protected $table ="Posts";
+    protected $table ="posts";
 
     //pk
     public $primaryKey = "id";
