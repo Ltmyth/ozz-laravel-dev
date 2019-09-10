@@ -26,7 +26,14 @@
             <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">             
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
+
+            <!-- server env -->
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/main.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('jquery-ui.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/nice-select.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/animate.min.css') }}">
+
                
         </head>
         <header id="header">
