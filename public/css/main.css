@@ -2316,9 +2316,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-/*#mobile-nav ul .menu-has-children i.fa-chevron-up {
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
   color: #8490ff;
-}*/
+}
 
 #mobile-nav ul .menu-has-children li a {
   text-transform: none;

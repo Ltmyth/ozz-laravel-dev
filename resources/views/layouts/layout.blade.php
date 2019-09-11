@@ -77,7 +77,7 @@
                                 </li>
                                 <li class="menu-has-children">
                                     <a href="">
-                                        <strong>S</strong>
+                                        <strong><i class="lnr lnr-user"></i></strong>
                                     </a>
                                     <ul>
                                         <li>
