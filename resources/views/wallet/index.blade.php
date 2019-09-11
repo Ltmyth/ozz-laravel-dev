@@ -48,32 +48,39 @@
       	</h1>
         	<hr>
       			<h2>
-      				<div class="row">
-      					<div class="col-md-2">
-      						<small class="green">Balance</small>	
-      					</div>
-
-      					<div class="col-md-3 white-bg">
-      						<b>1000000</b> .
-      						<i><strong class="orange">0hzz</strong></i>
-      					</div>
-      					<div class="col-md-7">
-
-      						
-                  <a href="#">
-                    <button class="btn btn-md btn-outline-success">
-                      Withdraw
-                    </button>
-                  </a>
-
-                  <a href="/transactions/">
-                    <button class="btn btn-md btn-danger">
-                      <b class="white">Transactions ledger</b>
-                    </button>
-                  </a>
-
+      				<div class=" container">
+                <div class="row col-lg-12">
+        					<div class="col-md-8 container">
+        						<small class="green">
+                      Available Balance
+                    </small>	
+                    : <b>1000000</b> .
+                    <i><strong class="orange">0hzz</strong></i>
+        					</div>
         				</div>
-      				</div>  				 
+                <br>
+                <div class="row col-lg-12">
+                  <div class="col-md-8 container">
+                    <a href="#">
+                      <button class="btn btn-md btn-outline-success">
+                        Withdraw
+                      </button>
+                    </a>
+
+                    <a href="#">
+                      <button class="btn btn-md btn-outline-info">
+                        History
+                      </button>
+                    </a>
+
+                    <a href="/transactions/">
+                      <button class="btn btn-md btn-danger">
+                        <b class="white">Transactions ledger</b>
+                      </button>
+                    </a>
+                  </div>
+                </div>  	
+              </div>			 
       			</h2>
         		<hr>
       			<form>

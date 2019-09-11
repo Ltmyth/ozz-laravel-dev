@@ -32,12 +32,12 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-sm-1"></div>
-							<div class="col-lg-10">
+							<div class="col-md-2"></div>
+							<div class="col-md-8 blue-bg op7">
 								<a href="/posts_show/{{ $post->id }}">
-									<div class="container col-md-8 orange-bg op7 well lt-al">
+									<div class="col-md-8 lt-al">
 										<p>
-											<h3 class="blue">
+											<h3 class="white">
 												{{ $post->Post_content }}
 											</h3>
 										</p>
