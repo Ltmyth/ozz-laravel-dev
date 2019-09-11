@@ -319,9 +319,9 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">01</h1>
+                        <h1 class="package-no">04</h1>
                         <h4>Bronze</h4>
-                        <p class="mt-10">For airtime</p>
+                        <p class="mt-10">1 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
@@ -331,33 +331,15 @@
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>£199.00</h1>
-                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 single-price">
-                    <div class="top-part">
-                        <h1 class="package-no">02</h1>
-                        <h4>Silver</h4>
-                        <p class="mt-10">For the individuals</p>
-                    </div>
-                    <div class="package-list">
-                        <ul>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles for interface</li>
-                            <li>Reliable Customer Service</li>
-                        </ul>
-                    </div>
-                    <div class="bottom-part">
-                        <h1>£299.00</h1>
+                        <h1>UGX 5000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">03</h1>
-                        <h4>Gold</h4>
-                        <p class="mt-10">For the individuals</p>
+                        <h4>Silver</h4>
+                        <p class="mt-10">10 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
@@ -367,15 +349,15 @@
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>£399.00</h1>
+                        <h1>UGX 50000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">04</h1>
-                        <h4>Vibranium</h4>
-                        <p class="mt-10">For the individuals</p>
+                        <h1 class="package-no">02</h1>
+                        <h4>Gold</h4>
+                        <p class="mt-10">50 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
@@ -385,7 +367,25 @@
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>£499.00</h1>
+                        <h1>UGX 250000</h1>
+                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 single-price">
+                    <div class="top-part">
+                        <h1 class="package-no">01</h1>
+                        <h4>Vibranium</h4>
+                        <p class="mt-10">200</p>
+                    </div>
+                    <div class="package-list">
+                        <ul>
+                            <li>Secure Online Transfer</li>
+                            <li>Unlimited Styles for interface</li>
+                            <li>Reliable Customer Service</li>
+                        </ul>
+                    </div>
+                    <div class="bottom-part">
+                        <h1>UGX 1000000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>                                                                      
