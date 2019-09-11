@@ -47,10 +47,10 @@
                     <br>
                     <div class="form-group row left-space" >
                         &nbsp;&nbsp;
-                       <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
+                       <big><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
                        &nbsp;&nbsp;
-                       <button type="submit" class="btn btn-lg btn-outline-primary">
-                            Post
+                        <button type="submit" class="btn btn-lg btn-outline-primary">
+                            <i class="lnr lnr-cloud-upload">Post</i> 
                         </button> 
                     </div> 
                 </div>

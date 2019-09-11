@@ -64,36 +64,45 @@
                                         &nbsp; 
                                         <strong class="white">
                                             Messages
+                                            <big>
+                                                <i class="lnr lnr-alarm orange-bg"></i>
+                                            </big>
                                         </strong>
-                                        <big><b style="color:orange;">0000</b></big>
+                                        <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
                                 </li>
                                 <li>
                                     <a   href="/wallet">
                                         <i class="glyphicon glyphicon-envelope"></i>&nbsp;
                                         <strong class="white">  
-                                            Wallet&nbsp;<big><b style="color:red;">0</b></big>
+                                            Wallet
+                                            <big>
+                                                <i class="lnr lnr-enter red-bg"></i>
+                                            </big>
+                                            <!-- <big><b style="color:red;">0</b></big> -->
                                         </strong>
                                     </a>
                                 </li>
                                 <li class="menu-has-children">
                                     <a href="">
-                                        <strong><i class="lnr lnr-user"></i></strong>
+                                        <strong class="white">
+                                            <big>
+                                                <i class="lnr lnr-user"></i>
+                                            </big>
+                                        </strong>
                                     </a>
                                     <ul>
                                         <li>
                                             <a   href="/profile">
-                                                <i class="glyphicon glyphicon-envelope"></i>
                                                 <strong>  
-                                                    Profile
+                                                     <i class="lnr lnr-cog blue"> Profile</i>
                                                 </strong>
                                             </a>
                                         </li>
                                         <li>
                                             <a  href="/logout">
-                                                <i class="glyphicon glyphicon-envelope"></i>
                                                 <strong>  
-                                                    Logout
+                                                     <i class="lnr lnr-power-switch red"> Logout</i>
                                                 </strong>
                                             </a>
                                         </li>
@@ -223,8 +232,8 @@
                             <div class="footer-social d-flex align-items-center">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-behance"></i></a>
+                                <a href="#"><i class="fa fa-phone"></i></a>
+                                <a href="#"><i class="fa fa-envelope"></i></a>
                             </div>
                         </div>
                     </div>

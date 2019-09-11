@@ -123,6 +123,26 @@ $black			: #222;
   color:green;
 }
 
+.red-bg{
+  background: red;
+}
+
+.red{
+  color: red;
+}
+
+.orange-bg{
+  background: orange;
+}
+
+.blue-bg{
+  background: blue;
+}
+
+.blue{
+  color: blue;
+}
+
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;

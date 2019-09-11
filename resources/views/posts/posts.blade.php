@@ -62,7 +62,7 @@
 							<small>
 								<a href="#">
 									<button class="px100 btn btn-sm btn-outline-danger">
-										Like
+										<i class="lnr lnr-heart"> Like</i>
 									</button>
 								</a>
 							</small>
@@ -74,7 +74,9 @@
 							<br>
 							<small>
 								<a href="#">
-									<button class="px100 btn btn-sm btn-outline-primary">Share</button>
+									<button class="px100 btn btn-sm btn-outline-primary">
+										<i class="lnr lnr-redo"> Share</i>
+									</button>
 								</a>
 							</small>
 						</div>
@@ -86,7 +88,7 @@
 							<small>
 								<a href="#">
 									<button class="px100 btn btn-sm btn-outline-warning">
-										Dislike
+										<i class="lnr lnr-thumbs-down"> Dislike</i>
 									</button>
 								</a>
 							</small>
@@ -97,7 +99,7 @@
 							<br>
 							<small>
 								<button id="comment_btn" onclick="comment()" class="px100 btn btn-sm btn-outline-success">
-									Comment
+									<i class="lnr lnr-bubble"> Comment</i>
 								</button>
 							</small>
 						</div>
@@ -112,6 +114,10 @@
 				<br><br>
 		@endforeach
 	@else
-		<h3>Post Something :(</h3>
+		<h3>
+			<big><i class="lnr lnr-sad blue"></i></big>
+			Post Something
+			<big><i class="lnr lnr-sad blue"></i></big>
+		</h3>
 	@endif
 @endauth
