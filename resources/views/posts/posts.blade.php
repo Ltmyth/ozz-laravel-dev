@@ -35,9 +35,9 @@
 							<div class="col-sm-1"></div>
 							<div class="col-lg-10">
 								<a href="/posts_show/{{ $post->id }}">
-									<div class="container col-md-7 lt-al">
+									<div class="container col-md-8 orange-bg op7 well lt-al">
 										<p>
-											<h3 style="width:100%; background-color: #f9f9ff;">
+											<h3 class="blue">
 												{{ $post->Post_content }}
 											</h3>
 										</p>

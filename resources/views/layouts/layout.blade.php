@@ -84,7 +84,7 @@
                                     <a href="">
                                         <strong class="white">
                                             <big>
-                                                <i class="lnr lnr-user"></i>
+                                                <i class="lnr lnr-user orange"></i>
                                             </big>
                                         </strong>
                                     </a>

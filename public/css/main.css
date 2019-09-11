@@ -139,6 +139,9 @@ $black			: #222;
   color: orange;
 }
 
+.op7{
+  opacity:0.7;
+}
 
 .blue-bg{
   background: blue;
