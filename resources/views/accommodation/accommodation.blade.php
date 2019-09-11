@@ -65,11 +65,10 @@
 			</h4>	
 		</div>
 
-		<div class="col-md-4">
-			<br><br>
+		<div class="col-md-3">
 			<a href="/hostels/">
 				<button class="btn btn-lg btn-default c_thru">
-					<img style="width:50%;" src="{{ asset('/imgs/ikon.png') }}">
+					<i style="font-size:75px;" class="lnr lnr-chevron-right-circle"></i>
 					<br>
 					Explore All
 				</button>
@@ -106,11 +105,10 @@
 			</h4>	
 		</div>
 
-		<div class="col-md-4">
-			<br><br>
+		<div class="col-md-3">
 			<a href="/all_appartments/">
 				<button class="btn btn-lg btn-default c_thru">
-					<img style="width:50%;" src="{{ asset('/imgs/ikon.png') }}">
+					<i style="font-size:75px;" class="lnr lnr-chevron-right-circle"></i>
 					<br>
 					Explore All
 				</button>
