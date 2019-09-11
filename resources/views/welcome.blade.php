@@ -71,7 +71,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-pie-chart"></span>
+                        <span class="lnr lnr-users"></span>
                         <a href="#"><h4>People</h4></a>
                         <p>
                             “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-laptop-phone"></span>
+                        <span class="lnr lnr-apartment"></span>
                         <a href="#"><h4>Accommodation</h4></a>
                         <p>
                             If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
@@ -89,7 +89,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-camera"></span>
+                        <span class="lnr lnr-dinner"></span>
                         <a href="#"><h4>Food</h4></a>
                         <p>
                             Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
@@ -98,7 +98,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-picture"></span>
+                        <span class="lnr lnr-tablet"></span>
                         <a href="#"><h4>Airtime</h4></a>
                         <p>
                             Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
@@ -107,7 +107,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-tablet"></span>
+                        <span class="lnr lnr-briefcase"></span>
                         <a href="#"><h4>Payments</h4></a>
                         <p>
                             Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
@@ -116,7 +116,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-rocket"></span>
+                        <span class="lnr lnr-plus-circle"></span>
                         <a href="#"><h4>And more</h4></a>
                         <p>
                             You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
