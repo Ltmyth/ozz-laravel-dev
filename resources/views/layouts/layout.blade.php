@@ -60,25 +60,22 @@
                                 </li>
                                 <li>
                                     <a   href="/messages">
-                                        <i class="glyphicon glyphicon-envelope"></i>
-                                        &nbsp; 
                                         <strong class="white">
-                                            Messages
                                             <big>
-                                                <i class="lnr lnr-alarm orange-bg"></i>
+                                                <i class="lnr lnr-alarm orange"></i>
                                             </big>
+                                             Messages
                                         </strong>
                                         <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
                                 </li>
                                 <li>
                                     <a   href="/wallet">
-                                        <i class="glyphicon glyphicon-envelope"></i>&nbsp;
-                                        <strong class="white">  
-                                            Wallet
+                                        <strong class="white"> 
                                             <big>
-                                                <i class="lnr lnr-enter red-bg"></i>
-                                            </big>
+                                                <i class="lnr lnr-enter orange"></i>
+                                            </big> 
+                                            Wallet
                                             <!-- <big><b style="color:red;">0</b></big> -->
                                         </strong>
                                     </a>
