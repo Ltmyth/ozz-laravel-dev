@@ -3,8 +3,8 @@
 @section('content')
 
     <!-- right side -->
-    <div class="d-flex justify-content-center contain" style="margin-top:0;">
-        <div class="contain">
+    <div class="row">
+        <div class="row">
             Admin Home                
         </div>
     </div>
