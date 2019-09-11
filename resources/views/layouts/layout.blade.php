@@ -33,6 +33,7 @@
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('jquery-ui.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/nice-select.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/animate.min.css') }}">
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/linearicons.css') }}">
 
                
         </head>
