@@ -14,22 +14,17 @@
                 <div class="col-lg-6 col-md-6 banner-left">
                     <img style="width:100%;"  src="imgs/web.jpg" alt="">                    
                 </div>
-                <div class="col-lg-6 col-md-6 banner-right">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5 col-md-5 banner-right">
                     <div class="row">
-                        <h6>Welcome to the</h6>
-                        <h1>orz</h1>
-                        <b>
-                           <strong> Built to connect <br>
-                            community-based users to each other <br>
-                            and to respective community-based services <br>quickly and click easily.</strong>
-                        </b>
-                        <hr>
-                        <a href="#">
-                            <button class="primary-btn text-uppercase">
-                                join now
-                            </button>
-                        </a>    
+                        <h6>Welcome to ohzz</h6>
+                        <br>
                     </div>
+                    <a href="#">
+                        <button class="primary-btn text-uppercase">
+                            join now
+                        </button>
+                    </a>  
                       
                 </div>
             </div>
@@ -45,12 +40,13 @@
                     <img class="img-fluid" src="img/about-img.png" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
-                    <h6>About ohzz</h6>
-                    <h1 class="text-uppercase">Birth</h1>
+                    <h1><b>About Us</b></h1>
                     <p>
-                        Here, I focus on a range of items and features that we use in life without giving them a second thought. such as Coca Cola. Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                       <h5> Built to connect <br>
+                        community-based users to each other <br>
+                        and to respective community-based services <br>quickly and click easily.</h5>
                     </p>
-                    <a href="#" class="primary-btn text-uppercase">View Full Details</a>
+                    <!-- <a href="#" class="primary-btn text-uppercase">View Full Details</a> -->
                 </div>
             </div>
         </div>  
@@ -63,8 +59,10 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content  col-lg-7">
                     <div class="title text-center">
-                        <h1 class="mb-10">Accessible Services</h1>
-                        <p>Get the following life pack at your finger tips.</p>
+                        <h1 class="mb-10"><b>Accessible Services</b></h1>
+                        <h4>
+                            Top up your stash/wallet accordingly to get the following life pack at your finger tips.
+                        </h4>
                     </div>
                 </div>
             </div>                      
@@ -73,8 +71,8 @@
                     <div class="single-services">
                         <span class="lnr lnr-users"></span>
                         <a href="#"><h4>People</h4></a>
-                        <p>
-                            “It is not because things are difficult that we do not dare; it is because we do not dare that they are difficult.”
+                        <p class="lt-al">
+                            Connect with people in your community or neighborhood.
                         </p>
                     </div>
                 </div>
@@ -82,8 +80,8 @@
                     <div class="single-services">
                         <span class="lnr lnr-apartment"></span>
                         <a href="#"><h4>Accommodation</h4></a>
-                        <p>
-                            If you are an entrepreneur, you know that your success cannot depend on the opinions of others. Like the wind, opinions.
+                        <p class="lt-al">
+                            Find and secure accommodation within a community or destination of interest.
                         </p>
                     </div>
                 </div>
@@ -91,8 +89,8 @@
                     <div class="single-services">
                         <span class="lnr lnr-dinner"></span>
                         <a href="#"><h4>Food</h4></a>
-                        <p>
-                            Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.
+                        <p class="lt-al">
+                            Search,  view and procure from community based food service providers and their various menus. 
                         </p>
                     </div>  
                 </div>
@@ -100,8 +98,8 @@
                     <div class="single-services">
                         <span class="lnr lnr-tablet"></span>
                         <a href="#"><h4>Airtime</h4></a>
-                        <p>
-                            Hypnosis quit smoking methods maintain caused quite a stir in the medical world over the last two decades. There is a lot of argument.
+                        <p class="lt-al">
+                           Buy airtime for your mobile phone number , a friend's number or  a list of acquaintances and associates.
                         </p>
                     </div>
                 </div>
@@ -109,8 +107,9 @@
                     <div class="single-services">
                         <span class="lnr lnr-briefcase"></span>
                         <a href="#"><h4>Payments</h4></a>
-                        <p>
-                            Do you sometimes have the feeling that you’re running into the same obstacles over and over again? Many of my conflicts.
+                        <p class="lt-al">
+                            Make payments from your ohzz wallet to another user's wallet or list of users.
+                            You can also liquidate or cashout ohzz from your wallet into a mobile money account or list of accounts.
                         </p>
                     </div>
                 </div>
@@ -118,8 +117,8 @@
                     <div class="single-services">
                         <span class="lnr lnr-plus-circle"></span>
                         <a href="#"><h4>And more</h4></a>
-                        <p>
-                            You’ve heard the expression, “Just believe it and it will come.” Well, technically, that is true, however, ‘believing’ is not just thinking that.
+                        <p class="lt-al">
+                            We are working towards adding more services to the platform.
                         </p>
                     </div>              
                 </div>                                                      
@@ -133,178 +132,61 @@
     <section class="portfolio-area " id="portfolio">
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-8">
-                    <div class="title text-center">
-                        <h1 class="mb-10">How it works</h1>
-                        <p>Who are in extremely love with eco friendly system.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="filters">
-                <ul>
-                    <li class="active" data-filter="*">All</li>
-                    <li data-filter=".vector">Register</li>
-                    <li data-filter=".raster">Setup</li>
-                    <li data-filter=".ui">Search</li>
-                    <li data-filter=".printing">Use</li>
-                </ul>
-            </div>
-            
-            <div class="filters-content">
-                <!-- <div class="row grid">
-                    <div class="single-portfolio col-sm-4 all vector">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p1.jpg" alt="">
-                            </div>
-                            <a href="img/p1.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                        </a>                                    
+                
+                <div class="col-lg-12">
+                    <h1 class="mb-10"><b>How it works</b></h1>
+                    <div class="row">
+                        <div class="col-lg-3 b blue-bg">
+                            <hr>
+                            <h3 class="white"><strong>Register</strong></h3>
+                            <hr>
+                            <p class="lt-al">Using the following requirements;</p>
+                            <ul style="list-style-type:square;" class="lt-al">
+                                <li>A Valid email</li>
+                                <li>A Unique username</li>
+                                <li>A memorable strong password</li>
+                            </ul>
                         </div>
-                        <div class="p-inner">
-                            <h4>2D Vinyl Design</h4>
-                            <div class="cat">vector</div>
-                        </div>                                                 
-                    </div>
-                    <div class="single-portfolio col-sm-4 all raster">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p2.jpg" alt="">
-                            </div>
-                            <a href="img/p2.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                        </a>                                    
+                        <div class="col-lg-3 b blue-bg">
+                            <hr>
+                            <h3 class="white"><strong>Setup</strong></h3>
+                            <hr>
+                            <p>Complete your user profile by adding your;</p>
+                            <ul style="list-style-type:square;" class="lt-al">
+                                <li>First and last names</li>
+                                <li>Active mobile phone number</li>
+                                <li>Security question</li>
+                            </ul>
                         </div>
-                        <div class="p-inner">
-                            <h4>2D Vinyl Design</h4>
-                            <div class="cat">vector</div>
-                        </div>                                                 
-                    </div>                            
-                    <div class="single-portfolio col-sm-4 all ui">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p3.jpg" alt="">
-                            </div>
-                            <a href="img/p3.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                            </a> 
-                                
+                        <div class="col-lg-3 b blue-bg">
+                            <hr>
+                            <h3 class="white"><strong>Topup stash</strong></h3>
+                            <hr>
+                            <p>Navigate to your wallet and choose a stash to topup from the following;</p>
+                            <ul style="list-style-type:square;" class="lt-al">
+                                <li>Bronze Stash</li>
+                                <li>Silver Stash</li>
+                                <li>Golden Stash</li>
+                                <li>Vibranium Stash</li>
+                            </ul>
                         </div>
-                        <div class="p-inner">
-                            <h4>Creative Poster Design</h4>
-                            <div class="cat">Agency</div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio col-sm-4 all printing">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p4.jpg" alt="">
-                            </div>
-                            <a href="img/p4.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                            </a>                                    
-                        </div> 
-                        <div class="p-inner">
-                            <h4>Embosed Logo Design</h4>
-                            <div class="cat">Portal</div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio col-sm-4 all vector">
-                        <div class="relative">
-                        <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p5.jpg" alt="">
-                            </div>
-                            <a href="img/p5.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                            </a>                                    
-                        </div>
-                        <div class="p-inner">
-                            <h4>3D Helmet Design</h4>
-                            <div class="cat">vector</div>
-                        </div>
-                    </div>
-                    <div class="single-portfolio col-sm-4 all raster">
-                        <div class="relative">
-                            <div class="thumb">
-                                <div class="overlay overlay-bg"></div>
-                                 <img class="image img-fluid" src="img/p6.jpg" alt="">
-                            </div>
-                            <a href="img/p6.jpg" class="img-pop-up">    
-                              <div class="middle">
-                                <div class="text align-self-center d-flex"><img src="img/preview.png" alt=""></div>
-                              </div>
-                            </a>                                    
-                        </div>
-                        <div class="p-inner">
-                            <h4>2D Vinyl Design</h4>
-                            <div class="cat">raster</div>
+                        <div class="col-lg-3 b blue-bg">
+                            <hr>
+                            <h3 class="white"><strong>Use ohzz</strong></h3>
+                            <hr>
+                            <p>Search, identify and secure the following packs using your ohzz stash;</p>
+                            <ul style="list-style-type:square;" class="lt-al">    
+                                <li>Airtime</li>
+                                <li>Food</li>
+                                <li>Accommodation</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div> -->
-            
+            </div>
         </div>
     </section>
-    <!-- End portfolio-area Area -->    
-
-    <!-- Start testimonial Area -->
-    <!-- <section class="testimonial-area section-gap">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="menu-content pb-70 col-lg-8">
-                    <div class="title text-center">
-                        <h1 class="mb-10">Client’s Feedback About Me</h1>
-                        <p>It is very easy to start smoking but it is an uphill task to quit it. Ask any chain smoker or even a person.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="active-testimonial">
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/elements/user1.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the bigger the payoff you.            
-                            </p>
-                            <h4>Harriet Maxwell</h4>
-                            <p>CEO at Google</p>
-                        </div>
-                    </div>
-                    <div class="single-testimonial item d-flex flex-row">
-                        <div class="thumb">
-                            <img class="img-fluid" src="img/elements/user2.png" alt="">
-                        </div>
-                        <div class="desc">
-                            <p>
-                                A purpose is the eternal condition for success. Every former smoker can tell you just how hard it is to stop smoking cigarettes. However.
-                            </p>
-                            <h4>Carolyn Craig</h4>
-                            <p>CEO at Facebook</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End testimonial Area -->
+    <!-- End portfolio-area Area --> 
 
     <!-- Start price Area -->
     <section class="price-area section-gap">
@@ -312,7 +194,15 @@
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1 class="mb-10">Choose Your Plan</h1>
+                        <h1><b>Ohzz Value</b></h1>
+                        <hr>
+                            <h5>0.1 <small class="red">ohzz</small> = UGX 500.</h5><br>
+                            <h5>1 <small class="red">ohzz</small> = UGX 5000.</h5>
+                        <hr>
+                    </div>
+                    <br>
+                    <div class="title text-center">
+                        <h1 class="mb-10"><b>Choose Your Stash</b></h1>
                     </div>
                 </div>
             </div>                  
@@ -321,17 +211,16 @@
                     <div class="top-part">
                         <h1 class="package-no">04</h1>
                         <h4>Bronze</h4>
-                        <p class="mt-10">1 ohzz</p>
+                        <p class="mt-10 red">1 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles for interface</li>
-                            <li>Reliable Customer Service</li>
+                            <li>Airtime</li>
+                            <li>Food</li>
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 5000</h1>
+                        <h1>UGX 5,000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>
@@ -339,35 +228,38 @@
                     <div class="top-part">
                         <h1 class="package-no">03</h1>
                         <h4>Silver</h4>
-                        <p class="mt-10">10 ohzz</p>
+                        <p class="mt-10 red">10 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles for interface</li>
-                            <li>Reliable Customer Service</li>
+                            <li>Airtime</li>
+                            <li>Food</li>
+                            <li>Mobile Money</li>
+                            <li>Accommodation Booking fee</li>
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 50000</h1>
+                        <h1>UGX 50,000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">02</h1>
-                        <h4>Gold</h4>
-                        <p class="mt-10">50 ohzz</p>
+                        <h4>Golden</h4>
+                        <p class="mt-10 red">50 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles for interface</li>
-                            <li>Reliable Customer Service</li>
+                            <li>Airtime</li>
+                            <li>Food</li>
+                            <li>Mobile Money</li>
+                            <li>Accommodation Booking fee</li>
+                            <li>Accommodation Payment Installation</li>
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 250000</h1>
+                        <h1>UGX 250,000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>
@@ -375,17 +267,20 @@
                     <div class="top-part">
                         <h1 class="package-no">01</h1>
                         <h4>Vibranium</h4>
-                        <p class="mt-10">200</p>
+                        <p class="mt-10 red">200 ohzz</p>
                     </div>
                     <div class="package-list">
                         <ul>
-                            <li>Secure Online Transfer</li>
-                            <li>Unlimited Styles for interface</li>
-                            <li>Reliable Customer Service</li>
+                            <li>Airtime</li>
+                            <li>Food</li>
+                            <li>Mobile Money</li>
+                            <li>Accommodation Booking fee</li>
+                            <li>Accommodation Payment Installation</li>
+                            <li>Accommodation Full Payment</li>
                         </ul>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 1000000</h1>
+                        <h1>UGX 1,000,000</h1>
                         <a class="price-btn text-uppercase" href="#">Buy Now</a>
                     </div>
                 </div>                                                                      

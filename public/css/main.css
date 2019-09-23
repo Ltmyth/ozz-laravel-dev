@@ -95,6 +95,13 @@ $black			: #222;
   float:left;
 }
 
+.b{
+  border:1px solid;
+  border-color:white;
+  opacity:0.7;
+  border-radius:10px;
+}
+
 .ct-al{
   text-align:center;
 }
@@ -145,6 +152,7 @@ $black			: #222;
 
 .blue-bg{
   background: blue;
+  color:white;
 }
 
 .blue{
@@ -2395,6 +2403,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
   background: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  color: black;
 }
 
 .p1-gradient-color, .single-services:hover .lnr {

@@ -111,7 +111,7 @@
                                 <li>
                                     <a href="/register">
                                         <button class="btn btn-lg btn-outline-primary white px100">
-                                            Signup
+                                            Register
                                         </button>
                                     </a>
                                 </li>

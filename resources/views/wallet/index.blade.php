@@ -87,8 +87,7 @@
       				<label>
       					<h3>
       						<strong>
-      							<b class="red">Top-Up</b>
-      							(<b><i><small class="orange">0zz</small></i></b>)
+      							<b class="red">Top-Up Stash</b>
       						</strong>
       					</h3>
       				</label>
