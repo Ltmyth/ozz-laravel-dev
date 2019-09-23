@@ -42,9 +42,9 @@
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About Us</b></h1>
                     <p > 
-                       <h5 class="lt-al"> Here to connect <br>
-                        community-based users to each other <br>
-                        and to respective community-based services <br>quickly and click easily.</h5>
+                       <h5 class="lt-al"> Here to connect 
+                        community-based users to each other 
+                        and to respective community-based services quickly and click easily.</h5>
                     </p>
                     <!-- <a href="#" class="primary-btn text-uppercase">View Full Details</a> -->
                 </div>
