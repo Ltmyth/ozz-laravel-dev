@@ -222,7 +222,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 5,000</h1>
-                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
+                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -241,7 +241,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 50,000</h1>
-                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
+                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -261,7 +261,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 250,000</h1>
-                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
+                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -282,7 +282,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 1,000,000</h1>
-                        <a class="price-btn text-uppercase" href="#">Buy Now</a>
+                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
                     </div>
                 </div>                                                                      
             </div>
