@@ -41,8 +41,8 @@
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About Us</b></h1>
-                    <p>
-                       <h5> Built to connect <br>
+                    <p > 
+                       <h5 class="lt-al"> Here to connect <br>
                         community-based users to each other <br>
                         and to respective community-based services <br>quickly and click easily.</h5>
                     </p>
@@ -60,8 +60,8 @@
                 <div class="menu-content  col-lg-7">
                     <div class="title text-center">
                         <h1 class="mb-10"><b>Accessible Services</b></h1>
-                        <h4>
-                            Top up your stash/wallet accordingly to get the following life pack at your finger tips.
+                        <h4 class="lt-al">
+                            Top up your wallet stash accordingly to get the following life pack at your finger tips.
                         </h4>
                     </div>
                 </div>
@@ -72,7 +72,7 @@
                         <span class="lnr lnr-users"></span>
                         <a href="#"><h4>People</h4></a>
                         <p class="lt-al">
-                            Connect with people in your community or neighborhood.
+                            Connect with people in your community or neighborhood at no cost.
                         </p>
                     </div>
                 </div>
@@ -108,12 +108,12 @@
                         <span class="lnr lnr-briefcase"></span>
                         <a href="#"><h4>Payments</h4></a>
                         <p class="lt-al">
-                            Make payments from your ohzz wallet to another user's wallet or list of users.
-                            You can also liquidate or cashout ohzz from your wallet into a mobile money account or list of accounts.
+                            Make payments from your ohzz wallet stash to another user's wallet or list of users' wallets.
+                            You can also liquidate or cashout ohzz from your wallet stash into a mobile money account or list of accounts.
                         </p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-plus-circle"></span>
                         <a href="#"><h4>And more</h4></a>
@@ -121,7 +121,7 @@
                             We are working towards adding more services to the platform.
                         </p>
                     </div>              
-                </div>                                                      
+                </div>   -->                                                    
             </div>
         </div>  
     </section>
@@ -140,7 +140,7 @@
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
-                            <p class="lt-al">Using the following requirements;</p>
+                            <p class="lt-al">Ohzz has the following sign up requirements;</p>
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>A Valid email</li>
                                 <li>A Unique username</li>
@@ -151,7 +151,7 @@
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
-                            <p>Complete your user profile by adding your;</p>
+                            <p class="lt-al">Complete your user profile by adding your;</p>
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>First and last names</li>
                                 <li>Active mobile phone number</li>
@@ -169,12 +169,13 @@
                                 <li>Golden Stash</li>
                                 <li>Vibranium Stash</li>
                             </ul>
+                            <br><br>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Use ohzz</strong></h3>
                             <hr>
-                            <p>Search, identify and secure the following packs using your ohzz stash;</p>
+                            <p class="lt-al">Search, identify and secure the following packs using your ohzz stash;</p>
                             <ul style="list-style-type:square;" class="lt-al">    
                                 <li>Airtime</li>
                                 <li>Food</li>
@@ -194,10 +195,10 @@
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
                     <div class="title text-center">
-                        <h1><b>Ohzz Value</b></h1>
+                        <h1><b>Fixed Ohzz Stash Value and Cost</b></h1>
                         <hr>
-                            <h5>0.1 <small class="red">ohzz</small> = UGX 500.</h5><br>
-                            <h5>1 <small class="red">ohzz</small> = UGX 5000.</h5>
+                            <h5>0.1 <big class="red">ohzz</big> = UGX 500.</h5><br>
+                            <h5>1 <big class="red">ohzz</big>= UGX 5000.</h5>
                         <hr>
                     </div>
                     <br>
@@ -210,7 +211,7 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">04</h1>
-                        <h4>Bronze</h4>
+                        <h4>Bronze Stash</h4>
                         <p class="mt-10 red">1 ohzz</p>
                     </div>
                     <div class="package-list">
@@ -227,7 +228,7 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">03</h1>
-                        <h4>Silver</h4>
+                        <h4>Silver Stash</h4>
                         <p class="mt-10 red">10 ohzz</p>
                     </div>
                     <div class="package-list">
@@ -246,7 +247,7 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">02</h1>
-                        <h4>Golden</h4>
+                        <h4>Golden Stash</h4>
                         <p class="mt-10 red">50 ohzz</p>
                     </div>
                     <div class="package-list">
@@ -266,7 +267,7 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">01</h1>
-                        <h4>Vibranium</h4>
+                        <h4>Vibranium Stash</h4>
                         <p class="mt-10 red">200 ohzz</p>
                     </div>
                     <div class="package-list">

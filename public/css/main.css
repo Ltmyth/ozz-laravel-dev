@@ -2142,11 +2142,12 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 673px) {
   #logo {
     margin-left: 20px;
+    width:50%;
   }
 }
 
 #logo img{
-  width:8%;
+  width:10%;
 }
 
 .nav-menu li:hover > a, .menu-active, .parent-active > .sf-with-ul {
@@ -2284,7 +2285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #mobile-nav-toggle i {
-  color: #222;
+  color: white;
   font-weight: 900;
 }
 
