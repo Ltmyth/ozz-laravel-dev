@@ -22,7 +22,7 @@
                     </div>
                     <a href="#">
                         <button class="primary-btn text-uppercase">
-                            join now
+                            join us now
                         </button>
                     </a>  
                       
@@ -71,46 +71,63 @@
                     <div class="single-services">
                         <span class="lnr lnr-users"></span>
                         <a href="#"><h4>People</h4></a>
-                        <p class="lt-al">
-                            Connect with people in your community or neighborhood at no cost.
-                        </p>
+                        <strong>
+                            <p class="lt-al">
+                                Connect with people in your community or neighborhood at no cost.
+                            </p>
+                        </strong>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-apartment"></span>
                         <a href="#"><h4>Accommodation</h4></a>
-                        <p class="lt-al">
-                            Find and secure accommodation within a community or destination of interest.
-                        </p>
+                        <strong>
+                            <p class="lt-al">
+                                Find and secure accommodation within a community or destination of interest.
+                                Chose from a live listing of ;
+                            </p>
+                            <ul style="list-style-type:square;" class="lt-al">
+                                <li>hostels</li>
+                                <li>hotels</li>
+                                <li>lodgings</li>
+                                <li>motels</li>
+                            </ul>
+                        </strong>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-dinner"></span>
                         <a href="#"><h4>Food</h4></a>
-                        <p class="lt-al">
-                            Search,  view and procure from community based food service providers and their various menus. 
-                        </p>
+                        <strong>
+                            <p class="lt-al">
+                                Search,  view and procure from community based food service providers and their various menus. 
+                            </p>
+                        </strong>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-tablet"></span>
                         <a href="#"><h4>Airtime</h4></a>
-                        <p class="lt-al">
-                           Buy airtime for your mobile phone number , a friend's number or  a list of acquaintances and associates.
-                        </p>
+                        <strong>
+                            <p class="lt-al">
+                               Buy airtime for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL</big> <strong>anywhere</strong> with internet connectivity.
+                            </p>
+                        </strong>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-briefcase"></span>
                         <a href="#"><h4>Payments</h4></a>
-                        <p class="lt-al">
-                            Make payments from your ohzz wallet stash to another user's wallet or list of users' wallets.
-                            You can also liquidate or cashout ohzz from your wallet stash into a mobile money account or list of accounts.
-                        </p>
+                        <strong>
+                            <p class="lt-al">
+                                Make payments from your ohzz wallet stash to another user's wallet or list of users' wallets.
+                                <!-- You can also liquidate or cashout ohzz from your wallet stash into a mobile money account or list of accounts. -->
+                            </p>
+                        </strong>
                     </div>
                 </div>
                 <!-- <div class="col-lg-4 col-md-6">
@@ -141,46 +158,53 @@
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
                             <p class="lt-al">Ohzz has the following sign up requirements;</p>
+                            <hr>
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>A Valid email</li>
                                 <li>A Unique username</li>
                                 <li>A memorable strong password</li>
                             </ul>
+                            <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
                             <p class="lt-al">Complete your user profile by adding your;</p>
+                            <hr>
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>First and last names</li>
                                 <li>Active mobile phone number</li>
                                 <li>Security question</li>
                             </ul>
+                            <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
                             <p>Navigate to your wallet and choose a stash to topup from the following;</p>
+                            <hr>
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>Bronze Stash</li>
                                 <li>Silver Stash</li>
                                 <li>Golden Stash</li>
                                 <li>Vibranium Stash</li>
                             </ul>
-                            <br><br>
+                            <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Use ohzz</strong></h3>
                             <hr>
                             <p class="lt-al">Search, identify and secure the following packs using your ohzz stash;</p>
+                            <hr>
                             <ul style="list-style-type:square;" class="lt-al">    
                                 <li>Airtime</li>
                                 <li>Food</li>
                                 <li>Accommodation</li>
                             </ul>
+                            <hr>
                         </div>
                     </div>
                 </div>
@@ -194,8 +218,8 @@
         <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
-                    <div class="title text-center">
-                        <h1><b>Fixed Ohzz Stash Value and Cost</b></h1>
+                    <div class="title text-center blue-bg">
+                        <h1 class="white">Fixed Ohzz Stash <big class="red">Value</big> and <big class="red">Cost</big></h1>
                         <hr>
                             <h5>0.1 <big class="red">ohzz</big> = UGX 500.</h5><br>
                             <h5>1 <big class="red">ohzz</big>= UGX 5000.</h5>
@@ -215,74 +239,84 @@
                         <p class="mt-10 red">1 ohzz</p>
                     </div>
                     <div class="package-list">
-                        <ul>
-                            <li>Airtime</li>
-                            <li>Food</li>
-                        </ul>
+                        <strong>
+                            <ul>
+                                <li>Airtime</li>
+                                <li>Food</li>
+                            </ul>
+                        </strong>
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 5,000</h1>
-                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">03</h1>
                         <h4>Silver Stash</h4>
-                        <p class="mt-10 red">10 ohzz</p>
+                        <strong><p class="mt-10 red">10 ohzz</p></strong>
                     </div>
                     <div class="package-list">
-                        <ul>
-                            <li>Airtime</li>
-                            <li>Food</li>
-                            <li>Mobile Money</li>
-                            <li>Accommodation Booking fee</li>
-                        </ul>
+                        <strong>    
+                            <ul class="lt-al">
+                                <li>Airtime</li>
+                                <li>Food</li>
+                                <li>Mobile Money</li>
+                                <li>Accommodation Booking fee</li>
+                            </ul>
+                        </strong>
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 50,000</h1>
-                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">02</h1>
                         <h4>Golden Stash</h4>
-                        <p class="mt-10 red">50 ohzz</p>
+                        <strong><p class="mt-10 red">50 ohzz</p></strong>
                     </div>
                     <div class="package-list">
-                        <ul>
-                            <li>Airtime</li>
-                            <li>Food</li>
-                            <li>Mobile Money</li>
-                            <li>Accommodation Booking fee</li>
-                            <li>Accommodation Payment Installation</li>
-                        </ul>
+                        <strong>
+                            <ul class="lt-al">
+                                <li>Airtime</li>
+                                <li>Food</li>
+                                <li>Mobile Money</li>
+                                <li>Accommodation Booking fee</li>
+                                <li>Accommodation Payment Installation</li>
+                            </ul>
+                        </strong>
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 250,000</h1>
-                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <h1 class="package-no">01</h1>
                         <h4>Vibranium Stash</h4>
-                        <p class="mt-10 red">200 ohzz</p>
+                        <strong><p class="mt-10 red">200 ohzz</p></strong>
                     </div>
                     <div class="package-list">
-                        <ul>
-                            <li>Airtime</li>
-                            <li>Food</li>
-                            <li>Mobile Money</li>
-                            <li>Accommodation Booking fee</li>
-                            <li>Accommodation Payment Installation</li>
-                            <li>Accommodation Full Payment</li>
-                        </ul>
+                        <strong>
+                            <ul class="lt-al">
+                                <li>Airtime</li>
+                                <li>Food</li>
+                                <li>Mobile Money</li>
+                                <li>Accommodation Booking fee</li>
+                                <li>Accommodation Payment Installation</li>
+                                <li>Accommodation Full Payment</li>
+                            </ul>
+                        </strong>
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 1,000,000</h1>
-                        <a class="price-btn text-uppercase" href="/login/">Buy Now</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">
+                            REQUEST TOPUP
+                        </a>
                     </div>
                 </div>                                                                      
             </div>
