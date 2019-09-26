@@ -42,7 +42,7 @@
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About Us</b></h1>
                     <p > 
-                       <h5 class="lt-al"> Here to connect 
+                       <h5 class="lt-al"> We are here to connect 
                         community-based users to each other 
                         and to respective community-based services quickly and click easily.</h5>
                     </p>
@@ -88,10 +88,11 @@
                                 Chose from a live listing of ;
                             </p>
                             <ul style="list-style-type:square;" class="lt-al">
-                                <li>hostels</li>
-                                <li>hotels</li>
-                                <li>lodgings</li>
-                                <li>motels</li>
+                                <li>Hotels</li>
+                                <li>Hostels</li>
+                                <li>Appartments</li>
+                                <li>Lodgings</li>
+                                <li>Motels</li>
                             </ul>
                         </strong>
                     </div>
@@ -113,7 +114,7 @@
                         <a href="#"><h4>Airtime</h4></a>
                         <strong>
                             <p class="lt-al">
-                               Buy airtime for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL</big> <strong>anywhere</strong> with internet connectivity.
+                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24/7</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> 
                             </p>
                         </strong>
                     </div>
@@ -130,15 +131,17 @@
                         </strong>
                     </div>
                 </div>
-                <!-- <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <span class="lnr lnr-plus-circle"></span>
-                        <a href="#"><h4>And more</h4></a>
-                        <p class="lt-al">
-                            We are working towards adding more services to the platform.
-                        </p>
+                        <a href="#"><h4>Secure and transparent transactions</h4></a>
+                        <strong>
+                            <p class="lt-al">
+                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohzz <strong class="red">transactions ledger</strong> which is a portal displaying all <big class='orange'>ohzz</big> transactions.
+                            </p>
+                        </strong>
                     </div>              
-                </div>   -->                                                    
+                </div>                                                      
             </div>
         </div>  
     </section>
@@ -157,54 +160,62 @@
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
-                            <p class="lt-al">Ohzz has the following sign up requirements;</p>
+                            <strong><p class="lt-al">Ohzz has the following sign up requirements;</p></strong>
                             <hr>
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>A Valid email</li>
-                                <li>A Unique username</li>
-                                <li>A memorable strong password</li>
-                            </ul>
+                            <strong>
+                                <ul style="list-style-type:square;" class="lt-al">
+                                    <li>A Valid email</li>
+                                    <li>A Unique username</li>
+                                    <li>A memorable strong password</li>
+                                </ul>
+                            </strong>
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
-                            <p class="lt-al">Complete your user profile by adding your;</p>
+                            <strong><p class="lt-al">Complete your user profile by adding your;</p></strong>
                             <hr>
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>First and last names</li>
-                                <li>Active mobile phone number</li>
-                                <li>Security question</li>
-                            </ul>
+                            <strong>
+                                <ul style="list-style-type:square;" class="lt-al">
+                                    <li>First and last names</li>
+                                    <li>Active mobile phone number</li>
+                                    <li>Security question</li>
+                                </ul>
+                            </strong>
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
-                            <p>Navigate to your wallet and choose a stash to topup from the following;</p>
+                            <strong><p>Navigate to your wallet and choose a stash to topup from the following;</p></strong>
                             <hr>
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>Bronze Stash</li>
-                                <li>Silver Stash</li>
-                                <li>Golden Stash</li>
-                                <li>Vibranium Stash</li>
-                            </ul>
+                            <strong>
+                                <ul style="list-style-type:square;" class="lt-al">
+                                    <li>Bronze Stash</li>
+                                    <li>Silver Stash</li>
+                                    <li>Golden Stash</li>
+                                    <li>Vibranium Stash</li>
+                                </ul>
+                            </strong>
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <hr>
                             <h3 class="white"><strong>Use ohzz</strong></h3>
                             <hr>
-                            <p class="lt-al">Search, identify and secure the following packs using your ohzz stash;</p>
-                            <hr>
-                            <ul style="list-style-type:square;" class="lt-al">    
-                                <li>Airtime</li>
-                                <li>Food</li>
-                                <li>Accommodation</li>
-                            </ul>
-                            <hr>
+                            <strong>
+                                <p class="lt-al">Search, identify and secure the following packs using your ohzz stash;</p>
+                                <hr>
+                                <ul style="list-style-type:square;" class="lt-al">    
+                                    <li>Airtime</li>
+                                    <li>Food</li>
+                                    <li>Accommodation</li>
+                                </ul>
+                                <hr>
+                            </strong>
                         </div>
                     </div>
                 </div>
@@ -218,12 +229,21 @@
         <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
-                    <div class="title text-center blue-bg">
-                        <h1 class="white">Fixed Ohzz Stash <big class="red">Value</big> and <big class="red">Cost</big></h1>
-                        <hr>
-                            <h5>0.1 <big class="red">ohzz</big> = UGX 500.</h5><br>
-                            <h5>1 <big class="red">ohzz</big>= UGX 5000.</h5>
-                        <hr>
+                    <div class="title text-center">
+                        <h1>Fixed Ohzz Stash <big class="red">Value</big> and <big class="red">Cost</big></h1>
+                        <div class="container blue-bg br-10">
+                            <hr>
+                                <h5 class="white">0.1 <big class="red">ohzz</big> <big><strong>=</strong></big> <big class="red">UGX</big> 500.</h5><br>
+                                <h5 class="white">1 <big class="red">ohzz</big><big><strong>=</strong></big> <big class="red">UGX</big> 5000.</h5>
+                            <hr>
+                            <strong><u><h4 class="white">Disclaimer!</h4></u></strong>
+                            <h5>
+                                <p class="white pb-30 lt-al">
+                                    The <big>minimum</big> top up a user can request for is <strong class="red">1</strong> <strong class="orange">ohzz</strong> and <big>maximum</big> top up
+                                    </big> request limit is <strong class="red">200</strong> <strong class="orange">ohzz</strong>.However there are no limits on stash or wallet balances.
+                                </p>
+                            </h5>
+                        </div> 
                     </div>
                     <br>
                     <div class="title text-center">
@@ -248,7 +268,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 5,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -269,7 +289,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 50,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -291,7 +311,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 250,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -314,7 +334,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 1,000,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase" href="/login/">
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">
                             REQUEST TOPUP
                         </a>
                     </div>

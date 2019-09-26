@@ -101,7 +101,9 @@ $black			: #222;
   opacity:0.7;
   border-radius:10px;
 }
-
+.br-10{
+  border-radius: 10px;
+}
 .ct-al{
   text-align:center;
 }
@@ -130,6 +132,10 @@ $black			: #222;
   color:green;
 }
 
+.c_thru{
+  background: transparent;
+}
+
 .red-bg{
   background: red;
 }
@@ -149,9 +155,26 @@ $black			: #222;
 .op7{
   opacity:0.7;
 }
+@media (max-width: 768px) {
+  #home_btn{
+    margin:15px 0px 5px 0px;
+  }
+  #accoms_btn{
+    margin:5px 0px 5px 0px;
+  }
+  #food_btn{
+    margin:5px 0px 5px 0px;
+  }
+  #at_btn{
+    margin:5px 0px 5px 0px;
+  }
+  .col-md-4{
+    margin:10px 0px 15px 0px;
+  }
 
+}
 .blue-bg{
-  background: blue;
+  background:#8490ff;
   color:white;
 }
 

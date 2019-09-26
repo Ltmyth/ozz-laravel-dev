@@ -33,7 +33,7 @@
 						</div>
 						<div class="row">
 							<div class="col-md-2"></div>
-							<div class="col-md-8 blue-bg op7">
+							<div class="col-md-8 blue-bg op7 br-10">
 								<a href="/posts_show/{{ $post->id }}">
 									<div class="col-md-8 lt-al">
 										<p>
