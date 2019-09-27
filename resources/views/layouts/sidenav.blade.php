@@ -80,7 +80,7 @@
 
         <a href="/home">
             <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                <i class="glyphicon glyphicon-house"></i>
+                <span class="lnr lnr-users"></span>
                 <strong>  
                     People
                 </strong>
@@ -89,6 +89,7 @@
 
        <a href="/accommodation/">
             <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-apartment"></span>
                 <strong>  
                     Accommodation
                 </strong>
@@ -97,12 +98,14 @@
 
         <a href="/food/">
             <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                 <span class="lnr lnr-dinner"></span>
                <strong>Food</strong>
             </button>
         </a>
 
         <a href="/airtime/">
            <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-tablet"></span>
                <strong>Airtime</strong>
            </button>
         </a>

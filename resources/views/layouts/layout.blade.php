@@ -82,7 +82,7 @@
                                 </li>
                                 <li class="menu-has-children">
                                     <a href="">
-                                        <strong id="profile_btn" class="white">
+                                        <strong id="profile_btn" class="br-10">
                                             <big>
                                                 <i class="lnr lnr-user orange"></i>
                                             </big>
