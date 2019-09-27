@@ -45,10 +45,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="{{ route('ss_hostels') }}">
-					<button class="btn btn-md btn-default">
+					<button class="btn btn-md btn-default blue-bg pt-20 pb-20">
 						<img src="{{ asset('/imgs/singlesex1.jpeg') }}">
 						<br>
-						Single Sex
+						<strong>Single Sex</strong>
 					</button>
 				</a>
 			</h4>	
@@ -56,10 +56,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="/ms_hostels/">
-					<button class="btn btn-md btn-default">
+					<button class="btn btn-md btn-default blue-bg pt-20 pb-20">
 						<img  src="{{ asset('/imgs/mixedsex.png') }}">
 						<br>
-						Mixed Sex
+						<strong>Mixed Sex</strong>
 					</button>
 				</a>
 			</h4>	
@@ -85,10 +85,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 					<img src="{{ asset('/imgs/hotelshort.jpeg') }}">
 					<br>
-						Single room
+						<strong>Single room</strong>
 					</button>
 				</a>
 			</h4>	
@@ -96,10 +96,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default ">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 						<img style="width:75%;" src="{{ asset('/imgs/singlebedapt.jpeg') }}">
 						<br>
-						Double or more rooms
+						<strong>Double or more rooms</strong>
 					</button>
 				</a>
 			</h4>	
@@ -126,10 +126,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="/sb_appartments/">
-					<button class="btn btn-lg btn-default ">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 					<img src="{{ asset('/imgs/hotelshort.jpeg') }}">
 					<br>
-						Single room
+						<strong>Single room</strong>
 					</button>
 				</a>
 			</h4>	
@@ -137,10 +137,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="/db_appartments/">
-					<button class="btn btn-lg btn-default">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 						<img style="width:75%;" src="{{ asset('/imgs/singlebedapt.jpeg') }}">
 						<br>
-						Double or more rooms
+						<strong>Double or more rooms</strong>
 					</button>
 				</a>
 			</h4>	
@@ -168,10 +168,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default ">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 					<img src="{{ asset('/imgs/hotelshort.jpeg') }}">
 					<br>
-						Single room
+						<strong>Single room</strong>
 					</button>
 				</a>
 			</h4>	
@@ -179,10 +179,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 						<img style="width:75%;" src="{{ asset('/imgs/singlebedapt.jpeg') }}">
 						<br>
-						Double or more rooms
+						<strong>Double or more rooms</strong>
 					</button>
 				</a>
 			</h4>	
@@ -209,10 +209,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 					<img src="{{ asset('/imgs/hotelshort.jpeg') }}">
 					<br>
-						Single room
+						<strong>Single room</strong>
 					</button>
 				</a>
 			</h4>	
@@ -220,10 +220,10 @@
 		<div class="col-md-4">
 			<h4>
 				<a href="#">
-					<button class="btn btn-lg btn-default">
+					<button class="btn btn-lg btn-default blue-bg pt-20 pb-20">
 						<img style="width:75%;" src="{{ asset('/imgs/singlebedapt.jpeg') }}">
 						<br>
-						Double or more rooms
+						<strong>Double or more rooms</strong>
 					</button>
 				</a>
 			</h4>	
@@ -231,7 +231,7 @@
 
 		<div class="col-md-3">
 			<a href="#">
-				<button class="btn btn-lg btn-default c_thru">
+				<button class="btn btn-lg btn-default c_thru ">
 					<i style="font-size:75px;" class="lnr lnr-chevron-right-circle"></i>
 					<br>
 					Explore All

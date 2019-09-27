@@ -36,18 +36,18 @@
 				</select>
 			</form>	
 		<br><br>
-		<h3>Available Restaurants / Service providers</h3>
+		<h3>Available Service providers</h3>
 		<hr class="container col-lg-8">	
 		<div class="row">
 			<div class="col-md-4">
 				
 				<h4>
 					<a href="/provider/">
-						<button class="btn btn-md btn-default">
+						<button class="btn btn-md btn-default blue-bg">
 							<br><br>
 							<img class="curve" src="{{ asset('/imgs/rolex.jpeg') }}">
 							<br>
-							<b>Dembe</b>
+							<b class="white">Dembe</b>
 							<br>
 						</button>						
 					</a>
@@ -57,11 +57,11 @@
 			<div class="col-md-4">
 				<h4>
 					<a href="/provider/">
-						<button class="btn btn-md btn-default">
+						<button class="btn btn-md btn-default blue-bg">
 							<br><br>
 							<img class="curve" style="width:80%;" src="{{ asset('/imgs/food.png') }}">
 							<br>
-							<b>Bobix</b>
+							<b class="white">Bobix</b>
 							<br>
 						</button>						
 					</a>
@@ -71,11 +71,11 @@
 			<div class="col-md-4 curve">
 				<h4>
 					<a href="/provider/">
-						<button class="btn btn-md btn-default">
+						<button class="btn btn-md btn-default blue-bg">
 							<br><br>
 							<img class="curve" style="width:80%;" src="{{ asset('/imgs/foodservice.jpeg') }}">
 							<br>
-							<b>Cafe Pora</b>
+							<b class="white">Cafe Pora</b>
 							<br>
 						</button>						
 					</a>

@@ -58,9 +58,9 @@
                                         <img src="/imgs/ozz-app.png" alt="" title="" />
                                     </a>
                                 </li>
-                                <li>
+                                <li id="messages_btn" class="br-10">
                                     <a   href="/messages">
-                                        <strong class="white">
+                                        <strong  class="white">
                                             <big>
                                                 <i class="lnr lnr-alarm orange"></i>
                                             </big>
@@ -69,7 +69,7 @@
                                         <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
                                 </li>
-                                <li>
+                                <li id="wallet_btn">
                                     <a   href="/wallet">
                                         <strong class="white"> 
                                             <big>
@@ -82,7 +82,7 @@
                                 </li>
                                 <li class="menu-has-children">
                                     <a href="">
-                                        <strong class="white">
+                                        <strong id="profile_btn" class="white">
                                             <big>
                                                 <i class="lnr lnr-user orange"></i>
                                             </big>

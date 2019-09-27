@@ -14,7 +14,8 @@
   		}
 
   		#wallet_btn{
-  			background-color:#2980b9;
+  			background-color:#8490ff;
+        border-radius: 10px;
   			color:white;
   			pointer-events: none;
   		}
@@ -43,7 +44,7 @@
       <br>
       	<h1 class="center" style="font-size:350%;">
       		<i class="glyphicon glyphicon-briefcase">
-      			<strong>Wallet</strong>
+      			<strong>Wallet / Stash</strong>
       		</i>
       	</h1>
         	<hr>
@@ -69,7 +70,7 @@
 
                     <a href="#">
                       <button class="btn btn-md btn-outline-info">
-                        History
+                        Share stash
                       </button>
                     </a>
 
@@ -91,7 +92,32 @@
       						</strong>
       					</h3>
       				</label>
-      				<input id="ozz-amount" placeholder="Ozz Amount" onkeyup="calculate()" type="number" value="ozz" class="form-control col-lg-8 container" name="amount">
+              <select class="form-control col-lg-8 container" required>
+                <option>
+                  Stash Package
+                </option>
+                <option value="vibranium">
+                  Vibranium
+                </option>
+                <option value="gold">
+                  Gold
+                </option>
+                <option value="silver">
+                  Silver
+                </option>
+                <option value="bronze">
+                  Bronze
+                </option>
+              </select>
+              <br>
+              <label>
+                <h3>
+                  <strong>
+                    <b >Number of packages</b>
+                  </strong>
+                </h3>
+              </label>
+      				<input id="ozz-amount" placeholder="01" onkeyup="calculate()" type="number" value="ozz" class="form-control col-lg-8 container" name="amount">
       				<br>
       				<label id="cost-label" style="display:none;">
       					<h3>

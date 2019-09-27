@@ -114,7 +114,8 @@
                         <a href="#"><h4>Airtime</h4></a>
                         <strong>
                             <p class="lt-al">
-                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24/7</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> 
+                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24/7</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                               This is currently applicable in Uganda alone.
                             </p>
                         </strong>
                     </div>

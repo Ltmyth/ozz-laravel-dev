@@ -8,7 +8,7 @@
 	</style>
 	@section('content')
 		<div style="border-radius:2%;
-			background:url('{{ asset('/imgs/green.jpg') }}');" class="row contain">
+			background:url('{{ asset('/imgs/green.jpg') }}');" class="row container">
 			<img 
 				id="profile-pic" 
 				style="border-radius: 50%;width:10%;" 
@@ -16,7 +16,7 @@
 				src="{{ asset('/imgs/ozz-app.png') }}"
 				alt="Avator" 
 			>	
-			<div class="white-bg col-md-5 center contain curve">
+			<div class="blue-bg col-md-5 center contain curve">
 				<h3>
 					<small>
 						<i class="glyphicon glyphicon-user">
@@ -57,7 +57,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-4 white-bg contain lt-al curve right">
+			<div class="col-md-4 blue-bg contain lt-al curve right">
 				<ul style="list-style:none;">
 					<hr>
 					<li>

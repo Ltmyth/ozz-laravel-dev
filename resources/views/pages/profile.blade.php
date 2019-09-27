@@ -7,7 +7,7 @@
 
 		
 		#profile_btn{
-			background-color:#2980b9;
+			background-color:#8490ff;
 			color:white;
 			pointer-events: none;
 		}
@@ -27,7 +27,7 @@
 		background-position: center; 
 		background-repeat: no-repeat;
 		background:url('{{ asset('/imgs/green.jpg') }}');" class="row ct-al">
-			<div class="white-bg col-md-5 container curve">
+			<div class="blue-bg col-md-5 container mt-20 pt-20 br-10 pb-20 mb-20">
 				<h3>
 					<small>
 						<i class="glyphicon glyphicon-user">
@@ -35,7 +35,7 @@
 						</i>
 					</small>
 					<hr>
-					<strong>{{ Auth::user()->name }}</strong>
+					<strong class="white">{{ Auth::user()->name }}</strong>
 				</h3>
 				<hr>
 				<br><br>
@@ -46,7 +46,7 @@
 						</i>
 					</small>
 					<hr>
-					<strong>{{ Auth::user()->email }}</strong>
+					<strong class="white">{{ Auth::user()->email }}</strong>
 				</h3>
 				<hr>
 				<br><br>
@@ -57,7 +57,7 @@
 						</i>
 					</small> 
 					<hr>
-					<strong>+256-7xx-xxxx</strong>
+					<strong class="white">+256-7xx-xxxx</strong>
 				</h3>
 				<hr>
 				<br><br>
@@ -68,7 +68,7 @@
 				</div>
 			</div>
 
-			<div class="col-md-5 white-bg container curve">
+			<div class="col-md-5 blue-bg container mt-20 pt-20 br-10 pb-20 mb-20">
 				<ul style="list-style:none;">
 					<hr>
 					<li>
@@ -77,6 +77,14 @@
 								<h4><big><i>People</i> : 0</big></h4>
 							</button>
 						</a>
+					</li>
+					<br><br>
+					<li>
+						<input type="text" placeholder="search user name" class="form-control">
+					</li>
+					<br>
+					<li>
+						<input type="submit" name="search" value="Search">
 					</li>
 					<br><br>
 					<li>
@@ -95,11 +103,13 @@
 					</li>
 					<hr>
 					<li>
-						<p>
-			                Add users you know
-			                to your 0z circle(s) and view their posts
-			                or message them.
-			            </p>
+						<strong>
+							<p>
+				                Add users you know
+				                to your 0z circle(s) and view their posts
+				                or message them.
+				            </p>
+						</strong>
 					</li>
 					<hr>
 					<li>
