@@ -21,12 +21,7 @@
     	</div>
 	</div>
 
-		<div 
-		style="border-radius:2%;
-		background-size: contain;
-		background-position: center; 
-		background-repeat: no-repeat;
-		background:url('{{ asset('/imgs/green.jpg') }}');" class="row ct-al">
+		<div class="row ct-al">
 			<div class="blue-bg col-md-5 container mt-20 pt-20 br-10 pb-20 mb-20">
 				<h3>
 					<small>
