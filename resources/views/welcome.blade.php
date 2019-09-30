@@ -37,7 +37,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 home-about-left">
-                    <img class="img-fluid" src="img/about-img.png" alt="">
+                    <img class="img-fluid" style="width:60%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About Us</b></h1>
@@ -230,18 +230,19 @@
         <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
+                    <button class="btn btn-lg btn-outline-danger">PRICING</button>
                     <div class="title text-center">
-                        <h1>Fixed Ohzz Stash <big class="red">Value</big> and <big class="red">Cost</big></h1>
+                        <h1><b>Ohzz Stash Value and Cost</b></h1>
                         <div class="container blue-bg br-10">
                             <hr>
-                                <h5 class="white">0.1 <big class="red">ohzz</big> <big><strong>=</strong></big> <big class="red">UGX</big> 500.</h5><br>
-                                <h5 class="white">1 <big class="red">ohzz</big><big><strong>=</strong></big> <big class="red">UGX</big> 5000.</h5>
+                                <h5 class="white">0.1 <big class="orange">ohzz</big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
+                                <h5 class="white">1 <big class="orange">ohzz</big><big><strong>=</strong></big> <big class="orange">UGX</big> 5000.</h5>
                             <hr>
-                            <strong><u><h4 class="white">Disclaimer!</h4></u></strong>
+                            <strong><u><h4 class="red">Disclaimer!</h4></u></strong>
                             <h5>
                                 <p class="white pb-30 lt-al">
-                                    The <big>minimum</big> top up a user can request for is <strong class="red">1</strong> <strong class="orange">ohzz</strong> and <big>maximum</big> top up
-                                    </big> request limit is <strong class="red">200</strong> <strong class="orange">ohzz</strong>.However there are no limits on stash or wallet balances.
+                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange">ohzz</strong> and <big>maximum</big> top up
+                                    </big> request limit is <strong>200</strong> <strong class="orange">ohzz</strong>.However there are no limits on stash or wallet balances.
                                 </p>
                             </h5>
                         </div> 
@@ -255,7 +256,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">04</h1>
+                        <img class="package-no" style="width:60%;" src="imgs/bronze.svg" alt="">
                         <h4>Bronze Stash</h4>
                         <p class="mt-10 red">1 ohzz</p>
                     </div>
@@ -274,7 +275,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">03</h1>
+                        <img class="package-no" style="width:60%;" src="imgs/silver.svg" alt="">
                         <h4>Silver Stash</h4>
                         <strong><p class="mt-10 red">10 ohzz</p></strong>
                     </div>
@@ -295,7 +296,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">02</h1>
+                        <img class="package-no" style="width:60%;" src="imgs/gold.svg" alt="">
                         <h4>Golden Stash</h4>
                         <strong><p class="mt-10 red">50 ohzz</p></strong>
                     </div>
@@ -317,7 +318,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <h1 class="package-no">01</h1>
+                        <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
                         <h4>Vibranium Stash</h4>
                         <strong><p class="mt-10 red">200 ohzz</p></strong>
                     </div>

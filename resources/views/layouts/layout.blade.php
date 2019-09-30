@@ -182,7 +182,34 @@
             </div> -->
 
         <div class="col-lg-12 col-sm-12">
-            <!-- background:#dff9fb; -->
+
+            <style>
+                .loader {
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    z-index: 9999;
+                    background-color: #ffffffcf;
+                }
+                .loader img{
+                    position: relative;
+                    left: 40%;
+                    top: 40%;
+                }
+            </style>
+
+            <div class="loader" ><img src="/img/rubiks.gif/"></div>
+
+            <script>
+                window.onload = function() 
+                {
+                    //display loader on page load 
+                    $('.loader').fadeOut();
+                }
+
+            </script><!-- background:#dff9fb; -->
             @if( session()->has('message') )
                 <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-success" role="alert">
                     {{ session()->get('message') }}
