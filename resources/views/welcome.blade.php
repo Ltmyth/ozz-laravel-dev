@@ -122,7 +122,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-briefcase"></span>
+                        <span class="package-no  lnr lnr-briefcase"></span>
                         <a href="#"><h4>Payments</h4></a>
                         <strong>
                             <p class="lt-al">
@@ -158,6 +158,7 @@
                     <h1 class="mb-10"><b>How it works</b></h1>
                     <div class="row">
                         <div class="col-lg-3 b blue-bg">
+                            <img class="package-no pt-20" style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
@@ -173,6 +174,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
+                            <img class="package-no pt-20" style="width:50px;" src="imgs/two.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
@@ -188,6 +190,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
+                            <img class="package-no pt-20" style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
@@ -204,6 +207,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
+                            <img class="package-no pt-20" style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Use ohzz</strong></h3>
                             <hr>

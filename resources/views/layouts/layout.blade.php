@@ -200,7 +200,7 @@
                 }
             </style>
 
-            <div class="loader" ><img src="/img/rubiks.gif/"></div>
+            <!-- <div class="loader" ><img src="/img/rubiks.gif/"></div> -->
 
             <script>
                 window.onload = function() 
