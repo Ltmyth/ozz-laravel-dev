@@ -183,8 +183,8 @@
                             <strong>
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>First and last names</li>
-                                    <li>Active mobile phone number</li>
-                                    <li>Security question</li>
+                                    <li>Active mobile money or phone number</li>
+                                    <li>Security code</li>
                                 </ul>
                             </strong>
                             <hr>
