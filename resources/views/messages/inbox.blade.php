@@ -108,8 +108,8 @@
         </form>
     </div> -->
         <div class="row">
-            <div style="border-top-left-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20  pb-20 pl-10">
-                <p class="lt-al ml-30 mr-30"><strong>txt</strong></p>
+            <div style="border-bottom-left-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20  pb-20 ml-5">
+                <p class="lt-al ml-30 mr-10"><strong>txt</strong></p>
             </div>
         </div>
         
@@ -117,8 +117,8 @@
         <div class="row">
            <div class="col-lg-5">               
            </div> 
-           <div style="border-top-right-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20 pb-20 pr-10">
-                <p class="lt-al ml-30 mr-30"><strong>txt</strong></p>
+           <div style="border-bottom-right-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20 pb-20 pr-10">
+                <p class="lt-al ml-10 mr-30"><strong>txt</strong></p>
             </div>
         </div>
         
