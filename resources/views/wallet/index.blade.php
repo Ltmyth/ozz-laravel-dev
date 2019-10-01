@@ -33,7 +33,7 @@
 
   			/*calculation*/
   			var cost = 0;
-  			cost = x * 1000;
+  			cost = x * 5000;
 
   			/*set value*/
   			z.setAttribute("value", cost);
@@ -96,18 +96,21 @@
                 <option>
                   Stash Package
                 </option>
-                <option value="vibranium">
-                  Vibranium
-                </option>
-                <option value="gold">
-                  Gold
+                <option value="bronze">
+                  Bronze Stash
                 </option>
                 <option value="silver">
-                  Silver
+                  Silver Stash
                 </option>
-                <option value="bronze">
-                  Bronze
+                <option value="gold">
+                  Golden Stash
                 </option>
+                <option value="vibranium">
+                  Vibranium Stash
+                </option>
+                
+                
+                
               </select>
               <br>
               <label>
@@ -117,12 +120,12 @@
                   </strong>
                 </h3>
               </label>
-      				<input id="ozz-amount" placeholder="01" onkeyup="calculate()" type="number" value="ozz" class="form-control col-lg-8 container" name="amount">
+      				<input id="ozz-amount" placeholder="01" onkeyup="calculate()" type="number"  class="form-control col-lg-8 container" name="amount">
       				<br>
       				<label id="cost-label" style="display:none;">
       					<h3>
       						<strong>
-      							Cost(<b><i><small class="red">Ugx</small></i></b>)
+      							<b>Will Only Cost  You</b>(<b><i><small class="red">Ugx</small></i></b>) 
       						</strong>
       					</h3>
       				</label>

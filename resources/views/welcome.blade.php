@@ -134,7 +134,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-plus-circle"></span>
+                        <span class="lnr lnr-lock"></span>
                         <a href="#"><h4>Secure and transparent transactions</h4></a>
                         <strong>
                             <p class="lt-al">
@@ -158,7 +158,7 @@
                     <h1 class="mb-10"><b>How it works</b></h1>
                     <div class="row">
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20" style="width:50px;" src="imgs/pointing-up.svg" alt="">
+                            <img class="package-no pt-20 white-bg br-10" style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
@@ -174,7 +174,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20" style="width:50px;" src="imgs/two.svg" alt="">
+                            <img class="package-no pt-20 white-bg br-10" style="width:50px;" src="imgs/hand.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
@@ -190,7 +190,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20" style="width:50px;" src="imgs/three.svg" alt="">
+                            <img class="package-no pt-20 white-bg br-10" style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
@@ -207,7 +207,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20" style="width:50px;" src="imgs/cart.svg" alt="">
+                            <img class="package-no pt-20 white-bg br-10" style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Use ohzz</strong></h3>
                             <hr>
@@ -234,9 +234,9 @@
         <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div id="pricing" class="menu-content pb-70 col-lg-8">
-                    <button class="btn btn-lg btn-outline-danger">PRICING</button>
+                    <button class="btn btn-lg btn-outline-danger">OHZZ PRICING</button>
                     <div class="title text-center">
-                        <h1><b>Ohzz Stash Value and Cost</b></h1>
+                        <h1><b>Stash Value and Cost</b></h1>
                         <div class="container blue-bg br-10">
                             <hr>
                                 <h5 class="white">0.1 <big class="orange">ohzz</big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
