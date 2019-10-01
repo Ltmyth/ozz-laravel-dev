@@ -10,14 +10,54 @@
     <!-- start banner Area -->
     <section class="#">
         <div class="container">
+            <a href="#about">
+                <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                    <span class="lnr lnr-users"></span>
+                    <strong>  
+                        About
+                    </strong>
+                </button>
+            </a>
+
+           <a href="#services">
+                <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                    <span class="lnr lnr-cog"></span>
+                    <strong>  
+                        Services
+                    </strong>
+                </button>
+            </a>
+
+           <a href="#how">
+                <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                    <span class="lnr lnr-cog"></span>
+                    <strong>  
+                        How it Works
+                    </strong>
+                </button>
+            </a>
+
+            <a href="#pricing">
+                <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                    <span class="lnr lnr-briefcase"></span>
+                    <strong>Pricing</strong>
+                </button>
+            </a>
+
+            <a href="#">
+               <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                    <span class="lnr lnr-phone"></span>
+                    <strong>Contact</strong>
+               </button>
+            </a>
             <div class="row fullscreen align-items-center">
                 <div class="col-lg-6 col-md-6 banner-left">
-                    <img style="width:100%;"  src="imgs/web.jpg" alt="">                    
+                    The <img style="width:50%;"  src="/imgs/ozz-app.png" alt="">.com                    
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
                     <div class="row">
-                        <h6>Welcome to ohzz</h6>
+                        <h6>Welcome to the ohz</h6>
                         <br>
                     </div>
                     <a href="#">
@@ -33,9 +73,9 @@
     <!-- End banner Area -->
 
     <!-- Start home-about Area -->
-    <section class="home-about-area">
+    <section id="about" class="home-about-area">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
+            <div  class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 home-about-left">
                     <img class="img-fluid" style="width:60%;" src="imgs/pointing-up.svg" alt="">
                 </div>
@@ -54,7 +94,7 @@
     <!-- End home-about Area -->
 
     <!-- Start services Area -->
-    <section class="services-area section-gap">
+    <section id="services"  class="services-area section-gap">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content  col-lg-7">
@@ -126,8 +166,8 @@
                         <a href="#"><h4>Payments</h4></a>
                         <strong>
                             <p class="lt-al">
-                                Make payments from your ohzz wallet stash to another user's wallet or list of users' wallets.
-                                <!-- You can also liquidate or cashout ohzz from your wallet stash into a mobile money account or list of accounts. -->
+                                Make payments from your ohz wallet stash to another user's wallet or list of users' wallets.
+                                <!-- You can also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts. -->
                             </p>
                         </strong>
                     </div>
@@ -138,7 +178,7 @@
                         <a href="#"><h4>Secure and transparent transactions</h4></a>
                         <strong>
                             <p class="lt-al">
-                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohzz <strong class="red">transactions ledger</strong> which is a portal displaying all <big class='orange'>ohzz</big> transactions.
+                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohz <strong class="red">transactions ledger</strong> which is a portal displaying all <big class='orange'>ohz</big> transactions.
                             </p>
                         </strong>
                     </div>              
@@ -151,7 +191,7 @@
    
     <!-- Start portfolio-area Area -->
     <section class="portfolio-area " id="portfolio">
-        <div class="container">
+        <div id="how" class="container">
             <div class="row d-flex justify-content-center">
                 
                 <div class="col-lg-12">
@@ -162,7 +202,7 @@
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
-                            <strong><p class="lt-al">Ohzz has the following sign up requirements;</p></strong>
+                            <strong><p class="lt-al">ohz has the following sign up requirements;</p></strong>
                             <hr>
                             <strong>
                                 <ul style="list-style-type:square;" class="lt-al">
@@ -209,10 +249,10 @@
                         <div class="col-lg-3 b blue-bg">
                             <img class="package-no pt-20 white-bg br-50" style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Use ohzz</strong></h3>
+                            <h3 class="white"><strong>Use ohz</strong></h3>
                             <hr>
                             <strong>
-                                <p class="lt-al">Search, identify and secure the following packs using your ohzz stash;</p>
+                                <p class="lt-al">Search, identify and secure the following packs using your ohz stash;</p>
                                 <hr>
                                 <ul style="list-style-type:square;" class="lt-al">    
                                     <li>Airtime</li>
@@ -230,23 +270,23 @@
     <!-- End portfolio-area Area --> 
 
     <!-- Start price Area -->
-    <section class="price-area section-gap">
+    <section id="pricing"  class="price-area section-gap">
         <div  class="container">
             <div class="row d-flex justify-content-center">
-                <div id="pricing" class="menu-content pb-70 col-lg-8">
-                    <button class="btn btn-lg btn-outline-danger">OHZZ PRICING</button>
+                <div class="menu-content pb-70 col-lg-8">
+                    <button class="btn btn-lg btn-outline-danger">OHZ PRICING</button>
                     <div class="title text-center">
                         <h1><b>Stash Value and Cost</b></h1>
                         <div class="container blue-bg br-10">
                             <hr>
-                                <h5 class="white">0.1 <big class="orange">ohzz</big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
-                                <h5 class="white">1 <big class="orange">ohzz</big><big><strong>=</strong></big> <big class="orange">UGX</big> 5000.</h5>
+                                <h5 class="white">0.1 <big class="orange">ohz</big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
+                                <h5 class="white">1 <big class="orange">ohz</big><big><strong>=</strong></big> <big class="orange">UGX</big> 5000.</h5>
                             <hr>
                             <strong><u><h4 class="red">Disclaimer!</h4></u></strong>
                             <h5>
                                 <p class="white pb-30 lt-al">
-                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange">ohzz</strong> and <big>maximum</big> top up
-                                    </big> request limit is <strong>200</strong> <strong class="orange">ohzz</strong>.However there are no limits on stash or wallet balances.
+                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange">ohz</strong> and <big>maximum</big> top up
+                                    </big> request limit is <strong>200</strong> <strong class="orange">ohz</strong>.However there are no limits on stash or wallet balances.
                                 </p>
                             </h5>
                         </div> 
@@ -262,7 +302,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/bronze.svg" alt="">
                         <h4>Bronze Stash</h4>
-                        <p class="mt-10 red">1 ohzz</p>
+                        <p class="mt-10 red">1 ohz</p>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -281,7 +321,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/silver.svg" alt="">
                         <h4>Silver Stash</h4>
-                        <strong><p class="mt-10 red">10 ohzz</p></strong>
+                        <strong><p class="mt-10 red">10 ohz</p></strong>
                     </div>
                     <div class="package-list">
                         <strong>    
@@ -302,7 +342,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/gold.svg" alt="">
                         <h4>Golden Stash</h4>
-                        <strong><p class="mt-10 red">50 ohzz</p></strong>
+                        <strong><p class="mt-10 red">50 ohz</p></strong>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -324,7 +364,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
                         <h4>Vibranium Stash</h4>
-                        <strong><p class="mt-10 red">200 ohzz</p></strong>
+                        <strong><p class="mt-10 red">200 ohz</p></strong>
                     </div>
                     <div class="package-list">
                         <strong>

@@ -44,7 +44,7 @@
       <br>
       	<h1 class="center" style="font-size:350%;">
       		<i class="glyphicon glyphicon-briefcase">
-      			<strong>Wallet / Stash</strong>
+      			<b>Stash</b>
       		</i>
       	</h1>
         	<hr>

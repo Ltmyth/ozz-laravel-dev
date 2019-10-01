@@ -35,9 +35,12 @@
         }
     </script>
         <br>
-      	<h2>Messages</h2>
+      	<h2>
+            Inbox
+            <i class="lnr lnr-alarm"></i>
+        </h2>
       	<hr class="container col-lg-5">
-      	<button id="compose_btn"  onclick="compose()" class="btn btn-md btn-success">
+      	<button id="compose_btn"  onclick="compose()" class="btn btn-md btn-outline-primary">
       		Compose 
       	</button>
         &nbsp;&nbsp;&nbsp;&nbsp;
@@ -61,18 +64,28 @@
             </form>
         </div>
         <hr class="container col-lg-5">
-            <big>
-                <a href="/inbox/">
-                    <button class="btn btn-lg btn-default">
-                        Inbox
-                        <i class="glyphicon glyphicon-envelope"></i>
-                    </button>
-                </a>
-                &nbsp;&nbsp;
-                <b class="red">0</b>
-            </big>
+            <div class="container col-lg-12">
+                <div class="row">
+                    <div class="col-lg-3"></div>
+                    <div class="col-lg-4">
+                        <big>
+                            <a href="/inbox/">
+                              <div class="br-10 blue-bg well">
+                                  John Doe
+                              </div>  
+                            
+                        </big>
+                    </div>
+                    <div class="col-lg-3">
+                        <big>
+                            <b class="red">1</b>
+                        </big>
+                        </a>
+                    </div>                    
+                </div>
+            </div>            
         <hr class="container col-lg-5">
-            <big>
+            <!-- <big>
                 <a href="/sent/">
                     <button class="btn btn-lg btn-default">
                         Sent
@@ -81,6 +94,6 @@
                 </a>
                 &nbsp;&nbsp;&nbsp;&nbsp;
             </big>
-        <hr class="container col-lg-5"> 
+        <hr class="container col-lg-5">  -->
     <br><br>
 @endsection

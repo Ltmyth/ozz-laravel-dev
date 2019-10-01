@@ -1,7 +1,7 @@
 @auth
 	@if(count($posts)>0)
 		<h2 class="center">
-			<small class="black">POSTS AROUND U!</small>
+			<b>AROUND U!</b>
 		</h2>
 
 		<hr class="container col-lg-5">

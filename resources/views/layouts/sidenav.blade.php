@@ -84,7 +84,6 @@
                 <strong>  
                     People
                 </strong>
-                <span class="lnr lnr-users"></span>
             </button>
         </a>
 
@@ -94,7 +93,6 @@
                 <strong>  
                     Accommodation
                 </strong>
-                <span class="lnr lnr-apartment"></span>
             </button>
         </a>
 
@@ -102,7 +100,6 @@
             <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
                 <span class="lnr lnr-dinner"></span>
                 <strong>Food</strong>
-                <span class="lnr lnr-dinner"></span>
             </button>
         </a>
 
@@ -110,7 +107,6 @@
            <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
                 <span class="lnr lnr-tablet"></span>
                 <strong>Airtime</strong>
-                <span class="lnr lnr-tablet"></span>
            </button>
         </a>
 

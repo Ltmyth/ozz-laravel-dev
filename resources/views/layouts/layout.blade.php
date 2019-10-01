@@ -64,7 +64,7 @@
                                             <big>
                                                 <i class="lnr lnr-alarm orange"></i>
                                             </big>
-                                             Messages
+                                             INBOX
                                         </strong>
                                         <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
@@ -75,7 +75,7 @@
                                             <big>
                                                 <i class="lnr lnr-enter orange"></i>
                                             </big> 
-                                            Wallet
+                                            Stash
                                             <!-- <big><b style="color:red;">0</b></big> -->
                                         </strong>
                                     </a>
