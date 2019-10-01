@@ -124,6 +124,10 @@ $black			: #222;
   text-align:center;
 }
 
+.br-50{
+  border-radius:50%;
+}
+
 .white{
   color:white;
 }
