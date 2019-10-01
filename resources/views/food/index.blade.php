@@ -24,7 +24,7 @@
     <!-- right side -->
   		<img style="width:35%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
 		<br><br>
-  		<h2><strong>Food Services</strong></h2>
+  		<h2><b>Food Services</b></h2>
   		<hr class="container col-lg-8">
 			<form>
 				<label>
@@ -36,7 +36,7 @@
 				</select>
 			</form>	
 		<br><br>
-		<h3>Available Service providers</h3>
+		<h3><b>Available Service providers</b></h3>
 		<hr class="container col-lg-8">	
 		<div class="row">
 			<div class="col-md-4">

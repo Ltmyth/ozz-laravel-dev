@@ -24,7 +24,7 @@
 	</style>
 	<img style="width:50%;" class="curve" src="{{ asset('/imgs/hotellong.jpeg') }}">	
 	<br><br>
-	<h2><strong>Accommodation Services</strong></h2>
+	<h2><b>Accommodation Services</b></h2>
 
 	<hr class="container col-lg-8">
 	<form>

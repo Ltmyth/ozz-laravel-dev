@@ -10,6 +10,7 @@
     <!-- start banner Area -->
     <section class="#">
         <div class="container">
+            @guest
             <a href="#about">
                 <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
                     <span class="lnr lnr-users"></span>
@@ -50,9 +51,10 @@
                     <strong>Contact</strong>
                </button>
             </a>
+            @endguest
             <div class="row fullscreen align-items-center">
                 <div class="col-lg-6 col-md-6 banner-left">
-                    The <img style="width:50%;"  src="/imgs/ozz-app.png" alt="">.com                    
+                    <img style="width:50%;"  src="/imgs/ozz-app.png" alt="">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
@@ -77,7 +79,7 @@
         <div class="container">
             <div  class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 home-about-left">
-                    <img class="img-fluid" style="width:60%;" src="imgs/pointing-up.svg" alt="">
+                    <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About Us</b></h1>
@@ -198,7 +200,7 @@
                     <h1 class="mb-10"><b>How it works</b></h1>
                     <div class="row">
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20 white-bg br-50" style="width:50px;" src="imgs/pointing-up.svg" alt="">
+                            <img class="package-no pt-20 " style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
@@ -214,7 +216,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20 white-bg br-50" style="width:50px;" src="imgs/hand.svg" alt="">
+                            <img class="package-no pt-20 " style="width:50px;" src="imgs/hand.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
@@ -230,7 +232,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20 white-bg br-50" style="width:50px;" src="imgs/three.svg" alt="">
+                            <img class="package-no pt-20 " style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
@@ -247,7 +249,7 @@
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
-                            <img class="package-no pt-20 white-bg br-50" style="width:50px;" src="imgs/cart.svg" alt="">
+                            <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Use ohz</strong></h3>
                             <hr>

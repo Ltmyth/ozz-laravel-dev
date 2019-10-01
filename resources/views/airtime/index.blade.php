@@ -21,7 +21,7 @@
     <!-- right side -->
 	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
 	<br><br>
-	<h2><strong>Airtime Services</strong></h2>
+	<h2><b>Airtime Services</b></h2>
 	<hr class="container col-lg-5">
 	<big>Buy airtime for </big>;
 	<hr class="container col-lg-5">
