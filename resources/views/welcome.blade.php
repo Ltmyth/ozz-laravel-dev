@@ -59,14 +59,17 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
                     <div class="row">
-                        <h6>Welcome to the ohz</h6>
+                        <h6>Welcome to theohz.com</h6>
                         <br>
                     </div>
-                    <a href="#">
-                        <button class="primary-btn text-uppercase">
-                            join us now
-                        </button>
-                    </a>  
+
+                    <div class="row">
+                        <a href="#">
+                            <button class="primary-btn text-uppercase">
+                                join us now
+                            </button>
+                        </a>
+                    </div>  
                       
                 </div>
             </div>
@@ -156,7 +159,7 @@
                         <a href="#"><h4>Airtime</h4></a>
                         <strong>
                             <p class="lt-al">
-                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24/7</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
                                This is currently applicable in Uganda alone.
                             </p>
                         </strong>
@@ -276,7 +279,9 @@
         <div  class="container">
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
+                    <hr class="container col-lg-4">
                     <button class="btn btn-lg btn-outline-danger">OHZ PRICING</button>
+                    <hr class="container col-lg-4">
                     <div class="title text-center">
                         <h1><b>Stash Value and Cost</b></h1>
                         <div class="container blue-bg br-10">
@@ -295,7 +300,7 @@
                     </div>
                     <br>
                     <div class="title text-center">
-                        <h1 class="mb-10"><b>Choose Your Stash</b></h1>
+                        <h1 class="mb-10"><b>Choose Your Ohz Stash</b></h1>
                     </div>
                 </div>
             </div>                  

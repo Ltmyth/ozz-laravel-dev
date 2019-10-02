@@ -43,9 +43,8 @@
       <!-- right side -->
       <br>
       	<h1 class="center" style="font-size:350%;">
-      		<i class="glyphicon glyphicon-briefcase">
-      			<b>Stash</b>
-      		</i>
+      		<i class="lnr lnr-briefcase orange"></i>
+      		<b>Stash</b>
       	</h1>
         	<hr>
       			<h2>
@@ -75,8 +74,8 @@
                     </a>
 
                     <a href="/transactions/">
-                      <button class="btn btn-md btn-danger">
-                        <b class="white">Transactions ledger</b>
+                      <button class="btn btn-md btn-outline-danger">
+                        Transactions ledger
                       </button>
                     </a>
                   </div>

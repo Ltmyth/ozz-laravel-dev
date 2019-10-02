@@ -10,7 +10,7 @@
             <!-- meta character set -->
             <meta charset="UTF-8">
             <!-- Site Title -->
-            <title>theohzz.com</title>
+            <title>theohz.com</title>
 
             <!-- Fonts -->
             <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
@@ -73,7 +73,7 @@
                                     <a   href="/wallet">
                                         <strong class="white"> 
                                             <big>
-                                                <i class="lnr lnr-enter orange"></i>
+                                                <i class="lnr lnr-briefcase orange"></i>
                                             </big> 
                                             Stash
                                             <!-- <big><b style="color:red;">0</b></big> -->
