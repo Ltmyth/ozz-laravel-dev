@@ -59,10 +59,13 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
                     <div class="row">
-                        <h6>Welcome to theohz.com</h6>
-                        <br>
+                        <h6>Welcome to the<b class="orange">oh</b><b>z</b>.com</h6>
                     </div>
 
+                    <div class="row">
+                        <h5><b>The <b class="orange">oh</b><b>z</b> one stop spot.</b></h5>
+                    </div>
+                    <br>
                     <div class="row">
                         <a href="#">
                             <button class="primary-btn text-uppercase">
@@ -85,11 +88,14 @@
                     <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
-                    <h1><b>About Us</b></h1>
+                    <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1>
+                    <p class="lt-al">
+                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br>for community-based living,<br>built for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities , enabling a more <br><strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
+                    <h4><b>MISSION</b></h4>
                     <p > 
-                       <h5 class="lt-al"> We are here to connect 
-                        community-based users to each other 
-                        and to respective community-based services quickly and click easily.</h5>
+                       <h5 class="lt-al orange"> To connect 
+                        community-based users with each other 
+                        and to respective community-based services <strong>quickly</strong> and <strong>click easily</strong>.</h5>
                     </p>
                     <!-- <a href="#" class="primary-btn text-uppercase">View Full Details</a> -->
                 </div>
@@ -104,10 +110,12 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content  col-lg-7">
                     <div class="title text-center">
-                        <h1 class="mb-10"><b>Accessible Services</b></h1>
-                        <h4 class="lt-al">
-                            Top up your wallet stash accordingly to get the following life pack at your finger tips.
-                        </h4>
+                        <h1 class="mb-10"><b>Services</b></h1>
+                        <p class="lt-al fz-25">
+                            <strong>
+                                Top up your wallet stash accordingly to get the following life pack at your finger tips.
+                            </strong>
+                        </p>
                     </div>
                 </div>
             </div>                      
@@ -171,8 +179,8 @@
                         <a href="#"><h4>Payments</h4></a>
                         <strong>
                             <p class="lt-al">
-                                Make payments from your ohz wallet stash to another user's wallet or list of users' wallets.
-                                <!-- You can also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts. -->
+                                Make payments from your <b class="orange">oh</b><b>z</b> wallet stash to another user's wallet or list of users' wallets.
+                                <!-- You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts. -->
                             </p>
                         </strong>
                     </div>
@@ -183,7 +191,7 @@
                         <a href="#"><h4>Secure and transparent transactions</h4></a>
                         <strong>
                             <p class="lt-al">
-                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohz <strong class="red">transactions ledger</strong> which is a portal displaying all <big class='orange'>ohz</big> transactions.
+                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is a portal displaying all <big class='orange'><b class="orange">oh</b><b>z</b></big> transactions.
                             </p>
                         </strong>
                     </div>              
@@ -207,7 +215,7 @@
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
-                            <strong><p class="lt-al">ohz has the following sign up requirements;</p></strong>
+                            <strong><p class="lt-al"><b class="orange">oh</b><b class="green">z</b> has the following sign up requirements;</p></strong>
                             <hr>
                             <strong>
                                 <ul style="list-style-type:square;" class="lt-al">
@@ -218,7 +226,7 @@
                             </strong>
                             <hr>
                         </div>
-                        <div class="col-lg-3 b blue-bg">
+                        <div class="col-lg-3  b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/hand.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
@@ -234,30 +242,32 @@
                             </strong>
                             <hr>
                         </div>
-                        <div class="col-lg-3 b blue-bg">
+                        <div class="col-lg-3  b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
-                            <strong><p>Navigate to your wallet and choose a stash to topup from the following;</p></strong>
+                            <strong><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></strong>
                             <hr>
                             <strong>
+                                <a href="#stash" class="white">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>Bronze Stash</li>
                                     <li>Silver Stash</li>
                                     <li>Golden Stash</li>
                                     <li>Vibranium Stash</li>
                                 </ul>
+                                </a>
                             </strong>
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Use ohz</strong></h3>
+                            <h3 class="white"><strong>Use <b class="orange">oh</b><b class="green">z</b></strong></h3>
                             <hr>
                             <strong>
-                                <p class="lt-al">Search, identify and secure the following packs using your ohz stash;</p>
+                                <p class="lt-al">Search, identify and secure the following packs using your <b class="orange">oh</b><b class="green">z</b> stash;</p>
                                 <hr>
                                 <ul style="list-style-type:square;" class="lt-al">    
                                     <li>Airtime</li>
@@ -280,36 +290,36 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-70 col-lg-8">
                     <hr class="container col-lg-4">
-                    <button class="btn btn-lg btn-outline-danger">OHZ PRICING</button>
+                    <button class="btn btn-lg btn-outline-danger"><b class="orange">OH</b><b>Z</b> PRICING</button>
                     <hr class="container col-lg-4">
                     <div class="title text-center">
                         <h1><b>Stash Value and Cost</b></h1>
                         <div class="container blue-bg br-10">
                             <hr>
-                                <h5 class="white">0.1 <big class="orange">ohz</big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
-                                <h5 class="white">1 <big class="orange">ohz</big><big><strong>=</strong></big> <big class="orange">UGX</big> 5000.</h5>
+                                <h5 class="white">0.1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big> <big><strong>=</strong></big> <big class="orange">UGX</big> 500.</h5><br>
+                                <h5 class="white">1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big><big><strong>=</strong></big> <big class="orange">UGX</big> 5000.</h5>
                             <hr>
                             <strong><u><h4 class="red">Disclaimer!</h4></u></strong>
                             <h5>
                                 <p class="white pb-30 lt-al">
-                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange">ohz</strong> and <big>maximum</big> top up
-                                    </big> request limit is <strong>200</strong> <strong class="orange">ohz</strong>.However there are no limits on stash or wallet balances.
+                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong> and <big>maximum</big> top up
+                                    </big> request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
                                 </p>
                             </h5>
                         </div> 
                     </div>
                     <br>
                     <div class="title text-center">
-                        <h1 class="mb-10"><b>Choose Your Ohz Stash</b></h1>
+                        <h1 class="mb-10"><b>Choose Your <b class="orange">oh</b><b>z</b> Stash</b></h1>
                     </div>
                 </div>
             </div>                  
-            <div class="row">
+            <div id="stash" class="row">
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/bronze.svg" alt="">
                         <h4>Bronze Stash</h4>
-                        <p class="mt-10 red">1 ohz</p>
+                        <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -328,7 +338,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/silver.svg" alt="">
                         <h4>Silver Stash</h4>
-                        <strong><p class="mt-10 red">10 ohz</p></strong>
+                        <strong><p class="mt-10 red">10 <b class="orange">oh</b><b>z</b></p></strong>
                     </div>
                     <div class="package-list">
                         <strong>    
@@ -349,7 +359,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/gold.svg" alt="">
                         <h4>Golden Stash</h4>
-                        <strong><p class="mt-10 red">50 ohz</p></strong>
+                        <strong><p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p></strong>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -371,7 +381,7 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
                         <h4>Vibranium Stash</h4>
-                        <strong><p class="mt-10 red">200 ohz</p></strong>
+                        <strong><p class="mt-10 red">200 <b class="orange">oh</b><b>z</b></p></strong>
                     </div>
                     <div class="package-list">
                         <strong>
