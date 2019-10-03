@@ -243,7 +243,8 @@
                         <div class="single-footer-widget">
                             
                             <p class="footer-text white">
-                                <strong>Copyright &copy;<script>document.write(new Date().getFullYear());</script> | All rights reserved </strong>
+                                <strong>| Copyright &copy;<script>document.write(new Date().getFullYear());</script>| All rights reserved |
+                                <br>| Terms and Conditions Apply | </strong>
                             </p>
                         </div>
                     </div>
