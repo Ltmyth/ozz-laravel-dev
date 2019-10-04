@@ -91,20 +91,13 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-apartment"></span>
-                        <a href="#"><h4>Accommodation</h4></a>
+                        <span class="lnr lnr-tablet"></span>
+                        <a href="#"><h4>Airtime</h4></a>
                         <strong>
                             <p class="lt-al">
-                                Find and secure accommodation within a community or destination of interest.
-                                Chose from a live listing of ;
+                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                               This is currently applicable in Uganda alone.
                             </p>
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>Hotels</li>
-                                <li>Hostels</li>
-                                <li>Appartments</li>
-                                <li>Lodgings</li>
-                                <li>Motels</li>
-                            </ul>
                         </strong>
                     </div>
                 </div>
@@ -121,13 +114,20 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-tablet"></span>
-                        <a href="#"><h4>Airtime</h4></a>
+                        <span class="lnr lnr-apartment"></span>
+                        <a href="#"><h4>Accommodation</h4></a>
                         <strong>
                             <p class="lt-al">
-                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
-                               This is currently applicable in Uganda alone.
+                                Find and secure accommodation within a community or destination of interest.
+                                Chose from a live listing of ;
                             </p>
+                            <ul style="list-style-type:square;" class="lt-al">
+                                <li>Hotels</li>
+                                <li>Hostels</li>
+                                <li>Appartments</li>
+                                <li>Lodgings</li>
+                                <li>Motels</li>
+                            </ul>
                         </strong>
                     </div>
                 </div>
