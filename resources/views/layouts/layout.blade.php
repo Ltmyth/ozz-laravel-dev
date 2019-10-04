@@ -229,7 +229,7 @@
                 @guest
                 <br>
                     <div id="progress">
-                        <a href="#about">
+                        <a href="/#about">
                             <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
                                 <span class="lnr lnr-users"></span>
                                 <strong>  
@@ -238,7 +238,7 @@
                             </button>
                         </a>
 
-                       <a href="#services">
+                       <a href="/#services">
                             <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
                                 <span class="lnr lnr-cog"></span>
                                 <strong>  
@@ -256,7 +256,7 @@
                             </button>
                         </a>
 
-                        <a href="#pricing">
+                        <a href="/#pricing">
                             <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
                                 <span class="lnr lnr-briefcase"></span>
                                 <strong>Pricing</strong>
