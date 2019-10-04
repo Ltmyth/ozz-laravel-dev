@@ -48,7 +48,7 @@
                             <li>
                                 <a id="logo" href="/">
                                     <img src="/imgs/ozz-app.png" alt="" title="" />
-                                </a>
+                                </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
                             </li>
                             @endguest
                             
@@ -180,6 +180,8 @@
                     <i class="glyphicon glyphicon-align-justify white"></i>
                 </button>
             </div> -->
+            
+            
 
         <div class="col-lg-12 col-sm-12">
 
@@ -226,6 +228,48 @@
                 @endauth
                 @guest
                 <br>
+                    <div id="progress">
+                        <a href="#about">
+                            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-users"></span>
+                                <strong>  
+                                    About
+                                </strong>
+                            </button>
+                        </a>
+
+                       <a href="#services">
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-cog"></span>
+                                <strong>  
+                                    Services
+                                </strong>
+                            </button>
+                        </a>
+
+                       <a href="#how">
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-cog"></span>
+                                <strong>  
+                                    How it Works
+                                </strong>
+                            </button>
+                        </a>
+
+                        <a href="#pricing">
+                            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-briefcase"></span>
+                                <strong>Pricing</strong>
+                            </button>
+                        </a>
+
+                        <a href="#">
+                           <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-phone"></span>
+                                <strong>Contact</strong>
+                           </button>
+                        </a>
+                    </div>
                 @endguest
                 <body style="background-color: #f9f9ff;">
                     @yield('content')

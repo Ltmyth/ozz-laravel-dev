@@ -337,6 +337,18 @@ $(document).ready(function() {
         } else {
             $('#header').removeClass('header-scrolled');
         }
+
+        var left = document.getElementById("progress");
+
+
+
+        if (left.scrollTop < 60 || self.pageYOffset < 0) {
+            left.style.position = 'fixed';
+            left.style.top = '100px';
+        } else if (left.scrollTop > 0 || self.pageYOffset > 60) {
+            left.style.position = 'absolute';
+            left.style.margin-top = '200px';
+        }
     });
 
     //------- Google Map  js --------//  

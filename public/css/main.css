@@ -2153,6 +2153,16 @@ h1, h2, h3, h4, h5, h6 {
   background: #5f27cd;
 }
 
+#progress{
+  position: fixed;
+  left: 0;
+  top: 22%;
+  right: 0;
+  width:100%;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
 .ct{
   text-align:center;
 }
@@ -2170,9 +2180,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 673px) {
-  #logo {
-    margin-left: 20px;
+  #logo img {
     width:50%;
+    display:none;
+  }
+
+  #progress{
+    top:5%;
   }
 }
 
