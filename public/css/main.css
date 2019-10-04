@@ -2181,8 +2181,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 673px) {
   #logo img {
-    width:50%;
-    display:none;
+    background: black;
   }
 
   #progress{
@@ -2620,7 +2619,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .banner-left img{
-    height:30vh;
+    height:20vh;
   }
 }
 
