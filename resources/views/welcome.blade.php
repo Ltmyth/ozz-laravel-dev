@@ -47,8 +47,9 @@
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
                     <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1>
+                    <!-- by Latim Mark -->
                     <p class="lt-al">
-                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br>for community-based living,<br>built for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities , enabling a more <br><strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
+                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and built for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities , enabling a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
                     <h4><b>MISSION</b></h4>
                     <p > 
                        <h5 class="lt-al orange"> To connect 
@@ -222,7 +223,7 @@
                         <div class="col-lg-3 b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Use <b class="orange">oh</b><b class="green">z</b></strong></h3>
+                            <h3 class="white"><strong>Use your <b class="orange">oh</b><b class="green">z</b></strong></h3>
                             <hr>
                             <strong>
                                 <p class="lt-al">Search, identify and secure the following packs using your <b class="orange">oh</b><b class="green">z</b> stash;</p>
