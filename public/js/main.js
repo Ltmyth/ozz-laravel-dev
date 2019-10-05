@@ -494,3 +494,14 @@ $(document).ready(function() {
     });
 
 });
+
+window.addEventListener('scroll', function scroll() 
+    {
+        var y = document.getELmentById("about").scrollTop;
+        if (y>0) 
+        {
+            document.getElementById("collapse_btn").style.display = "inline";
+            alert("scrolled"+y+"px");
+        }   
+    }
+);

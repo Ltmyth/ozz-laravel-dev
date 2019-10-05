@@ -350,6 +350,9 @@ td, th {
   font-size: 18px;
 }
 
+.fz-20 {
+  font-size: 20px;
+}
 .fz-30 {
   font-size: 30px;
 }
@@ -2161,6 +2164,17 @@ h1, h2, h3, h4, h5, h6 {
   width:100%;
   transition: all 0.5s;
   z-index: 997;
+  /*box-shadow: 0 0 2px #000;*/
+}
+
+
+
+#how{
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  
 }
 
 .ct{

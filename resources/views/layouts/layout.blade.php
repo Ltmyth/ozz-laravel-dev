@@ -37,7 +37,7 @@
 
                
         </head>
-        <header id="header">
+        <header id="header" class="br-5">
             <div class="container main-menu">
                 <div class="row">
                   
@@ -48,7 +48,7 @@
                             <li>
                                 <a id="logo" href="/">
                                     <img src="/imgs/ozz-app.png" alt="" title="" />
-                                </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
+                                </a><br><strong class="white fz-20">www.the<b class="orange">oh</b><b>z</b>.com</strong>
                             </li>
                             @endguest
                             
@@ -132,20 +132,13 @@
                                       </li>                                         
                                     </ul>
                                 </li> -->                                                                         
-                                <li>
+                                <li class="pt-20">
                                     <a href="/login">
-                                        <button class="btn btn-lg btn-outline-primary white px100">
+                                        <button class="btn btn-lg btn-outline-primary white px100 pt-20">
                                             Login
                                         </button>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="/#pricing">
-                                        <button class="btn btn-lg btn-outline-primary white px100">
-                                            Pricing
-                                        </button>
-                                    </a>
-                                </li>
+                                </li>                               
                             @endguest
                         </ul>
                     </nav><!-- #nav-menu-container -->                  
@@ -228,19 +221,19 @@
                 @endauth
                 @guest
                 <br>
-                    <div id="progress">
+                    <div id="progress" class="container col-lg-10 white-bg br-10">
                         <a href="/#about">
                             <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                                <span class="lnr lnr-users"></span>
+                                <span class="lnr lnr-eye"></span>
                                 <strong>  
-                                    About
+                                    About Us
                                 </strong>
                             </button>
                         </a>
 
                        <a href="/#services">
                             <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                                <span class="lnr lnr-cog"></span>
+                                <span class="lnr lnr-users"></span>
                                 <strong>  
                                     Services
                                 </strong>
@@ -269,6 +262,10 @@
                                 <strong>Contact</strong>
                            </button>
                         </a>
+
+                        <button id="collapse_btn" style="display:none;" class="btn btn-md btn-outline-primary col-lg-2">
+                            <span class="lnr lnr-menu"></span>
+                        </button>
                     </div>
                 @endguest
                 <body style="background-color: #f9f9ff;">
