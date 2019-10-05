@@ -12,7 +12,7 @@
         <div class="container">
            <div class="row fullscreen align-items-center">
                 <div class="col-lg-6 col-md-6 banner-left">
-                    <img style="width:50%;"  src="/imgs/ozz-app.png" alt="">
+                    <img style="width:50%;margin-top:10%;"  src="/imgs/ozz-app.png" alt="">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">

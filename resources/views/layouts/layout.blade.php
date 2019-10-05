@@ -48,7 +48,7 @@
                             <li>
                                 <a id="logo" href="/">
                                     <img src="/imgs/ozz-app.png" alt="" title="" />
-                                </a><br><strong class="white fz-20">www.the<b class="orange">oh</b><b>z</b>.com</strong>
+                                </a><br><strong class="white fz">www.the<b class="orange">oh</b><b>z</b>.com</strong>
                             </li>
                             @endguest
                             
@@ -223,7 +223,7 @@
                 <br>
                     <div id="progress" class="container col-lg-10 white-bg br-10">
                         <a href="/#about">
-                            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                            <button id="home_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
                                 <span class="lnr lnr-eye"></span>
                                 <strong>  
                                     About Us
@@ -232,7 +232,7 @@
                         </a>
 
                        <a href="/#services">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2 blue-bg white">
                                 <span class="lnr lnr-users"></span>
                                 <strong>  
                                     Services
@@ -241,8 +241,8 @@
                         </a>
 
                        <a href="#how">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                                <span class="lnr lnr-cog"></span>
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary  blue-bg white col-lg-2">
+                                <span class="lnr lnr-cog blue-bg white"></span>
                                 <strong>  
                                     How it Works
                                 </strong>
@@ -250,14 +250,14 @@
                         </a>
 
                         <a href="/#pricing">
-                            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                            <button id="food_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
                                 <span class="lnr lnr-briefcase"></span>
                                 <strong>Pricing</strong>
                             </button>
                         </a>
 
                         <a href="#">
-                           <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                           <button id="at_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
                                 <span class="lnr lnr-phone"></span>
                                 <strong>Contact</strong>
                            </button>
