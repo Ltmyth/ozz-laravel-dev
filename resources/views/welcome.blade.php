@@ -11,7 +11,7 @@
     <section class="#">
         <div class="container">
            <div class="row fullscreen align-items-center">
-                <div class="col-lg-6 col-md-6 banner-left">
+                <div  class="col-lg-6 col-md-6 banner-left">
                     <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
                 </div>
                 <div class="col-lg-1"></div>
@@ -42,7 +42,7 @@
     <section id="about" class="home-about-area">
         <div class="container">
             <div  class="row align-items-center justify-content-between">
-                <div class="col-lg-6 col-md-6 home-about-left">
+                <div style="background: url(../imgs/african.png);" class="col-lg-6 col-md-6 home-about-left">
                     <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">

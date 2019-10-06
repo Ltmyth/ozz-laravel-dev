@@ -38,9 +38,8 @@
                
         </head>
         <header id="header" class="br-5">
-            <div class="container main-menu">
+            <div class="container main-menu col-lg-12">
                 <div class="row">
-                  
                     <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             
@@ -48,7 +47,7 @@
                             <li>
                                 <a id="logo" href="/">
                                     <img src="/imgs/ozz-app.png" alt="" title="" />
-                                </a><br><strong class="white fz">www.the<b class="orange">oh</b><b>z</b>.com</strong>
+                                </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
                             </li>
                             @endguest
                             
@@ -56,7 +55,7 @@
                                 <li>
                                     <a id="logo" href="/home">
                                         <img src="/imgs/ozz-app.png" alt="" title="" />
-                                    </a>
+                                    </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
                                 </li>
                                 <li id="messages_btn" class="br-10">
                                     <a   href="/messages">
@@ -215,8 +214,10 @@
               
 
             <div id="body" class="col-lg-12 col-sm-12 container">
-                @include('layouts.sidenav')
                 @auth
+                <div id="sidenav" class="white-bg br-10">
+                    @include('layouts.sidenav')   
+                </div>
                 <hr class="container col-lg-9">
                 @endauth
                 @guest

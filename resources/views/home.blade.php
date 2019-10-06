@@ -31,11 +31,11 @@
         <br>
         <form enctype="multipart/form-data" method="POST" action="/posts_create">
             @csrf
-            <div class="container lt-al row">
+            <div class="container lt-al row mt-20">
                 <div class="col-lg-2"></div>
                 <div class="col-lg-9">
                      <label for="name" class="col-form-label">
-                        <h2><b>What's going on</b>?</h2>
+                        <h2><b>What's going on</b><b class="orange">?</b></h2>
                     </label> 
                     <br>
                     <textarea style="width:100%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
