@@ -49,7 +49,7 @@
                     <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1>
                     <!-- by Latim Mark -->
                     <p class="lt-al">
-                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
+                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living backed by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
                     </p>
 
                     <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
