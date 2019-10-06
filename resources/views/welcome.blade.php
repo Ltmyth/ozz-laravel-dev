@@ -12,7 +12,7 @@
         <div class="container">
            <div class="row fullscreen align-items-center">
                 <div class="col-lg-6 col-md-6 banner-left">
-                    <img style="width:50%;margin-top:10%;"  src="/imgs/ozz-app.png" alt="">
+                    <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
@@ -49,7 +49,10 @@
                     <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1>
                     <!-- by Latim Mark -->
                     <p class="lt-al">
-                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and built for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities , enabling a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
+                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
+                    </p>
+
+                    <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
                     <h4><b>MISSION</b></h4>
                     <p > 
                        <h5 class="lt-al orange"> To connect 
@@ -261,7 +264,7 @@
                             <strong><u><h4 class="red">Disclaimer!</h4></u></strong>
                             <h5>
                                 <p class="white pb-30 lt-al">
-                                    The <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong> and <big>maximum</big> top up
+                                    At any given time, the <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong> and <big>maximum</big> top up
                                     </big> request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
                                 </p>
                             </h5>

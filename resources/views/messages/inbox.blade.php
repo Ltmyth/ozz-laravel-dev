@@ -108,7 +108,7 @@
         </form>
     </div> -->
         <div class="row">
-            <div style="border-bottom-left-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20  pb-20 ml-5">
+            <div style="border-bottom-right-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20  pb-20 ml-5">
                 <p class="lt-al ml-30 mr-10"><strong>txt</strong></p>
             </div>
         </div>
