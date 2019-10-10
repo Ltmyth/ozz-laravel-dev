@@ -140,8 +140,14 @@
                                 </li>                               
                             @endguest
                         </ul>
-                    </nav><!-- #nav-menu-container -->                  
+                    </nav><!-- #nav-menu-container -->
                 </div>
+            </div>
+
+            <div id="small_title" style="display:none" class="container col-lg-12">
+                <!-- <a id="logo" href="/">
+                    <img src="/imgs/ozz-app.png" alt="" title="" />
+                </a> --><strong class="white"><h3>www.the<b class="orange">oh</b><b>z</b>.com</h3></strong>
             </div>
         </header><!-- #header -->
 
@@ -215,7 +221,7 @@
 
             <div id="body" class="col-lg-12 col-sm-12 container">
                 @auth
-                <div id="sidenav" class="white-bg br-10">
+                <div id="sidenav" class="white-bg br-10 sidenav">
                     @include('layouts.sidenav')   
                 </div>
                 <hr class="container col-lg-9">

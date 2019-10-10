@@ -9,7 +9,7 @@
 
 @section('content')
 <div class="container-fluid col-lg-8">
-        <div style="border-radius:3%;margin-top:3%;" class="card container ct">
+        <div style="border-radius:3%;margin-top:100%;" class="card container ct">
             <h1>Register</h1>
                     <form method="POST" style="padding:5%;" action="{{ route('register') }}">
                         @csrf
@@ -33,7 +33,7 @@
                         </div> -->
 
                         <div class="form-group row">
-                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                        <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Username') }}</label>
 
                         <div class="col-md-6">
                             <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>

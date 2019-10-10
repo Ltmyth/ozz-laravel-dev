@@ -115,6 +115,8 @@ $black			: #222;
   text-align:right;
 }
 
+
+
 .px100{
   width:100px;
 }
@@ -2216,14 +2218,23 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 673px) {
   
   #progress{
-    top:2%;
+    top:6%;
     height: 40vh;
+    padding:0px 8% 0% 8%;
   }
 
   #hero_img{
     margin-top:100%;
-    height:18vh;
+    height:19vh;
     margin-bottom:5%;
+  }
+
+  .main-menu{
+    height:30vh;
+  }
+
+  #small_title{
+    display: inline;
   }
 }
 
