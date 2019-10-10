@@ -17,7 +17,7 @@
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5 col-md-5 banner-right">
                     <div class="row">
-                        <h6>Welcome to the<b class="orange">oh</b><b>z</b>.com</h6>
+                        <h6>Welcome to the <b class="orange">oh</b><b>z</b></h6>
                     </div>
 
                     <div class="row">

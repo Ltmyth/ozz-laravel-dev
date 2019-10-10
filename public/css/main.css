@@ -2161,7 +2161,7 @@ h1, h2, h3, h4, h5, h6 {
 #progress{
   position: fixed;
   left: 0;
-  top: 20%;
+  top: 13%;
   right: 0;
   width:100%;
   height:10vh;
@@ -2239,7 +2239,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #logo img{
-  width:10%;
+  width:18%;
 }
 
 .nav-menu li:hover > a, .menu-active, .parent-active > .sf-with-ul {

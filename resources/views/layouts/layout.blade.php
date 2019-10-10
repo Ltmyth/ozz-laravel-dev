@@ -45,9 +45,14 @@
                             
                             @guest
                             <li>
-                                <a id="logo" href="/">
-                                    <img src="/imgs/ozz-app.png" alt="" title="" />
-                                </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
+                                <div class="col-lg-3">
+                                    <div class="row lt-al">
+                                        <a id="logo" href="/">
+                                            <img src="/imgs/ozz-app.png" alt="" title="" />
+                                        </a>
+                                        <strong class="white fz-15">the<b class="orange">oh</b><b>z</b></strong>
+                                    </div>                                    
+                                </div>
                             </li>
                             @endguest
                             
