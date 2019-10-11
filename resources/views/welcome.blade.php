@@ -42,7 +42,7 @@
     <section id="about" class="home-about-area">
         <div class="container">
             <div  class="row align-items-center justify-content-between">
-                <div style="background: url(../imgs/pattern.png);background:fill;" class="col-lg-6 col-md-6 home-about-left">
+                <div style="background: url(../imgs/seamless_pattern.png);" class="col-lg-6 col-md-6 home-about-left br-10">
                     <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">

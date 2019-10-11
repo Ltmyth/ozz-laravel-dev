@@ -66,53 +66,49 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li id="messages_btn" class="br-10">
+                                <li  class="btn btn-lg btn-outline-primary">
                                     <a   href="/messages">
-                                        <strong  class="white">
-                                            <big>
-                                                <i class="lnr lnr-alarm orange"></i>
-                                            </big>
-                                             INBOX
+                                        <strong  id="messages_btn" class="white">
+                                            <i class="lnr lnr-alarm orange"></i>
+                                            INBOX
                                         </strong>
                                         <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
                                 </li>
-                                <li id="wallet_btn">
+                                <li class="btn btn-lg btn-outline-primary">
                                     <a   href="/wallet">
-                                        <strong class="white"> 
-                                            <big>
-                                                <i class="lnr lnr-briefcase orange"></i>
-                                            </big> 
+                                        <strong id="wallet_btn" class="white">
+                                            <i class="lnr lnr-briefcase orange"></i>
                                             Stash
                                             <!-- <big><b style="color:red;">0</b></big> -->
                                         </strong>
                                     </a>
                                 </li>
-                                <li class="menu-has-children">
-                                    <a href="">
-                                        <strong id="profile_btn" class="br-10">
-                                            <big>
-                                                <i class="lnr lnr-user orange"></i>
-                                            </big>
+                                <li class="btn btn-lg btn-outline-primary">
+                                    <a href="/profile">
+                                        <strong id="profile_btn" class="white" >
+                                            <i class="lnr lnr-user orange"></i>
+                                            Profile
                                         </strong>
                                     </a>
-                                    <ul>
+                                    <!-- <ul>
                                         <li>
                                             <a   href="/profile">
                                                 <strong>  
-                                                     <i class="lnr lnr-cog blue"> Profile</i>
+                                                     <i class="lnr lnr-cog blue"> </i>
                                                 </strong>
                                             </a>
                                         </li>
-                                        <li>
-                                            <a  href="/logout">
-                                                <strong>  
-                                                     <i class="lnr lnr-power-switch red"> Logout</i>
-                                                </strong>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>                            
+                                    </ul> -->
+                                </li> 
+                                <li class="btn btn-lg btn-outline-primary">
+                                    <a  href="/logout">
+                                        <strong class="white">  
+                                            <i class="lnr lnr-cog orange"></i>
+                                            Logout
+                                        </strong>
+                                    </a>
+                                </li>                           
                             @endauth
                             @guest
                                 
@@ -230,7 +226,7 @@
 
             <div id="body" class="col-lg-12 col-sm-12 container">
                 @auth
-                <div id="sidenav" class="white-bg br-10 col-lg-11 container  sidenav">
+                <div id="sidenav" class="white-bg br-10 col-lg-10 container  sidenav">
                     @include('layouts.sidenav')   
                 </div>
                 <hr class="container col-lg-9">
