@@ -50,7 +50,7 @@
                                         <a id="logo" href="/">
                                             <img src="/imgs/ozz-app.png" alt="" title="" />
                                         </a>
-                                        <strong class="white fz-18">the<b class="orange">oh</b><b>z</b></strong>
+                                        <strong class="white fz-19">the<b class="orange">oh</b><b>z</b></strong>
                                     </div>                                    
                                 </div>
                             </li>
@@ -187,34 +187,18 @@
             
 
         <div class="col-lg-12 col-sm-12">
-
-            <style>
-                .loader {
-                    position: fixed;
-                    left: 0px;
-                    top: 0px;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 9999;
-                    background-color: #ffffffcf;
-                }
-                .loader img{
-                    position: relative;
-                    left: 40%;
-                    top: 40%;
-                }
-            </style>
-
-            <!-- <div class="loader" ><img src="/img/rubiks.gif/"></div> -->
-
-            <script>
-                window.onload = function() 
-                {
-                    //display loader on page load 
-                    $('.loader').fadeOut();
-                }
-
-            </script><!-- background:#dff9fb; -->
+            <div class="overlay-loader">
+                <div class="loader">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <!-- background:#dff9fb; -->
             @if( session()->has('message') )
                 <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-success" role="alert">
                     {{ session()->get('message') }}
@@ -235,8 +219,8 @@
                 <br>
                     <div id="progress" class="container col-lg-10 white-bg br-10">
                         <a href="/#about">
-                            <button id="home_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                                <span class="lnr lnr-eye"></span>
+                            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-eye orange"></span>
                                 <strong>  
                                     About Us
                                 </strong>
@@ -244,8 +228,8 @@
                         </a>
 
                        <a href="/#services">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2 blue-bg white">
-                                <span class="lnr lnr-users"></span>
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2 ">
+                                <span class="lnr lnr-users orange"></span>
                                 <strong>  
                                     Services
                                 </strong>
@@ -253,8 +237,8 @@
                         </a>
 
                        <a href="#how">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary  blue-bg white col-lg-2">
-                                <span class="lnr lnr-cog blue-bg white"></span>
+                            <button id="accoms_btn" class="btn btn-md btn-outline-primary  col-lg-2">
+                                <span class="lnr lnr-cog orange white"></span>
                                 <strong>  
                                     How it Works
                                 </strong>
@@ -262,24 +246,25 @@
                         </a>
 
                         <a href="/#pricing">
-                            <button id="food_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                                <span class="lnr lnr-briefcase"></span>
+                            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                                <span class="lnr lnr-briefcase orange"></span>
                                 <strong>Pricing</strong>
                             </button>
                         </a>
 
                         <a href="#">
-                           <button id="at_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                                <span class="lnr lnr-phone"></span>
+                           <button id="at_btn" class="btn btn-md btn-outline-primary  col-lg-2">
+                                <span class="lnr lnr-phone orange"></span>
                                 <strong>Contact</strong>
                            </button>
                         </a>
 
                         <button id="collapse_btn" style="display:none;" class="btn btn-md btn-outline-primary col-lg-2">
-                            <span class="lnr lnr-menu"></span>
+                            <span class="lnr lnr-menu orange"></span>
                         </button>
                     </div>
-                @endguest
+                @endguest 
+                <!-- style="background: url(../imgs/seamless_pattern.png);" -->
                 <body style="background-color: #f9f9ff;">
                     @yield('content')
                 </body>

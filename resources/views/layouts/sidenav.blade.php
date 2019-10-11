@@ -79,8 +79,8 @@
     </div> -->
 
         <a href="/home">
-            <button id="home_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                <span class="lnr lnr-users"></span>
+            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-users orange"></span>
                 <strong>  
                     People
                 </strong>
@@ -88,8 +88,8 @@
         </a>
 
        <a href="/accommodation/">
-            <button id="accoms_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                <span class="lnr lnr-apartment"></span>
+            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-apartment orange"></span>
                 <strong>  
                     Accommodation
                 </strong>
@@ -97,15 +97,15 @@
         </a>
 
         <a href="/food/">
-            <button id="food_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                <span class="lnr lnr-dinner"></span>
+            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-dinner orange"></span>
                 <strong>Food</strong>
             </button>
         </a>
 
         <a href="/airtime/">
-           <button id="at_btn" class="btn btn-md btn-outline-primary blue-bg white col-lg-2">
-                <span class="lnr lnr-tablet"></span>
+           <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
+                <span class="lnr lnr-tablet orange"></span>
                 <strong>Airtime</strong>
            </button>
         </a>
