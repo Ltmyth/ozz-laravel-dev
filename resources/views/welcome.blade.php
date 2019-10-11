@@ -42,7 +42,7 @@
     <section id="about" class="home-about-area">
         <div class="container">
             <div  class="row align-items-center justify-content-between">
-                <div style="background: url(../imgs/african.png);" class="col-lg-6 col-md-6 home-about-left">
+                <div style="background: url(../imgs/pattern.png);background:fill;" class="col-lg-6 col-md-6 home-about-left">
                     <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
                 <div class="col-lg-5 col-md-6 home-about-right">
@@ -279,7 +279,7 @@
             <div id="stash" class="row">
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <img class="package-no" style="width:60%;" src="imgs/bronze.svg" alt="">
+                        <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/bronze.svg" alt="">
                         <h4>Bronze Stash</h4>
                         <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p>
                     </div>
@@ -298,7 +298,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <img class="package-no" style="width:60%;" src="imgs/silver.svg" alt="">
+                        <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/silver.svg" alt="">
                         <h4>Silver Stash</h4>
                         <strong><p class="mt-10 red">10 <b class="orange">oh</b><b>z</b></p></strong>
                     </div>
@@ -319,7 +319,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
-                        <img class="package-no" style="width:60%;" src="imgs/gold.svg" alt="">
+                        <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/gold.svg" alt="">
                         <h4>Golden Stash</h4>
                         <strong><p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p></strong>
                     </div>

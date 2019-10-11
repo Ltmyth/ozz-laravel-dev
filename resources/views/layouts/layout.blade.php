@@ -45,12 +45,12 @@
                             
                             @guest
                             <li>
-                                <div class="col-lg-3">
+                                <div style="margin-left:5%;" class="col-lg-3">
                                     <div class="row lt-al">
                                         <a id="logo" href="/">
                                             <img src="/imgs/ozz-app.png" alt="" title="" />
                                         </a>
-                                        <strong class="white fz-15">the<b class="orange">oh</b><b>z</b></strong>
+                                        <strong class="white fz-18">the<b class="orange">oh</b><b>z</b></strong>
                                     </div>                                    
                                 </div>
                             </li>
@@ -58,9 +58,13 @@
                             
                             @auth
                                 <li>
-                                    <a id="logo" href="/home">
-                                        <img src="/imgs/ozz-app.png" alt="" title="" />
-                                    </a><br><strong class="white">www.the<b class="orange">oh</b><b>z</b>.com</strong>
+                                    <div style="margin-left:5%;" class="col-lg-3">
+                                        <div class="row lt-al">
+                                            <a id="home_logo" href="/home">
+                                                <img src="/imgs/ozz-app.png" alt="" title="" />
+                                            </a><br><strong class="white fz-18">the<b class="orange">oh</b><b>z</b></strong>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li id="messages_btn" class="br-10">
                                     <a   href="/messages">
@@ -226,7 +230,7 @@
 
             <div id="body" class="col-lg-12 col-sm-12 container">
                 @auth
-                <div id="sidenav" class="white-bg br-10 sidenav">
+                <div id="sidenav" class="white-bg br-10 col-lg-11 container  sidenav">
                     @include('layouts.sidenav')   
                 </div>
                 <hr class="container col-lg-9">

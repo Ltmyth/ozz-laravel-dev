@@ -975,7 +975,7 @@ td, th {
 }
 
 .white-bg {
-  background: #fff;
+  background: #f9f9ff;
 }
 
 .section-top-border {
@@ -2174,10 +2174,9 @@ h1, h2, h3, h4, h5, h6 {
 #sidenav{
   position: fixed;
   left: 0;
-  top: 18%;
+  top: 12%;
   right: 0; 
   width:100%;
-  height:10vh;
   padding: 1% 0% 1% 0%;
   transition: all 0.5s; 
   z-index: 997;
@@ -2215,6 +2214,11 @@ h1, h2, h3, h4, h5, h6 {
   border-color: transparent;
 }
 
+#register_area{
+  border-radius:3%;
+  margin-top:3%;
+}
+
 @media (max-width: 673px) {
   
   #progress{
@@ -2236,11 +2240,21 @@ h1, h2, h3, h4, h5, h6 {
   #small_title{
     display: inline;
   }
+
+  #register_area{
+    margin-top:110%;
+  }
 }
 
 #logo img{
+  width:20%;
+}
+
+#home_logo img{
   width:18%;
 }
+
+
 
 .nav-menu li:hover > a, .menu-active, .parent-active > .sf-with-ul {
   color: #8490ff !important;
