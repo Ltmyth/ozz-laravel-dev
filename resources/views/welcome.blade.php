@@ -10,21 +10,26 @@
     <!-- start banner Area -->
     <section class="#">
         <div class="container">
+            
            <div class="row fullscreen align-items-center">
-                <div  class="col-lg-6 col-md-6 banner-left">
-                    <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
+                <div  class="col-lg-6 col-md-6 banner-left">  
+                    <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
+                    <div class="row pb-5">
+                        <img style="width:100%;" class="br-10"  src="/imgs/greet.jpg" alt="">
+                    </div>
                 </div>
                 <div class="col-lg-1"></div>
-                <div class="col-lg-5 col-md-5 banner-right">
+                <div  class="col-lg-5 col-md-5 banner-right">
+                      
                     <div class="row">
-                        <h6>Welcome to the <b class="orange">oh</b><b>z</b></h6>
+                       <h6>Welcome to the <b class="orange">oh</b><b>z</b></h6>
                     </div>
 
                     <div class="row">
                         <h5><b>The <b class="orange">oh</b><b>z</b> one stop spot.</b></h5>
                     </div>
                     <br>
-                    <div class="row">
+                    <div class="row pb-30">
                         <a href="#">
                             <button class="primary-btn text-uppercase">
                                 join us now
@@ -43,10 +48,13 @@
         <div class="container">
             <div  class="row align-items-center justify-content-between">
                 <div style="background: url(../imgs/seamless_pattern.png);" class="col-lg-6 col-md-6 home-about-left br-10">
+                    <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
+                    <br>
                     <img class="img-fluid" style="width:40%;" src="imgs/pointing-up.svg" alt="">
                 </div>
-                <div class="col-lg-5 col-md-6 home-about-right">
-                    <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1>
+                <div class="col-lg-5 col-md-6 home-about-right pt-10">
+                    <img style="width:100%;" class="br-10 pb-5"  src="/imgs/about.jpg" alt="">
+                    <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
                     <p class="lt-al">
                         <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living backed by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.

@@ -15,19 +15,19 @@ use App\User;
 use App\Notifications\NewUser;
 
 //notification of new user
-Route::get('/new_user', function(){
-   User::find(1)->notify(new NewUser);
-   return Redirect::to('/login/');
-});
+// Route::get('/new_user', function(){
+//    User::find(1)->notify(new NewUser);
+//    return Redirect::to('/login/');
+// });
 
 
 
 //auth
-Route::get('/logout', function(){
-   Auth::logout();
-   return Redirect::to('/');
-});
-Auth::routes();
+// Route::get('/logout', function(){
+//    Auth::logout();
+//    return Redirect::to('/');
+// });
+// Auth::routes();
 
 // Route::get('/signin','PageController@login');
 

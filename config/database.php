@@ -4,11 +4,11 @@ use Illuminate\Support\Str;
 
 
 
-$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$host = $url["host"];
-$username = $url["user"];
-$password = $url["pass"];
-$database = substr($url["path"], 1);
+$url ='db.cipher256.com';
+$host = env('DB_HOST');
+$username = env('DB_USERNAME');
+$password = env('DB_PASSWORD');
+$database = env('DB_DATABASE');
 
 return [
 
