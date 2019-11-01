@@ -1,3 +1,5 @@
+RewriteRule ^var/www/theohz/public(/.*)?$ index.php [L]
+DirectorySlash Off
 <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews -Indexes
@@ -18,4 +20,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    <Directory "/var/www/public_html/ohz/public">
+        Options All
+        AllowOverride All
+        Allow from all
+    </Directory>
 </IfModule>

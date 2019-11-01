@@ -9,6 +9,8 @@
 
 define('LARAVEL_START', microtime(true));
 
+define('LARAVEL_BASE_DIR', __DIR__ . '/var/www/public_html/theohz');
+
 /*
 |--------------------------------------------------------------------------
 | Register The Auto Loader
