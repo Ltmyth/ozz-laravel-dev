@@ -14,29 +14,23 @@
            <div class="row fullscreen align-items-center">
                 <div  class="col-lg-6 col-md-6 banner-left">  
                     <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
-                    <div class="row pb-5">
+                    <div class="row pb-5 pt-10">
                         <img style="width:100%;" class="br-10"  src="/imgs/greet.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
                 <div  class="col-lg-5 col-md-5 banner-right">
                       
-                    <div class="row">
-                       <h6>Welcome to the <b class="orange">oh</b><b>z</b></h6>
-                    </div>
+                       <h1><b>Welcome </h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
+                       <br><br>
+                        <h3><b>The <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
-                    <div class="row">
-                        <h5><b>The <b class="orange">oh</b><b>z</b> one stop spot.</b></h5>
-                    </div>
-                    <br>
-                    <div class="row pb-30">
+                        <br><br>
                         <a href="#">
                             <button class="primary-btn text-uppercase">
                                 join us now
                             </button>
                         </a>
-                    </div>  
-                      
                 </div>
             </div>
         </div>                  
@@ -56,16 +50,25 @@
                     <img style="width:100%;" class="br-10 pb-5"  src="/imgs/about.jpg" alt="">
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
-                    <p class="lt-al">
-                        <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living backed by a Ugandan born crypto currency known as the <b class="orange">oh</b><b>z</b></b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
-                    </p>
+                    <h4>
+                        <b>
+                            <p class="lt-al">
+                                <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
+                            </p>
+                        </b>
+                    </h4>
 
-                    <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
-                    <h4><b>MISSION</b></h4>
+                    <h4>
+                        <b>
+                            <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
+                        </b>
+                    </h4>
+
+                    <h4 class="lt-al"><b style="color:black;">MISSION</b></h4>
                     <p > 
-                       <h5 class="lt-al orange"> To connect 
+                       <h4 class="lt-al red"> To connect 
                         community-based users with each other 
-                        and to respective community-based services <strong>quickly</strong> and <strong>click easily</strong>.</h5>
+                        and to respective community-based services <strong>quickly</strong> and <strong>click easily</strong>.</h4>
                     </p>
                     <!-- <a href="#" class="primary-btn text-uppercase">View Full Details</a> -->
                 </div>
@@ -80,11 +83,35 @@
             <div class="row d-flex justify-content-center">
                 <div class="menu-content  col-lg-7">
                     <div class="title text-center">
-                        <h1 class="mb-10"><b>Services</b></h1>
-                        <p class="lt-al fz-25">
-                            <strong>
-                                Top up your wallet stash accordingly to get the following life pack at your finger tips.
-                            </strong>
+                        <h1 class="mb-10 lt-al">Featured communities</h1>
+                        <hr>
+                        <h4 class="lt-al">
+                            <b>
+                                <p>
+                                    Services are intended to be accessible click easily over the internet within the featured communities which currently include;
+                                 </p>
+                            </b>
+                        </h4>
+                        <ul style="list-style: circle; color:red;" class="lt-al fz-25">
+                            <li>
+                                <h3 class="blue">Mukono (U)</h3>
+                            </li>
+                            <li>
+                                <h5 class="green"> <i>More communities to be featured.</i></h5>
+                            </li>
+                        </ul>
+                        <br>
+                        <u><h3 class="red lt-al">Note</h3></u>
+                        <h4 class="lt-al">
+                            MTN <b class="red">AIRTEL</b> <b class="orange">AFRICELL</b> airtime is internet accessible anywhere within Uganda.
+                        </h4>
+                        <br>
+                        <hr>
+                        <h1 class="mb-10 lt-al">Services</h1>
+                        <p>
+                            <b>
+                               <h4 class="lt-al"> Top up your wallet stash accordingly to get the following life pack at your finger tips.</h4>
+                            </b>
                         </p>
                     </div>
                 </div>
@@ -92,78 +119,83 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-users"></span>
-                        <a href="#"><h4>People</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                                Connect with people in your community or neighborhood at no cost.
+                        <a href="#"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-users"></span> People</h4></a>
+                        <h4 class="lt-al">
+                            <p>
+                                <b>Connect and communicate with people in your community, district or neighborhood at no cost.</b>
                             </p>
-                        </strong>
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-tablet"></span>
-                        <a href="#"><h4>Airtime</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                               With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
-                               This is currently applicable in Uganda alone.
+                        <a href="#"><h4 class="lt-al"><span  style="color:orange;" class="lnr lnr-tablet"></span> Airtime</h4></a>
+                        <h4 class="lt-al">
+                            <p>
+                                <b> 
+                                With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                                This is currently applicable in Uganda alone.
+                                </b>
                             </p>
-                        </strong>
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-dinner"></span>
-                        <a href="#"><h4>Food</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                                Search,  view and procure from community based food service providers and their various menus. 
+                        <a href="#"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-dinner"></span> Food</h4></a>
+                        <h4 class="lt-al">
+                            <p >
+                               <b> Search,  view and procure from community based food service providers and their various menus. </b>
                             </p>
                         </strong>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-apartment"></span>
-                        <a href="#"><h4>Accommodation</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                                Find and secure accommodation within a community or destination of interest.
-                                Chose from a live listing of ;
-                            </p>
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>Hotels</li>
-                                <li>Hostels</li>
-                                <li>Appartments</li>
-                                <li>Lodgings</li>
-                                <li>Motels</li>
-                            </ul>
+                        <a href="#"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-apartment"></span> Accommodation</h4></a>
+                        <h4 class="lt-al">
+                            <b>
+                                <p>
+                                    Find and secure accommodation within a community or destination of interest.
+                                    Chose from a live listing of ;
+                                </p>
+                                <ul style="list-style-type:square;" >
+                                    <li>Hotels</li>
+                                    <li>Hostels</li>
+                                    <li>Appartments</li>
+                                    <li>Lodgings</li>
+                                    <li>Motels</li>
+                                </ul>
+                            </b>
                         </strong>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="package-no  lnr lnr-briefcase"></span>
-                        <a href="#"><h4>Payments</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                                Make payments from your <b class="orange">oh</b><b>z</b> wallet stash to another user's wallet or list of users' wallets.
-                                <!-- You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts. -->
-                            </p>
-                        </strong>
+                        <a href="#"><h4 class="lt-al"><span style="color:orange;" class="package-no lnr lnr-briefcase"></span> Payments</h4></a>
+                        <h4 class="lt-al">
+                            <b>
+                                <p>
+                                    Make payments from your <b class="orange">oh</b><b>z</b> wallet stash to another user's wallet or list of users' wallets <b>free</b> of charge.
+                                </p>
+
+                                <p>
+                                    You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low cost used to cover infrastructure and transaction costs.
+                                </p>
+                            </b>
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <span class="lnr lnr-lock"></span>
-                        <a href="#"><h4>Secure and transparent transactions</h4></a>
-                        <strong>
-                            <p class="lt-al">
-                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is a portal displaying all <big class='orange'><b class="orange">oh</b><b>z</b></big> transactions.
-                            </p>
-                        </strong>
+                        <a href="#"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-lock"></span>Secure and transparent transactions</h4></a>
+                        <h4 class="lt-al">
+                            <b>
+                                <p class="lt-al">
+                                    Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all  <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
+                                </p>
+                            </b>
+                        </h4>
                     </div>              
                 </div>                                                      
             </div>
@@ -178,22 +210,22 @@
             <div class="row d-flex justify-content-center">
                 
                 <div class="col-lg-12">
-                    <h1 class="mb-10"><b>How it works</b></h1>
+                    <h1 class="mb-10">How it works</h1>
                     <div class="row">
                         <div class="col-lg-3 b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
                             <h3 class="white"><strong>Register</strong></h3>
                             <hr>
-                            <strong><p class="lt-al"><b class="orange">oh</b><b class="green">z</b> has the following sign up requirements;</p></strong>
+                            <h4 class="white"><p class="lt-al"><b class="orange">oh</b><b class="green">z</b> has the following sign up requirements;</p></h4>
                             <hr>
-                            <strong>
+                            <h4 class="white">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>A Valid email</li>
                                     <li>A Unique username</li>
                                     <li>A memorable strong password</li>
                                 </ul>
-                            </strong>
+                            </h4>
                             <hr>
                         </div>
                         <div class="col-lg-3  b blue-bg">
@@ -201,15 +233,15 @@
                             <hr>
                             <h3 class="white"><strong>Setup</strong></h3>
                             <hr>
-                            <strong><p class="lt-al">Complete your user profile by adding your;</p></strong>
+                            <h4 class="white"><p class="lt-al">Complete your user profile by adding your;</p></h4>
                             <hr>
-                            <strong>
+                            <h4 class="white">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>First and last names</li>
                                     <li>Active mobile money or phone number</li>
                                     <li>Security code</li>
                                 </ul>
-                            </strong>
+                            </h4>
                             <hr>
                         </div>
                         <div class="col-lg-3  b blue-bg">
@@ -217,9 +249,9 @@
                             <hr>
                             <h3 class="white"><strong>Topup stash</strong></h3>
                             <hr>
-                            <strong><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></strong>
+                            <h4 class="white"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h4>
                             <hr>
-                            <strong>
+                            <h4 class="white">
                                 <a href="#stash" class="white">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>Bronze Stash</li>
@@ -228,7 +260,7 @@
                                     <li>Vibranium Stash</li>
                                 </ul>
                                 </a>
-                            </strong>
+                            </h4>
                             <hr>
                         </div>
                         <div class="col-lg-3 b blue-bg">
@@ -236,7 +268,7 @@
                             <hr>
                             <h3 class="white"><strong>Use your <b class="orange">oh</b><b class="green">z</b></strong></h3>
                             <hr>
-                            <strong>
+                            <h4 class="white">
                                 <p class="lt-al">Search, identify and secure the following packs using your <b class="orange">oh</b><b class="green">z</b> stash;</p>
                                 <hr>
                                 <ul style="list-style-type:square;" class="lt-al">    
@@ -245,7 +277,7 @@
                                     <li>Accommodation</li>
                                 </ul>
                                 <hr>
-                            </strong>
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -466,28 +498,25 @@
     <!-- end recent-blog Area -->       
 
     <!-- Start brands Area -->
-    <section class="brands-area">
-        <div class="container">
-            <div class="brand-wrap">
-                <div class="row align-items-center active-brand-carusel justify-content-start no-gutters">
-                    <div class="col single-brand">
-                        <a href="#"><img class="mx-auto" src="img/l1.png" alt=""></a>
-                    </div>
-                    <div class="col single-brand">
-                        <a href="#"><img class="mx-auto" src="img/l2.png" alt=""></a>
-                    </div>
-                    <div class="col single-brand">
-                        <a href="#"><img class="mx-auto" src="img/l3.png" alt=""></a>
-                    </div>
-                    <div class="col single-brand">
-                        <a href="#"><img class="mx-auto" src="img/l4.png" alt=""></a>
-                    </div>
-                    <div class="col single-brand">
-                        <a href="#"><img class="mx-auto" src="img/l5.png" alt=""></a>
-                    </div>
-                </div>
+    <div class="container">
+        <h1>Our Partners</h1>
+        <br>
+    </div>
+
+    <div class="container">
+        <br>
+        <div class="col-lg-12">
+            <div class="col-md-2 pt-10">
+                <a href="#"><img src="imgs/africastalking.png" alt=""></a>
             </div>
         </div>
-    </section>
+        
+        <!-- <div class="col-lg-3 pt-10">
+            <a href="#"><img src="imgs/logo.png" alt=""></a>
+        </div>
+        <div class="col-lg-3 pt-10">
+            <a href="#"><img src="imgs/mambo.png" alt=""></a>
+        </div> -->
+    </div>
     <!-- End brands Area -->
 @endsection

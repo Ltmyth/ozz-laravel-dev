@@ -323,14 +323,14 @@ $(document).ready(function() {
     });
 
 
+    // $(window).on(‘load’, function(){          
+    //     $("#preloader").fadeOut(500);
+    //     }
+    // );
 
+   
 
     //------- Header Scroll Class  js --------//  
-
-    $(window).load(function() {
-       $('.preloader').fadeOut('slow');
-    });
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('#header').addClass('header-scrolled');

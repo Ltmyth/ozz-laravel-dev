@@ -27,6 +27,8 @@
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
 
+            <script src="{{ asset('/js/main.js') }}"></script>
+
             <!-- server env -->
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/main.css') }}">
@@ -45,12 +47,12 @@
                             
                             @guest
                             <li>
-                                <div style="margin-left:5%;" class="col-lg-3">
+                                <div style="margin-left:2%;" class="col-lg-3">
                                     <div class="row lt-al">
                                         <a id="logo" href="/">
                                             <img src="/imgs/ozz-app.png" alt="" title="" />
                                         </a>
-                                        <strong class="white fz-19">the<b class="orange">oh</b><b>z</b></strong>
+                                        <h3 class="white">the<b class="orange">oh</b><b>z</b></h3>
                                     </div>                                    
                                 </div>
                             </li>
@@ -62,7 +64,7 @@
                                         <div class="row lt-al">
                                             <a id="home_logo" href="/home">
                                                 <img src="/imgs/ozz-app.png" alt="" title="" />
-                                            </a><br><strong class="white fz-18">the<b class="orange">oh</b><b>z</b></strong>
+                                            </a><br><strong class="white fz-35">the<b class="orange">oh</b><b>z</b></strong>
                                         </div>
                                     </div>
                                 </li>
@@ -108,17 +110,18 @@
                                             Logout
                                         </strong>
                                     </a>
-                                </li>                           
+                                </li>
+                            </ul>                           
                             @endauth
                             @guest
                                 
-                                <li>
-                                    <a href="/register">
-                                        <button class="btn btn-lg btn-outline-primary white px100">
-                                            Register
-                                        </button>
-                                    </a>
-                                </li>
+                                
+                                <a href="/register">
+                                    <button class="btn btn-lg btn-outline-primary white px100">
+                                        Register
+                                    </button>
+                                </a>
+                                
                                 <!-- <li class="menu-has-children"><a href="">Blog</a>
                                     <ul>
                                       <li><a href="blog-home.html">Login</a></li>
@@ -135,16 +138,13 @@
                                         </ul>
                                       </li>                                         
                                     </ul>
-                                </li> -->                                                                         
-                                <li class="pt-20">
+                                </li> -->                  
                                     <a href="/login">
                                         <button class="btn btn-lg btn-outline-primary white px100 pt-20">
                                             Login
                                         </button>
-                                    </a>
-                                </li>                               
+                                    </a>                           
                             @endguest
-                        </ul>
                     </nav><!-- #nav-menu-container -->
                 </div>
             </div>
@@ -265,8 +265,11 @@
                     </div>
                 @endguest 
                 <!-- style="background: url(../imgs/seamless_pattern.png);" -->
-                <body style="background-color: #f9f9ff;">
-                    @yield('content')
+                <body onload="myFunction()" style="background-color: #f9f9ff;" class="blue">
+                    <div  id="content">
+                        @yield('content')
+                    </div>
+                    <div id="preloader" class="preloader"></div>
                 </body>
             </div>
         </div>   
@@ -303,6 +306,18 @@
                 </div>
             </div>
             <br>
+            <script>
+                var myVar;
+
+                function myFunction() {
+                  myVar = setTimeout(showPage, 1000);
+                }
+
+                function showPage() {
+                  document.getElementById("preloader").style.display = "none";
+                  document.getElementById("content").style.display = "block";
+                }
+            </script>
         </footer>
         <!-- End footer Area -->        
 
@@ -321,8 +336,7 @@
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/simple-skillbar.js"></script>                           
         <script src="js/owl.carousel.min.js"></script>                          
-        <script src="js/mail-script.js"></script>   
-        <script src="js/main.js"></script>  
+        <script src="js/mail-script.js"></script>  
 </html>
 
      
