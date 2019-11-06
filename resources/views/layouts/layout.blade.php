@@ -40,9 +40,8 @@
                
         </head>
         <header id="header" class="br-5">
-            <div class="container main-menu col-lg-12">
+            <!-- <div class="container main-menu col-lg-12">
                 <div class="row">
-                    <nav id="nav-menu-container">
                         <ul class="nav-menu">
                             
                             @guest
@@ -74,7 +73,6 @@
                                             <i class="lnr lnr-alarm orange"></i>
                                             INBOX
                                         </strong>
-                                        <!-- <big><b style="color:orange;">0000</b></big> -->
                                     </a>
                                 </li>
                                 <li class="btn btn-lg btn-outline-primary">
@@ -82,7 +80,6 @@
                                         <strong id="wallet_btn" class="white">
                                             <i class="lnr lnr-briefcase orange"></i>
                                             Stash
-                                            <!-- <big><b style="color:red;">0</b></big> -->
                                         </strong>
                                     </a>
                                 </li>
@@ -93,15 +90,6 @@
                                             Profile
                                         </strong>
                                     </a>
-                                    <!-- <ul>
-                                        <li>
-                                            <a   href="/profile">
-                                                <strong>  
-                                                     <i class="lnr lnr-cog blue"> </i>
-                                                </strong>
-                                            </a>
-                                        </li>
-                                    </ul> -->
                                 </li> 
                                 <li class="btn btn-lg btn-outline-primary">
                                     <a  href="/logout">
@@ -121,38 +109,50 @@
                                         Register
                                     </button>
                                 </a>
-                                
-                                <!-- <li class="menu-has-children"><a href="">Blog</a>
-                                    <ul>
-                                      <li><a href="blog-home.html">Login</a></li>
-                                      <li><a href="blog-single.html">SignUp</a></li>
-                                    </ul>
-                                </li> -->   
-                                <!-- <li class="menu-has-children"><a href="">Pages</a>
-                                    <ul>
-                                      <li><a href="elements.html">Elements</a></li>
-                                      <li class="menu-has-children"><a href="">Level 2 </a>
-                                        <ul>
-                                          <li><a href="#">Item One</a></li>
-                                          <li><a href="#">Item Two</a></li>
-                                        </ul>
-                                      </li>                                         
-                                    </ul>
-                                </li> -->                  
-                                    <a href="/login">
-                                        <button class="btn btn-lg btn-outline-primary white px100 pt-20">
-                                            Login
-                                        </button>
-                                    </a>                           
+                                                
+                                <a href="/login">
+                                    <button class="btn btn-lg btn-outline-primary white px100 pt-20">
+                                        Login
+                                    </button>
+                                </a>                           
                             @endguest
-                    </nav><!-- #nav-menu-container -->
+                    </nav>
                 </div>
-            </div>
+            </div> -->
 
             <div id="small_title" style="display:none" class="container col-lg-12">
                 <!-- <a id="logo" href="/">
                     <img src="/imgs/ozz-app.png" alt="" title="" />
                 </a> --><strong class="white"><h3>www.the<b class="orange">oh</b><b>z</b>.com</h3></strong>
+            </div>
+
+            <div class="col-lg-12">
+                <div class="lt ml-20">
+                    <br>
+                    @guest
+                    <a id="logo" href="/">
+                    @endguest
+                    @auth
+                    <a id="logo" href="/home"></a>
+                    @endauth
+                        <img src="/imgs/ozz-app.png" alt="" title="" />
+                    </a>
+                    <h3 class="white">the<b class="orange">oh</b><b>z</b></h3>
+                </div>
+
+                @guest
+                    <a href="/register">
+                        <button class="btn btn-md btn-outline-primary white px100 mt-20 mr-20 mb-20 rt">
+                            Register
+                        </button>
+                    </a>
+                                    
+                    <a href="/login">
+                        <button class="btn btn-md btn-outline-primary white px100 mt-20 mr-20 mb-20 rt">
+                            Login
+                        </button>
+                    </a>                           
+                @endguest
             </div>
         </header><!-- #header -->
 
@@ -187,17 +187,6 @@
             
 
         <div class="col-lg-12 col-sm-12">
-            <div class="overlay-loader">
-                <div class="loader">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
             <!-- background:#dff9fb; -->
             @if( session()->has('message') )
                 <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-success" role="alert">
@@ -252,7 +241,7 @@
                             </button>
                         </a>
 
-                        <a href="#">
+                        <a href="#contact_us">
                            <button id="at_btn" class="btn btn-md btn-outline-primary  col-lg-2">
                                 <span class="lnr lnr-phone orange"></span>
                                 <strong>Contact</strong>
@@ -266,7 +255,7 @@
                 @endguest 
                 <!-- style="background: url(../imgs/seamless_pattern.png);" -->
                 <body onload="myFunction()" style="background-color: #f9f9ff;" class="blue">
-                    <div  id="content">
+                    <div class="br-10 black" id="content">
                         @yield('content')
                     </div>
                     <div id="preloader" class="preloader"></div>
@@ -278,7 +267,7 @@
         <!-- start footer Area -->
         <footer style="opacity: 1;" class="footer-area">
             <br>
-            <div class="container">
+            <div id="contact_us" class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-6 col-sm-6">
                         <div class="single-footer-widget">
@@ -294,7 +283,7 @@
                     </div>
                     <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
                         <div class="single-footer-widget">
-                            <h4><strong>Contact Us</strong></h4>
+                            <h2 class="white"><strong>Contact Us</strong></h2>
                             <div class="footer-social d-flex align-items-center">
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
@@ -310,7 +299,7 @@
                 var myVar;
 
                 function myFunction() {
-                  myVar = setTimeout(showPage, 1000);
+                  myVar = setTimeout(showPage, 1350);
                 }
 
                 function showPage() {

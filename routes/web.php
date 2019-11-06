@@ -23,13 +23,10 @@ use App\Notifications\NewUser;
 
 
 //auth
-// Route::get('/logout', function(){
-//    Auth::logout();
-//    return Redirect::to('/');
-// });
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/signin','PageController@login');
+Route::get('/signin','PageController@login');
+Route::get('/logout', 'PageController@logout');
 
 
 
