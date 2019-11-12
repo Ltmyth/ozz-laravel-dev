@@ -19,7 +19,8 @@
 		}
 	</style>
     <!-- right side -->
-	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
+    <br>
+	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><b>Airtime Services</b></h2>
 	<hr class="container col-lg-5">

@@ -173,3 +173,7 @@ Route::get('user','People@index')->name('user');
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

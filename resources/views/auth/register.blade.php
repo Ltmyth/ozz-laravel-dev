@@ -8,10 +8,10 @@
 @extends('layouts.layout')
 
 @section('content')
-<div class="container-fluid col-lg-8">
-        <div id="register_area" class="card container ct pb-30">
+<div class="col-lg-12">
+        <div id="register_area" class="card container ct mt-20 pb-30">
             <h1>Register</h1>
-                    <form method="POST" style="padding:5%;" action="{{ route('register') }}">
+                    <form method="POST" class="lt-al"  action="{{ route('register') }}">
                         @csrf
 
                         <!-- <div class="form-group row">

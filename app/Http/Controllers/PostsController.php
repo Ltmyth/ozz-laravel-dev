@@ -18,6 +18,9 @@ class PostsController extends Controller
         //model
         $posts = Post::orderBy('id','desc')->get();
 
+        //upload
+        // $contents = Storage::disk('public')->get('uploads/');
+
         //view with model
         return view('posts.posts')->with('posts',$posts);
     }

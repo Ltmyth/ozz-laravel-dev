@@ -56,9 +56,8 @@
                 </div>
             </div>
         </form>
-    <hr class="container col-lg-8">
+    <hr class="container col-lg-10">
     <div class="container">
-        <br>
         <?php 
             use App\Http\Controllers\PostsController;
             echo PostsController::index();

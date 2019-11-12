@@ -413,6 +413,7 @@ class ComposerStaticInite823383563b07aed5c89055bbc61dcd2
         'App\\Http\\Controllers\\People' => __DIR__ . '/../..' . '/app/Http/Controllers/People.php',
         'App\\Http\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostsController.php',
         'App\\Http\\Controllers\\TransportController' => __DIR__ . '/../..' . '/app/Http/Controllers/TransportController.php',
+        'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Controllers\\WalletController' => __DIR__ . '/../..' . '/app/Http/Controllers/WalletController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',

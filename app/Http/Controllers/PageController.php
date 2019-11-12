@@ -33,8 +33,8 @@ class PageController extends Controller
     }
 
     public function logout(){
-        Auth::logout();
-        return Redirect::to('/');
+        auth()->logout();
+        return redirect('/');
     }
 
 

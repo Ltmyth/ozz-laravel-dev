@@ -31,6 +31,7 @@ return array(
     'App\\Http\\Controllers\\People' => $baseDir . '/app/Http/Controllers/People.php',
     'App\\Http\\Controllers\\PostsController' => $baseDir . '/app/Http/Controllers/PostsController.php',
     'App\\Http\\Controllers\\TransportController' => $baseDir . '/app/Http/Controllers/TransportController.php',
+    'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
     'App\\Http\\Controllers\\WalletController' => $baseDir . '/app/Http/Controllers/WalletController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',
     'App\\Http\\Middleware\\Authenticate' => $baseDir . '/app/Http/Middleware/Authenticate.php',
