@@ -8,34 +8,34 @@
     </div> -->
 
         <a href="/home">
-            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                <span class="lnr lnr-users orange"></span>
-                <strong>  
+            <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-users white"></span>
+                <strong class="white">  
                     People
                 </strong>
             </button>
         </a>
 
        <a href="/accommodation/">
-            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                <span class="lnr lnr-apartment orange"></span>
-                <strong>  
+            <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-apartment white"></span>
+                <strong class="white">  
                     Accommodation
                 </strong>
             </button>
         </a>
 
         <a href="/food/">
-            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                <span class="lnr lnr-dinner orange"></span>
-                <strong>Food</strong>
+            <button id="food_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-dinner white"></span>
+                <strong class="white" >Food</strong>
             </button>
         </a>
 
         <a href="/airtime/">
-           <button id="at_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                <span class="lnr lnr-tablet orange"></span>
-                <strong>Airtime</strong>
+           <button id="at_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-tablet white"></span>
+                <strong class="white">Airtime</strong>
            </button>
         </a>
 

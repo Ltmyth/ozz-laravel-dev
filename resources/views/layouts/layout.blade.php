@@ -12,6 +12,8 @@
             <!-- Site Title -->
             <title>theohz.com</title>
 
+            
+
             <!-- Fonts -->
             <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
 
@@ -101,7 +103,7 @@
                         @auth 
 
                             <a  href="/messages">
-                                <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
+                                <button id="messages_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> Inbox
                                 </button>
                             </a>   
@@ -114,7 +116,7 @@
                             
 
                             <a  href="/profile">
-                                <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
+                                <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i> Settings
                                 </button>
                             </a>           
@@ -130,82 +132,70 @@
             </div>
         </header>
 
-        <div class="col-lg-12 col-sm-12">
+        <div class="col-lg-12 col-sm-12  nlight-bg">
             <!-- background:#dff9fb; -->
-            <div id="body" class="col-lg-12 col-sm-12 container">
+            <div id="body" class="col-lg-12 nlight col-sm-12 container">
                 @auth
-                <div id="sidenav" class="white-bg br-10 col-lg-10 container  sidenav">
+                <div id="sidenav" class="nlight-bg br-10 col-lg-10 container  sidenav">
                     @include('layouts.sidenav')   
                 </div>
                 <hr class="container col-lg-9">
                 @endauth
                 @guest
                 <br>
-                    <div id="progress" class="container col-lg-11 white-bg br-10">
+                    <div id="progress" class="container col-lg-11 nlight-bg br-10">
                         <a href="/#about">
-                            <button id="home_btn" class="btn btn-md btn-outline-primary col-lg-2">
-                                <span class="lnr lnr-eye orange"></span>
-                                <strong>  
+                            <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                                <span class="lnr lnr-eye white"></span>
+                                <strong class="white">  
                                     About Us
                                 </strong>
                             </button>
                         </a>
 
                        <a href="/#services">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary col-sm-2">
-                                <span class="lnr lnr-users orange"></span>
-                                <strong>  
+                            <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-sm-2">
+                                <span class="lnr lnr-users white"></span>
+                                <strong class="white">  
                                     Services
                                 </strong>
                             </button>
                         </a>
 
                        <a href="#how">
-                            <button id="accoms_btn" class="btn btn-md btn-outline-primary  col-lg-2">
-                                <span class="lnr lnr-cog orange white"></span>
-                                <strong>  
+                            <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg  col-lg-2">
+                                <span class="lnr lnr-cog white"></span>
+                                <strong class="white" >  
                                     How it Works
                                 </strong>
                             </button>
                         </a>
 
                         <a href="/#pricing">
-                            <button id="food_btn" class="btn btn-md btn-outline-primary col-lg-1">
-                                <span class="lnr lnr-briefcase orange"></span>
-                                <strong>Pricing</strong>
+                            <button id="food_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                                <span class="lnr lnr-briefcase white"></span>
+                                <strong class="white" >Pricing</strong>
                             </button>
                         </a>
 
                         <a href="/#packs">
-                            <button id="food_btn" class="btn btn-md btn-outline-primary col-sm-2">
-                                <span class="lnr lnr-cart orange"></span>
-                                <strong>Packages</strong>
+                            <button id="food_btn" class="btn btn-md btn-outline-warning blue-bg col-sm-2">
+                                <span class="lnr lnr-cart white"></span>
+                                <strong class="white" >Packages</strong>
                             </button>
-                        </a>
-
-                        <a href="#contact_us">
-                           <button id="at_btn" class="btn btn-md btn-outline-primary  col-lg-2">
-                                <span class="lnr lnr-phone orange"></span>
-                                <strong>Contact</strong>
-                           </button>
-                        </a>
+                        </a>                        
                     </div>
 
-                    <!-- <div id="collapse_btn" class="container col-lg-10 white-bg br-10">
-                        <button  style="display:inline;" class="btn btn-md btn-outline-primary col-lg-2">
-                            <span class="lnr lnr-menu orange"></span>
-                        </button>
-                    </div> -->
                 @endguest
 
                 @if( session()->has('message') )
-                    <div style="margin-top:2%;margin-left:10%;" class="right-space alert alert-primary" role="alert">
+                    <div id="success_message" style="margin-top:2%;margin-left:10%;" class="right-space alert alert-primary" role="alert">
                         {{ session()->get('message') }}
                         <strong>Successfully</strong>
                         <br>
                     </div>
                 @endif 
-                <!-- style="background: url(../imgs/seamless_pattern.png);" -->
+
                 <body onload="preload()" style="background-color: #f9f9ff;" class="blue">
                     <div class="br-10 black" id="content">
                         @yield('content')
@@ -213,53 +203,51 @@
                 </body>
             </div>
         </div>   
-        <div class="section-gap"></div>
+        <div class="section-gap nlight-bg"></div>
         
         <!-- start footer Area -->
         <footer style="opacity: 1;" class="footer-area">
             <br>
             <div id="contact_us" class="container">
                 <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6">
+                    <div class="col-lg-5 col-md-5 col-sm-5">
                         <div class="single-footer-widget">
-                            
-                            <p class="footer-text white">
-                                <strong>| Copyright &copy;<script>document.write(new Date().getFullYear());</script>| All rights reserved |
-                                <br>| Terms and Conditions Apply | </strong>
-                            </p>
+                            <h3 class="white"><strong>Contact Us</strong></h3>
+                            <div class="footer-social d-flex align-items-center fx-20">
+                                <h3>
+                                    <a href="#"><i class="fa fa-phone"></i></a>
+                                    <a href="#"><i class="fa fa-envelope"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6">
-                       
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
+                    <div class="col-lg-7 col-md-7 col-sm-7">
                         <div class="single-footer-widget">
-                            <h2 class="white"><strong>Contact Us</strong></h2>
-                            <div class="footer-social d-flex align-items-center">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-phone"></i></a>
-                                <a href="#"><i class="fa fa-envelope"></i></a>
-                            </div>
+                            <p class="footer-text white rt-al">
+                                <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | All rights reserved . <br>Terms and Conditions Apply .</strong>
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
             <br>
-            <script>
-                var myVar;
-
-                function preload() {
-                  myVar = setTimeout(showPage, 800);
-                }
-
-                function showPage() {
-                  document.getElementById("preloader").style.display = "none";
-                  document.getElementById("content").style.display = "block";
-                }
-            </script>
         </footer>
-        <!-- End footer Area -->        
+        <!-- End footer Area -->
+        <script type="text/javascript">
+            var myVar;
+
+            function preload() {
+              myVar = setTimeout(showPage, 800);
+            }
+
+            function showPage() {
+              document.getElementById("preloader").style.display = "none";
+              document.getElementById("content").style.display = "block";
+            }
+
+        </script>        
 
         <script src="js/vendor/jquery-2.2.4.min.js"></script>
         <script src="js/popper.min.js"></script>

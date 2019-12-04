@@ -181,7 +181,7 @@ $black			: #222;
 }
 
 .nlight-bg{
-  background:#d2dae2;
+  background:#ecf0f1;
 }
 
 .light-bg{
@@ -193,20 +193,31 @@ $black			: #222;
   color: #dfe6e9;
 }
 
+.tb{
+  border-top:1px solid;
+  color: #dfe6e9;
+}
+
+.bb{
+  border-bottom:1px solid;
+  color: #dfe6e9;
+}
+
+
 .rb{
   border-right:1px solid;
   color: #dfe6e9;
 }
 
-.side{
-  height: 100vh; /* Set the width of the sidebar */
+#side{
+  height: 83vh; /* Set the width of the sidebar */
+  width: 100%;
   position: fixed; /* (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  left: 0;
+  left:70%;
   overflow-y: hidden; /*horizontal scroll */
-  padding-top: 20px;
-  /*#2c3e50*/
+  padding-top: 9%;
   transition: 0.8s all;
 }
 
@@ -229,7 +240,7 @@ $black			: #222;
   z-index: 9999;
   background-image: url('../imgs/default.gif');
   background-repeat: no-repeat; 
-  background-color: #dff9fb;
+  background-color: white;
   background-position:  50% 30%;
   opacity: .9;
 }
@@ -276,6 +287,10 @@ $black			: #222;
   color:yellow;
 }
 
+#profile-pic{
+  width: 50%;
+}
+
 .op7{
   opacity:0.7;
 }
@@ -284,7 +299,15 @@ $black			: #222;
     background-position:  50% 2%;
   }
 
+  #profile-pic{
+    width: 190%;
+  }
+
   #sidenav{
+    display: none;
+  }
+
+  #side{
     display: none;
   }
 
@@ -361,7 +384,7 @@ $black			: #222;
 
 
 .blue-bg{
-  background:#8490ff;
+  background:#5f27cd;
   color:white;
 }
 
@@ -2349,6 +2372,10 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 997;
 }
 
+/*#upload{
+  width:100%;height:50vh;background-color: #f9f9ff;
+}*/
+
 #hero_img{
   width:50%;
   margin-top:0%;
@@ -2365,6 +2392,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .ct{
   text-align:center;
+}
+
+.center{
+  float:center;
 }
 
 .px100{
@@ -2397,6 +2428,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom:5%;
   }
 
+ 
   .main-menu{
     height:30vh;
   }
@@ -2496,6 +2528,8 @@ html{
   #small_title{
     display: inline;    
   }
+
+   
 }
 
 /* Nav Meu Styling */
@@ -3480,6 +3514,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+}
+
+.hidden{
+  display: none;
 }
 
 .timeline ul li .hidden {

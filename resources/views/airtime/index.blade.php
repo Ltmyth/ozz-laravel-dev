@@ -13,7 +13,7 @@
 		}
 
 		#at_btn{
-			background-color:#5f27cd;
+			background-color:orange;
 			color:white;
 			pointer-events: none;
 		}
@@ -50,6 +50,5 @@
 				</button>
 			</a>
 		</li>
-		<hr class="container col-lg-5">
 	</ul>
 @endsection

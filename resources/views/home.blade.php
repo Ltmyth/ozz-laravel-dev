@@ -3,7 +3,7 @@
 @section('content')
     <style type="text/css">
         #home_btn{
-            background-color:#5f27cd;
+            background-color:orange;
             color:white;
             pointer-events: none;
         }
@@ -26,41 +26,99 @@
             }
         }
     </script>
+        <div class="row">
+           
 
-        <!-- right side -->
-        <br>
-        <form enctype="multipart/form-data" method="POST" action="/posts_create">
-            @csrf
-            <div class="container lt-al row mt-20">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-9">
-                     <label for="name" class="col-form-label">
-                        <h2><b>What's going on</b><b class="orange">?</b></h2>
-                    </label> 
+            <!-- <div class="col-lg-1 rb rbr-10"></div> -->
+
+            <div class="col-lg-12 lbr-10">
+                <div class="container ">
+                    <!-- right side -->
                     <br>
-                    <textarea style="width:100%;" id="name" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
-                </div>
-            </div>            
-            <div class="container row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-8">
-                    <br>
-                    <div class="form-group row left-space" >
-                        &nbsp;&nbsp;
-                       <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload"  value="Upload" onclick="getfile()"  id="myBtn">
-                       &nbsp;&nbsp;
-                        <button type="submit" class="btn btn-lg btn-outline-primary">
-                            <i class="lnr lnr-cloud-upload">Post</i> 
-                        </button> 
-                    </div> 
-                </div>
+                    <form enctype="multipart/form-data" method="POST" action="/posts_create">
+                        @csrf
+                        <div class="container lt-al row mt-20">
+                            <div class="col-lg-9">
+                                 <label for="name" class="col-form-label">
+                                    <h2><b>What's going on</b><b class="orange">?</b></h2>
+                                </label> 
+                                <br>
+                                <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
+                                <?php $author = Auth::user()->id; ?>
+                                <input type="hidden" name="author" value="{{ $author }}">
+                            </div>
+                        </div>            
+                        <div class="container row">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-8">
+                                <br>
+                                <div class="form-group row left-space" >
+                                    &nbsp;&nbsp;
+                                   <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload"  value="Upload" onclick="getfile()"  id="myBtn">
+                                   &nbsp;&nbsp;
+                                    <button type="submit" class="btn btn-lg btn-outline-primary">
+                                        <i class="lnr lnr-cloud-upload">Post</i> 
+                                    </button> 
+                                </div> 
+                            </div>
+                        </div>
+                    </form>
+                
+                    <div class="row tb trbr-10">
+                        <div class="col-lg-9">
+                            <?php 
+                                use App\Http\Controllers\PostsController;
+                                echo PostsController::index();
+                            ?>
+                        </div>
+
+                        <div id="side"  class="col-lg-3 nlight-bg lb br-10">
+                            <div class="row br-10 nlight-bg mt-30">
+                                <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
+                            </div>
+                            
+                            <!-- <div class="row blue-bg br-10 mt-30">
+                                <hr>
+                                    <h3 class="lt-al"><strong>Trending around you</strong>!</h3>
+                                <hr>
+                                <div class="container lt-al black light-bg brbr-10">
+                                    <h4>#theohzLaunch</h4>
+                                </div>
+                            </div>   -->                
+
+                            <div class="row blue-bg br-10">
+                                <hr>
+                                    <h3 class="lt-al">Popular around you</h3>
+                                <hr>
+                                <div class="container lt-al black light-bg blbr-10 brbr-10">
+                                    <div class="row ml-20">
+                                        <h2 class="white">#Launch</h2>
+                                        <hr>
+                                        <a href="{{ route('user') }}">
+                                            <h4 class="white">
+                                                <img 
+                                                    id="profile-pic" 
+                                                    class="theme w-20" 
+                                                    src="{{ asset('/imgs/ozz-app.png') }}"
+                                                    alt="Avator" 
+                                                >
+                                                O G
+                                            </h4>
+                                        </a>
+                                    </div>                        
+                                </div>
+                            </div>             
+
+                            <div class="row br-10 mt-30">
+                                <div class="container lt-al brbr-10">
+                                    <button class="btn btn-lg btn-outline-warning rt px100">
+                                        <i class="lnr lnr-menu orange"></i>
+                                    </button>                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
             </div>
-        </form>
-    <hr class="container col-lg-10">
-    <div class="container">
-        <?php 
-            use App\Http\Controllers\PostsController;
-            echo PostsController::index();
-        ?>   
-    </div>
+        </div>
 @endsection

@@ -7,7 +7,7 @@
 
 
     	#messages_btn{
-    		background-color:#8490ff;
+    		background-color:orange;
     		color:white;
     		pointer-events: none;
     	}
@@ -58,9 +58,6 @@
             x.setAttribute("style", "display:none");*/
         }
     </script>
-        <br>
-        <h2>Messages</h2>
-        <hr class="container col-lg-5">
         <button id="compose_btn"  onclick="compose()" class="btn btn-md btn-info">
             Compose 
         </button>
@@ -108,8 +105,27 @@
         </form>
     </div> -->
         <div class="row">
-            <div style="border-bottom-right-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20  pb-20 ml-5">
-                <p class="lt-al ml-30 mr-10"><strong>txt</strong></p>
+            <div  class="col-lg-7">
+                <div class=" row">
+                    <div class="col-lg-2">
+                        <a href="{{ route('user') }}">
+                            <img 
+                                id="profile-pic" 
+                                class="theme w-50" 
+                                src="{{ asset('/imgs/ozz-app.png') }}"
+                                alt="Avator" 
+                            >
+                        </a>
+                    </div>
+
+                    <div class="col-lg lt-al">
+                        <h3><strong>Joghh</strong></h3>
+                    </div>
+                </div>
+
+                <div class="row trbr-10 brbr-10 blbr-10 pt-20  pb-20 blue-bg">
+                    <h4 class="ml-20 pl-10">aoboaov</h4>
+                </div>
             </div>
         </div>
         
@@ -117,8 +133,10 @@
         <div class="row">
            <div class="col-lg-5">               
            </div> 
-           <div style="border-bottom-right-radius:100px;" class="well blue-bg col-lg-7 br-10 pt-20 pb-20 pr-10">
-                <p class="lt-al ml-10 mr-30"><strong>txt</strong></p>
+           <div class="col-lg-7 br-10 pt-20 pb-20 pr-10">
+                <div class="row blue-bg tlbr-10 trbr-10 blbr-10 pt-20  pb-20">
+                    <p class="lt-al ml-20 pl-10"><strong>txt</strong></p>
+                </div>
             </div>
         </div>
         

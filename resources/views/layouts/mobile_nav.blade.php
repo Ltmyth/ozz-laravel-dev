@@ -60,19 +60,19 @@
 
                 <div class="dropdown-divider"></div>
                 
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="accommodation">
                     <b class="white">Accommodation</b>
                 </a>
 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="food">
                     <b class="white">Food</b>
                 </a>
                 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="airtime">
                     <b class="white">Airtime</b>
                 </a>
             </div>   

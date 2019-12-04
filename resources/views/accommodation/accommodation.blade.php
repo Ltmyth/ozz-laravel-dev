@@ -12,13 +12,13 @@
 		}
 
 		#accoms_btn{
-			background-color:#5f27cd;
+			background-color:orange;
 			color:white;
 			pointer-events: none;
 		}
 	</style>
 	<br><br>
-	<img class="curve w-40" src="{{ asset('/imgs/hotellong.jpeg') }}">	
+	<img class="curve w-20" src="{{ asset('/imgs/room.png') }}">	
 	<br><br>
 	<h2><b>Accommodation Services</b></h2>
 
@@ -40,14 +40,14 @@
 	<div class="row pb-30">
 		<div class="col-md-4">
 			<a href="{{ route('ss_hostels') }}">
-				<img src="{{ asset('/imgs/singlesex1.jpeg') }}">	
+				<img class="w-40" src="{{ asset('/imgs/accom.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Single Sex</strong></h3>
 			</a>	
 		</div>
 		<div class="col-md-4">
 			<a href="/ms_hostels/">
-				<img class="w-90"  src="{{ asset('/imgs/mixedsex.png') }}">
+				<img class="w-40" src="{{ asset('/imgs/accom.png') }}">
 				<br><br>
 				<h3 class="black" ><strong>Mixed Sex</strong></h3>
 			</a>

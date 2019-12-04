@@ -63,6 +63,34 @@ Route::delete('destroy_post/{post_id}','PostsController@destroy');
 
 
 
+//likes
+Route::post('/like','LikeController@store');
+Route::post('/unlike/{post_id}','LikeController@destroy');
+
+//dislikes
+Route::post('/dislike','DislikeController@store');
+Route::post('/undislike/{post_id}','DislikeController@destroy');
+
+
+//shares
+Route::post('/share','ShareController@store');
+Route::post('/unshare/{post_id}','ShareController@destroy');
+
+//comments
+Route::post('/comment','CommentController@store');
+Route::post('/uncomment/{post_id}','CommentController@destroy');
+
+
+
+
+
+
+
+
+
+
+
+
 
 //side nav
 Route::view('/sidenav','layouts.sidenav');
@@ -175,5 +203,3 @@ Route::get('user','People@index')->name('user');
 
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

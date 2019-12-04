@@ -43,13 +43,16 @@
         <div class="container">
             <div  class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 home-about-left br-10">
-                    <img class="w-80 br-10 pb-5"  src="/imgs/about.jpg" alt="">
+                    <img class="w-80 br-10"  src="/imgs/info.png" alt="">
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
+                    <h4 class="lt-al">
+                        <strong class="blue">ABOUT US</strong>
+                    </h4>
                     <h4>
                         <b class="black">
                             <p class="lt-al">
-                                <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong>living or commuting within <strong>featured</strong> communities.
+                                <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong>living or commuting within <strong>featured</strong> communities.
                             </p>
                         </b>
                     </h4>
@@ -66,6 +69,14 @@
                         community-based users with each other 
                         and to respective community-based services <strong>quickly</strong> and <strong>click easily</strong>.</h4>
                     </p>
+
+                    <br>
+                    <a href="#contact_us">
+                       <button id="at_btn" class="btn btn-md btn-outline-warning blue-bg  col-sm-4">
+                            <span class="lnr lnr-phone white"></span>
+                            <strong class="white">Contact Us</strong>
+                       </button>
+                    </a>
                 </div>
                 <div id="focus" class="col-lg-5 col-md-6 home-about-right pt-10">
                     <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
@@ -88,7 +99,7 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <hr>
-                        <img class="br-10" src="/imgs/community.jpg" alt="">
+                        <img class="br-10" src="/imgs/community.png" alt="">
                         <hr> 
                     </div>
                 </div>    
@@ -163,7 +174,7 @@
                             </p>
                         </h4>
                         <div class="row w-90">
-                            <img class="br-10" class="w-40" src="/imgs/burger.jpg" alt="">
+                            <img class="br-10" class="w-40" src="/imgs/food.png" alt="">
                         </div>
                     </div>  
                 </div>
@@ -184,7 +195,7 @@
                             </ul>
                         </h4>   
                         <div class="row w-100">
-                            <img class="br-10" class="w-40" src="/imgs/house.jpg" alt="">
+                            <img class="br-10" class="w-40" src="/imgs/accom.png" alt="">
                         </div>                     
                     </div>
                 </div>
@@ -229,9 +240,11 @@
         <div id="how" class="container">
             <div class="row d-flex justify-content-center">
                 
-                <div class="col-lg-12">  
+                <div class="col-lg-12"> 
+
+                    <img class="br-10 w-20" src="/imgs/cog.png" alt=""> 
                     <h1><strong>HOW IT WORKS</strong></h1>
-                    <img class="br-10 w-50" src="/imgs/cog.jpg" alt="">
+                    
                     <div class="row">
                         <div class="col-lg-3 b blue-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/pointing-up.svg" alt="">
@@ -462,16 +475,19 @@
             <div class="col-sm">
                 <br>
                 <a href="#"><img class="w-70" src="imgs/africastalking.png" alt=""></a>
+                <br>
             </div>
 
             <div class="col-sm">
                 <a href="#"><img  class="w-40" src="imgs/logo.png" alt=""></a>  
+                <br>
                 <!-- <a href="#"><img src="imgs/mambo.png" alt=""></a> -->
             </div>
 
             <div class="col-sm">
                 <br>
                 <a href="#"><img  class="w-40" src="imgs/mambo.png" alt=""></a> 
+                <br>
             </div>
         </div>        
         <br><br>
