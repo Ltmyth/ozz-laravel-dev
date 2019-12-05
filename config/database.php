@@ -4,7 +4,7 @@ use Illuminate\Support\Str;
 
 
 
-$url ='db.cipher256.com';
+$url = env('DB_URL');
 $host = env('DB_HOST');
 $username = env('DB_USERNAME');
 $password = env('DB_PASSWORD');

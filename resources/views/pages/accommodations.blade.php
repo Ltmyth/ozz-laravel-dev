@@ -11,7 +11,7 @@
 		}
 
 		#accoms_btn{
-			background-color:#34ace0;
+			background-color:#9980FA;
 			color:white;
 			pointer-events: none;
 		}

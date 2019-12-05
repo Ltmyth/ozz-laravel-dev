@@ -23,13 +23,10 @@ use App\Notifications\NewUser;
 
 
 //auth
-// Route::get('/logout', function(){
-//    Auth::logout();
-//    return Redirect::to('/');
-// });
-// Auth::routes();
+Auth::routes();
 
-// Route::get('/signin','PageController@login');
+Route::get('/signin','PageController@login');
+Route::get('/logout', 'PageController@logout');
 
 
 
@@ -63,6 +60,34 @@ Route::post('posts_create','PostsController@store');
 Route::get('posts_show/{post}','PostsController@show');
 //delete post
 Route::delete('destroy_post/{post_id}','PostsController@destroy');
+
+
+
+//likes
+Route::post('/like','LikeController@store');
+Route::post('/unlike/{post_id}','LikeController@destroy');
+
+//dislikes
+Route::post('/dislike','DislikeController@store');
+Route::post('/undislike/{post_id}','DislikeController@destroy');
+
+
+//shares
+Route::post('/share','ShareController@store');
+Route::post('/unshare/{post_id}','ShareController@destroy');
+
+//comments
+Route::post('/comment','CommentController@store');
+Route::post('/uncomment/{post_id}','CommentController@destroy');
+
+
+
+
+
+
+
+
+
 
 
 
@@ -176,3 +201,5 @@ Route::get('user','People@index')->name('user');
 
 
 
+
+Auth::routes();
