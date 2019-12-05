@@ -7,7 +7,7 @@
 
 
     	#messages_btn{
-    		background-color:#2980b9;
+    		background-color:orange;
     		color:white;
     		pointer-events: none;
     	}
@@ -34,14 +34,15 @@
             x.setAttribute("style", "display:none");*/
         }
     </script>
+
         <br>
       	<h2>
             Inbox
             <i class="lnr lnr-alarm"></i>
         </h2>
-      	<hr class="container col-lg-5">
+      	<hr class="container col-lg-12">
       	<button id="compose_btn"  onclick="compose()" class="btn btn-md btn-outline-primary">
-      		Compose 
+      		Compose  <i class="lnr lnr-location"></i>
       	</button>
         &nbsp;&nbsp;&nbsp;&nbsp;
       	<br><br>
@@ -65,35 +66,36 @@
         </div>
         <hr class="container col-lg-5">
             <div class="container col-lg-12">
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-4">
-                        <big>
-                            <a href="/inbox/">
-                              <div class="br-10 blue-bg well">
-                                  John Doe
-                              </div>  
-                            
-                        </big>
+                <div class="row bb white-bg blbr-10 trbr-10 brbr-10">
+                    <div class="col-lg-2 w-10">
+                        <div class="row">
+                            <a href="{{ route('user') }}">
+                                <img 
+                                    id="profile-pic" 
+                                    class="theme w-40 rt" 
+                                    src="{{ asset('/imgs/ozz-app.png') }}"
+                                    alt="Avator" 
+                                >
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-3">
-                        <big>
-                            <b class="red">1</b>
-                        </big>
+                    <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
+                        <a href="/inbox/">
+                            <div class="row blbr-10" >
+                                <hr class="w-100 br-10">
+                                 <h3 class="blue  w-100">
+                                    <strong>{{ Auth::user()->name }}</strong>
+                                    &nbsp;
+
+                                
+                                    <small>
+                                        <i class="red fz-15">15</i>
+                                    </small>
+                                </h3> 
+                            </div>
                         </a>
-                    </div>                    
+                    </div>
                 </div>
             </div>            
-        <hr class="container col-lg-5">
-            <!-- <big>
-                <a href="/sent/">
-                    <button class="btn btn-lg btn-default">
-                        Sent
-                        <i class="glyphicon glyphicon-send"></i>
-                    </button>
-                </a>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-            </big>
-        <hr class="container col-lg-5">  -->
     <br><br>
 @endsection

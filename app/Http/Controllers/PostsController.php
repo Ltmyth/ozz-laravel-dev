@@ -18,6 +18,7 @@ class PostsController extends Controller
         //model
         $posts = Post::orderBy('id','desc')->get();
 
+
         //view with model
         return view('posts.posts')->with('posts',$posts);
     }
@@ -30,12 +31,14 @@ class PostsController extends Controller
         //validate
         $this->validate($request,[
             'post' => 'required',
+            'author' => 'required',
             'upload' => '|image|nullable|max:1999'
         ]);
 
         //new post
         $post = new Post();
         $post->Post_content = $request->input('post');
+        $post->author = $request->input('author');
 
         if($request->hasFile('upload')){
             //filename with ext

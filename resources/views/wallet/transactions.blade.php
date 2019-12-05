@@ -7,14 +7,9 @@
   			background-color: white;
   		}
 
-  		
-  		#wallet{
-  			background-color:#34ace0;
-  			pointer-events: none;
-  		}
 
   		#wallet_btn{
-  			background-color:black;
+  			background-color:orange;
   			color:white;
   			pointer-events: none;
   		}

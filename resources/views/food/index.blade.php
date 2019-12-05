@@ -16,13 +16,13 @@
 		}
 
 		#food_btn{
-			 background-color:#5f27cd;
+			 background-color:orange;
 			color:white;
 			pointer-events: none;
 		}
 	</style>
     <!-- right side -->
-  		<img style="width:35%;" class="curve" src="{{ asset('/imgs/foodservice.jpeg') }}">
+  		<img class="curve w-20" src="{{ asset('/imgs/food.png') }}">
 		<br><br>
   		<h2><b>Food Services</b></h2>
   		<hr class="container col-lg-8">

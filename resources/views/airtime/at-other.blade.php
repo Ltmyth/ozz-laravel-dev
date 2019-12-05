@@ -8,12 +8,12 @@
 		
 		
 		#at{
-			background-color:#34ace0;
+			background-color:orange;
 			pointer-events: none;
 		}
 
 		#at_btn{
-			background-color:#5f27cd;
+			background-color:#9980FA;
 			color:white;
 			pointer-events: none;
 		}

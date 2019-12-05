@@ -7,7 +7,7 @@
 @extends('layouts.layout')
 @section('content')
     
-    <div class="container-fluid col-lg-8">
+    <div id="login_content">
         <div style="border-radius:3%;margin-top:8%;" class="card container ct">
             <h1>Login</h1>
                     <form method="POST" style="padding:5%;" action="{{ route('login') }}">
@@ -64,7 +64,7 @@
                             <div class="col-md-3 ct">
                             </div>
                             <div class="col-md-5 ct">
-                                <button type="submit" class="btn btn-lg btn-success px100">
+                                <button type="submit" class="btn btn-lg btn-outline-primary px100">
                                     {{ __('Login') }}
                                 </button>
                                 <br><br>

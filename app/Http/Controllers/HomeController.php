@@ -23,7 +23,6 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $messages = "";
-        return view('home')->with('messages',$messages);
+        return view('home');
     }
 }

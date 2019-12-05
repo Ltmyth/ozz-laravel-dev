@@ -1,7 +1,7 @@
 $(document).ready(function() {
     "use strict";
 
-
+    
     //------- Niceselect  js --------//  
 
     if (document.getElementById("default-select")) {
@@ -323,14 +323,14 @@ $(document).ready(function() {
     });
 
 
+    // $(window).on(‘load’, function(){          
+    //     $("#preloader").fadeOut(500);
+    //     }
+    // );
 
+   
 
     //------- Header Scroll Class  js --------//  
-
-    $(window).load(function() {
-       $('.preloader').fadeOut('slow');
-    });
-
     $(window).scroll(function() {
         if ($(this).scrollTop() > 100) {
             $('#header').addClass('header-scrolled');
@@ -494,15 +494,3 @@ $(document).ready(function() {
     });
 
 });
-
-window.addEventListener('scroll', function scroll() 
-    {
-        alert("scrolled"+y+"px");
-        // var y = document.getELmentById("about").scrollTop;
-        // if (y>0) 
-        // {
-        //     document.getElementById("collapse_btn").style.display = "inline";
-        //     alert("scrolled"+y+"px");
-        // }   
-    }
-);

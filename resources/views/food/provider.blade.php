@@ -16,7 +16,7 @@
 		}
 
 		#food_btn{
-			 background-color:#5f27cd;
+			 background-color:orange;
 			color:white;
 			pointer-events: none;
 		}
