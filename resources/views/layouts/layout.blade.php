@@ -216,7 +216,7 @@
                     </div>
                 @endif 
 
-                <body onload="preload()" style="background-color: #f9f9ff;" class="blue container-fluid">
+                <body onload="preload()" style="background-color: #f9f9ff;" class="blue">
                     <div class="br-10 black" id="content">
                         @yield('content')
                     </div>
