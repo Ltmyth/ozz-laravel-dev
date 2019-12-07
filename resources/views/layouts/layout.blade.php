@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
             <!-- Mobile Specific Meta -->
-            <meta name="viewport" content="initial-scale=1.0">
+            <meta name="viewport" content="initial-scale=1.0,user-scalable=no">
             <!-- Favicon-->
             <link rel="shortcut icon" href="img/fav.png">
             <!-- Author Meta -->
