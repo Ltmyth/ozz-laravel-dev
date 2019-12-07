@@ -173,7 +173,7 @@
                                Search,  view and procure from community based food service providers and their various menus.
                             </p>
                         </h4>
-                        <div class="row w-90">
+                        <div class="row">
                             <img class="br-10" class="w-40" src="/imgs/food.png" alt="">
                         </div>
                     </div>  
@@ -211,8 +211,8 @@
                                 You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low cost used to cover infrastructure and transaction costs.
                             </p>
                         </h4>
-                        <div class="row w-60">
-                            <img class="br-10" src="/imgs/pay.png" alt="">
+                        <div class="row">
+                            <img class="br-10 w-90" src="/imgs/pay.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -224,8 +224,8 @@
                                 Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all  <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
                             </p>
                         </h4>
-                        <div class="row w-60">
-                            <img class="br-10" src="/imgs/shield.png" alt="">
+                        <div class="row">
+                            <img class="br-10 w-90" src="/imgs/shield.png" alt="">
                         </div>
                     </div>              
                 </div>                                                      
@@ -242,7 +242,7 @@
                 
                 <div class="col-lg-12"> 
 
-                    <img class="br-10 w-20" src="/imgs/cog.png" alt=""> 
+                    <img class="br-10 w-40" src="/imgs/cog.png" alt=""> 
                     <h1><strong>HOW IT WORKS</strong></h1>
                     
                     <div class="row">
