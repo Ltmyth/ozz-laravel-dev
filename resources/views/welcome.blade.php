@@ -99,7 +99,7 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <hr>
-                        <img class="br-10" src="/imgs/community.png" alt="">
+                        <img class="br-10 w-90" src="/imgs/community.png" alt="">
                         <hr> 
                     </div>
                 </div>    
