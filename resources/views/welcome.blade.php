@@ -15,7 +15,7 @@
                 <div  class="col-lg-6 col-md-6 banner-left">  
                     <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
                     <div class="row pb-5 pt-10">
-                        <img id="welcome_img"  class="w-100 br-10"  src="/imgs/greet.jpg" alt="">
+                        <img id="welcome_img"  class="w-100 br-10"  src="/imgs/hello.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
