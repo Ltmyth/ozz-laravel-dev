@@ -147,7 +147,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10" class="w-50" src="/imgs/people.png" alt="">
+                            <img class="br-10 w-50" src="/imgs/people.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10" class="w-40" src="/imgs/food.png" alt="">
+                            <img class="br-10 w-70" src="/imgs/food.png" alt="">
                         </div>
                     </div>  
                 </div>
@@ -194,8 +194,8 @@
                                 <li>Motels</li>
                             </ul>
                         </h4>   
-                        <div class="row w-100">
-                            <img class="br-10" class="w-40" src="/imgs/accom.png" alt="">
+                        <div class="row">
+                            <img class="br-10" class="w-50" src="/imgs/accom.png" alt="">
                         </div>                     
                     </div>
                 </div>
@@ -212,7 +212,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-90" src="/imgs/pay.png" alt="">
+                            <img class="br-10 w-80" src="/imgs/pay.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-90" src="/imgs/shield.png" alt="">
+                            <img class="br-10 w-70" src="/imgs/shield.png" alt="">
                         </div>
                     </div>              
                 </div>                                                      
