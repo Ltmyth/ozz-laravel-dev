@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
             <!-- Mobile Specific Meta -->
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="viewport" content="initial-scale=1">
             <!-- Favicon-->
             <link rel="shortcut icon" href="img/fav.png">
             <!-- Author Meta -->
@@ -48,6 +48,7 @@
             <script src="{{ asset('/js/main.js') }}"></script>
 
             <!-- server env -->
+            <script src="{{ secure_asset('js/vendor/jquery-2.2.4.min.js') }}"></script>
             <script src="{{ secure_asset('js/vendor/bootstrap.min.js') }}"></script>
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/main.css') }}">
