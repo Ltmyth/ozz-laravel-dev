@@ -147,7 +147,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-50" src="/imgs/people.png" alt="">
+                            <img class="br-10 w-80" src="/imgs/people.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                             </p>
                         </h4>
                         <div class="row ct-al">
-                            <img class="br-10 w-40" src="/imgs/phone.png" alt="">
+                            <img class="br-10 w-70" src="/imgs/phone.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -174,7 +174,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-70" src="/imgs/food.png" alt="">
+                            <img class="br-10 w-80" src="/imgs/food.png" alt="">
                         </div>
                     </div>  
                 </div>
@@ -195,7 +195,7 @@
                             </ul>
                         </h4>   
                         <div class="row">
-                            <img class="br-10" class="w-50" src="/imgs/accom.png" alt="">
+                            <img class="br-10 w-80" src="/imgs/accom.png" alt="">
                         </div>                     
                     </div>
                 </div>
