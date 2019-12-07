@@ -2,7 +2,7 @@
     <html lang="en">
         <head>
             <!-- Mobile Specific Meta -->
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <!-- Favicon-->
             <link rel="shortcut icon" href="img/fav.png">
             <!-- Author Meta -->
@@ -14,6 +14,8 @@
             <!-- scripts -->
             
             <script src="js/vendor/jquery-2.2.4.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/vendor/bootstrap.min.js"></script>      
             <script src="js/easing.min.js"></script>            
@@ -43,11 +45,13 @@
             <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
             <link rel="stylesheet" type="text/css" href="/css/owl.carousel.css">             
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}">
+            <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
             <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
 
             <script src="{{ asset('/js/main.js') }}"></script>
 
             <!-- server env -->
+            <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/bootstrap.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/bootstrap/dist/css/bootstrap.min.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('/css/main.css') }}">
             <link rel="stylesheet" type="text/css" href="{{ secure_asset('jquery-ui.css') }}">
