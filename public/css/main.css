@@ -2344,6 +2344,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   right: 0;
   transition: all 0.5s;
+  height:8%;
   z-index: 997;
   background: #5f27cd;
 }
