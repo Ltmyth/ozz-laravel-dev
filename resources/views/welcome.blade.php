@@ -13,21 +13,21 @@
             
            <div class="row fullscreen align-items-center">
                 <div  class="col-lg-6 col-md-6 banner-left">  
-                    <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
                     <div class="row pb-5 pt-10">
-                        <img id="welcome_img"  class="w-80 br-10"  src="/imgs/hello.png" alt="">
+                        <div class="conatainer mt-10">
+                            <img id="welcome_img"  class="w-60 br-10"  src="/imgs/hello_bot.png" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-1"></div>
-                <div  class="col-lg-5 col-md-5 banner-right">
+                <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h1><b>Welcome </h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
-                       <br><br>
-                        <h3><b>The <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
+                       <h1><b>Welcome,</h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
+                       <br>
+                        <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
                         <br><br>
                         <a href="/register">
-                            <button class="primary-btn text-uppercase br-10">
+                            <button class="btn btn-lg btn-outline-warning text-uppercase blue-bg">
                                 join us now
                             </button>
                         </a>
@@ -50,15 +50,13 @@
                         <strong class="blue">ABOUT US</strong>
                     </h4>
                     <h4 class="black">
-                            <p class="lt-al">
-                                <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong>living or commuting within <strong>featured</strong> communities.
-                            </p>
+                        <p class="lt-al">
+                            The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
+                        </p>
                     </h4>
 
-                    <h4>
-                        <b class="black">
-                            <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>social</strong> stay for both individuals and service providers within the respective featured communities.</strong></p>
-                        </b>
+                    <h4>                        
+                        <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>community eccentric</strong> stay for both individuals and service providers within the respective featured communities.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
@@ -143,11 +141,19 @@
                                 <img class="br-10 w-50" src="/imgs/people.png" alt="">
                             </div>
                         </div>
-                        <a ><h4 class="ct-al">People</h4></a>
+
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Communication</strong>
+                            </h4>
+                        </a>
+
                         <h4 class="lt-al black">
                             <p>
-                                Connect and communicate with people in your community, district or neighborhood at no cost.
+                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                at as low as <b class="red">0.01</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
                             </p>
+
                         </h4>
                     </div>
                 </div>
@@ -158,7 +164,13 @@
                                 <img class="w-30" src="/imgs/phone.png" alt="">
                             </div>
                         </div>
-                        <a href="/login"><h4 class="ct-al">Airtime</h4></a>
+
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Airtime</strong>
+                            </h4>
+                        </a>
+                        
                         <h4 class="lt-al black">
                             <p> 
                                 With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
@@ -174,7 +186,13 @@
                                 <img class="br-10 w-40" src="/imgs/food.png" alt="">
                             </div>
                         </div>
-                        <a href="/login"><h4 class="ct-al">Food</h4></a>
+
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Food</strong>
+                            </h4>
+                        </a>
+
                         <h4 class="lt-al black">
                             <p >
                                Search,  view and procure from community based food service providers and their various menus.
@@ -189,7 +207,13 @@
                                 <img class="br-10 w-30" src="/imgs/room.png" alt="">
                             </div>
                         </div> 
-                        <a href="/login"><h4 class="ct-al">Accommodation</h4></a>
+
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Accommodation</strong>
+                            </h4>
+                        </a>
+
                         <h4 class="lt-al black">
                             <p>
                                 Find and secure accommodation within a community or destination of interest.
@@ -213,7 +237,11 @@
                             </div>
                         </div>
 
-                        <a href="/login"><h4 class="ct-al">Payments</h4></a>
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Payments</strong>
+                            </h4>
+                        </a>
                         
                         <h4 class="lt-al black">
                             <p>
@@ -234,7 +262,11 @@
                             </div>
                         </div>
 
-                        <a href="/login"><h4 class="ct-al">Secure and transparent transactions</h4></a>
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Secure and transparent transactions</strong>
+                            </h4>
+                        </a>
                         
                         <h4 class="lt-al black">
                             <p class="lt-al">
