@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
+<nav class="navbar navbar-dark">
     @guest
         <a class="navbar-brand" href="/">
     @endguest
