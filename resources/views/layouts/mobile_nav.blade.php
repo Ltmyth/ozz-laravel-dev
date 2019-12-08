@@ -1,4 +1,4 @@
-<nav class="navbar navbar-dark">
+<nav class="navbar navbar-expand-md navbar-dark">
     <div class="container">
         @guest
             <a class="navbar-brand" href="/">
@@ -16,7 +16,7 @@
         </button>
     </div>    
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse blue-bg" id="navbarSupportedContent">
         @auth 
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search theohz" aria-label="Search">
