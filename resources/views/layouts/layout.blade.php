@@ -31,9 +31,12 @@
             <script src="js/simple-skillbar.js"></script>                           
             <script src="js/owl.carousel.min.js"></script>                          
             <script src="js/mail-script.js"></script> 
+            
+            <!-- Popper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
-            <!-- Fonts -->
-            <!-- <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet"> -->
+            <!-- Latest compiled JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
             <!-- styles -->
             <link rel="stylesheet" href="/css/linearicons.css">
