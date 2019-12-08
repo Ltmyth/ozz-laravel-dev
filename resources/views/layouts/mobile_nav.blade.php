@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark">
+<nav class="navbar navbar-expand-md navbar-dark blue-bg brbr-10 blbr-10">
     <div class="container">
         @guest
             <a class="navbar-brand" href="/">
