@@ -62,7 +62,7 @@
                
         </head>
         <div id="preloader" class="preloader"></div>
-        <header id="header" class="brbr-10 blbr-10">
+        <header id="header">
 
             <div id="small_title">
                 @include('layouts.mobile_nav')
