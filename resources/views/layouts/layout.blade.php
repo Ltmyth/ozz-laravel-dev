@@ -61,7 +61,7 @@
                
         </head>
         
-        <header id="header" class="br-10">
+        <header id="header" class="blbr-10 brbr-10">
 
             <div id="preloader" class="preloader"></div>
 

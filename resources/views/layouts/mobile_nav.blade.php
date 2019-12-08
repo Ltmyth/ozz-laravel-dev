@@ -10,10 +10,10 @@
         <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
         <strong class="white"><h3>the<b class="orange">oh</b><b>z</b></h3></strong>
     </a>
-    <button class="btn btn-md btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
     </button>
-
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         @auth 
             <form class="form-inline my-2 my-lg-0">
