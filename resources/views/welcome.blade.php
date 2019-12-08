@@ -15,7 +15,7 @@
                 <div  class="col-lg-6 col-md-6 banner-left">  
                     <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
                     <div class="row pb-5 pt-10">
-                        <img id="welcome_img"  class="w-70 br-10"  src="/imgs/hello.png" alt="">
+                        <img id="welcome_img"  class="w-80 br-10"  src="/imgs/hello.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -138,47 +138,58 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a ><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-users"></span> People</h4></a>
+                        <div class="row">
+                            <div class="conatainer">
+                                <img class="br-10 w-50" src="/imgs/people.png" alt="">
+                            </div>
+                        </div>
+                        <a ><h4 class="ct-al">People</h4></a>
                         <h4 class="lt-al black">
                             <p>
                                 Connect and communicate with people in your community, district or neighborhood at no cost.
                             </p>
                         </h4>
-                        <div class="row">
-                            <img class="br-10 w-90" src="/imgs/people.png" alt="">
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a href="/login"><h4 class="lt-al"><span  style="color:orange;" class="lnr lnr-tablet"></span> Airtime</h4></a>
+                        <div class="row">
+                            <div class="container">
+                                <img class="w-30" src="/imgs/phone.png" alt="">
+                            </div>
+                        </div>
+                        <a href="/login"><h4 class="ct-al">Airtime</h4></a>
                         <h4 class="lt-al black">
                             <p> 
                                 With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
                                 This is currently applicable in Uganda alone.
                             </p>
                         </h4>
-                        <div class="row ct-al">
-                            <img class="w-50" src="/imgs/phone.png" alt="">
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a href="/login"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-dinner"></span> Food</h4></a>
+                        <div class="row">
+                            <div class="conatainer">
+                                <img class="br-10 w-40" src="/imgs/food.png" alt="">
+                            </div>
+                        </div>
+                        <a href="/login"><h4 class="ct-al">Food</h4></a>
                         <h4 class="lt-al black">
                             <p >
                                Search,  view and procure from community based food service providers and their various menus.
                             </p>
                         </h4>
-                        <div class="row">
-                            <img class="br-10 w-80" src="/imgs/food.png" alt="">
-                        </div>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a href="/login"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-apartment"></span> Accommodation</h4></a>
+                        <div class="row">
+                            <div class="container">
+                                <img class="br-10 w-30" src="/imgs/room.png" alt="">
+                            </div>
+                        </div> 
+                        <a href="/login"><h4 class="ct-al">Accommodation</h4></a>
                         <h4 class="lt-al black">
                             <p>
                                 Find and secure accommodation within a community or destination of interest.
@@ -191,15 +202,19 @@
                                 <li>Lodgings</li>
                                 <li>Motels</li>
                             </ul>
-                        </h4>   
-                        <div class="row">
-                            <img class="br-10 w-80" src="/imgs/accom.png" alt="">
-                        </div>                     
+                        </h4>                                            
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a href="/login"><h4 class="lt-al"><span style="color:orange;" class="package-no lnr lnr-briefcase"></span> Payments</h4></a>
+                        <div class="row">
+                            <div class="conatainer">
+                                <img class="br-10 w-40" src="/imgs/pay.png" alt="">
+                            </div>
+                        </div>
+
+                        <a href="/login"><h4 class="ct-al">Payments</h4></a>
+                        
                         <h4 class="lt-al black">
                             <p>
                                 Make payments from your <b class="orange">oh</b><b>z</b> wallet stash to another user's wallet or list of users' wallets <b>free</b> of charge.
@@ -208,23 +223,24 @@
                             <p>
                                 You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low cost used to cover infrastructure and transaction costs.
                             </p>
-                        </h4>
-                        <div class="row">
-                            <img class="br-10 w-70" src="/imgs/pay.png" alt="">
-                        </div>
+                        </h4>                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <a href="/login"><h4 class="lt-al"><span style="color:orange;" class="lnr lnr-lock"></span>Secure and transparent transactions</h4></a>
+                        <div class="row">
+                            <div class="conatiner">
+                                <img class="br-10 w-30" src="/imgs/shield.png" alt="">
+                            </div>
+                        </div>
+
+                        <a href="/login"><h4 class="ct-al">Secure and transparent transactions</h4></a>
+                        
                         <h4 class="lt-al black">
                             <p class="lt-al">
                                 Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all  <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
                             </p>
-                        </h4>
-                        <div class="row">
-                            <img class="br-10 w-60" src="/imgs/shield.png" alt="">
-                        </div>
+                        </h4>                        
                     </div>              
                 </div>                                                      
             </div>
