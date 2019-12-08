@@ -1,19 +1,21 @@
 <nav class="navbar navbar-dark">
-    @guest
-        <a class="navbar-brand" href="/">
-    @endguest
+    <div class="container">
+        @guest
+            <a class="navbar-brand" href="/">
+        @endguest
 
-    @auth
-        <a class="navbar-brand" href="/home">
-    @endauth
-    <!-- 
-        <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
-        <strong class="white"><h3>the<b class="orange">oh</b><b>z</b></h3></strong>
-    </a>
-    <button class="btn btn-md btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-    </button>
-
+        @auth
+            <a class="navbar-brand" href="/home">
+        @endauth
+        <!-- 
+            <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
+            <strong class="white"><h3>the<b class="orange">oh</b><b>z</b></h3></strong>
+        </a>
+        <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+    </div>    
+    
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         @auth 
             <form class="form-inline my-2 my-lg-0">
