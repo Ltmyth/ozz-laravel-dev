@@ -15,7 +15,7 @@
                 <div  class="col-lg-6 col-md-6 banner-left">  
                     <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
                     <div class="row pb-5 pt-10">
-                        <img id="welcome_img"  class="w-100 br-10"  src="/imgs/hello.png" alt="">
+                        <img id="welcome_img"  class="w-70 br-10"  src="/imgs/hello.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-1"></div>
@@ -43,18 +43,16 @@
         <div class="container">
             <div  class="row align-items-center justify-content-between">
                 <div class="col-lg-6 col-md-6 home-about-left br-10">
-                    <img class="w-80 br-10"  src="/imgs/info.png" alt="">
+                    <img class="w-100 br-10"  src="/imgs/info.png" alt="">
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
                     <h4 class="lt-al">
                         <strong class="blue">ABOUT US</strong>
                     </h4>
-                    <h4>
-                        <b class="black">
+                    <h4 class="black">
                             <p class="lt-al">
                                 <strong>The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong>living or commuting within <strong>featured</strong> communities.
                             </p>
-                        </b>
                     </h4>
 
                     <h4>
@@ -99,7 +97,7 @@
                 <div class="col-lg-6">
                     <div class="row">
                         <hr>
-                        <img class="br-10 w-90" src="/imgs/community.png" alt="">
+                        <img class="br-10 w-80" src="/imgs/community.png" alt="">
                         <hr> 
                     </div>
                 </div>    
@@ -147,7 +145,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-80" src="/imgs/people.png" alt="">
+                            <img class="br-10 w-90" src="/imgs/people.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -161,7 +159,7 @@
                             </p>
                         </h4>
                         <div class="row ct-al">
-                            <img class="br-10 w-70" src="/imgs/phone.png" alt="">
+                            <img class="w-50" src="/imgs/phone.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -212,7 +210,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-80" src="/imgs/pay.png" alt="">
+                            <img class="br-10 w-70" src="/imgs/pay.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -225,7 +223,7 @@
                             </p>
                         </h4>
                         <div class="row">
-                            <img class="br-10 w-70" src="/imgs/shield.png" alt="">
+                            <img class="br-10 w-60" src="/imgs/shield.png" alt="">
                         </div>
                     </div>              
                 </div>                                                      
