@@ -22,10 +22,10 @@
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
                        <h1><b>Welcome,</h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
-                       <br>
+                       
                         <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
-                        <br><br>
+                        <br>
                         <a href="/register">
                             <button class="btn btn-lg btn-outline-warning text-uppercase blue-bg">
                                 join us now
