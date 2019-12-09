@@ -15,7 +15,7 @@
                 <div  class="col-lg-6 col-md-6 banner-left">  
                     <div class="row pb-5 pt-10">
                         <div class="conatainer mt-10">
-                            <img id="welcome_img"  class="w-60 br-10"  src="/imgs/hello_bot.png" alt="">
+                            <img id="welcome_img"  class="w-80 br-10"  src="/imgs/tree.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -51,12 +51,12 @@
                     </h4>
                     <h4 class="black">
                         <p class="lt-al">
-                            The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community-based living back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within <strong>featured</strong> communities.
+                            The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community centric living, back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within the respectively <strong>featured</strong> communities.
                         </p>
                     </h4>
 
                     <h4>                        
-                        <p class="lt-al" >This enables a more <strong>confortable, enlightened</strong> and <strong>community eccentric</strong> stay for both individuals and service providers within the respective featured communities.</p>                        
+                        <p class="lt-al" >This enables a more <strong>comfortable, enlightened</strong> and <strong>community centered </strong> stay for both individuals and service providers within the respective featured communities.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
