@@ -40,14 +40,14 @@
 	<div class="row pb-30">
 		<div class="col-md-4">
 			<a href="{{ route('ss_hostels') }}">
-				<img class="w-40" src="{{ asset('/imgs/accom.png') }}">	
+				<img class="w-40" src="{{ asset('/imgs/single.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Single Sex</strong></h3>
 			</a>	
 		</div>
 		<div class="col-md-4">
 			<a href="/ms_hostels/">
-				<img class="w-40" src="{{ asset('/imgs/accom.png') }}">
+				<img class="w-30" src="{{ asset('/imgs/unisex.png') }}">
 				<br><br>
 				<h3 class="black" ><strong>Mixed Sex</strong></h3>
 			</a>
@@ -73,7 +73,7 @@
 		<br><br>
 		<div class="col-md-4">
 			<a href="/sb_appartments/">
-				<img class="w-70" src="{{ asset('/imgs/hotelshort.jpeg') }}">	
+				<img class="w-80" src="{{ asset('/imgs/single_appartment.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Single room</strong></h3>
 			</a>
@@ -81,7 +81,7 @@
 
 		<div class="col-md-4">
 			<a href="/db_appartments/">
-				<img class="w-70" src="{{ asset('/imgs/house.jpg') }}">	
+				<img class="w-50" src="{{ asset('/imgs/double_appartment.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Double or more rooms</strong></h3>
 			</a>
@@ -107,16 +107,16 @@
 		<br><br>
 		<div class="col-md-4">
 			<a href="#">
-				<img class="w-70" src="{{ asset('/imgs/hotelshort.jpeg') }}">
+				<img class="w-60" src="{{ asset('/imgs/hotel-short.png') }}">
 				<br><br>
-				<h3 class="black" ><strong>Single room</strong></h3>
+				<h3 class="black" ><strong>Short stay</strong></h3>
 			</a>
 		</div>
 		<div class="col-md-4">
 			<a href="#">
-				<img style="width:75%;" src="{{ asset('/imgs/singlebedapt.jpeg') }}">
+				<img  class="w-70" src="{{ asset('/imgs/hotel_long.png') }}">
 				<br><br>
-				<h3 class="black" ><strong>Double or more rooms</strong></h3>
+				<h3 class="black" ><strong>Long stay</strong></h3>
 			</a>
 		</div>
 
@@ -131,7 +131,7 @@
 		</div>
 	</div>
 
-	<hr>
+	<!-- <hr>
 	<h3 class="center">
 		<b>Motels</b>
 	</h3>
@@ -197,6 +197,6 @@
 			</a>
 		</div>
 	</div>
-
+ -->
 
 @endsection
