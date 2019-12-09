@@ -103,7 +103,7 @@
                                         <h2 class="white">#Launch</h2>
                                         <hr>
                                         <a href="{{ route('user') }}">
-                                            <h4 class="white">
+                                            <h class="white">
                                                 <img 
                                                     id="profile-pic" 
                                                     class="theme w-20" 
@@ -113,6 +113,8 @@
                                                 O G
                                             </h4>
                                         </a>
+                                        <br>
+                                        <button class="btn btn-sm btn-primary">Know</button>
                                     </div>                        
                                 </div>
                             </div>  
