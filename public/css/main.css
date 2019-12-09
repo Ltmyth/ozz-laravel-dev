@@ -215,7 +215,7 @@ $black			: #222;
 }
 
 #side{
-  height: 83vh; /* Set the width of the sidebar */
+  height: 100vh; /* Set the width of the sidebar */
   width: 100%;
   position: fixed; /* (stay in place on scroll) */
   z-index: 1; /* Stay on top */
