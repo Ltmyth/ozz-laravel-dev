@@ -73,8 +73,16 @@
                         </div>
 
                         <div id="side"  class="col-lg-3 nlight-bg lb br-10">
-                            <div class="row br-10 nlight-bg mt-30">
+                            <div class="row br-10 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
+                                <br>
+                                <button class="btn btn-lg btn-outline-success mr-10">
+                                   Chat <i class="lnr lnr-users orange"></i>
+                                </button>
+
+                                <button class="btn btn-lg btn-warning">
+                                   <i class="lnr lnr-envelope white"></i> SMS
+                                </button>
                             </div>
                             
                             <!-- <div class="row blue-bg br-10 mt-30">
@@ -107,15 +115,7 @@
                                         </a>
                                     </div>                        
                                 </div>
-                            </div>             
-
-                            <div class="row br-10 mt-30">
-                                <div class="container lt-al brbr-10">
-                                    <button class="btn btn-lg btn-outline-warning rt px100">
-                                        <i class="lnr lnr-menu orange"></i>
-                                    </button>                       
-                                </div>
-                            </div>
+                            </div>  
                         </div>
                     </div>
                 </div>          

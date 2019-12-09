@@ -4,7 +4,7 @@
 		<div class="row bb brbr-10">
 			<div class="container">
 				<h2 class="ct-al">
-					<i class="lnr lnr-users orange"></i> <b>On the <b class="orange">oh</b><b>z</b> around You</b> 
+					<b>On the <b class="orange">oh</b><b>z</b> around You</b> 
 				</h2>
 			</div>
 		</div>
@@ -191,7 +191,9 @@
 		<div class="container">
 			<br>
 			<h1 class="ct-al">
-				<p><b class="orange">Sorry! You do not know anybody yet!</b></p>
+				<p><b class="orange">You do not know anybody yet!</b></p>
+			</h1>
+			<h1>
 				<big><i class="lnr lnr-sad blue"></i></big>
 			</h1>
 			<div class="section-gap"></div>
