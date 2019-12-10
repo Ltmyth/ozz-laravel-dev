@@ -27,7 +27,7 @@
 					</div>
 					
 					<div class="col-lg-7 w-100 nlight-bg br-10 lt-al">
-						<div class="row white-bg blbr-10">
+						<div class="row  blbr-10">
 							<a href="{{ route('user') }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
 									<strong>{{ Auth::user()->name }}</strong>
@@ -41,7 +41,7 @@
 						</div>
 
 						<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
-							<div class="row container pt-20 trbr-10">
+							<div class="row container white-bg pt-20 trbr-10">
 							
 								<p>
 									<h3 class="black ml-15">
@@ -135,19 +135,20 @@
 										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit" 
-										id="comment{{ $post->id }}" class="btn btn-sm btn-outline-success  px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
+										id="comment{{ $post->id }}" class="btn btn-sm btn-outline-success  px100 ml-5" onclick="comment()">
 											<i class="lnr lnr-bubble"></i>
 										</button>
 									</form>
+
 								@endif
 								@if($comments>=1)
-									<form id="uncommentForm" method="POST" action="/uncomment/{{$post_id}}" >
+									<form id="uncommentForm" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
 										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 										<br>
-										<button type="submit" 
-										id="comment{{ $post->id }}" class="btn btn-sm btn-success  px100 ml-5">
+										<button  
+										id="comment{{ $post->id }}" class="btn btn-sm btn-success  px100 ml-5" disabled>
 											<i class="lnr lnr-bubble"></i> <b class="white">{{ $comments }}</b>
 										</button>
 									</form>
@@ -181,6 +182,19 @@
 								@endif
 								<!-- end dislike -->
 							</div>
+
+							<!-- comment area -->
+							@if($comments<=0)
+								<form id="comment">
+									<div class="row">
+										<textarea class="form-control" required></textarea>
+										&nbsp; &nbsp;
+										<input type="submit" class="btn btn-sm btn-success" value="Comment">
+										<br>
+									</div>
+								</form>
+							@endif
+							<br><br>
 						</div>
 					</div>
 					<br><br>
