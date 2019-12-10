@@ -71,6 +71,15 @@
         <header id="header" class="blbr-10 brbr-10">
             <div class="row">
                 <div id="preloader" class="preloader"></div>
+                <!-- <div class="spinner-grow text-warning" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-info" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow text-warning" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div> -->
             </div>
 
             <div id="small_title">
@@ -83,11 +92,11 @@
                 <div class="row ml-5">
                     <div class="lt col-lg-1">
                         @guest
-                        <a href="/">
+                        <a href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
                         @endguest
                         
                         @auth
-                        <a href="/home">
+                        <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <br>
                         @endauth
                             <img src="/imgs/ozz-app.png" class="w-60" alt="" title="" />
@@ -98,7 +107,7 @@
                     
                     <div class="col-lg-6">
                         <br>
-                        <form method="POST" class="w-100">
+                        <!-- <form method="POST" class="w-100">
                             <div class="row ml-30">
                                 <div class="col-lg">
                                     <input type="text" placeholder="Search the ohz" class="form-control" name="">
@@ -110,19 +119,19 @@
                                 </div>
                                 <div class="col-lg-1"></div>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
 
 
                     <div class="col-lg-5">
                         @guest
-                            <a href="/register">
+                            <a href="/register" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt">
                                     Register
                                 </button>
                             </a>
                                             
-                            <a href="/login">
+                            <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt">
                                     Login
                                 </button>
@@ -131,26 +140,26 @@
 
                         @auth 
 
-                            <a  href="/messages">
+                            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="messages_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> Inbox
                                 </button>
                             </a>   
 
-                            <a  href="/wallet">
+                            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-briefcase orange"></i> Wallet
                                 </button>
                             </a>
                             
 
-                            <a  href="/profile">
+                            <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i> Settings
                                 </button>
                             </a>           
                             
-                            <a  href="/logout">
+                            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20">
                                     <i class="lnr lnr-cog orange"></i> Logout
                                 </button>
@@ -191,7 +200,7 @@
                             </button>
                         </a>
 
-                       <a href="#how">
+                       <a href="/#how">
                             <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg  col-lg-2">
                                 <span class="lnr lnr-cog white"></span>
                                 <strong class="white" >  
@@ -268,7 +277,7 @@
             var myVar;
 
             function preload() {
-              myVar = setTimeout(showPage, 800);
+              myVar = setTimeout(showPage, 500);
             }
 
             function showPage() {
@@ -276,7 +285,8 @@
               document.getElementById("content").style.display = "block";
             }
 
-        </script>   
+        </script>
+
  
 </html>
 

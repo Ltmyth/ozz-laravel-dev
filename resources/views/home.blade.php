@@ -73,7 +73,7 @@
                         </div>
 
                         <div id="side"  class="col-lg-3 nlight-bg lb br-10">
-                            <div class="row br-10 nlight-bg mt-30 mb-10">
+                            <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>
                                 <button class="btn btn-lg btn-outline-success mr-10">
@@ -100,22 +100,46 @@
                                 <hr>
                                 <div class="container lt-al black light-bg blbr-10 brbr-10">
                                     <div class="row ml-20">
-                                        <h2 class="white">#Launch</h2>
-                                        <hr>
-                                        <a href="{{ route('user') }}">
-                                            <h4 class="white">
-                                                <img 
-                                                    id="profile-pic" 
-                                                    class="theme w-20" 
-                                                    src="{{ asset('/imgs/ozz-app.png') }}"
-                                                    alt="Avator" 
-                                                >
-                                                O G
-                                            </h4>
-                                        </a>
+                                        <div class="row">
+                                            <h2 class="white">#Launch</h2>
+                                        </div>                                        
                                     </div>                        
                                 </div>
                             </div>  
+
+
+                            <div class="row blue-bg mt-10 br-10">
+                                <hr>
+                                    <h3 class="lt-al">People around you</h3>
+                                <hr>
+                                <div class="container lt-al black light-bg blbr-10 brbr-10">
+                                    <div class="row ml-20">
+                                        
+                                        <hr>
+                                        <div class="row">
+                                            <div class="col-lg-1">
+                                                <div class="row">
+                                                    <a href="{{ route('user') }}">
+                                                        <img 
+                                                            id="profile-pic" 
+                                                            class="theme w-100" 
+                                                            src="{{ asset('/imgs/ozz-app.png') }}"
+                                                            alt="Avator" 
+                                                        >
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 pb-10">
+                                                <h4 class="white">
+                                                 OfukuwgG
+                                                </h4>
+                                                <button class="btn btn-sm btn-outline">Invite</button>
+                                            </div>
+                                        </div>
+                                    </div>                        
+                                </div>
+                            </div>  
+
                         </div>
                     </div>
                 </div>          

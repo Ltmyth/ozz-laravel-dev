@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <a href="/login">
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
                                 <strong>Communication</strong>
                             </h4>
@@ -237,7 +237,7 @@
                             </div>
                         </div>
 
-                        <a href="/login">
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
                                 <strong>Payments</strong>
                             </h4>
@@ -432,7 +432,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 5,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -453,7 +453,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 50,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -498,7 +498,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 1,000,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
                         </a>
                     </div>

@@ -15,10 +15,10 @@
 				<div class="row bb">
 					<div class="col-lg-2 w-10">
 						<div class="row">
-							<a href="{{ route('user') }}">
+							<a href="{{ route('user') }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<img 
 									id="profile-pic" 
-									class="theme rt" 
+									class="theme rt w-40" 
 									src="{{ asset('/imgs/ozz-app.png') }}"
 									alt="Avator" 
 								>
@@ -28,7 +28,7 @@
 					
 					<div class="col-lg-7 w-100 nlight-bg br-10 lt-al">
 						<div class="row white-bg blbr-10">
-							<a href="{{ route('user') }}">
+							<a href="{{ route('user') }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
 									<strong>{{ Auth::user()->name }}</strong>
 									&nbsp;
@@ -40,7 +40,7 @@
 
 						</div>
 
-						<a href="/posts_show/{{ $post->id }}">
+						<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 							<div class="row container pt-20 trbr-10">
 							
 								<p>
@@ -52,7 +52,7 @@
 						</a>
 						
 						@if($post->Post_upload != "")
-							<a href="/posts_show/{{ $post->id }}">	
+							<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">	
 								<div class="row">						
 									<img id="upload" class="br-10 mb-20"
 										src="{{ asset('storage/uploads/' . $post->Post_upload ) }}"
@@ -78,7 +78,7 @@
 										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button  
-										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100">
+										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i>
 										</button>
 									</form>	
@@ -90,7 +90,7 @@
 										<input type="number" class="hidden" value="{{ Auth::user()->id }}">
 										<br>
 										<button 
-										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100">
+										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i> <b class="white">{{ $likes}}</b>
 										</button>
 									</form>														
@@ -107,7 +107,7 @@
 										<input type="hidden" name="shared_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit"  
-										id="share{{ $post->id }}" class="btn btn-sm btn-outline-info px100 ml-5">
+										id="share{{ $post->id }}" class="btn btn-sm btn-outline-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-sync"></i>
 										</button>
 									</form>
@@ -119,7 +119,7 @@
 										<input type="number" class="hidden" value="{{ Auth::user()->id }}">
 										<br>
 										<button 
-										id="share{{ $post->id }}" class="btn btn-sm btn-info px100 ml-5">
+										id="share{{ $post->id }}" class="btn btn-sm btn-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-sync"></i> <b class="white">{{ $shares}}</b>
 										</button>
 									</form>
@@ -135,7 +135,7 @@
 										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit" 
-										id="comment{{ $post->id }}" class="btn btn-sm btn-outline-success  px100 ml-5">
+										id="comment{{ $post->id }}" class="btn btn-sm btn-outline-success  px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-bubble"></i>
 										</button>
 									</form>
@@ -162,7 +162,7 @@
 										<input type="hidden" name="disliked_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit"  
-										id="dislike{{ $post->id }}" class="btn btn-sm btn-outline-dark px100 ml-5">
+										id="dislike{{ $post->id }}" class="btn btn-sm btn-outline-dark px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-thumbs-down"></i>
 										</button>
 									</form>
@@ -174,7 +174,7 @@
 										<input type="hidden" name="undislike_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit" 
-										id="dislike{{ $post->id }}" class="btn btn-sm btn-dark  px100 ml-5">
+										id="dislike{{ $post->id }}" class="btn btn-sm btn-dark  px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-thumbs-down"></i> <b class="white">{{ $dislikes }}</b>
 										</button>
 									</form>
@@ -191,7 +191,9 @@
 		<div class="container">
 			<br>
 			<h1 class="ct-al">
-				<p><b class="orange">Sorry! You do not know anybody yet!</b></p>
+				<p><b class="orange">No known person!</b></p>
+			</h1>
+			<h1>
 				<big><i class="lnr lnr-sad blue"></i></big>
 			</h1>
 			<div class="section-gap"></div>

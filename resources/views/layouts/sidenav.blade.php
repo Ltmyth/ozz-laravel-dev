@@ -7,7 +7,7 @@
         </button>
     </div> -->
 
-        <a href="/home">
+        <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-users white"></span>
                 <strong class="white">  
@@ -16,7 +16,7 @@
             </button>
         </a>
 
-       <a href="/accommodation/">
+       <a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-apartment white"></span>
                 <strong class="white">  
@@ -25,14 +25,14 @@
             </button>
         </a>
 
-        <a href="/food/">
+        <a href="/food/" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="food_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-dinner white"></span>
                 <strong class="white" >Food</strong>
             </button>
         </a>
 
-        <a href="/airtime/">
+        <a href="/airtime/" onclick="javascript:document.getElementById('preloader').style.display='block';">
            <button id="at_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-tablet white"></span>
                 <strong class="white">Airtime</strong>
