@@ -16,12 +16,12 @@
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         @auth 
-            <!-- <form class="form-inline my-2 my-lg-0">
+            <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search theohz" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
                     <i class="lnr lnr-magnifier orange"></i> Search
                 </button>
-            </form> -->
+            </form>
 
             <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">

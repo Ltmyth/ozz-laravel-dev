@@ -107,7 +107,7 @@
                     
                     <div class="col-lg-6">
                         <br>
-                        <!-- <form method="POST" class="w-100">
+                        <form method="POST" class="w-100">
                             <div class="row ml-30">
                                 <div class="col-lg">
                                     <input type="text" placeholder="Search the ohz" class="form-control" name="">
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="col-lg-1"></div>
                             </div>
-                        </form> -->
+                        </form>
                     </div>
 
 
