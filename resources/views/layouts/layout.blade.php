@@ -77,11 +77,11 @@
                 <div class="row ml-5">
                     <div class="lt col-lg-1">
                         @guest
-                        <a href="/">
+                        <a href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
                         @endguest
                         
                         @auth
-                        <a href="/home">
+                        <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <br>
                         @endauth
                             <img src="/imgs/ozz-app.png" class="w-60" alt="" title="" />
@@ -98,7 +98,7 @@
                                     <input type="text" placeholder="Search the ohz" class="form-control" name="">
                                 </div>
                                 <div class="col-lg-1">
-                                    <button type="submit" class="btn btn-xs white btn-outline-warning">
+                                    <button type="submit" class="btn btn-xs white btn-outline-warning" disabled>
                                         <i class="lnr lnr-magnifier orange"></i>
                                     </button>
                                 </div>
@@ -110,13 +110,13 @@
 
                     <div class="col-lg-5">
                         @guest
-                            <a href="/register">
+                            <a href="/register" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt">
                                     Register
                                 </button>
                             </a>
                                             
-                            <a href="/login">
+                            <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt">
                                     Login
                                 </button>
@@ -125,26 +125,26 @@
 
                         @auth 
 
-                            <a  href="/messages">
+                            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="messages_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> Inbox
                                 </button>
                             </a>   
 
-                            <a  href="/wallet">
+                            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-briefcase orange"></i> Wallet
                                 </button>
                             </a>
                             
 
-                            <a  href="/profile">
+                            <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i> Settings
                                 </button>
                             </a>           
                             
-                            <a  href="/logout">
+                            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20">
                                     <i class="lnr lnr-cog orange"></i> Logout
                                 </button>

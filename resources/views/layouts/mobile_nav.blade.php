@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark blue-bg brbr-10 blbr-10">
     <div class="container">
         @guest
-            <a class="navbar-brand" href="/">
+            <a class="navbar-brand" href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
         @endguest
 
         @auth
-            <a class="navbar-brand" href="/home">
+            <a class="navbar-brand" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
         @endauth
         <!-- 
             <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
@@ -20,31 +20,31 @@
         @auth 
             <form class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" type="search" placeholder="Search theohz" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" disabled>
                     <i class="lnr lnr-magnifier orange"></i> Search
                 </button>
             </form>
 
-            <a  href="/messages">
+            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-envelope orange"></i> Inbox
                 </button>
             </a>   
 
-            <a  href="/wallet">
+            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-briefcase orange"></i> Wallet
                 </button>
             </a>
             
 
-            <a  href="/profile">
+            <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-user orange"></i> Settings
                 </button>
             </a>           
             
-            <a  href="/logout">
+            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
                 <button class="btn btn-sm btn-outline-danger white px100 mt-10 mr-20 mb-20 rt">
                     <i class="lnr lnr-cog orange"></i> Logout
                 </button>
@@ -56,19 +56,19 @@
                 </button>
             </a>
             <div class="dropdown-menu blue-bg white" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="#" onclick="javascript:document.getElementById('preloader').style.display='block';">
                     <b class="white">People</b>
                 </a>
 
                 <div class="dropdown-divider"></div>
                 
-                <a class="dropdown-item" href="accommodation">
+                <a class="dropdown-item" href="accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';">
                     <b class="white">Accommodation</b>
                 </a>
 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="food">
+                <a class="dropdown-item" href="food" onclick="javascript:document.getElementById('preloader').style.display='block';">
                     <b class="white">Food</b>
                 </a>
                 
@@ -86,7 +86,7 @@
 
         @guest
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search theohz" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search theohz" aria-label="Search" disabled>
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         @endguest
@@ -102,7 +102,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/register">
+                    <a href="/register" onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <button class="btn btn-md btn-outline-info white col-lg-8 mb-10">
                             Register
                         </button>
@@ -110,7 +110,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="/login">
+                    <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <button class="btn btn-md btn-outline-info white col-lg-8 mb-10">
                             Login
                         </button>
