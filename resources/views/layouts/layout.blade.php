@@ -113,7 +113,7 @@
                                     <input type="text" placeholder="Search the ohz" class="form-control" name="">
                                 </div>
                                 <div class="col-lg-1">
-                                    <button type="submit" class="btn btn-xs white btn-outline-warning">
+                                    <button type="submit" class="btn btn-xs white btn-outline-warning" disabled>
                                         <i class="lnr lnr-magnifier orange"></i>
                                     </button>
                                 </div>
