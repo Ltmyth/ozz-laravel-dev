@@ -4,17 +4,13 @@
 		#active{
 			background-color: white;
 		}
-
-
 		#utilities{
 			background-color:#34ace0;
 		}
-
 		#food{
 			background-color:#34ace0;
 			pointer-events: none;
 		}
-
 		#food_btn{
 			 background-color:orange;
 			color:white;
@@ -39,7 +35,7 @@
 		<h3><b>Available Service providers</b></h3>
 		<hr class="container col-lg-8">	
 		<div class="row">
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 				
 				<h4>
 					<a href="/provider/">
@@ -53,7 +49,6 @@
 					</a>
 				</h4>	
 			</div>
-
 			<div class="col-md-4">
 				<h4>
 					<a href="/provider/">
@@ -67,7 +62,6 @@
 					</a>
 				</h4>	
 			</div>
-
 			<div class="col-md-4 curve">
 				<h4>
 					<a href="/provider/">
@@ -80,5 +74,9 @@
 						</button>						
 					</a>
 				</h4>	
-			</div>	
+			</div> -->
+			<div class="container mt-30">
+				<h3><i>Currently featuring providers</i></h3>
+			</div>
+		</div>	
 	@endsection

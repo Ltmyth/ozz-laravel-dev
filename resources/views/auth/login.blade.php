@@ -8,21 +8,19 @@
 @section('content')
     
     <div id="login_content">
-        <div style="border-radius:3%;margin-top:8%;" class="card container ct">
+        <div class="container ct nlight-bg">
             <h1>Login</h1>
                     <form method="POST" style="padding:5%;" action="{{ route('login') }}">
                         @csrf
 
                         <!-- <div class="form-group row">
                             <label for="location" class="col-md-4 col-form-label text-md-right">Location</label>
-
                             <div class="col-md-6">
                                 <select id="location"  class="form-control @error('location') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="location" autofocus>
                                     <option>
                                         Mukono
                                     </option>
                                 </select>
-
                                 @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -64,7 +62,7 @@
                             <div class="col-md-3 ct">
                             </div>
                             <div class="col-md-5 ct">
-                                <button type="submit" class="btn btn-lg btn-outline-primary px100">
+                                <button type="submit" class="btn btn-lg btn-outline-primary px100" >
                                     {{ __('Login') }}
                                 </button>
                                 <br><br>

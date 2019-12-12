@@ -73,7 +73,7 @@
                         </div>
 
                         <div id="side"  class="col-lg-3 nlight-bg lb br-10">
-                            <div class="row br-10 nlight-bg mt-30 mb-10">
+                            <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>
                                 <button class="btn btn-lg btn-outline-success mr-10">
@@ -96,28 +96,27 @@
 
                             <div class="row blue-bg br-10">
                                 <hr>
-                                    <h3 class="lt-al">Popular around you</h3>
+                                    <h3 class="lt-al">Explore the <b class="orange">oh</b><b>z</b></h3>
                                 <hr>
                                 <div class="container lt-al black light-bg blbr-10 brbr-10">
-                                    <div class="row ml-20">
-                                        <h2 class="white">#Launch</h2>
-                                        <hr>
-                                        <a href="{{ route('user') }}">
-                                            <h class="white">
-                                                <img 
-                                                    id="profile-pic" 
-                                                    class="theme w-20" 
-                                                    src="{{ asset('/imgs/ozz-app.png') }}"
-                                                    alt="Avator" 
-                                                >
-                                                O G
-                                            </h4>
-                                        </a>
-                                        <br>
-                                        <button class="btn btn-sm btn-primary">Know</button>
+                                    <div class="row ml-10">
+                                        <div class="container">
+                                            <ul style="list-style: none;">
+                                                <li class="bb">
+                                                    <h3 class="white"># People</h3>
+                                                </li>
+                                                <li class="bb" >
+                                                    <h3 class="white"># Services</h3>
+                                                </li>
+                                                <li >
+                                                    <h3 class="white"># Places</h3>
+                                                </li>
+                                            </ul>                                         
+                                        </div>                                        
                                     </div>                        
                                 </div>
-                            </div>  
+                            </div>                        
+
                         </div>
                     </div>
                 </div>          

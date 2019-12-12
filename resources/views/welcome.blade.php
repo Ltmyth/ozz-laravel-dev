@@ -22,7 +22,7 @@
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
                        <h1><b>Welcome,</h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
-                       
+                       <br>
                         <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
                         <br>
@@ -142,7 +142,7 @@
                             </div>
                         </div>
 
-                        <a href="/login">
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
                                 <strong>Communication</strong>
                             </h4>
@@ -237,7 +237,8 @@
                             </div>
                         </div>
 
-                        <a href="/login">
+
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
                                 <strong>Payments</strong>
                             </h4>
@@ -432,7 +433,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 5,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -453,7 +454,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 50,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -498,7 +499,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 1,000,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">
+                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
                         </a>
                     </div>
@@ -520,19 +521,18 @@
         <div class="row">
             <div class="col-sm">
                 <br>
-                <a href="#"><img class="w-70" src="imgs/africastalking.png" alt=""></a>
+                <a href="javascript:void(0)" onclick="window.open('https://www.africastalking.com','_blank');"><img class="w-70" src="imgs/africastalking.png" alt=""></a>
                 <br>
             </div>
 
             <div class="col-sm">
-                <a href="#"><img  class="w-40" src="imgs/logo.png" alt=""></a>  
+                <img  class="w-40" src="imgs/logo.png" alt=""> 
                 <br>
-                <!-- <a href="#"><img src="imgs/mambo.png" alt=""></a> -->
             </div>
 
             <div class="col-sm">
                 <br>
-                <a href="#"><img  class="w-40" src="imgs/mambo.png" alt=""></a> 
+                <img  class="w-40" src="imgs/mambo.png" alt=""> 
                 <br>
             </div>
         </div>        
