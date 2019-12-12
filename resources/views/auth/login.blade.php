@@ -8,7 +8,7 @@
 @section('content')
     
     <div id="login_content">
-        <div style="border-radius:3%;margin-top:8%;" class="card container ct">
+        <div class="container ct nlight-bg">
             <h1>Login</h1>
                     <form method="POST" style="padding:5%;" action="{{ route('login') }}">
                         @csrf

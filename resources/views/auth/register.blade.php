@@ -9,7 +9,7 @@
 
 @section('content')
 <div class="col-lg-12">
-        <div id="register_area" class="card container ct mt-20 pb-30">
+        <div id="register_area" class="container ct mt-20 pb-30 nlight-bg">
             <h1>Register</h1>
                     <form method="POST" class="lt-al"  action="{{ route('register') }}">
                         @csrf
