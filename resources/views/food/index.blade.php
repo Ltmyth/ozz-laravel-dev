@@ -39,7 +39,7 @@
 		<h3><b>Available Service providers</b></h3>
 		<hr class="container col-lg-8">	
 		<div class="row">
-			<div class="col-md-4">
+			<!-- <div class="col-md-4">
 				
 				<h4>
 					<a href="/provider/">
@@ -80,5 +80,9 @@
 						</button>						
 					</a>
 				</h4>	
-			</div>	
+			</div> -->
+			<div class="container mt-30">
+				<h3><i>Currently featuring providers</i></h3>
+			</div>
+		</div>	
 	@endsection

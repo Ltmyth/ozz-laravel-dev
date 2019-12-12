@@ -64,7 +64,7 @@
                             <div class="col-md-3 ct">
                             </div>
                             <div class="col-md-5 ct">
-                                <button type="submit" class="btn btn-lg btn-outline-primary px100">
+                                <button type="submit" class="btn btn-lg btn-outline-primary px100" >
                                     {{ __('Login') }}
                                 </button>
                                 <br><br>

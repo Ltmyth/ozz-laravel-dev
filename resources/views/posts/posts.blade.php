@@ -15,7 +15,7 @@
 				<div class="row bb">
 					<div class="col-lg-2 w-10">
 						<div class="row">
-							<a href="{{ route('user') }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
+							<a href="javascript:void(0)" onclick="location.href='/user';document.getElementById('preloader').style.display='block';">
 								<img 
 									id="profile-pic" 
 									class="theme rt w-40" 
@@ -28,7 +28,7 @@
 					
 					<div class="col-lg-7 w-100 nlight-bg br-10 lt-al">
 						<div class="row  blbr-10">
-							<a href="{{ route('user') }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
+							<a href="javascript:void(0)" onclick="location.href='/user';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
 									<strong>{{ Auth::user()->name }}</strong>
 									&nbsp;
@@ -40,8 +40,8 @@
 
 						</div>
 
-						<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
-							<div class="row container white-bg pt-20 trbr-10">
+						<a href="javascript:void(0)" onclick="location.href='/posts_show/{{ $post->id }}';document.getElementById('preloader').style.display='block';">
+							<div class="row container white-bg pt-20 brbr-10 blbr-10 trbr-10">
 							
 								<p>
 									<h3 class="black ml-15">
@@ -81,6 +81,8 @@
 										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i>
 										</button>
+										<br>
+										<big class="container red">Like</big>
 									</form>	
 								@endif
 								@if($likes>=1)
@@ -93,6 +95,8 @@
 										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i> <b class="white">{{ $likes}}</b>
 										</button>
+										<br>
+										<big class="container red">Likes</big>
 									</form>														
 								@endif
 								<!-- end like  -->
@@ -106,10 +110,12 @@
 										<input type="hidden" name="post_id" value="{{$post->id}}">
 										<input type="hidden" name="shared_by" value="{{ Auth::user()->id }}">
 										<br>
-										<button type="submit"  
+										<button  type="submit"  
 										id="share{{ $post->id }}" class="btn btn-sm btn-outline-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-sync"></i>
 										</button>
+										<br>
+										<big class="container text-info">Share</big>
 									</form>
 								@endif
 								@if($shares>=1)
@@ -122,6 +128,8 @@
 										id="share{{ $post->id }}" class="btn btn-sm btn-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-sync"></i> <b class="white">{{ $shares}}</b>
 										</button>
+										<br>
+										<big class="container text-info">Shares</big>
 									</form>
 								@endif
 								<!-- end share -->
@@ -129,18 +137,19 @@
 
 								<!-- comment btn -->
 								@if($comments<=0)
-									<form id="commentForm" method="POST" action="comment">
-										@csrf
-										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
+									<form >
 										<br>
-										<button type="submit" 
-										id="comment{{ $post->id }}" class="btn btn-sm btn-outline-success  px100 ml-5" onclick="comment()">
+										<button id="commentbtn{{ $post->id }}" type="button"
+										 class="btn btn-sm btn-outline-success  px100 ml-5">
 											<i class="lnr lnr-bubble"></i>
 										</button>
+										<br>
+										<big class="container green">Comment</big>
 									</form>
 
 								@endif
+
+
 								@if($comments>=1)
 									<form id="uncommentForm" >
 										@csrf
@@ -151,6 +160,10 @@
 										id="comment{{ $post->id }}" class="btn btn-sm btn-success  px100 ml-5" disabled>
 											<i class="lnr lnr-bubble"></i> <b class="white">{{ $comments }}</b>
 										</button>
+										<br>
+										<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';" >
+											<big class="container green">Comments</big>
+										</a>
 									</form>
 								@endif
 								<!-- end comment -->
@@ -166,6 +179,8 @@
 										id="dislike{{ $post->id }}" class="btn btn-sm btn-outline-dark px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-thumbs-down"></i>
 										</button>
+										<br>
+										<big class="container black">Dislike</big>
 									</form>
 								@endif
 								@if($dislikes>=1)
@@ -178,6 +193,8 @@
 										id="dislike{{ $post->id }}" class="btn btn-sm btn-dark  px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-thumbs-down"></i> <b class="white">{{ $dislikes }}</b>
 										</button>
+										<br>
+										<big class="container black">Dislikes</big>
 									</form>
 								@endif
 								<!-- end dislike -->
@@ -185,16 +202,21 @@
 
 							<!-- comment area -->
 							@if($comments<=0)
-								<form id="comment">
+								<form id="comment{{ $post->id }}" method="POST" action="/comment">
+									@csrf
 									<div class="row">
-										<textarea class="form-control" required></textarea>
+										<input type="hidden" name="post_id" value="{{$post->id}}">
+										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
+										<textarea class="form-control nlight-bg w-90" name="comment" required></textarea>
 										&nbsp; &nbsp;
-										<input type="submit" class="btn btn-sm btn-success" value="Comment">
+										<input type="submit" class="btn btn-sm btn-success" value="Comment" >
 										<br>
 									</div>
 								</form>
 							@endif
 							<br><br>
+							<!-- end comment area -->
+
 						</div>
 					</div>
 					<br><br>

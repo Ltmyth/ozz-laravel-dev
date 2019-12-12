@@ -9,29 +9,25 @@
 	@section('content')
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5">
+				<div class="col-lg-4">
 					<div class="row">
 						<img 
 							id="profile-pic"  
-							class="theme w-80" 
+							class="theme w-70" 
 							src="{{ asset('/imgs/ozz-app.png') }}"
 							alt="Avator" 
 						>
 					</div>
 
 					<div class="row">
-						<div class="container lt-al">
-							<h3>
-								<strong>{{ Auth::user()->name }}</strong>
-							</h3>
-							<h2><small>Currently</small> : <small class="green">Online</small></h2>
+						<div class="container">
 							<br>
-							<h3>About</h3>
+							<h3>Bio</h3>
 						</div>
 					</div>
 
 
-					<div class="row pl-30 pt-20 br-10 nlight-bg">
+					<div class="row pl-30 pt-20 br-10 blue-bg">
 						<ul style="list-style:none;">
 							<li>
 								<h4 class="lt-al orange"><big><i><p>Some bio</p></i></big></h4>
@@ -39,13 +35,13 @@
 							<hr>
 							<li>
 								<a href="#">
-									<h4 class="lt-al"><big><i>Comrades</i> : 0</big></h4>
+									<h4 class="white lt-al"><big><i>Comrades</i> : 0</big></h4>
 								</a>
 							</li>
-							<hr>
+							<br><br>
 							<li>
 								<a href="#">
-									<h4 class="lt-al"><big><i>Posts</i> : 0</big></h4>
+									<h4 class="white lt-al"><big><i>Posts</i> : 0</big></h4>
 								</a>
 							</li>
 							<br>
@@ -65,39 +61,61 @@
 								</button>
 							</li>
 							<hr>
-
-							<li>
-								<h3>
-									<i class="lnr lnr-envelope">
-									</i>
-									<strong>{{ Auth::user()->email }}</strong>
-								</h3>
-							</li>
-							<hr>
-							<li>
-								<h3>
-									<i class="lnr lnr-tablet">
-									</i>
-									<strong>+256-7xx-xxxx</strong>		
-								</h3>
-							</li>
-							<hr>
 						</ul>
 					</div>
 				</div>	
-				<div class="nlight-bg col-lg-6 pt-20 br-10 lb">
-					<br><br>	
-					<div class="row">
-						<div class="container">
-							<hr>
-							<h2><b>Posts</b></h2>
-							<hr>
-							<h3 class="black"><small>No Posts</small></h3>
-						</div>
-					</div>
+				<div class="col-lg-2">
+					
+				</div>
+				<div class="light-bg col-lg-5 pt-20 br-10">
+					<h3>
+						<small>
+							<i class="glyphicon glyphicon-user">
+								Username
+							</i>
+						</small>
+						<hr>
+						<strong>{{ Auth::user()->name }}</strong>
+					</h3>
+					<hr>
+					<br><br>
+					<h3>
+						<small>
+							<i class="glyphicon glyphicon-envelope">
+								Email
+							</i>
+						</small>
+						<hr>
+						<strong>{{ Auth::user()->email }}</strong>
+					</h3>
+					<hr>
+					<br><br>
+					<h3>
+						<small>
+							<i class="glyphicon glyphicon-phone">
+								Phone
+							</i>
+						</small> 
+						<hr>
+						<strong>+256-7xx-xxxx</strong>
+					</h3>
+					<hr>
 				</div>
 			</div>	
-		</div>		
+		</div>
+
+		<br><br>	
+		<div class="row">
+			<div class="container">
+				<hr>
+				<h2><b>Posts</b></h2>
+				<hr>
+			</div>
+			<br>
+			<div class="container">
+				<small>No Posts</small>
+			</div>
+		</div>
 	@endsection
 @endauth	
 	

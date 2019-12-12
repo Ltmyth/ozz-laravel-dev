@@ -25,7 +25,7 @@
                        <br>
                         <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
-                        <br><br>
+                        <br>
                         <a href="/register">
                             <button class="btn btn-lg btn-outline-warning text-uppercase blue-bg">
                                 join us now
@@ -236,6 +236,7 @@
                                 <img class="br-10 w-40" src="/imgs/pay.png" alt="">
                             </div>
                         </div>
+
 
                         <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
@@ -520,19 +521,18 @@
         <div class="row">
             <div class="col-sm">
                 <br>
-                <a href="#"><img class="w-70" src="imgs/africastalking.png" alt=""></a>
+                <a href="javascript:void(0)" onclick="window.open('https://www.africastalking.com','_blank');"><img class="w-70" src="imgs/africastalking.png" alt=""></a>
                 <br>
             </div>
 
             <div class="col-sm">
-                <a href="#"><img  class="w-40" src="imgs/logo.png" alt=""></a>  
+                <img  class="w-40" src="imgs/logo.png" alt=""> 
                 <br>
-                <!-- <a href="#"><img src="imgs/mambo.png" alt=""></a> -->
             </div>
 
             <div class="col-sm">
                 <br>
-                <a href="#"><img  class="w-40" src="imgs/mambo.png" alt=""></a> 
+                <img  class="w-40" src="imgs/mambo.png" alt=""> 
                 <br>
             </div>
         </div>        
