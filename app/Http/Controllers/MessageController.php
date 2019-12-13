@@ -31,22 +31,23 @@ class MessageController extends Controller
         return view('messages.sent');
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function chat()
     {
-        //
+        return view('messages.chat');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
+    public function sms()
+    {
+        return view('messages.sms');
+    }
+
+
+    public function bulk_sms()
+    {
+        return view('messages.bulk_sms');
+    }
+
+    
     public function store(Request $request)
     {
         //

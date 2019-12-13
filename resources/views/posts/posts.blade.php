@@ -1,10 +1,11 @@
 @auth
 	
 	<div class="container">
-		<div class="row bb brbr-10">
+		
+		<div class="row bb brbr-10 mt-20">
 			<div class="container">
-				<h2 class="ct-al">
-					<b>On the <b class="orange">oh</b><b>z</b> around You</b> 
+				<h2 class="lt-al">
+					<p><b>Posts on the <b class="orange">oh</b><b>z</b> around You</b></p>
 				</h2>
 			</div>
 		</div>

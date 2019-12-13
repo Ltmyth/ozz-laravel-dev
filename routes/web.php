@@ -178,6 +178,12 @@ Route::get('messages','MessageController@index');
 Route::get('inbox','MessageController@inbox');
 //sent
 Route::get('sent','MessageController@sent');
+//sent
+Route::get('chat','MessageController@chat');
+//sms
+Route::get('sms','MessageController@sms');
+//bulk sms
+Route::get('bulk_sms','MessageController@bulk_sms');
 
 
 

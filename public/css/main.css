@@ -303,6 +303,10 @@ $black      : #222;
     width: 190%;
   }
 
+  #mobile_chat{
+    display:inline-block;
+  }
+
   #sidenav{
     display: none;
   }
@@ -2380,6 +2384,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:0%;
 }
 
+#mobile_chat{
+  display:none;
+}
+
 
 #how{
   -webkit-transition: all 0.3s ease 0s;
@@ -2419,6 +2427,10 @@ h1, h2, h3, h4, h5, h6 {
     top:6%;
     height: 40vh;
     padding:0px 8% 0% 8%;
+  }
+
+  #mobile_chat{
+    display:inline;
   }
 
   #hero_img{
