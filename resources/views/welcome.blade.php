@@ -51,19 +51,22 @@
                     </h4>
                     <h4 class="black">
                         <p class="lt-al">
-                            The <strong><b class="orange">oh</b><b>z</b></strong> is a low cost <strong>reparation</strong> application currently web based, <br> built for community centric living, back-boned by a crypto currency known as the <b class="orange">oh</b><b>z</b> ,<br> created and intended for <strong>individuals</strong> and <strong>service providers</strong> living or commuting within the respectively <strong>featured</strong> communities.
+                            The<strong><b class="orange">oh</b><b>z</b></strong> is a social and transactional <strong>community</strong> web application,
+                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living, enabled by a crypto currency known as the<b class="orange">oh</b><b>z</b> respectively within featured communities.
                         </p>
                     </h4>
 
-                    <h4>                        
-                        <p class="lt-al" >This enables a more <strong>comfortable, enlightened</strong> and <strong>community centered </strong> stay for both individuals and service providers within the respective featured communities.</p>                        
+                    <h4 class="lt-al" >  
+                        <strong class="blue">TARGET MARKET</strong>
+                        <br>                      
+                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for individuals studying, living or commuting within communities featured or included on the<strong><b class="orange">oh</b><b>z</b></strong> platform and service providers within the respective communties.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
                     <p > 
                        <h4 class="lt-al blue"> To connect 
                         community-based users with each other 
-                        and to respective community-based services <strong>quickly</strong> and <strong>click easily</strong>.</h4>
+                        and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
                     </p>
 
                     <br>
@@ -114,7 +117,7 @@
                                 <h4 class="black">Mukono (U)</h4>
                             </li>
                             <li>
-                                <h5 class="blue"> <i>More communities to be featured.</i></h5>
+                                <h5 class="green"> <i>More communities to be featured.</i></h5>
                             </li>
                         </ul>
                         <br>                        
@@ -173,7 +176,7 @@
                         
                         <h4 class="lt-al black">
                             <p> 
-                                With internet connectivity. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                                With internet connectivity and the<big class='orange'><b class="orange">oh</b><b>z</b></big>  stash. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
                                 This is currently applicable in Uganda alone.
                             </p>
                         </h4>
@@ -216,15 +219,13 @@
 
                         <h4 class="lt-al black">
                             <p>
-                                Find and secure accommodation within a community or destination of interest.
+                                Using the<big class='orange'><b class="orange">oh</b><b>z</b></big>  find and secure accommodation within a community or destination of interest.
                                 Chose from a live listing of ;
                             </p>
                             <ul style="list-style-type:square;" >
-                                <li>Hotels</li>
                                 <li>Hostels</li>
                                 <li>Appartments</li>
-                                <li>Lodgings</li>
-                                <li>Motels</li>
+                                <li>Hotels</li>
                             </ul>
                         </h4>                                            
                     </div>
@@ -246,11 +247,11 @@
                         
                         <h4 class="lt-al black">
                             <p>
-                                Make payments from your <b class="orange">oh</b><b>z</b> wallet stash to another user's wallet or list of users' wallets <b>free</b> of charge.
+                                Make payments for the<b class="orange">oh</b><b>z</b> services directly from your  wallet/stash to another user's wallet or list of users' wallets <b class="black">free</b> of charge.
                             </p>
 
                             <p>
-                                You can also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low cost used to cover infrastructure and transaction costs.
+                                You may also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low withdrawal charge of 5% on each withdraw transaction that is used to cover infrastructure and transaction costs.
                             </p>
                         </h4>                        
                     </div>
@@ -271,7 +272,7 @@
                         
                         <h4 class="lt-al black">
                             <p class="lt-al">
-                                Using your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all  <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
+                                With your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all recorded <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
                             </p>
                         </h4>                        
                     </div>              
@@ -293,30 +294,30 @@
                     <h1><strong>HOW IT WORKS</strong></h1>
                     
                     <div class="row">
-                        <div class="col-lg-3 b blue-bg">
+                        <div class="col-lg-3 b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Register</strong></h3>
+                            <h3 class="blue"><strong>Register</strong></h3>
                             <hr>
-                            <h4 class="white"><p class="lt-al"><b class="orange">oh</b><b class="green">z</b> has the following sign up requirements;</p></h4>
+                            <h4 class="black"><p class="lt-al"><b class="orange">oh</b><b>z</b> has the following sign up requirements;</p></h4>
                             <hr>
-                            <h4 class="white">
+                            <h4 class="black">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>A Valid email</li>
                                     <li>A Unique username</li>
-                                    <li>A memorable strong password</li>
+                                    <li>A strong memorable password</li>
                                 </ul>
                             </h4>
                             <hr>
                         </div>
-                        <div class="col-lg-3  b blue-bg">
+                        <div class="col-lg-3  b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/hand.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Setup</strong></h3>
+                            <h3 class="blue"><strong>Setup</strong></h3>
                             <hr>
-                            <h4 class="white"><p class="lt-al">Complete your user profile by adding your;</p></h4>
+                            <h4 class="black"><p class="lt-al">Complete your user profile by adding your;</p></h4>
                             <hr>
-                            <h4 class="white">
+                            <h4 class="black">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>First and last names</li>
                                     <li>Active mobile money or phone number</li>
@@ -325,14 +326,14 @@
                             </h4>
                             <hr>
                         </div>
-                        <div class="col-lg-3  b blue-bg">
+                        <div class="col-lg-3  b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Topup stash</strong></h3>
+                            <h3 class="blue"><strong>Topup stash</strong></h3>
                             <hr>
-                            <h4 class="white"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h4>
+                            <h4 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h4>
                             <hr>
-                            <a href="#stash" class="white">
+                            <a href="#stash" class="black">
                             <ul style="list-style-type:square;" class="lt-al">
                                 <li>Bronze Stash</li>
                                 <li>Silver Stash</li>
@@ -342,12 +343,12 @@
                             </a>
                             <hr>
                         </div>
-                        <div class="col-lg-3 b blue-bg">
+                        <div class="col-lg-3 b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h3 class="white"><strong>Use your <b class="orange">oh</b><b class="green">z</b></strong></h3>
+                            <h3 class="black"><strong>Use your <b class="orange">oh</b><b class="green">z</b></strong></h3>
                             <hr>
-                            <h4 class="white">
+                            <h4 class="black">
                                 <p class="lt-al">Search, identify and secure the following packs using your <b class="orange">oh</b><b class="green">z</b> stash;</p>
                                 <hr>
                                 <ul style="list-style-type:square;" class="lt-al">    
@@ -387,15 +388,15 @@
                         </div>
 
                         <div class="col-lg-8">
-                            <div class="container blue-bg br-10">
+                            <div class="container white-bg br-10">
                                 <hr>
-                                    <h3 class="white">0.1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big> <big><strong> = </strong></big> <big class="orange">UGX</big> 500.</h3><br>
-                                    <h3 class="white">1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h3>
+                                    <h4 class="black">0.1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">UGX</big> 500.</h4><br>
+                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
                                 <hr>
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
-                                    <p class="white pb-30 lt-al">
-                                        At any given time, the <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong> and <big>maximum</big> top up
+                                    <p class="black pb-30 lt-al">
+                                        At any given time, the <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b>z</b></strong> and <big>maximum</big> top up
                                         </big> request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
                                     </p>
                                 </h4>
@@ -409,9 +410,9 @@
                     </div>
 
                     <div id="packs" class="row col-lg-11">
-                        <h2 class="lt-al black">
+                        <h3 class="lt-al black">
                             Kindly choose your suitable <b class="orange">oh</b><b>z</b> stash from the available packages below ;
-                        </h2>
+                        </h3>
                     </div>
 
                 </div>
