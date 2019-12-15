@@ -1,9 +1,3 @@
-<!-- <style type="text/css">
-    #login-btn {
-        background-color:  #2980b9;
-        color: white;
-    }
-</style> -->
 @extends('layouts.layout')
 @section('content')
     
@@ -52,20 +46,20 @@
                     <h4 class="black">
                         <p class="lt-al">
                             The<strong><b class="orange">oh</b><b>z</b></strong> is a social and transactional <strong>community</strong> web application,
-                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living, enabled by a crypto currency known as the<b class="orange">oh</b><b>z</b> respectively within featured communities.
+                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as the<b class="orange">oh</b><b>z</b>.
                         </p>
                     </h4>
 
                     <h4 class="lt-al" >  
                         <strong class="blue">TARGET MARKET</strong>
                         <br>                      
-                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for individuals studying, living or commuting within communities featured or included on the<strong><b class="orange">oh</b><b>z</b></strong> platform and service providers within the respective communties.</p>                        
+                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities featured or included on the<strong><b class="orange">oh</b><b>z</b></strong> platform and <strong>service providers</strong> within the respective communties.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
                     <p > 
                        <h4 class="lt-al blue"> To connect 
-                        community-based users with each other 
+                        <strong>community-based</strong> users with each other 
                         and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
                     </p>
 
@@ -153,7 +147,7 @@
 
                         <h4 class="lt-al black">
                             <p>
-                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send a  non returnable sms directly to a single or multiple user's mobile telephone number(s)
+                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
                                 at as low as <b class="red">0.01</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
                             </p>
 
@@ -391,7 +385,7 @@
                             <div class="container white-bg br-10">
                                 <hr>
                                     <h4 class="black">0.1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">UGX</big> 500.</h4><br>
-                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
+                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
                                 <hr>
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
