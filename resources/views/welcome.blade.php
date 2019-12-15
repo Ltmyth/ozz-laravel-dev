@@ -385,7 +385,7 @@
                             <div class="container white-bg br-10">
                                 <hr>
                                     <h4 class="black">0.1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">UGX</big> 500.</h4><br>
-                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b class="green">z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
+                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
                                 <hr>
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
