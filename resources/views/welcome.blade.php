@@ -108,10 +108,10 @@
                         </h4>
                         <ul style="list-style: circle; color:red;" class="lt-al fz-25">
                             <li>
-                                <h4 class="black">Mukono (U)</h4>
+                                <strong><h3 class="black">Mukono (U)</h3></strong>
                             </li>
                             <li>
-                                <h5 class="green"> <i>More communities to be featured.</i></h5>
+                                <h4 class="green"> <i>More communities to be featured.</i></h4>
                             </li>
                         </ul>
                         <br>                        
