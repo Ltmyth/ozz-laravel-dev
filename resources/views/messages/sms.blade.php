@@ -12,14 +12,14 @@
   	<hr>
     <br><br>
     <div id="new_msg" class="well center">
-        <form enctype="multipart/form-data" method="POST" action="#">
+        <form enctype="multipart/form-data" method="POST" action="/send_sms">
             @csrf
             <div class="container col-lg-7 lt-al"> 
                 <label><h4>Receiver name</h4></label> 
                 <input placeholder="Theohz username" class="form-control" type="text" name="user" required>
                 <hr>
                 <label><h4>Receiver phone number</h4></label> 
-                <input placeholder="+2567xxxxxxx" class="form-control" type="number" name="phone" required>
+                <input placeholder="+2567xxxxxxx" class="form-control" type="text" name="phone" required>
                 <h4>-- <small class="red">OR</small>--</h4>
                 <!-- <label><h4>Upload a (.csv) file of multiple receivers</h4></label>
                 &nbsp;&nbsp;

@@ -32,7 +32,6 @@ return array(
     'App\\Http\\Controllers\\HostelController' => $baseDir . '/app/Http/Controllers/HostelController.php',
     'App\\Http\\Controllers\\LikeController' => $baseDir . '/app/Http/Controllers/LikeController.php',
     'App\\Http\\Controllers\\MessageController' => $baseDir . '/app/Http/Controllers/MessageController.php',
-    'App\\Http\\Controllers\\MessagesController' => $baseDir . '/app/Http/Controllers/MessagesController.php',
     'App\\Http\\Controllers\\PageController' => $baseDir . '/app/Http/Controllers/PageController.php',
     'App\\Http\\Controllers\\People' => $baseDir . '/app/Http/Controllers/People.php',
     'App\\Http\\Controllers\\PostsController' => $baseDir . '/app/Http/Controllers/PostsController.php',

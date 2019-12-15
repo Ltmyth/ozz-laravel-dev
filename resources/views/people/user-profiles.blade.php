@@ -9,113 +9,87 @@
 	@section('content')
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-5">
 					<div class="row">
 						<img 
 							id="profile-pic"  
-							class="theme w-70" 
+							class="theme w-50 mt-20" 
 							src="{{ asset('/imgs/ozz-app.png') }}"
 							alt="Avator" 
-						>
+						>						
 					</div>
 
 					<div class="row">
-						<div class="container">
-							<br>
-							<h3>Bio</h3>
-						</div>
-					</div>
-
-
-					<div class="row pl-30 pt-20 br-10 blue-bg">
-						<ul style="list-style:none;">
-							<li>
-								<h4 class="lt-al orange"><big><i><p>Some bio</p></i></big></h4>
-							</li>
+						<div class="container lt-al">
 							<hr>
-							<li>
-								<a href="#">
-									<h4 class="white lt-al"><big><i>Comrades</i> : 0</big></h4>
-								</a>
-							</li>
-							<br><br>
-							<li>
-								<a href="#">
-									<h4 class="white lt-al"><big><i>Posts</i> : 0</big></h4>
-								</a>
-							</li>
-							<br>
+							<h2 ><strong>{{ Auth::user()->name }}</strong></h2>
 							<hr>
-							<li>
-								<a href="#">
-					                <button id="explore" class="btn btn-lg btn-primary mr-20">
-					                    Invite
-					                </button>
-					            </a>
-					            <button class="btn btn-lg btn-warning  mr-20">
-									<i class="glyphicon glyphicon-send">Message</i>
+							<h3>Status: <strong class="green">Online</strong></h3>
+							<hr>
+							<a href="/inbox" onclick="javascript:document.getElementById('preloader').style.display='block';">
+								<button class="btn btn-lg btn-success  mr-20">
+									<i class="glyphicon glyphicon-send ">Chat</i>
 								</button>
+							</a>
 
-								<button class="btn btn-lg btn-outline-warning">
+							<a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+								<button class="btn btn-lg btn-warning">
 									SMS
 								</button>
-							</li>
+							</a>
+
 							<hr>
-						</ul>
+							<h4 class="blue">Posts : <b class="red">0</b></h4>
+							<hr>
+							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
+								<ul style="list-style:none;" class="lt-al">
+									<li>
+										<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<h3 class="red">
+								<i class="lnr lnr-gift orange">
+								</i> Birthday
+							</h3>
+							
+							<hr>
+							<h3>
+								<span>
+									<i class="lnr lnr-envelope orange">
+									</i>
+								</span>
+								<strong>{{ Auth::user()->email }}</strong>
+							</h3>
+							<hr>
+							<h3>
+								
+								<i class="lnr lnr-phone orange">
+								</i>
+								<strong>+256-7xx-xxxx</strong>
+							</h3>
+							<hr>
+							<h3 >
+								<i class="lnr lnr-pushpin orange">
+								</i> Community
+							</h3>
+						</div>
 					</div>
 				</div>	
-				<div class="col-lg-2">
-					
-				</div>
-				<div class="light-bg col-lg-5 pt-20 br-10">
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-user">
-								Username
-							</i>
-						</small>
-						<hr>
-						<strong>{{ Auth::user()->name }}</strong>
-					</h3>
-					<hr>
-					<br><br>
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-envelope">
-								Email
-							</i>
-						</small>
-						<hr>
-						<strong>{{ Auth::user()->email }}</strong>
-					</h3>
-					<hr>
-					<br><br>
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-phone">
-								Phone
-							</i>
-						</small> 
-						<hr>
-						<strong>+256-7xx-xxxx</strong>
-					</h3>
-					<hr>
+				<div class="nlight-bg col-lg-7 pt-20 lb">
+					<div class="row">
+						<div class="container">
+							<hr>
+							<h2><b>Posts</b></h2>
+							<hr>
+							<h4 class="black">No Post yet</h4>
+						</div>
+					</div>
 				</div>
 			</div>	
 		</div>
 
-		<br><br>	
-		<div class="row">
-			<div class="container">
-				<hr>
-				<h2><b>Posts</b></h2>
-				<hr>
-			</div>
-			<br>
-			<div class="container">
-				<small>No Posts</small>
-			</div>
-		</div>
 	@endsection
 @endauth	
 	

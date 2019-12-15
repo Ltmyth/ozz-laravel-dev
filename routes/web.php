@@ -182,6 +182,8 @@ Route::get('sent','MessageController@sent');
 Route::get('chat','MessageController@chat');
 //sms
 Route::get('sms','MessageController@sms');
+//send sms
+Route::post('send_sms','MessageController@send_sms');
 //bulk sms
 Route::get('bulk_sms','MessageController@bulk_sms');
 

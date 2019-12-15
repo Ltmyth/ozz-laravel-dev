@@ -426,7 +426,6 @@ class ComposerStaticInite823383563b07aed5c89055bbc61dcd2
         'App\\Http\\Controllers\\HostelController' => __DIR__ . '/../..' . '/app/Http/Controllers/HostelController.php',
         'App\\Http\\Controllers\\LikeController' => __DIR__ . '/../..' . '/app/Http/Controllers/LikeController.php',
         'App\\Http\\Controllers\\MessageController' => __DIR__ . '/../..' . '/app/Http/Controllers/MessageController.php',
-        'App\\Http\\Controllers\\MessagesController' => __DIR__ . '/../..' . '/app/Http/Controllers/MessagesController.php',
         'App\\Http\\Controllers\\PageController' => __DIR__ . '/../..' . '/app/Http/Controllers/PageController.php',
         'App\\Http\\Controllers\\People' => __DIR__ . '/../..' . '/app/Http/Controllers/People.php',
         'App\\Http\\Controllers\\PostsController' => __DIR__ . '/../..' . '/app/Http/Controllers/PostsController.php',

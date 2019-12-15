@@ -153,7 +153,7 @@
 
                         <h4 class="lt-al black">
                             <p>
-                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send a  non returnable sms directly to a single or multiple user's mobile telephone number(s)
                                 at as low as <b class="red">0.01</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
                             </p>
 
