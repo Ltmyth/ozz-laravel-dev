@@ -46,7 +46,7 @@
                     <h4 class="black">
                         <p class="lt-al">
                             The<strong><b class="orange">oh</b><b>z</b></strong> is a social and transactional <strong>community</strong> web application,
-                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities, enabled by a crypto currency known as the<b class="orange">oh</b><b>z</b>.
+                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as the<b class="orange">oh</b><b>z</b>.
                         </p>
                     </h4>
 
@@ -59,7 +59,7 @@
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
                     <p > 
                        <h4 class="lt-al blue"> To connect 
-                        community-based users with each other 
+                        <strong>community-based</strong> users with each other 
                         and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
                     </p>
 
