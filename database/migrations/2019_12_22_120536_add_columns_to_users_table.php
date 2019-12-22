@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddUseridToPosts extends Migration
+class AddColumnsToUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class AddUseridToPosts extends Migration
      */
     public function up()
     {
-        Schema::table('posts', function (Blueprint $table) {
-            $table->integer('author')->after('Post_upload')->foreignKey()->references('id')->on('users');
+        Schema::table('users', function (Blueprint $table) {
+            $table->string('wallet_id', 100)->after('email')->nullable();
+            $table->float('wallet_balance', 8, 2)->after('email')->default(00.00);
+            $table->string('status')->after('email')->default('offline');
         });
     }
 
@@ -25,7 +27,7 @@ class AddUseridToPosts extends Migration
      */
     public function down()
     {
-        Schema::table('posts', function (Blueprint $table) {
+        Schema::table('users', function (Blueprint $table) {
             //
         });
     }
