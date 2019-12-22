@@ -33,18 +33,31 @@
 
             <div class="col-lg-12 lbr-10">
                 <div class="container ">
-                    <!-- right side -->
-                    <br>
+                    <div id="mobile_chat" class="row mt-30">
+                        <hr>
+                        <a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <button class="btn btn-lg btn-outline-success mr-10">
+                               Chat <i class="lnr lnr-users orange"></i>
+                            </button>
+                        </a>
+
+                        <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <button class="btn btn-lg btn-warning">
+                               <i class="lnr lnr-envelope white"></i> SMS
+                            </button>
+                        </a>
+                        <hr>
+                    </div>
                     <form enctype="multipart/form-data" method="POST" action="/posts_create">
                         @csrf
                         <div class="container lt-al row mt-20">
                             <div class="col-lg-9">
                                  <label for="name" class="col-form-label">
-                                    <h2><b>What's going on</b><b class="orange">?</b></h2>
+                                    <h2><b>Post something </b></h2>
                                 </label> 
                                 <br>
                                 <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
-                                <?php $author = Auth::user()->id; ?>
+                                <?php $author = Auth::user()->name; ?>
                                 <input type="hidden" name="author" value="{{ $author }}">
                             </div>
                         </div>            
@@ -76,13 +89,17 @@
                             <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>
-                                <button class="btn btn-lg btn-outline-success mr-10">
-                                   Chat <i class="lnr lnr-users orange"></i>
-                                </button>
+                                <a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                    <button class="btn btn-lg btn-outline-success mr-10">
+                                       Chat <i class="lnr lnr-users orange"></i>
+                                    </button>
+                                </a>
 
-                                <button class="btn btn-lg btn-warning">
-                                   <i class="lnr lnr-envelope white"></i> SMS
-                                </button>
+                                <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                    <button class="btn btn-lg btn-warning">
+                                       <i class="lnr lnr-envelope white"></i> SMS
+                                    </button>
+                                </a>
                             </div>
                             
                             <!-- <div class="row blue-bg br-10 mt-30">
@@ -94,7 +111,7 @@
                                 </div>
                             </div>   -->                
 
-                            <div class="row blue-bg br-10">
+                            <!-- <div class="row blue-bg br-10">
                                 <hr>
                                     <h3 class="lt-al">Explore the <b class="orange">oh</b><b>z</b></h3>
                                 <hr>
@@ -115,7 +132,7 @@
                                         </div>                                        
                                     </div>                        
                                 </div>
-                            </div>                        
+                            </div> -->                        
 
                         </div>
                     </div>
