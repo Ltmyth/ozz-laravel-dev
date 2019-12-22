@@ -16,6 +16,13 @@
             </button>
         </a>
 
+        <a href="/airtime/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+           <button id="at_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-tablet white"></span>
+                <strong class="white">Airtime</strong>
+           </button>
+        </a>
+
        <a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-apartment white"></span>
@@ -32,13 +39,12 @@
             </button>
         </a>
 
-        <a href="/airtime/" onclick="javascript:document.getElementById('preloader').style.display='block';">
-           <button id="at_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
-                <span class="lnr lnr-tablet white"></span>
-                <strong class="white">Airtime</strong>
-           </button>
+        <a href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
+            <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-alarm"></span>
+                <strong class="white" >Notifications</strong>
+            </button>
         </a>
-
         
         <!-- <div class="col-md-2">
             <a href="/transport/">

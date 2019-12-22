@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Post;
+use App\Comment;
 
 class PostsController extends Controller
 {
@@ -51,7 +52,7 @@ class PostsController extends Controller
             $upload_storage_name = $uploadname."_".time().".".$extension; 
 
             //store file in public/uploads/
-            $path = $request->file('upload')->storeAs('public/uploads/',$upload_storage_name);
+            $path = $request->file('upload')->storeAs('storage/app/public/',$upload_storage_name);
 
             $post->Post_upload = $upload_storage_name;
 
@@ -70,6 +71,13 @@ class PostsController extends Controller
         //
         $post = Post::find($post);
         return view('posts.showpost')->with('post',$post);
+    }
+
+    public static function individual_posts($user)
+    {
+        //
+        $posts = Post::where('author', $user)->orderBy('id','desc')->get();
+        return view('posts.individual_post')->with('posts',$posts);
     }
 
    

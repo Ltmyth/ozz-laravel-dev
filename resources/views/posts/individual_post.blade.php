@@ -1,25 +1,14 @@
 @auth
 	
 	<div class="container">
-
-		<div class="row bb brbr-10 mt-20">
-			<div class="container">
-				<h2 class="lt-al">
-					<p><b>On the<b class="orange">oh</b><b>z</b> around You</b></p>
-				</h2>
-			</div>
-		</div>
-
+		
 		@if(count($posts)>0)	
 			@foreach ($posts as $post)	
-				@php
-					$user = Auth::user()->name;
-					$author = $post->author;
-				@endphp
+						
 				<div class="row bb">
 					<div class="col-lg-2 w-10">
 						<div class="row">
-							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">
+							<a href="javascript:void(0)" onclick="location.href='/user';document.getElementById('preloader').style.display='block';">
 								<img 
 									id="profile-pic" 
 									class="theme rt w-40" 
@@ -30,11 +19,11 @@
 						</div>
 					</div>
 					
-					<div class="col-lg-7 w-100 nlight-bg br-10 lt-al">
+					<div class="col-lg-8 w-100 nlight-bg br-10 lt-al">
 						<div class="row  blbr-10">
-							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">
+							<a href="javascript:void(0)" onclick="location.href='/user//{{ $post->author }}';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
-									<strong>{{ $author }}</strong>
+									<strong>{{ $post->author }}</strong>
 									<span class="orange_dot"></span>
 									&nbsp;
 									<small>
@@ -80,7 +69,7 @@
 									<form id="likeForm"  method="POST" action="like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
-										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->name }}">
+										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button  
 										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -94,7 +83,7 @@
 									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
 										@csrf
 										<input type="hidden"  value="id">
-										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
+										<input type="number" class="hidden" value="{{ Auth::user()->id }}">
 										<br>
 										<button 
 										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -113,7 +102,7 @@
 									<form id="shareForm" method="POST" action="share">
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="shared_by" value="{{ Auth::user()->name }}">
+										<input type="hidden" name="shared_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button  type="submit"  
 										id="share{{ $post->id }}" class="btn btn-sm btn-outline-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -127,7 +116,7 @@
 									<form id="unshareForm" method="POST" action="/unshare/{{$post_id}}" >
 										@csrf
 										<input type="hidden"  value="id">
-										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
+										<input type="number" class="hidden" value="{{ Auth::user()->id }}">
 										<br>
 										<button 
 										id="share{{ $post->id }}" class="btn btn-sm btn-info px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -159,7 +148,7 @@
 									<form id="uncommentForm" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="comment_by" value="{{ Auth::user()->name }}">
+										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button  
 										id="comment{{ $post->id }}" class="btn btn-sm btn-success  px100 ml-5" disabled>
@@ -178,7 +167,7 @@
 									<form id="dislikeForm" method="POST" action="dislike">
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="disliked_by" value="{{ Auth::user()->name }}">
+										<input type="hidden" name="disliked_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit"  
 										id="dislike{{ $post->id }}" class="btn btn-sm btn-outline-dark px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -192,7 +181,7 @@
 									<form id="undislikeForm" method="POST" action="/undislike/{{$post_id}}" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="undislike_by" value="{{ Auth::user()->name }}">
+										<input type="hidden" name="undislike_by" value="{{ Auth::user()->id }}">
 										<br>
 										<button type="submit" 
 										id="dislike{{ $post->id }}" class="btn btn-sm btn-dark  px100 ml-5" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -211,7 +200,7 @@
 									@csrf
 									<div class="row">
 										<input type="hidden" name="post_id" value="{{$post->id}}">
-										<input type="hidden" name="comment_by" value="{{ Auth::user()->name }}">
+										<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 										<textarea class="form-control nlight-bg w-90" name="comment" required></textarea>
 										&nbsp; &nbsp;
 										<input type="submit" class="btn btn-sm btn-success" value="Comment" >
@@ -229,13 +218,9 @@
 		</div>	
 	@else
 		<div class="container">
-			<br>
-			<h1 class="ct-al">
-				<p><b class="orange">No known person!</b></p>
-			</h1>
-			<h1>
-				<big><i class="lnr lnr-sad blue"></i></big>
-			</h1>
+			<a href="/home">
+				<button class="btn btn-lg btn-outline-info">Post Something</button>
+			</a>
 			<div class="section-gap"></div>
 		</div>
 	@endif

@@ -1,32 +1,26 @@
 @extends('layouts.layout')
 @auth	
-	<style type="text/css">
-	    #profile_btn{
-	        background-color:orange;
-	        color:white;
-	    }
-	</style>
 	@section('content')
 		<div class="container">
+			@if($profile)
+			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
+				<div class="row col-lg-8">
+					<img 
+						id="profile-pic"  
+						class="theme w-30 mt-20 blue-bg br-50" 
+						src="{{ asset('/imgs/ozz-app.png') }}"
+						alt="Avator" 
+					>						
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-lg-5">
-					<div class="row">
-						<img 
-							id="profile-pic"  
-							class="theme w-50 mt-20" 
-							src="{{ asset('/imgs/ozz-app.png') }}"
-							alt="Avator" 
-						>						
-					</div>
-
+				<div class="col-lg-3">
 					<div class="row">
 						<div class="container lt-al">
 							<hr>
-							<h2 ><strong>{{ Auth::user()->name }}</strong></h2>
+							<h2 ><strong>{{ $profile->name }}</strong> <span class="green_dot"></span></h2>
 							<hr>
-							<h3>Status: <strong class="green">Online</strong></h3>
-							<hr>
-							<a href="/inbox" onclick="javascript:document.getElementById('preloader').style.display='block';">
+							<a href="/inbox/{{ $profile->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<button class="btn btn-lg btn-success  mr-20">
 									<i class="glyphicon glyphicon-send ">Chat</i>
 								</button>
@@ -37,9 +31,6 @@
 									SMS
 								</button>
 							</a>
-
-							<hr>
-							<h4 class="blue">Posts : <b class="red">0</b></h4>
 							<hr>
 							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
 								<ul style="list-style:none;" class="lt-al">
@@ -49,19 +40,18 @@
 								</ul>
 							</div>
 							<hr>
-							<h3 class="red">
-								<i class="lnr lnr-gift orange">
-								</i> Birthday
-							</h3>
-							
-							<hr>
 							<h3>
 								<span>
 									<i class="lnr lnr-envelope orange">
 									</i>
 								</span>
-								<strong>{{ Auth::user()->email }}</strong>
+								<strong>{{ $profile->email }}</strong>
 							</h3>
+							<hr>
+							<h3 class="blue">
+								<i class="lnr lnr-gift orange">
+								</i> Birthday
+							</h3>							
 							<hr>
 							<h3>
 								
@@ -73,23 +63,28 @@
 							<h3 >
 								<i class="lnr lnr-pushpin orange">
 								</i> Community
-							</h3>
+							</h3>							
 						</div>
 					</div>
 				</div>	
-				<div class="nlight-bg col-lg-7 pt-20 lb">
-					<div class="row">
+				<div class="nlight-bg col-lg-8 pt-20 lb">
+					<div class="row tb">
 						<div class="container">
-							<hr>
 							<h2><b>Posts</b></h2>
 							<hr>
-							<h4 class="black">No Post yet</h4>
+							@php
+						    	echo App\Http\Controllers\PostsController::individual_posts($profile->name);
+						    @endphp
 						</div>
 					</div>
 				</div>
-			</div>	
+			</div>
+			@else
+				<div class="container">
+					<small>Profile Not Available</small>
+				</div>
+			@endif	
 		</div>
-
+	
 	@endsection
 @endauth	
-	

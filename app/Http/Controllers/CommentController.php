@@ -11,6 +11,11 @@ use Redirect,Response;
 class CommentController extends Controller
 {
     
+    public static function show($post)
+    {
+        $comments = Comment::where('post', $post)->orderBy('id','desc')->get();
+        return view('posts.comments')->with('comments', $comments);
+    }
         
    
     /**

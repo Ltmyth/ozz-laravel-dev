@@ -53,11 +53,11 @@
                         <div class="container lt-al row mt-20">
                             <div class="col-lg-9">
                                  <label for="name" class="col-form-label">
-                                    <h2><b>What's going on</b><b class="orange">?</b></h2>
+                                    <h2><b>Post something ...</b></h2>
                                 </label> 
                                 <br>
                                 <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
-                                <?php $author = Auth::user()->id; ?>
+                                <?php $author = Auth::user()->name; ?>
                                 <input type="hidden" name="author" value="{{ $author }}">
                             </div>
                         </div>            

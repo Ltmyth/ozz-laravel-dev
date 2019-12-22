@@ -173,12 +173,14 @@ Route::get('transactions','WalletController@transactions');
 
 
 //messages 
-Route::get('messages','MessageController@index');
+Route::get('/messages/{inbox}','MessageController@index');
+//send messages 
+Route::post('/send_message','MessageController@send_message');
 //inbox
-Route::get('inbox','MessageController@inbox');
+Route::get('/inbox/{name}','MessageController@inbox');
 //sent
 Route::get('sent','MessageController@sent');
-//sent
+//chat
 Route::get('chat','MessageController@chat');
 //sms
 Route::get('sms','MessageController@sms');
@@ -186,6 +188,8 @@ Route::get('sms','MessageController@sms');
 Route::post('send_sms','MessageController@send_sms');
 //bulk sms
 Route::get('bulk_sms','MessageController@bulk_sms');
+//notification messages
+Route::get('/notification','MessageController@notification_message');
 
 
 
@@ -202,7 +206,7 @@ Route::get('profile','PageController@profile');
 //cleaners
 Route::get('cl_profile','People@cl_profile');
 //user wall or landing page
-Route::get('user','People@index')->name('user');
+Route::get('/user/{name}','People@show_user');
 
 
 

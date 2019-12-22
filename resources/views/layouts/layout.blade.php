@@ -89,7 +89,7 @@
             <!-- end mobile nav -->
 
             <div id="nav_content" class="col-lg-12">
-                <div class="row ml-5">
+                <div class="row">
                     <div class="lt col-lg-1">
                         @guest
                         <a href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -140,9 +140,9 @@
 
                         @auth 
 
-                            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="messages_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
-                                    <i class="lnr lnr-envelope orange"></i> Inbox
+                            <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
+                                    <i class="lnr lnr-envelope orange"></i> Messages
                                 </button>
                             </a>   
 
@@ -155,7 +155,7 @@
 
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
-                                    <i class="lnr lnr-user orange"></i> Settings
+                                    <i class="lnr lnr-user orange"></i> Profile
                                 </button>
                             </a>           
                             
@@ -227,9 +227,16 @@
                 @endguest
 
                 @if( session()->has('message') )
-                    <div id="success_message" style="margin-top:2%;margin-left:10%;" class="right-space alert alert-primary" role="alert">
+                    <div id="success_message" style="margin-top:3%;" class="container col-lg-5 alert alert-primary " role="alert">
                         {{ session()->get('message') }}
                         <strong>Successfully</strong>
+                        <br>
+                    </div>
+                @endif 
+
+                @if( session()->has('error_message') )
+                    <div  style="margin-top:3%;" class="container col-lg-5 alert alert-danger " role="alert">
+                        {{ session()->get('error_message') }}
                         <br>
                     </div>
                 @endif 

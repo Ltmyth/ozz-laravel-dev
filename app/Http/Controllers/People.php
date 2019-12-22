@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
 
 class People extends Controller
@@ -11,10 +11,12 @@ class People extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    
+    public function show_user($name)
     {
         //
-        return view('people.user-profiles');
+        $user_profile = User::where('name', $name)->first();;
+        return view('people.user-profiles')->with('profile', $user_profile);
     }
 
      public function cl_profile()
@@ -51,8 +53,9 @@ class People extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {  //
+        $user = User::find($id);
+        return view('posts.showpost')->with('post',$post);
     }
 
     /**

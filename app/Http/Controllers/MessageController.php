@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\User;
+use App\messages;
+use Auth;
+
 
 use Illuminate\Http\Request;
 
@@ -16,14 +20,75 @@ class MessageController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($inbox)
     {
-        return view('messages.index');
+        $user = $inbox;
+        $texts = messages::where('receiver', $user)->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
+
+        // if($texts = "null"){
+        //     $text = new messages();
+        //     $text->author = "the</b><b class='orange'>oh</b><b>z</b> <b class='black'>chatbot</b>";
+        //     $text->receiver = "everyone";
+        //     $text->message = "Hello, welcome to theohz platform";
+        //     $text->save();
+        // }
+        $uniq_texts = $texts->unique('author');
+        $text_count = $uniq_texts->count();
+        return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
     }
 
-    public function inbox()
+    public function send_message(Request $request)
     {
-        return view('messages.inbox');
+        //validate
+        $this->validate($request,[
+            'message' => 'required',
+            'author' => 'required',
+            'receiver' => 'required'
+        ]);
+
+        $author = $request->input('author');
+        $receiver = $request->input('receiver');
+        //new message
+        $text = new messages();
+        $text->author = $author;
+        $text->receiver = $receiver;
+        $text->message = $request->input('message');
+
+        $user_profile = User::where('name', $receiver)->first();
+
+        if( $user_profile != null ){
+            if($request->hasFile('upload')){
+                //filename with ext
+                $uploadfile = $request->file('upload')->getClientOriginalName();
+                //jhus filename
+                $uploadname = pathinfo($uploadfile,PATHINFO_FILENAME);  
+                //jhus ext
+                $extension = $request->file('upload')->getClientOriginalExtension(); 
+                //unique storage name
+                $upload_storage_name = $uploadname."_".time().".".$extension; 
+
+                //store file in public/uploads/
+                $path = $request->file('upload')->storeAs('storage/app/public/',$upload_storage_name);
+
+                $text->upload = $upload_storage_name;
+
+            }
+            
+            $text->save();
+
+            $message ='Message delivered';
+            return redirect('/messages/'.$author)->with('message', $message);
+        }else{
+            $error_message =$receiver." ".'is not yet on theohz';
+            return redirect('/messages/'.$author)->with('error_message', $error_message);
+        } 
+        
+    }
+
+    public function inbox($name)
+    {
+        $user_profile = User::find($name);
+        return view('messages.inbox')->with('profile', $user_profile);
     }
 
     public function sent()
@@ -33,7 +98,12 @@ class MessageController extends Controller
 
     public function chat()
     {
-        return view('messages.chat');
+        $user = Auth::id();
+        $onlines = User::where([['status', '=','online'],['id', '!=', $user]])->get();
+        $chat_count = $onlines->count();
+
+        // $onlines = "";
+        return view('messages.chat' , ["onlines" => $onlines, "chat" => $chat_count]);
     }
 
     public function sms()
@@ -103,6 +173,11 @@ class MessageController extends Controller
     public function bulk_sms()
     {
         return view('messages.bulk_sms');
+    }
+
+    public function notification_message()
+    {
+        return view('messages.notification');
     }
 
     

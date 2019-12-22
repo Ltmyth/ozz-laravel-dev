@@ -253,6 +253,35 @@ $black      : #222;
   border-radius:50%;
 }
 
+.br-80{
+  border-radius:80%;
+}
+
+.green_dot {
+  height: 12px;
+  width: 12px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red_dot {
+  height: 12px;
+  width: 12px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orange_dot {
+  height: 12px;
+  width: 12px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
 .white{
   color:white;
 }

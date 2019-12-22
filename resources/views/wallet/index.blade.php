@@ -45,12 +45,21 @@
       			<h2>
       				<div class=" container">
                 <div class="row col-lg-12">
+                  <div class="col-md-8 container">
+                    <small class="orange">
+                      Your Wallet Id
+                    </small>  
+                    : <b class="black">#1vtheidz</b>
+                  </div>
+                </div>
+                <br>
+                <div class="row col-lg-12">
         					<div class="col-md-8 container">
         						<small class="green">
                       Available Balance
                     </small>	
                     : <b>1000000</b> .
-                    <i><strong class="orange">0hzz</strong></i>
+                    <i><strong class="orange">oh</strong></i><b>z</b>
         					</div>
         				</div>
                 <br>

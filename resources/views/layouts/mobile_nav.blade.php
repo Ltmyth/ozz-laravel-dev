@@ -23,9 +23,9 @@
                 </button>
             </form>
 
-            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
-                    <i class="lnr lnr-envelope orange"></i> Inbox
+            <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <button class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
+                    <i class="lnr lnr-envelope orange"></i> Messages
                 </button>
             </a>   
 
@@ -38,7 +38,7 @@
 
             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
-                    <i class="lnr lnr-user orange"></i> Settings
+                    <i class="lnr lnr-user orange"></i> Profile
                 </button>
             </a>           
             
@@ -55,8 +55,15 @@
             </a>
             <div class="dropdown-menu blue-bg white" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">Communication</b>
+                    <b class="white">People</b>
                 </a>
+
+                <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <b class="white">Airtime</b>
+                </a>
+
 
                 <div class="dropdown-divider"></div>
                 
@@ -69,12 +76,16 @@
                 <a class="dropdown-item" href="food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Food</b>
                 </a>
-                
+
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">Airtime</b>
+                <a href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                    <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                        <span class="lnr lnr-alarm"></span>
+                        <strong class="white" >Notifications</strong>
+                    </button>
                 </a>
+                
             </div>   
 
             <button class="btn btn-md btn-outline-warning col-lg-8" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
