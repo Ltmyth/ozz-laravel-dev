@@ -1,9 +1,7 @@
 <?php
-
 namespace App\Http\Controllers;
-
+use App\User;
 use Illuminate\Http\Request;
-
 class People extends Controller
 {
     /**
@@ -11,18 +9,18 @@ class People extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    
+    public function show_user($name)
     {
         //
-        return view('people.user-profiles');
+        $user_profile = User::where('name', $name)->first();;
+        return view('people.user-profiles')->with('profile', $user_profile);
     }
-
      public function cl_profile()
     {
         //
         return view('people.cleaner-profile');
     }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -32,7 +30,6 @@ class People extends Controller
     {
         //
     }
-
     /**
      * Store a newly created resource in storage.
      *
@@ -43,7 +40,6 @@ class People extends Controller
     {
         //
     }
-
     /**
      * Display the specified resource.
      *
@@ -51,10 +47,10 @@ class People extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        //
+    {  //
+        $user = User::find($id);
+        return view('posts.showpost')->with('post',$post);
     }
-
     /**
      * Show the form for editing the specified resource.
      *
@@ -65,7 +61,6 @@ class People extends Controller
     {
         //
     }
-
     /**
      * Update the specified resource in storage.
      *
@@ -77,7 +72,6 @@ class People extends Controller
     {
         //
     }
-
     /**
      * Remove the specified resource from storage.
      *
