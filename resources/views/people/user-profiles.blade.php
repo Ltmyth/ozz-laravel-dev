@@ -1,112 +1,90 @@
 @extends('layouts.layout')
 @auth	
-	<style type="text/css">
-	    #profile_btn{
-	        background-color:orange;
-	        color:white;
-	    }
-	</style>
 	@section('content')
 		<div class="container">
+			@if($profile)
+			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
+				<div class="row col-lg-8">
+					<img 
+						id="profile-pic"  
+						class="theme w-30 mt-20 blue-bg br-50" 
+						src="{{ asset('/imgs/ozz-app.png') }}"
+						alt="Avator" 
+					>						
+				</div>
+			</div>
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-3">
 					<div class="row">
-						<img 
-							id="profile-pic"  
-							class="theme" 
-							src="{{ asset('/imgs/ozz-app.png') }}"
-							alt="Avator" 
-						>
-					</div>
-
-
-					<div class="row blue-bg">
-						<ul style="list-style:none;">
+						<div class="container lt-al">
 							<hr>
-							<li>
-								<a href="#">
-									<button class="btn btn-md btn-default">
-										<h4><big><i>People</i> : 0</big></h4>
-									</button>
-								</a>
-							</li>
-							<br><br>
-							<li>
-								<a href="#">
-									<button class="btn btn-md btn-default">
-										<h4><big><i>Circles</i> : 0</big></h4>
-									</button>
-								</a>
-								<!-- <br><br>
-								<a href="#">
-									<button class="btn btn-sm btn-success">
-										create
-									</button>
-								</a> -->
+							<h2 ><strong>{{ $profile->name }}</strong> <span class="green_dot"></span></h2>
+							<hr>
+							<a href="/inbox/{{ $profile->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
+								<button class="btn btn-lg btn-success  mr-20">
+									<i class="glyphicon glyphicon-send ">Chat</i>
+								</button>
+							</a>
+
+							<a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+								<button class="btn btn-lg btn-warning">
+									SMS
+								</button>
+							</a>
+							<hr>
+							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
+								<ul style="list-style:none;" class="lt-al">
+									<li>
+										<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<h3>
+								<span>
+									<i class="lnr lnr-envelope orange">
+									</i>
+								</span>
+								<strong>{{ $profile->email }}</strong>
+							</h3>
+							<hr>
+							<h3 class="blue">
+								<i class="lnr lnr-gift orange">
+								</i> Birthday
+							</h3>							
+							<hr>
+							<h3>
 								
-							</li>
+								<i class="lnr lnr-phone orange">
+								</i>
+								<strong>+256-7xx-xxxx</strong>
+							</h3>
 							<hr>
-							<li>
-								<a href="#">
-					                <button id="explore" class="btn btn-lg btn-primary">
-					                    Add to Circle
-					                </button>
-					            </a>
-							</li>
-							<hr>
-						</ul>
+							<h3 >
+								<i class="lnr lnr-pushpin orange">
+								</i> Community
+							</h3>							
+						</div>
 					</div>
 				</div>	
-				<div class="blue-bg col-lg-5">
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-user">
-								Username
-							</i>
-						</small>
-						<hr>
-						<strong>{{ Auth::user()->name }}</strong>
-					</h3>
-					<hr>
-					<br><br>
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-envelope">
-								Email
-							</i>
-						</small>
-						<hr>
-						<strong>{{ Auth::user()->email }}</strong>
-					</h3>
-					<hr>
-					<br><br>
-					<h3>
-						<small>
-							<i class="glyphicon glyphicon-phone">
-								Phone
-							</i>
-						</small> 
-						<hr>
-						<strong>+256-7xx-xxxx</strong>
-					</h3>
-					<hr>
-					<br><br>
-					<div class="btm-space">
-						<button class="btn btn-lg btn-success">
-							<i class="glyphicon glyphicon-send">Message</i>
-						</button>
+				<div class="nlight-bg col-lg-8 pt-20 lb">
+					<div class="row tb">
+						<div class="container">
+							<h2><b>Posts</b></h2>
+							<hr>
+							@php
+						    	echo App\Http\Controllers\PostsController::individual_posts($profile->name);
+						    @endphp
+						</div>
 					</div>
 				</div>
-			</div>	
-		</div>
-
-		<br><br>	
-		<div class="row">
-			<div class="container">
-				<h2><b>Posts</b></h2>
-				<hr>
 			</div>
+			@else
+				<div class="container">
+					<small>Profile Not Available</small>
+				</div>
+			@endif	
 		</div>
+	
 	@endsection
 @endauth	
-	
