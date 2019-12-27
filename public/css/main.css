@@ -215,13 +215,13 @@ $black      : #222;
 }
 
 #side{
-  height: 83vh; /* Set the width of the sidebar */
+  height: 80vh; /* Set the width of the sidebar */
   width: 100%;
   position: fixed; /* (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left:70%;
-  overflow-y: hidden; /*horizontal scroll */
+  overflow: hidden; /*horizontal scroll */
   padding-top: 9%;
   transition: 0.8s all;
 }
@@ -236,23 +236,51 @@ $black      : #222;
 }
 
 .preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   margin-top:0%;
-  width: 100%;
-  height: 100%;
+  background-position:center;
+  width: 110%;
+  height: 100vh;
   z-index: 9999;
   background-image: url('../imgs/default.gif');
   background-repeat: no-repeat; 
   background-color: white;
-  background-position:  50% 30%;
-  opacity: .9;
+  /*background-position:  50% 50%;*/
+  opacity: .95;
 }
 
 .br-50{
   border-radius:50%;
 }
+
+.br-80{
+  border-radius:80%;
+}
+
+.green_dot {
+  height: 12px;
+  width: 12px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red_dot {
+  height: 12px;
+  width: 12px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orange_dot {
+  height: 12px;
+  width: 12px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+}
+
 
 .white{
   color:white;
@@ -292,20 +320,20 @@ $black      : #222;
   color:yellow;
 }
 
-#profile-pic{
-  width: 50%;
-}
+
 
 .op7{
   opacity:0.7;
 }
 @media (max-width: 768px) {
-  .preloader{
-    background-position:  50% 2%;
-  }
+  
 
   #profile-pic{
     width: 190%;
+  }
+
+  #mobile_chat{
+    display:inline-block;
   }
 
   #sidenav{
@@ -348,9 +376,7 @@ $black      : #222;
 
 
 @media (max-width: 950px) {
-   .preloader{
-    background-position:  50% 2%;
-  }
+   
 
   #sidenav{
     display: none;
@@ -2387,6 +2413,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top:0%;
 }
 
+#mobile_chat{
+  display:none;
+}
+
 
 #how{
   -webkit-transition: all 0.3s ease 0s;
@@ -2426,6 +2456,10 @@ h1, h2, h3, h4, h5, h6 {
     top:6%;
     height: 40vh;
     padding:0px 8% 0% 8%;
+  }
+
+  #mobile_chat{
+    display:inline;
   }
 
   #hero_img{
