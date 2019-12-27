@@ -2,7 +2,7 @@
 @section('content')
     <style type="text/css">
     	
-    	#messages_btn{
+    	#notification_btn{
     		background-color:orange;
     		color:white;
     		pointer-events: none;
@@ -32,82 +32,12 @@
     </script>
 
         <br>
-        <div class="row">
-            <div class="container">
-                <button type="button" class="btn btn-lg btn-warning">
-                    <i class="lnr lnr-envelope white"></i> Inbox
-                    <span class="badge badge-light">
-                        @if($text_count>0)
-                            {{ $text_count }}
-                        @else
-                            <small class="red">0</small>
-                        @endif
-                    </span>
-                </button>
-            </div>
-        </div>
-      	<hr class="container col-lg-12">
-      	<button id="compose_btn"  onclick="compose()" class="btn btn-md btn-outline-primary">
-      		Compose  <i class="lnr lnr-location"></i>
-      	</button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-      	<br><br>
-		<div id="new_msg" style="display:none;" class="row">
-            <form enctype="multipart/form-data" method="POST" action="/send_message">
-                @csrf
-                <div class="container col-lg-5">
-                    <input placeholder="To" class="form-control" type="text" name="receiver">
-                    <input type="hidden" value="{{ Auth::user()->name }}" name="author">
-                    <hr>
-                    <textarea placeholder="Message" style="width:100%;" type="textarea" class="form-control" name="message" value="post"autofocus required></textarea>
-                    <br>
-                   <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
-                   &nbsp;&nbsp;
-                   <button type="submit" class="btn btn-lg btn-success">
-                        <i class="glyphicon glyphicon-send">Send</i>
-                    </button> 
-                </div>
-            </form>
-        </div>
+      	<h2>
+            <i class="lnr lnr-alarm orange"></i> Notifications
+        </h2>
         <hr class="container col-lg-5">
             <div class="container col-lg-11">
-                @if($uniq_texts) 
-                    @foreach ($uniq_texts as $text)
-                        <div class="row bb">
-                            <div class="col-lg-2 w-10">
-                                <div class="row">
-                                    <a href="">
-                                        <img 
-                                            class="w-60 mr-10 rt" 
-                                            src="{{ asset('/imgs/hello_bot.png') }}"
-                                            alt="Avator" 
-                                        >
-                                    </a>
-
-                                </div>
-                            </div>
-                            <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
-                                <div class="row bb">
-                                    <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
-                                    &nbsp; &nbsp;
-                                    <h5 class="black"><br><i>2 minutes ago.</i></h5>
-                                </div>
-
-                                <div class="row container lt-al blbr-10 trbr-10 light-bg brbr-10 ">
-                                    <a href="/inbox/">
-                                        <h3 class="white">  
-                                            <strong>
-                                                <p>{{ $text->message }}</p>
-                                            </strong>
-                                        </h3> 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <hr>
-                    @endforeach
-                @else
-                <div class="row">
+                <div class="row bb">
                     <div class="col-lg-2 w-10">
                         <div class="row">
                             <a href="">
@@ -133,7 +63,7 @@
                                     <b class="white fz-18">Hiii</b> <strong>{{ Auth::user()->name }}</strong>!! 
                                 </h3> 
                                 <h3 class="white">
-                                    <b class="white">Its lonely in here</b><br>
+                                    <b class="white">Welcome to <strong>the</b><b class="orange">oh</b><b class="white">z</b></strong> platform</b><br>
                                 </h3>
                             </a>
                         </div>
@@ -175,7 +105,6 @@
                         </div>
                     </div>
                 </div>
-                @endif
             </div>            
     <br><br>
 @endsection

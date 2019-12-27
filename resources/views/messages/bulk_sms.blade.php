@@ -1,0 +1,59 @@
+@extends('layouts.layout')
+@section('content')
+    <style type="text/css">
+        #home_btn{
+            background-color:orange;
+            color:white;
+            pointer-events: none;
+        }
+    </style>
+
+  	<h2 class="mt-30"> <i class="lnr lnr-alarm orange"></i>Bulk Message Service</h2>
+  	<hr>
+    <br><br>
+    <div id="new_msg" class="well center">
+        <form enctype="multipart/form-data" method="POST" action="#">
+            @csrf
+            <div class="container col-lg-7 lt-al"> 
+                 
+                <button class="btn btn-sm btn-outline-success" onclick="download()">
+                    Download and edit sample list
+                </button>
+                <br><br>
+                <label><h4>Upload (.csv) file</h4></label>
+                &nbsp;&nbsp;
+                <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" >
+
+                <script type="text/javascript">
+                    function download(){
+                        const rows = [
+                            ["name1", "contact1"],
+                            ["name2", "contact2"]
+                        ];
+
+                        let csvContent = "data:text/csv;charset=utf-8,";
+
+                        rows.forEach(function(rowArray) {
+                            let row = rowArray.join(",");
+                            csvContent += row + "\r\n";
+                        });
+
+                        var encodedUri = encodeURI(csvContent);
+                        var link = document.createElement("a");
+                        link.setAttribute("href", encodedUri);
+                        link.setAttribute("download", "theohz_sample_list.csv");
+                        document.body.appendChild(link); // Required for FF
+
+                        link.click(); 
+                    }
+                </script>
+                <hr>
+                <textarea placeholder="Message" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+                <hr>
+                <button type="submit" class="btn btn-lg btn-success px100">
+                    <i class="glyphicon glyphicon-send">Send</i>
+                </button>
+            </div>            
+        </form>
+    </div>  	
+@endsection
