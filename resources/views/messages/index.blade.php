@@ -70,7 +70,7 @@
             </form>
         </div>
         <hr class="container col-lg-5">
-            <div class="container col-lg-11">
+            <div class="container col-lg-11 m-20 pb-30">
                 @if($uniq_texts) 
                     @foreach ($uniq_texts as $text)
                         <div class="row bb">
