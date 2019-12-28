@@ -83,7 +83,7 @@
 										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->name }}">
 										<br>
 										<button  
-										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
+										id="like{{ $post->id }}" type="submit" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i>
 										</button>
 										<br>
@@ -96,7 +96,7 @@
 										<input type="hidden"  value="id">
 										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
 										<br>
-										<button 
+										<button  type="submit" 
 										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i> <b class="white">{{ $likes}}</b>
 										</button>
