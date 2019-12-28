@@ -228,7 +228,7 @@
 		<div class="container">
 			<br>
 			<h1 class="ct-al">
-				<p><b class="orange">No known person!</b></p>
+				<p><b class="orange">No posts yet!</b></p>
 			</h1>
 			<h1>
 				<big><i class="lnr lnr-sad blue"></i></big>
