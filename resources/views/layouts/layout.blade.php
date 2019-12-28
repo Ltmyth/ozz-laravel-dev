@@ -95,7 +95,7 @@
                         <form method="POST" class="w-100">
                             <div class="row ml-30">
                                 <div class="col-lg">
-                                    <input type="text" placeholder="Search the ohz" class="form-control" name="">
+                                    <input type="text" placeholder="Search the ohz" class="form-control" name="" disabled>
                                 </div>
                                 <div class="col-lg-1">
                                     <button type="submit" class="btn btn-xs white btn-outline-warning" disabled>
