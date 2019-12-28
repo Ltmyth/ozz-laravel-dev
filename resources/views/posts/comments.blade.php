@@ -62,6 +62,10 @@
 							$dislikes = 0;
 							$shares = 0;
 							$comments = 0;
+
+							if($post != ""){
+								$post_id = $post;
+							}
 						?>
 						<div id="modal" class="container mb-10">
 							<!-- <div class="row pb-20" >
@@ -155,19 +159,18 @@
 								@endif
 							</div> -->
 
-							@if($comments<=0)
-								<form id="comment{{ $comment->id }}" method="POST" action="/comment">
-									@csrf
-									<div class="row">
-										<input type="hidden" name="comment_id" value="{{$comment->id}}">
-										<input type="hidden" name="comment_by" value="{{ $comment->author }}">
-										<textarea class="form-control nlight-bg w-90" name="comment" required></textarea>
-										&nbsp; &nbsp;
-										<input type="submit" class="btn btn-sm btn-success" value="Comment" >
-										<br>
-									</div>
-								</form>
-							@endif
+							
+							<form id="comment{{ $comment->id }}" method="POST" action="/comment">
+								@csrf
+								<div class="row">
+									<input type="hidden" name="post_id" value="{{$post_id}}">
+									<input type="hidden" name="comment_by" value="{{ $comment->author }}">
+									<textarea class="form-control nlight-bg w-90" name="comment" required></textarea>
+									&nbsp; &nbsp;
+									<input type="submit" class="btn btn-sm btn-success" value="Comment" >
+									<br>
+								</div>
+							</form>
 							<br><br>
 							<!-- end comment area -->
 						</div>
