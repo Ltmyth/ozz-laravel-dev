@@ -80,7 +80,7 @@
 										<input type="hidden" name="post_id" value="{{$post_id}}">
 										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->name }}">
 										<br>
-										<button type="submit"  
+										<button  
 										id="like{{ $post->id }}" class="btn btn-sm btn-outline-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
 											<i class="lnr lnr-heart"></i>
 										</button>
