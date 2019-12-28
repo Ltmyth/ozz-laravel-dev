@@ -61,9 +61,8 @@
                                 <input type="hidden" name="author" value="{{ $author }}">
                             </div>
                         </div>            
-                        <div class="container row">
-                            <div class="col-lg-4"></div>
-                            <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-4">
                                 <br>
                                 <div class="form-group row" >
                                     &nbsp;&nbsp;
