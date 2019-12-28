@@ -74,7 +74,7 @@
 						<div id="modal" class="container mb-10">
 							<div class="row pb-20" >
 								<!-- like post -->
-								@if($likes <= 0)
+								@if($likes == "")
 									<form id="likeForm"  method="POST" action="/like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
@@ -99,7 +99,7 @@
 											<i class="lnr lnr-heart"></i> <b class="white">{{ $likes}}</b>
 										</button>
 										<br>
-										<big class="container red">Like</big>
+										<big class="container red">Likes</big>
 									</form>														
 								@endif
 								<!-- end like  -->
