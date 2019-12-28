@@ -145,7 +145,7 @@
 									<form >
 										<br>
 										<button id="commentbtn{{ $post->id }}" type="button"
-										 class="btn btn-sm btn-outline-success  px100 ml-5">
+										 class="btn btn-sm btn-outline-success  px100 ml-5" disabled>
 											<i class="lnr lnr-bubble"></i>
 										</button>
 										<br>

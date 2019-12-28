@@ -249,7 +249,7 @@
                     <div class="col-lg-7 col-md-7 col-sm-7">
                         <div class="single-footer-widget">
                             <p class="footer-text white rt-al">
-                                <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | All rights reserved . <br>Terms and Conditions Apply .</strong>
+                                <strong>Copyright &copy; <script>document.write(new Date().getFullYear());</script> | All rights reserved . <br><!-- Terms and Conditions Apply . --></strong>
                             </p>
                         </div>
                     </div>
