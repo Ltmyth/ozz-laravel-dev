@@ -66,7 +66,7 @@
 							<div class="row pb-20" >
 								<!-- like post -->
 								@if($likes<=0)
-									<form id="likeForm"  method="POST" action="like" >
+									<form id="likeForm"  method="POST" action="/like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
 										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->id }}">
@@ -99,7 +99,7 @@
 
 								<!-- share button -->
 								@if($shares<=0)
-									<form id="shareForm" method="POST" action="share">
+									<form id="shareForm" method="POST" action="/share">
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
 										<input type="hidden" name="shared_by" value="{{ Auth::user()->id }}">
@@ -164,7 +164,7 @@
 
 								<!-- dislike -->
 								@if($dislikes<=0)
-									<form id="dislikeForm" method="POST" action="dislike">
+									<form id="dislikeForm" method="POST" action="/dislike">
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post->id}}">
 										<input type="hidden" name="disliked_by" value="{{ Auth::user()->id }}">
