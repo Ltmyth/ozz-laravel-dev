@@ -15,6 +15,11 @@
 				@php
 					$user = Auth::user()->name;
 					$author = $post->author;
+					$post_id = $post->id; 
+					$likes = $post->likes; 
+					$dislikes = $post->dislikes;
+					$shares = $post->shares;
+					$comments = $post->comments;
 				@endphp
 				<div class="row bb">
 					<div class="col-lg-2 w-10">
@@ -65,18 +70,11 @@
 								</div>							
 							</a>	
 						@endif
-				        
-						<?php  
-							$post_id = $post->id; 
-							$likes = $post->likes; 
-							$dislikes = $post->dislikes;
-							$shares = $post->shares;
-							$comments = $post->comments;
-						?>
+
 						<div id="modal" class="container mb-10">
 							<div class="row pb-20" >
 								<!-- like post -->
-								@if($likes=0)
+								@if($likes==0)
 									<form id="likeForm"  method="POST" action="/like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
@@ -90,7 +88,7 @@
 										<big class="container red">Like</big>
 									</form>	
 								@endif
-								@if($likes=1)
+								@if($likes==1)
 									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
 										@csrf
 										<input type="hidden"  value="$post_id">
