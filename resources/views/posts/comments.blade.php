@@ -25,9 +25,6 @@
 								<h3 class="blue  w-100">
 									<strong>{{ $comment->author }}</strong>
 
-									@if(($comment->author)->isOnline())
-									    user is online!!
-									@endif
 									<span class="orange_dot"></span>
 									&nbsp;
 									<small>
