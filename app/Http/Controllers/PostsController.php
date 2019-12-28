@@ -25,7 +25,7 @@ class PostsController extends Controller
         $this->validate($request,[
             'post' => 'required',
             'author' => 'required',
-            'upload' => '|image|nullable|max:4999'
+            'upload' => '|image|nullable|max:9999'
         ]);
         //new post
         $post = new Post();
@@ -41,7 +41,7 @@ class PostsController extends Controller
             //unique storage name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file in public/uploads/
-            $path = $request->file('upload')->storeAs('storage/app/public/',$upload_storage_name);
+            $path = $request->file('upload')->storeAs('../storage/app/public/',$upload_storage_name);
             $post->Post_upload = $upload_storage_name;
         }
         
