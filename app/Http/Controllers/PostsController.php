@@ -25,7 +25,7 @@ class PostsController extends Controller
         $this->validate($request,[
             'post' => 'required',
             'author' => 'required',
-            'upload' => '|image|nullable|max:1999'
+            'upload' => '|image|nullable|max:4999'
         ]);
         //new post
         $post = new Post();
