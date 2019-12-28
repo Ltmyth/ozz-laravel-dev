@@ -64,8 +64,7 @@
 							$comments = 0;
 						?>
 						<div id="modal" class="container mb-10">
-							<div class="row pb-20" >
-								<!-- like comment -->
+							<!-- <div class="row pb-20" >
 								@if($likes<=0)
 									<form id="likeForm"  method="POST" action="like" >
 										@csrf
@@ -94,11 +93,8 @@
 										<big class="container red">Likes</big>
 									</form>														
 								@endif
-								<!-- end like  -->
 
 
-
-								<!-- share button -->
 								@if($shares<=0)
 									<form id="shareForm" method="POST" action="share">
 										@csrf
@@ -127,11 +123,8 @@
 										<big class="container text-info">Shares</big>
 									</form>
 								@endif
-								<!-- end share -->
 
 
-								
-								<!-- dislike -->
 								@if($dislikes<=0)
 									<form id="dislikeForm" method="POST" action="dislike">
 										@csrf
@@ -160,10 +153,8 @@
 										<big class="container black">Dislikes</big>
 									</form>
 								@endif
-								<!-- end dislike -->
-							</div>
+							</div> -->
 
-							<!-- comment area -->
 							@if($comments<=0)
 								<form id="comment{{ $comment->id }}" method="POST" action="/comment">
 									@csrf
