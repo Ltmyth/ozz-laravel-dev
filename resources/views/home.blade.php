@@ -62,9 +62,7 @@
                             </div>
                         </div>            
                         <div class="row">
-
-                            <div class="col-lg-1"></div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 ml-30">
                                 <br>
                                 <div class="form-group row" >
                                     &nbsp;&nbsp;
