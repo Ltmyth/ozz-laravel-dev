@@ -74,7 +74,7 @@
 						<div id="modal" class="container mb-10">
 							<div class="row pb-20" >
 								<!-- like post -->
-								@if($likes==0)
+								@if($post->likes <= 0)
 									<form id="likeForm"  method="POST" action="/like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
@@ -87,8 +87,7 @@
 										<br>
 										<big class="container red">Like</big>
 									</form>	
-								@endif
-								@if($likes==1)
+								@elseif($post->likes == 1)
 									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
 										@csrf
 										<input type="hidden"  value="$post_id">
@@ -102,7 +101,7 @@
 										<big class="container red">Like</big>
 									</form>														
 								@endif
-								@if($likes>1)
+								@if($post->likes >= 2)
 									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
 										@csrf
 										<input type="hidden"  value="$post_id">
