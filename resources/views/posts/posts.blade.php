@@ -77,7 +77,7 @@
 							<div class="row pb-20" >
 								<!-- like post -->
 								@if($likes<=0)
-									<form id="likeForm"  method="POST" action="like" >
+									<form id="likeForm"  method="POST" action="/like" >
 										@csrf
 										<input type="hidden" name="post_id" value="{{$post_id}}">
 										<input type="number" class="hidden" name="liked_by" value="{{ Auth::user()->name }}">
@@ -90,10 +90,24 @@
 										<big class="container red">Like</big>
 									</form>	
 								@endif
-								@if($likes>=1)
+								@if($likes=1)
 									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
 										@csrf
-										<input type="hidden"  value="id">
+										<input type="hidden"  value="$post_id">
+										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
+										<br>
+										<button  type="submit" 
+										id="like{{ $post->id }}" class="btn btn-sm btn-danger px100" onclick="javascript:document.getElementById('preloader').style.display='block';">
+											<i class="lnr lnr-heart"></i> <b class="white">{{ $likes}}</b>
+										</button>
+										<br>
+										<big class="container red">Like</big>
+									</form>														
+								@endif
+								@if($likes>1)
+									<form id="unlikeForm" method="POST" action="/unlike/{{$post_id}}" >
+										@csrf
+										<input type="hidden"  value="$post_id">
 										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
 										<br>
 										<button  type="submit" 
@@ -126,7 +140,7 @@
 								@if($shares>=1)
 									<form id="unshareForm" method="POST" action="/unshare/{{$post_id}}" >
 										@csrf
-										<input type="hidden"  value="id">
+										<input type="hidden"  value="$post_id">
 										<input type="number" class="hidden" value="{{ Auth::user()->name }}">
 										<br>
 										<button 
@@ -144,8 +158,8 @@
 								@if($comments<=0)
 									<form >
 										<br>
-										<button id="commentbtn{{ $post->id }}" type="button"
-										 class="btn btn-sm btn-outline-success  px100 ml-5" disabled>
+										<button id="commentbtn{{ $post->id }}"
+										class="btn btn-sm btn-outline-success  px100 ml-5" disabled>
 											<i class="lnr lnr-bubble"></i>
 										</button>
 										<br>
