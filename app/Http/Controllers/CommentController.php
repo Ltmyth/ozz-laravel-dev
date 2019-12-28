@@ -11,6 +11,11 @@ use Redirect,Response;
 class CommentController extends Controller
 {
     
+    public static function show($post)
+    {
+        $comments = Comment::where('post', $post)->orderBy('id','desc')->get();
+        return view('posts.comments')->with('comments', $comments);
+    }
         
    
     /**
@@ -24,13 +29,14 @@ class CommentController extends Controller
         //validate
         $this->validate($request,[
             'post_id' => 'required',
+            'comment' => 'required',
             'comment_by' => 'required'
         ]);
 
         $comments = new Comment();
         $comments->post = $request->post_id;
-        $comments->disliked_by = $request->comment_by;
-
+        $comments->comment = $request->comment;
+        $comments->author = $request->comment_by;
         $comments->save();
 
         $post = Post::find($request->post_id);
@@ -39,7 +45,7 @@ class CommentController extends Controller
 
         $posts = Post::orderBy('id','desc')->get();
 
-        return view('home');
+        return redirect('/home');
     }
     
     

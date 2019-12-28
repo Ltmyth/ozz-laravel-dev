@@ -3,6 +3,11 @@
 namespace App\Http\Controllers;
 /*use Illuminate\Support\Facades\View;*/
 
+use Auth;
+use App\User;
+
+// use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -33,6 +38,10 @@ class PageController extends Controller
     }
 
     public function logout(){
+        $user = Auth::id();
+        $user_profile = User::find($user);
+        $user_profile->status = "offline";
+        $user_profile->save();
         auth()->logout();
         return redirect('/');
     }
