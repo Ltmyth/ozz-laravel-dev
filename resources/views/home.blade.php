@@ -65,7 +65,7 @@
                             <div class="col-lg-4"></div>
                             <div class="col-lg-8">
                                 <br>
-                                <div class="form-group row left-space" >
+                                <div class="form-group row lt-al" >
                                     &nbsp;&nbsp;
                                    <!-- <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload"  value="Upload" onclick="getfile()"  id="myBtn">
                                    &nbsp;&nbsp; -->
