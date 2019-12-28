@@ -70,7 +70,17 @@
         
         <header id="header" class="blbr-10 brbr-10">
             <div class="row">
-                <div id="preloader" class="preloader"></div>
+                <div id="preloader" class="preloader">
+                    <div class="spinner-grow text-warning" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-info" role="status">
+                      <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
                 <!-- <div class="spinner-grow text-warning" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
