@@ -38,7 +38,7 @@ class LikeController extends Controller
 
         $posts = Post::orderBy('id','desc')->get();
 
-        return view('home');
+        return redirect('home');
 
 
         // return Response::json($likes);
