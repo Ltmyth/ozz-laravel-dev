@@ -212,12 +212,20 @@
                 @endguest
 
                 @if( session()->has('message') )
-                    <div id="success_message" style="margin-top:2%;margin-left:10%;" class="right-space alert alert-primary" role="alert">
+                    <div id="success_message" style="margin-top:3%;" class="container col-lg-5 alert alert-primary " role="alert">
                         {{ session()->get('message') }}
                         <strong>Successfully</strong>
                         <br>
                     </div>
                 @endif 
+
+                @if( session()->has('error_message') )
+                    <div  style="margin-top:3%;" class="container col-lg-5 alert alert-danger " role="alert">
+                        {{ session()->get('error_message') }}
+                        <br>
+                    </div>
+                @endif 
+
 
                 <body onload="preload()" style="background-color: #f9f9ff;" class="blue">
                     <div class="br-10 black" id="content">
