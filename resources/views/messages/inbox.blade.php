@@ -93,7 +93,7 @@
                     </div>
 
                     <div class="col-lg lt-al">
-                        <h3 class="blue"><strong>{{$profile->name}}</strong></h3>
+                        <h3><strong>{{$profile->name}}</strong></h3>
                     </div>
                 </div>
 
@@ -104,13 +104,15 @@
         </div>
         
         <hr>
-        <div class="row"> 
-           <div class="col-lg-7 br-10 pt-20 pb-20 pr-10 float-sm-right">
+        <div class="row">
+           <div class="col-lg-5">               
+           </div> 
+           <div class="col-lg-7 br-10 pt-20 pb-20 pr-10">
                 <div class="row light-bg tlbr-10 trbr-10 blbr-10 pt-20  pb-20">
                     <p class="lt-al ml-20 pl-10 white"><strong>txt</strong></p>
                 </div>
-                <div class="row tlbr-10 trbr-10 blbr-10 pt-20  pb-20">
-                    <p class="rt blue"><strong>You</strong></p>
+                <div class="row tlbr-10 trbr-10 blbr-10 pt-20  float-sm-right">
+                    <p class="lt-al ml-20 pl-10 white"><strong>You</strong></p>
                 </div>
             </div>
         </div>
