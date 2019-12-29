@@ -101,7 +101,9 @@
                             </div>
                             <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
                                 <div class="row bb">
-                                    <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
+                                    <a href="/inbox/{{ $text->author }}">
+                                        <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
+                                    </a>
                                     &nbsp; &nbsp;
                                     <h5 class="black"><br><i>2 minutes ago.</i></h5>
                                 </div>

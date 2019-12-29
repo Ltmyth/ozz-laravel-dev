@@ -92,7 +92,7 @@
                     </div>
 
                     <div class="col-lg lt-al">
-                        <h3><strong>Joghh</strong></h3>
+                        <h3><strong>{{$profile->name}}</strong></h3>
                     </div>
                 </div>
 
