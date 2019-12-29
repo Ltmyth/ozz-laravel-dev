@@ -111,8 +111,8 @@
                 <div class="row light-bg tlbr-10 trbr-10 blbr-10 pt-20  pb-20">
                     <p class="lt-al ml-20 pl-10 white"><strong>txt</strong></p>
                 </div>
-                <div class="row tlbr-10 trbr-10 blbr-10 pt-20  float-sm-right">
-                    <p class="lt-al ml-20 pl-10 white"><strong>You</strong></p>
+                <div class="row tlbr-10 trbr-10 blbr-10 pt-20 float-sm-right">
+                    <p class="mr-20 pr-10 black"><strong>You</strong></p>
                 </div>
             </div>
         </div>
