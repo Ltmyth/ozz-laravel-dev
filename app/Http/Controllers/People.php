@@ -13,7 +13,7 @@ class People extends Controller
     public function show_user($name)
     {
         //
-        $user_profile = User::where('name', $name)->get();
+        $user_profile = User::where('name', $name)->first();
         return view('people.user-profiles')->with('profile', $user_profile);
     }
      public function cl_profile()
