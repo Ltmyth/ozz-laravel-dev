@@ -63,7 +63,7 @@ class MessageController extends Controller
             
             $text->save();
             $message ='Message delivered';
-            return redirect('/messages/'.$author)->with('message', $message);
+            return redirect('/inbox/'.$receiver)->with('message', $message);
         }else{
             $error_message =$receiver." ".'is not yet on theohz';
             return redirect('/messages/'.$author)->with('error_message', $error_message);

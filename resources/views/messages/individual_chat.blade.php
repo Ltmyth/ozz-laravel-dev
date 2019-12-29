@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="col-lg lt-al">
-                                <h3><strong>{{ $received->author }}</strong></h3>
+                                <h3 class="blue"><strong>{{ $received->author }}</strong></h3>
                             </div>
                         </div>
 
