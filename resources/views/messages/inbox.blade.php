@@ -39,10 +39,12 @@
         <br><br>
         @if($profile)
         <div id="new_msg"  class="well center">
-            <form enctype="multipart/form-data" method="POST" action="#">
+            <form enctype="multipart/form-data" method="POST" action="/send_message">
                 @csrf
-                <div class="container col-lg-5">   
-                    <textarea placeholder="New Message" style="width:100%;" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+                <div class="container col-lg-5"> 
+                    <input type="hidden" name="author" value="{{ Auth::user()->name }}"> 
+                    <input type="hidden" name="receiver" value="{{ $profile->name }}">  
+                    <textarea placeholder="New Message" style="width:100%;" type="textarea" class="form-control" name="message" autofocus required></textarea>
                 </div>
                 <div class="container col-lg-5">
                     <br>
