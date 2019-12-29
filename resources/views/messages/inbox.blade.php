@@ -46,8 +46,8 @@
                 </div>
                 <div class="container col-lg-5">
                     <br>
-                   <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
-                   &nbsp;&nbsp;
+                   <!-- <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
+                   &nbsp;&nbsp; -->
                    <button type="submit" class="btn btn-md btn-info">
                         <i class="glyphicon glyphicon-send">Send</i>
                     </button> 
