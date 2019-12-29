@@ -71,6 +71,19 @@
         </div>
         <hr class="container col-lg-5">
             <div class="container col-lg-11 m-20 pb-30">
+                @if(count($texts)<0)
+                    <div class="container">
+                        <br>
+                        <h1 class="ct-al">
+                            <p><b class="orange">No messages yet!</b></p>
+                        </h1>
+                        <h1>
+                            <big><i class="lnr lnr-sad orange"></i></big>
+                        </h1>
+                        <div class="section-gap"></div>
+                    </div>
+                @endif
+                
                 @if($uniq_texts) 
                     @foreach ($uniq_texts as $text)
                         <div class="row bb">
@@ -94,7 +107,7 @@
                                 </div>
 
                                 <div class="row container lt-al blbr-10 trbr-10 light-bg brbr-10 ">
-                                    <a href="/inbox/">
+                                    <a href="/inbox/{{ $text->author }}">
                                         <h3 class="white">  
                                             <strong>
                                                 <p>{{ $text->message }}</p>
