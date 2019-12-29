@@ -5,7 +5,7 @@
         <div class="row">
             <div  class="col-lg-6">
                 @if($received_texts)
-                    @foreach ($received_texts as received)
+                    @foreach ($received_texts as $received)
                         <div class=" row">
                             <div class="col-lg-2">
                                 <a href="#">
