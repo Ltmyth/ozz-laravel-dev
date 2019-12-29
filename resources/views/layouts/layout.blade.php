@@ -128,6 +128,9 @@
                             <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="messages_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> Inbox
+                                    <span class="badge badge-light">
+                                        <small class="red">0</small>
+                                    </span>
                                 </button>
                             </a>   
 
