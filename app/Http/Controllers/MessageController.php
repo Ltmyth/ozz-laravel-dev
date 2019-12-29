@@ -72,7 +72,7 @@ class MessageController extends Controller
     }
     public function inbox($name)
     {
-        $user_profile = User::where('username', $name)->get();
+        $user_profile = User::where('name', $name)->get();
         return view('messages.inbox')->with('profile', $user_profile);
     }
     public function sent()
