@@ -26,12 +26,14 @@
             <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-envelope orange"></i> Inbox
+                    <span class="badge badge-danger"></span>
                 </button>
             </a>   
 
             <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-briefcase orange"></i> Wallet
+                    <span class="badge badge-danger"></span>
                 </button>
             </a>
             
@@ -39,6 +41,7 @@
             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-user orange"></i> Settings
+                    <span class="badge badge-danger"></span>
                 </button>
             </a>           
             
@@ -55,7 +58,7 @@
             </a>
             <div class="dropdown-menu blue-bg white" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">Communication</b>
+                    <b class="white">People</b> <span class="badge badge-danger"></span>
                 </a>
 
                 <div class="dropdown-divider"></div>
