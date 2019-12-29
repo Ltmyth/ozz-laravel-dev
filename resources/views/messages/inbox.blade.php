@@ -112,7 +112,7 @@
                     <p class="lt-al ml-20 pl-10 white"><strong>txt</strong></p>
                 </div>
                 <div class="row tlbr-10 trbr-10 blbr-10 pt-20  pb-20">
-                    <p class="rt-al ml-20 pl-10 blue"><strong>You</strong></p>
+                    <p class="rt blue"><strong>You</strong></p>
                 </div>
             </div>
         </div>
