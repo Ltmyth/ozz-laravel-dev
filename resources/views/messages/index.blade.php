@@ -107,9 +107,15 @@
                         <hr>
                     @endforeach
                 @else
-                <div class="row">
+                <div class="container">
+                    <br>
+                    <h1 class="ct-al">
+                        <p><b class="orange">No messages yet!</b></p>
+                    </h1>
+                    <h1>
+                        <big><i class="lnr lnr-sad orange"></i></big>
+                    </h1>
                     <div class="section-gap"></div>
-                    <hr>
                 </div>
                 @endif
             </div>            
