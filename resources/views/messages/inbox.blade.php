@@ -81,7 +81,7 @@
             <div  class="col-lg-6">
                 <div class=" row">
                     <div class="col-lg-2">
-                        <a href="{{ route('/user/$profile->name') }}">
+                        <a href="/user/{{$profile->name}}">
                             <img 
                                 id="profile-pic" 
                                 class="theme w-50" 
