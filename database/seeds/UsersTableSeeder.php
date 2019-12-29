@@ -18,6 +18,12 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('@1nile5nation'),
         ]);
 
+        DB::table('users')->insert([
+            'name' => 'theohz chatbot',
+            'email' => 'nn@gmail.com',
+            'password' => bcrypt('12345678'),
+        ]);
+
         DB::table('messages')->insert([
             'message' => 'Hello! welcome to theohz platform',
             'receiver' => 'everyone',
