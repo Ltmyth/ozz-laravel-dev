@@ -71,7 +71,7 @@
         </div>
         <hr class="container col-lg-5">
             <div class="container col-lg-11 m-20 pb-30">
-                @if(count($texts)<0)
+                @if($text_count<0)
                     <div class="container">
                         <br>
                         <h1 class="ct-al">
