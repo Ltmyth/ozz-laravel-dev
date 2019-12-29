@@ -77,6 +77,7 @@
             </div>
         </form>
     </div> -->
+        <hr>
         <div class="row">
             <div  class="col-lg-6">
                 <div class=" row">
