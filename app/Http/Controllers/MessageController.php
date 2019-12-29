@@ -70,15 +70,33 @@ class MessageController extends Controller
         } 
         
     }
+
+
     public function inbox($name)
     {
         $user_profile = User::where('name', $name)->first();
         return view('messages.inbox')->with('profile', $user_profile);
     }
+
+
+    public static function individual_chat($user)
+    {
+        $receiver = Auth::user()->name;
+
+        $received_texts = messages::where([['receiver','=',$receiver],['author', '=', $user]] )->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
+
+        $sent_texts = messages::where([['receiver','=',$user],['author', '=', $receiver]])->orderBy('id','desc')->get();
+
+        return view('messages.individual_chat', ["received_texts" => $received_texts, "sent_texts" => $sent_texts]);
+    }
+
+
     public function sent()
     {
         return view('messages.sent');
     }
+
+
     public function chat()
     {
         $user = Auth::id();
@@ -87,10 +105,14 @@ class MessageController extends Controller
         // $onlines = "";
         return view('messages.chat' , ["onlines" => $onlines, "chat" => $chat_count]);
     }
+
+
     public function sms()
     {
         return view('messages.sms');
     }
+
+
     public function send_sms()
     {
         // $sms = $_POST['sms'];
@@ -146,14 +168,20 @@ class MessageController extends Controller
         // DONE!!!
         return view('messages.sms');
     }
+
+
     public function bulk_sms()
     {
         return view('messages.bulk_sms');
     }
+
+
     public function notification_message()
     {
         return view('messages.notification');
     }
+
+
     
     public function store(Request $request)
     {
