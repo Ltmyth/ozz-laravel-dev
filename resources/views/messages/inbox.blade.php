@@ -48,7 +48,7 @@
                     <br>
                    <!-- <i class="glyphicon glyphicon-paperclip"></i><input type="button" name="upload" value="Upload" onclick="getfile()"  id="myBtn">
                    &nbsp;&nbsp; -->
-                   <button type="submit" class="btn btn-lg btn-outline-info">
+                   <button type="submit" class="btn btn-lg btn-outline-primary">
                         <i class="glyphicon glyphicon-send">Send</i>
                     </button> 
                 </div>
