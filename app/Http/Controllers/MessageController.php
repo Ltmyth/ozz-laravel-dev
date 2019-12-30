@@ -83,11 +83,16 @@ class MessageController extends Controller
     {
         $receiver = Auth::user()->name;
 
-        $received_texts = messages::where([['receiver','=',$receiver],['author', '=', $user]] )->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
+        $chats = messages::where([['receiver','=',$receiver],['author', '=', $user],['receiver','=',$user],['author', '=', $receiver]] )->orderBy('id','desc')->get();
 
-        $sent_texts = messages::where([['receiver','=',$user],['author', '=', $receiver]])->orderBy('id','desc')->get();
+        
+        // $received_texts = messages::where([['receiver','=',$receiver],['author', '=', $user]] )->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
 
-        return view('messages.individual_chat', ["received_texts" => $received_texts, "sent_texts" => $sent_texts]);
+        // $sent_texts = messages::where([['receiver','=',$user],['author', '=', $receiver]])->orderBy('id','desc')->get();
+
+        // return view('messages.individual_chat', ["received_texts" => $received_texts, "sent_texts" => $sent_texts]);
+
+        return view('messages.individual_chat')->with('chats', $chats);
     }
 
 
