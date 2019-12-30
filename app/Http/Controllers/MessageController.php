@@ -83,7 +83,7 @@ class MessageController extends Controller
     {
         $receiver = Auth::user()->name;
 
-        $chats = messages::where([['receiver','=',$receiver],['author', '=', $user],['receiver','=',$user],['author', '=', $receiver]] )->orderBy('id','desc')->get();
+        $chats = messages::where([['receiver','=',$receiver],['author', '=', $user]])->orWhere([['receiver','=',$user],['author', '=', $receiver]])->orderBy('id','desc')->get();
 
         
         // $received_texts = messages::where([['receiver','=',$receiver],['author', '=', $user]] )->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
