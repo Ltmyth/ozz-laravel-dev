@@ -1,5 +1,6 @@
 @auth
 	<hr>
+        <div class="row">
         @if($chats)
             @foreach ($chats as $chat)
                 <div class="row lt-al">
@@ -15,5 +16,6 @@
                 <br>                
             @endforeach
         @endif
+        </div>
 	<hr>	
 @endauth

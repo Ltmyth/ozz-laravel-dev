@@ -12,14 +12,8 @@
     		pointer-events: none;
     	}
     </style>
-  	<h2> <i class="lnr lnr-send orange"></i>Chat</h2>
-  	<hr>
-    <script type="text/javascript">
-        function getfile(){
-            var x = document.getElementById("myBtn"); 
-            x.setAttribute("type", "file");
-            x.setAttribute("accept", "file_extension|audio/*|video/*|image/*|media_type");
-        }
+  	<script type="text/javascript">
+        
         function compose(){
             var y = document.getElementById('new_msg').style.display; 
             if( y == 'block'){
@@ -36,8 +30,10 @@
             x.setAttribute("style", "display:none");*/
         }
     </script>
-        <br><br>
+        <br>
         @if($profile)
+        <h2> <i class="lnr lnr-earth orange"></i> {{ $profile->name }}</h2>
+        <hr>
         <div id="new_msg"  class="well center">
             <form enctype="multipart/form-data" method="POST" action="/send_message">
                 @csrf
