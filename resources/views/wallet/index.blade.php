@@ -33,21 +33,18 @@
         var gold = 250000;
         var vibranium = 1000000;
 
-        if(x='bronze'){
+        if(x=='bronze'){
           cost = bronze;
         }
-        
-        if(x='silver'){
+        else if(x=='silver'){
           cost = silver;
         }
-        
-        if(x='gold'){
+        else if(x=='gold'){
           cost = gold;
         }
-        if(x='vibranium'){
+        else if(x=='vibranium'){
           cost = vibranium;
         }
-
   			/*set value*/
   			z.setAttribute("value", cost);
 
@@ -105,7 +102,7 @@
       					</h3>
       				</label>
               <select class="form-control col-lg-8 container" name="package" id="package" onchange="calculate()" required>
-                <option value="bronze" selected>
+                <option value="bronze">
                   Stash Package
                 </option>
                 <option value="bronze">
