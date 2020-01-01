@@ -32,7 +32,13 @@
     </script>
         <br>
         @if($profile)
-        <h2> <i class="lnr lnr-earth orange"></i> {{ $profile->name }}</h2>
+        <img 
+            id="profile-pic"  
+            class="theme w-30 mt-20 blue-bg br-50" 
+            src="{{ asset('/imgs/ozz-app.png') }}"
+            alt="Avator" 
+        > 
+        <h2>{{ $profile->name }}</h2>
         <hr>
         <div id="new_msg"  class="well center">
             <form enctype="multipart/form-data" method="POST" action="/send_message">
