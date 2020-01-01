@@ -4,8 +4,15 @@
             <hr>
             @foreach ($chats as $chat)
                 <div class="row">
-                    <div class="row col-lg-6 pull-left">
-                        <strong class="blue">{{ $chat->author }}</strong>
+                    {{ $user = Auth::user()->name }}
+                    <div class="row col-lg-8 pull-left">
+                        <strong class="blue">
+                            @if($chat->author == $user)
+                                {{ 'You' }}
+                            @else                        
+                                {{ $chat->author }}
+                            @endif
+                        </strong>
                     </div>
                     <div class="row light-bg col-lg-6 tlbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
                         <p class="lt-al ml-20 pl-10 white">
