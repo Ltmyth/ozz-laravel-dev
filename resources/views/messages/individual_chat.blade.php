@@ -4,7 +4,7 @@
             <hr>
             @foreach ($chats as $chat)
                 <div class="row">
-                    <div class="row pull-left">
+                    <div class="row col-lg-6 pull-left">
                         <strong class="blue">{{ $chat->author }}</strong>
                     </div>
                     <div class="row light-bg col-lg-6 tlbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
