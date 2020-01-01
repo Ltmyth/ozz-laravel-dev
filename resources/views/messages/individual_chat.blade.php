@@ -4,9 +4,10 @@
             <hr>
             @foreach ($chats as $chat)
                 <div class="row">
+                    @php $user = Auth::user()->name; @endphp
                     <div class="row col-lg-8 pull-left">
                         <strong class="blue">
-                            @if($chat->author == Auth::user()->name)
+                            @if($chat->author == $user)
                                 {{ 'You' }}
                             @elseif                        
                                 {{ $chat->author }}
