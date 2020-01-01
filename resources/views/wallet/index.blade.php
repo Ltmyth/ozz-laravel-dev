@@ -102,8 +102,8 @@
       						</strong>
       					</h3>
       				</label>
-              <select class="form-control col-lg-8 container" name="package" id="package" onclick="calculate()" required>
-                <option value="bronze">
+              <select class="form-control col-lg-8 container" name="package" id="package" onchange="calculate()" required>
+                <option value="bronze" selected>
                   Stash Package
                 </option>
                 <option value="bronze">
