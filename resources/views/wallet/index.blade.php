@@ -43,7 +43,8 @@
           cost = gold;
         }
         else if(x=='vibranium'){
-          cost = vibranium;
+          var charge = vibranium/0.02;
+          cost = vibranium + charge;
         }
   			/*set value*/
   			z.setAttribute("value", cost);
