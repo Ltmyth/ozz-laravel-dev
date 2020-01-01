@@ -21,10 +21,12 @@
   			var x = document.getElementById('package').value;
   			var y = document.getElementById('cost-label');
   			var z = document.getElementById('cost-value');
+        var a = document.getElementById('top_up_message');
 
   			/*display cost*/
   			y.setAttribute("style", "display:inline");
   			z.setAttribute("type", "number");
+        a.setAttribute("style", "display:inline");
 
   			/*calculation*/
   			var cost = 0;
@@ -34,16 +36,19 @@
         var vibranium = 1000000;
 
         if(x=='bronze'){
-          cost = bronze;
+          var charge = bronze*0.1;
+          cost = bronze+charge;
         }
         else if(x=='silver'){
-          cost = silver;
+          var charge = silver*0.04;
+          cost = silver+charge;
         }
         else if(x=='gold'){
-          cost = gold;
+          var charge = gold*0.02;
+          cost = gold+charge;
         }
         else if(x=='vibranium'){
-          var charge = vibranium/0.02;
+          var charge = vibranium*0.02;
           cost = vibranium + charge;
         }
   			/*set value*/
@@ -140,13 +145,15 @@
                 </h3> -->
                 <h3>
       						<strong>
-      							<b>Will Only Cost  You</b>(<b><i><small class="red">Ugx</small></i></b>) 
+      							<b>Cost  in</b>(<b><i><small class="red">Ugx</small></i></b>) 
       						</strong>
       					</h3>
       				</label>
       				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
       				<br>
-
+              <h3 id="top_up_message" style="display:none;">
+                <strong>Sent to MobileMoney user "Latim Mark" on <b class="red">+256-783-013-570</b></strong>
+              </h3>
               <br>
       				<input type="submit" class="btn btn-md btn-warning" value="Request top-Up">
       			</form>  		
