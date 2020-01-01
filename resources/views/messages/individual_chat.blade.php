@@ -28,12 +28,12 @@
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
                                 <div class="row col-lg-6">                  
-                                    <strong class="blue rt-al">
+                                    <strong class="blue rt">
                                         {{$chat->author}}                              
                                     </strong>                        
                                     &nbsp;
                                     <small>
-                                        <i class="black fz-8 rt-al">
+                                        <i class="black fz-8 rt">
                                             {{ $chat->created_at->diffForHumans() }}
                                         </i>
                                     </small>
