@@ -28,7 +28,7 @@
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
                                 <div class="row">  
-                                    <h4 class="rt-al">                
+                                    <h4 class="pull-right">                
                                         <strong class="blue">
                                             {{$chat->author}}                              
                                         </strong>                        
