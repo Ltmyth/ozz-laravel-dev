@@ -27,13 +27,13 @@
                         @else 
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
-                                <div class="row rt col-lg-6">                  
-                                    <strong class="blue">
+                                <div class="row col-lg-6">                  
+                                    <strong class="blue rt-al">
                                         {{$chat->author}}                              
                                     </strong>                        
                                     &nbsp;
                                     <small>
-                                        <i class="black fz-8">
+                                        <i class="black fz-8 rt-al">
                                             {{ $chat->created_at->diffForHumans() }}
                                         </i>
                                     </small>
