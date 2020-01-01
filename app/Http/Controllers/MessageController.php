@@ -92,7 +92,7 @@ class MessageController extends Controller
 
         // return view('messages.individual_chat', ["received_texts" => $received_texts, "sent_texts" => $sent_texts]);
 
-        return view('messages.individual_chat')->with('chats', $chats);
+        return view('messages.individual_chat',['chats' => $chats, 'user' => $receiver]);
     }
 
 
