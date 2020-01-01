@@ -27,19 +27,21 @@
                         @else 
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
-                                <div class="row">                  
-                                    <strong class="blue">
-                                        {{$chat->author}}                              
-                                    </strong>                        
-                                    &nbsp;
-                                    <small>
-                                        <i class="black fz-8">
-                                            {{ $chat->created_at->diffForHumans() }}
-                                        </i>
-                                    </small>
+                                <div class="row">  
+                                    <h4 class="rt-al">                
+                                        <strong class="blue">
+                                            {{$chat->author}}                              
+                                        </strong>                        
+                                        &nbsp;
+                                        <small>
+                                            <i class="black fz-8">
+                                                {{ $chat->created_at->diffForHumans() }}
+                                            </i>
+                                        </small>
+                                    </h4>
                                 </div>
                                 <div class="row light-bg brbr-10 tlbr-10 blbr-10 pt-20  pb-20">
-                                    <p class="rt-al mr-20 pr-10 white">
+                                    <p class="lt-al ml-20 pl-10 white">
                                         <strong>
                                             {{ $chat->message }}
                                         </strong>
