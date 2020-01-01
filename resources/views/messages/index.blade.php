@@ -89,7 +89,7 @@
                         <div class="row bb">
                             <div class="col-lg-2 w-10">
                                 <div class="row">
-                                    <a href="">
+                                    <a href="/inbox/{{ $text->author }}">
                                         <img 
                                             class="w-60 mr-10 rt" 
                                             src="{{ asset('/imgs/hello_bot.png') }}"

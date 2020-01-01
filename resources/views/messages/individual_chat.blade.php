@@ -25,24 +25,27 @@
                                 </p>
                             </div>
                         @else 
-                            <div class="row col-lg-8 pull-right">                      
-                                <strong class="blue">
-                                    {{ $chat->author }}                                
-                                </strong>                        
-                                &nbsp;
-                                <small>
-                                    <i class="black fz-8">
-                                        {{ $chat->created_at->diffForHumans() }}
-                                    </i>
-                                </small>
-                            </div>
-                            <div class="row light-bg col-lg-6 brbr-10 tlbr-10 blbr-10 pt-20  pb-20 pull-right">
-                                <p class="lt-al ml-20 pl-10 white">
-                                    <strong>
-                                        {{ $chat->message }}
-                                    </strong>
-                                </p>
-                            </div>
+                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6">
+                                <div class="row pull-right">                  
+                                    <strong class="blue">
+                                        {{$chat->author}}                              
+                                    </strong>                        
+                                    &nbsp;
+                                    <small>
+                                        <i class="black fz-8">
+                                            {{ $chat->created_at->diffForHumans() }}
+                                        </i>
+                                    </small>
+                                </div>
+                                <div class="row light-bg brbr-10 tlbr-10 blbr-10 pt-20  pb-20 pull-right">
+                                    <p class="lt-al ml-20 pl-10 white">
+                                        <strong>
+                                            {{ $chat->message }}
+                                        </strong>
+                                    </p>
+                                </div>
+                            </div>                            
                         @endif
                     @endif 
                 </div> 
