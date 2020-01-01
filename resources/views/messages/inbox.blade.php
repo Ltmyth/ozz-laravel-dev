@@ -32,8 +32,7 @@
     </script>
         <br>
         @if($profile)
-        <img 
-            id="profile-pic"  
+        <img  
             class="theme w-10 mt-20 blue-bg br-50" 
             src="{{ asset('/imgs/ozz-app.png') }}"
             alt="Avator" 
