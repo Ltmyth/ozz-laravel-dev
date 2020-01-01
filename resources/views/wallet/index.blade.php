@@ -36,13 +36,15 @@
         if(x='bronze'){
           cost = bronze;
         }
-        else if(x='silver'){
+        
+        if(x='silver'){
           cost = silver;
         }
-        else if(x='gold'){
+        
+        if(x='gold'){
           cost = gold;
         }
-        else if(x='vibranium'){
+        if(x='vibranium'){
           cost = vibranium;
         }
 
