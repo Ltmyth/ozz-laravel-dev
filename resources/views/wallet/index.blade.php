@@ -108,7 +108,7 @@
       					</h3>
       				</label>
               <select class="form-control col-lg-8 container" name="package" id="package" onchange="calculate()" required>
-                <option value="bronze">
+                <option>
                   Stash Package
                 </option>
                 <option value="bronze">
@@ -154,7 +154,7 @@
               <h3 id="top_up_message" style="display:none;">
                 <strong>Sent to MobileMoney user "Latim Mark" on <b class="red">+256-783-013-570</b></strong>
               </h3>
-              <br>
+              <hr>
       				<input type="submit" class="btn btn-md btn-warning" value="Request top-Up">
       			</form>  		
         	</div>		
