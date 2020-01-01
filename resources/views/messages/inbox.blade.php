@@ -34,7 +34,7 @@
         @if($profile)
         <img 
             id="profile-pic"  
-            class="theme w-30 mt-20 blue-bg br-50" 
+            class="theme w-5 mt-20 blue-bg br-50" 
             src="{{ asset('/imgs/ozz-app.png') }}"
             alt="Avator" 
         > 
