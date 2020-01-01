@@ -19,8 +19,8 @@
                                     </small>
                                 </h4>
                             </div>
-                            <div class="row light-bg col-lg-6 brbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
-                                <p class="lt-al ml-20 pl-10 white">
+                            <div class="row white-bg col-lg-6 brbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
+                                <p class="lt-al ml-20 pl-10 black">
                                     <strong>
                                         {{ $chat->message }}
                                     </strong>
