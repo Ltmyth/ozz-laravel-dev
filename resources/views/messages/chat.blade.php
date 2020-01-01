@@ -32,30 +32,6 @@
     </div>
 
     <hr>
-    <div class="container">
-        <div class="row"> 
-            <div class="col-lg-5 w-10">
-                <div class="row">
-                    <a href="/user/{{ 'theohz chatbot' }}">
-                        <img 
-                            class="w-20 mr-10 rt" 
-                            src="{{ asset('/imgs/hello_bot.png') }}"
-                            alt="Avator" 
-                        >
-                    </a>
-
-                </div>
-            </div>
-            <div class="col-lg-7 lt-al">
-                <div class="row">
-                    <a href="/user/{{ 'theohz chatbot' }}">
-                        <h3 class="blue"><strong>the</b><b class="orange">oh</b><b>z</b> <b class="black">chatbot</b></strong> <span class="green_dot"></span></h3> 
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
     @if($onlines)
         @foreach ($onlines as $online)
             <div class="container">
@@ -79,6 +55,7 @@
                     </div>
                 </div>                
             </div>
+            <hr>
         @endforeach
     @else
         <div class="row">

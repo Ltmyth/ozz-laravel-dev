@@ -18,7 +18,7 @@
   	<script type="text/javascript">
   		function calculate(){
   			/*get fields*/
-  			var x = document.getElementById('ozz-amount').value;
+  			var x = document.getElementById('package').value;
   			var y = document.getElementById('cost-label');
   			var z = document.getElementById('cost-value');
 
@@ -28,7 +28,23 @@
 
   			/*calculation*/
   			var cost = 0;
-  			cost = x * 5000;
+        var bronze = 5000;
+        var silver = 50000;
+        var gold = 250000;
+        var vibranium = 1000000;
+
+        if(x='bronze'){
+          cost = bronze;
+        }
+        else if(x='silver'){
+          cost = silver;
+        }
+        else if(x='gold'){
+          cost = gold;
+        }
+        else if(x='vibranium'){
+          cost = vibranium;
+        }
 
   			/*set value*/
   			z.setAttribute("value", cost);
@@ -86,8 +102,8 @@
       						</strong>
       					</h3>
       				</label>
-              <select class="form-control col-lg-8 container" required>
-                <option>
+              <select class="form-control col-lg-8 container" name="package" id="package" onclick="calculate()" required>
+                <option value="bronze">
                   Stash Package
                 </option>
                 <option value="bronze">
@@ -106,7 +122,7 @@
                 
                 
               </select>
-              <br>
+              <!-- <br>
               <label>
                 <h3>
                   <strong>
@@ -114,17 +130,24 @@
                   </strong>
                 </h3>
               </label>
-      				<input id="ozz-amount" placeholder="01" onkeyup="calculate()" type="number"  class="form-control col-lg-8 container" name="amount">
+      				<input id="ozz-amount" placeholder="01" onkeyup="calculate()" type="number"  class="form-control col-lg-8 container" name="amount"> -->
       				<br>
       				<label id="cost-label" style="display:none;">
-      					<h3>
+      					<!-- <h3>
+                  <strong>
+                    <b>Better payment ways coming soon.</b> 
+                  </strong>
+                </h3> -->
+                <h3>
       						<strong>
       							<b>Will Only Cost  You</b>(<b><i><small class="red">Ugx</small></i></b>) 
       						</strong>
       					</h3>
       				</label>
       				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
-      				<br><br>
+      				<br>
+
+              <br>
       				<input type="submit" class="btn btn-md btn-warning" value="Request top-Up">
       			</form>  		
         	</div>		
