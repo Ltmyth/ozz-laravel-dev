@@ -4,30 +4,47 @@
             <hr>
             @foreach ($chats as $chat)
                 <div class="row">
-                    <div class="row col-lg-8 pull-left">
-                        @if($user)
-                        <strong class="blue">
-                            @if($chat->author == $user)
-                                {{ 'You' }}
-                            @else                        
-                                {{ $chat->author }}
-                            @endif
-                        </strong>
+                    @if($user)
+                        @if($chat->author == $user)
+                            <div class="row col-lg-8 pull-left">                       
+                                <strong class="blue">
+                                    {{ 'You' }}                                
+                                </strong>                        
+                                &nbsp;
+                                <small>
+                                    <i class="black fz-8">
+                                        {{ $chat->created_at->diffForHumans() }}
+                                    </i>
+                                </small>
+                            </div>
+                            <div class="row light-bg col-lg-6 brbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
+                                <p class="lt-al ml-20 pl-10 white">
+                                    <strong>
+                                        {{ $chat->message }}
+                                    </strong>
+                                </p>
+                            </div>
+                        @else 
+                            <div class="row col-lg-8 pull-right">                      
+                                <strong class="blue">
+                                    {{ $chat->author }}                                
+                                </strong>                        
+                                &nbsp;
+                                <small>
+                                    <i class="black fz-8">
+                                        {{ $chat->created_at->diffForHumans() }}
+                                    </i>
+                                </small>
+                            </div>
+                            <div class="row light-bg col-lg-6 brbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-right">
+                                <p class="lt-al ml-20 pl-10 white">
+                                    <strong>
+                                        {{ $chat->message }}
+                                    </strong>
+                                </p>
+                            </div>
                         @endif
-                        &nbsp;
-                        <small>
-                            <i class="black fz-15">
-                                {{ $chat->created_at->diffForHumans() }}
-                            </i>
-                        </small>
-                    </div>
-                    <div class="row light-bg col-lg-6 brbr-10 trbr-10 blbr-10 pt-20  pb-20 pull-left">
-                        <p class="lt-al ml-20 pl-10 white">
-                            <strong>
-                                {{ $chat->message }}
-                            </strong>
-                        </p>
-                    </div> 
+                    @endif 
                 </div> 
                 <hr>               
             @endforeach            
