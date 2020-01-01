@@ -27,7 +27,7 @@
                         @else 
                             <div class="col-lg-6"></div>
                             <div class="col-lg-6">
-                                <div class="row col-lg-8 pull-right">                  
+                                <div class="row col-lg-6 pull-right">                  
                                     <strong class="blue">
                                         {{$chat->author}}                              
                                     </strong>                        
