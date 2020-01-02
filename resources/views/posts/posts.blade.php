@@ -29,7 +29,7 @@
 					
 					<div class="col-lg-8 w-100 nlight-bg br-10 lt-al">
 						<div class="row  blbr-10">
-							<a href="javascript:void(0)" onclick="location.href='/user//{{ $post->author }}';document.getElementById('preloader').style.display='block';">
+							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
 									<strong>{{ $post->author }}</strong>
 									<span class="orange_dot"></span>

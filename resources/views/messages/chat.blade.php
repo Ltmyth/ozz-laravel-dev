@@ -38,7 +38,7 @@
                 <div class="row bb bt"> 
                     <div class="col-lg-5 w-5">
                         <div class="row">
-                            <a href="">
+                            <a href="/user/{{ $online->name }}">
                                 <img 
                                     class="w-20 mr-10 rt" 
                                     src="{{ asset('/imgs/hello_bot.png') }}"
@@ -50,7 +50,9 @@
                     </div>
                     <div class="col-lg-7 lt-al">
                         <div class="row">
-                            <h3 class="blue"><strong>{{ $online->name }} </strong> <span class="green_dot"></span></h3> 
+                            <a href="/user/{{ $online->name }}">
+                                <h3 class="blue"><strong>{{ $online->name }} </strong>
+                            </a><span class="green_dot"></span></h3> 
                         </div>
                     </div>
                 </div>                
