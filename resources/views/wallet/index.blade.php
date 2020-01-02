@@ -150,14 +150,18 @@
       					</h3>
       				</label>
       				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
-      				<br>
-              <h3 id="top_up_message" style="display:none;">
+            </form>
+    				<br>
+            <div class="col-lg-8 container">
+              <h4 id="top_up_message" style="display:none;">
                 <strong>
                   Deposit MobileMoney on <b class="green">+256-783-013-570</b> with your theohz app <b>username</b> as the <b>payment reason</b>.
                 </strong>
-              </h3>
-              <hr>
-              <u><h3 class="red">Notice</h3></u>
+              </h4>
+            </div>
+            <hr>
+            <div class="container">
+              <u><h3 class="blue"><strong>NOTE</strong></h3></u>
               <h4>
                 <ul>
                   <li>
@@ -167,12 +171,11 @@
                     <strong>The stash cost includes service and withdrawal fees.</strong>
                   </li>
                   <li>
-                    <strong><i>Better payment methods coming soon.</i></strong>
+                    <strong><i class="green">Better payment methods coming soon.</i></strong>
                   </li>                  
                 </ul>
               </h4>
-      				<!-- <input type="submit" class="btn btn-md btn-warning" value="Request top-Up"> -->
-      			</form>  		
-        	</div>		
+        				<!-- <input type="submit" class="btn btn-md btn-warning" value="Request top-Up"> -->          			  		
+          	</div>		
   @endsection
 @endauth
