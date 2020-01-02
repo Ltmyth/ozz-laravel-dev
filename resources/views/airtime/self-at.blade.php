@@ -32,7 +32,7 @@
 
   			/*calculation*/
   			var cost = 0;
-  			cost = x /1000;
+  			cost = x /5000;
 
   			/*set value*/
   			z.setAttribute("value", cost);
@@ -41,7 +41,7 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve" src="{{ asset('/imgs/phone.png') }}">	
+	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for my phone</strong></h2>
 
@@ -56,7 +56,7 @@
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
-					Cost(<b><i><b class="orange">0zz</b></i></b>)
+					Cost(<b><i><b class="orange">0h</b></i>z</b>)
 				</strong>
 			</h3>
 		</label>
