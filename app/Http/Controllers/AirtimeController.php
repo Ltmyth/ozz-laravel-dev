@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use AfricasTalking\SDK\AfricasTalking;
+
 
 class AirtimeController extends Controller
 {
@@ -24,6 +26,26 @@ class AirtimeController extends Controller
 
     public function self_at()
     {
+        return view('airtime.self-at');
+    }
+
+    public function buy_self()
+    {
+        // /*$username = "Mat";
+        // $apikey = "3eb659599cce14e1d8fe1303c9aeadccb2b38632262526f5d93c937487ce086a";*/
+        $username = "sandbox";
+        $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        // Specify the numbers that you want to send to in a comma-separated list
+        // Please ensure you include the country code (+254 for Kenya in this case)
+        // $recipients = "+256783013570,+256784910695";
+
+        // // Create a new instance of our awesome gateway class
+        $AT       = new AfricasTalking($username, $apiKey);
+        // Get one of the services
+        $airtime = $AT->airtime();
+
+        $currencyCode = "UGX" ;
+        $phoneNumber = "+256783013570";
         return view('airtime.self-at');
     }
 
