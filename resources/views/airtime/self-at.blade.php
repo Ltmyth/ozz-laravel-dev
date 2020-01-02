@@ -41,7 +41,7 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
+	<img class="curve" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for my phone</strong></h2>
 
@@ -50,7 +50,7 @@
 		+256-7xx-xxxx
 	</i>
 	<hr class="container col-lg-5">
-	<form>
+	<form method="POST" action="/buy_self">
 		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container form-control col-lg-5" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">
@@ -65,4 +65,10 @@
 		<input type="submit" class="btn btn-lg btn-success" value="Buy">
 		<hr class="container col-lg-5"> 
 	</form>
+	<div class="section-gap">
+		
+	</div>
+	<div class="section-gap">
+		
+	</div>
 @endsection
