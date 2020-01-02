@@ -51,7 +51,8 @@
 	</i>
 	<hr class="container col-lg-5">
 	<form method="POST" action="/buy_self">
-		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container form-control col-lg-5" type="number" name="amount" required>
+		@csrf
+		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container form-control col-lg-6" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">
 			<h3>
@@ -60,14 +61,11 @@
 				</strong>
 			</h3>
 		</label>
-		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control center" name="amount">
+		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control center col-lg-6" name="amount">
 		<br><br>
 		<input type="submit" class="btn btn-lg btn-success" value="Buy">
 		<hr class="container col-lg-5"> 
 	</form>
-	<div class="section-gap">
-		
-	</div>
 	<div class="section-gap">
 		
 	</div>
