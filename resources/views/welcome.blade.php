@@ -390,8 +390,7 @@
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
                                     <p class="black pb-30 lt-al">
-                                        At any given time, the <big>minimum</big> top up a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b>z</b></strong> and <big>maximum</big> top up
-                                        </big> request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
+                                        At any given time, the <big>minimum</big> top up or withdraw a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b>z</b></strong> and <big>maximum</big> top up or withdraw request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
                                     </p>
                                 </h4>
                             </div> 

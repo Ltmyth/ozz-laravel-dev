@@ -36,19 +36,19 @@
         var vibranium = 1000000;
 
         if(x=='bronze'){
-          var charge = bronze*0.1;
+          var charge = bronze*0.2;
           cost = bronze+charge;
         }
         else if(x=='silver'){
-          var charge = silver*0.04;
+          var charge = silver*0.08;
           cost = silver+charge;
         }
         else if(x=='gold'){
-          var charge = gold*0.02;
+          var charge = gold*0.04;
           cost = gold+charge;
         }
         else if(x=='vibranium'){
-          var charge = vibranium*0.02;
+          var charge = vibranium*0.04;
           cost = vibranium + charge;
         }
   			/*set value*/
