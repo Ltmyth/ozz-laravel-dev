@@ -46,6 +46,26 @@ class AirtimeController extends Controller
 
         $currencyCode = "UGX" ;
         $phoneNumber = "+256783013570";
+        $amount = 1000;
+
+        // Set the phone number, currency code and amount in the format below
+        $recipients = [[
+            "phoneNumber"  => $phoneNumber,
+            "currencyCode" => "KES",
+            "amount"       => $amount 
+        ]];
+
+        try {
+            // That's it, hit send and we'll take care of the rest
+            $results = $airtime->send([
+                "recipients" => $recipients
+            ]);
+
+            print_r($results);
+        } catch(Exception $e) {
+            echo "Error: ".$e->getMessage();
+        }
+
         return view('airtime.self-at');
     }
 

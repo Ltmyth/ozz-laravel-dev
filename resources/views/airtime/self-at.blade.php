@@ -57,11 +57,11 @@
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
-					Cost(<b><i><b class="orange">0h</b></i>z</b>)
+					Cost in <b><i><b class="orange">0h</b></i>z</b>
 				</strong>
 			</h3>
 		</label>
-		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control center col-lg-6" name="amount">
+		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-6" name="amount">
 		<br><br>
 		<input type="submit" class="btn btn-lg btn-success" value="Buy">
 		<hr class="container col-lg-5"> 
