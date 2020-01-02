@@ -153,15 +153,15 @@
             </form>
     				<br>
             <div class="col-lg-8 container">
-              <h4 id="top_up_message" style="display:none;">
+              <h4 id="top_up_message" class="lt-al" style="display:none;">
                 <strong>
-                  Deposit MobileMoney to "LATIM MARK" on <b class="red">+256-783-013-570</b> with your the</b><b class="orange">oh</b><b>z</b> <b class="black">username</b> as the <b class="black">payment reason</b>.
+                  Deposit MobileMoney to "LATIM MARK" on <b class="red">+256-783-013-570</b> with your the</b><b class="orange">oh</b><b>z</b> <strong>username</strong> as the <strong>payment reason</strong>.
                 </strong>
               </h4>
             </div>
             <hr>
-            <div class="container nlight-bg">
-              <u><h3 class="blue"><strong>NOTE</strong></h3></u>
+            <div class="container col-lg-8 nlight-bg">
+              <u><h3 class="blue lt-al"><strong>NOTE</strong></h3></u>
               <ul style="list-style-type:circle;"  class="lt-al">
                 <h4>
                   <li>
