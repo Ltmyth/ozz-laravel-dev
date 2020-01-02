@@ -152,10 +152,26 @@
       				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
       				<br>
               <h3 id="top_up_message" style="display:none;">
-                <strong>Sent to MobileMoney user "Latim Mark" on <b class="red">+256-783-013-570</b></strong>
+                <strong>
+                  Deposit MobileMoney on <b class="green">+256-783-013-570</b> with your theohz app <b>username</b> as the <b>payment reason</b>.
+                </strong>
               </h3>
               <hr>
-      				<input type="submit" class="btn btn-md btn-warning" value="Request top-Up">
+              <u><h3 class="red">Notice</h3></u>
+              <h4>
+                <ul>
+                  <li>
+                    <strong>The top up process may take up to 3 minutes to complete.</strong>
+                  </li>
+                  <li>
+                    <strong>The stash cost includes service and withdrawal fees.</strong>
+                  </li>
+                  <li>
+                    <strong><i>Better payment methods coming soon.</i></strong>
+                  </li>                  
+                </ul>
+              </h4>
+      				<!-- <input type="submit" class="btn btn-md btn-warning" value="Request top-Up"> -->
       			</form>  		
         	</div>		
   @endsection
