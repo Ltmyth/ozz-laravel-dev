@@ -111,7 +111,7 @@
                     <div class="col-lg-5">
                         @guest
                             <a href="/register" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt">
+                                <button class="btn btn-md btn-outline-warning white px100 mt-20 mr-20 mb-20 rt" disabled>
                                     Register
                                 </button>
                             </a>

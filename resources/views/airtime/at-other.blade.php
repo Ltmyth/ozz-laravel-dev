@@ -41,19 +41,20 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
+	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for another</strong></h2>
 	<hr class="container col-lg-8">
 	<input placeholder="Phone number" class="container col-lg-8 form-control" type="number" name="phone" required>
 	<hr class="container col-lg-8">
-	<form>
+	<form method="POST" action="/buy_self">
+		@csrf
 		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container col-lg-8 form-control" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
-					Cost(<b><i><b class="orange">0zz</b></i></b>)
+					Cost in <b><i><b class="orange">0h</b></i>z</b>
 				</strong>
 			</h3>
 		</label>
