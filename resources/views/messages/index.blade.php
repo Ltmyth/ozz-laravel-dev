@@ -34,7 +34,7 @@
         <br>
         <div class="row">
             <div class="container">
-                <button type="button" class="btn btn-lg btn-warning">
+                <button type="button" class="btn btn-lg btn-outline-warning">
                     <i class="lnr lnr-envelope white"></i> Inbox
                     <span class="badge badge-light">
                         @if($text_count>0)
@@ -44,6 +44,12 @@
                         @endif
                     </span>
                 </button>
+
+                <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                    <button class="btn btn-lg btn-warning">
+                       <i class="lnr lnr-envelope white"></i> SMS
+                    </button>
+                </a>
             </div>
         </div>
       	<hr class="container col-lg-12">
