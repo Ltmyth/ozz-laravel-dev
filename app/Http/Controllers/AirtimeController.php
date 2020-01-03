@@ -47,8 +47,9 @@ class AirtimeController extends Controller
         $airtime = $AT->airtime();
 
         $currencyCode = "UGX" ;
-        $phone = 1*$receiver;
-        $phoneNumber = "+256"+$phone;
+        $str = strval($receiver);
+        $str = substr($str, 1);
+        $phoneNumber = "+256"+$str;
 
         // Set the phone number, currency code and amount in the format below
         $recipients = [[
