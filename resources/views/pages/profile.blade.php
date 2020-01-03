@@ -17,7 +17,7 @@
 					<div class="row">
 						<div class="container lt-al">
 							<hr>
-							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="orange_dot"></span></h2>
+							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="green_dot"></span></h2>
 							<hr>
 								<button class="btn btn-md btn-outline-success ct-al">
 									<i class="lnr lnr-pencil"></i><b class="green" >Edit Profile</b>

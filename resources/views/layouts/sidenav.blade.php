@@ -9,7 +9,7 @@
             <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-users white"></span>
                 <strong class="white">  
-                    People <span class="badge badge-danger"></span>
+                    People <span class="red_dot"></span>
                 </strong>
             </button>
         </a>
@@ -40,7 +40,7 @@
         <a href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-alarm"></span>
-                <strong class="white" >Notifications <span class="badge badge-danger"></span></strong>
+                <strong class="white" >Notifications <span class="red_dot"></span></strong>
             </button>
         </a>
         

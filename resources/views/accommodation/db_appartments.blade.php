@@ -22,8 +22,8 @@
 		<br><br>
 		<h3>Available Service providers</h3>
 		<div class="row">
-			<div class="col-sm-4">
-				Angels
+			<div class="container mt-30">
+				<h3><i class="green">Currently featuring providers</i></h3>
 			</div>
 		</div>
 	@endsection

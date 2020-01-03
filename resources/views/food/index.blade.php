@@ -76,7 +76,7 @@
 				</h4>	
 			</div> -->
 			<div class="container mt-30">
-				<h3><i>Currently featuring providers</i></h3>
+				<h3><i class="green">Currently featuring providers</i></h3>
 			</div>
 		</div>	
 	@endsection

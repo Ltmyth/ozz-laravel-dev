@@ -21,8 +21,8 @@
 		</form>	
 		<br><br>
 		<div class="contain row lt-al">
-			<div class="col-sm-4 well">
-				Little Angels
+			<div class="container mt-30">
+				<h3><i class="green">Currently featuring providers</i></h3>
 			</div>
 		</div>
 	@endsection

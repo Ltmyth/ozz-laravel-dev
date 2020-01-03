@@ -3,14 +3,9 @@
   @extends('layouts.layout')
   @section('content')
   	<style type="text/css">
-  		#active{
-  			background-color: white;
-  		}
-
 
   		#wallet_btn{
   			background-color:orange;
-        border-radius: 10px;
   			color:white;
   			pointer-events: none;
   		}

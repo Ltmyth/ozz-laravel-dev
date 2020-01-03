@@ -99,7 +99,7 @@
 	</div>
 
 	<hr>
-	<h3 class="center">
+	<!-- <h3 class="center">
 		<b class="text-uppercase">Hotels</b>
 	</h3>
 	<hr>
@@ -129,7 +129,7 @@
 				</button>
 			</a>
 		</div>
-	</div>
+	</div> -->
 
 	<!-- <hr>
 	<h3 class="center">
