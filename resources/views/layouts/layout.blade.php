@@ -142,7 +142,7 @@
                             
 
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
+                                <button id="profile_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i>
                                     Settings <span class="orange_dot"></span>
                                 </button>
