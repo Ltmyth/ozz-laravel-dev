@@ -29,10 +29,16 @@ class AirtimeController extends Controller
         return view('airtime.self-at');
     }
 
-    public function buy_self()
+    public function buy_self(Request $request)
     {
-        $amount = $_POST['amount'];
-        $receiver = $_POST['phone'];
+        //validate
+        $this->validate($request,[
+            'amount' => 'required',
+            'phone' => 'required'
+        ]);
+
+        $amount = $request->input('amount');
+        $receiver =$request->input('phone');
         // /*$username = "Mat";
         // $apikey = "3eb659599cce14e1d8fe1303c9aeadccb2b38632262526f5d93c937487ce086a";*/
         $username = "sandbox";
@@ -90,17 +96,7 @@ class AirtimeController extends Controller
         //
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
+    
     /**
      * Display the specified resource.
      *
