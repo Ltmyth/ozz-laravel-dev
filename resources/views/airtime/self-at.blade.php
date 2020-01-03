@@ -1,21 +1,10 @@
 @extends('layouts.layout')
 @section('content')
 	<style type="text/css">
-		#active{
-			background-color: white;
-		}
-
-		
-		
-		#at{
-			background-color:orange;
-			pointer-events: none;
-		}
-
+	
 		#at_btn{
 			background-color:orange;
 			color:white;
-			pointer-events: none;
 		}
 	</style>
 
@@ -47,7 +36,7 @@
 
 	<hr class="container col-lg-5">
 	<i class="glyphicon glyphicon-phone">
-		+256-7xx-xxxx
+		07xx-xxx-xxx
 	</i>
 	<hr class="container col-lg-5">
 	<form method="POST" action="/buy_self">

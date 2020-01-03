@@ -1,21 +1,10 @@
 @extends('layouts.layout')
 @section('content')
 	<style type="text/css">
-		#active{
-			background-color: white;
-		}
-
-		
-		
-		#at{
-			background-color:orange;
-			pointer-events: none;
-		}
-
+				
 		#at_btn{
 			background-color:#9980FA;
 			color:white;
-			pointer-events: none;
 		}
 	</style>
 

@@ -42,13 +42,13 @@
 				</button>
 			</a>
 		</li>
-		<!-- <hr class="container col-lg-5">
+		<hr class="container col-lg-5">
 		<li>
 			<a href="/at-others/">
-				<button class="btn btn-lg btn-outline-danger px100">
+				<button class="btn btn-lg btn-outline-danger px100" disabled>
 					Others	
 				</button>
 			</a>
-		</li> -->
+		</li>
 	</ul>
 @endsection
