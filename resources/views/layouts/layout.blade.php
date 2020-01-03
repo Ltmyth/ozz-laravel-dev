@@ -128,7 +128,7 @@
                             <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> 
-                                    Messages <span class="badge badge-warning">
+                                    Messages <span class="orange_dot">
                                     </span>
                                 </button>
                             </a>   
@@ -136,7 +136,7 @@
                             <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-briefcase orange"></i>
-                                    Wallet <span class="red_dot"></span>
+                                    Wallet <span class="orange_dot"></span>
                                 </button>
                             </a>
                             
@@ -144,7 +144,7 @@
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i>
-                                    Settings <span class="red_dot"></span>
+                                    Settings <span class="orange_dot"></span>
                                 </button>
                             </a>           
                             
