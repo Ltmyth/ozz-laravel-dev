@@ -52,6 +52,7 @@
 	<hr class="container col-lg-5">
 	<form method="POST" action="/buy_self">
 		@csrf
+		<input style="display: none;" placeholder="Phone number" class="container col-lg-8 form-control" type="number" name="phone">
 		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container form-control col-lg-6" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">

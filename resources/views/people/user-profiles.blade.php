@@ -40,14 +40,14 @@
 								</ul>
 							</div>
 							<hr>
-							<h3>
+							<!-- <h3>
 								<span>
 									<i class="lnr lnr-envelope orange">
 									</i>
 								</span>
 								<strong>{{ $profile->email }}</strong>
 							</h3>
-							<hr>
+							<hr> -->
 							<h3 class="blue">
 								<i class="lnr lnr-gift orange">
 								</i> Birthday

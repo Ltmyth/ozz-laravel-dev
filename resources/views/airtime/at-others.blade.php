@@ -41,7 +41,7 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve" src="{{ asset('/imgs/at.jpeg') }}">	
+	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for Others</strong></h2>
 	<hr>

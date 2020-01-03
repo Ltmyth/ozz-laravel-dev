@@ -31,6 +31,8 @@ class AirtimeController extends Controller
 
     public function buy_self()
     {
+        $amount = $_POST['amount'];
+        $receiver = $_POST['phone'];
         // /*$username = "Mat";
         // $apikey = "3eb659599cce14e1d8fe1303c9aeadccb2b38632262526f5d93c937487ce086a";*/
         $username = "sandbox";
@@ -45,8 +47,8 @@ class AirtimeController extends Controller
         $airtime = $AT->airtime();
 
         $currencyCode = "UGX" ;
-        $phoneNumber = "+256783013570";
-        $amount = 1000;
+        $phone = 1*$receiver;
+        $phoneNumber = "+256"+$phone;
 
         // Set the phone number, currency code and amount in the format below
         $recipients = [[

@@ -45,10 +45,9 @@
 	<br><br>
 	<h2><strong> Buy Airtime for another</strong></h2>
 	<hr class="container col-lg-8">
-	<input placeholder="Phone number" class="container col-lg-8 form-control" type="number" name="phone" required>
-	<hr class="container col-lg-8">
 	<form method="POST" action="/buy_self">
 		@csrf
+		<input placeholder="Phone number" class="container col-lg-8 form-control" type="number" name="phone" maxlength="10" required>
 		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container col-lg-8 form-control" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">
