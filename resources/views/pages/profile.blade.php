@@ -18,6 +18,11 @@
 						<div class="container lt-al">
 							<hr>
 							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="orange_dot"></span></h2>
+							<hr>
+								<button class="btn btn-md btn-outline-success ct-al">
+									<i class="lnr lnr-pencil"></i><b class="green" >Edit Profile</b>
+								</button>
+							<hr>
 							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
 								<ul style="list-style:none;" class="lt-al">
 									<li>
@@ -25,10 +30,6 @@
 									</li>
 								</ul>
 							</div>
-							<hr>
-								<button class="btn btn-md btn-outline-success">
-									<i class="lnr lnr-pencil"></i><b class="green" >Edit</b>
-								</button>
 							<hr>
 							<h3 class="blue">
 								<i class="lnr lnr-gift orange">
