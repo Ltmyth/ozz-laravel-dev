@@ -26,6 +26,10 @@
 								</ul>
 							</div>
 							<hr>
+								<button class="btn btn-md btn-outline-success">
+									<i class="lnr lnr-pencil"></i><b class="green" >Edit</b>
+								</button>
+							<hr>
 							<h3 class="blue">
 								<i class="lnr lnr-gift orange">
 								</i> Birthday
