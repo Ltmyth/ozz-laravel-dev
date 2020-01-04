@@ -128,19 +128,21 @@ class MessageController extends Controller
             'number' => 'required'
         ]);
 
-        $sms = $request->input('sms');
+        $message = $request->input('sms');
         $receiver =$request->input('number');
 
         $username = "Mat";
+        // 0zz
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
         
         // $username = "sandbox";
         // $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        
         // Specify the numbers that you want to send to in a comma-separated list
         // Please ensure you include the country code (+254 for Kenya in this case)
         // $recipients = "+256783013570,+256784910695";
-        // And of course we want our recipients to know what we really do
-        $message    = "Theohz check 1!";
+        $phoneNumber = 1*$receiver;
+        
         // // Create a new instance of our awesome gateway class
         $AT       = new AfricasTalking($username, $apiKey);
         // Get one of the services
@@ -148,7 +150,7 @@ class MessageController extends Controller
 
         // Use the service
         $result   = $sms->send([
-            'to'      => '+256783013570',
+            'to'      => '+256'.$phoneNumber,
             'message' => $message
         ]);
 
