@@ -131,6 +131,7 @@ class MessageController extends Controller
         $message = $request->input('sms');
         $receiver =$request->input('number');
         $user = Auth::user()->name;
+        $user_id = Auth::user()->id;
         $user_wallet = Auth::user()->wallet_id;
         $user_balance = Auth::user()->wallet_balance;
         $name = $request->input('receiver');
@@ -187,8 +188,8 @@ class MessageController extends Controller
         $not->save();
 
         //update wallet
-        $updt = User::where('name', $user);
-        $updt = $user_balance-$cost;
+        $updt = User::find($user_id);
+        $updt->wallet_balance = $user_balance-$cost;
         $updt->save();
 
         // DONE!!!
