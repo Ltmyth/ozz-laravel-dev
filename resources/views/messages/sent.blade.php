@@ -35,6 +35,7 @@
         }
     </script>
     <div class="container">
+        <
       	<h2>Sent SMS History</h2>
       	<hr>
         <table class="table-striped w-100">
@@ -52,17 +53,17 @@
                 @if($texts) 
                     @foreach ($texts as $text)
 
-                        <tr>
+                        <tr class="lt-al">
                             <td>
-                                <h3>{{ $text->created_at->diffForHumans() }}</h3>
+                                <h5>{{ $text->created_at->diffForHumans() }}</h5>
                             </td>
                             
                             <td>
-                                <h3 class="blue"><strong>{{ $text->receiver }}</strong></h3> 
+                                <h4 class="blue"><strong>{{ $text->receiver }}</strong></h4> 
                             </td>
 
                             <td>
-                                <h3 class="black"><strong>{{ $text->phone }}</strong></h3> 
+                                <h4 class="black"><strong>{{ $text->phone }}</strong></h4> 
                             </td>
 
 
@@ -71,7 +72,7 @@
                             </td>
 
                             <td>
-                                <h3 class="green"><strong>Delivered</strong></h3> 
+                                <h4 class="green"><strong>Delivered</strong></h4> 
                             </td>
 
                             <td>
@@ -96,5 +97,8 @@
             </tbody>            
         </table>      	
 	</div>
-    <br><br>
+    <div class="section-gap">        
+    </div>
+    <div class="section-gap">        
+    </div>
 @endsection
