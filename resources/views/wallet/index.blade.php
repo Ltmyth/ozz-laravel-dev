@@ -70,7 +70,7 @@
                       @else
                           <b>0.0</b>
                       @endif .
-                    <i><strong class="orange">0hzz</strong></i>
+                    <i><strong class="orange">0h</strong><b>z</b></i>
         					</div>
 
                   <div class="col-md-8 container">
@@ -81,8 +81,7 @@
                         <b>#{{ $id }}</b>
                       @else
                           <b>#{{ Auth::user()->name }}</b>
-                      @endif .
-                    <i><strong class="orange">0hzz</strong></i>
+                      @endif 
                   </div>
         				</div>
                 <br>
