@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\User;
+use App\messages;
 use App\Share;
 use Redirect,Response;
 
@@ -30,14 +32,20 @@ class ShareController extends Controller
         $shares = new Share();
         $shares->post = $request->post_id;
         $shares->shared_by = $request->shared_by;
-
         $shares->save();
+
+        $x = $request->shared_by;
+        $y = User::find($x);
 
         $post = Post::find($request->post_id);
         $post->shares = $post->shares+1 ;
         $post->save();
 
-        $posts = Post::orderBy('id','desc')->get();
+        // $not = new messages();
+        // $not->author = "Notification";
+        // $not->receiver = $user;
+        // $not->message = $." shared a post of yours";
+        // $not->save();
 
         return view('home');
     }

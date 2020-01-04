@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
+use App\messages;
 use App\Dislike;
+use Auth;
 use Redirect,Response;
 
 class dislikeController extends Controller
@@ -31,13 +33,20 @@ class dislikeController extends Controller
         $dislikes->post = $request->post_id;
         $dislikes->disliked_by = $request->dislike_by;
 
+        $user= Auth::user()->name;
+
         $dislikes->save();
 
         $post = Post::find($request->post_id);
         $post->dislikes = $post->dislikes+1 ;
         $post->save();
 
-        $posts = Post::orderBy('id','desc')->get();
+        //notify
+        $not = new messages();
+        $not->author = "Notification";
+        $not->receiver = $user;
+        $not->message = "Someone disliked a post of yours";
+        $not->save();
 
         return view('home');
     }
