@@ -6,7 +6,7 @@
     	}
 
 
-    	#messages_btn{
+    	#at_btn{
     		background-color:orange;
     		color:white;
     		pointer-events: none;
@@ -21,41 +21,35 @@
             <thead>
                 <tr>
                     <th scope="col lt-al">When</th>
-                    <th scope="col">To</th>
                     <th scope="col lt-al">Phone number</th>
-                    <th scope="col">Message</th>
+                    <th scope="col">Amount</th>
                     <th scope="col">Status</th>
                     <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
             <tbody>
-                @if($texts) 
-                    @foreach ($texts as $text)
+                @if($ats) 
+                    @foreach ($ats as $at)
 
                         <tr class="lt-al">
                             <td>
-                                <h5>{{ $text->created_at->diffForHumans() }}</h5>
+                                <h5>{{ $at->created_at->diffForHumans() }}</h5>
                             </td>
                             
                             <td>
-                                <h4 class="blue ct-al"><strong>{{ $text->receiver }}</strong></h4> 
+                                <h4 class="blue ct-al"><strong>{{ $at->receiver }}</strong></h4> 
                             </td>
 
                             <td>
-                                <h4 class="black"><strong>{{ $text->phone }}</strong></h4> 
-                            </td>
-
-
-                            <td>
-                                <h3 class="blue"><strong>{{ $text->message }}</strong></h3> 
+                                <h3 class="blue"><strong>{{ $at->amount }}</strong></h3> 
                             </td>
 
                             <td>
-                                <h4 class="green ct-al"><strong>Delivered</strong></h4> 
+                                <h4 class="green ct-al"><strong>Sent</strong></h4> 
                             </td>
 
                             <td>
-                                <h3 class="red ct-al"><strong>{{ $text->cost }}</strong></h3> 
+                                <h3 class="red ct-al"><strong>{{ $at->cost }}</strong></h3> 
                             </td>
                         </tr>
                     @endforeach
@@ -64,7 +58,7 @@
                         <td colspan="6">
                             <br>
                             <h1 class="ct-al">
-                                <p><b class="orange"><i>No sms sent yet</i>!</b></p>
+                                <p><b class="orange"><i>No airtime transactions yet</i>!</b></p>
                             </h1>
                             <h1>
                                 <big><i class="lnr lnr-sad orange"></i></big>

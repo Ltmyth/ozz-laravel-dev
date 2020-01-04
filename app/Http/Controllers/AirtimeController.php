@@ -83,6 +83,8 @@ class AirtimeController extends Controller
             $txt->cost = $cost;
             $txt->save();
 
+            $transaction_id = "#4a5t9"."_".time()."6_0hz";
+
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
         }
@@ -99,6 +101,15 @@ class AirtimeController extends Controller
     {
         return view('airtime.at-others');
     }
+
+
+    public function sent_airtime()
+    {
+        $user = Auth::user()->name;
+        $ats = Airtime::where('sender', $user)->orderBy('id','desc')->get();
+        return view('messages.sent',["ats"=> $ats]);
+    }
+
 
     /**
      * Show the form for creating a new resource.
