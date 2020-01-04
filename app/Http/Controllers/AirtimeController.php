@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-require 'vendor\autoload.php';
 use Illuminate\Http\Request;
 use AfricasTalking\SDK\AfricasTalking;
 
@@ -63,12 +62,11 @@ class AirtimeController extends Controller
             "amount"       => $amount 
         ]];
 
+        $json_obj = json_encode($recipients);
+
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send([
-                "recipients" => $recipients
-            ]);
-
+            $results = $airtime->send(["recipients" => $json_obj]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
