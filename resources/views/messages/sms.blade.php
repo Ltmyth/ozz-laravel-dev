@@ -16,7 +16,7 @@
             @csrf
             <div class="container col-lg-7 lt-al"> 
                 <label><h4>Receiver name</h4></label> 
-                <input placeholder="Theohz username" class="form-control" type="text" name="user" required>
+                <input placeholder="Receiver name" class="form-control" type="text" name="user" required>
                 <hr>
                 <label><h4>Receiver phone number</h4></label> 
                 <input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="form-control" type="text" name="number" required>
