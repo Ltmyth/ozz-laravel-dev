@@ -78,7 +78,7 @@
                       Wallet Id
                     </small>  
                     : @if($id)
-                        <b>{{ $id }}</b>
+                        <b>#{{ $id }}</b>
                       @else
                           <b>#{{ Auth::user()->name }}</b>
                       @endif .

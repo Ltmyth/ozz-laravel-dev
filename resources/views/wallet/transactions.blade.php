@@ -76,7 +76,7 @@
                             </td>
                             
                             <td>
-                                <h4 class="blue"><strong>{{ $t->wallet }}</strong></h4> 
+                                <h4 class="blue"><strong>#{{ $t->wallet }}</strong></h4> 
                             </td>
 
                             <td>
