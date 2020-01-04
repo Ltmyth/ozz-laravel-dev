@@ -63,7 +63,7 @@ class AirtimeController extends Controller
         //     "amount"       => $amount
         // ]];
 
-        $rec = array(
+        $receivers = array(
             array("phoneNumber"  => "+256".$phoneNumber,"amount"=>"UGX"." ".$amount)
         );
 
@@ -71,7 +71,7 @@ class AirtimeController extends Controller
 
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send(["recipients" => $rec]);
+            $results = $airtime->send(["recipients" => $receivers]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
