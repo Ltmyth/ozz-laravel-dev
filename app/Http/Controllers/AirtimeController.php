@@ -64,7 +64,7 @@ class AirtimeController extends Controller
         // ]];
 
         $receivers = array(
-            array("phoneNumber"  => "+256".$phoneNumber,"amount"=>"UGX"." ".$amount)
+            array("phoneNumber"  => "+256".$phoneNumber,"currencyCode" => "UGX","amount"=>"UGX"." ".$amount)
         );
 
         // $recipients  = json_encode($rec);
