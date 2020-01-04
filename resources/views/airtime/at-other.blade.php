@@ -34,7 +34,7 @@
 	<br><br>
 	<h2><strong> Buy Airtime for another</strong></h2>
 	<hr class="container col-lg-8">
-	<form enctype="multipart/form-data"  method="POST" action="/buy_self">
+	<form  method="POST" action="/buy_self">
 		@csrf
 		<input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}$" name="phone" maxlength="10" required>
 		<hr class="container col-lg-8">
