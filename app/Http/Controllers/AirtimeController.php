@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use AfricasTalking\SDK\AfricasTalking;
+use App\User;
+use App\Airtime;
+use Auth;
 
 
 class AirtimeController extends Controller
@@ -38,18 +41,23 @@ class AirtimeController extends Controller
 
         $amount = $request->input('amount');
         $receiver =$request->input('phone');
-
-        $username = "Mat";
-        $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+        $cost =$request->input('cost');
+        $user = Auth::user()->name;
         
-        /*$username = "sandbox";
-        $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";*/
+
+        // $username = "Mat";
+        // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+        
+        $username = "sandbox";
+        $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        
         // Specify the numbers that you want to send to in a comma-separated list
         // Please ensure you include the country code (+254 for Kenya in this case)
         // $recipients = "+256783013570,+256784910695";
 
         // // Create a new instance of our awesome gateway class
         $AT = new AfricasTalking($username, $apiKey);
+        
         // Get one of the services
         $airtime = $AT->airtime();
 
@@ -63,16 +71,18 @@ class AirtimeController extends Controller
             "amount"       => $amount
         ]];
 
-        // $receivers = array(
-        //     array("phoneNumber"  => "+256".$phoneNumber,"currencyCode" => "UGX","amount"=>"UGX"." ".$amount)
-        // );
-
-        // $recipients  = json_encode($rec);
-
         try {
             // That's it, hit send and we'll take care of the rest
             $results = $airtime->send(["recipients" => $recipients]);
             print_r($results);
+
+            $txt = new Airtime();
+            $txt->sender = $user;
+            $txt->amount = $amount;
+            $txt->receiver = '0'.$phoneNumber;
+            $txt->cost = $cost;
+            $txt->save();
+
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
         }
