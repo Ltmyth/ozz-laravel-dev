@@ -132,6 +132,8 @@ class MessageController extends Controller
 
         $message = $request->input('sms');
         $receiver =$request->input('number');
+        $user = Auth::user()->name;
+        $name = $request->input('receiver');
 
         /*$username = "Mat";
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";*/
@@ -158,12 +160,12 @@ class MessageController extends Controller
         print_r($result);
 
 
-        $sms = new Sms();
-        $sms->author = Auth::user()->name;
-        $sms->receiver = $request->input('receiver');
-        $sms->phone = '0'.$phoneNumber;
-        $sms->message = $message;
-        $sms->save();
+        $txt = new Sms();
+        $txt->author = $user;
+        $txt->receiver = 
+        $txt->phone = '0'.$phoneNumber;
+        $txt->message = $message;
+        $txt->save();
 
         // DONE!!!
         return view('messages.sms');
