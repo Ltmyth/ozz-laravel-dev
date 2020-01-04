@@ -34,7 +34,7 @@
             x.setAttribute("style", "display:none");*/
         }
     </script>
-    <div class="row container">
+    <div class="container">
       	<h2>Sent SMS History</h2>
       	<hr>
       	@if($texts) 
