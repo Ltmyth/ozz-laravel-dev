@@ -42,7 +42,7 @@
         </button>
       </a>
     	<h1 class="center" style="font-size:350%;">
-    		<i class="glyphicon glyphicon-briefcase">
+    		<i class="lnr lnr-briefcase orange">
     			<strong>Transactions Ledger</strong>
     		</i>
     	</h1>
