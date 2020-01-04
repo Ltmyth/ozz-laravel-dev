@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Auth;
+use App\Transactions;
 
 class WalletController extends Controller
 {
@@ -18,12 +20,15 @@ class WalletController extends Controller
      */
     public function index()
     {
-        return view('wallet.index');
+        $balance = Auth::user()->wallet_balance;
+        $id = Auth::user()->wallet_id;
+        return view('wallet.index',["balance" => $balance, "id" => $id]);
     }
 
     public function transactions()
     {
-        return view('wallet.transactions');
+        $ts = Transactions::orderBy('id','desc')->get();
+        return view('wallet.transactions')->with($ts);
     }
 
     /**

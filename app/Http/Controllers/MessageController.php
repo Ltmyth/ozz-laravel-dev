@@ -212,7 +212,9 @@ class MessageController extends Controller
 
     public function notification_message()
     {
-        return view('messages.notification');
+        $receiver = Auth::user()->name;
+        $nots = messages::where([['receiver','=',$receiver],['author', '=', 'Notification']])->orderBy('id','desc')->get();
+        return view('messages.notification')->with("Nots", $nots);
     }
 
 

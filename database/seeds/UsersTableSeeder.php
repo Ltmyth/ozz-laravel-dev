@@ -17,7 +17,7 @@ class UsersTableSeeder extends Seeder
             'email' => 'latimmark@gmail.com',
             'phone' => '0783013570',
             'wallet_balance' => '2.0',
-            'wallet_id' => 'rasta1',
+            'wallet_id' => '#rasta1',
             'password' => bcrypt('@1nile5nation'),
         ]);
 

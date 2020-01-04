@@ -45,6 +45,7 @@ class AirtimeController extends Controller
         $receiver =$request->input('phone');
         $cost =$request->input('cost');
         $user = Auth::user()->name;
+        $user_id = Auth::user()->id;
         $user_wallet = Auth::user()->wallet_id;
         $user_balance = Auth::user()->wallet_balance;
         $transaction_id = "#4a5t9"."_".time()."6_0hz";
@@ -105,8 +106,9 @@ class AirtimeController extends Controller
             $not->save();
 
             //update wallet
-            $updt = User::where('name', $user)->get()->first();
-            $updt = $user_balance-$cost;
+            //update wallet
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
             $updt->save();
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();

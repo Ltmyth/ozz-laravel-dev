@@ -65,9 +65,25 @@
         						<small class="green">
                       Available Balance
                     </small>	
-                    : <b>1000000</b> .
+                    : @if($balance)
+                        <b>{{ $balance }}</b>
+                      @else
+                          <b>0.0</b>
+                      @endif .
                     <i><strong class="orange">0hzz</strong></i>
         					</div>
+
+                  <div class="col-md-8 container">
+                    <small class="green">
+                      Wallet Id
+                    </small>  
+                    : @if($id)
+                        <b>{{ $id }}</b>
+                      @else
+                          <b>#{{ Auth::user()->name }}</b>
+                      @endif .
+                    <i><strong class="orange">0hzz</strong></i>
+                  </div>
         				</div>
                 <br>
                 <div class="row col-lg-12">
