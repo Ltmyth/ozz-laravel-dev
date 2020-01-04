@@ -37,55 +37,64 @@
     <div class="container">
       	<h2>Sent SMS History</h2>
       	<hr>
-      	@if($texts) 
-            @foreach ($texts as $text)
-                <div class="row bb">
-                    <div class="col-lg-2 w-10">
-                        <div class="row">
-                            <a href="/inbox/{{ $text->author }}">
-                                <img 
-                                    class="w-60 mr-10 rt" 
-                                    src="{{ asset('/imgs/hello_bot.png') }}"
-                                    alt="Avator" 
-                                >
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
-                        <div class="row bb">
-                            <a href="/inbox/{{ $text->author }}">
-                                <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
-                            </a>
-                            &nbsp; &nbsp;
-                            <h5 class="black"><br><i>{{$text->created_at->diffForHumans() }}.</i></h5>
-                        </div>
+        <table class="table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">When</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Phone number</th>
+                    <th scope="col">Message</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Cost ( <b class="orange">Oh</b><b>z</b> )</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if($texts) 
+                    @foreach ($texts as $text)
 
-                        <div class="row container lt-al blbr-10 trbr-10 light-bg brbr-10 ">
-                            <a href="/inbox/{{ $text->author }}">
-                                <h3 class="white">  
-                                    <strong>
-                                        <p>{{ $text->message }}</p>
-                                    </strong>
-                                </h3> 
-                            </a>
-                        </div>
-                    </div>
-                    <hr>
-                </div>
-            @endforeach
-        @else
-            <div class="container">
-                <br>
-                <h1 class="ct-al">
-                    <p><b class="orange">No messages yet!</b></p>
-                </h1>
-                <h1>
-                    <big><i class="lnr lnr-sad orange"></i></big>
-                </h1>
-                <div class="section-gap"></div>
-            </div>
-        @endif
+                        <tr>
+                            <td>
+                                <h3>{{ $text->created_at->diffForHumans() }}</h3>
+                            </td>
+                            
+                            <td>
+                                <h3 class="blue"><strong>{{ $text->receiver }}</strong></h3> 
+                            </td>
+
+                            <td>
+                                <h3 class="black"><strong>{{ $text->phone }}</strong></h3> 
+                            </td>
+
+
+                            <td>
+                                <h3 class="blue"><strong>{{ $text->message }}</strong></h3> 
+                            </td>
+
+                            <td>
+                                <h3 class="green"><strong>Delivered</strong></h3> 
+                            </td>
+
+                            <td>
+                                <h3 class="red"><strong>{{ $text->cost }}</strong></h3> 
+                            </td>
+                        </tr>
+                    @endforeach
+                @else
+                    <tr>
+                        <td colspan="6">
+                            <br>
+                            <h1 class="ct-al">
+                                <p><b class="orange"><i>No sms sent yet</i>!</b></p>
+                            </h1>
+                            <h1>
+                                <big><i class="lnr lnr-sad orange"></i></big>
+                            </h1>
+                            <div class="section-gap"></div>
+                        </td>
+                    </tr>
+                @endif
+            </tbody>            
+        </table>      	
 	</div>
     <br><br>
 @endsection
