@@ -57,17 +57,21 @@ class AirtimeController extends Controller
         $phoneNumber = 1*$receiver;
 
         // Set the phone number, currency code and amount in the format below
-        $recipients = [[
-            "phoneNumber"  => "+256783013570",
-            "currencyCode" => "UGX",
-            "amount"       => 50 
-        ]];
+        // $recipients = [[
+        //     "phoneNumber"  => "+256783013570",
+        //     "currencyCode" => "UGX",
+        //     "amount"       => 50 
+        // ]];
 
         // $json_obj = json_encode($recipients);
 
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send(["recipients" => $recipients]);
+            $results = $airtime->send([
+                "phoneNumber"  => "+256783013570",
+                "currencyCode" => "UGX",
+                "amount"       => 50 
+            ]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
