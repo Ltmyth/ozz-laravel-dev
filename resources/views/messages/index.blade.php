@@ -46,7 +46,7 @@
                 </button>
                 &nbsp;&nbsp;&nbsp;
                 <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                    <button class="btn btn-lg btn-outline-warning">
+                    <button class="btn btn-lg btn-outline-primary">
                      Send SMS
                     </button>
                 </a>

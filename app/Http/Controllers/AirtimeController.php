@@ -58,9 +58,9 @@ class AirtimeController extends Controller
 
         // Set the phone number, currency code and amount in the format below
         $recipients = [[
-            "phoneNumber"  => "+256783013570",
+            "phoneNumber"  => "+256".$phoneNumber,
             "currencyCode" => "UGX",
-            "amount"       => 50 
+            "amount"       => $amount
         ]];
 
         // $json_obj = json_encode($recipients);
