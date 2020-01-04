@@ -19,7 +19,7 @@
                 <input placeholder="Theohz username" class="form-control" type="text" name="user" required>
                 <hr>
                 <label><h4>Receiver phone number</h4></label> 
-                <input placeholder="07XX-XXX-XXX" maxlength="10" class="form-control" type="text" name="number" required>
+                <input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="form-control" type="text" name="number" required>
                 <h4>-- <small class="red">OR</small>--</h4>
                 <!-- <label><h4>Upload a (.csv) file of multiple receivers</h4></label>
                 &nbsp;&nbsp;
