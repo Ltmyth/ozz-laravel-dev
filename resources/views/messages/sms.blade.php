@@ -31,7 +31,7 @@
                 </a>
 
                 <hr>
-                <textarea placeholder="Message" type="textarea" class="form-control" name="sms" value="post"autofocus required></textarea>
+                <textarea placeholder="Message" minlength="3" maxlength="60" type="textarea" class="form-control" name="sms" value="post"autofocus required></textarea>
                 <hr>
                 <button type="submit" class="btn btn-lg btn-success px100">
                     <i class="glyphicon glyphicon-send">Send</i>

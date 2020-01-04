@@ -38,7 +38,7 @@ class AirtimeController extends Controller
 
         $amount = $request->input('amount');
         $receiver =$request->input('phone');
-        
+
         $username = "Mat";
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
         
@@ -60,7 +60,7 @@ class AirtimeController extends Controller
         $recipients = [[
             "phoneNumber"  => "+256".$phoneNumber,
             "currencyCode" => "UGX",
-            "amount"       => $amount 
+            "amount"       => "$amount" 
         ]];
 
         // $json_obj = json_encode($recipients);
