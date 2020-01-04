@@ -150,7 +150,7 @@ class MessageController extends Controller
 
         // Use the service
         $result   = $sms->send([
-            'to'      => '+256704528933',
+            'to'      => '+256'.$phoneNumber,
             'message' => $message
         ]);
 
