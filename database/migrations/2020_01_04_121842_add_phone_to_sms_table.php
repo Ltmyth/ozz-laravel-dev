@@ -14,7 +14,7 @@ class AddPhoneToSmsTable extends Migration
     public function up()
     {
         Schema::table('sms', function (Blueprint $table) {
-            //
+            $table->string('phone')->after('receiver');
         });
     }
 

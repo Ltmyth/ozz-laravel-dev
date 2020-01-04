@@ -161,8 +161,8 @@ class MessageController extends Controller
         $sms = new Sms();
         $sms->author = Auth::user()->name;
         $sms->receiver = $request->input('receiver');
-        $sms->phone = $receiver;
-        $sms->message = ;
+        $sms->phone = '0'.$phoneNumber;
+        $sms->message = $message;
         $sms->save();
 
         // DONE!!!
