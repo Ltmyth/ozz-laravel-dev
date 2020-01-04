@@ -27,7 +27,7 @@ class WalletController extends Controller
 
     public function transactions()
     {
-        $ts = Transactions::where(["id", ">", 0])->orderBy('id','desc')->get();
+        $ts = Transactions::where([["id", ">", 0],['transaction','!=', "null"]])->orderBy('id','desc')->get();
         return view('wallet.transactions')->with($ts);
     }
 
