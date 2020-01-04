@@ -15,7 +15,7 @@ class UsersTableSeeder extends Seeder
         DB::table('users')->insert([
             'name' => 'Latim Mark',
             'email' => 'latimmark@gmail.com',
-            'phone' => '+256783013570',
+            'phone' => '0783013570',
             'wallet_balance' => '2.0',
             'wallet_id' => 'rasta1',
             'password' => bcrypt('@1nile5nation'),
