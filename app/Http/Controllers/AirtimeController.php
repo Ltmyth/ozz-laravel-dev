@@ -5,6 +5,8 @@ use Illuminate\Http\Request;
 use AfricasTalking\SDK\AfricasTalking;
 use App\User;
 use App\Airtime;
+use App\messages;
+use App\Transactions;
 use Auth;
 
 
@@ -43,6 +45,9 @@ class AirtimeController extends Controller
         $receiver =$request->input('phone');
         $cost =$request->input('cost');
         $user = Auth::user()->name;
+        $user_wallet = Auth::user()->wallet_id;
+        $user_balance = Auth::user()->wallet_balance;
+        $transaction_id = "#4a5t9"."_".time()."6_0hz";
         
 
         // $username = "Mat";
@@ -76,6 +81,7 @@ class AirtimeController extends Controller
             $results = $airtime->send(["recipients" => $recipients]);
             print_r($results);
 
+            //persit
             $txt = new Airtime();
             $txt->sender = $user;
             $txt->amount = $amount;
@@ -83,8 +89,19 @@ class AirtimeController extends Controller
             $txt->cost = $cost;
             $txt->save();
 
-            $transaction_id = "#4a5t9"."_".time()."6_0hz";
+            //record
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Airtime ";
+            $ts->save();
 
+            //notify
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
         }

@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use App\messages;
+use App\Transactions;
 use App\Sms;
 use Auth;
 use Illuminate\Http\Request;
@@ -33,6 +34,7 @@ class MessageController extends Controller
         $text_count = $uniq_texts->count();
         return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
     }
+    
     public function send_message(Request $request)
     {
         //validate
@@ -99,12 +101,6 @@ class MessageController extends Controller
     }
 
 
-    public function sent()
-    {
-        $user = Auth::user()->name;
-        $txts = Sms::where('author', $user)->orderBy('id','desc')->get();
-        return view('messages.sent',["texts"=> $txts]);
-    }
 
 
     public function chat()
@@ -135,7 +131,10 @@ class MessageController extends Controller
         $message = $request->input('sms');
         $receiver =$request->input('number');
         $user = Auth::user()->name;
+        $user_wallet = Auth::user()->wallet_id;
+        $user_balance = Auth::user()->wallet_balance;
         $name = $request->input('receiver');
+        $transaction_id = "#4s5m9"."_".time()."s6_0hz";
 
         /*$username = "Mat";
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";*/
@@ -161,14 +160,35 @@ class MessageController extends Controller
 
         print_r($result);
 
-
+        //persist
         $txt = new Sms();
         $txt->author = $user;
         $txt->receiver = $name;
         $txt->phone = '0'.$phoneNumber;
-        $txt->cost = 0.01;
+        $cost = 0.01;
+        $txt->cost = $cost;
         $txt->message = $message;
         $txt->save();
+
+
+        //record
+        $ts = new Transactions();
+        $ts->transaction = $transaction_id;
+        $ts->amount = $cost." "."ohz";
+        $ts->wallet = $user_wallet;
+        $ts->description = " Sms ";
+        $ts->save();
+
+        //notify
+        $not = new messages();
+        $not->author = "Notification";
+        $not->receiver = $user;
+        $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
+
+        //update wallet
+        $updt = User::find($post_id)->all();
+        $updt = $user_balance-$cost;
+        $updt->save();
 
         // DONE!!!
         return redirect('/sent');
@@ -180,6 +200,13 @@ class MessageController extends Controller
         return view('messages.bulk_sms');
     }
 
+
+    public function sent()
+    {
+        $user = Auth::user()->name;
+        $txts = Sms::where('author', $user)->orderBy('id','desc')->get();
+        return view('messages.sent',["texts"=> $txts]);
+    }
 
     public function notification_message()
     {
