@@ -37,7 +37,7 @@
     <div class="container">
       	<h2>Sent SMS History</h2>
       	<hr>
-        <table class="table-striped">
+        <table class="table-striped w-100">
             <thead>
                 <tr>
                     <th scope="col">When</th>
@@ -45,7 +45,7 @@
                     <th scope="col">Phone number</th>
                     <th scope="col">Message</th>
                     <th scope="col">Status</th>
-                    <th scope="col">Cost ( <b class="orange">Oh</b><b>z</b> )</th>
+                    <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
             <tbody>
