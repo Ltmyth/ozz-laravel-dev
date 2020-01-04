@@ -130,6 +130,9 @@ class MessageController extends Controller
 
         $sms = $request->input('sms');
         $receiver =$request->input('number');
+
+        $username = "Mat";
+        $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
         
         // $username = "sandbox";
         // $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
