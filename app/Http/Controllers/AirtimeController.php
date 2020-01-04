@@ -105,7 +105,7 @@ class AirtimeController extends Controller
             $not->save();
 
             //update wallet
-            $updt = User::find($post_id)->all();
+            $updt = User::where('name', $user)->all();
             $updt = $user_balance-$cost;
             $updt->save();
         } catch(Exception $e) {
