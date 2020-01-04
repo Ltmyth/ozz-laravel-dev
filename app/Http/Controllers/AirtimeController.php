@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+require 'vendor/autoload.php';
 use Illuminate\Http\Request;
 use AfricasTalking\SDK\AfricasTalking;
 
@@ -49,7 +49,7 @@ class AirtimeController extends Controller
         // $recipients = "+256783013570,+256784910695";
 
         // // Create a new instance of our awesome gateway class
-        $AT       = new AfricasTalking($username, $apiKey);
+        $AT = new AfricasTalking($username, $apiKey);
         // Get one of the services
         $airtime = $AT->airtime();
 
