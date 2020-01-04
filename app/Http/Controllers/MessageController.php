@@ -184,6 +184,7 @@ class MessageController extends Controller
         $not->author = "Notification";
         $not->receiver = $user;
         $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
+        $not->save();
 
         //update wallet
         $updt = User::find($post_id)->all();

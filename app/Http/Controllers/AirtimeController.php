@@ -102,6 +102,12 @@ class AirtimeController extends Controller
             $not->author = "Notification";
             $not->receiver = $user;
             $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
+            $not->save();
+
+            //update wallet
+            $updt = User::find($post_id)->all();
+            $updt = $user_balance-$cost;
+            $updt->save();
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
         }
