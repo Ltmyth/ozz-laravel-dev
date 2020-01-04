@@ -64,12 +64,14 @@
                                 <h1>
                                     <big><i class="lnr lnr-sad orange"></i></big>
                                 </h1>
-                                <div class="section-gap"></div>
                             </td>
                         </tr>
                     @endif
                 </tbody>            
             </table>        
       </div>
+
+      <div class="section-gap"></div><div class="section-gap"></div>
+
 
 @endsection
