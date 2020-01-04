@@ -89,7 +89,7 @@ class AirtimeController extends Controller
             echo "Error: ".$e->getMessage();
         }
 
-        return view('airtime.self-at');
+        return redirect('sent_airtime');
     }
 
     public function other_at()
@@ -107,7 +107,7 @@ class AirtimeController extends Controller
     {
         $user = Auth::user()->name;
         $ats = Airtime::where('sender', $user)->orderBy('id','desc')->get();
-        return view('messages.sent',["ats"=> $ats]);
+        return view('airtime.sent_at',["ats"=> $ats]);
     }
 
 

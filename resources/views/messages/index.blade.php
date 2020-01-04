@@ -50,6 +50,13 @@
                      Send SMS
                     </button>
                 </a>
+
+                &nbsp;&nbsp;&nbsp;
+                <a href="/sent" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                    <button class="btn btn-lg btn-primary">
+                      SMS History
+                    </button>
+                </a>
             </div>
         </div>
       	<hr class="container col-lg-12">

@@ -23,6 +23,11 @@
 	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><b>Airtime Services</b></h2>
+	<hr>
+        <a href="/sent_airtime">
+            <button class="btn btn-lg btn-primary">View History</button>
+        </a>
+    <hr>
 	<hr class="container col-lg-5">
 	<big>Buy airtime for </big>;
 	<hr class="container col-lg-5">

@@ -132,7 +132,7 @@ Route::get('/hostels_admin_view','HostelController@admin_view');
 //at
 Route::get('airtime','AirtimeController@index');
 Route::get('at-self','AirtimeController@self_at');
-Route::get('sent_airtime','AirtimeController@sent_airtime');
+Route::get('/sent_airtime','AirtimeController@sent_airtime');
 Route::post('/buy_self','AirtimeController@buy_self');
 Route::get('at-other','AirtimeController@other_at');
 Route::get('at-others','AirtimeController@others_at');
