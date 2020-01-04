@@ -15,14 +15,14 @@
     
     <div class="container">
         <
-      	<h2>Sent SMS History</h2>
+      	<h2>Sent Airtime History</h2>
       	<hr>
         <table class="table-striped w-100">
             <thead>
                 <tr>
                     <th scope="col" class="lt-al">When</th>
                     <th scope="col" class="lt-al">Phone number</th>
-                    <th scope="col" class="lt-al">Amount</th>
+                    <th scope="col" class="lt-al">(UGX) Amount</th>
                     <th scope="col">Status</th>
                     <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
@@ -41,7 +41,7 @@
                             </td>
 
                             <td>
-                                <h3 class="blue ct-al"><strong>{{ $at->amount }}</strong></h3> 
+                                <h3 class="blue"><strong>{{ $at->amount }}</strong></h3> 
                             </td>
 
                             <td>
