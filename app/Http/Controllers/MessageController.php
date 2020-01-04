@@ -214,7 +214,7 @@ class MessageController extends Controller
     {
         $receiver = Auth::user()->name;
         $nots = messages::where([['receiver','=',$receiver],['author', '=', 'Notification']])->orderBy('id','desc')->get();
-        return view('messages.notification')->with("Nots", $nots);
+        return view('messages.notification')->with("nots", $nots);
     }
 
 
