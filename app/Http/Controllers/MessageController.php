@@ -101,7 +101,9 @@ class MessageController extends Controller
 
     public function sent()
     {
-        return view('messages.sent');
+        $user = Auth::user()->name;
+        $txts = Sms::where('author', $user)->orderBy('id','desc')->get();
+        return view('messages.sent',["texts"=> $txts]);
     }
 
 
@@ -169,7 +171,7 @@ class MessageController extends Controller
         $txt->save();
 
         // DONE!!!
-        return view('messages.sms');
+        return redirect('/sent');
     }
 
 

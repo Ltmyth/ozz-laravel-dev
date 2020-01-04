@@ -10,6 +10,10 @@
 
   	<h2 class="mt-30"> <i class="lnr lnr-alarm orange"></i>Short Message Service</h2>
   	<hr>
+        <a href="/sent">
+            <button class="btn btn-lg btn-outline-danger">SMS History</button>
+        </a>
+    <hr>
     <br><br>
     <div id="new_msg" class="well center">
         <form enctype="multipart/form-data" method="POST" action="/send_sms">
