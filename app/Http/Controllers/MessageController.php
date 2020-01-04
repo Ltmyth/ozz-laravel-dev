@@ -187,7 +187,7 @@ class MessageController extends Controller
         $not->save();
 
         //update wallet
-        $updt = User::where('name', $user)->first();
+        $updt = User::where('name', $user);
         $updt = $user_balance-$cost;
         $updt->save();
 
