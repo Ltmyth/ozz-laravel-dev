@@ -62,6 +62,12 @@
                 </a>
 
                 <div class="dropdown-divider"></div>
+
+                <a class="dropdown-item" href="airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <b class="white">Airtime</b>
+                </a>
+
+                <div class="dropdown-divider"></div>
                 
                 <a class="dropdown-item" href="accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Accommodation</b>
@@ -75,8 +81,9 @@
                 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">Airtime</b>
+                <a class="dropdown-item" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                    <span class="lnr lnr-alarm"></span>
+                    <strong class="white" >Notifications</strong>
                 </a>
             </div>   
 

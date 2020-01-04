@@ -29,7 +29,7 @@ class UsersTableSeeder extends Seeder
         DB::table('messages')->insert([
             'message' => 'Hello! welcome to theohz application platform',
             'receiver' => 'everyone',
-            'author' => 'theohz chatbot',
+            'author' => 'Latim Mark',
             'created_at' => now(),
         ]);
     }

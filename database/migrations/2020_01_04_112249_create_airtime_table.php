@@ -15,6 +15,10 @@ class CreateAirtimeTable extends Migration
     {
         Schema::create('airtime', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('sender');
+            $table->string('amount');
+            $table->string('receiver');
+            $table->string('cost');
             $table->timestamps();
         });
     }
