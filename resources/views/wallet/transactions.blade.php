@@ -38,18 +38,18 @@
     <div class="container">
       <a href="/wallet/">
         <button class="btn btn-lg btn-info">
-          <small class="red" >Back</small>
+          <small>Back</small>
         </button>
       </a>
     	<h1 class="center" style="font-size:350%;">
     		<i class="glyphicon glyphicon-briefcase">
-    			<strong>Wallet History</strong>
+    			<strong>Transactions Ledger</strong>
     		</i>
     	</h1>
     	<br>
     	<div class="table-responsive">
 
-        <h2>Sent Airtime History</h2>
+        <!-- <h2>Personal History</h2> -->
         <hr>
         <table class="table-striped w-100">
             <thead>
