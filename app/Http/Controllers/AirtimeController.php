@@ -67,11 +67,11 @@ class AirtimeController extends Controller
             array("phoneNumber"  => "+256".$phoneNumber,"amount"=>"UGX"." ".$amount)
         );
 
-        $recipients  = json_encode($rec);
+        // $recipients  = json_encode($rec);
 
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send(["recipients" => array($recipients)]);
+            $results = $airtime->send(["recipients" => $rec]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
