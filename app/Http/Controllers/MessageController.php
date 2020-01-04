@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use App\messages;
+use App\Sms;
 use Auth;
 use Illuminate\Http\Request;
 use AfricasTalking\SDK\AfricasTalking;
@@ -125,6 +126,7 @@ class MessageController extends Controller
         //validate
         $this->validate($request,[
             'sms' => 'required',
+            'receiver' => 'required',
             'number' => 'required'
         ]);
 
@@ -154,6 +156,15 @@ class MessageController extends Controller
         ]);
 
         print_r($result);
+
+
+        $sms = new Sms();
+        $sms->author = Auth::user()->name;
+        $sms->receiver = $request->input('receiver');
+        $sms->phone = $receiver;
+        $sms->message = ;
+        $sms->save();
+
         // DONE!!!
         return view('messages.sms');
     }
