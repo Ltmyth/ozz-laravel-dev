@@ -57,13 +57,17 @@ class AirtimeController extends Controller
         $phoneNumber = 1*$receiver;
 
         // Set the phone number, currency code and amount in the format below
-        $recipients = [[
-            "phoneNumber"  => "+256".$phoneNumber,
-            "currencyCode" => "UGX",
-            "amount"       => $amount
-        ]];
+        // $recipients = [[
+        //     "phoneNumber"  => "+256".$phoneNumber,
+        //     "currencyCode" => "UGX",
+        //     "amount"       => $amount
+        // ]];
 
-        // $json_obj = json_encode($recipients);
+        $rec = array(
+            array("phoneNumber"  => "+256".$phoneNumber,"amount"=>"UGX"." ".$amount)
+        );
+
+        $recipients  = json_encode($rec);
 
         try {
             // That's it, hit send and we'll take care of the rest
