@@ -68,7 +68,7 @@
 
                         <tr class="lt-al">
                             <td>
-                                <h5>{{ $t->created_t->diffForHumans() }}</h5>
+                                <h5>{{ $t->created_at->diffForHumans() }}</h5>
                             </td>
 
                             <td>
