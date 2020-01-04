@@ -162,8 +162,9 @@ class MessageController extends Controller
 
         $txt = new Sms();
         $txt->author = $user;
-        $txt->receiver = 
+        $txt->receiver = $name;
         $txt->phone = '0'.$phoneNumber;
+        $txt->cost = 0.01;
         $txt->message = $message;
         $txt->save();
 
