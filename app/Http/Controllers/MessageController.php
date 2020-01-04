@@ -131,8 +131,8 @@ class MessageController extends Controller
         $message = $request->input('sms');
         $receiver =$request->input('number');
 
-        $username = "Mat";
-        // 0zz
+        $username = "0zz";
+        // Mat
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
         
         // $username = "sandbox";
@@ -146,7 +146,7 @@ class MessageController extends Controller
         // // Create a new instance of our awesome gateway class
         $AT       = new AfricasTalking($username, $apiKey);
         // Get one of the services
-        $sms      = $AT->sms();
+        $sms = $AT->sms();
 
         // Use the service
         $result   = $sms->send([
