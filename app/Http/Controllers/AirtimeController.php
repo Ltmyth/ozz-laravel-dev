@@ -71,7 +71,7 @@ class AirtimeController extends Controller
 
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send(["recipients" => $recipients]);
+            $results = $airtime->send(["recipients" => array($recipients)]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();
