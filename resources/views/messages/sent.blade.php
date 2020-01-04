@@ -20,10 +20,10 @@
         <table class="table-striped w-90">
             <thead>
                 <tr>
-                    <th scope="col lt-al">When</th>
-                    <th scope="col">To</th>
-                    <th scope="col lt-al">Phone number</th>
-                    <th scope="col">Message</th>
+                    <th scope="col" class="lt-al">When</th>
+                    <th scope="col" class="lt-al">To</th>
+                    <th scope="col" class="lt-al">Phone number</th>
+                    <th scope="col" class="lt-al">Message</th>
                     <th scope="col">Status</th>
                     <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
@@ -38,7 +38,7 @@
                             </td>
                             
                             <td>
-                                <h4 class="blue ct-al"><strong>{{ $text->receiver }}</strong></h4> 
+                                <h4 class="blue"><strong>{{ $text->receiver }}</strong></h4> 
                             </td>
 
                             <td>
