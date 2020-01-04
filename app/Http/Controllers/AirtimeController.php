@@ -62,11 +62,11 @@ class AirtimeController extends Controller
             "amount"       => $amount 
         ]];
 
-        $json_obj = json_encode($recipients);
+        // $json_obj = json_encode($recipients);
 
         try {
             // That's it, hit send and we'll take care of the rest
-            $results = $airtime->send(["recipients" => $json_obj]);
+            $results = $airtime->send(["recipients" => $recipients]);
             print_r($results);
         } catch(Exception $e) {
             echo "Error: ".$e->getMessage();

@@ -25,13 +25,13 @@
                 &nbsp;&nbsp;
                 <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" > -->
                 <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                    <button class="btn btn-lg btn-outline-danger">
+                    <button class="btn btn-lg btn-outline-danger" disabled>
                         Broadcast SMS to a list
                     </button>
                 </a>
 
                 <hr>
-                <textarea placeholder="Message" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+                <textarea placeholder="Message" type="textarea" class="form-control" name="sms" value="post"autofocus required></textarea>
                 <hr>
                 <button type="submit" class="btn btn-lg btn-success px100">
                     <i class="glyphicon glyphicon-send">Send</i>
