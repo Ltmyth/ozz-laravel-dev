@@ -138,10 +138,10 @@ class WalletController extends Controller
 
             return redirect('/notification')->with('message', $message);
         }
-        else{
-
+        elseif ($check == "") {
+            $error_message = "User does exist";
+            return view('wallet.share');
         }
-        
     }
 
     /**
