@@ -23,21 +23,22 @@
   			/*calculation*/
   			/*calculation*/
   			var cost = 0;
+  			var si = 5000;
   			var y = x/5000;
-	        var bronze = 5000/5000;
-	        var silver = 50000/5000;
-	        var gold = 250000/5000;
-	        var vibranium = 1000000/5000;
+	        var bronze = 5000/si;
+	        var silver = 50000/si;
+	        var gold = 250000/si;
+	        var vibranium = 1000000/si;
 
-	        if(y==bronze){
+	        if(y==bronze && y<silver){
 	          var charge = bronze*0.1;
 	          cost = bronze+charge;
 	        }
-	        else if(y<silver){
+	        else if(y==silver && y<gold){
 	          var charge = silver*0.2;
 	          cost = silver+charge;
 	        }
-	        else if(y>=silver){
+	        else if(y==gold && y<vibranium){
 	          var charge = gold*0.04;
 	          cost = gold+charge;
 	        }
