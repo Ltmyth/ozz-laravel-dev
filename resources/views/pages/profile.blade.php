@@ -4,10 +4,10 @@
 		<script type="text/javascript">
 			function edit(){
 	  			/*get fields*/
-	  			var x = document.getElementById('bio');
-	  			var y = document.getElementById('bd');
-	  			var z = document.getElementById('community');
-	  			var a = document.getElementById('phone');
+	  			var a = document.getElementById('bio');
+	  			var b = document.getElementById('bd');
+	  			var c = document.getElementById('community');
+	  			var d = document.getElementById('phone');
 
 	  			/*display*/
 	  			x.setAttribute("style", "display:inline");
@@ -42,20 +42,20 @@
 
 							<form>
 								<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
-									<ul style="list-style:none;" class="lt-al">
+									<ul id="userbio" style="list-style:none;" class="lt-al">
 										<li>
 											<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
 										</li>
-									</ul>
-									<input id="bio" type="text" class="form-control" name="bio" style="display:none;">
-								</div>
+									</ul>									
+								</div> 
+								<input id="bio" placeholder="Bio" type="text" class="form-control" name="bio" style="display:none;">
 								<hr>
-								<h3 class="blue">
+								<h3 id="birthday" class="blue">
 									<i class="lnr lnr-gift orange">
 									</i> Birthday
 								</h3>
 
-								<input id="bd" type="date" class="form-control" name="bd" style="display:none;">								
+								<input id="bd" placeholder="Birthday" type="date" class="form-control" name="bd" style="display:none;">								
 								<hr>
 								<h3>
 									<span>
@@ -65,20 +65,20 @@
 									<strong>{{ Auth::user()->email }}</strong>
 								</h3>	
 								<hr>
-								<h3>
+								<h3 id="number">
 									
 									<i class="lnr lnr-phone orange">
 									</i>
 									<strong>+256-7xx-xxxx</strong>
 								</h3>
 
-								<input id="phone" class="form-control" type="text" name="phone" style="display:none;">
+								<input id="phone" placeholder="Phone number" class="form-control" type="text" name="phone" style="display:none;">
 								<hr>
-								<h3 >
+								<h3 id="comm">
 									<i class="lnr lnr-pushpin orange">
 									</i> Community
 								</h3>
-								<input id="community" class="form-control" type="text" name="community" style="display:none;">
+								<input id="community" placeholder="Community" class="form-control" type="text" name="community" style="display:none;">
 							</form>
 							<hr>
 							<a href="#">
