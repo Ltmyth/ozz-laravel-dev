@@ -21,10 +21,9 @@
   			z.setAttribute("type", "number");
 
   			/*calculation*/
-  			/*calculation*/
   			var cost = 0;
   			var si = 5000;
-  			var y = x/5000;
+  			var y = x/si;
 	        var bronze = 5000/si;
 	        var silver = 50000/si;
 	        var gold = 250000/si;
@@ -59,7 +58,7 @@
 		@csrf
 		<hr>
 		<label for="phone" >MobileMoney Number</label>
-		<input  placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}" name="phone" minlength="2" required>
+		<input  placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}" name="phone" required>
 		<hr class="container col-lg-8 ">
 		<label for="amount" >UGX Amount</label>
 		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
