@@ -89,8 +89,7 @@
                             <br>
                         </a>
                     </div>
-
-                    @php $user = Auth::user()->name; @endphp                    
+                                      
                     <div class="col-lg-6">
                         <br>
                         <form method="POST" class="w-100">
