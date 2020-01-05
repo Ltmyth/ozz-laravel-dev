@@ -9,11 +9,23 @@
 	  			var c = document.getElementById('community');
 	  			var d = document.getElementById('phone');
 
+	  			var e = document.getElementById('userbio');
+	  			var f = document.getElementById('birthday');
+	  			var g = document.getElementById('comm');
+	  			var h = document.getElementById('number');
+
+	  			// hide
+	  			e.setAttribute("style", "display:none");
+	  			f.setAttribute("style", "display:none");
+	  			g.setAttribute("style", "display:none");
+	  			h.setAttribute("style", "display:none");
+
+
 	  			/*display*/
-	  			x.setAttribute("style", "display:inline");
-	  			y.setAttribute("style", "display:inline");
-	  			z.setAttribute("style", "display:inline");
 	  			a.setAttribute("style", "display:inline");
+	  			b.setAttribute("style", "display:inline");
+	  			c.setAttribute("style", "display:inline");
+	  			d.setAttribute("style", "display:inline");
 	  		}
 		</script>
 
@@ -42,7 +54,7 @@
 
 							<form>
 								<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
-									<ul id="userbio" style="list-style:none;" class="lt-al">
+									<ul id="userbio" style="list-style:none;display: inline;" class="lt-al">
 										<li>
 											<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
 										</li>
@@ -50,7 +62,7 @@
 								</div> 
 								<input id="bio" placeholder="Bio" type="text" class="form-control" name="bio" style="display:none;">
 								<hr>
-								<h3 id="birthday" class="blue">
+								<h3 id="birthday" class="blue" style="display:inline;">
 									<i class="lnr lnr-gift orange">
 									</i> Birthday
 								</h3>
@@ -65,7 +77,7 @@
 									<strong>{{ Auth::user()->email }}</strong>
 								</h3>	
 								<hr>
-								<h3 id="number">
+								<h3 id="number" style="display:inline;">
 									
 									<i class="lnr lnr-phone orange">
 									</i>
@@ -74,7 +86,7 @@
 
 								<input id="phone" placeholder="Phone number" class="form-control" type="text" name="phone" style="display:none;">
 								<hr>
-								<h3 id="comm">
+								<h3 id="comm" style="display:inline;">
 									<i class="lnr lnr-pushpin orange">
 									</i> Community
 								</h3>
