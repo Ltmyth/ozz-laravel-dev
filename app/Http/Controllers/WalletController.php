@@ -84,7 +84,64 @@ class WalletController extends Controller
 
     public function send_stash(Request $request)
     {
-        return redirect('/notification');
+        //validate
+        $this->validate($request,[
+            'user' => 'required',
+            'amount' => 'required'
+        ]);
+
+
+        $amount = $request->input('amount');
+        $receiver =$request->input('user');
+        $cost =$request->input('cost');
+
+        $user = Auth::user()->name;
+        $user_id = Auth::user()->id;
+        $user_wallet = Auth::user()->wallet_id;
+        $user_balance = Auth::user()->wallet_balance;
+        $transaction_id = "#4s5t9"."S".time()."6H0hz";
+
+        $check = User::where('name', $receiver)->first();
+        
+        if ($check != "" && $user_balance>$cost) {
+            //record
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Airtime ";
+            $ts->save();
+
+            //update wallets
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
+            $updt->save();
+
+            $updt1 = User::find($check->id);
+            $updt1->wallet_balance = $user_balance+$cost;
+            $updt1->save();
+
+            //notify
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You successfully sent ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
+            $not->save();
+
+            $not1 = new messages();
+            $not1->author = "Notification";
+            $not1->receiver = $user;
+            $not1->message = "You received ".$cost." "."ohz from ".$user." with transaction id:"." ".$transaction_id;
+            $not1->save();
+
+            $message ='Processed';         
+
+            return redirect('/notification')->with('message', $message);
+        }
+        else{
+
+        }
+        
     }
 
     /**
