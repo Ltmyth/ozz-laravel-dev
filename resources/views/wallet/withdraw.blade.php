@@ -73,4 +73,22 @@
 		<input type="submit" class="btn btn-lg btn-success" value="Send">
 		<br><br>
 	</form>
+
+	<hr>
+    <div class="container col-lg-8 nlight-bg">
+      <u><h3 class="blue lt-al"><strong>NOTE</strong></h3></u>
+      <ul style="list-style-type:circle;"  class="lt-al">
+        <h4>
+          <li>
+            <strong>The top up process may take up to 3 minutes to complete.</strong>
+          </li>
+          <li>
+            <strong>The withdrawal <b class="red">cost</b> includes service and withdrawal fees.</strong>
+          </li>
+          <li>
+            <strong><i class="green">Better methods coming soon.</i></strong>
+          </li> 
+        </h4>                 
+      </ul>      			  		
+  	</div>		
 @endsection

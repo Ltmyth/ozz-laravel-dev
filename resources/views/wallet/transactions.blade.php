@@ -36,11 +36,7 @@
   	</script>
     <!-- right side -->
     <div class="container">
-      <a href="/wallet/">
-        <button class="btn btn-lg btn-info">
-          <small>Back</small>
-        </button>
-      </a>
+      
     	<h1 class="center" style="font-size:350%;">
     		<i class="lnr lnr-briefcase orange">
     			<strong>Transactions Ledger</strong>
