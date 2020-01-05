@@ -1,6 +1,22 @@
 @extends('layouts.layout')
 @auth	
 	@section('content')
+		<script type="text/javascript">
+			function edit(){
+	  			/*get fields*/
+	  			var x = document.getElementById('bio');
+	  			var y = document.getElementById('bd');
+	  			var z = document.getElementById('community');
+	  			var a = document.getElementById('phone');
+
+	  			/*display*/
+	  			x.setAttribute("style", "display:inline");
+	  			y.setAttribute("style", "display:inline");
+	  			z.setAttribute("style", "display:inline");
+	  			a.setAttribute("style", "display:inline");
+	  		}
+		</script>
+
 		<div class="container">
 			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
 				<div class="row col-lg-8">
@@ -19,43 +35,51 @@
 							<hr>
 							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="green_dot"></span></h2>
 							<hr>
-								<button class="btn btn-md btn-outline-success ct-al">
+								<button class="btn btn-md btn-outline-success ct-al" onclick="edit()" >
 									<i class="lnr lnr-pencil"></i><b class="green" >Edit Profile</b>
 								</button>
 							<hr>
-							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
-								<ul style="list-style:none;" class="lt-al">
-									<li>
-										<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
-									</li>
-								</ul>
-							</div>
-							<hr>
-							<h3 class="blue">
-								<i class="lnr lnr-gift orange">
-								</i> Birthday
-							</h3>
-							
-							<hr>
-							<h3>
-								<span>
-									<i class="lnr lnr-envelope orange">
+
+							<form>
+								<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
+									<ul style="list-style:none;" class="lt-al">
+										<li>
+											<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
+										</li>
+									</ul>
+									<input id="bio" type="text" class="form-control" name="bio" style="display:none;">
+								</div>
+								<hr>
+								<h3 class="blue">
+									<i class="lnr lnr-gift orange">
+									</i> Birthday
+								</h3>
+
+								<input id="bd" type="date" class="form-control" name="bd" style="display:none;">								
+								<hr>
+								<h3>
+									<span>
+										<i class="lnr lnr-envelope orange">
+										</i>
+									</span>
+									<strong>{{ Auth::user()->email }}</strong>
+								</h3>	
+								<hr>
+								<h3>
+									
+									<i class="lnr lnr-phone orange">
 									</i>
-								</span>
-								<strong>{{ Auth::user()->email }}</strong>
-							</h3>
-							<hr>
-							<h3>
-								
-								<i class="lnr lnr-phone orange">
-								</i>
-								<strong>+256-7xx-xxxx</strong>
-							</h3>
-							<hr>
-							<h3 >
-								<i class="lnr lnr-pushpin orange">
-								</i> Community
-							</h3>
+									<strong>+256-7xx-xxxx</strong>
+								</h3>
+
+								<input id="phone" class="form-control" type="text" name="phone" style="display:none;">
+								<hr>
+								<h3 >
+									<i class="lnr lnr-pushpin orange">
+									</i> Community
+								</h3>
+								<input id="community" class="form-control" type="text" name="community" style="display:none;">
+							</form>
 							<hr>
 							<a href="#">
 								<button class="btn btn-md btn-default">
@@ -63,23 +87,14 @@
 										Change Password
 									</big>
 								</button>	
-							</a>
+							</a><!-- 
 							<br><br>
 							<a href="#">
 								<button class="btn btn-md btn-outline-danger">
 									<i class="glyphicon glyphicon-cog"></i>
 									<big>Privacy Settings</big>
 								</button>
-							</a>				
-							<br><br>
-							<a href="#">
-								<button class="btn btn-lg btn-warning">
-									<i class="glyphicon glyphicon-briefcase black"></i>
-									<strong>
-										Payments
-									</strong>
-								</button>	
-							</a>
+							</a>	 -->
 						</div>
 					</div>
 				</div>	
