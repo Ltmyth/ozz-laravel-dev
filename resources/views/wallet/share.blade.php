@@ -30,10 +30,8 @@
   		}
   	</script>
 
-    <!-- right side -->
-	<i class="lnr lnr-briefcase w-10 orange"></i>	
 	<br><br>
-	<h2><strong> Share Stash</strong></h2>
+	<h2><span class="lnr lnr-briefcase orange"></span><strong> Share Stash</strong></h2>
 	<form>
 		<hr>
 		<label>

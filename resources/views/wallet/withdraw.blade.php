@@ -30,15 +30,15 @@
 	        var gold = 250000/si;
 	        var vibranium = 1000000/si;
 
-	        if(y==bronze && y<silver){
+	        if(y=bronze && y<silver){
 	          var charge = bronze*0.1;
 	          cost = bronze+charge;
 	        }
-	        else if(y==silver && y<gold){
+	        else if(y=silver && y<gold){
 	          var charge = silver*0.2;
 	          cost = silver+charge;
 	        }
-	        else if(y==gold && y<vibranium){
+	        else if(y=gold && y<vibranium){
 	          var charge = gold*0.04;
 	          cost = gold+charge;
 	        }
@@ -53,10 +53,8 @@
   		}
   	</script>
 
-    <!-- right side -->
-	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
-	<h2><strong> Withdraw Stash</strong></h2>
+	<h2><span class="lnr lnr-briefcase green"></span><strong> Withdraw Stash</strong></h2>
 	<form>
 		<hr>
 		<input  placeholder="MobileMoney number" class="container col-lg-8 form-control"
