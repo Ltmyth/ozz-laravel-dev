@@ -58,6 +58,7 @@
 	<form action="/withdraw" method="POST">
 		@csrf
 		<hr>
+		<label for="phone" >MobileMoney Number</label>
 		<input  placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}" name="phone" minlength="2" required>
 		<hr class="container col-lg-8 ">
 		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
