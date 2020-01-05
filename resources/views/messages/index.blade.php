@@ -147,5 +147,5 @@
                 </div>
                 @endif
             </div>            
-    <br><br>
+    <div class="section-gap"></div>
 @endsection
