@@ -139,7 +139,7 @@ class WalletController extends Controller
             return redirect('/notification')->with('message', $message);
         }
         elseif($check == "") {
-            $error_message = "User not yet on theohz";
+            $error_message = $receiver." is not yet on theohz";
             return redirect('/share_stash')->with('error_message', $error_message);
         }
     }
