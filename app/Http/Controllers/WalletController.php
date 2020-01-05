@@ -140,7 +140,7 @@ class WalletController extends Controller
         }
         elseif($check == "") {
             $error_message = "User not yet on theohz";
-            return view('wallet.share')->with('error_message', $error_message);
+            return redirect('/share_stash')->with('error_message', $error_message);
         }
     }
 
