@@ -80,10 +80,10 @@
       <ul style="list-style-type:circle;"  class="lt-al">
         <h4>
           <li>
-            <strong>The top up process may take up to 3 minutes to complete.</strong>
+            <strong>The withdrawal up process may take up to 3 minutes to complete.</strong>
           </li>
           <li>
-            <strong>The withdrawal <b class="red">cost</b> includes service and withdrawal fees.</strong>
+            <strong>The <b class="red">cost</b> includes service and withdrawal fees.</strong>
           </li>
           <li>
             <strong><i class="green">Better methods coming soon.</i></strong>
