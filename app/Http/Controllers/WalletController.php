@@ -57,7 +57,7 @@ class WalletController extends Controller
         $transaction_id = "#4m5m9"."W".time()."6D0hz";
 
         
-        if ($user_balance>$cost && $cost>1) {
+        if ($user_balance>$cost) {
             //record
             $ts = new Transactions();
             $ts->transaction = $transaction_id;
