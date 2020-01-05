@@ -85,11 +85,13 @@
                             <br>
                         @endauth
                             <img src="/imgs/ozz-app.png" class="w-60" alt="" title="" />
-                            <h3 class="white">the<b class="orange">oh</b><b>z</b></h3>
+                            <h3 class="white">
+                                the<i><b class="orange">oh</b><b>z</b></i>
+                            </h3>
                             <br>
                         </a>
                     </div>
-                                      
+
                     <div class="col-lg-6">
                         <br>
                         <form method="POST" class="w-100">
