@@ -135,7 +135,7 @@ class MessageController extends Controller
         $user_wallet = Auth::user()->wallet_id;
         $user_balance = Auth::user()->wallet_balance;
         $name = $request->input('receiver');
-        $transaction_id = "#4s5m9"."_".time()."s6_0hz";
+        $transaction_id = "#4s5m9"."L".time()."s6M0hz";
 
         /*$username = "Mat";
         $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";*/
@@ -184,7 +184,7 @@ class MessageController extends Controller
         $not = new messages();
         $not->author = "Notification";
         $not->receiver = $user;
-        $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
+        $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
         $not->save();
 
         //update wallet

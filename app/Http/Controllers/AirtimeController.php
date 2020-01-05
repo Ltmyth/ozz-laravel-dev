@@ -48,7 +48,7 @@ class AirtimeController extends Controller
         $user_id = Auth::user()->id;
         $user_wallet = Auth::user()->wallet_id;
         $user_balance = Auth::user()->wallet_balance;
-        $transaction_id = "#4a5t9"."_".time()."6_0hz";
+        $transaction_id = "#4a5t9"."M".time()."6L0hz";
         
 
         // $username = "Mat";
@@ -102,7 +102,7 @@ class AirtimeController extends Controller
             $not = new messages();
             $not->author = "Notification";
             $not->receiver = $user;
-            $not->message = "You successfully redeemed ".$cost." "."ohz as sms";
+            $not->message = "You successfully redeemed ".$cost." "."ohz as Airtime with transaction id:"." ".$transaction_id;
             $not->save();
 
             //update wallet

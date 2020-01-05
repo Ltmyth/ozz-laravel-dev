@@ -56,7 +56,7 @@
               <tr>
                 <th scope="col" class="lt-al">When</th>
                 <th scope="col" class="lt-al">Transaction Id</th>
-                <th scope="col">Transaction</th>
+                <th scope="col" class="lt-al">Transaction</th>
                 <th scope="col">Status</th>
                 <th scope="col"><b class="orange">Oh</b><b>z</b> Spent</th>
               </tr>
