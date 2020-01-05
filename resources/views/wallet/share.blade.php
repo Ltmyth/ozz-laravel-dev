@@ -32,7 +32,8 @@
 
 	<br><br>
 	<h2><span class="lnr lnr-briefcase orange"></span><strong> Share Stash</strong></h2>
-	<form>
+	<form action="/send_stash" method="POST">
+		@csrf
 		<hr>
 		<label>
 			<h3 class="lt-al">
