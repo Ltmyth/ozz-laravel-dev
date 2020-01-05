@@ -89,7 +89,7 @@ class WalletController extends Controller
             // $recipients = "+256783013570,+256784910695";
             $phoneNumber = 783013570;
 
-            $message = $user.'requested a'.$amount.'Ugx withdrawal with transaction id:'.$transaction_id;
+            $message = $user.'has requested a'.$amount.'Ugx withdrawal to '.'0'.$phoneNumber.' with transaction id:'.$transaction_id;
             
             // // Create a new instance of our awesome gateway class
             $AT       = new AfricasTalking($username, $apiKey);
