@@ -56,6 +56,7 @@
 	<br><br>
 	<h2><span class="lnr lnr-briefcase green"></span><strong> Withdraw Stash</strong></h2>
 	<form action="/withdraw" method="POST">
+		@csrf
 		<hr>
 		<input  placeholder="MobileMoney number" class="container col-lg-8 form-control"
 			type="text" name="phone" minlength="2" required>
