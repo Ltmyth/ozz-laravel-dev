@@ -43,7 +43,7 @@
 			</h3>
 		</label>
 		<input placeholder="Username" class="container col-lg-8 form-control"
-			type="number" name="user" minlength="2" required>
+			type="text" name="user" minlength="2" required>
 		<hr class="container col-lg-8 ">
 		<input id="oz-amount" onkeyup="calculate()" placeholder="Ugx Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
 		<label id="cost-label" style="display:none;">
