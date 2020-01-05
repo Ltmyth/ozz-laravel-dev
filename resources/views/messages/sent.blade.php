@@ -13,7 +13,7 @@
     	}
     </style>
     
-    <div class="container">
+    <div class="table-responsive">
         <
       	<h2>Sent SMS History</h2>
       	<hr>
