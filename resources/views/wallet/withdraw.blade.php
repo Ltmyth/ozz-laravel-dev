@@ -80,7 +80,7 @@
       <ul style="list-style-type:circle;"  class="lt-al">
         <h4>
           <li>
-            <strong>The withdrawal up process may take up to 3 minutes to complete.</strong>
+            <strong>The<b class="orange">oh</b><b>z</b> withdrawal process may take up to 3 minutes to verify and complete.</strong>
           </li>
           <li>
             <strong>The <b class="red">cost</b> includes service and withdrawal fees.</strong>
