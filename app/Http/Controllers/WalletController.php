@@ -7,6 +7,7 @@ use Auth;
 use App\User;
 use App\messages;
 use App\Transactions;
+use AfricasTalking\SDK\AfricasTalking;
 
 class WalletController extends Controller
 {
@@ -55,26 +56,92 @@ class WalletController extends Controller
         $user_balance = Auth::user()->wallet_balance;
         $transaction_id = "#4m5m9"."W".time()."6D0hz";
 
-        //record
-        $ts = new Transactions();
-        $ts->transaction = $transaction_id;
-        $ts->amount = $cost." "."ohz";
-        $ts->wallet = $user_wallet;
-        $ts->description = " Airtime ";
-        $ts->save();
+        
+        if ($user_balance>$cost && $cost>1) {
+            //record
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Stash ";
+            $ts->save();
 
-        //notify
-        $not = new messages();
-        $not->author = "Notification";
-        $not->receiver = $user;
-        $not->message = "You successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
-        $not->save();
+            //update wallets
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
+            $updt->save();
 
-        //update wallet
-        $updt = User::find($user_id);
-        $updt->wallet_balance = $user_balance-$cost;
-        $updt->save();
-        return redirect('/notification');
+            //notify
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You have successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
+            $not->save();
+
+            /*$username = "Mat";
+            $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";*/
+            
+            $username = "sandbox";
+            $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+            
+            // Specify the numbers that you want to send to in a comma-separated list
+            // Please ensure you include the country code (+254 for Kenya in this case)
+            // $recipients = "+256783013570,+256784910695";
+            $phoneNumber = 783013570;
+
+            $message = $user.'requested a'.$amount.'Ugx withdrawal with transaction id:'.$transaction_id;
+            
+            // // Create a new instance of our awesome gateway class
+            $AT       = new AfricasTalking($username, $apiKey);
+            // Get one of the services
+            $sms = $AT->sms();
+
+            // Use the service
+            $result   = $sms->send([
+                'to'      => '+256'.$phoneNumber,
+                'message' => $message
+            ]);
+
+            print_r($result);
+
+            //persist
+            $txt = new Sms();
+            $txt->author = "theohz";
+            $txt->receiver = "Latim Mark";
+            $txt->phone = '0'.$phoneNumber;
+            $cost = 0.01;
+            $txt->cost = $cost;
+            $txt->message = $message;
+            $txt->save();
+
+
+            //record
+            $ts1 = new Transactions();
+            $ts1->transaction = $transaction_id;
+            $ts1->amount = $cost." "."ohz";
+            $ts1->wallet = $user_wallet;
+            $ts1->description = " Sms ";
+            $ts1->save();
+
+            //notify
+            $not1 = new messages();
+            $not1->author = "Notification";
+            $not1->receiver = $user;
+            $not1->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+            $not1->save();
+
+            $message ='Processed';         
+
+            return redirect('/notification')->with('message', $message);
+        }
+        elseif($user_balance<$cost) {
+            $error_message = "Your ohz balance is too low";
+            return redirect('/withdraw_stash')->with('error_message', $error_message);
+        }
+        elseif($cost<1) {
+            $error_message = "Request is below minimum limit";
+            return redirect('/withdraw_stash')->with('error_message', $error_message);
+        }
     }
 
     public function share_stash()
@@ -109,7 +176,7 @@ class WalletController extends Controller
             $ts->transaction = $transaction_id;
             $ts->amount = $cost." "."ohz";
             $ts->wallet = $user_wallet;
-            $ts->description = " Airtime ";
+            $ts->description = " Stash ";
             $ts->save();
 
             //update wallets
