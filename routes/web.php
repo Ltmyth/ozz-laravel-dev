@@ -170,6 +170,10 @@ Route::get('cleaning','CleaningController@index');
 //wallet
 Route::get('wallet','WalletController@index');
 Route::get('transactions','WalletController@transactions');
+Route::post('/send_stash','WalletController@send_stash');
+Route::get('/share_stash','WalletController@share_stash');
+Route::post('/withdraw','WalletController@withdraw');
+Route::get('/withdraw_stash','WalletController@withdraw_stash');
 
 
 

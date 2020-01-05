@@ -87,13 +87,13 @@
                 <br>
                 <div class="row col-lg-12">
                   <div class="col-md-8 container">
-                    <a href="#">
+                    <a href="/withdraw_stash">
                       <button class="btn btn-md btn-outline-success">
                         Withdraw
                       </button>
                     </a>
 
-                    <a href="#">
+                    <a href="/share_stash">
                       <button class="btn btn-md btn-outline-info">
                         Share stash
                       </button>
