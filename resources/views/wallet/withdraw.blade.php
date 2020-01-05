@@ -60,9 +60,8 @@
 		<hr>
 		<input  placeholder="MobileMoney number" class="container col-lg-8 form-control"
 			type="text" name="phone" minlength="2" required>
-		<hr>
+		<hr class="container col-lg-8 ">
 		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
-		<hr>
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>

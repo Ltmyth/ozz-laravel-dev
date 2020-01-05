@@ -41,13 +41,13 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
+	<i class="lnr lnr-briefcase w-10 orange"></i>	
 	<br><br>
 	<h2><strong> Share Stash</strong></h2>
 	<form>
 		<hr>
 		<label>
-			<h3>
+			<h3 class="lt-al">
 				<strong>
 					<b>The<i><b class="orange">0h</b></i>z</b> Username
 				</strong>
@@ -55,9 +55,8 @@
 		</label>
 		<input placeholder="Username" class="container col-lg-8 form-control"
 			type="number" name="user" minlength="2" required>
-		<hr>
+		<hr class="container col-lg-8 ">
 		<input id="oz-amount" onkeyup="calculate()" placeholder="Ugx Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
-		<hr>
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
@@ -66,7 +65,7 @@
 			</h3>
 		</label>
 		<input id="cost-value" placeholder="0hz" type="hidden" class="form-control container col-lg-8" name="cost">
-		<hr>
+		<hr class="container col-lg-8 ">
 		<input type="submit" class="btn btn-lg btn-success" value="Send">
 		<br><br>
 	</form>
