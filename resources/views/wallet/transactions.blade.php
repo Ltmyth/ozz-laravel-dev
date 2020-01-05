@@ -56,7 +56,6 @@
               <tr>
                 <th scope="col" class="lt-al">When</th>
                 <th scope="col" class="lt-al">Transaction Id</th>
-                <th scope="col" class="lt-al"> Wallet </th>
                 <th scope="col">Transaction</th>
                 <th scope="col">Status</th>
                 <th scope="col"><b class="orange">Oh</b><b>z</b> Spent</th>
@@ -75,10 +74,6 @@
                                 <h4 class="blue"><strong>{{ $t->transaction }}</strong></h4> 
                             </td>
                             
-                            <td>
-                                <h4 class="blue"><strong>#{{ $t->wallet }}</strong></h4> 
-                            </td>
-
                             <td>
                                 <h3 class="blue"><strong>{{ $t->description }}</strong></h3> 
                             </td>
