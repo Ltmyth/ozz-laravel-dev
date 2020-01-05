@@ -21,7 +21,7 @@
 
   			/*calculation*/
   			var cost = 0;
-  			cost = x /1000;
+  			cost = x /5000;
 
   			/*set value*/
   			z.setAttribute("value", cost);
@@ -38,7 +38,7 @@
 		@csrf
 		<input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}$" name="phone" maxlength="10" required>
 		<hr class="container col-lg-8">
-		<input id="at-amount" onkeyup="calculate()" placeholder="amount" class="container col-lg-8 form-control" type="number" name="amount" required>
+		<input id="at-amount" onkeyup="calculate()" placeholder="Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
 		<br>
 		<label id="cost-label" style="display:none;">
 			<h3>
@@ -47,7 +47,7 @@
 				</strong>
 			</h3>
 		</label>
-		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-8" name="cost">
+		<input id="cost-value" placeholder="0hz" type="hidden" class="form-control container col-lg-8" name="cost">
 		<hr class="container col-lg-8">
 		<input type="submit" class="btn btn-lg btn-success" value="Buy">
 		<br><br>
