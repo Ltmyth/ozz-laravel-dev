@@ -6,7 +6,7 @@
             <!-- Favicon-->
             <link rel="shortcut icon" href="img/fav.png">
             <!-- Author Meta -->
-            <meta name="author" content="ltmyth">
+            <meta name="author" content="Latim Mark">
             <!-- meta character set -->
             <meta charset="UTF-8">
             <!-- Site Title -->
@@ -89,7 +89,8 @@
                             <br>
                         </a>
                     </div>
-                    
+
+                    @php $user = Auth::user()->name; @endphp                    
                     <div class="col-lg-6">
                         <br>
                         <form method="POST" class="w-100">
@@ -128,15 +129,14 @@
                             <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-envelope orange"></i> 
-                                    Messages <span class="orange_dot">
-                                    </span>
+                                    Messages 
                                 </button>
                             </a>   
 
                             <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-briefcase orange"></i>
-                                    Wallet <span class="orange_dot"></span>
+                                    Wallet <!-- <span class="orange_dot"></span> -->
                                 </button>
                             </a>
                             
@@ -144,7 +144,7 @@
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
                                     <i class="lnr lnr-user orange"></i>
-                                    Settings <span class="orange_dot"></span>
+                                    Settings <!-- <span class="orange_dot"></span> -->
                                 </button>
                             </a>           
                             

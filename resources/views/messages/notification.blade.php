@@ -45,7 +45,7 @@
                         @foreach ($nots as $not)
 
                             <tr class="lt-al">
-                                <td>
+                                <td colspan="2">
                                     <h5>{{ $not->created_at->diffForHumans() }}</h5>
                                 </td>
 
