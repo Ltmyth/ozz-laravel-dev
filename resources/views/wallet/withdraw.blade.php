@@ -23,24 +23,25 @@
   			/*calculation*/
   			/*calculation*/
   			var cost = 0;
-	        var bronze = 5000;
-	        var silver = 50000;
-	        var gold = 250000;
-	        var vibranium = 1000000;
+  			var y = x/5000;
+	        var bronze = 5000/5000;
+	        var silver = 50000/5000;
+	        var gold = 250000/5000;
+	        var vibranium = 1000000/5000;
 
-	        if(x==bronze){
+	        if(y==bronze){
 	          var charge = bronze*0.1;
 	          cost = bronze+charge;
 	        }
-	        else if(x<silver){
+	        else if(y<silver){
 	          var charge = silver*0.2;
 	          cost = silver+charge;
 	        }
-	        else if(x>=silver){
+	        else if(y>=silver){
 	          var charge = gold*0.04;
 	          cost = gold+charge;
 	        }
-	        else if(x>=vibranium){
+	        else if(y>=vibranium){
 	          var charge = vibranium*0.04;
 	          cost = vibranium + charge;
 	        }
@@ -55,18 +56,17 @@
 	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Withdraw Stash</strong></h2>
-	<hr>
 	<form>
-		<hr class="container col-lg-8">
+		<hr>
 		<input  placeholder="MobileMoney number" class="container col-lg-8 form-control"
 			type="text" name="phone" minlength="2" required>
-
-		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="center form-control" type="number" name="amount" required>
-		<br>
+		<hr>
+		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
+		<hr>
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
-					Total <b class="orange"></b><b>z</b> Charge
+					Total <b class="orange">oh</b><b>z</b> Charge
 				</strong>
 			</h3>
 		</label>
