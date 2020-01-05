@@ -29,7 +29,11 @@
 	        var gold = 250000/si;
 	        var vibranium = 1000000/si;
 
-	        if(y=bronze && y<silver){
+	        if(y>0){
+	          var charge = bronze*0.1;
+	          cost = bronze+charge;
+	        }
+	        else if(y=bronze && y<silver){
 	          var charge = bronze*0.1;
 	          cost = bronze+charge;
 	        }
