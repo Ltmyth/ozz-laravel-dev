@@ -1,18 +1,8 @@
 @extends('layouts.layout')
 @section('content')
 	<style type="text/css">
-		#active{
-			background-color: white;
-		}
-
 		
-		
-		#at{
-			background-color:#34ace0;
-			pointer-events: none;
-		}
-
-		#at_btn{
+		#wallet_btn{
 			background-color:orange;
 			color:white;
 			pointer-events: none;
