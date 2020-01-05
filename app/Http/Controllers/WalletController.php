@@ -142,6 +142,10 @@ class WalletController extends Controller
             $error_message = $receiver." is not yet on theohz";
             return redirect('/share_stash')->with('error_message', $error_message);
         }
+        elseif($user_balance<$cost) {
+            $error_message = "Your ohz balance is too low";
+            return redirect('/share_stash')->with('error_message', $error_message);
+        }
     }
 
     /**
