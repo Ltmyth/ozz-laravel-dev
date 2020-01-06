@@ -5,8 +5,7 @@
 			@if($profile)
 			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
 				<div class="row col-lg-8">
-					<img 
-						id="profile-pic"  
+					<img   
 						class="theme w-30 mt-20 blue-bg br-50" 
 						src="{{ asset('/imgs/ozz-app.png') }}"
 						alt="Avator" 

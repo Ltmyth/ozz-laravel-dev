@@ -14,47 +14,70 @@
 	  			/*get fields*/
 	  			var a = document.getElementById('bio');
 	  			// var bd = document.getElementById('bd');
-	  			var c = document.getElementById('community');
+	  			var community = document.getElementById('community');
 	  			var d = document.getElementById('phone');
 
 	  			var e = document.getElementById('userbio');
 	  			// var birthday = document.getElementById('birthday');
-	  			var g = document.getElementById('comm');
+	  			var comm = document.getElementById('comm');
 	  			var h = document.getElementById('number');
-	  			var i = document.getElementById('save');
+	  			var save = document.getElementById('save');
+	  			var cancel = document.getElementById('cancel_btn');
 	  			var k = document.getElementById('edit');
 
 	  			// hide
-	  			e.setAttribute("style", "display:none");
-	  			// birthday.setAttribute("style", "display:none");
-	  			g.setAttribute("style", "display:none");
-	  			h.setAttribute("style", "display:none");
-	  			k.setAttribute("style", "display:none");	  			
+	  			if(a.style.display == 'none'){
+	  				e.setAttribute("style", "display:none");
+		  			// birthday.setAttribute("style", "display:none");
+		  			comm.setAttribute("style", "display:none");
+		  			h.setAttribute("style", "display:none");
+		  			k.setAttribute("style", "display:none");	  			
 
 
-	  			/*display*/
-	  			a.setAttribute("style", "display:inline");
-	  			// bd.setAttribute("style", "display:inline");
-	  			c.setAttribute("style", "display:inline");
-	  			d.setAttribute("style", "display:inline");
-	  			i.setAttribute("style", "display:inline");
-	  			i.setAttribute("type", "submit");
+		  			/*display*/
+		  			a.setAttribute("style", "display:inline");
+		  			cancel.setAttribute("style", "display:inline");
+		  			// bd.setAttribute("style", "display:inline");
+		  			community.setAttribute("style", "display:inline");
+		  			d.setAttribute("style", "display:inline");
+		  			save.setAttribute("style", "display:inline");
+		  			save.setAttribute("type", "submit");
+	  			} else{
+	  				e.setAttribute("style", "display:inline");
+		  			// birthday.setAttribute("style", "display:none");
+		  			comm.setAttribute("style", "display:inline");
+		  			h.setAttribute("style", "display:inline");
+		  			k.setAttribute("style", "display:inline");	  			
+
+
+		  			/*display*/
+		  			a.setAttribute("style", "display:none");
+		  			// bd.setAttribute("style", "display:inline");
+		  			community.setAttribute("style", "display:none");
+		  			cancel.setAttribute("style", "display:none");
+		  			d.setAttribute("style", "display:none");
+		  			save.setAttribute("style", "display:none");
+	  			}	  			
 	  		}
 
 	  		function pwd(){
-	  			var pwd = document.getElementById('change_pwd');
-	  			var change_pwd = document.getElementById('change');
+	  			var pwdform = document.getElementById('change_pwd');
+	  			var change_pwd_btn = document.getElementById('change');
 
-	  			pwd.setAttribute("style", "display:inline");
-	  			change_pwd.setAttribute("style", "display:none");
+	  			if(pwdform.style.display == 'none'){
+		  			pwdform.setAttribute("style", "display:inline");
+		  			change_pwd_btn.setAttribute("style", "display:none");
+		  		} else {
+		  			pwdform.setAttribute("style", "display:none");
+		  			change_pwd_btn.setAttribute("style", "display:inline");
+		  		}
 	  		}
 		</script>
 
 		<div class="container">
 			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
 				<div class="row col-lg-8">
-					<img 
-						id="profile-pic"  
+					<img  
 						class="theme w-30 mt-20 blue-bg br-50" 
 						src="{{ asset('/imgs/ozz-app.png') }}"
 						alt="Avator" 
@@ -119,6 +142,8 @@
 								<input id="community" placeholder="{{ Auth::user()->community }}" class="form-control" type="text" name="community" style="display:none;">
 								<hr>
 								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input id="cancel_btn" onclick="edit()"  class="btn btn-md btn-danger" style="display:none;" value="Cancel">
 							</form>
 							<hr>
 							<button id="change" onclick="pwd()" class="btn btn-md btn-outline-danger" style="display:inline;" >
@@ -137,6 +162,8 @@
 								<input name="pwd" class="form-control" required="required" type="password" id="password_confirm" oninput="check(this)" />
 								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
+								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input onclick="pwd()" class="btn btn-md btn-danger" value="Cancel">
 							</form>
 							<!-- 
 							<br><br>

@@ -8,7 +8,7 @@
     @endauth
     <!-- 
         <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
-        <strong class="white"><h3>the<b class="orange">oh</b><i><b>z</b></i></h3></strong>
+        <strong class="white"><h3>the<b class="orange">oh</b><b><i>z</i></b></i></h3></strong>
     </a>
     <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
@@ -23,7 +23,7 @@
                 </button>
             </form>
 
-            <a  href="/messages" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+            <a  href="/messages/{{Auth::user()}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-envelope orange"></i> Inbox
                     <span class="badge badge-danger"></span>
