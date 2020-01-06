@@ -29,7 +29,7 @@
 							<hr>
 							<a href="/inbox/{{ $profile->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<button class="btn btn-lg btn-success  mr-20">
-									<i class="glyphicon glyphicon-send ">DM|Message</i>
+									<i class="glyphicon glyphicon-send ">Message</i>
 								</button>
 							</a>
 

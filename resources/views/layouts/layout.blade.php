@@ -169,6 +169,16 @@
                 </div>
                 <hr class="container col-lg-9">
                 @endauth
+
+                @auth
+                <div id="sidenav" class="nlight-bg br-10 col-lg-10 container  sidenav">
+                    @if(Auth::user()->name == 'Theohz chatbot')
+                        <big>Admin</big>
+                    @endif  
+                </div>
+                <hr class="container col-lg-9">
+                @endauth
+
                 @guest
                 <br>
                     <div id="progress" class="container col-lg-11 nlight-bg br-10">

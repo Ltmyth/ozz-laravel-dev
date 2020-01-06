@@ -16,6 +16,15 @@ class Handler extends ExceptionHandler
         //
     ];
 
+    use Illuminate\Auth\AuthenticationException;
+
+    protected function unauthenticated($request, AuthenticationException $exception)
+    {
+        return $request->expectsJson()
+                    ? response()->json(['message' => $exception->getMessage()], 401)
+                    : redirect()->guest(route('login'));
+    }
+
     /**
      * A list of the inputs that are never flashed for validation exceptions.
      *
@@ -49,3 +58,5 @@ class Handler extends ExceptionHandler
         return parent::render($request, $exception);
     }
 }
+
+

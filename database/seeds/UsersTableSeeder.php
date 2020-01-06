@@ -22,9 +22,9 @@ class UsersTableSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
-            'name' => 'theohz chatbot',
+            'name' => 'theohz',
             'email' => 'theohzbot@gmail.com',
-            'password' => bcrypt('@1nile5nation'),
+            'password' => bcrypt('@1ohznation'),
         ]);
 
         // DB::table('messages')->insert([
