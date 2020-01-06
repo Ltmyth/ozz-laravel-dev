@@ -39,7 +39,7 @@
             
 
             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning white mt-20 mb-20">
+                <button class="btn btn-md btn-outline-warning px100 white mt-20 mb-20">
                     <i class="lnr lnr-user orange"></i> Settings
                     <span class="badge badge-danger"></span>
                 </button>
