@@ -8,6 +8,7 @@ use App\Post;
 use App\User;
 use App\messages;
 use App\Share;
+use Auth;
 use Redirect,Response;
 
 class ShareController extends Controller
@@ -36,6 +37,8 @@ class ShareController extends Controller
 
         $x = $request->shared_by;
         $y = User::find($x);
+
+        $user = Auth::user()->name;
 
         $post = Post::find($request->post_id);
         $post->shares = $post->shares+1 ;
