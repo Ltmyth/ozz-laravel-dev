@@ -66,7 +66,7 @@
 					<div class="row">
 						<div class="container lt-al">
 							<hr>
-							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="green_dot"></span></h2>
+							<h2><strong>{{ Auth::user()->name }}</strong><span class="green_dot"></span></h2>
 							<hr>
 								<button id="edit" class="btn btn-md btn-outline-success ct-al" onclick="edit()" style="display:inline;">
 									<i class="lnr lnr-pencil"></i><b class="green" >Edit Profile</b>
@@ -91,7 +91,7 @@
 
 								<input id="bd" placeholder="Birthday" type="date" class="form-control" name="bd" style="display:none;">			 -->					
 								<hr>
-								<h3>
+								<h3 class="blue">
 									<span>
 										<i class="lnr lnr-envelope orange">
 										</i>
@@ -101,7 +101,7 @@
 								<hr>
 								<p>Phone number</p>
 								<br>
-								<h3 id="number" style="display:inline;">
+								<h3 id="number" class="blue" style="display:inline;">
 									
 									<i class="lnr lnr-phone orange">
 									</i>
@@ -112,7 +112,7 @@
 								<hr>
 								<p>Community/Location</p>
 								<br>
-								<h3 id="comm" style="display:inline;">
+								<h3 id="comm" class="blue" style="display:inline;">
 									<i class="lnr lnr-pushpin orange">
 									</i> {{ Auth::user()->community }}
 								</h3>								
