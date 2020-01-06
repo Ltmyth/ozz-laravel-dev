@@ -41,9 +41,8 @@ class People extends Controller
         $user_community = Auth::user()->community;
         $user_phone = Auth::user()->phone;
         $user_pwd = Auth::user()->password;
-        // $old_pwd_hash = Hash::check($old_pwd, $user_pwd);
-        $old_pwd_hash = TRUE;
-
+        $old_pwd_hash = Hash::check($old_pwd, $user_pwd);
+        
         //update
         $updt = User::find($user_id);
         if ($bio == "") {
