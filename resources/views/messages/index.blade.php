@@ -69,7 +69,7 @@
             <form enctype="multipart/form-data" method="POST" action="/send_message">
                 @csrf
                 <div class="container col-lg-5">
-                    <input placeholder="To" class="form-control" type="text" name="receiver">
+                    <input placeholder="To" min="2" class="form-control" type="text" name="receiver" autofocus required>
                     <input type="hidden" value="{{ Auth::user()->name }}" name="author">
                     <hr>
                     <textarea placeholder="Message" style="width:100%;" type="textarea" class="form-control" name="message" value="post"autofocus required></textarea>

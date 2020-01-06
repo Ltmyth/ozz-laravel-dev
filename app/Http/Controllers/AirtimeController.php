@@ -54,8 +54,7 @@ class AirtimeController extends Controller
             $error_message = "Please add your mobile in your settings above";
             return redirect('at-self')->with('error_message', $error_message);
         }
-
-        if ($receiver != "0" && $user_balance>$cost && $cost>0.01){
+        elseif ($receiver != "0" && $user_balance>$cost && $cost>0.01){
             $username = "Mat";
             $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
             

@@ -57,7 +57,7 @@
                 </button>
             </a>
             <div class="dropdown-menu blue-bg white" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="dropdown-item" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">People</b> <span class="badge badge-danger"></span>
                 </a>
 

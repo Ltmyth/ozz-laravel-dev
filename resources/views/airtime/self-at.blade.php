@@ -51,7 +51,7 @@
 				</strong>
 			</h3>
 		</label>
-		<input id="cost-value" placeholder="0hz" name="cost" type="hidden" class="form-control container col-lg-6">
+		<input id="cost-value" placeholder="0hz" name="cost" type="hidden" class="form-control container col-lg-6" disabled>
 		<br><br>
 		<input type="submit" class="btn btn-lg btn-success" value="Buy">
 		<hr class="container col-lg-5"> 
