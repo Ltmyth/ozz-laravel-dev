@@ -63,19 +63,19 @@
 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="dropdown-item" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Airtime</b>
                 </a>
 
                 <div class="dropdown-divider"></div>
                 
-                <a class="dropdown-item" href="accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="dropdown-item" href="/accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Accommodation</b>
                 </a>
 
                 <div class="dropdown-divider"></div>
 
-                <a class="dropdown-item" href="food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="dropdown-item" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Food</b>
                 </a>
                 
