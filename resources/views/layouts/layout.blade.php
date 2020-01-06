@@ -252,10 +252,10 @@
                             <h3 class="white"><strong>Contact Us</strong></h3>
                             <div class="footer-social d-flex align-items-center fx-20">
                                 <h3>
-                                    <a href="#"><i class="fa fa-phone"></i></a>
-                                    <a href="#"><i class="fa fa-envelope"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <i class="fa fa-phone"></i> +256783013570
+                                    <i class="fa fa-envelope"></i> theohzbot@gmail.com</a>
+                                    <!-- <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a> -->
                                 </h3>
                             </div>
                         </div>
