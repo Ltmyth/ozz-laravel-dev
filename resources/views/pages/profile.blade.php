@@ -102,9 +102,9 @@
 								<hr>
 								<h3 id="comm" style="display:inline;">
 									<i class="lnr lnr-pushpin orange">
-									</i> Community
+									</i> {{ Auth::user()->community }}
 								</h3>
-								<input id="community" placeholder="Community" class="form-control" type="text" name="community" style="display:none;">
+								<input id="community" placeholder="Community/Location" class="form-control" type="text" name="community" style="display:none;">
 								<hr>
 								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
 							</form>
