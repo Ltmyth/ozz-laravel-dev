@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Like;
+use App\User;
+use App\messages;
 use Redirect,Response;
 
 class LikeController extends Controller
@@ -36,7 +38,14 @@ class LikeController extends Controller
         $post->likes = $post->likes+1 ;
         $post->save();
 
-        $posts = Post::orderBy('id','desc')->get();
+        $liker = User::find($request->liked_by;);
+        //notify
+        $not1 = new messages();
+        $not1->author = "Notification";
+        $not1->receiver = $post->author;
+        $not1->message = ." "."liked your post";
+        $not1->save();
+
 
         return redirect('home');
 
