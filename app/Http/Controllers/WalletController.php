@@ -120,7 +120,7 @@ class WalletController extends Controller
             $ts1 = new Transactions();
             $ts1->transaction = $transaction_id;
             $ts1->amount = $cost." "."ohz";
-            $ts1->wallet = $user_wallet;
+            $ts1->wallet = "#".$user;
             $ts1->description = " Sms ";
             $ts1->save();
 
