@@ -171,7 +171,7 @@
                 @endauth
 
                 @auth
-                <div id="sidenav" class="nlight-bg br-10 col-lg-10 container  sidenav">
+                <div class="nlight-bg br-10 mt-30 col-lg-10 container">
                     @if(Auth::user()->name == 'Theohz chatbot')
                         <big>Admin</big>
                     @endif  
