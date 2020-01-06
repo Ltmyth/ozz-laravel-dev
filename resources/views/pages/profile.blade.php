@@ -14,7 +14,6 @@
 	  			var g = document.getElementById('comm');
 	  			var h = document.getElementById('number');
 	  			var i = document.getElementById('save');
-	  			var j = document.getElementById('change');
 	  			var k = document.getElementById('edit');
 
 	  			// hide
@@ -22,7 +21,6 @@
 	  			f.setAttribute("style", "display:none");
 	  			g.setAttribute("style", "display:none");
 	  			h.setAttribute("style", "display:none");
-	  			j.setAttribute("style", "display:none");
 	  			k.setAttribute("style", "display:none");	  			
 
 
@@ -37,7 +35,10 @@
 
 	  		function pwd(){
 	  			var pwd = document.getElementById('change_pwd');
+	  			var j = document.getElementById('change');
+
 	  			pwd.setAttribute("style", "display:inline");
+	  			j.setAttribute("style", "display:none");
 	  		}
 		</script>
 
