@@ -52,7 +52,7 @@ class ShareController extends Controller
         $not->save();
 
         $message = "Post Shared"
-        return redirect('/home')->with('message', $message);
+        return redirect('home')->with('message', $message);
     }
     
     
