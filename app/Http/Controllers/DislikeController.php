@@ -48,7 +48,7 @@ class dislikeController extends Controller
         $not->message = "Someone disliked a post of yours";
         $not->save();
 
-        return view('home');
+        return redirect('home');
     }
     
     

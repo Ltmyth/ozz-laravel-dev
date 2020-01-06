@@ -194,13 +194,13 @@ class WalletController extends Controller
                 $not = new messages();
                 $not->author = "Notification";
                 $not->receiver = $user;
-                $not->message = "You have successfully topped up ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
+                $not->message = "You successfully topped up ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
                 $not->save();
 
                 $not1 = new messages();
                 $not1->author = "Notification";
                 $not1->receiver = $receiver;
-                $not1->message = "You have successfully topped up ".$cost." "."ohz with transaction id:"." ".$transaction_id;
+                $not1->message = "You successfully topped up ".$cost." "."ohz with transaction id:"." ".$transaction_id;
                 $not1->save();
 
                 $message ='Topped up';         

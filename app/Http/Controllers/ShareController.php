@@ -41,13 +41,14 @@ class ShareController extends Controller
         $post->shares = $post->shares+1 ;
         $post->save();
 
-        // $not = new messages();
-        // $not->author = "Notification";
-        // $not->receiver = $user;
-        // $not->message = $." shared a post of yours";
-        // $not->save();
+        $sharer = User::find($request->shared_by);
+        $not = new messages();
+        $not->author = "Notification";
+        $not->receiver = $user;
+        $not->message = $sharer->name." "." shared a post of yours";
+        $not->save();
 
-        return view('home');
+        return redirect('home');
     }
     
     

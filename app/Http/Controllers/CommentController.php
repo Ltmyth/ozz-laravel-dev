@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Comment;
+
+use App\User;
+use App\messages;
 use Redirect,Response;
 
 class CommentController extends Controller
@@ -44,7 +47,14 @@ class CommentController extends Controller
         $post->comments = $post->comments+1 ;
         $post->save();
 
-        $posts = Post::orderBy('id','desc')->get();
+        $comenter = User::find($request->comment_by);
+        //notify
+        $not1 = new messages();
+        $not1->author = "Notification";
+        $not1->receiver = $post->author;
+        $not1->message = $comenter->name." "."commented on your post";
+        $not1->save();
+
 
         return redirect('/home');
     }
