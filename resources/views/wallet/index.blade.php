@@ -10,47 +10,7 @@
   			pointer-events: none;
   		}
   	</style>
-  	<script type="text/javascript">
-  		function calculate(){
-  			/*get fields*/
-  			var x = document.getElementById('package').value;
-  			var y = document.getElementById('cost-label');
-  			var z = document.getElementById('cost-value');
-        var a = document.getElementById('top_up_message');
-
-  			/*display cost*/
-  			y.setAttribute("style", "display:inline");
-  			z.setAttribute("type", "number");
-        a.setAttribute("style", "display:inline");
-
-  			/*calculation*/
-  			var cost = 0;
-        var bronze = 5000;
-        var silver = 50000;
-        var gold = 250000;
-        var vibranium = 1000000;
-
-        if(x=='bronze'){
-          var charge = bronze*0.2;
-          cost = bronze+charge;
-        }
-        else if(x=='silver'){
-          var charge = silver*0.08;
-          cost = silver+charge;
-        }
-        else if(x=='gold'){
-          var charge = gold*0.04;
-          cost = gold+charge;
-        }
-        else if(x=='vibranium'){
-          var charge = vibranium*0.04;
-          cost = vibranium + charge;
-        }
-  			/*set value*/
-  			z.setAttribute("value", cost);
-
-  		}
-  	</script>
+  	
       <!-- right side -->
       <br>
       	<h1 class="center" style="font-size:350%;">
