@@ -62,11 +62,13 @@
 
 	  		function pwd(){
 	  			var pwdform = document.getElementById('change_pwd');
+	  			var pwdbtn = document.getElementById('submit_pwd');
 	  			var change_pwd_btn = document.getElementById('change');
 
 	  			if(pwdform.style.display == 'none'){
 		  			pwdform.setAttribute("style", "display:inline");
 		  			change_pwd_btn.setAttribute("style", "display:none");
+		  			pwdbtn.setAttribute("type", "submit");
 		  		} else {
 		  			pwdform.setAttribute("style", "display:none");
 		  			change_pwd_btn.setAttribute("style", "display:inline");
@@ -142,7 +144,7 @@
 								<input id="community" placeholder="{{ Auth::user()->community }}" class="form-control" type="text" name="community" style="display:none;">
 								<hr>
 								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
-								&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;
 								<input id="cancel_btn" onclick="edit()"  class="btn btn-md btn-danger" style="display:none;" value="Cancel">
 							</form>
 							<hr>
@@ -161,8 +163,8 @@
 								<p>Confirm New Password:</p>
 								<input name="pwd" class="form-control" required="required" type="password" id="password_confirm" oninput="check(this)" />
 								<hr>
-								<input type="submit" class="btn btn-md btn-success" value="Change">
-								&nbsp;&nbsp;&nbsp;&nbsp;
+								<input id="submit_pwd" class="btn btn-md btn-success" value="Change">
+								&nbsp;&nbsp;
 								<input onclick="pwd()" class="btn btn-md btn-danger" value="Cancel">
 							</form>
 							<!-- 
