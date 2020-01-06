@@ -49,6 +49,12 @@ class AirtimeController extends Controller
         $user_wallet = Auth::user()->wallet_id;
         $user_balance = Auth::user()->wallet_balance;
         $transaction_id = "#4a5t9"."M".time()."6L0hz";
+
+        if ($receiver=="") {
+            $error_message = "Please add your mobile in your settings above";
+            return redirect('/profile')->with('error_message', $error_message);
+        }
+
         
 
         $username = "Mat";

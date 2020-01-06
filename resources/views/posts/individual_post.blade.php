@@ -219,7 +219,7 @@
 	@else
 		<div class="container">
 			<a href="/home">
-				<button class="btn btn-lg btn-outline-info">Post Something</button>
+				<button class="btn btn-lg btn-outline-info">Look for posts</button>
 			</a>
 			<div class="section-gap"></div>
 		</div>

@@ -22,7 +22,7 @@
 							<hr>
 							<a href="/inbox/{{ $profile->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<button class="btn btn-lg btn-success  mr-20">
-									<i class="glyphicon glyphicon-send ">Chat</i>
+									<i class="glyphicon glyphicon-send ">DM|Message</i>
 								</button>
 							</a>
 
@@ -61,7 +61,7 @@
 								<strong>0{{ $profile->phone }}</strong>
 							</h3> -->
 							<hr>
-							<h3 >
+							<h3 class="blue">
 								<i class="lnr lnr-pushpin orange">
 								</i> {{ $profile->community }}
 							</h3>							

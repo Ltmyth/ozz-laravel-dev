@@ -38,8 +38,8 @@
                 <div class="row">
                     <a href="/user/{{ 'Latim Mark' }}">
                         <img 
-                            class="w-20 mr-10 rt" 
-                            src="{{ asset('/imgs/hello_bot.png') }}"
+                            class="w-10 mr-10 rt" 
+                            src="{{ asset('/imgs/ozz-app.png') }}"
                             alt="Avator" 
                         >
                     </a>
@@ -64,8 +64,8 @@
                         <div class="row">
                             <a href="/user/{{ $online->name }}">
                                 <img 
-                                    class="w-20 mr-10 rt" 
-                                    src="{{ asset('/imgs/hello_bot.png') }}"
+                                    class="w-10 mr-10 rt" 
+                                    src="{{ asset('/imgs/ozz-app.png') }}"
                                     alt="Avator" 
                                 >
                             </a>
