@@ -218,7 +218,7 @@
                 @endguest
 
                 @if( session()->has('message') )
-                    <div id="success_message" style="margin-top:3%;" class="container col-lg-5 alert alert-primary " role="alert">
+                    <div id="success_message mt-20"  class="container col-lg-5 alert alert-primary " role="alert">
                         {{ session()->get('message') }}
                         <strong>Successfully</strong>
                         <br>
@@ -226,7 +226,7 @@
                 @endif 
 
                 @if( session()->has('error_message') )
-                    <div  style="margin-top:3%;" class="container col-lg-5 alert alert-danger " role="alert">
+                    <div   class="container col-lg-5 alert alert-danger mt-20" role="alert">
                         {{ session()->get('error_message') }}
                         <br>
                     </div>

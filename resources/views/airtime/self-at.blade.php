@@ -30,7 +30,8 @@
   	</script>
 
     <!-- right side -->
-	<img class="curve w-10" src="{{ asset('/imgs/phone.png') }}">	
+    <br><br>
+	<img class="curve w-10 mt-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for my phone</strong></h2>
 
