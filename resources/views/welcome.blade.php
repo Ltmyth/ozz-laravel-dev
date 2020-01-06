@@ -219,8 +219,8 @@
                             <ul style="list-style-type:square;" >
                                 <li>Hostels</li>
                                 <li>Appartments</li>
-                                <li>Hotels</li>
-                            </ul>
+                                <!-- <li>Hotels</li>
+ -->                            </ul>
                         </h4>                                            
                     </div>
                 </div>
@@ -241,11 +241,11 @@
                         
                         <h4 class="lt-al black">
                             <p>
-                                Make payments for the<b class="orange">oh</b><b>z</b> services directly from your  wallet/stash to another user's wallet or list of users' wallets <b class="black">free</b> of charge.
+                                Make payments for the<b class="orange">oh</b><b>z</b> services directly from your  wallet/stash to another user's wallet <b class="black">free</b> of charge.
                             </p>
 
                             <p>
-                                You may also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low withdrawal charge of 5% on each withdraw transaction that is used to cover infrastructure and transaction costs.
+                                You may also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low service charge on each withdraw transaction that is used to cover infrastructure and transaction costs.
                             </p>
                         </h4>                        
                     </div>

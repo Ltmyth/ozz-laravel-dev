@@ -27,6 +27,11 @@
 	  			c.setAttribute("style", "display:inline");
 	  			d.setAttribute("style", "display:inline");
 	  		}
+
+	  		function pwd{
+	  			var pwd = document.getElementById('change_pwd');
+	  			pwd.setAttribute("style", "display:inline");
+	  		}
 		</script>
 
 		<div class="container">
@@ -91,15 +96,25 @@
 									</i> Community
 								</h3>
 								<input id="community" placeholder="Community" class="form-control" type="text" name="community" style="display:none;">
+								<input type="submit" class="btn btn-md btn-success" value="Save">
 							</form>
 							<hr>
 							<a href="#">
-								<button class="btn btn-md btn-default">
-									<big class='red'>
+								<button onclick="pwd()" class="btn btn-md btn-outline-danger">
+									<big>
 										Change Password
 									</big>
 								</button>	
-							</a><!-- 
+							</a>
+							<form id="change_pwd" style="display:none;">
+								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
+								<hr>
+								<input type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
+								<hr>
+								<input type="password" class="form-control" placeholder="Confirm Password" name="current" required="new">
+								<input type="submit" class="btn btn-md btn-success" value="Change">
+							</form>
+							<!-- 
 							<br><br>
 							<a href="#">
 								<button class="btn btn-md btn-outline-danger">
