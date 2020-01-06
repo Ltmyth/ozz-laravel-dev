@@ -50,12 +50,14 @@ class AirtimeController extends Controller
         $user_balance = Auth::user()->wallet_balance;
         $transaction_id = "#4a5t9"."M".time()."6L0hz";
 
+        $costNumber = 1*$cost;
+
         if ($receiver=="0") {
             $error_message = "Please add your mobile in your settings above";
             return redirect('at-self')->with('error_message', $error_message);
         }
         elseif ($receiver != "0" && $user_balance>$cost){
-            if($cost>0.01) {
+            if($cost >= 0.01) {
                 $username = "Mat";
                 $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
                 
