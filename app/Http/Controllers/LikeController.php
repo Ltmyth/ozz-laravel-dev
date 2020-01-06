@@ -38,7 +38,7 @@ class LikeController extends Controller
         $post->likes = $post->likes+1 ;
         $post->save();
 
-        $liker = User::find($request->liked_by;);
+        $liker = User::find($request->liked_by);
         //notify
         $not1 = new messages();
         $not1->author = "Notification";
