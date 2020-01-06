@@ -210,7 +210,7 @@ class WalletController extends Controller
                 $error_message = $receiver." is not yet on theohz";
                 return redirect('/share_stash')->with('error_message', $error_message);
             }
-        }elseif ($user != 'Theohz chatbot') {
+        }elseif ($user != 'Theohz') {
             if ($check != "" && $user_balance>$cost) {
                 //record
                 $ts = new Transactions();
