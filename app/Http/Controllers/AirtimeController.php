@@ -81,48 +81,55 @@ class AirtimeController extends Controller
                 "currencyCode" => "UGX",
                 "amount"       => $amount
             ]];
+            if ($cost>0.01) {
+                try {
+                    // That's it, hit send and we'll take care of the rest
+                    $results = $airtime->send(["recipients" => $recipients]);
+                    print_r($results);
+                  
+                } catch(Exception $e) {
+                    echo "Error: ".$e->getMessage();
+                }
 
-            try {
-                // That's it, hit send and we'll take care of the rest
-                $results = $airtime->send(["recipients" => $recipients]);
-                print_r($results);
-              
-            } catch(Exception $e) {
-                echo "Error: ".$e->getMessage();
-            }
+                //persit
+                $txt = new Airtime();
+                $txt->sender = $user;
+                $txt->amount = $amount;
+                $txt->receiver = '0'.$phoneNumber;
+                $txt->cost = $cost;
+                $txt->save();
 
-            //persit
-            $txt = new Airtime();
-            $txt->sender = $user;
-            $txt->amount = $amount;
-            $txt->receiver = '0'.$phoneNumber;
-            $txt->cost = $cost;
-            $txt->save();
+                //record
+                $ts = new Transactions();
+                $ts->transaction = $transaction_id;
+                $ts->amount = $cost." "."ohz";
+                $ts->wallet = "user_wallet";
+                $ts->description = " Airtime ";
+                $ts->save();
 
-            //record
-            $ts = new Transactions();
-            $ts->transaction = $transaction_id;
-            $ts->amount = $cost." "."ohz";
-            $ts->wallet = "user_wallet";
-            $ts->description = " Airtime ";
-            $ts->save();
+                //notify
+                $not = new messages();
+                $not->author = "Notification";
+                $not->receiver = $user;
+                $not->message = "You successfully redeemed ".$cost." "."ohz as Airtime with transaction id:"." ".$transaction_id;
+                $not->save();
 
-            //notify
-            $not = new messages();
-            $not->author = "Notification";
-            $not->receiver = $user;
-            $not->message = "You successfully redeemed ".$cost." "."ohz as Airtime with transaction id:"." ".$transaction_id;
-            $not->save();
+                //update wallet
+                $updt = User::find($user_id);
+                $updt->wallet_balance = $user_balance-$cost;
+                $updt->save();
 
-            //update wallet
-            $updt = User::find($user_id);
-            $updt->wallet_balance = $user_balance-$cost;
-            $updt->save();
-            return redirect('sent_airtime');                         
+                $message ='Airtime sent';     
+
+                return redirect('sent_airtime')->with('message', $message);
+            }elseif ($cost<0.01) {
+                $error_message = "Airtime request below lower limit";
+                return redirect('airtime')->with('error_message', $error_message);
+            }                                     
         }
         elseif ($receiver != "0" && $user_balance<$cost ){
             $error_message = "Your ohz balance is too low";
-            return redirect('at-self')->with('error_message', $error_message);
+            return redirect('airtime')->with('error_message', $error_message);
         }        
     }
 

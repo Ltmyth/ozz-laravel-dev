@@ -54,7 +54,7 @@
                         </tr>
                     @endforeach
                 @else
-                    <tr>
+                    <tr class="p-40 br-10">
                         <td colspan="6">
                             <br>
                             <h1 class="ct-al">

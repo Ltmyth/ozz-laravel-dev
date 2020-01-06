@@ -14,26 +14,7 @@
   			pointer-events: none;
   		}
   	</style>
-  	<script type="text/javascript">
-  		function calculte(){
-  			/*get fields*/
-  			var x = document.getElementById('ozz-amount').value;
-  			var y = document.getElementById('cost-label');
-  			var z = document.getElementById('cost-value');
-
-  			/*display cost*/
-  			y.setttribute("style", "display:inline");
-  			z.setttribute("type", "number");
-
-  			/*calcultion*/
-  			var cost = 0;
-  			cost = x * 1000;
-
-  			/*set value*/
-  			z.setttribute("value", cost);
-
-  		}
-  	</script>
+  	
     <!-- right side -->
     <div class="container">
       
@@ -61,7 +42,7 @@
                 @if($ts) 
                     @foreach ($ts as $t)
 
-                        <tr class="lt-al">
+                        <tr class="lt-al p-40 br-10">
                             <td>
                                 <h5>{{ $t->created_at->diffForHumans() }}</h5>
                             </td>
@@ -84,7 +65,7 @@
                         </tr>
                     @endforeach
                 @else
-                    <tr>
+                    <tr class="p-40 br-10">
                         <td colspan="6">
                             <br>
                             <h1 class="ct-al">

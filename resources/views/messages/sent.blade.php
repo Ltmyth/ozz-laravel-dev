@@ -32,7 +32,7 @@
                 @if($texts) 
                     @foreach ($texts as $text)
 
-                        <tr class="lt-al">
+                        <tr class="lt-al p-40 br-10">
                             <td>
                                 <h5>{{ $text->created_at->diffForHumans() }}</h5>
                             </td>
