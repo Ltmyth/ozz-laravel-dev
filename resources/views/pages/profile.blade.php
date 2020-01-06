@@ -2,6 +2,14 @@
 @auth	
 	@section('content')
 		<script type="text/javascript">
+			function check(input) {
+		        if (input.value != document.getElementById('password').value) {
+		            input.setCustomValidity('Password Must be Matching.');
+		        } else {
+		            // input is valid -- reset the error message
+		            input.setCustomValidity('');
+		        }
+		    }
 			function edit(){
 	  			/*get fields*/
 	  			var a = document.getElementById('bio');
@@ -76,13 +84,13 @@
 								</div> 
 								<textarea id="bio" placeholder="Bio" type="text" class="form-control" name="bio" maxlength="100" style="display:none;"></textarea>
 								<hr>
-								<!-- <h3 id="birthday" class="blue" style="display:inline;">
+								<h3 id="birthday" class="blue" style="display:inline;">
 									<i class="lnr lnr-gift orange">
 									</i> Birthday
 								</h3>
 
 								<input id="bd" placeholder="Birthday" type="date" class="form-control" name="bd" style="display:none;">								
-								<hr> -->
+								<hr>
 								<h3>
 									<span>
 										<i class="lnr lnr-envelope orange">
@@ -122,17 +130,7 @@
 								<input id="password" type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
 								<hr>
 								<p>Confirm Password:</p>
-								<input name="pwd" required="required" type="password" id="password_confirm" oninput="check(this)" />
-								<script language='javascript' type='text/javascript'>
-								    function check(input) {
-								        if (input.value != document.getElementById('password').value) {
-								            input.setCustomValidity('Password Must be Matching.');
-								        } else {
-								            // input is valid -- reset the error message
-								            input.setCustomValidity('');
-								        }
-								    }
-								</script>
+								<input name="pwd" class="form-control" required="required" type="password" id="password_confirm" oninput="check(this)" />
 								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
 							</form>

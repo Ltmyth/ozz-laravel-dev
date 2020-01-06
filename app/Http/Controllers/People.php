@@ -81,6 +81,8 @@ class People extends Controller
             }
         }
         $updt->save();
+        $message = "Profile updated";
+        return redirect('/profile')->with('message', $message);
     }
 
 
