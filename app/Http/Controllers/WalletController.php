@@ -69,7 +69,7 @@ class WalletController extends Controller
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
             // $recipients = "+256783013570,+256784910695";
-            $phoneNumber = 1*0783013570;
+            $phoneNumber = 1*'0783013570';
 
             $message = '$user'.'has requested a'.$amount.'Ugx withdrawal to '.'0'.$phoneNumber.' with transaction id:'.$transaction_id;
             
