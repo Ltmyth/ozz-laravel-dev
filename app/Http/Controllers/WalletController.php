@@ -57,7 +57,7 @@ class WalletController extends Controller
         $transaction_id = "#4m5m9"."W".time()."6D0hz";
 
         
-        if ($user_balance>$cost) {
+        if ($user_balance>$cost && $cost>1) {
             //record
             $ts = new Transactions();
             $ts->transaction = $transaction_id;
@@ -134,11 +134,11 @@ class WalletController extends Controller
 
             return redirect('/notification')->with('message', $message);
         }
-        elseif($user_balance<$cost) {
+        elseif($user_balance<$cost && $cost>1) {
             $error_message = "Your ohz balance is too low";
             return redirect('/withdraw_stash')->with('error_message', $error_message);
         }
-        elseif($cost<1) {
+        elseif($user_balance>$cost && $cost<1) {
             $error_message = "Request is below minimum limit";
             return redirect('/withdraw_stash')->with('error_message', $error_message);
         }
@@ -209,7 +209,7 @@ class WalletController extends Controller
             $error_message = $receiver." is not yet on theohz";
             return redirect('/share_stash')->with('error_message', $error_message);
         }
-        elseif($user_balance<$cost) {
+        elseif($check != "" && $user_balance<$cost) {
             $error_message = "Your ohz balance is too low";
             return redirect('/share_stash')->with('error_message', $error_message);
         }

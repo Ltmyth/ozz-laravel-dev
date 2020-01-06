@@ -94,7 +94,7 @@
 									
 									<i class="lnr lnr-phone orange">
 									</i>
-									<strong>+256-7xx-xxxx</strong>
+									<strong>0{{ Auth::user()->phone }}</strong>
 								</h3>
 
 								<input id="phone" placeholder="Phone number" class="form-control" type="text" name="phone" style="display:none;">

@@ -14,7 +14,9 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->string('bio')->after('wallet_id')->default('Bio');
+            $table->string('community')->after('wallet_id')->nullable();
+            $table->string('dob')->after('wallet_id')->nullable();
         });
     }
 
