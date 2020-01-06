@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\User;
-use App\Http\Controllers\Hash;
+use Illuminate\Support\Facades\Hash;
 use Auth;
 use Illuminate\Http\Request;
 class People extends Controller
