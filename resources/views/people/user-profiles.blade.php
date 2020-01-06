@@ -53,12 +53,13 @@
 								</i> Birthday
 							</h3>							
 							<hr> -->
-							<h3>
-								
+							<!-- <p>Mobile</p>
+							<br>
+							<h3>								
 								<i class="lnr lnr-phone orange">
 								</i>
 								<strong>0{{ $profile->phone }}</strong>
-							</h3>
+							</h3> -->
 							<hr>
 							<h3 >
 								<i class="lnr lnr-pushpin orange">

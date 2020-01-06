@@ -99,7 +99,7 @@
 									<strong>{{ Auth::user()->email }}</strong>
 								</h3>	
 								<hr>
-								<p>Phone number</p>
+								<p>Mobile Phone number</p>
 								<br>
 								<h3 id="number" class="blue" style="display:inline;">
 									
