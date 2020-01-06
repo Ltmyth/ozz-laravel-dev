@@ -69,7 +69,7 @@
 				</strong>
 			</h3>
 		</label>
-		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-8" name="cost">
+		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-8" name="cost" disabled>
 		<hr class="container col-lg-8">
 		<input type="submit" class="btn btn-lg btn-success" value="Send">
 		<br><br>
