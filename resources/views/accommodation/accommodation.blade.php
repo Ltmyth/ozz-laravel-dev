@@ -39,14 +39,14 @@
 	<hr>
 	<div class="row pb-30">
 		<div class="col-md-4">
-			<a href="{{ route('ss_hostels') }}">
+			<a href="{{ route('ss_hostels') }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<img class="w-40" src="{{ asset('/imgs/single.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Single Sex</strong></h3>
 			</a>	
 		</div>
 		<div class="col-md-4">
-			<a href="/ms_hostels/">
+			<a href="/ms_hostels/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<img class="w-30" src="{{ asset('/imgs/unisex.png') }}">
 				<br><br>
 				<h3 class="black" ><strong>Mixed Sex</strong></h3>
@@ -54,7 +54,7 @@
 		</div>
 
 		<div class="col-md-3">
-			<a href="/hostels/">
+			<a href="/hostels/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<button class="btn btn-lg btn-default c_thru">
 					<i style="font-size:75px;" class="lnr lnr-chevron-right-circle"></i>
 					<br>
@@ -72,7 +72,7 @@
 	<div class="row pb-30">		
 		<br><br>
 		<div class="col-md-4">
-			<a href="/sb_appartments/">
+			<a href="/sb_appartments/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<img class="w-80" src="{{ asset('/imgs/single_appartment.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Single room</strong></h3>
@@ -80,7 +80,7 @@
 		</div>
 
 		<div class="col-md-4">
-			<a href="/db_appartments/">
+			<a href="/db_appartments/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<img class="w-50" src="{{ asset('/imgs/double_appartment.png') }}">	
 				<br><br>
 				<h3 class="black"><strong>Double or more rooms</strong></h3>
@@ -88,7 +88,7 @@
 		</div>
 
 		<div class="col-md-3">
-			<a href="/all_appartments/">
+			<a href="/all_appartments/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<button class="btn btn-lg btn-default c_thru">
 					<i style="font-size:75px;" class="lnr lnr-chevron-right-circle"></i>
 					<br>

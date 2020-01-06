@@ -102,7 +102,7 @@
                         <div class="row bb">
                             <div class="col-lg-2 w-10">
                                 <div class="row">
-                                    <a href="/inbox/{{ $text->author }}">
+                                    <a href="/inbox/{{ $text->author }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                         <img 
                                             class="w-60 mr-10 rt" 
                                             src="{{ asset('/imgs/hello_bot.png') }}"
@@ -114,7 +114,7 @@
                             </div>
                             <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
                                 <div class="row bb">
-                                    <a href="/inbox/{{ $text->author }}">
+                                    <a href="/inbox/{{ $text->author }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                         <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
                                     </a>
                                     &nbsp; &nbsp;
@@ -122,7 +122,7 @@
                                 </div>
 
                                 <div class="row container lt-al blbr-10 trbr-10 light-bg brbr-10 ">
-                                    <a href="/inbox/{{ $text->author }}">
+                                    <a href="/inbox/{{ $text->author }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                         <h3 class="white">  
                                             <strong>
                                                 <p>{{ $text->message }}</p>

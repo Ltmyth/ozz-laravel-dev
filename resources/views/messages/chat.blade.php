@@ -36,7 +36,7 @@
         <div class="row bb bt"> 
             <div class="col-lg-5 w-5">
                 <div class="row">
-                    <a href="/user/{{ 'Latim Mark' }}">
+                    <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <img 
                             class="w-10 mr-10 rt" 
                             src="{{ asset('/imgs/ozz-app.png') }}"
@@ -48,7 +48,7 @@
             </div>
             <div class="col-lg-7 lt-al">
                 <div class="row">
-                    <a href="/user/{{ 'Latim Mark' }}">
+                    <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <h3 class="blue"><strong>{{ 'Latim Mark' }}</strong>
                     </a><span class="green_dot"></span></h3> 
                 </div>
@@ -62,7 +62,7 @@
                 <div class="row bb bt"> 
                     <div class="col-lg-5 w-5">
                         <div class="row">
-                            <a href="/user/{{ $online->name }}">
+                            <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <img 
                                     class="w-10 mr-10 rt" 
                                     src="{{ asset('/imgs/ozz-app.png') }}"
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col-lg-7 lt-al">
                         <div class="row">
-                            <a href="/user/{{ $online->name }}">
+                            <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <h3 class="blue"><strong>{{ $online->name }} </strong>
                             </a><span class="green_dot"></span></h3> 
                         </div>

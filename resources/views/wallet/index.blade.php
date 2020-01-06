@@ -87,19 +87,19 @@
                 <br>
                 <div class="row col-lg-12">
                   <div class="col-md-8 container">
-                    <a href="/withdraw_stash">
+                    <a href="/withdraw_stash"  onclick="javascript:document.getElementById('preloader').style.display='block';" >
                       <button class="btn btn-md btn-outline-success">
                         Withdraw
                       </button>
                     </a>
 
-                    <a href="/share_stash">
+                    <a href="/share_stash"  onclick="javascript:document.getElementById('preloader').style.display='block';" >
                       <button class="btn btn-md btn-outline-info">
                         Share stash
                       </button>
                     </a>
 
-                    <a href="/transactions/">
+                    <a href="/transactions/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                       <button class="btn btn-md btn-outline-danger">
                         Transactions ledger
                       </button>

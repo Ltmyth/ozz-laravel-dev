@@ -24,7 +24,7 @@
 	<br><br>
 	<h2><b>Airtime Services</b></h2>
 	<hr>
-        <a href="/sent_airtime">
+        <a href="/sent_airtime"  onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button class="btn btn-lg btn-primary">View History</button>
         </a>
 	<hr class="container col-lg-5">
@@ -32,7 +32,7 @@
 	<hr class="container col-lg-5">
 	<ul style="list-style:none;">
 		<li>
-			<a href="/at-self/">
+			<a href="/at-self/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<button class="btn btn-lg btn-outline-success px100">
 					Self
 				</button>
@@ -40,7 +40,7 @@
 		</li>
 		<hr class="container col-lg-5">
 		<li>
-			<a href="/at-other/">
+			<a href="/at-other/"  onclick="javascript:document.getElementById('preloader').style.display='block';">
 				<button class="btn btn-lg btn-outline-warning px100">
 					Other
 				</button>
@@ -49,7 +49,7 @@
 		<hr class="container col-lg-5">
 		<li>
 			<a href="/at-others/">
-				<button class="btn btn-lg btn-outline-danger px100" disabled>
+				<button class="btn btn-lg btn-outline-danger px100"  disabled>
 					Others	
 				</button>
 			</a>
