@@ -54,75 +54,77 @@ class AirtimeController extends Controller
             $error_message = "Please add your mobile in your settings above";
             return redirect('at-self')->with('error_message', $error_message);
         }
-        elseif ($receiver != "0" && $user_balance>$cost && $cost>0.01){
-            $username = "Mat";
-            $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
-            
-            /*$username = "sandbox";
-            $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";*/
-            
-            // Specify the numbers that you want to send to in a comma-separated list
-            // Please ensure you include the country code (+254 for Kenya in this case)
-            // $recipients = "+256783013570,+256784910695";
+        elseif ($receiver != "0" && $user_balance>$cost){
+            if ($cost>0.01)) {
+                $username = "Mat";
+                $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+                
+                /*$username = "sandbox";
+                $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";*/
+                
+                // Specify the numbers that you want to send to in a comma-separated list
+                // Please ensure you include the country code (+254 for Kenya in this case)
+                // $recipients = "+256783013570,+256784910695";
 
-            // // Create a new instance of our awesome gateway class
-            $AT = new AfricasTalking($username, $apiKey);
-            
-            // Get one of the services
-            $airtime = $AT->airtime();
+                // // Create a new instance of our awesome gateway class
+                $AT = new AfricasTalking($username, $apiKey);
+                
+                // Get one of the services
+                $airtime = $AT->airtime();
 
-            $currencyCode = "UGX" ;
-            $phoneNumber = 1*$receiver;
+                $currencyCode = "UGX" ;
+                $phoneNumber = 1*$receiver;
 
-            // Set the phone number, currency code and amount in the format below
-            $recipients = [[
-                "phoneNumber"  => "+256".$phoneNumber,
-                "currencyCode" => "UGX",
-                "amount"       => $amount
-            ]];
+                // Set the phone number, currency code and amount in the format below
+                $recipients = [[
+                    "phoneNumber"  => "+256".$phoneNumber,
+                    "currencyCode" => "UGX",
+                    "amount"       => $amount
+                ]];
 
-            try {
-                // That's it, hit send and we'll take care of the rest
-                $results = $airtime->send(["recipients" => $recipients]);
-                print_r($results);
+                try {
+                    // That's it, hit send and we'll take care of the rest
+                    $results = $airtime->send(["recipients" => $recipients]);
+                    print_r($results);
 
-                //persit
-                $txt = new Airtime();
-                $txt->sender = $user;
-                $txt->amount = $amount;
-                $txt->receiver = '0'.$phoneNumber;
-                $txt->cost = $cost;
-                $txt->save();
+                    //persit
+                    $txt = new Airtime();
+                    $txt->sender = $user;
+                    $txt->amount = $amount;
+                    $txt->receiver = '0'.$phoneNumber;
+                    $txt->cost = $cost;
+                    $txt->save();
 
-                //record
-                $ts = new Transactions();
-                $ts->transaction = $transaction_id;
-                $ts->amount = $cost." "."ohz";
-                $ts->wallet = "user_wallet";
-                $ts->description = " Airtime ";
-                $ts->save();
+                    //record
+                    $ts = new Transactions();
+                    $ts->transaction = $transaction_id;
+                    $ts->amount = $cost." "."ohz";
+                    $ts->wallet = "user_wallet";
+                    $ts->description = " Airtime ";
+                    $ts->save();
 
-                //notify
-                $not = new messages();
-                $not->author = "Notification";
-                $not->receiver = $user;
-                $not->message = "You successfully redeemed ".$cost." "."ohz as Airtime with transaction id:"." ".$transaction_id;
-                $not->save();
+                    //notify
+                    $not = new messages();
+                    $not->author = "Notification";
+                    $not->receiver = $user;
+                    $not->message = "You successfully redeemed ".$cost." "."ohz as Airtime with transaction id:"." ".$transaction_id;
+                    $not->save();
 
-                //update wallet
-                $updt = User::find($user_id);
-                $updt->wallet_balance = $user_balance-$cost;
-                $updt->save();
-            } catch(Exception $e) {
-                echo "Error: ".$e->getMessage();
-            }
-            return redirect('sent_airtime');               
+                    //update wallet
+                    $updt = User::find($user_id);
+                    $updt->wallet_balance = $user_balance-$cost;
+                    $updt->save();
+                } catch(Exception $e) {
+                    echo "Error: ".$e->getMessage();
+                }
+                return redirect('sent_airtime');  
+            }elseif ($cost<0.01)) {
+                $error_message = "Request is below lower limit";
+                return redirect('at-self')->with('error_message', $error_message);
+            }                         
         }
-        elseif ($receiver != "0" && $user_balance<$cost && $cost>0.01){
+        elseif ($receiver != "0" && $user_balance<$cost ){
             $error_message = "Your ohz balance is too low";
-            return redirect('at-self')->with('error_message', $error_message);
-        }  elseif ($receiver != "0" && $user_balance>$cost && $cost<0.01){
-            $error_message = "Request is below lower limit";
             return redirect('at-self')->with('error_message', $error_message);
         }        
     }
