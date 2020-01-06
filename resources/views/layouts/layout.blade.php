@@ -86,7 +86,7 @@
                         @endauth
                             <img src="/imgs/ozz-app.png" class="w-60" alt="" title="" />
                             <h3 class="white">
-                                the<i><b class="orange">oh</b><b>z</b></i>
+                                the<b class="orange">oh</b><i><b>z</b></i>
                             </h3>
                             <br>
                         </a>
