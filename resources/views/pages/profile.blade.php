@@ -5,7 +5,7 @@
 			function edit(){
 	  			/*get fields*/
 	  			var a = document.getElementById('bio');
-	  			var b = document.getElementById('bd');
+	  			// var b = document.getElementById('bd');
 	  			var c = document.getElementById('community');
 	  			var d = document.getElementById('phone');
 
@@ -26,7 +26,7 @@
 
 	  			/*display*/
 	  			a.setAttribute("style", "display:inline");
-	  			b.setAttribute("style", "display:inline");
+	  			// b.setAttribute("style", "display:inline");
 	  			c.setAttribute("style", "display:inline");
 	  			d.setAttribute("style", "display:inline");
 	  			i.setAttribute("style", "display:inline");
@@ -119,9 +119,20 @@
 								@csrf
 								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
 								<hr>
-								<input type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
+								<input id="password" type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
 								<hr>
-								<input type="password" class="form-control" placeholder="Confirm Password" name="pwd" required="new">
+								<p>Confirm Password:</p>
+								<input name="pwd" required="required" type="password" id="password_confirm" oninput="check(this)" />
+								<script language='javascript' type='text/javascript'>
+								    function check(input) {
+								        if (input.value != document.getElementById('password').value) {
+								            input.setCustomValidity('Password Must be Matching.');
+								        } else {
+								            // input is valid -- reset the error message
+								            input.setCustomValidity('');
+								        }
+								    }
+								</script>
 								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
 							</form>

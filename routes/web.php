@@ -214,7 +214,7 @@ Route::get('cl_profile','People@cl_profile');
 //user wall or landing page
 Route::get('/user/{name}','People@show_user');
 // update profile
-Route::post('/update','People@update');
+Route::post('/update','People@update_profile');
 
 
 

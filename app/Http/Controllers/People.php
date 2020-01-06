@@ -23,7 +23,7 @@ class People extends Controller
         return view('people.cleaner-profile');
     }
 
-    public function update(Request $request)
+    public function update_profile(Request $request)
     {
         //input   
         $bio = $request->input('bio');
