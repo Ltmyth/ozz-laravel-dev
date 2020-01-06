@@ -173,7 +173,7 @@
                 @auth
                 <div class="nlight-bg br-10 mt-30 col-lg-10 container">
                     @if(Auth::user()->name == 'Theohz chatbot')
-                        <big>Admin</big>
+                        <button class="btn btn-lg btn-primary"><big>Admin</big></button>
                     @endif  
                 </div>
                 <hr class="container col-lg-9">
