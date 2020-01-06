@@ -57,7 +57,7 @@
 								
 								<i class="lnr lnr-phone orange">
 								</i>
-								<strong>{{ $profile->phone }}</strong>
+								<strong>0{{ $profile->phone }}</strong>
 							</h3>
 							<hr>
 							<h3 >
