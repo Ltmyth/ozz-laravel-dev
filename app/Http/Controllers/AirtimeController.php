@@ -57,7 +57,7 @@ class AirtimeController extends Controller
             return redirect('at-self')->with('error_message', $error_message);
         }
         elseif ($receiver != "0" && $user_balance>$cost){
-            if($cost >= 0.01) {
+            if($costNumber >= 0.01){
                 $username = "Mat";
                 $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
                 
