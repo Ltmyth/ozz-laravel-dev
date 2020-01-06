@@ -32,6 +32,30 @@
     </div>
 
     <hr>
+    <div class="container">
+        <div class="row bb bt"> 
+            <div class="col-lg-5 w-5">
+                <div class="row">
+                    <a href="/user/{{ 'Latim Mark' }}">
+                        <img 
+                            class="w-20 mr-10 rt" 
+                            src="{{ asset('/imgs/hello_bot.png') }}"
+                            alt="Avator" 
+                        >
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-lg-7 lt-al">
+                <div class="row">
+                    <a href="/user/{{ 'Latim Mark' }}">
+                        <h3 class="blue"><strong>{{ 'Latim Mark' }}</strong>
+                    </a><span class="green_dot"></span></h3> 
+                </div>
+            </div>
+        </div>                
+    </div>
+    <hr>
     @if($onlines)
         @foreach ($onlines as $online)
             <div class="container">
