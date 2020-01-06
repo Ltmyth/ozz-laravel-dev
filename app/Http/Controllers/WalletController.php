@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Auth;
 use App\User;
 use App\messages;
+use App\Sms;
 use App\Transactions;
 use AfricasTalking\SDK\AfricasTalking;
 
@@ -58,26 +59,7 @@ class WalletController extends Controller
 
         
         if ($user_balance>$cost && $cost>1) {
-            //record
-            $ts = new Transactions();
-            $ts->transaction = $transaction_id;
-            $ts->amount = $cost." "."ohz";
-            $ts->wallet = $user_wallet;
-            $ts->description = " Stash ";
-            $ts->save();
-
-            //update wallets
-            $updt = User::find($user_id);
-            $updt->wallet_balance = $user_balance-$cost;
-            $updt->save();
-
-            //notify
-            $not = new messages();
-            $not->author = "Notification";
-            $not->receiver = $user;
-            $not->message = "You successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
-            $not->save();
-
+            
             $username = "Mat";
             $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
             
@@ -103,6 +85,25 @@ class WalletController extends Controller
             ]);
 
             print_r($result);
+            //record
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Stash ";
+            $ts->save();
+
+            //update wallets
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
+            $updt->save();
+
+            //notify
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
+            $not->save();
 
             //persist
             $txt = new Sms();
