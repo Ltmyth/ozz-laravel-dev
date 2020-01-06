@@ -13,7 +13,7 @@
     	}
     </style>
     
-    <div class="container">
+    <div class="table-responsive">
         <
       	<h2>Sent Airtime History</h2>
       	<hr>
@@ -27,7 +27,7 @@
                     <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="p-40 br-10">
                 @if($ats) 
                     @foreach ($ats as $at)
 
@@ -54,7 +54,7 @@
                         </tr>
                     @endforeach
                 @else
-                    <tr class="p-40 br-10">
+                    <tr>
                         <td colspan="6">
                             <br>
                             <h1 class="ct-al">
