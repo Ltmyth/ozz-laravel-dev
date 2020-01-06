@@ -65,7 +65,8 @@
 								</button>
 							<hr>
 
-							<form>
+							<form action="/update" method="POST">
+								@csrf
 								<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
 									<ul id="userbio" style="list-style:none;display: inline;" class="lt-al">
 										<li>
@@ -75,13 +76,13 @@
 								</div> 
 								<textarea id="bio" placeholder="Bio" type="text" class="form-control" name="bio" maxlength="100" style="display:none;"></textarea>
 								<hr>
-								<h3 id="birthday" class="blue" style="display:inline;">
+								<!-- <h3 id="birthday" class="blue" style="display:inline;">
 									<i class="lnr lnr-gift orange">
 									</i> Birthday
 								</h3>
 
 								<input id="bd" placeholder="Birthday" type="date" class="form-control" name="bd" style="display:none;">								
-								<hr>
+								<hr> -->
 								<h3>
 									<span>
 										<i class="lnr lnr-envelope orange">
@@ -114,12 +115,13 @@
 								</big>
 							</button>
 							<hr>
-							<form id="change_pwd" style="display:none;">
+							<form id="change_pwd" action="/update" method="POST" style="display:none;">
+								@csrf
 								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
 								<hr>
 								<input type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
 								<hr>
-								<input type="password" class="form-control" placeholder="Confirm Password" name="current" required="new">
+								<input type="password" class="form-control" placeholder="Confirm Password" name="pwd" required="new">
 								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
 							</form>

@@ -35,7 +35,7 @@
 							<div class="row pl-30 pt-20 blbr-10 brbr-10 light-bg">
 								<ul style="list-style:none;" class="lt-al">
 									<li>
-										<h4 class="white"><big><i><p>Some bio</p></i></big></h4>
+										<h4 class="white"><big><i><p>{{ $profile->bio }}</p></i></big></h4>
 									</li>
 								</ul>
 							</div>
@@ -47,22 +47,22 @@
 								</span>
 								<strong>{{ $profile->email }}</strong>
 							</h3>
-							<hr> -->
+							<hr> --><!-- 
 							<h3 class="blue">
 								<i class="lnr lnr-gift orange">
 								</i> Birthday
 							</h3>							
-							<hr>
+							<hr> -->
 							<h3>
 								
 								<i class="lnr lnr-phone orange">
 								</i>
-								<strong>+256-7xx-xxxx</strong>
+								<strong>{{ $profile->phone }}</strong>
 							</h3>
 							<hr>
 							<h3 >
 								<i class="lnr lnr-pushpin orange">
-								</i> Community
+								</i> {{ $profile->community }}
 							</h3>							
 						</div>
 					</div>

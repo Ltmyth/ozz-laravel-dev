@@ -16,68 +16,92 @@ class People extends Controller
         $user_profile = User::where('name', $name)->first();
         return view('people.user-profiles')->with('profile', $user_profile);
     }
-     public function cl_profile()
+
+    public function cl_profile()
     {
         //
         return view('people.cleaner-profile');
     }
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+
+    public function update(Request $request)
     {
-        //
+        //input   
+        $bio = $request->input('bio');
+        $phone =$request->input('number');
+        $dob = $request->input('bd');
+        $community = $request->input('community');
+        $old_pwd = $request->input('current');
+        $old_pwd_hash = bcrypt($old_pwd);
+        $new_pwd = $request->input('pwd');
+        //records
+        $user = Auth::user()->name;
+        $user_id = Auth::user()->id;
+        $user_bio = Auth::user()->bio;
+        $user_bd = Auth::user()->dob;
+        $user_community = Auth::user()->community;
+        $user_phone = Auth::user()->phone;
+        $user_pwd = Auth::user()->password;
+
+        //update
+        $updt = User::find($user_id);
+        if ($bio == "") {
+            $updt->bio = $user_bio;
+        }elseif ($bio != "") {
+            $updt->bio = $bio;
+        }
+
+        if ($phone == "") {
+            $updt->phone = $user_phone;
+        }elseif ($phone != "") {
+            $phonenumber = 1*phone;
+            $updt->phone = "0".$phonenumber;
+        }
+
+        // if ($dob == "") {
+        //     $updt->dob = $user_bd;
+        // }elseif ($dob != "") {
+        //     $updt->dob = $dob;
+        // }
+
+        if ($community == "") {
+            $updt->community = $user_community;
+        }elseif ($community != "") {
+            $updt->community = $community;
+        }
+
+        if ($old_pwd == "") {
+            $updt->password = $user_pwd;
+        }elseif ($pwd != "") {
+            if ($old_pwd_hash = $user_pwd) {
+                $updt->password = $new_pwd;   
+            }elseif ($old_pwd_hash != $user_pwd) {
+                $error_message = "Wrong password entered";
+                return redirect('/profile')->with('error_message', $error_message);
+            }
+        }
+        $updt->save();
     }
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
+
     public function show($id)
-    {  //
+    {  
         $user = User::find($id);
         return view('posts.showpost')->with('post',$post);
     }
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
+
     public function edit($id)
     {
         //
     }
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+    
+
     public function update(Request $request, $id)
     {
         //
     }
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
+
+
     public function destroy($id)
     {
         //
