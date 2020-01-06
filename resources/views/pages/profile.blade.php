@@ -99,13 +99,12 @@
 								<input type="submit" class="btn btn-md btn-success" value="Save">
 							</form>
 							<hr>
-							<a href="#">
-								<button onclick="pwd()" class="btn btn-md btn-outline-danger">
-									<big>
-										Change Password
-									</big>
-								</button>	
-							</a>
+							<button onclick="pwd()" class="btn btn-md btn-outline-danger">
+								<big>
+									Change Password
+								</big>
+							</button>
+							
 							<form id="change_pwd" style="display:none;">
 								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
 								<hr>
