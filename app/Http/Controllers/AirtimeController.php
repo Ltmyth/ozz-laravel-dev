@@ -52,7 +52,7 @@ class AirtimeController extends Controller
 
         if ($receiver=="") {
             $error_message = "Please add your mobile in your settings above";
-            return redirect('/profile')->with('error_message', $error_message);
+            return redirect('at-self')->with('error_message', $error_message);
         }
 
         if ($receiver != "" && $user_balance>$cost){
@@ -121,7 +121,7 @@ class AirtimeController extends Controller
             return redirect('sent_airtime');               
         }elseif ($receiver != "" && $user_balance<$cost){
             $error_message = "Your ohz balance is too low";
-            return redirect('/buy_self')->with('error_message', $error_message);
+            return redirect('at-self')->with('error_message', $error_message);
         }        
     }
 
