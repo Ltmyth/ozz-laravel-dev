@@ -1,6 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 use App\User;
+use App\Http\Controllers\Hash;
 use Auth;
 use Illuminate\Http\Request;
 class People extends Controller
@@ -42,7 +43,7 @@ class People extends Controller
         $user_phone = Auth::user()->phone;
         $user_pwd = Auth::user()->password;
         $old_pwd_hash = Hash::check($old_pwd, $user_pwd);
-        
+
         //update
         $updt = User::find($user_id);
         if ($bio == "") {

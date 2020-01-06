@@ -133,7 +133,7 @@
 								<hr>
 								<input id="password" type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
 								<hr>
-								<p>Confirm Password:</p>
+								<p>Confirm New Password:</p>
 								<input name="pwd" class="form-control" required="required" type="password" id="password_confirm" oninput="check(this)" />
 								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
