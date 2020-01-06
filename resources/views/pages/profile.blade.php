@@ -30,7 +30,7 @@
 	  			i.setAttribute("style", "display:inline");
 	  		}
 
-	  		function pwd{
+	  		function pwd(){
 	  			var pwd = document.getElementById('change_pwd');
 	  			pwd.setAttribute("style", "display:inline");
 	  		}
@@ -99,7 +99,7 @@
 								</h3>
 								<input id="community" placeholder="Community" class="form-control" type="text" name="community" style="display:none;">
 								<hr>
-								<input id="save" type="submit" class="btn btn-md btn-success" style="display:none;" value="Save">
+								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
 							</form>
 							<hr>
 							<button onclick="pwd()" class="btn btn-md btn-outline-danger">
