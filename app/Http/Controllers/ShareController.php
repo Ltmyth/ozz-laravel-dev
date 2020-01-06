@@ -51,8 +51,8 @@ class ShareController extends Controller
         $not->message = $sharer->name." "." shared a post of yours";
         $not->save();
 
-        $message = "Post Shared"
-        return view('home')->with('message', $message);
+        $message = "Post Shared";
+        return redirect('home')->with('message', $message);
     }
     
     
