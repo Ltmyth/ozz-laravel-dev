@@ -13,12 +13,13 @@
 	  			var f = document.getElementById('birthday');
 	  			var g = document.getElementById('comm');
 	  			var h = document.getElementById('number');
+	  			var i = document.getElementById('save');
 
 	  			// hide
 	  			e.setAttribute("style", "display:none");
 	  			f.setAttribute("style", "display:none");
 	  			g.setAttribute("style", "display:none");
-	  			h.setAttribute("style", "display:none");
+	  			h.setAttribute("style", "display:none");	  			
 
 
 	  			/*display*/
@@ -26,6 +27,7 @@
 	  			b.setAttribute("style", "display:inline");
 	  			c.setAttribute("style", "display:inline");
 	  			d.setAttribute("style", "display:inline");
+	  			i.setAttribute("style", "display:inline");
 	  		}
 
 	  		function pwd{
@@ -96,7 +98,8 @@
 									</i> Community
 								</h3>
 								<input id="community" placeholder="Community" class="form-control" type="text" name="community" style="display:none;">
-								<input type="submit" class="btn btn-md btn-success" value="Save">
+								<hr>
+								<input id="save" type="submit" class="btn btn-md btn-success" style="display:none;" value="Save">
 							</form>
 							<hr>
 							<button onclick="pwd()" class="btn btn-md btn-outline-danger">
@@ -104,13 +107,14 @@
 									Change Password
 								</big>
 							</button>
-							
+
 							<form id="change_pwd" style="display:none;">
 								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
 								<hr>
 								<input type="password" class="form-control" minlength="8" placeholder="New Password" name="new" required>
 								<hr>
 								<input type="password" class="form-control" placeholder="Confirm Password" name="current" required="new">
+								<hr>
 								<input type="submit" class="btn btn-md btn-success" value="Change">
 							</form>
 							<!-- 
