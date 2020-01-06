@@ -81,7 +81,7 @@ class AirtimeController extends Controller
                 "currencyCode" => "UGX",
                 "amount"       => $amount
             ]];
-            if ($cost>0.01) {
+            if ($cost>=0.01) {
                 try {
                     // That's it, hit send and we'll take care of the rest
                     $results = $airtime->send(["recipients" => $recipients]);
