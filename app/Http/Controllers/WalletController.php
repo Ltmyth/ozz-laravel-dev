@@ -75,7 +75,7 @@ class WalletController extends Controller
             $not = new messages();
             $not->author = "Notification";
             $not->receiver = $user;
-            $not->message = "You have successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
+            $not->message = "You successfully redeemed ".$cost." "."ohz as mobilemoney with transaction id:"." ".$transaction_id;
             $not->save();
 
             $username = "Mat";
@@ -233,13 +233,13 @@ class WalletController extends Controller
                 $not = new messages();
                 $not->author = "Notification";
                 $not->receiver = $user;
-                $not->message = "You have successfully sent ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
+                $not->message = "You successfully sent ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
                 $not->save();
 
                 $not1 = new messages();
                 $not1->author = "Notification";
                 $not1->receiver = $receiver;
-                $not1->message = "You have received ".$cost." "."ohz from ".$user." with transaction id:"." ".$transaction_id;
+                $not1->message = "You received ".$cost." "."ohz from ".$user." with transaction id:"." ".$transaction_id;
                 $not1->save();
 
                 $message ='Processed';         
