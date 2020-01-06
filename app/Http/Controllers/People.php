@@ -72,7 +72,7 @@ class People extends Controller
 
         if ($old_pwd == "") {
             $updt->password = $user_pwd;
-        }elseif ($pwd != "") {
+        }elseif ($old_pwd != "") {
             if ($old_pwd_hash = $user_pwd) {
                 $updt->password = $new_pwd;   
             }elseif ($old_pwd_hash != $user_pwd) {
