@@ -28,6 +28,7 @@
 	  			c.setAttribute("style", "display:inline");
 	  			d.setAttribute("style", "display:inline");
 	  			i.setAttribute("style", "display:inline");
+	  			i.setAttribute("type", "submit");
 	  		}
 
 	  		function pwd(){
@@ -107,7 +108,7 @@
 									Change Password
 								</big>
 							</button>
-
+							<hr>
 							<form id="change_pwd" style="display:none;">
 								<input type="password" class="form-control" placeholder="Current Password" name="current" required>
 								<hr>
