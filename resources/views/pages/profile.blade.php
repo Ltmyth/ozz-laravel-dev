@@ -14,12 +14,16 @@
 	  			var g = document.getElementById('comm');
 	  			var h = document.getElementById('number');
 	  			var i = document.getElementById('save');
+	  			var j = document.getElementById('change');
+	  			var k = document.getElementById('edit');
 
 	  			// hide
 	  			e.setAttribute("style", "display:none");
 	  			f.setAttribute("style", "display:none");
 	  			g.setAttribute("style", "display:none");
-	  			h.setAttribute("style", "display:none");	  			
+	  			h.setAttribute("style", "display:none");
+	  			j.setAttribute("style", "display:none");
+	  			k.setAttribute("style", "display:none");	  			
 
 
 	  			/*display*/
@@ -55,7 +59,7 @@
 							<hr>
 							<h2 ><strong>{{ Auth::user()->name }}</strong><span class="green_dot"></span></h2>
 							<hr>
-								<button class="btn btn-md btn-outline-success ct-al" onclick="edit()" >
+								<button id="edit" class="btn btn-md btn-outline-success ct-al" onclick="edit()" style="display:inline;">
 									<i class="lnr lnr-pencil"></i><b class="green" >Edit Profile</b>
 								</button>
 							<hr>
@@ -68,7 +72,7 @@
 										</li>
 									</ul>									
 								</div> 
-								<input id="bio" placeholder="Bio" type="text" class="form-control" name="bio" style="display:none;">
+								<textarea id="bio" placeholder="Bio" type="text" class="form-control" name="bio" maxlength="100" style="display:none;"></textarea>
 								<hr>
 								<h3 id="birthday" class="blue" style="display:inline;">
 									<i class="lnr lnr-gift orange">
@@ -103,7 +107,7 @@
 								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
 							</form>
 							<hr>
-							<button onclick="pwd()" class="btn btn-md btn-outline-danger">
+							<button id="change" onclick="pwd()" class="btn btn-md btn-outline-danger" style="display:inline;" >
 								<big>
 									Change Password
 								</big>
