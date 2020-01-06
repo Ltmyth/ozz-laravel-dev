@@ -18,7 +18,14 @@
 					<div class="row">
 						<div class="container lt-al">
 							<hr>
-							<h2 ><strong>{{ $profile->name }}</strong> <span class="green_dot"></span></h2>
+							<h2 >
+								<strong>{{ $profile->name }}</strong>
+								@if($profile->status == 'online' )
+									<span class="green_dot"></span>
+								@else
+								 	<span class="red_dot"></span>
+								@endif
+							</h2>
 							<hr>
 							<a href="/inbox/{{ $profile->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
 								<button class="btn btn-lg btn-success  mr-20">
