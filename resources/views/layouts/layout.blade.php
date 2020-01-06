@@ -170,15 +170,6 @@
                 <hr class="container col-lg-9">
                 @endauth
 
-                @auth
-                <div class="nlight-bg br-10 mt-30 col-lg-10 container">
-                    @if(Auth::user()->name == 'Theohz chatbot')
-                        <button class="btn btn-lg btn-primary"><big>Admin</big></button>
-                    @endif  
-                </div>
-                <hr class="container col-lg-9">
-                @endauth
-
                 @guest
                 <br>
                     <div id="progress" class="container col-lg-11 nlight-bg br-10">

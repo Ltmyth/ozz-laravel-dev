@@ -169,50 +169,93 @@ class WalletController extends Controller
         $transaction_id = "#4s5t9"."S".time()."6H0hz";
 
         $check = User::where('name', $receiver)->first();
-        
-        if ($check != "" && $user_balance>$cost) {
-            //record
-            $ts = new Transactions();
-            $ts->transaction = $transaction_id;
-            $ts->amount = $cost." "."ohz";
-            $ts->wallet = $user_wallet;
-            $ts->description = " Stash ";
-            $ts->save();
 
-            //update wallets
-            $updt = User::find($user_id);
-            $updt->wallet_balance = $user_balance-$cost;
-            $updt->save();
+        if($user == 'Theohz'){
+            if ($check != "") {
+                //record
+                $ts = new Transactions();
+                $ts->transaction = $transaction_id;
+                $ts->amount = $cost." "."ohz";
+                $ts->wallet = "#".$receiver;
+                $ts->description = " Stash ";
+                $ts->save();
 
-            $updt1 = User::find($check->id);
-            $updt1->wallet_balance = $user_balance+$cost;
-            $updt1->save();
+                //update wallets
+                $updt = User::find($user_id);
+                $updt->wallet_balance = $user_balance+$cost;
+                $updt->save();
 
-            //notify
-            $not = new messages();
-            $not->author = "Notification";
-            $not->receiver = $user;
-            $not->message = "You have successfully sent ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
-            $not->save();
+                $updt1 = User::find($check->id);
+                $updt1->wallet_balance = $user_balance+$cost;
+                $updt1->save();
 
-            $not1 = new messages();
-            $not1->author = "Notification";
-            $not1->receiver = $receiver;
-            $not1->message = "You have received ".$cost." "."ohz from ".$user." with transaction id:"." ".$transaction_id;
-            $not1->save();
+                //notify
+                $not = new messages();
+                $not->author = "Notification";
+                $not->receiver = $user;
+                $not->message = "You have successfully topped up ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
+                $not->save();
 
-            $message ='Processed';         
+                $not1 = new messages();
+                $not1->author = "Notification";
+                $not1->receiver = $receiver;
+                $not1->message = "You have successfully topped up ".$cost." "."ohz with transaction id:"." ".$transaction_id;
+                $not1->save();
 
-            return redirect('/notification')->with('message', $message);
-        }
-        elseif($check == "") {
-            $error_message = $receiver." is not yet on theohz";
-            return redirect('/share_stash')->with('error_message', $error_message);
-        }
-        elseif($check != "" && $user_balance<$cost) {
-            $error_message = "Your ohz balance is too low";
-            return redirect('/share_stash')->with('error_message', $error_message);
-        }
+                $message ='Topped up';         
+
+                return redirect('/notification')->with('message', $message);
+            }
+            elseif($check == "") {
+                $error_message = $receiver." is not yet on theohz";
+                return redirect('/share_stash')->with('error_message', $error_message);
+            }
+        }elseif ($user != 'Theohz chatbot') {
+            if ($check != "" && $user_balance>$cost) {
+                //record
+                $ts = new Transactions();
+                $ts->transaction = $transaction_id;
+                $ts->amount = $cost." "."ohz";
+                $ts->wallet = $user_wallet;
+                $ts->description = " Stash ";
+                $ts->save();
+
+                //update wallets
+                $updt = User::find($user_id);
+                $updt->wallet_balance = $user_balance-$cost;
+                $updt->save();
+
+                $updt1 = User::find($check->id);
+                $updt1->wallet_balance = $user_balance+$cost;
+                $updt1->save();
+
+                //notify
+                $not = new messages();
+                $not->author = "Notification";
+                $not->receiver = $user;
+                $not->message = "You have successfully sent ".$cost." "."ohz to ".$receiver." with transaction id:"." ".$transaction_id;
+                $not->save();
+
+                $not1 = new messages();
+                $not1->author = "Notification";
+                $not1->receiver = $receiver;
+                $not1->message = "You have received ".$cost." "."ohz from ".$user." with transaction id:"." ".$transaction_id;
+                $not1->save();
+
+                $message ='Processed';         
+
+                return redirect('/notification')->with('message', $message);
+            }
+            elseif($check == "") {
+                $error_message = $receiver." is not yet on theohz";
+                return redirect('/share_stash')->with('error_message', $error_message);
+            }
+            elseif($check != "" && $user_balance<$cost) {
+                $error_message = "Your ohz balance is too low";
+                return redirect('/share_stash')->with('error_message', $error_message);
+            }
+        }      
+       
     }
 
     /**
