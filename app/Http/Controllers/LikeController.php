@@ -43,7 +43,7 @@ class LikeController extends Controller
         $not1 = new messages();
         $not1->author = "Notification";
         $not1->receiver = $post->author;
-        $not1->message = ." "."liked your post";
+        $not1->message = $liker->name." "."liked your post";
         $not1->save();
 
 
