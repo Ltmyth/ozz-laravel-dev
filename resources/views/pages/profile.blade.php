@@ -116,7 +116,7 @@
 									<i class="lnr lnr-pushpin orange">
 									</i> {{ Auth::user()->community }}
 								</h3>								
-								<input id="community" placeholder="{{ Auth::user()->bio }}" class="form-control" type="text" name="community" style="display:none;">
+								<input id="community" placeholder="{{ Auth::user()->community }}" class="form-control" type="text" name="community" style="display:none;">
 								<hr>
 								<input id="save"  class="btn btn-md btn-success" style="display:none;" value="Save">
 							</form>
