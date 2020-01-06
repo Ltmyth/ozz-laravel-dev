@@ -31,7 +31,7 @@
             </a>   
 
             <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20">
+                <button class="btn btn-md btn-outline-warning white px100 mr-5 mt-20 mb-20">
                     <i class="lnr lnr-briefcase orange"></i> Wallet
                     <span class="badge badge-danger"></span>
                 </button>
