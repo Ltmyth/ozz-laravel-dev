@@ -17,7 +17,7 @@ class CommentController extends Controller
     public static function show($post)
     {
         $post_id = $post;
-        $comments = Comment::where('post', $post_id)->orderBy('id','desc')->get();
+        $comments = Comment::where([['post','=', $post_id],['author', '!=', 1],['author', '!=', 5],['author', '!=', 2]])->orderBy('id','desc')->get();
         return view('posts.comments', ["comments" => $comments, "post" => $post_id]);
     }
         

@@ -25,7 +25,7 @@
 								<h3 class="blue  w-100">
 									<strong>{{ $comment->author }}</strong>
 
-									<span class="orange_dot"></span>
+									<!-- <span class="orange_dot"></span> -->
 									&nbsp;
 									<small>
 										<i class="black fz-15">{{ $comment->created_at->diffForHumans() }}</i>
