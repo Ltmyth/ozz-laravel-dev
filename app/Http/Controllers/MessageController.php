@@ -118,7 +118,7 @@ class MessageController extends Controller
     public function chat()
     {
         $user = Auth::id();
-        $onlines = User::where([['status', '=','online'],['id', '!=', $user]])->get();
+        $onlines = User::where([['status', '=','online'], ['name', '!=', 'Theohz'],['id', '!=', $user]])->get();
         $chat_count = $onlines->count();
         // $onlines = "";
         return view('messages.chat' , ["onlines" => $onlines, "chat" => $chat_count]);
