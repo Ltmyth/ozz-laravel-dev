@@ -27,7 +27,9 @@
                             </td>
 
                             <td>
-                                <h4 class="blue"><strong>{{ $not->message }}</strong></h4> 
+                                <a href="/transactions">
+                                    <h4 class="blue"><strong>{{ $not->message }}</strong></h4> 
+                                </a> 
                             </td>
                         </tr>
                     @endforeach
