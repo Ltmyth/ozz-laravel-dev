@@ -56,11 +56,11 @@ class AirtimeController extends Controller
             return redirect('at-self')->with('error_message', $error_message);
         }
         elseif ($receiver != "0" && $user_balance>$cost){
-            // $username = "Mat";
-            // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+            $username = "Mat";
+            $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
             
-            $username = "sandbox";
-            $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+            // $username = "sandbox";
+            // $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)

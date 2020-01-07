@@ -97,7 +97,7 @@
                     </div>
                 @endif
                 
-                @if($texts) 
+                @if($texts != "") 
                     @foreach ($texts as $text)
                         <div class="row bb">
                             <div class="col-lg-2 w-10">
