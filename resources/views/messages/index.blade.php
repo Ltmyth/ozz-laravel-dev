@@ -98,7 +98,7 @@
                 @endif
                 
                 @if($uniq_texts) 
-                    @foreach ($uniq_texts as $text)
+                    @foreach ($uniq_texts as $uniq_text)
                         <div class="row bb">
                             <div class="col-lg-2 w-10">
                                 <div class="row">
@@ -115,17 +115,17 @@
                             <div class="col-lg-7 w-100  br-10 mt-10 lt-al">
                                 <div class="row bb">
                                     <a href="/inbox/{{ $text->author }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                        <h3 class="blue"><strong>{{ $text->author }}</strong> <span class="green_dot"></span></h3> 
+                                        <h3 class="blue"><strong>{{ uniq_text->author }}</strong> <span class="green_dot"></span></h3> 
                                     </a>
                                     &nbsp; &nbsp;
-                                    <h5 class="black"><br><i>{{$text->created_at->diffForHumans() }}.</i></h5>
+                                    <h5 class="black"><br><i>{{uniq_text->created_at->diffForHumans() }}.</i></h5>
                                 </div>
 
                                 <div class="row container lt-al blbr-10 trbr-10 light-bg brbr-10 ">
                                     <a href="/inbox/{{ $text->author }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                         <h3 class="white">  
                                             <strong>
-                                                <p>{{ $text->message }}</p>
+                                                <p>{{ $uniq_text->message }}</p>
                                             </strong>
                                         </h3> 
                                     </a>
