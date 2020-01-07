@@ -22,7 +22,7 @@
 											alt="Avator" 
 										>
 										<strong class="blue">{{ $post->author }}</strong>
-										<span class="green_dot"></span>
+										<!-- <span class="green_dot"></span> -->
 										&nbsp;
 										<small>
 											<i class="black fz-15">{{ $post->created_at->diffForHumans() }}</i>
