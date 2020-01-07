@@ -29,10 +29,10 @@ class MessageController extends Controller
         //     $text->receiver = "everyone";
         //     $text->message = "Hello, welcome to theohz platform";
         //     $text->save();
-        // // }
-        // $uniq_texts = $texts->unique('author');
+        // }
+        $uniq_texts = $texts->unique('author');
         $text_count = $uniq_texts->count();
-        return view('messages.index' , ["texts" => $texts, "text_count" => $text_count]);
+        return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
     }
     
     public function send_message(Request $request)
