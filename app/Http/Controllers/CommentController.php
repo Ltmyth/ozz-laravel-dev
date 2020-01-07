@@ -40,14 +40,13 @@ class CommentController extends Controller
         $comments = new Comment();
         $comments->post = $request->post_id;
         $comments->comment = $request->comment;
-        $comments->author = $request->comment_by;
+        $comenter = User::find($request->comment_by);
+        $comments->author = $comenter;
         $comments->save();
 
         $post = Post::find($request->post_id);
         $post->comments = $post->comments+1 ;
         $post->save();
-
-        $comenter = User::find($request->comment_by);
         //notify
         $not1 = new messages();
         $not1->author = "Notification";
