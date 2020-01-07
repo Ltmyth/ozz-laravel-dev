@@ -14,7 +14,7 @@
     </style>
     
     <div class="table-responsive">
-        <
+        
       	<h2>Sent Airtime History</h2>
       	<hr>
         <table class="table-striped w-100">
