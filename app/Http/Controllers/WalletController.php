@@ -169,6 +169,8 @@ class WalletController extends Controller
         $user_balance = Auth::user()->wallet_balance;
         $transaction_id = "#4s5t9"."S".time()."6H0hz";
 
+        $user_profile = User::where('name', $receiver)->first();
+
         $check = User::where('name', $receiver)->first();
 
         if($user == 'Theohz'){
@@ -187,7 +189,7 @@ class WalletController extends Controller
                 $updt->save();
 
                 $updt1 = User::find($check->id);
-                $updt1->wallet_balance = $user_balance+$cost;
+                $updt1->wallet_balance = $user_profile->balance+$cost;
                 $updt1->save();
 
                 //notify
@@ -217,7 +219,7 @@ class WalletController extends Controller
                 $ts = new Transactions();
                 $ts->transaction = $transaction_id;
                 $ts->amount = $cost." "."ohz";
-                $ts->wallet = $user_wallet;
+                $ts->wallet = "#".$user;
                 $ts->description = " Stash ";
                 $ts->save();
 
