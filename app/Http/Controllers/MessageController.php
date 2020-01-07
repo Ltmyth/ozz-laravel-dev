@@ -22,7 +22,7 @@ class MessageController extends Controller
     public function index($inbox)
     {
         $user = $inbox;
-        $texts = messages::where([['receiver','=',$user],['author','!=','Notification'],['receiver','=','everyone']])->orderBy('id','desc')->get();
+        $texts = messages::where([['receiver','=',$user],['author','!=','Notification'])->orderBy('id','desc')->get();
         // if($texts = "null"){
         //     $text = new messages();
         //     $text->author = "the</b><b class='orange'>oh</b><b>z</b> <b class='black'>chatbot</b>";
@@ -32,7 +32,7 @@ class MessageController extends Controller
         // }
         $uniq_texts = $texts->unique('author');
         $text_count = $texts->count();
-        return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
+        return view('messages.index' , ['uniq_texts' => $uniq_texts, 'texts' => $texts, 'text_count' => $text_count]);
     }
     
     public function send_message(Request $request)
@@ -75,7 +75,7 @@ class MessageController extends Controller
                 $text->save();
                 $message ='Message delivered';
                 return redirect('/inbox/'.$receiver)->with('message', $message);
-        }elseif ($receiver==$user) {
+        }elseif ($receiver=$user) {
              $error_message ='Not allowed';
             return redirect('/messages/'.$author)->with('error_message', $error_message);
         }
