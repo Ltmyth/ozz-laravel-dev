@@ -20,8 +20,14 @@
   			z.setAttribute("type", "number");
 
   			/*calculation*/
+  			/*calculation*/
   			var cost = 0;
-  			cost = x /5000;
+  			var discount = 2/100;
+
+  			var charge = x*discount;
+  			var actual_charge = x-charge;
+
+  			cost = actual_charge/5000;
 
   			/*set value*/
   			z.setAttribute("value", cost);

@@ -97,8 +97,8 @@
                     </div>
                 @endif
                 
-                @if($texts != "") 
-                    @foreach ($texts as $text)
+                @if($uniq_texts != "") 
+                    @foreach ($uniq_texts as $text)
                         <div class="row bb">
                             <div class="col-lg-2 w-10">
                                 <div class="row">
