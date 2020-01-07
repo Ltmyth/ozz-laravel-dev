@@ -170,7 +170,7 @@
                         
                         <h4 class="lt-al black">
                             <p> 
-                                With internet connectivity and the<big class='orange'><b class="orange">oh</b><b>z</b></big>  stash. <strong>buy</strong> airtime from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                                With internet connectivity and the<big class='orange'><b class="orange">oh</b><b>z</b></big>  stash, <strong>buy</strong> airtime at a <b class="black">2%</b> discount from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
                                 This is currently applicable in Uganda alone.
                             </p>
                         </h4>

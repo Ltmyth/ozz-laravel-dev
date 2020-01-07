@@ -40,6 +40,8 @@
 	<br><br>
 	<h2><strong> Buy Airtime for my phone</strong></h2>
 
+	<br><br>
+	<h4 class="blue"><strong> Active Discount:</strong><b class="red">2%</b></h4>
 	<hr class="container col-lg-5">
 	<i class="glyphicon glyphicon-phone">
 		0{{ Auth::user()->phone }}

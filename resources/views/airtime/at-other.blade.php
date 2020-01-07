@@ -40,6 +40,8 @@
 	<img class="curve w-10 mt-10" src="{{ asset('/imgs/phone.png') }}">	
 	<br><br>
 	<h2><strong> Buy Airtime for another</strong></h2>
+	<br><br>
+	<h4 class="blue"><strong> Active Discount:</strong><b class="red">2%</b></h4>
 	<hr class="container col-lg-8">
 	<form  method="POST" action="/buy_self">
 		@csrf
