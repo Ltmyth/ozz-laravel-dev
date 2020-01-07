@@ -22,7 +22,7 @@ class MessageController extends Controller
     public function index($inbox)
     {
         $user = $inbox;
-        $texts = messages::where([['receiver','=',$user],['author','!=','Notification'])->orderBy('id','desc')->get();
+        $texts = messages::where([['receiver','=',$user],['author','!=','Notification']])->orderBy('id','desc')->get();
         // if($texts = "null"){
         //     $text = new messages();
         //     $text->author = "the</b><b class='orange'>oh</b><b>z</b> <b class='black'>chatbot</b>";
