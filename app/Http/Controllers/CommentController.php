@@ -18,7 +18,7 @@ class CommentController extends Controller
     {
         $post_id = $post;
         $comments = Comment::where('post', $post_id)->orderBy('id','desc')->get();
-        $comenter = User::find($request->comment_by);
+        $comenter = User::find($comments->author);
 
         // $comenter = User::find($comments->author);
         return view('posts.comments', ["comments" => $comments, "comenter" => $comenter, "post" => $post_id]);
