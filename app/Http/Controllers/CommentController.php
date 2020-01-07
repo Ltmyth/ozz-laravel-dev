@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Comment;
-
+use Auth;
 use App\User;
 use App\messages;
 use Redirect,Response;
@@ -40,7 +40,8 @@ class CommentController extends Controller
         $comments = new Comment();
         $comments->post = $request->post_id;
         $comments->comment = $request->comment;
-        $comenter = User::find($request->comment_by);
+        $commenta = $request->comment_by;
+        $comenter = User::find($commenta);
         $comments->author = $comenter->name;
         $comments->save();
 

@@ -255,13 +255,13 @@
                         <div class="single-footer-widget">
                             <h3 class="white"><strong>Contact Us</strong></h3>
                             <div class="footer-social d-flex align-items-center fx-20">
-                                <h3 class="white">
+                                <h4 class="white">
                                     <i class="fa fa-phone"></i> +256783013570
                                     <br><br>
                                     <i class="fa fa-envelope"></i> theohzbot@gmail.com</a>
                                     <!-- <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a> -->
-                                </h3>
+                                </h4>
                             </div>
                         </div>
                     </div>

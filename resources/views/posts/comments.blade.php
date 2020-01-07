@@ -159,12 +159,12 @@
 								@endif
 							</div> -->
 
-							
+							<hr>
 							<form id="comment{{ $comment->id }}" method="POST" action="/comment">
 								@csrf
 								<div class="row">
 									<input type="hidden" name="post_id" value="{{$post_id}}">
-									<input type="hidden" name="comment_by" value="{{ $comment->author }}">
+									<input type="hidden" name="comment_by" value="{{ Auth::user()->id }}">
 									<textarea class="form-control nlight-bg w-90" name="comment" required></textarea>
 									&nbsp; &nbsp;
 									<input type="submit" class="btn btn-sm btn-success" value="Comment" >
@@ -182,9 +182,9 @@
 	@else
 		<div class="container">
 			<br>
-			<h1 class="ct-al">
+			<h3 class="ct-al">
 				<p><b class="orange">Be the first to comment!</b></p>
-			</h1>
+			</h3>
 			<h1>
 				<big><i class="lnr lnr-happy blue"></i></big>
 			</h1>
