@@ -23,7 +23,7 @@
                 </button>
             </form>
 
-            <a  href="/messages/{{Auth::user()}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+            <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                 <button class="btn btn-md btn-outline-warning white  mr-10 mt-20 mb-20">
                     <i class="lnr lnr-envelope orange"></i> Messages
                     <span class="badge badge-danger"></span>
