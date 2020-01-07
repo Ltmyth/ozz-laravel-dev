@@ -22,7 +22,7 @@ class MessageController extends Controller
     public function index($inbox)
     {
         $user = $inbox;
-        $texts = messages::where([['receiver', '=',$user],['author','!=','Notification']])->orWhere('receiver', 'everyone')->orderBy('id','desc')->get();
+        $texts = messages::where([['receiver','=',$user],['author','!=','Notification'],['receiver','=','everyone']])->orderBy('id','desc')->get();
         // if($texts = "null"){
         //     $text = new messages();
         //     $text->author = "the</b><b class='orange'>oh</b><b>z</b> <b class='black'>chatbot</b>";
@@ -31,7 +31,7 @@ class MessageController extends Controller
         //     $text->save();
         // }
         $uniq_texts = $texts->unique('author');
-        $text_count = $uniq_texts->count();
+        $text_count = $texts->count();
         return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
     }
     
@@ -45,30 +45,41 @@ class MessageController extends Controller
         ]);
         $author = $request->input('author');
         $receiver = $request->input('receiver');
-        //new message
-        $text = new messages();
-        $text->author = $author;
-        $text->receiver = $receiver;
-        $text->message = $request->input('message');
-        $user_profile = User::where('name', $receiver)->first();
-        if( $user_profile != null ){
-            if($request->hasFile('upload')){
-                //filename with ext
-                $uploadfile = $request->file('upload')->getClientOriginalName();
-                //jhus filename
-                $uploadname = pathinfo($uploadfile,PATHINFO_FILENAME);  
-                //jhus ext
-                $extension = $request->file('upload')->getClientOriginalExtension(); 
-                //unique storage name
-                $upload_storage_name = $uploadname."_".time().".".$extension; 
-                //store file in public/uploads/
-                $path = $request->file('upload')->storeAs('storage/app/public/',$upload_storage_name);
-                $text->upload = $upload_storage_name;
-            }
-            
-            $text->save();
-            $message ='Message delivered';
-            return redirect('/inbox/'.$receiver)->with('message', $message);
+        $user = Auth::user()->name ;
+
+        if ($receiver != $user) {
+            //new message
+            $text = new messages();
+            $text->author = $author;
+            $text->receiver = $receiver;
+            $text->message = $request->input('message');
+            $user_profile = User::where('name', $receiver)->first();
+
+
+            //
+            if( $user_profile != null ){
+                if($request->hasFile('upload')){
+                    //filename with ext
+                    $uploadfile = $request->file('upload')->getClientOriginalName();
+                    //jhus filename
+                    $uploadname = pathinfo($uploadfile,PATHINFO_FILENAME);  
+                    //jhus ext
+                    $extension = $request->file('upload')->getClientOriginalExtension(); 
+                    //unique storage name
+                    $upload_storage_name = $uploadname."_".time().".".$extension; 
+                    //store file in public/uploads/
+                    $path = $request->file('upload')->storeAs('storage/app/public/',$upload_storage_name);
+                    $text->upload = $upload_storage_name;
+                }
+                
+                $text->save();
+                $message ='Message delivered';
+                return redirect('/inbox/'.$receiver)->with('message', $message);
+        }elseif ($receiver==$user) {
+             $error_message ='Not allowed';
+            return redirect('/messages/'.$author)->with('error_message', $error_message);
+        }
+        
         }else{
             $error_message =$receiver." ".'is not yet on theohz';
             return redirect('/messages/'.$author)->with('error_message', $error_message);

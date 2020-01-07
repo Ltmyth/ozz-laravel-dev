@@ -218,18 +218,22 @@
                 @endguest
 
                 @if( session()->has('message') )
+                    <hr>
                     <div id="success_message mt-20"  class="container col-lg-5 alert alert-primary " role="alert">
                         {{ session()->get('message') }}
                         <strong>Successfully</strong>
                         <br>
                     </div>
+                    <hr>
                 @endif 
 
                 @if( session()->has('error_message') )
+                    <hr>
                     <div   class="container col-lg-5 alert alert-danger mt-20" role="alert">
                         {{ session()->get('error_message') }}
                         <br>
                     </div>
+                    <hr>
                 @endif 
 
 

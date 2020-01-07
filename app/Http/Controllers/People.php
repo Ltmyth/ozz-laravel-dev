@@ -55,7 +55,7 @@ class People extends Controller
         if ($phone == "") {
             $updt->phone = $user_phone;
         }elseif ($phone != "") {
-            $phonenumber = 1*phone;
+            $phonenumber = 1*$phone;
             $updt->phone = "0".$phonenumber;
         }
 
