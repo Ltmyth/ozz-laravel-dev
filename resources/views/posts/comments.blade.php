@@ -23,9 +23,9 @@
 						<div class="row  blbr-10">
 							<a href="javascript:void(0)" onclick="location.href='/user/{{ $comment->author }}';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
-									<strong>{{ $comment->author }}</strong>
+									<strong>{{ $comenter }}</strong>
 
-									<span class="orange_dot"></span>
+									<!-- <span class="orange_dot"></span> -->
 									&nbsp;
 									<small>
 										<i class="black fz-15">{{ $comment->created_at->diffForHumans() }}</i>
