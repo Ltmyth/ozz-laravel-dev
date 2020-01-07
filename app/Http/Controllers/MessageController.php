@@ -31,7 +31,7 @@ class MessageController extends Controller
         //     $text->save();
         // }
         $uniq_texts = $texts->unique('author');
-        $text_count = $uniq_texts->count();
+        $text_count = $texts->count();
         return view('messages.index' , ["uniq_texts" => $uniq_texts, "texts" => $texts, "text_count" => $text_count]);
     }
     
