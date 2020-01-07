@@ -29,7 +29,7 @@ class People extends Controller
     {
         //input   
         $bio = $request->input('bio');
-        $phone =$request->input('number');
+        $phone =$request->input('phone');
         // $dob = $request->input('bd');
         $community = $request->input('community');
         $old_pwd = $request->input('current');
