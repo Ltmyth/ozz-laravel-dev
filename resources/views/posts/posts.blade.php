@@ -13,7 +13,7 @@
 		@if(count($posts)>0)	
 			@foreach ($posts as $post)	
 						
-				<div class="row bb">
+				<div id="post{{ $post->author }}" class="row bb">
 					<div class="col-lg-2 w-10">
 						<div class="row">
 							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">

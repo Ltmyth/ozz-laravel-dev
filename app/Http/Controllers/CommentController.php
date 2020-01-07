@@ -56,7 +56,7 @@ class CommentController extends Controller
         $not1->save();
 
 
-        return redirect('/posts_show/$request->post_id');
+        return redirect('/home/#post'.$post->author);
     }
     
     
