@@ -41,7 +41,7 @@ class CommentController extends Controller
         $comments->post = $request->post_id;
         $comments->comment = $request->comment;
         $comenter = User::find($request->comment_by);
-        $comments->author = $comenter;
+        $comments->author = $comenter->name;
         $comments->save();
 
         $post = Post::find($request->post_id);
