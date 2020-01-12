@@ -110,9 +110,11 @@
                             <li>
                                 <strong class="blue">Mukono (U)</strong>
                             </li>
+                            <br>
                             <li>
                                 <strong class="blue">Kampala (U)</strong>
                             </li>
+                            <br>
                             <li>
                                 <h4 class="green"> <i>More communities to be featured.</i></h4>
                             </li>
