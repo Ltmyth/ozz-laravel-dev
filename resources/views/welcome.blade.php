@@ -120,7 +120,7 @@
                             </li>
                         </ul>
                         <br>                        
-                        <h3 class="red ct-al"><u>NOTE</u></h3>
+                        <u><h3 class="red ct-al">NOTE</h3></u>
                         <h4 class="lt-al">
                             MTN, AIRTEL, AFRICELL and UTL airtime is internet accessible anywhere within Uganda.
                         </h4>
