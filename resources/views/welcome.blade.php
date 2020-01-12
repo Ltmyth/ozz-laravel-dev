@@ -108,7 +108,10 @@
                         </h4>
                         <ul style="list-style: circle; color:red;" class="lt-al fz-25">
                             <li>
-                                <strong><h3 class="black">Mukono (U)</h3></strong>
+                                <strong class="black">Mukono (U)</strong>
+                            </li>
+                            <li>
+                                <strong class="black">Kampala (U)</strong>
                             </li>
                             <li>
                                 <h4 class="green"> <i>More communities to be featured.</i></h4>
@@ -219,6 +222,7 @@
                             <ul style="list-style-type:square;" >
                                 <li>Hostels</li>
                                 <li>Appartments</li>
+                                <!-- <li>Rentals</li> -->
                                 <!-- <li>Hotels</li>
  -->                            </ul>
                         </h4>                                            
