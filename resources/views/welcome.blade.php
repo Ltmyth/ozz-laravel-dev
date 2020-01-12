@@ -106,12 +106,12 @@
                                 Services are meant for good intentional use and to be accessible click easily over the internet within the featured communities which currently include;
                             </p>
                         </h4>
-                        <ul style="list-style: circle; color:red;" class="lt-al fz-25">
+                        <ul style="list-style: circle; color:red;" class="lt-al fz-30">
                             <li>
-                                <strong class="black">Mukono (U)</strong>
+                                <strong class="blue">Mukono (U)</strong>
                             </li>
                             <li>
-                                <strong class="black">Kampala (U)</strong>
+                                <strong class="blue">Kampala (U)</strong>
                             </li>
                             <li>
                                 <h4 class="green"> <i>More communities to be featured.</i></h4>
