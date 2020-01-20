@@ -29,7 +29,7 @@
                 &nbsp;&nbsp;
                 <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" > -->
                 <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                    <button class="btn btn-lg btn-outline-danger" readonly>
+                    <button class="btn btn-lg btn-outline-danger">
                         Broadcast SMS to a list
                     </button>
                 </a>
