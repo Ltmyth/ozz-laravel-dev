@@ -24,17 +24,6 @@
                 <hr>
                 <label><h4>Receiver phone number</h4></label> 
                 <input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="form-control" type="text" name="number" required>
-                <h4>-- <small class="red">OR</small>--</h4>
-                <!-- <label><h4>Upload a (.csv) file of multiple receivers</h4></label>
-                &nbsp;&nbsp;
-                <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" > -->
-                <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                    <button class="btn btn-lg btn-outline-danger">
-                        Broadcast SMS to a list
-                    </button>
-                </a>
-
-                <hr>
                 <textarea placeholder="Message" minlength="3" maxlength="60" type="textarea" class="form-control" name="sms" value="post"autofocus required></textarea>
                 <hr>
                 <button type="submit" class="btn btn-lg btn-success px100">
@@ -42,5 +31,16 @@
                 </button>
             </div>            
         </form>
+        <h4>-- <small class="red">OR</small>--</h4>
+        <!-- <label><h4>Upload a (.csv) file of multiple receivers</h4></label>
+        &nbsp;&nbsp;
+        <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" > -->
+        <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+            <button class="btn btn-lg btn-outline-danger">
+                Broadcast SMS to a list
+            </button>
+        </a>
+
+        <hr>
     </div>  	
 @endsection
