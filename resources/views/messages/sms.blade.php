@@ -10,6 +10,12 @@
 
   	<h2 class="mt-30"> <i class="lnr lnr-alarm orange"></i>Short Message Service</h2>
   	<hr>
+        <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+            <button class="btn btn-lg btn-outline-info">
+                Broadcast SMS to a list
+            </button>
+        </a>
+        &nbsp;&nbsp;&nbsp;
         <a href="/sent">
             <button class="btn btn-lg btn-outline-danger">SMS History</button>
         </a>
@@ -32,16 +38,5 @@
                 </button>
             </div>            
         </form>
-        <h4>-- <small class="red">OR</small>--</h4>
-        <!-- <label><h4>Upload a (.csv) file of multiple receivers</h4></label>
-        &nbsp;&nbsp;
-        <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" > -->
-        <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-            <button class="btn btn-lg btn-outline-danger">
-                Broadcast SMS to a list
-            </button>
-        </a>
-
-        <hr>
     </div>  	
 @endsection
