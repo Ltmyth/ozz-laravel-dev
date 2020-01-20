@@ -24,6 +24,7 @@
                 <hr>
                 <label><h4>Receiver phone number</h4></label> 
                 <input placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="form-control" type="text" name="number" required>
+                <hr>
                 <textarea placeholder="Message" minlength="3" maxlength="60" type="textarea" class="form-control" name="sms" value="post"autofocus required></textarea>
                 <hr>
                 <button type="submit" class="btn btn-lg btn-success px100">
