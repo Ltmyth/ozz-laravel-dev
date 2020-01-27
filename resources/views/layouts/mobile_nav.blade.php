@@ -65,19 +65,18 @@
                 <div class="row">
 
                     <a class="btn btn-md btn-outline-warning white" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <i class="lnr lnr-alarm orange"></i> 
-                        <strong class="white" >Notifications</strong>
+                        <i class="lnr lnr-alarm orange"></i> <strong class="white" >Notifications</strong>
                     </a>
 
                     <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <button class="btn btn-md btn-outline-warning px100 white mb-20">
+                        <button class="btn btn-md btn-outline-warning white">
                             <i class="lnr lnr-user orange"></i> Settings
                             <span class="badge badge-danger"></span>
                         </button>
                     </a>           
                     
                     <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <button class="btn btn-sm btn-outline-danger white px100 mb-20 rt">
+                        <button class="btn btn-sm btn-outline-danger white px100 ">
                             <i class="lnr lnr-cog orange"></i> Logout
                         </button>
                     </a>
