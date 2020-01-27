@@ -23,70 +23,60 @@
                 </button>
             </form>
 
-            <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning white  mr-10 mt-20 mb-20">
-                    <i class="lnr lnr-envelope orange"></i> Messages
-                    <span class="badge badge-danger"></span>
-                </button>
-            </a>   
+            <div class="container">
+                <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <button class="btn btn-md btn-outline-warning white  mr-10 mt-20 mb-20">
+                        <i class="lnr lnr-envelope orange"></i> Messages
+                        <span class="badge badge-danger"></span>
+                    </button>
+                </a>   
 
-            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning white px100 ml-30 mt-20 mb-20">
-                    <i class="lnr lnr-briefcase orange"></i> Wallet
-                    <span class="badge badge-danger"></span>
-                </button>
-            </a>
-            
+                <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <button class="btn btn-md btn-outline-warning white px100 ml-30 mt-20 mb-20">
+                        <i class="lnr lnr-briefcase orange"></i> Wallet
+                        <span class="badge badge-danger"></span>
+                    </button>
+                </a>
+                
 
-            <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-md btn-outline-warning px100 white mt-20 mb-20">
-                    <i class="lnr lnr-user orange"></i> Settings
-                    <span class="badge badge-danger"></span>
-                </button>
-            </a>           
-            
-            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                <button class="btn btn-sm btn-outline-danger white px100 mt-20 mr-20 mb-20 rt">
-                    <i class="lnr lnr-cog orange"></i> Logout
-                </button>
-            </a>  
-
-            <a class="nav-link dropdown-toggle white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <button class="btn btn-sm btn-outline-warning">
-                    Services
-                </button>
-            </a>
-            <div class="dropdown-menu blue-bg white" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">People</b> <span class="badge badge-danger"></span>
                 </a>
 
-                <div class="dropdown-divider"></div>
 
                 <a class="dropdown-item" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Airtime</b>
                 </a>
 
-                <div class="dropdown-divider"></div>
                 
                 <a class="dropdown-item" href="/accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Accommodation</b>
                 </a>
 
-                <div class="dropdown-divider"></div>
-
                 <a class="dropdown-item" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Food</b>
                 </a>
                 
-                <div class="dropdown-divider"></div>
 
                 <a class="dropdown-item" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
                     <span class="lnr lnr-alarm"></span>
                     <strong class="white" >Notifications</strong>
                 </a>
-            </div>   
 
+                <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <button class="btn btn-md btn-outline-warning px100 white mt-20 mb-20">
+                        <i class="lnr lnr-user orange"></i> Settings
+                        <span class="badge badge-danger"></span>
+                    </button>
+                </a>           
+                
+                <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <button class="btn btn-sm btn-outline-danger white px100 mt-20 mr-20 mb-20 rt">
+                        <i class="lnr lnr-cog orange"></i> Logout
+                    </button>
+                </a>
+            </div>
+            
             <button class="btn btn-md btn-outline-warning col-lg-8" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="lnr lnr-chevron-up"></span>
             </button>                                         
