@@ -76,7 +76,7 @@
                     </a>           
                     
                     <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <button class="btn btn-sm btn-outline-danger white px100 ">
+                        <button class="btn btn-sm btn-outline-danger white">
                             <i class="lnr lnr-cog orange"></i> Logout
                         </button>
                     </a>
