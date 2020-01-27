@@ -39,7 +39,7 @@
                 </a>
                 
 
-                <a class="dropdown-item" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="btn btn-md btn-outline-warning white" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">People</b> <span class="badge badge-danger"></span>
                 </a>
 
