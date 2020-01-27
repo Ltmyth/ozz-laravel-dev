@@ -26,42 +26,47 @@
             <div class="container">
 
                 <div class="row">
+
+                    <a class="btn btn-md btn-outline-warning white" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                        <i class="lnr lnr-users orange"></i> <b class="white">People</b> <span class="badge badge-danger"></span>
+                    </a>
+
                     <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <button class="btn btn-md btn-outline-warning white">
+                        <button class="btn btn-md btn-outline-warning white ml-10">
                             <i class="lnr lnr-envelope orange"></i> Messages
                             <span class="badge badge-danger"></span>
                         </button>
-                    </a>   
+                    </a> 
+                </div>
 
+                <hr>
+
+                <div class="row">            
                     <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <button class="btn btn-md btn-outline-warning white">
                             <i class="lnr lnr-briefcase orange"></i> Wallet
                             <span class="badge badge-danger"></span>
                         </button>
                     </a>
-                    
 
-                    <a class="btn btn-md btn-outline-warning white" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <i class="lnr lnr-users orange"></i> <b class="white">People</b> <span class="badge badge-danger"></span>
-                    </a>
+                    <a class="btn btn-md btn-outline-warning white ml-10" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                        <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
+                    </a>                    
                 </div>
-                <hr class="white">
+
+                <hr>
 
                 <div class="row">
-                    <a class="btn btn-md btn-outline-warning white" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
-                    </a>
-
-                    
                     <a class="btn btn-md btn-outline-warning white" href="/accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <b class="white">Accommodation</b>
                     </a>
 
-                    <a class="btn btn-md btn-outline-warning white" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <a class="btn btn-md btn-outline-warning white ml-10" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <b class="white">Food</b>
                     </a>
                 </div>
-                <hr class="white">                
+
+                <hr>                
                 <div class="row">
 
                     <a class="btn btn-md btn-outline-warning white" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
@@ -69,12 +74,14 @@
                     </a>
 
                     <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <button class="btn btn-md btn-outline-warning white">
+                        <button class="btn btn-md btn-outline-warning white ml-10">
                             <i class="lnr lnr-user orange"></i> Settings
                             <span class="badge badge-danger"></span>
                         </button>
                     </a>           
-                    
+                </div>
+                <hr>
+                <div class="row">
                     <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <button class="btn btn-sm btn-outline-danger white">
                             <i class="lnr lnr-cog orange"></i> Logout
