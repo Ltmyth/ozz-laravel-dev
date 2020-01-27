@@ -25,14 +25,14 @@
 
             <div class="container">
                 <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <button class="btn btn-md btn-outline-warning white  mr-10 mt-20 mb-20">
+                    <button class="btn btn-md btn-outline-warning white">
                         <i class="lnr lnr-envelope orange"></i> Messages
                         <span class="badge badge-danger"></span>
                     </button>
                 </a>   
 
                 <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <button class="btn btn-md btn-outline-warning white px100 ml-30 mt-20 mb-20">
+                    <button class="btn btn-md btn-outline-warning white">
                         <i class="lnr lnr-briefcase orange"></i> Wallet
                         <span class="badge badge-danger"></span>
                     </button>
@@ -40,38 +40,38 @@
                 
 
                 <a class="btn btn-md btn-outline-warning white" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">People</b> <span class="badge badge-danger"></span>
+                    <i class="lnr lnr-users orange"></i> <b class="white">People</b> <span class="badge badge-danger"></span>
                 </a>
 
 
-                <a class="dropdown-item" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <b class="white">Airtime</b>
+                <a class="btn btn-md btn-outline-warning white" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
                 </a>
 
                 
-                <a class="dropdown-item" href="/accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="btn btn-md btn-outline-warning white" href="/accommodation" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Accommodation</b>
                 </a>
 
-                <a class="dropdown-item" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                <a class="btn btn-md btn-outline-warning white" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                     <b class="white">Food</b>
                 </a>
                 
 
-                <a class="dropdown-item" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                    <span class="lnr lnr-alarm"></span>
+                <a class="btn btn-md btn-outline-warning white" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                    <i class="lnr lnr-alarm orange"></i> 
                     <strong class="white" >Notifications</strong>
                 </a>
 
                 <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <button class="btn btn-md btn-outline-warning px100 white mt-20 mb-20">
+                    <button class="btn btn-md btn-outline-warning px100 white mb-20">
                         <i class="lnr lnr-user orange"></i> Settings
                         <span class="badge badge-danger"></span>
                     </button>
                 </a>           
                 
                 <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                    <button class="btn btn-sm btn-outline-danger white px100 mt-20 mr-20 mb-20 rt">
+                    <button class="btn btn-sm btn-outline-danger white px100 mb-20 rt">
                         <i class="lnr lnr-cog orange"></i> Logout
                     </button>
                 </a>
