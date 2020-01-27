@@ -81,6 +81,7 @@
                         </button>
                     </a>
                 </div>
+                <hr>
             </div>
             
             <button class="btn btn-md btn-outline-warning col-lg-8" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
