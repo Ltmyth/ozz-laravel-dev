@@ -442,7 +442,10 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/silver.svg" alt="">
                         <h3 class="lt-al blue">Silver Stash</h4>
-                        <h3 class="lt-al"><p class="mt-10 red">10 <b class="orange">oh</b><b>z</b></p></h3>
+                        <h3 class="lt-al">
+                            <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p
+
+                            > to <p class="mt-10 red">10 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>    
@@ -463,7 +466,10 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/gold.svg" alt="">
                         <h3 class="lt-al blue">Golden Stash</h3>
-                        <h3 class="lt-al"><p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p></h3>
+                        <h3 class="lt-al">
+                            <p class="mt-10 red">10<b class="orange">oh</b><b>z</b></p
+
+                            > to <p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -485,7 +491,9 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
                         <h3 class="lt-al blue">Vibranium Stash</h3>
-                        <h3 class="lt-al"><p class="mt-10 red">200 <b class="orange">oh</b><b>z</b></p></h3>
+                        <h3 class="lt-al"><p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p
+
+                            > to <p class="mt-10 red">200 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list blu">
                         <strong>
