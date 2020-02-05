@@ -421,7 +421,9 @@
                     <div class="top-part">
                         <img class="package-no w-60" style="transform: scaleY(-1);" src="imgs/bronze.svg" alt="">
                         <h3 class="blue lt-al">Bronze Stash</h3>
-                        <h3 class="lt-al" ><p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p></h3>
+                        <h3 class="lt-al" ><p class="mt-10 red">0.1 <b class="orange">oh</b><b>z</b></p
+
+                            > to <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -432,7 +434,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 500 - UGX 5,000</h1>
+                        <h1>UGX 500 to UGX 5,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -453,7 +455,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 6,000 - UGX 50,000</h1>
+                        <h1>UGX 6,000 to UGX 50,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -475,7 +477,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 60,000 - UGX 250,000</h1>
+                        <h1>UGX 60,000 to UGX 250,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -498,7 +500,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 250,000 - UGX 1,000,000</h1>
+                        <h1>UGX 250,000 to UGX 1,000,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
                         </a>
