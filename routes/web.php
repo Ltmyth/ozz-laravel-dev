@@ -194,6 +194,8 @@ Route::get('sms','MessageController@sms');
 Route::post('send_sms','MessageController@send_sms');
 //bulk sms
 Route::get('bulk_sms','MessageController@bulk_sms');
+//send bulk sms
+Route::post('send_bulk_sms','MessageController@send_bulk_sms');
 //notification messages
 Route::get('/notification','MessageController@notification_message');
 

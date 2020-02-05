@@ -214,6 +214,120 @@ class MessageController extends Controller
         return view('messages.bulk_sms');
     }
 
+    public function csvToArray($filename = '', $delimiter = ',')
+    {
+        if (!file_exists($filename) || !is_readable($filename))
+            return false;
+
+            $header = null;
+            $data = array();
+
+        if (($handle = fopen($filename, 'r')) !== false)
+        {
+            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
+            {
+                if (!$header)
+                    $header = $row;
+                else
+                    $data[] = array_combine($header, $row);
+            }
+            fclose($handle);
+        }
+
+        return $data;
+    }
+
+
+    public function send_bulk_sms(Request $request)
+    {
+        //validate
+        $this->validate($request,[
+            'message' => 'required',
+            'csv_upload' => 'required'
+        ]);
+
+        if($request->hasFile('csv_upload')){
+            $message = $request->input('sms');
+            $receiverz =$request->file('csv_upload');
+            $user = Auth::user()->name;
+            $user_id = Auth::user()->id;
+            $user_wallet = Auth::user()->wallet_id;
+            $user_balance = Auth::user()->wallet_balance;
+            $name = $request->input('receiver');
+            $transaction_id = "#4s5m9"."L".time()."s6M0hz";
+
+            // $username = "Mat";
+            // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+            
+            $username = "sandbox";
+            $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+            
+            $file = public_path($receiverz);
+
+            $customerArr = $this->csvToArray($file);
+
+            for ($i = 0; $i < count($customerArr); $i ++)
+            {
+                $receiver = $customerArr[$i];
+            }
+
+            // Specify the numbers that you want to send to in a comma-separated list
+            // Please ensure you include the country code (+254 for Kenya in this case)
+            // $recipients = "+256783013570,+256784910695";
+            $phoneNumber = 1*$receiver;
+            
+            // // Create a new instance of our awesome gateway class
+            $AT       = new AfricasTalking($username, $apiKey);
+            // Get one of the services
+            // $sms = $AT->sms();
+
+            // Use the service
+            // $result   = $sms->send([
+            //     'to'      => '+256'.$phoneNumber,
+            //     'message' => $message
+            // ]);
+
+            // print_r($result);
+
+            //persist
+            // $txt = new Sms();
+            // $txt->author = $user;
+            // $txt->receiver = $name;
+            // $txt->phone = '0'.$phoneNumber;
+            // $cost = 0.01;
+            // $txt->cost = $cost;
+            // $txt->message = $message;
+            // $txt->save();
+
+
+            //record
+            // $ts = new Transactions();
+            // $ts->transaction = $transaction_id;
+            // $ts->amount = $cost." "."ohz";
+            // $ts->wallet = $user_wallet;
+            // $ts->description = " Sms ";
+            // $ts->save();
+
+            //notify
+            // $not = new messages();
+            // $not->author = "Notification";
+            // $not->receiver = $user;
+            // $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+            // $not->save();
+
+            //update wallet
+            // $updt = User::find($user_id);
+            // $updt->wallet_balance = $user_balance-$cost;
+            // $updt->save();
+
+            // DONE!!!
+            return redirect('/sent');
+        }else{
+            $error_message ="Upload csv in correct sample format";
+            // Failed !!
+            return redirect('/bulk_sms')->with('error_message', $error_message);;
+        }        
+    }
 
     public function sent()
     {

@@ -12,7 +12,7 @@
   	<hr>
     <br><br>
     <div id="new_msg" class="well center">
-        <form enctype="multipart/form-data" method="POST" action="#">
+        <form enctype="multipart/form-data" method="POST" action="/send_bulk_sms">
             @csrf
             <div class="container col-lg-7 lt-al"> 
                  
@@ -22,13 +22,14 @@
                 <br><br>
                 <label><h4>Upload (.csv) file</h4></label>
                 &nbsp;&nbsp;
-                <input type="file" class="btn btn-sm btn-outline-danger" name="csv_upload" >
+                <input type="file" class="btn btn-sm btn-outline-danger" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" name="csv_upload" required>
 
                 <script type="text/javascript">
                     function download(){
                         const rows = [
-                            ["name1", "contact1"],
-                            ["name2", "contact2"]
+                            ["Receiver Name", "Phone number"],
+                            ["name1", "077X-XXX-XXX"],
+                            ["name2", "070X-XXX-XXX"]
                         ];
 
                         let csvContent = "data:text/csv;charset=utf-8,";
@@ -48,7 +49,7 @@
                     }
                 </script>
                 <hr>
-                <textarea placeholder="Message" type="textarea" class="form-control" name="post" value="post"autofocus required></textarea>
+                <textarea placeholder="Message" type="textarea" class="form-control" name="message" value="post"autofocus required></textarea>
                 <hr>
                 <button type="submit" class="btn btn-lg btn-success px100">
                     <i class="glyphicon glyphicon-send">Send</i>

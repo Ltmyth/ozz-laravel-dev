@@ -396,7 +396,7 @@
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
                                     <p class="black pb-30 lt-al">
-                                        At any given time, the <big>minimum</big> top up or withdraw a user can request for is <strong>1</strong> <strong class="orange"><b class="orange">oh</b><b>z</b></strong> and <big>maximum</big> top up or withdraw request limit is <strong>200</strong> <strong class="orange"><b class="orange">oh</b><b class="green">z</b></strong>.However there are no limits on stash or wallet balances.
+                                        There are no limits on stash or wallet balances.
                                     </p>
                                 </h4>
                             </div> 
@@ -432,7 +432,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 5,000</h1>
+                        <h1>UGX 500 - UGX 5,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -453,7 +453,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 50,000</h1>
+                        <h1>UGX 6,000 - UGX 50,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -475,7 +475,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 250,000</h1>
+                        <h1>UGX 60,000 - UGX 250,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
                     </div>
                 </div>
@@ -498,7 +498,7 @@
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 1,000,000</h1>
+                        <h1>UGX 250,000 - UGX 1,000,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
                         </a>
