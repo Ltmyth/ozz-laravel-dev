@@ -80,6 +80,7 @@
 		</script>
 
 		<div class="container">
+			<br><br>
 			<div class="row mt-20 br-10" style="background-image:url('../imgs/people.png');background-size:contain;background-repeat:no-repeat;background-position:center;">
 				<div class="row col-lg-8">
 					<img  

@@ -18,6 +18,7 @@
 		}
 	</style>
     <!-- right side -->
+    	<br><br>
   		<img class="curve w-20" src="{{ asset('/imgs/food.png') }}">
 		<br><br>
   		<h2><b>Food Services</b></h2>
