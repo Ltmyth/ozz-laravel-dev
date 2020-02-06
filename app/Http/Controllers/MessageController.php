@@ -266,10 +266,10 @@ class MessageController extends Controller
 
             $customerArr = $this->csvToArray($file);
 
-            for ($i = 0; $i < count($customerArr); $i ++)
-            {
-                $receiver = $customerArr[$i];
-            }
+            // for ($i = 0; $i < count($customerArr); $i ++)
+            // {
+            //     $receiver = $customerArr[$i];
+            // }
 
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
