@@ -258,7 +258,7 @@ class MessageController extends Controller
             //     fclose($handle);
             // }
 
-             $customerArr  = str_getcsv ( string($receiverz) [, string $delimiter = "," [, string $enclosure = '"' [, string $escape = "\\" ]]] ) : array;
+             $customerArr  = str_getcsv ( string($receiverz) [, string $delimiter = "," [, string $enclosure = '"' [, string $escape = "\\" ]]] ) : array
             
             // $customerArr = array('0','1','2');
 
