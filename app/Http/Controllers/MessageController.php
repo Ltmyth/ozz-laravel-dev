@@ -245,14 +245,14 @@ class MessageController extends Controller
             //remove first line
             // $data = array_slice($file, 1);
 
-            $row = 1;
+            // $row = 1;
             if (($handle = fopen($receiverz, "r")) !== FALSE) {
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                     $num = count($data);
                     echo "<p> $num fields in line $row: <br /></p>\n";
                     $row++;
                     for ($c=0; $c < $num; $c++) {
-                        $phoneNumber  = $data;
+                        $phoneNumber  = $data[$c];
                     }
                 }
                 fclose($handle);
