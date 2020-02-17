@@ -274,7 +274,7 @@ class MessageController extends Controller
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
             // $recipients = "+256783013570,+256784910695";
-            $phoneNumber = 1*$receiver;
+            $phoneNumber = 1*$data[1];
             
             // // Create a new instance of our awesome gateway class
             $AT       = new AfricasTalking($username, $apiKey);
@@ -321,11 +321,12 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            return redirect('/sent');
+            $message =$phoneNumber;
+            return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
             // Failed !!
-            return redirect('/bulk_sms')->with('error_message', $error_message);;
+            return redirect('/bulk_sms')->with('error_message', $error_message);
         }        
     }
 

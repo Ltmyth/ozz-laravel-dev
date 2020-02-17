@@ -15,14 +15,14 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h1><b>Welcome,</h1><h2>to the </b><b class="orange">oh</b><b>z</b>.</h2>
+                       <h2>The</b><b class="orange">oh</b><b>z</b>.</h2>
                        <br>
                         <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
 
                         <br>
                         <a href="/register">
                             <button class="btn btn-lg btn-outline-warning text-uppercase blue-bg">
-                                join us now
+                                join
                             </button>
                         </a>
                 </div>
@@ -41,7 +41,7 @@
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
                     <h4 class="lt-al">
-                        <strong class="blue">ABOUT US</strong>
+                        <strong class="blue">ABOUT</strong>
                     </h4>
                     <h4 class="black">
                         <p class="lt-al">
@@ -53,7 +53,7 @@
                     <h4 class="lt-al" >  
                         <strong class="blue">TARGET MARKET</strong>
                         <br>                      
-                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities featured or included on the<strong><b class="orange">oh</b><b>z</b></strong> platform and <strong>service providers</strong> within the respective communties.</p>                        
+                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities on the<strong><b class="orange">oh</b><b>z</b></strong> platform and <strong>service providers</strong> within the respective communties.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
@@ -153,7 +153,7 @@
                         <h4 class="lt-al black">
                             <p>
                                 Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
-                                at as low as <b class="red">0.01</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
+                                at as low as <b class="red">50</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
                             </p>
 
                         </h4>
@@ -390,8 +390,8 @@
                         <div class="col-lg-8">
                             <div class="container white-bg br-10">
                                 <hr>
-                                    <h4 class="black">0.1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">UGX</big> 500.</h4><br>
-                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
+                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">1 UGX</big> .</h4><br>
+                                    <h4 class="black">5000 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
                                 <hr>
                                 <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
                                 <h4>
@@ -421,9 +421,6 @@
                     <div class="top-part">
                         <img class="package-no w-60" style="transform: scaleY(-1);" src="imgs/bronze.svg" alt="">
                         <h3 class="blue lt-al">Bronze Stash</h3>
-                        <h3 class="lt-al" ><p class="mt-10 red">0.1 <b class="orange">oh</b><b>z</b></p
-
-                            > to <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -442,10 +439,6 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/silver.svg" alt="">
                         <h3 class="lt-al blue">Silver Stash</h4>
-                        <h3 class="lt-al">
-                            <p class="mt-10 red">1 <b class="orange">oh</b><b>z</b></p
-
-                            > to <p class="mt-10 red">10 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>    
@@ -466,10 +459,6 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/gold.svg" alt="">
                         <h3 class="lt-al blue">Golden Stash</h3>
-                        <h3 class="lt-al">
-                            <p class="mt-10 red">10<b class="orange">oh</b><b>z</b></p
-
-                            > to <p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list">
                         <strong>
@@ -491,9 +480,6 @@
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
                         <h3 class="lt-al blue">Vibranium Stash</h3>
-                        <h3 class="lt-al"><p class="mt-10 red">50 <b class="orange">oh</b><b>z</b></p
-
-                            > to <p class="mt-10 red">200 <b class="orange">oh</b><b>z</b></p></h3>
                     </div>
                     <div class="package-list blu">
                         <strong>
