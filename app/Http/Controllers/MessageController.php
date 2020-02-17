@@ -263,10 +263,9 @@ class MessageController extends Controller
                 }
 
                 return $data;
+                $customerArr = array($data);
             }
-
-
-            $customerArr = array($data);
+            
 
             // for ($i = 0; $i < count($customerArr); $i ++)
             // {
