@@ -27,9 +27,9 @@
                 <script type="text/javascript">
                     function download(){
                         const rows = [
-                            [["Enter Phone numbers below"]],
-                            [["077X-XXX-XXX"]],
-                            [["070X-XXX-XXX"]]
+                            ["Enter Phone numbers below"],
+                            ["077X-XXX-XXX"],
+                            ["070X-XXX-XXX"]
                         ];
 
                         let csvContent = "data:text/csv;charset=utf-8,";
