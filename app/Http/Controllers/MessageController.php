@@ -242,7 +242,7 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            function csvToArray($filename = $receiverz, $delimiter = ',')
+            function csvToArray($filename = '$receiverz', $delimiter = ',')
             {
                 if (!file_exists($filename) || !is_readable($filename))
                     return false;
