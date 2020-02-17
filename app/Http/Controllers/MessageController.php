@@ -243,7 +243,7 @@ class MessageController extends Controller
             $file = public_path($receiverz);
 
             $row = 1;
-            if (($handle = fopen($receiverz, "r")) !== FALSE) {
+            if (($handle = fopen($file, "r")) !== FALSE) {
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                     $num = count($data);
                     echo "<p> $num fields in line $row: <br /></p>\n";
