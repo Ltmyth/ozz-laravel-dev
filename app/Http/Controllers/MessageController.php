@@ -242,31 +242,20 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            function csvToArray($filename = '$receiverz', $delimiter = ',')
-            {
-                if (!file_exists($filename) || !is_readable($filename))
-                    return false;
-
-                    $header = null;
-                    $data = array();
-
-                if (($handle = fopen($filename, 'r')) !== false)
-                {
-                    while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
-                    {
-                        if (!$header)
-                            $header = $row;
-                        else
-                            $data[] = array_combine($header, $row);
+            $row = 1;
+            if (($handle = fopen($receiverz, "r")) !== FALSE) {
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                    $num = count($data);
+                    echo "<p> $num fields in line $row: <br /></p>\n";
+                    $row++;
+                    for ($c=0; $c < $num; $c++) {
+                        $customerArr = $data[$c];
                     }
-                    fclose($handle);
                 }
-
-                return $data;
-                $GLOBALS['customerArr'] = array($data);
+                fclose($handle);
             }
             
-            $customerArr = array('0','1','2');
+            // $customerArr = array('0','1','2');
 
             // for ($i = 0; $i < count($customerArr); $i ++)
             // {
@@ -276,7 +265,7 @@ class MessageController extends Controller
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
             // $recipients = "+256783013570,+256784910695";
-            $phoneNumber = 1*$customerArr[1];
+            $phoneNumber = 1*$customerArr;
             
             // // Create a new instance of our awesome gateway class
             $AT       = new AfricasTalking($username, $apiKey);
