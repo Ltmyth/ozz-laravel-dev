@@ -214,29 +214,7 @@ class MessageController extends Controller
         return view('messages.bulk_sms');
     }
 
-    public function csvToArray($filename = '', $delimiter = ',')
-    {
-        if (!file_exists($filename) || !is_readable($filename))
-            return false;
-
-            $header = null;
-            $data = array();
-
-        if (($handle = fopen($filename, 'r')) !== false)
-        {
-            while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
-            {
-                if (!$header)
-                    $header = $row;
-                else
-                    $data[] = array_combine($header, $row);
-            }
-            fclose($handle);
-        }
-
-        return $data;
-    }
-
+    
 
     public function send_bulk_sms(Request $request)
     {
@@ -264,7 +242,31 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            $customerArr = $this->csvToArray($receiverz);
+            function csvToArray($filename = $receiverz, $delimiter = ',')
+            {
+                if (!file_exists($filename) || !is_readable($filename))
+                    return false;
+
+                    $header = null;
+                    $data = array();
+
+                if (($handle = fopen($filename, 'r')) !== false)
+                {
+                    while (($row = fgetcsv($handle, 1000, $delimiter)) !== false)
+                    {
+                        if (!$header)
+                            $header = $row;
+                        else
+                            $data[] = array_combine($header, $row);
+                    }
+                    fclose($handle);
+                }
+
+                return $data;
+            }
+
+
+            $customerArr = array($data);
 
             // for ($i = 0; $i < count($customerArr); $i ++)
             // {
@@ -274,7 +276,7 @@ class MessageController extends Controller
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
             // $recipients = "+256783013570,+256784910695";
-            $phoneNumber = 1*$customerArr;
+            $phoneNumber = 1*$customerArr[0][1];
             
             // // Create a new instance of our awesome gateway class
             $AT       = new AfricasTalking($username, $apiKey);
