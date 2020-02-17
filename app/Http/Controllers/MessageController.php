@@ -252,7 +252,7 @@ class MessageController extends Controller
                     echo "<p> $num fields in line $row: <br /></p>\n";
                     $row++;
                     for ($c=0; $c < $num; $c++) {
-                        $phoneNumber  = $data[$c];
+                        $phoneNumber  = $data;
                     }
                 }
                 fclose($handle);
