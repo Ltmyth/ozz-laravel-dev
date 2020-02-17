@@ -258,8 +258,13 @@ class MessageController extends Controller
             //     fclose($handle);
             // }
 
-             $customerArr  = str_getcsv ( string($receiverz) [, string $delimiter = "," [, string $enclosure = '"' [, string $escape = "\\" ]]] ) : array
-            
+            $csv = array_map('str_getcsv', file($receiverz));
+            array_walk($csv, function(&$a) use ($csv) {
+              $a = array_combine($csv[0], $a);
+            });
+            $phoneNumber  = array_shift($csv); # remove column header
+
+
             // $customerArr = array('0','1','2');
 
             // for ($i = 0; $i < count($customerArr); $i ++)
