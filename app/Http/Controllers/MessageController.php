@@ -242,7 +242,7 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            public function csvToArray($filename = '$receiverz', $delimiter = ',')
+            function csvToArray($filename = '$receiverz', $delimiter = ',')
             {
                 if (!file_exists($filename) || !is_readable($filename))
                     return false;
@@ -263,7 +263,7 @@ class MessageController extends Controller
                 }
 
                 return $data;
-                $customerArr = array($data);
+                $_GLOBALS['customerArr'] = array($data);
             }
             
 
