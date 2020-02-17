@@ -245,7 +245,7 @@ class MessageController extends Controller
             //remove first line
             // $data = array_slice($file, 1);
 
-            // $row = 1;
+            $row = 0;
             if (($handle = fopen($receiverz, "r")) !== FALSE) {
                 while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
                     $num = count($data);
