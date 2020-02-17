@@ -266,6 +266,7 @@ class MessageController extends Controller
                 $GLOBALS['customerArr'] = array($data);
             }
             
+            $customerArr = array('0','1','2');
 
             // for ($i = 0; $i < count($customerArr); $i ++)
             // {
@@ -275,7 +276,7 @@ class MessageController extends Controller
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
             // $recipients = "+256783013570,+256784910695";
-            $phoneNumber = 1*$customerArr[0][1];
+            $phoneNumber = 1*$customerArr[1];
             
             // // Create a new instance of our awesome gateway class
             $AT       = new AfricasTalking($username, $apiKey);
