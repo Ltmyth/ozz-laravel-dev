@@ -264,7 +264,7 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            $customerArr = $this->csvToArray($file);
+            $customerArr = $this->csvToArray($receiverz);
 
             // for ($i = 0; $i < count($customerArr); $i ++)
             // {
