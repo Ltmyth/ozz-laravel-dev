@@ -240,22 +240,30 @@ class MessageController extends Controller
             $username = "sandbox";
             $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
-            $file = file($receiverz);
+            // $file = file($receiverz);
 
             //remove first line
             // $data = array_slice($file, 1);
 
-            $row = 0;
-            if (($handle = fopen($receiverz, "r")) !== FALSE) {
-                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                    $num = count($data);
-                    echo "<p> $num fields in line $row: <br /></p>\n";
-                    $row++;
-                    for ($c=0; $c < $num; $c++) {
-                        $phoneNumber  = $data[$c];
-                    }
-                }
-                fclose($handle);
+            // $row = 0;
+            // if (($handle = fopen($receiverz, "r")) !== FALSE) {
+            //     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            //         $num = count($data);
+            //         echo "<p> $num fields in line $row: <br /></p>\n";
+            //         $row++;
+            //         for ($c=0; $c < $num; $c++) {
+            //             $phoneNumber  = $data[$c];
+            //         }
+            //     }
+            //     fclose($handle);
+            // }
+
+            $file = new SplFileObject($receiverz);
+            $file->setFlags(SplFileObject::READ_CSV);
+            $file->setCsvControl(',', '"', '\\'); // this is the default anyway though
+            foreach ($file as $row) {
+                $phoneNumber = $row;
+                // Do something with values
             }
             
             // $customerArr = array('0','1','2');
