@@ -242,17 +242,18 @@ class MessageController extends Controller
             
             $file = public_path($receiverz);
 
-            $row = 1;
-            if (($handle = fopen($file, "r")) !== FALSE) {
-                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                    $num = count($data);
-                    echo "<p> $num fields in line $row: <br /></p>\n";
-                    $row++;
-                    for ($c=0; $c < $num; $c++) {
-                        $phoneNumber  = $data[$c];
-                    }
-                }
-                fclose($handle);
+            // Create list name
+            $name = time().'-'.$file;
+
+            // Create a list record in the database
+            // $list = List::create(['name' => $name]);
+
+            // Create a CSV reader instance
+            $reader = Reader::createFromFileObject($file->openFile());
+
+            // Create a customer from each row in the CSV file
+            foreach ($reader as $index => $row) {
+                $phoneNumber = $row;
             }
             
             // $customerArr = array('0','1','2');
