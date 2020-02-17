@@ -322,7 +322,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message =$customerArr;
+            $message =$phoneNumber;
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
