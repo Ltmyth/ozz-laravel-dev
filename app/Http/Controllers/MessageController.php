@@ -258,13 +258,7 @@ class MessageController extends Controller
             //     fclose($handle);
             // }
 
-            $file = new SplFileObject($receiverz);
-            $file->setFlags(SplFileObject::READ_CSV);
-            $file->setCsvControl(',', '"', '\\'); // this is the default anyway though
-            foreach ($file as $row) {
-                $phoneNumber = $row;
-                // Do something with values
-            }
+             $customerArr  = str_getcsv ( string $receiverz [, string $delimiter = "," [, string $enclosure = '"' [, string $escape = "\\" ]]] ) : array;
             
             // $customerArr = array('0','1','2');
 
@@ -323,7 +317,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message =$phoneNumber;
+            $message =$customerArr;
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
