@@ -226,7 +226,7 @@ class MessageController extends Controller
 
         if($request->hasFile('csv_upload')){
             $message = $request->input('sms');
-            $receiverz =$request->file('csv_upload')->getRealPath();
+            $receiverz =$request->file('csv_upload');
             $user = Auth::user()->name;
             $user_id = Auth::user()->id;
             $user_wallet = Auth::user()->wallet_id;
@@ -258,11 +258,68 @@ class MessageController extends Controller
             //     fclose($handle);
             // }
 
-            $csv = array_map('str_getcsv', file($receiverz));
-            array_walk($csv, function(&$a) use ($csv) {
-              $a = array_combine($csv[0], $a);
-            });
-            $phoneNumber  = array_shift($csv); # remove column header
+            // File Details 
+              $filename = $receiverz->getClientOriginalName();
+              $extension = $receiverz->getClientOriginalExtension();
+              $tempPath =$receiverz->getRealPath();
+              $fileSize = $receiverz->getSize();
+              $mimeType = $receiverz->getMimeType();
+
+              // Valid File Extensions
+              $valid_extension = array("csv");
+
+              // 2MB in Bytes
+              $maxFileSize = 2097152; 
+
+              // Check file extension
+              if(in_array(strtolower($extension),$valid_extension)){
+
+                // Check file size
+                if($fileSize <= $maxFileSize){
+
+                  // File upload location
+                  $location = 'public';
+
+                  // Upload file
+                  $receiverz->move($location,$filename);
+
+                  // Import CSV to Database
+                  $filepath = public_path($location."/".$filename);
+
+                  // Reading file
+                  $file = fopen($filepath,"r");
+
+                  $importData_arr = array();
+                  $i = 0;
+
+                  while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
+                     $num = count($filedata );
+                     
+                     // Skip first row (Remove below comment if you want to skip the first row)
+                     /*if($i == 0){
+                        $i++;
+                        continue; 
+                     }*/
+                     for ($c=0; $c < $num; $c++) {
+                        $importData_arr[$i][] = $filedata [$c];
+                     }
+                     $i++;
+                  }
+                  fclose($file);
+
+                // Insert to MySQL database
+                foreach($importData_arr as $importData){
+
+                    // $insertData = array(
+                    // "username"=>$importData[1],
+                    // "name"=>$importData[2],
+                    // "gender"=>$importData[3],
+                    // "email"=>$importData[4]);
+                    $phoneNumber  = $importData[1]; # remove column header
+
+                }
+
+            
 
 
             // $customerArr = array('0','1','2');
