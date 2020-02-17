@@ -263,7 +263,7 @@ class MessageController extends Controller
                 }
 
                 return $data;
-                $_GLOBALS['customerArr'] = array($data);
+                $GLOBALS['customerArr'] = array($data);
             }
             
 
