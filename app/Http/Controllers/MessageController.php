@@ -226,7 +226,7 @@ class MessageController extends Controller
 
         if($request->hasFile('csv_upload')){
             $message = $request->input('sms');
-            $receiverz =$request->file('csv_upload')->getClientOriginalName();
+            $receiverz =$request->file('csv_upload')/*->getClientOriginalName()*/;
             $user = Auth::user()->name;
             $user_id = Auth::user()->id;
             $user_wallet = Auth::user()->wallet_id;
