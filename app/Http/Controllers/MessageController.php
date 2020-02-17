@@ -226,7 +226,7 @@ class MessageController extends Controller
 
         if($request->hasFile('csv_upload')){
             $message = $request->input('sms');
-            $receiverz =$request->file('csv_upload')->getClientOriginalName();
+            $receiverz =$request->file('csv_upload')->getRealPath();
             $user = Auth::user()->name;
             $user_id = Auth::user()->id;
             $user_wallet = Auth::user()->wallet_id;
@@ -240,20 +240,22 @@ class MessageController extends Controller
             $username = "sandbox";
             $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
-            $file = public_path($receiverz);
+            $file = file($receiverz);
 
-            // Create list name
-            $name = time().'-'.$file;
+            //remove first line
+            // $data = array_slice($file, 1);
 
-            // Create a list record in the database
-            // $list = List::create(['name' => $name]);
-
-            // Create a CSV reader instance
-            $reader = Reader::createFromFileObject($file->openFile());
-
-            // Create a customer from each row in the CSV file
-            foreach ($reader as $index => $row) {
-                $phoneNumber = $row;
+            $row = 1;
+            if (($handle = fopen($file, "r")) !== FALSE) {
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                    $num = count($data);
+                    echo "<p> $num fields in line $row: <br /></p>\n";
+                    $row++;
+                    for ($c=0; $c < $num; $c++) {
+                        $phoneNumber  = $data[$c];
+                    }
+                }
+                fclose($handle);
             }
             
             // $customerArr = array('0','1','2');
