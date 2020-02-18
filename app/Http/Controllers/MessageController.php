@@ -315,7 +315,7 @@ class MessageController extends Controller
                     // "name"=>$importData[2],
                     // "gender"=>$importData[3],
                     // "email"=>$importData[4]);
-                    $phoneNumber  = $importData; # remove column header
+                    $phoneNumber  = 0; # remove column header
 
                 }
 
