@@ -245,89 +245,12 @@ class MessageController extends Controller
             //remove first line
             // $data = array_slice($file, 1);
 
-            // $row = 0;
-            // if (($handle = fopen($receiverz, "r")) !== FALSE) {
-            //     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-            //         $num = count($data);
-            //         echo "<p> $num fields in line $row: <br /></p>\n";
-            //         $row++;
-            //         for ($c=0; $c < $num; $c++) {
-            //             $phoneNumber  = $data[$c];
-            //         }
-            //     }
-            //     fclose($handle);
-            // }
+            $customerArr = array('0','1','2');
 
-            // File Details 
-              $filename = $receiverz->getClientOriginalName();
-              $extension = $receiverz->getClientOriginalExtension();
-              $tempPath =$receiverz->getRealPath();
-              $fileSize = $receiverz->getSize();
-              $mimeType = $receiverz->getMimeType();
-
-              // Valid File Extensions
-              $valid_extension = array("csv");
-
-              // 2MB in Bytes
-              $maxFileSize = 2097152; 
-
-              // Check file extension
-              if(in_array(strtolower($extension),$valid_extension)){
-
-                // Check file size
-                if($fileSize <= $maxFileSize){
-
-                  // File upload location
-                  $location = 'public';
-
-                  // Upload file
-                  $receiverz->move($location,$filename);
-
-                  // Import CSV to Database
-                  $filepath = public_path($location."/".$filename);
-
-                  // Reading file
-                  $file = fopen($filepath,"r");
-
-                  $importData_arr = array();
-                  $i = 0;
-
-                  while (($filedata = fgetcsv($file, 1000, ",")) !== FALSE) {
-                     $num = count($filedata );
-                     
-                     // Skip first row (Remove below comment if you want to skip the first row)
-                     /*if($i == 0){
-                        $i++;
-                        continue; 
-                     }*/
-                     for ($c=0; $c < $num; $c++) {
-                        $importData_arr[$i][] = $filedata [$c];
-                     }
-                     $i++;
-                  }
-                  fclose($file);
-
-                // Insert to MySQL database
-                foreach($importData_arr as $importData){
-
-                    // $insertData = array(
-                    // "username"=>$importData[1],
-                    // "name"=>$importData[2],
-                    // "gender"=>$importData[3],
-                    // "email"=>$importData[4]);
-                    $phoneNumber  = 0; # remove column header
-
-                }
-
-            
-
-
-            // $customerArr = array('0','1','2');
-
-            // for ($i = 0; $i < count($customerArr); $i ++)
-            // {
-            //     $receiver = $customerArr[$i];
-            // }
+            for ($i = 0; $i < count($customerArr); $i ++)
+            {
+                $phoneNumber= $customerArr[$i];
+            }
 
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)
