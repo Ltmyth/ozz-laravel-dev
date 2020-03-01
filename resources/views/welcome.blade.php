@@ -15,14 +15,14 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h2>The</b><b class="orange">oh</b><b>z</b>.</h2>
+                       <h2>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h2>
                        <br>
-                        <h3><b>An <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
+                        <h3>Built for quick access to community-based services by community-based users through <b>the</b><b class="orange">oh</b><b>z</b></b> in both rural and urban communities.</h3>
 
                         <br>
                         <a href="/register">
                             <button class="btn btn-lg btn-outline-warning text-uppercase blue-bg">
-                                join
+                                Register Here
                             </button>
                         </a>
                 </div>
