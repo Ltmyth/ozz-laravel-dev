@@ -15,9 +15,9 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h4>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h4>
+                       <h3>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
                        <br>
-                        <h3>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
+                        <h4>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h4>
 
                         <br>
                         <a href="/register">
@@ -45,7 +45,7 @@
                     </h4>
                     <h4 class="black">
                         <p class="lt-al">
-                            <strong><b>Theohz</b></strong> is a social and transactional <strong>community</strong> web application,
+                            <strong>Theohz</strong> is a social and transactional <strong>community</strong> web application,
                             built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as <b class="orange">oh</b><b>z</b>.
                         </p>
                     </h4>
