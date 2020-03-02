@@ -40,7 +40,7 @@
                     <img class="w-100 br-10"  src="/imgs/info.png" alt="">
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
-                     class="lt-al">
+                     <h3 class="lt-al">
                         <strong class="blue">ABOUT</strong>
                     </h3>
                     <h3 class="black">
@@ -334,12 +334,14 @@
                             <h3 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h3>
                             <hr>
                             <a href="#stash" class="black">
-                            <ul style="list-style-type:square;" class="lt-al">
-                                <li>Bronze Stash</li>
-                                <li>Silver Stash</li>
-                                <li>Golden Stash</li>
-                                <li>Vibranium Stash</li>
-                            </ul>
+                                <h3>
+                                    <ul style="list-style-type:square;" class="lt-al">
+                                        <li>Bronze Stash</li>
+                                        <li>Silver Stash</li>
+                                        <li>Golden Stash</li>
+                                        <li>Vibranium Stash</li>
+                                    </ul>
+                                </h3>
                             </a>
                             <hr>
                         </div>
