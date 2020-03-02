@@ -15,9 +15,9 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h3>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
+                       <h4>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h4>
                        <br>
-                        <h3>Built for quick access to community-based services by community-based users through <b>the</b><b class="orange">oh</b><b>z</b></b> in both rural and urban communities in Uganda.</h3>
+                        <h3>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
 
                         <br>
                         <a href="/register">
@@ -40,27 +40,27 @@
                     <img class="w-100 br-10"  src="/imgs/info.png" alt="">
                     <!-- <h1><b>About the <b class="orange">oh</b><b>z</b></b></h1> -->
                     <!-- by Latim Mark -->
-                     <h3 class="lt-al">
+                     <h4 class="lt-al">
                         <strong class="blue">ABOUT</strong>
-                    </h3>
-                    <h3 class="black">
+                    </h4>
+                    <h4 class="black">
                         <p class="lt-al">
-                            The<strong><b class="orange">oh</b><b>z</b></strong> is a social and transactional <strong>community</strong> web application,
-                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as the<b class="orange">oh</b><b>z</b>.
+                            <strong><b>Theohz</b></strong> is a social and transactional <strong>community</strong> web application,
+                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as <b class="orange">oh</b><b>z</b>.
                         </p>
-                    </h3>
+                    </h4>
 
-                    <h3 class="lt-al" >  
+                    <h4 class="lt-al" >  
                         <strong class="blue">TARGET MARKET</strong>
                         <br>                      
-                        <p>The<strong><b class="orange">oh</b><b>z</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities on the<strong><b class="orange">oh</b><b>z</b></strong> platform and <strong>service providers</strong> within the respective communties.</p>                        
-                    </h3>
+                        <p>The<strong><b>ohz</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities on theohz platform and <strong>service providers</strong> within the respective communties.</p>                        
+                    </h4>
 
-                    <h3 class="lt-al"><b style="color:red;">MISSION</b></h3>
+                    <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
                     <p > 
-                       <h3 class="lt-al blue"> To connect 
+                       <h4 class="lt-al blue"> To connect 
                         <strong>community-based</strong> users with each other 
-                        and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h3>
+                        and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
                     </p>
 
                     <br>
@@ -101,11 +101,11 @@
                     <div class="title text-center">
                         <h1 class="mb-10 lt-al text-uppercase"><strong>Featured communities</strong></h1>
                         <hr>
-                        <h3 class="lt-al">
+                        <h4 class="lt-al">
                             <p class="black">
                                 Services are meant for good intentional use and to be accessible click easily over the internet within the featured communities which currently include;
                             </p>
-                        </h3>
+                        </h4>
                         <ul style="list-style: circle; color:red;" class="lt-al fz-30">
                             <li>
                                 <strong class="blue">Mukono (U)</strong>
@@ -116,14 +116,14 @@
                             </li>
                             <br>
                             <li>
-                                <h3 class="green"> <i>More communities to be featured.</i></h3>
+                                <h4 class="green"> <i>More communities to be featured.</i></h4>
                             </li>
                         </ul>
                         <br>                        
-                        <u><h3 class="red ct-al">NOTE</h3></u>
-                        <h3 class="lt-al">
+                        <u><h4 class="red ct-al">NOTE</h4></u>
+                        <h4 class="lt-al">
                             MTN, AIRTEL, AFRICELL and UTL airtime is internet accessible anywhere within Uganda.
-                        </h3>
+                        </h4>
                         <br>
                         <hr>                        
                     </div>
@@ -133,7 +133,7 @@
                 <div class="col-lg-11">
                     <h1 class="mb-10 ct-al"><strong>SERVICES</strong></h1>
                     <p>
-                        <h3 class="ct-al black"> Top up your wallet stash accordingly to get the following life pack at your finger tips.</h3>
+                        <h4 class="ct-al black"> Top up your wallet stash accordingly to get the following life pack at your finger tips.</h4>
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -145,18 +145,18 @@
                         </div>
 
                         <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Communication</strong>
-                            </h3>
+                            </h4>
                         </a>
 
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p>
-                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big class='orange'><b class="orange">oh</b><b>z</b></big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
-                                at as low as <b class="red">50</b> <big class='orange'><b class="orange">oh</b><b>z</b></big> each.
+                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                at as low as 50</b> <big>ohz</big> each.
                             </p>
 
-                        </h3>
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -168,17 +168,17 @@
                         </div>
 
                         <a href="/login">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Airtime</strong>
-                            </h3>
+                            </h4>
                         </a>
                         
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p> 
-                                With internet connectivity and the<big class='orange'><b class="orange">oh</b><b>z</b></big>  stash, <strong>buy</strong> airtime at a <b class="black">2%</b> discount from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                                With internet connectivity and <b>theohz</b> stash, <strong>buy</strong> airtime at a <b class="black">2%</b> discount from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
                                 This is currently applicable in Uganda alone.
                             </p>
-                        </h3>
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -190,16 +190,16 @@
                         </div>
 
                         <a href="/login">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Food</strong>
-                            </h3>
+                            </h4>
                         </a>
 
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p >
                                Search,  view and procure from community based food service providers and their various menus.
                             </p>
-                        </h3>
+                        </h4>
                     </div>  
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -211,14 +211,14 @@
                         </div> 
 
                         <a href="/login">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Accommodation</strong>
-                            </h3>
+                            </h4>
                         </a>
 
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p>
-                                Using the<big class='orange'><b class="orange">oh</b><b>z</b></big>  find and secure accommodation within a community or destination of interest.
+                                Using theohz  find and secure accommodation within a community or destination of interest.
                                 Chose from a live listing of ;
                             </p>
                             <ul style="list-style-type:square;" >
@@ -227,7 +227,7 @@
                                 <!-- <li>Rentals</li> -->
                                 <!-- <li>Hotels</li>
  -->                            </ul>
-                        </h3>                                            
+                        </h4>                                            
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -240,20 +240,20 @@
 
 
                         <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Payments</strong>
-                            </h3>
+                            </h4>
                         </a>
                         
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p>
-                                Make payments for the<b class="orange">oh</b><b>z</b> services directly from your  wallet/stash to another user's wallet <b class="black">free</b> of charge.
+                                Make payments for theohz services directly from your  wallet/stash to another user's wallet <b class="black">free</b> of charge.
                             </p>
 
                             <p>
-                                You may also liquidate or cashout <b class="orange">oh</b><b>z</b> from your wallet stash into a mobile money account or list of accounts at a low service charge on each withdraw transaction that is used to cover infrastructure and transaction costs.
+                                You may also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts at a low service charge on each withdraw transaction that is used to cover infrastructure and transaction costs.
                             </p>
-                        </h3>                        
+                        </h4>                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -265,16 +265,16 @@
                         </div>
 
                         <a href="/login">
-                            <h3 class="ct-al">
+                            <h4 class="ct-al">
                                 <strong>Secure and transparent transactions</strong>
-                            </h3>
+                            </h4>
                         </a>
                         
-                        <h3 class="lt-al black">
+                        <h4 class="lt-al black">
                             <p class="lt-al">
-                                With your user account and <strong>encrypted</strong> password,track your transactions from the distributed <b class="orange">oh</b><b>z</b> <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all recorded <big class='orange'><b class="orange">oh</b><b>z</b></big> stash or wallet transactions.
+                                With your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohz <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all recorded ohz transactions.
                             </p>
-                        </h3>                        
+                        </h4>                        
                     </div>              
                 </div>                                                      
             </div>
@@ -297,61 +297,61 @@
                         <div class="col-lg-3 b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/pointing-up.svg" alt="">
                             <hr>
-                            <h3 class="blue"><strong>Register</strong></h3>
+                            <h4 class="blue"><strong>Register</strong></h4>
                             <hr>
-                            <h3 class="black"><p class="lt-al"><b class="orange">oh</b><b>z</b> has the following sign up requirements;</p></h3>
+                            <h4 class="black"><p class="lt-al">Theohz has the following sign up requirements;</p></h4>
                             <hr>
-                            <h3 class="black">
+                            <h4 class="black">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>A Valid email</li>
                                     <li>A Unique username</li>
                                     <li>A strong memorable password</li>
                                 </ul>
-                            </h3>
+                            </h4>
                             <hr>
                         </div>
                         <div class="col-lg-3  b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/hand.svg" alt="">
                             <hr>
-                            <h3 class="blue"><strong>Setup</strong></h3>
+                            <h4 class="blue"><strong>Setup</strong></h4>
                             <hr>
-                            <h3 class="black"><p class="lt-al">Complete your user profile by adding your;</p></h3>
+                            <h4 class="black"><p class="lt-al">Complete your user profile by adding your;</p></h4>
                             <hr>
-                            <h3 class="black">
+                            <h4 class="black">
                                 <ul style="list-style-type:square;" class="lt-al">
                                     <li>First and last names</li>
                                     <li>Active mobile money or phone number</li>
                                     <li>Security code</li>
                                 </ul>
-                            </h3>
+                            </h4>
                             <hr>
                         </div>
                         <div class="col-lg-3  b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/three.svg" alt="">
                             <hr>
-                            <h3 class="blue"><strong>Topup stash</strong></h3>
+                            <h4 class="blue"><strong>Topup stash</strong></h4>
                             <hr>
-                            <h3 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h3>
+                            <h4 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h4>
                             <hr>
                             <a href="#stash" class="black">
-                                <h3>
+                                <h4>
                                     <ul style="list-style-type:square;" class="lt-al">
                                         <li>Bronze Stash</li>
                                         <li>Silver Stash</li>
                                         <li>Golden Stash</li>
                                         <li>Vibranium Stash</li>
                                     </ul>
-                                </h3>
+                                </h4>
                             </a>
                             <hr>
                         </div>
                         <div class="col-lg-3 b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h3 class="black"><strong>Use your <b class="orange">oh</b><b class="green">z</b></strong></h3>
+                            <h4 class="black"><strong>Use your ohz</strong></h4>
                             <hr>
-                            <h3 class="black">
-                                <p class="lt-al">Search, identify and secure the following packs using your <b class="orange">oh</b><b class="green">z</b> stash;</p>
+                            <h4 class="black">
+                                <p class="lt-al">Search, identify and secure the following packs using theohz</p>
                                 <hr>
                                 <ul style="list-style-type:square;" class="lt-al">    
                                     <li>Airtime</li>
@@ -359,7 +359,7 @@
                                     <li>Accommodation</li>
                                 </ul>
                                 <hr>
-                            </h3>
+                            </h4>
                         </div>
                     </div>
                 </div>
@@ -377,7 +377,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <hr class="container col-lg-4">
-                            <button class="btn btn-lg btn-outline-danger"><b class="orange">OH</b><b>Z</b> PRICING</button>
+                            <button class="btn btn-lg btn-outline-dark"><b class="orange">OH</b><b>Z</b> PRICING</button>
                             <hr class="container col-lg-4">
                             <h1 class="black"><strong>STASH VALUE AND COST</strong></h1>
                         </div>
@@ -392,15 +392,15 @@
                         <div class="col-lg-8">
                             <div class="container white-bg br-10">
                                 <hr>
-                                    <h3 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">1 UGX</big> .</h3><br>
-                                    <h3 class="black">5000 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h3>
+                                    <h4 class="black">1 <big class="orange"><b class="orange">oh</b><b>z</b></big> <big><strong> = </strong></big> <big class="orange">1 UGX</big> .</h4><br>
+                                    <h4 class="black">5000 <big class="orange"><b class="orange">oh</b><b>z</b></big><big><strong> = </strong></big> <big class="orange">UGX</big> 5000.</h4>
                                 <hr>
-                                <strong><u><h3 class="red">Disclaimer!</h3></u></strong>
-                                <h3>
+                                <strong><u><h4 class="red">Disclaimer!</h4></u></strong>
+                                <h4>
                                     <p class="black pb-30 lt-al">
                                         There are no limits on stash or wallet balances.
                                     </p>
-                                </h3>
+                                </h4>
                             </div> 
                         </div>
 
@@ -411,9 +411,9 @@
                     </div>
 
                     <div id="packs" class="row col-lg-11">
-                        <h3 class="lt-al black">
-                            Kindly choose your suitable <b class="orange">oh</b><b>z</b> stash from the available packages below ;
-                        </h3>
+                        <h4 class="lt-al black">
+                            Kindly choose your suitable ohz stash from the available packages below ;
+                        </h4>
                     </div>
 
                 </div>
@@ -422,13 +422,13 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <img class="package-no w-60" style="transform: scaleY(-1);" src="imgs/bronze.svg" alt="">
-                        <h3 class="blue lt-al">Bronze Stash</h3>
+                        <h4 class="blue lt-al">Bronze Stash</h4>
                     </div>
                     <div class="package-list">
                         <strong>
                             <ul>
-                                <li><h3>Airtime</h3></li>
-                                <li><h3>Food</h3></li>
+                                <li><h4>Airtime</h4></li>
+                                <li><h4>Food</h4></li>
                             </ul>
                         </strong>
                     </div>
@@ -440,15 +440,15 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/silver.svg" alt="">
-                        <h3 class="lt-al blue">Silver Stash</h3>
+                        <h4 class="lt-al blue">Silver Stash</h4>
                     </div>
                     <div class="package-list">
                         <strong>    
                             <ul class="lt-al">
-                                <li><h3>Airtime</h3></li>
-                                <li><h3>Food</h3></li>
-                                <li><h3>Mobile Money</h3></li>
-                                <li><h3>Accommodation Booking fee</h3></li>
+                                <li><h4>Airtime</h4></li>
+                                <li><h4>Food</h4></li>
+                                <li><h4>Mobile Money</h4></li>
+                                <li><h4>Accommodation Booking fee</h4></li>
                             </ul>
                         </strong>
                     </div>
@@ -460,16 +460,16 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <img class="package-no" style="width:60%;transform: scaleY(-1);" src="imgs/gold.svg" alt="">
-                        <h3 class="lt-al blue">Golden Stash</h3>
+                        <h4 class="lt-al blue">Golden Stash</h4>
                     </div>
                     <div class="package-list">
                         <strong>
                             <ul class="lt-al">
-                                <li><h3>Airtime</h3></li>
-                                <li><h3>Food</h3></li>
-                                <li><h3>Mobile Money</h3></li>
-                                <li><h3>Accommodation Booking fee</h3></li>
-                                <li><h3>Accommodation Payment Installation</h3></li>
+                                <li><h4>Airtime</h4></li>
+                                <li><h4>Food</h4></li>
+                                <li><h4>Mobile Money</h4></li>
+                                <li><h4>Accommodation Booking fee</h4></li>
+                                <li><h4>Accommodation Payment Installation</h4></li>
                             </ul>
                         </strong>
                     </div>
@@ -481,17 +481,17 @@
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
                         <img class="package-no" style="width:60%;" src="imgs/vibn.svg" alt="">
-                        <h3 class="lt-al blue">Vibranium Stash</h3>
+                        <h4 class="lt-al blue">Vibranium Stash</h4>
                     </div>
                     <div class="package-list blu">
                         <strong>
                             <ul class="lt-al">
-                                <li><h3>Airtime</h3></li>
-                                <li><h3>Food</h3></li>
-                                <li><h3>Mobile Money</h3></li>
-                                <li><h3>Accommodation Booking fee</h3></li>
-                                <li><h3>Accommodation Payment Installation</h3></li>
-                                <li><h3>Accommodation Full Payment</h3></li>
+                                <li><h4>Airtime</h4></li>
+                                <li><h4>Food</h4></li>
+                                <li><h4>Mobile Money</h4></li>
+                                <li><h4>Accommodation Booking fee</h4></li>
+                                <li><h4>Accommodation Payment Installation</h4></li>
+                                <li><h4>Accommodation Full Payment</h4></li>
                             </ul>
                         </strong>
                     </div>
