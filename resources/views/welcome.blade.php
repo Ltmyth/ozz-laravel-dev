@@ -15,7 +15,7 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h3>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h3>
+                       <h3>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h3>
                        <br>
                         <h4>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h4>
 
@@ -348,7 +348,7 @@
                         <div class="col-lg-3 b white-bg">
                             <img class="package-no pt-20 " style="width:50px;" src="imgs/cart.svg" alt="">
                             <hr>
-                            <h4 class="black"><strong>Use your ohz</strong></h4>
+                            <h4 class="blue"><strong>Use your ohz</strong></h4>
                             <hr>
                             <h4 class="black">
                                 <p class="lt-al">Search, identify and secure the following packs using theohz</p>
