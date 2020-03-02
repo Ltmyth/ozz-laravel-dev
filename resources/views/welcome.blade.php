@@ -17,7 +17,7 @@
                       
                        <h2>Latim Mark's <b class="orange">oh</b><b>z</b> one stop spot.</b></h2>
                        <br>
-                        <h3>Built for quick access to community-based services by community-based users through <b>the</b><b class="orange">oh</b><b>z</b></b> in both rural and urban communities.</h3>
+                        <h3>Built for quick access to community-based services by community-based users through <b>the</b><b class="orange">oh</b><b>z</b></b> in both rural and urban communities in Uganda.</h3>
 
                         <br>
                         <a href="/register">
