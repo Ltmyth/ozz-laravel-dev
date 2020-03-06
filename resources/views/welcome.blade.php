@@ -71,8 +71,8 @@
                        </button>
                     </a>
                 </div>
-                <div id="focus" class="col-lg-5 col-md-6 home-about-right pt-10">
-                    <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
+                <div id="focus" class="col-lg-5 col-md-6 home-about-right">
+                    <!-- <img id="hero_img"  src="/imgs/ozz-app.png" alt=""> -->
                     <br><!-- 
                     <img class="img-fluid w-40" src="imgs/pointing-up.svg" alt="">
                     <br><br> -->
