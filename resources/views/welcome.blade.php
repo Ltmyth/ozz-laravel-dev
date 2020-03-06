@@ -73,9 +73,9 @@
                 </div>
                 <div id="focus" class="col-lg-5 col-md-6 home-about-right pt-10">
                     <img id="hero_img"  src="/imgs/ozz-app.png" alt="">
-                    <br>
+                    <br><!-- 
                     <img class="img-fluid w-40" src="imgs/pointing-up.svg" alt="">
-                    <br><br>
+                    <br><br> -->
                     <div class="row">
                         <img class="br-10" src="/imgs/connected.png" alt="">
                     </div>
@@ -386,7 +386,7 @@
                     <div class="row">
                         <div class="col-lg-2">
                             <br><br><br>
-                            <img class="br-10 w-60" src="/imgs/ozz-app.png" alt="">
+                            <img class="br-10 w-70" style="transform: rotate(30deg);" src="/imgs/tag.png" alt="">
                         </div>
 
                         <div class="col-lg-8">
@@ -406,7 +406,7 @@
 
                         <div class="col-lg-2">
                             <br><br><br>
-                            <img class="br-10 w-70" style="transform: rotate(250deg);" src="/imgs/tag.png" alt="">
+                            <img class="br-10 w-70" style="transform: rotate(30deg);" src="/imgs/tag.png" alt="">
                         </div>
                     </div>
 
