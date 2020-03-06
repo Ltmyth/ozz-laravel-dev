@@ -15,9 +15,9 @@
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
                       
-                       <h3>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h3>
+                       <h1>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h1>
                        <br>
-                        <h4>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h4>
+                        <h3>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
 
                         <br>
                         <a href="/register">
