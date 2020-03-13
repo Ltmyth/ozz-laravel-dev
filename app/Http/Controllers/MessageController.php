@@ -259,11 +259,10 @@ class MessageController extends Controller
                 // split at line end
                 // rowz = split('\n', file_data)
                 // what I want      
-                $recipients = [] ;   
-
-                // $da = explode("\n",$file_data); 
-                $recipients = "+256783013570,+256784910695";
-                $phoneNumber = $recipients;
+                $recipients = [] ;
+                foreach ($file_data as $fdata) {
+                    $phoneNumber = $fdata;
+                }   
             } else {
                 die("Unable to open file");
             }
