@@ -115,7 +115,7 @@
     					</h3>
     				</label>
             <br>
-            <input id="package" onkeyup="calculate()" placeholder="Amount" class="container form-control col-lg-5" type="number" name="amount" required>
+            <input id="package" onkeyup="calculate()" placeholder="Amount" class="container form-control col-lg-5" type="number" name="amount" min="500" required>
             <br>
     				<label id="cost-label" style="display:none;">
     				  <h3>
@@ -124,9 +124,9 @@
     						</strong>
     					</h3>
     				</label>
-    				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-6 container" name="amount">
+    				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-5 container" name="amount">
             <br>
-            <input type="submit" class="btn btn-md btn-outline-dark" value="Request Top-up">
+            <input type="submit" class="btn btn-lg btn-outline-dark" value="Request Top-up">
           </form>
   				<br>
           <!-- <div class="col-lg-8 container">
