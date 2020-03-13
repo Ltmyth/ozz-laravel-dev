@@ -255,10 +255,10 @@ class MessageController extends Controller
             $handle = fopen($receiverz, "r");
             if ($handle) {
                 $file_data = fgetcsv($handle, 10000, ",");
-                if(count($file_data)>=2) {
-                    $rowz = array($file_data);
-                    $rows = array_shift($rowz);
-                    foreach ($rows as $row) {
+                $file_length = count($file_data);
+                if($file_length>=2) {
+                    $rows = fgetcsv($file_data);
+                    foreach($rows as $row) {
                         $sub = [];
                         $sub = $row; 
                         $phoneNumber = dd($sub);              
