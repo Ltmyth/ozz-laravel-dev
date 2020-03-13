@@ -14,7 +14,7 @@
     <script type="text/javascript">
       function calculate(){
         /*get fields*/
-        var x = document.getElementById('at-amount').value;
+        var x = document.getElementById('package').value;
         var y = document.getElementById('cost-label');
         var z = document.getElementById('cost-value');
 
@@ -24,7 +24,7 @@
 
         /*calculation*/
         var cost = 0;
-        var discount = 2/100;
+        var discount = 0/100;
 
         var charge = x*discount;
         var actual_charge = x-charge;
@@ -126,7 +126,7 @@
     				</label>
     				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
             <br>
-            <input type="submit" class="btn btn-md btn-outline-danger" value="Request Top-up">
+            <input type="submit" class="btn btn-md btn-outline-dark" value="Request Top-up">
           </form>
   				<br>
           <!-- <div class="col-lg-8 container">
