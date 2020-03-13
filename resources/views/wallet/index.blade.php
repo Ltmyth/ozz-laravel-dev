@@ -115,7 +115,7 @@
     					</h3>
     				</label>
             <br>
-            <input id="package" onkeyup="calculate()" placeholder="Amount" class="container form-control col-lg-6" type="number" name="amount" required>
+            <input id="package" onkeyup="calculate()" placeholder="Amount" class="container form-control col-lg-5" type="number" name="amount" required>
             <br>
     				<label id="cost-label" style="display:none;">
     				  <h3>
