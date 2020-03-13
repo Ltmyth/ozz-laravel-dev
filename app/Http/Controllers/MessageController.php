@@ -256,11 +256,12 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = fgetcsv($handle, 10000, ",");
                 if(count($file_data)>=2) {
-                    $rows = $file_data;
+                    $rowz = array($file_data);
+                    $rows = array_shift($rowz);
                     foreach ($rows as $row) {
                         $sub = [];
                         $sub['number'] = $row; 
-                        $phoneNumber = dd(array_shift($sub));              
+                        $phoneNumber = dd($sub);              
                     }
                     fclose($receiverz);
                 }else{
