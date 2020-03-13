@@ -75,7 +75,7 @@
                   <small class="red">
                     Payment Method
                   </small>  
-                  <select class="form-control">
+                  <select class="form-control col-lg-6">
                     <option>Mobile-Money</option>
                     <option disabled>Mastercard</option>
                   </select>                  
@@ -124,7 +124,7 @@
     						</strong>
     					</h3>
     				</label>
-    				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-8 container" name="amount">
+    				<input id="cost-value" placeholder="Ugx" type="hidden" class="form-control col-lg-6 container" name="amount">
             <br>
             <input type="submit" class="btn btn-md btn-outline-dark" value="Request Top-up">
           </form>
