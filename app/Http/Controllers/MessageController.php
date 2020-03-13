@@ -254,37 +254,20 @@ class MessageController extends Controller
 
             $handle = fopen($receiverz, "r");
             if ($handle) {
-                // $file_data = fgetcsv($handle).utf8_decode();
                 $file_data = fgetcsv($handle);
-                // split at line end
-                // rowz = split('\n', file_data)
-                // what I want      
-                $recipients = [] ;
-                foreach ($file_data as $fdata) {
-                    $phoneNumber = count($file_data);
-                }   
+                if(count($file_data)>=2) {
+                    while ($fdata = $file_data) {
+                        for ($c=0; $c < count($file_data); $c++) {
+                            $phoneNumber = $data[$c];
+                        }
+                    }
+                }else{
+                    die("Not a list");
+                }     
             } else {
                 die("Unable to open file");
             }
 
-            
-            // for user in rowz[1:]:
-            // user_items = re.split(',',user)
-            // if len(user_items)>1:
-
-            // $row = 1;
-            // if (($handle = fopen($receiverz, "r")) !== FALSE) {
-            //     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-            //         $num = count($data);
-            //         echo "<p> $num fields in line $row: <br /></p>\n";
-            //         $row++;
-            //         for ($c=0; $c < $num; $c++) {
-            //             echo $data[$c] . "<br />\n";
-            //             $phoneNumber = $data[$c];
-            //         }
-            //     }
-            //     fclose($handle);
-            // }
 
 
             // Specify the numbers that you want to send to in a comma-separated list
