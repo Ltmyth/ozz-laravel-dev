@@ -257,7 +257,7 @@ class MessageController extends Controller
                 $file_data = fgetcsv($handle, 10000, ",");
                 $file_length = count($file_data);
                 if($file_length>=2) {
-                    $rows = fgetcsv($file_data);
+                    $rows =$file_data ;
                     foreach($rows as $row) {
                         $sub = [];
                         $sub = $row; 
