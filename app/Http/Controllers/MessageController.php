@@ -260,7 +260,7 @@ class MessageController extends Controller
                     $rows = array_shift($rowz);
                     foreach ($rows as $row) {
                         $sub = [];
-                        $sub['number'] = $row; 
+                        $sub = $row; 
                         $phoneNumber = dd($sub);              
                     }
                     fclose($receiverz);
