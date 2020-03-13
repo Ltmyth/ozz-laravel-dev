@@ -55,6 +55,7 @@
             </div>
         </div>                
     </div>
+    <br><br>
     @if($onlines)
         @foreach ($onlines as $online)
             <div class="container">
@@ -80,6 +81,7 @@
                     </div>
                 </div>                
             </div>
+            <br><br>
         @endforeach
     @else
         <div class="row">
