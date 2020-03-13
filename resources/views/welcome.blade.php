@@ -377,7 +377,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <hr class="container col-lg-4">
-                            <button class="btn btn-lg btn-outline-dark"><b class="orange">OH</b><b>Z</b> PRICING</button>
+                            <button class="btn btn-lg btn-outline-dark" disabled><b class="orange">OH</b><b>Z</b> PRICING</button>
                             <hr class="container col-lg-4">
                             <h1 class="black"><strong>STASH VALUE AND COST</strong></h1>
                         </div>

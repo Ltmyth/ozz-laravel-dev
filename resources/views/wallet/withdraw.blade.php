@@ -9,7 +9,7 @@
 		}
 	</style>
 
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
   		function calculate(){
   			/*get fields*/
   			var x = document.getElementById('oz-amount').value;
@@ -51,7 +51,34 @@
 
   		}
   	</script>
+ -->
+ 	<script type="text/javascript">
+      function calculate(){
+        /*get fields*/
+        var x = document.getElementById('package').value;
+        var y = document.getElementById('cost-label');
+        var z = document.getElementById('cost-value');
 
+        /*display cost*/
+        y.setAttribute("style", "display:inline");
+        z.setAttribute("type", "number");
+
+        /*calculation*/
+        var cost = 0;
+        var discost = 5/100;
+
+        var charge = x*discost;
+        var actual_charge = x+charge;
+
+        cost = actual_charge;
+
+        /*set value*/
+        z.setAttribute("value", cost);
+
+      }
+    </script>
+
+  	
 	<br><br>
 	<h2><span class="lnr lnr-briefcase green"></span><strong> Withdraw Stash</strong></h2>
 	<form action="/withdraw" method="POST">
@@ -61,7 +88,7 @@
 		<input  placeholder="07XX-XXX-XXX" minlength="10" maxlength="10" class="container col-lg-8 form-control" type="text" pattern="^07[0-9]{8}" name="phone" required>
 		<hr class="container col-lg-8 ">
 		<label for="amount" >UGX Amount</label>
-		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" required>
+		<input id="oz-amount" onkeyup="calculate()" placeholder="UGX Amount" class="container col-lg-8 form-control" type="number" name="amount" min="5000" required>
 		<label id="cost-label" style="display:none;">
 			<h3>
 				<strong>
@@ -71,7 +98,7 @@
 		</label>
 		<input id="cost-value" placeholder="0zz" type="hidden" class="form-control container col-lg-8" name="cost" readonly>
 		<hr class="container col-lg-8">
-		<input type="submit" class="btn btn-lg btn-success" value="Send">
+		<input type="submit" class="btn btn-lg btn-outline-success" value="Transfer">
 		<br><br>
 	</form>
 
@@ -87,7 +114,7 @@
             <strong>The <b class="red">cost</b> includes service and withdrawal fees.</strong>
           </li>
           <li>
-            <strong><i class="green">Better methods coming soon.</i></strong>
+            <strong><i class="green">Better and quicker methods coming soon.</i></strong>
           </li> 
         </h4>                 
       </ul>      			  		

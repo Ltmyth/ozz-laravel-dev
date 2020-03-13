@@ -249,12 +249,10 @@ class MessageController extends Controller
             $username = "sandbox";
             $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
-            //remove first line
-            // $data = array_slice($file, 1);
 
             $customerArr = array();
 
-            $file_data = $receiverz.fgetcsv().utf8_decode();
+            $file_data = fgetcsv($receiverz).utf8_decode();
             // split at line end
             // rowz = split('\n', file_data)
             // what I want      
@@ -279,11 +277,6 @@ class MessageController extends Controller
                 fclose($handle);
             }
 
-
-            // for ($i = 0; $i < count($customerArr); $i ++)
-            // {
-            //     $phoneNumber= $customerArr[$i];
-            // }
 
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)

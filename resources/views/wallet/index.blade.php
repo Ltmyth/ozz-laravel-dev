@@ -148,7 +148,7 @@
                   <strong>The stash <b class="red">cost</b> includes service and withdrawal fees.</strong>
                 </li>
                 <li>
-                  <strong><i class="green">Better payment methods coming soon.</i></strong>
+                  <strong><i class="green">Better and quicker methods coming soon.</i></strong>
                 </li> 
               </h4>                 
             </ul>
