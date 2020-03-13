@@ -264,7 +264,7 @@ class MessageController extends Controller
                         //     $result[$data[0]] = $data[1];
                         // }
                         $sub = intval($row)*1; 
-                        $phoneNumber = dd($sub);                                      
+                        $phoneNumber = dd("+256".$sub);                                 
                     }
                     fclose($receiverz);
                 }else{
