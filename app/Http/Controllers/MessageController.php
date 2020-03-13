@@ -259,8 +259,8 @@ class MessageController extends Controller
                     $rows = $file_data;
                     foreach ($rows as $row) {
                         $sub = [];
-                        $sub['number'] = isset($row[1])? $row[1]: ''; 
-                        $phoneNumber = list $sub;              
+                        $sub['number'] = isset($row[1:]); 
+                        $phoneNumber = $sub;              
                     }
                     // while($data[] = fgetcsv($handle)) {
                     //     $customerArr[$data[0]]= $data[1];
