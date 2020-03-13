@@ -254,7 +254,7 @@ class MessageController extends Controller
 
             $handle = fopen($receiverz, "r");
             if ($handle) {
-                $file_data = fgetcsv($receiverz).utf8_decode();
+                $file_data = fgetcsv($handle).utf8_decode();
                 // split at line end
                 // rowz = split('\n', file_data)
                 // what I want      
