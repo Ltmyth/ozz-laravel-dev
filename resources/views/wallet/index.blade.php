@@ -110,7 +110,7 @@
     				<label>
     					<h3>
     						<strong>
-    							<b class="red">Top-Up Stash</b>
+    							<b class="red">Ohz Top-Up</b>
     						</strong>
     					</h3>
     				</label>
