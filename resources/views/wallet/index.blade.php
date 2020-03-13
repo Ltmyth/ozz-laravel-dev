@@ -75,7 +75,7 @@
                   <small class="red">
                     Payment Method
                   </small>  
-                  <select class="form-control col-lg-6 container">
+                  <select class="form-control col-lg-8 container">
                     <option>Mobile-Money</option>
                     <option disabled>Mastercard</option>
                   </select>                  
