@@ -254,7 +254,7 @@ class MessageController extends Controller
 
             $handle = fopen($receiverz, "r");
             if ($handle) {
-                $file_data = fgetcsv($handle);
+                $file_data = fgetcsv($handle, 10000, ",");
                 if(count($file_data)>=2) {
                     $rows = $file_data;
                     foreach ($rows as $row) {
@@ -262,6 +262,7 @@ class MessageController extends Controller
                         $sub['number'] = $row; 
                         $phoneNumber = dd(array_shift($sub));              
                     }
+                    fclose($receiverz);
                 }else{
                     die("Not a list");
                 }   
