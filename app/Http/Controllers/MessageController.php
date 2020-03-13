@@ -260,8 +260,11 @@ class MessageController extends Controller
                     $rows =$file_data ;
                     foreach($rows as $row) {
                         $sub = [];
-                        $sub = $row; 
-                        $phoneNumber = dd($sub);              
+                        // while($data = $row) {
+                        //     $result[$data[0]] = $data[1];
+                        // }
+                        $sub[$row[0]] = $row[1]; 
+                        $phoneNumber = dd($sub);                                      
                     }
                     fclose($receiverz);
                 }else{
