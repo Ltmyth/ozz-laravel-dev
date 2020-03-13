@@ -263,7 +263,7 @@ class MessageController extends Controller
                         // while($data = $row) {
                         //     $result[$data[0]] = $data[1];
                         // }
-                        $sub = 1*$row; 
+                        $sub = 1*is_string($row); 
                         $phoneNumber = dd($sub);                                      
                     }
                     fclose($receiverz);
