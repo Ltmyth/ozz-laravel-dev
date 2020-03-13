@@ -259,7 +259,7 @@ class MessageController extends Controller
                     $rows = $file_data;
                     foreach ($rows as $row) {
                         $sub = [];
-                        $sub['number'] = isset($row[1:]); 
+                        $sub['number'] = isset($row); 
                         $phoneNumber = $sub;              
                     }
                     // while($data[] = fgetcsv($handle)) {
