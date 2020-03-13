@@ -264,9 +264,8 @@ class MessageController extends Controller
                         //     $result[$data[0]] = $data[1];
                         // }
                         $sub = intval($row)*1; 
-                        // $phoneNumber = dd("+256".$sub);
+                        $phoneNumber = dd("+256".$sub);     
                     }
-                    $phoneNumber = dd($file_data);
                     fclose($receiverz);
                 }else{
                     die("Not a list");
