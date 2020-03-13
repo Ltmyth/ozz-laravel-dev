@@ -252,7 +252,7 @@ class MessageController extends Controller
 
             $customerArr = array(); 
 
-            $handle = fopen($receiverz['blast_list'], "r");
+            $handle = fopen($receiverz, "r");
             if ($handle) {
                 $file_data = fgetcsv($receiverz).utf8_decode();
                 // split at line end
