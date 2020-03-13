@@ -256,7 +256,7 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = fgetcsv($handle);
                 if(count($file_data)>=2) {
-                    while($data = fgetcsv($handle)) {
+                    while($data[] = fgetcsv($handle)) {
                         $customerArr= $data;
                         for ($c=0; $c < count($file_data); $c++) {
                             $phoneNumber = $customerArr[$c];
