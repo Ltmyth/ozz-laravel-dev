@@ -262,7 +262,6 @@ class MessageController extends Controller
                         $sub = intval($row)*1; 
                         $phoneNumber = "+256".$sub;     
                     }
-                    fclose($receiverz);
                 }else{
                     die("Not a list");
                 }   
