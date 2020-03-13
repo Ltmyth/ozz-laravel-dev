@@ -259,6 +259,7 @@ class MessageController extends Controller
                 if($file_length>=2) {
                     $rows =$file_data ;
                     foreach($rows as $row) {
+                        $sub = [];
                         $sub = intval($row)*1; 
                         $phoneNumber = "+256".$sub;     
                     }
