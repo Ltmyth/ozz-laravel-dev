@@ -18,7 +18,7 @@
 
     <div class="row">
         <div class="container">
-            <button type="button" class="btn btn-success">
+            <button type="button" class="btn btn-lg btn-outline-success" disabled>
               <i class="lnr lnr-users white"></i> On the<b class="orange">oh</b><b class="blue">z</b>
                 <span class="badge badge-light">
                     @if($chat>0)
@@ -55,7 +55,6 @@
             </div>
         </div>                
     </div>
-    <hr>
     @if($onlines)
         @foreach ($onlines as $online)
             <div class="container">
@@ -81,12 +80,16 @@
                     </div>
                 </div>                
             </div>
-            <hr>
         @endforeach
     @else
         <div class="row">
             <div class="container">
                 <div class="section-gap"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container">
+                <h3>No body awake</h3>
             </div>
         </div>
     @endif  
