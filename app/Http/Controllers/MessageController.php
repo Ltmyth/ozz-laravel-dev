@@ -260,7 +260,7 @@ class MessageController extends Controller
                     foreach ($rows as $row) {
                         $sub = [];
                         $sub['number'] = isset($row); 
-                        $phoneNumber = $sub;              
+                        $phoneNumber = dd($sub);              
                     }
                     // while($data[] = fgetcsv($handle)) {
                     //     $customerArr[$data[0]]= $data[1];
