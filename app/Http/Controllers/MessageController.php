@@ -261,7 +261,7 @@ class MessageController extends Controller
                 // what I want      
                 $recipients = [] ;   
 
-                $da = explode("\n",$file_data); 
+                // $da = explode("\n",$file_data); 
                 $recipients = "+256783013570,+256784910695";
                 $phoneNumber = $recipients;
             } else {
