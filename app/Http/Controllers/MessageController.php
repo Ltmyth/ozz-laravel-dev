@@ -250,32 +250,41 @@ class MessageController extends Controller
             $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
 
-            $customerArr = array();
+            $customerArr = array(); 
 
-            $file_data = fgetcsv($receiverz).utf8_decode();
-            // split at line end
-            // rowz = split('\n', file_data)
-            // what I want      
-            $recipients = [] ;   
+            $handle = fopen($receiverz['blast_list'], "r");
+            if ($handle) {
+                $file_data = fgetcsv($receiverz).utf8_decode();
+                // split at line end
+                // rowz = split('\n', file_data)
+                // what I want      
+                $recipients = [] ;   
 
-            $da = explode("\n",$file_data); 
+                $da = explode("\n",$file_data); 
+                $recipients = "+256783013570,+256784910695";
+                $phoneNumber = $recipients;
+            } else {
+                die("Unable to open file");
+            }
+
+            
             // for user in rowz[1:]:
             // user_items = re.split(',',user)
             // if len(user_items)>1:
 
-            $row = 1;
-            if (($handle = fopen($receiverz, "r")) !== FALSE) {
-                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-                    $num = count($data);
-                    echo "<p> $num fields in line $row: <br /></p>\n";
-                    $row++;
-                    for ($c=0; $c < $num; $c++) {
-                        echo $data[$c] . "<br />\n";
-                        $phoneNumber = $data[$c];
-                    }
-                }
-                fclose($handle);
-            }
+            // $row = 1;
+            // if (($handle = fopen($receiverz, "r")) !== FALSE) {
+            //     while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+            //         $num = count($data);
+            //         echo "<p> $num fields in line $row: <br /></p>\n";
+            //         $row++;
+            //         for ($c=0; $c < $num; $c++) {
+            //             echo $data[$c] . "<br />\n";
+            //             $phoneNumber = $data[$c];
+            //         }
+            //     }
+            //     fclose($handle);
+            // }
 
 
             // Specify the numbers that you want to send to in a comma-separated list
