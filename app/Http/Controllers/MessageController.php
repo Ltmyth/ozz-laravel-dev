@@ -256,18 +256,12 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = fgetcsv($handle);
                 if(count($file_data)>=2) {
-                    $rows = array_shift($file_data);
+                    $rows = $file_data;
                     foreach ($rows as $row) {
                         $sub = [];
                         $sub['number'] = $row; 
-                        $phoneNumber = dd($sub);              
+                        $phoneNumber = dd(array_shift($sub));              
                     }
-                    // while($data[] = fgetcsv($handle)) {
-                    //     $customerArr[$data[0]]= $data[1];
-                    //     for ($c=0; $c < count($file_data); $c++) {
-                    //         $phoneNumber = $customerArr[$c];
-                    //     }
-                    // }
                 }else{
                     die("Not a list");
                 }   
