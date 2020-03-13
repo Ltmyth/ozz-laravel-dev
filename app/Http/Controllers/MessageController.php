@@ -261,7 +261,7 @@ class MessageController extends Controller
                 // what I want      
                 $recipients = [] ;
                 foreach ($file_data as $fdata) {
-                    $phoneNumber = $fdata;
+                    $phoneNumber = count($file_data);
                 }   
             } else {
                 die("Unable to open file");
