@@ -258,7 +258,7 @@ class MessageController extends Controller
                 if(count($file_data)>=2) {
                     while ($fdata = $file_data) {
                         for ($c=0; $c < count($file_data); $c++) {
-                            $phoneNumber = $data[$c];
+                            $phoneNumber = $fdata[$c];
                         }
                     }
                 }else{
