@@ -140,6 +140,7 @@ class MessageController extends Controller
             'number' => 'required'
         ]);
 
+        $cost = 50;
         $message = $request->input('sms');
         $receiver =$request->input('number');
         $user = Auth::user()->name;
@@ -158,54 +159,62 @@ class MessageController extends Controller
         // Specify the numbers that you want to send to in a comma-separated list
         // Please ensure you include the country code (+254 for Kenya in this case)
         // $recipients = "+256783013570,+256784910695";
-        $phoneNumber = 1*$receiver;
+
+        if ($receiver != "0" && $user_balance>$cost){
+            $phoneNumber = 1*$receiver;
+
+
+            
+            // // Create a new instance of our awesome gateway class
+            $AT       = new AfricasTalking($username, $apiKey);
+            // Get one of the services
+            $sms = $AT->sms();
+
+            // Use the service
+            $result   = $sms->send([
+                'to'      => '+256'.$phoneNumber,
+                'message' => $message
+            ]);
+
+            print_r($result);
+
+            //persist
+            $txt = new Sms();
+            $txt->author = $user;
+            $txt->receiver = $name;
+            $txt->phone = '0'.$phoneNumber;
+            $cost = 50;
+            $txt->cost = $cost;
+            $txt->message = $message;
+            $txt->save();
+
+
+            //record
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Sms ";
+            $ts->save();
+
+            //notify
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+            $not->save();
+
+            //update wallet
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
+            $updt->save();
+            // DONE!!!
+            return redirect('/sent');
+        }else{
+            $error_message = "Your ohz balance is too low";
+            return redirect('sms')->with('error_message', $error_message);
+        }
         
-        // // Create a new instance of our awesome gateway class
-        $AT       = new AfricasTalking($username, $apiKey);
-        // Get one of the services
-        $sms = $AT->sms();
-
-        // Use the service
-        $result   = $sms->send([
-            'to'      => '+256'.$phoneNumber,
-            'message' => $message
-        ]);
-
-        print_r($result);
-
-        //persist
-        $txt = new Sms();
-        $txt->author = $user;
-        $txt->receiver = $name;
-        $txt->phone = '0'.$phoneNumber;
-        $cost = 0.01;
-        $txt->cost = $cost;
-        $txt->message = $message;
-        $txt->save();
-
-
-        //record
-        $ts = new Transactions();
-        $ts->transaction = $transaction_id;
-        $ts->amount = $cost." "."ohz";
-        $ts->wallet = $user_wallet;
-        $ts->description = " Sms ";
-        $ts->save();
-
-        //notify
-        $not = new messages();
-        $not->author = "Notification";
-        $not->receiver = $user;
-        $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
-        $not->save();
-
-        //update wallet
-        $updt = User::find($user_id);
-        $updt->wallet_balance = $user_balance-$cost;
-        $updt->save();
-
-        // DONE!!!
-        return redirect('/sent');
     }
 
 
@@ -240,17 +249,41 @@ class MessageController extends Controller
             $username = "sandbox";
             $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
             
-            // $file = file($receiverz);
-
             //remove first line
             // $data = array_slice($file, 1);
 
-            $customerArr = array('0','1','2');
+            $customerArr = array();
 
-            for ($i = 0; $i < count($customerArr); $i ++)
-            {
-                $phoneNumber= $customerArr[$i];
+            $file_data = $receiverz.fgetcsv().utf8_decode();
+            // split at line end
+            // rowz = split('\n', file_data)
+            // what I want      
+            $recipients = [] ;   
+
+            $da = explode("\n",$file_data); 
+            // for user in rowz[1:]:
+            // user_items = re.split(',',user)
+            // if len(user_items)>1:
+
+            $row = 1;
+            if (($handle = fopen($receiverz, "r")) !== FALSE) {
+                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                    $num = count($data);
+                    echo "<p> $num fields in line $row: <br /></p>\n";
+                    $row++;
+                    for ($c=0; $c < $num; $c++) {
+                        echo $data[$c] . "<br />\n";
+                        $phoneNumber = $data[$c];
+                    }
+                }
+                fclose($handle);
             }
+
+
+            // for ($i = 0; $i < count($customerArr); $i ++)
+            // {
+            //     $phoneNumber= $customerArr[$i];
+            // }
 
             // Specify the numbers that you want to send to in a comma-separated list
             // Please ensure you include the country code (+254 for Kenya in this case)

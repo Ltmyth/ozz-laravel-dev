@@ -26,7 +26,7 @@
   			var charge = x*discount;
   			var actual_charge = x-charge;
 
-  			cost = actual_charge/5000;
+  			cost = actual_charge;
 
   			/*set value*/
   			z.setAttribute("value", cost);
