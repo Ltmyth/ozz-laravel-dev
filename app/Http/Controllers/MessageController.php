@@ -256,35 +256,11 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = fgetcsv($handle, 10000, ",");
                 $file_length = count($file_data);
-                if($file_length>=2) {
-                    $rows[] =$file_data ;
-                    $Lists = str_replace("'", "\'", json_encode($rows));
-                    // Specify the numbers that you want to send to in a comma-separated list
-                    // Please ensure you include the country code (+254 for Kenya in this case)
-                    // $recipients = "+256783013570,+256784910695";
-                    // $phoneNumber = 1*$customerArr[0];
-                    
-                    // // Create a new instance of our awesome gateway class
-                    $AT       = new AfricasTalking($username, $apiKey);
-                    // Get one of the services
-                    // $sms = $AT->sms();                    
-                    // foreach($Lists as $List) {
-                    //     $sub = [];
-                    //     $rowdata = (int)str_replace(array(' ', ','), '',$List);
-                    //     $sub = ltrim($rowdata, '0');
-                    //     $phone = '+256'.strval($sub); 
-                    //     $phones = array();
-                    //     $phones = $phone;
-                        
-                        // Use the service
-                        // $result   = $sms->send([
-                        //     'to'      => $phones,
-                        //     'message' => $message
-                        // ]);
-                        // print_r($result);  
-                    dd($Lists);
+                $rows = array();
+                $receivers = array();
+                while ($rows=$handle ) {
+                    dd($rows);
                 }
-
             } else {
                 die("Unable to open file");
             }
