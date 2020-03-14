@@ -257,9 +257,13 @@ class MessageController extends Controller
                 $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
                 $receivers = array();
-                while ($rows=$file_data ) {
-                    dd($rows);
+                while (($line = fgetcsv($receiverz)) !== FALSE) {
+                  //$line is an array of the csv elements
+                  dd($line);
                 }
+                // while ($rows=$file_data ) {
+                //     dd($rows);
+                // }
             } else {
                 die("Unable to open file");
             }
