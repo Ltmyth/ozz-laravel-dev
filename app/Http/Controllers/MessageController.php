@@ -258,12 +258,25 @@ class MessageController extends Controller
                 $file_length = count($file_data);
                 if($file_length>=2) {
                     $rows =$file_data ;
+                    // Specify the numbers that you want to send to in a comma-separated list
+                    // Please ensure you include the country code (+254 for Kenya in this case)
+                    // $recipients = "+256783013570,+256784910695";
+                    // $phoneNumber = 1*$customerArr[0];
+                    
+                    // // Create a new instance of our awesome gateway class
+                    $AT       = new AfricasTalking($username, $apiKey);
+                    // Get one of the services
+                    $sms = $AT->sms();                    
                     foreach($rows as $row) {
                         $sub = [];
                         $rowdata = (int)str_replace(array(' ', ','), '',$row);
                         $sub = ltrim($rowdata, '0'); 
-                        $phoneNumber = "+256".$sub;
-                        dd($phoneNumber);     
+                        // Use the service
+                        $result   = $sms->send([
+                            'to'      => '+256'.$sub,
+                            'message' => $message
+                        ]);
+                        print_r($result);  
                     }
                 }else{
                     die("Not a list");
@@ -272,27 +285,6 @@ class MessageController extends Controller
             } else {
                 die("Unable to open file");
             }
-
-
-
-            // Specify the numbers that you want to send to in a comma-separated list
-            // Please ensure you include the country code (+254 for Kenya in this case)
-            // $recipients = "+256783013570,+256784910695";
-            // $phoneNumber = 1*$customerArr[0];
-            
-            // // Create a new instance of our awesome gateway class
-            $AT       = new AfricasTalking($username, $apiKey);
-            // Get one of the services
-            // $sms = $AT->sms();
-
-            // Use the service
-            // $result   = $sms->send([
-            //     'to'      => '+256'.$phoneNumber,
-            //     'message' => $message
-            // ]);
-
-            // print_r($result);
-
             //persist
             // $txt = new Sms();
             // $txt->author = $user;
@@ -325,7 +317,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message =$phoneNumber;
+            $message ="Sent";
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
