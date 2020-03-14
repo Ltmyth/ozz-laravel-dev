@@ -254,7 +254,7 @@ class MessageController extends Controller
 
             $handle = fopen($receiverz, "r");
             if ($handle) {
-                $file_data = fgetcsv($handle, 10000, ",");
+                $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
                 $rows = array();
                 $receivers = array();
