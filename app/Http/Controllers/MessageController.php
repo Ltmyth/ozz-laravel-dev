@@ -262,7 +262,7 @@ class MessageController extends Controller
                         $sub = [];
                         $rowdata = (int)str_replace(array(' ', ','), '',$row);
                         $sub = ltrim($rowdata, '0'); 
-                        $phoneNumber = "+256".$sub;     
+                        $phoneNumber =dd($sub);     
                     }
                 }else{
                     die("Not a list");
