@@ -261,7 +261,7 @@ class MessageController extends Controller
                     foreach($rows as $row) {
                         $sub = [];
                         $rowdata = (int)str_replace(array(' ', ','), '',$row);
-                        $sub = 1*$rowdata; 
+                        $sub = ltrim($rowdata, '0'); 
                         $phoneNumber = "+256".$sub;     
                     }
                 }else{
