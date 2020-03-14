@@ -22,7 +22,7 @@
 
   			/*calculation*/
   			var cost = 0;
-  			cost = x /5000;
+  			cost = x /1;
 
   			/*set value*/
   			z.setAttribute("value", cost);
