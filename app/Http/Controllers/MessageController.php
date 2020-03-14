@@ -273,7 +273,7 @@ class MessageController extends Controller
                         $sub = ltrim($rowdata, '0');
                         $phone = '+256'.strval($sub); 
                         $phones = array();
-                        $phones = $phones+$phone;
+                        $phones = $phone;
                         // Use the service
                         $result   = $sms->send([
                             'to'      => $phones,
