@@ -257,10 +257,8 @@ class MessageController extends Controller
                 $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
                 $receivers = array();
-                while ($rows=$file_data ) {
-                    foreach($rows as $row){
-                        $receivers = $row[0];
-                    }
+                for($count=0, $count<$file_length, $count++){
+                    $receivers->append($row[$count][0]);
                 }
                 dd($receivers);
             } else {
