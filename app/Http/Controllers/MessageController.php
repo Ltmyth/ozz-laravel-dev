@@ -270,10 +270,11 @@ class MessageController extends Controller
                     foreach($rows as $row) {
                         $sub = [];
                         $rowdata = (int)str_replace(array(' ', ','), '',$row);
-                        $sub = ltrim($rowdata, '0'); 
+                        $sub = ltrim($rowdata, '0');
+                        $phone = strval($sub); 
                         // Use the service
                         $result   = $sms->send([
-                            'to'      => '+256'.$sub,
+                            'to'      => '+256'.$phone,
                             'message' => $message
                         ]);
                         print_r($result);  
