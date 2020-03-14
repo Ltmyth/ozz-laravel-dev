@@ -283,10 +283,7 @@ class MessageController extends Controller
                         // ]);
                         // print_r($result);  
                     dd($Lists);
-                    }
-                }else{
-                    die("Not a list");
-                }   
+                }
 
             } else {
                 die("Unable to open file");
