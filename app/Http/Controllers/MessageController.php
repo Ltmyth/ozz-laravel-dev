@@ -258,7 +258,7 @@ class MessageController extends Controller
                 $file_length = count($file_data);
                 if($file_length>=2) {
                     $rows[] =$file_data ;
-                    $Lists = {!! str_replace("'", "\'", json_encode($rows)) !!};
+                    $Lists = str_replace("'", "\'", json_encode($rows));
                     // Specify the numbers that you want to send to in a comma-separated list
                     // Please ensure you include the country code (+254 for Kenya in this case)
                     // $recipients = "+256783013570,+256784910695";
