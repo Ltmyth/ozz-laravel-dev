@@ -260,7 +260,7 @@ class MessageController extends Controller
                     $rows =$file_data ;
                     foreach($rows as $row) {
                         $sub = [];
-                        $rowdata = implode($row);
+                        $rowdata = strval($row);
                         $sub = 1*$rowdata; 
                         $phoneNumber = "+256".$sub;     
                     }
