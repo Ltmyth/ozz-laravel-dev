@@ -271,10 +271,12 @@ class MessageController extends Controller
                         $sub = [];
                         $rowdata = (int)str_replace(array(' ', ','), '',$row);
                         $sub = ltrim($rowdata, '0');
-                        $phone = strval($sub); 
+                        $phone = '+256'.strval($sub); 
+                        $phones = array();
+                        $phones = $phones+$phone;
                         // Use the service
                         $result   = $sms->send([
-                            'to'      => '+256'.$phone,
+                            'to'      => $phones,
                             'message' => $message
                         ]);
                         print_r($result);  
