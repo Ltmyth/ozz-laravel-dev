@@ -267,20 +267,22 @@ class MessageController extends Controller
                     // // Create a new instance of our awesome gateway class
                     $AT       = new AfricasTalking($username, $apiKey);
                     // Get one of the services
-                    $sms = $AT->sms();                    
-                    foreach($Lists as $List) {
-                        $sub = [];
-                        $rowdata = (int)str_replace(array(' ', ','), '',$List);
-                        $sub = ltrim($rowdata, '0');
-                        $phone = '+256'.strval($sub); 
-                        $phones = array();
-                        $phones = $phone;
+                    // $sms = $AT->sms();                    
+                    // foreach($Lists as $List) {
+                    //     $sub = [];
+                    //     $rowdata = (int)str_replace(array(' ', ','), '',$List);
+                    //     $sub = ltrim($rowdata, '0');
+                    //     $phone = '+256'.strval($sub); 
+                    //     $phones = array();
+                    //     $phones = $phone;
+                        
                         // Use the service
-                        $result   = $sms->send([
-                            'to'      => $phones,
-                            'message' => $message
-                        ]);
-                        print_r($result);  
+                        // $result   = $sms->send([
+                        //     'to'      => $phones,
+                        //     'message' => $message
+                        // ]);
+                        // print_r($result);  
+                    dd($Lists);
                     }
                 }else{
                     die("Not a list");
