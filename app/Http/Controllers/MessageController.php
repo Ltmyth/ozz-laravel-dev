@@ -258,7 +258,7 @@ class MessageController extends Controller
                 $file_length = count($file_data);
                 $receivers = array();
                 for($count=0; $count<$file_length; $count++){
-                    $receivers->append($row[$count][0]);
+                    array_push($receivers,$row[$count][0]);
                 }
                 dd($receivers);
             } else {
