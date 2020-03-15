@@ -17,7 +17,7 @@
       	<h2>Sent SMS History</h2>
       	<hr>
         <table class="table-striped w-90">
-            <thead>
+            <thead class="p-3 mb-2 bg-secondary text-white">
                 <tr>
                     <th scope="col" class="lt-al">When</th>
                     <th scope="col" class="lt-al">To</th>

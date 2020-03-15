@@ -150,11 +150,11 @@ class MessageController extends Controller
         $name = $request->input('receiver');
         $transaction_id = "#4s5m9"."L".time()."s6M0hz";
 
-        // $username = "Mat";
-        // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+        $username = "Mat";
+        $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
         
-        $username = "sandbox";
-        $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        // $username = "sandbox";
+        // $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
         
         // Specify the numbers that you want to send to in a comma-separated list
         // Please ensure you include the country code (+254 for Kenya in this case)
@@ -179,35 +179,35 @@ class MessageController extends Controller
             print_r($result);
 
             //persist
-            // $txt = new Sms();
-            // $txt->author = $user;
-            // $txt->receiver = $name;
-            // $txt->phone = '0'.$phoneNumber;
-            // $cost = 50;
-            // $txt->cost = $cost;
-            // $txt->message = $message;
-            // $txt->save();
+            $txt = new Sms();
+            $txt->author = $user;
+            $txt->receiver = $name;
+            $txt->phone = '0'.$phoneNumber;
+            $cost = 50;
+            $txt->cost = $cost;
+            $txt->message = $message;
+            $txt->save();
 
 
             //record
-            // $ts = new Transactions();
-            // $ts->transaction = $transaction_id;
-            // $ts->amount = $cost." "."ohz";
-            // $ts->wallet = $user_wallet;
-            // $ts->description = " Sms ";
-            // $ts->save();
+            $ts = new Transactions();
+            $ts->transaction = $transaction_id;
+            $ts->amount = $cost." "."ohz";
+            $ts->wallet = $user_wallet;
+            $ts->description = " Sms ";
+            $ts->save();
 
             //notify
-            // $not = new messages();
-            // $not->author = "Notification";
-            // $not->receiver = $user;
-            // $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
-            // $not->save();
+            $not = new messages();
+            $not->author = "Notification";
+            $not->receiver = $user;
+            $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+            $not->save();
 
             //update wallet
-            // $updt = User::find($user_id);
-            // $updt->wallet_balance = $user_balance-$cost;
-            // $updt->save();
+            $updt = User::find($user_id);
+            $updt->wallet_balance = $user_balance-$cost;
+            $updt->save();
             // DONE!!!
             return redirect('/sent');
         }else{
