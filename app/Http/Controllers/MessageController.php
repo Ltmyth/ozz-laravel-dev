@@ -280,8 +280,6 @@ class MessageController extends Controller
                     'to'      => $recipients,
                     'message' => $message
                 ]);
-
-                dd($recipients);
                 
             } else {
                 die("Unable to open file");
@@ -318,7 +316,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message ="Broadcast sent ";
+            $message =$recipients."Broadcast sent ";
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
