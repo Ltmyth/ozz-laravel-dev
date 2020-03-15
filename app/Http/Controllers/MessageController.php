@@ -256,14 +256,20 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
-                $receivers = array();                
+                $receivers = array();
+                $phones = array();                
                 if($file_length>=2) {
                     foreach($file_data as $line) {
                         $nums = array_diff($line, [""]);
                         $receivers[] = implode(",", $nums);
                     }
+
+                    foreach($receivers as $phone) {
+                        $num = ltrim($phone, '0');
+                        $phones[] = "+256".$num;
+                    }
                 }
-                dd($receivers);
+                dd($phones);
             } else {
                 die("Unable to open file");
             }
