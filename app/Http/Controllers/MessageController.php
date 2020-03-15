@@ -241,7 +241,7 @@ class MessageController extends Controller
             $user_wallet = Auth::user()->wallet_id;
             $user_balance = Auth::user()->wallet_balance;
             $name = $request->input('receiver');
-            $transaction_id = "#4s5m9"."L".time()."s6M0hz";
+            $transaction_id = "#4Bs5m9"."L".time()."s6M0hz";
 
             // $username = "Mat";
             // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
@@ -256,9 +256,10 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
+                $r_cost = 50 * $file_length;
                 $receivers = array();
                 $phones = array();                
-                if($file_length>=2) {
+                if($file_length>=2 && $user_balance>$r_cost) {
                     // Create a new instance of our the at gateway class
                     $AT= new AfricasTalking($username, $apiKey);
 
@@ -278,44 +279,50 @@ class MessageController extends Controller
                             'to'      =>  "+256".$num,
                             'message' => $message
                         ]);
+
+                        //persist
+                        // $txt = new Sms();
+                        // $txt->author = $user;
+                        // $txt->receiver = "Broadcast";
+                        // $txt->phone = '0'.$num;
+                        // $cost = 50;
+                        // $txt->cost = $cost;
+                        // $txt->message = $message;
+                        // $txt->save();
+
+
+                        //record
+                        // $ts = new Transactions();
+                        // $ts->transaction = $transaction_id;
+                        // $ts->amount = $cost." "."ohz";
+                        // $ts->wallet = $user_wallet;
+                        // $ts->description = " Sms ";
+                        // $ts->save();
+
+                        //notify
+                        // $not = new messages();
+                        // $not->author = "Notification";
+                        // $not->receiver = $user;
+                        // $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+                        // $not->save();
+
+                        //update wallet
+                        // $updt = User::find($user_id);
+                        // $updt->wallet_balance = $user_balance-$cost;
+                        // $updt->save();
+
                     }
                     // comma seperated list of phone numbers string
                     $recipients = implode(",", $phones);
+                }else{
+                    $error_message ="Transaction not allowed";
+                    // Failed !!
+                    return redirect('/bulk_sms')->with('error_message', $error_message);
                 }
             } else {
                 die("Unable to open file");
             }
-            //persist
-            // $txt = new Sms();
-            // $txt->author = $user;
-            // $txt->receiver = $name;
-            // $txt->phone = '0'.$phoneNumber;
-            // $cost = 0.01;
-            // $txt->cost = $cost;
-            // $txt->message = $message;
-            // $txt->save();
-
-
-            //record
-            // $ts = new Transactions();
-            // $ts->transaction = $transaction_id;
-            // $ts->amount = $cost." "."ohz";
-            // $ts->wallet = $user_wallet;
-            // $ts->description = " Sms ";
-            // $ts->save();
-
-            //notify
-            // $not = new messages();
-            // $not->author = "Notification";
-            // $not->receiver = $user;
-            // $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
-            // $not->save();
-
-            //update wallet
-            // $updt = User::find($user_id);
-            // $updt->wallet_balance = $user_balance-$cost;
-            // $updt->save();
-
+            
             // DONE!!!
             $message ="Broadcast sent ";
             return redirect('/sent')->with('message', $message);
