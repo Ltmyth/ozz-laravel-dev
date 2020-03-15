@@ -260,9 +260,10 @@ class MessageController extends Controller
                 if($file_length>=2) {
                     foreach($file_data as $line) {
                         $nums = array_diff($line, [""]);
-                        $receivers[] = $nums;
+                        $receivers[] = implode(",", $nums);
                     }
                 }
+                dd($receivers);
             } else {
                 die("Unable to open file");
             }
@@ -298,7 +299,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message =$receivers;
+            $message ="Broadcast sent ";
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
