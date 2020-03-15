@@ -268,6 +268,7 @@ class MessageController extends Controller
                         $num = ltrim($phone, '0');
                         $phones[] = "+256".$num;
                     }
+                    $recipients[] = $phones;
                 }
                 // // Create a new instance of our awesome gateway class
                 $AT       = new AfricasTalking($username, $apiKey);
@@ -276,7 +277,7 @@ class MessageController extends Controller
 
                 // Use the service
                 $result   = $sms->send([
-                    'to'      => $phones,
+                    'to'      => $recipients,
                     'message' => $message
                 ]);
 
