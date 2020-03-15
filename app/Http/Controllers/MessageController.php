@@ -263,7 +263,6 @@ class MessageController extends Controller
                         $receivers[] = $nums;
                     }
                 }
-                print_r($receivers);
             } else {
                 die("Unable to open file");
             }
@@ -299,7 +298,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message ="Sent";
+            $message =$receivers;
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
