@@ -259,7 +259,7 @@ class MessageController extends Controller
                 $receivers = array();                
                 if($file_length>=2) {
                     foreach($file_data as $line) {
-                        $nums = array_diff($line, [""]);
+                        $nums = array_diff($line, ["0",""]);
                         $receivers[] = $nums;
                     }
                 }
