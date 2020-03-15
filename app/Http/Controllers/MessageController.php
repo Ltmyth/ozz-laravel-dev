@@ -269,7 +269,18 @@ class MessageController extends Controller
                         $phones[] = "+256".$num;
                     }
                 }
-                dd($phones);
+                // // Create a new instance of our awesome gateway class
+                $AT       = new AfricasTalking($username, $apiKey);
+                // Get one of the services
+                $sms = $AT->sms();
+
+                // Use the service
+                $result   = $sms->send([
+                    'to'      => $phones,
+                    'message' => $message
+                ]);
+
+                print_r($result);
             } else {
                 die("Unable to open file");
             }
