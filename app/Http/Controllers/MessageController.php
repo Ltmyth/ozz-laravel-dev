@@ -280,6 +280,8 @@ class MessageController extends Controller
                     'to'      => $recipients,
                     'message' => $message
                 ]);
+
+                dd($recipients);
                 
             } else {
                 die("Unable to open file");
