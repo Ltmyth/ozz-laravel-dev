@@ -234,7 +234,7 @@ class MessageController extends Controller
         ]);
 
         if($request->hasFile('csv_upload')){
-            $message = $request->input('sms');
+            $message = $request->input('message');
             $receiverz =$request->file('csv_upload');
             $user = Auth::user()->name;
             $user_id = Auth::user()->id;
@@ -316,7 +316,7 @@ class MessageController extends Controller
             // $updt->save();
 
             // DONE!!!
-            $message =$recipients."Broadcast sent ";
+            $message ="Broadcast sent ";
             return redirect('/sent')->with('message', $message);
         }else{
             $error_message ="Upload csv in correct sample format";
