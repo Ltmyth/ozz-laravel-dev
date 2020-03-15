@@ -16,18 +16,18 @@
     <div class="table-responsive">
       	<h2>Sent SMS History</h2>
       	<hr>
-        <table class="table-striped w-90">
+        <table class="table-striped table-bordered w-90">
             <thead>
-                <tr class="text-white">
-                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">When</th>
-                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">To</th>
-                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">Phone number</th>
-                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">Message</th>
-                    <th scope="col" class="p-3 mb-2 bg-secondary ">Status</th>
-                    <th scope="col" class="p-3 mb-2 bg-secondary">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
+                <tr class="p-3 mb-2 bg-secondary lt-al text-white">
+                    <th scope="col">When</th>
+                    <th scope="col">To</th>
+                    <th scope="col">Phone number</th>
+                    <th scope="col" >Message</th>
+                    <th scope="col" >Status</th>
+                    <th scope="col" >( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-hover">
                 @if($texts) 
                     @foreach ($texts as $text)
 
