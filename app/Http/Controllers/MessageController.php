@@ -243,8 +243,8 @@ class MessageController extends Controller
             $name = $request->input('receiver');
             $transaction_id = "#4Bs5m9"."L".time()."s6M0hz";
 
-            // $username = "Mat";
-            // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
+            $username = "Mat";
+            $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
             
             $username = "sandbox";
         $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
@@ -315,7 +315,7 @@ class MessageController extends Controller
                     // comma seperated list of phone numbers string
                     $recipients = implode(",", $phones);
                 }else{
-                    $error_message ="Transaction not allowed";
+                    $error_message ="Error F/F:Transaction failed";
                     // Failed !!
                     return redirect('/bulk_sms')->with('error_message', $error_message);
                 }
