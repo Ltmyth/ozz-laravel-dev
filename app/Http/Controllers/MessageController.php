@@ -260,10 +260,10 @@ class MessageController extends Controller
                 if($file_length>=2) {
                     foreach($file_data as $line) {
                         $nums = array_diff($line, [""]);
-                        $receivers[] = ltrim($nums, '0');
+                        $receivers[] = $nums;
                     }
                 }
-                dd($receivers);
+                print_r(join($receivers));
             } else {
                 die("Unable to open file");
             }
