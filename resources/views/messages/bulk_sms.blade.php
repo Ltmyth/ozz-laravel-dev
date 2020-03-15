@@ -17,10 +17,10 @@
             <div class="container col-lg-7 lt-al"> 
                  
                 <button class="btn btn-sm btn-outline-success" onclick="download()">
-                    Download and edit sample list
+                    Download Theohz sample broadcast list here
                 </button>
                 <br><br>
-                <label><h4>Upload (.csv) file</h4></label>
+                <label><h4>Upload broadcast list(.csv) file</h4></label>
                 &nbsp;&nbsp;
                 <input type="file" class="btn btn-sm btn-outline-danger" accept=".csv, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" name="csv_upload" required>
 
