@@ -17,14 +17,14 @@
       	<h2>Sent SMS History</h2>
       	<hr>
         <table class="table-striped w-90">
-            <thead class="p-3 mb-2 bg-secondary text-white">
-                <tr>
-                    <th scope="col" class="lt-al">When</th>
-                    <th scope="col" class="lt-al">To</th>
-                    <th scope="col" class="lt-al">Phone number</th>
-                    <th scope="col" class="lt-al">Message</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
+            <thead>
+                <tr class="text-white">
+                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">When</th>
+                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">To</th>
+                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">Phone number</th>
+                    <th scope="col" class="p-3 mb-2 bg-secondary lt-al">Message</th>
+                    <th scope="col" class="p-3 mb-2 bg-secondary ">Status</th>
+                    <th scope="col" class="p-3 mb-2 bg-secondary">( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
             <tbody>
