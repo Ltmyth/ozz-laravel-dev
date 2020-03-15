@@ -15,10 +15,9 @@
     
     <div class="table-responsive">
       	<h2>Sent SMS History</h2>
-      	<hr>
         <table class="table-striped table-bordered w-90">
             <thead>
-                <tr class="p-3 mb-2 bg-secondary lt-al text-white">
+                <tr class="p-3 mb-2 bg-secondary lt-al text-white br-10">
                     <th scope="col">When</th>
                     <th scope="col">To</th>
                     <th scope="col">Phone number</th>
@@ -46,7 +45,7 @@
 
 
                             <td>
-                                <h3 class="blue"><strong>{{ $text->message }}</strong></h3> 
+                                <h4 class="black"><strong>{{ $text->message }}</strong></h3> 
                             </td>
 
                             <td>
