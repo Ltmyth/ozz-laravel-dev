@@ -256,10 +256,10 @@ class MessageController extends Controller
             if ($handle) {
                 $file_data = array_map('str_getcsv', file($receiverz));
                 $file_length = count($file_data);
-                $receivers[];
+                $receivers = array();
                 for($count=0; $count<$file_length; $count++){
                     while ($row = $file_data) {
-                        $receivers[] = $row[$count];
+                        $receivers = $row[$count];
                     }
                 }
                 dd($receivers);
