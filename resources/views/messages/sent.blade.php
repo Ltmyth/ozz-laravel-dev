@@ -13,11 +13,11 @@
     	}
     </style>
     
-    <div class="table-responsive">
+    <div class="container table-responsive">
       	<h2>Sent SMS History</h2>
         <table class="table-striped table-bordered w-90">
             <thead>
-                <tr class="p-3 mb-2 bg-secondary lt-al text-white br-10">
+                <tr class="p-3 mb-2 bg-info lt-al text-white br-10">
                     <th scope="col">When</th>
                     <th scope="col">To</th>
                     <th scope="col">Phone number</th>
