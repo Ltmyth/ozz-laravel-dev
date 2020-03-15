@@ -259,6 +259,9 @@ class MessageController extends Controller
                 $receivers = array();
                 $phones = array();                
                 if($file_length>=2) {
+                    // Create a new instance of our the at gateway class
+                    $AT= new AfricasTalking($username, $apiKey);
+
                     foreach($file_data as $line) {
                         $nums = array_diff($line, [""]);
                         $receivers[] = implode(",", $nums);
@@ -267,20 +270,18 @@ class MessageController extends Controller
                     foreach($receivers as $phone) {
                         $num = ltrim($phone, '0');
                         $phones[] = "+256".$num;
+                        // Get one of the services
+                        $sms = $AT->sms();
+
+                        // Use the service
+                        $result   = $sms->send([
+                            'to'      =>  "+256".$num,
+                            'message' => $message
+                        ]);
                     }
+                    // comma seperated list of phone numbers string
                     $recipients = implode(",", $phones);
                 }
-                // // Create a new instance of our awesome gateway class
-                $AT= new AfricasTalking($username, $apiKey);
-                // Get one of the services
-                $sms = $AT->sms();
-
-                // Use the service
-                $result   = $sms->send([
-                    'to'      => $recipients,
-                    'message' => $message
-                ]);
-                
             } else {
                 die("Unable to open file");
             }

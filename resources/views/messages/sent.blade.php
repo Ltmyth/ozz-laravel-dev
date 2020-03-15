@@ -26,11 +26,11 @@
                     <th scope="col" >( <b class="orange">Oh</b><b>z</b> ) Cost</th>
                 </tr>
             </thead>
-            <tbody class="table-hover">
+            <tbody>
                 @if($texts) 
                     @foreach ($texts as $text)
 
-                        <tr class="lt-al p-40 br-10">
+                        <tr class="lt-al p-40 br-10 table-hover">
                             <td>
                                 <h5>{{ $text->created_at->diffForHumans() }}</h5>
                             </td>
