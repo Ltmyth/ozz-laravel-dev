@@ -263,7 +263,7 @@ class MessageController extends Controller
                         $receivers[] = $nums;
                     }
                 }
-                print_r(join($receivers));
+                print_r(implode($receivers));
             } else {
                 die("Unable to open file");
             }
