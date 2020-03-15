@@ -247,9 +247,8 @@ class MessageController extends Controller
             // $apiKey = "4c2abe345bc83d4bcfb557a7bf75dc550e8138f77395f7f5611a032bcb5f6eda";
             
             $username = "sandbox";
-            $apiKey = 
-            "edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
-            
+        $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        
 
             $customerArr = array(); 
 
@@ -269,30 +268,19 @@ class MessageController extends Controller
                         $num = ltrim($phone, '0');
                         $phones[] = "+256".$num;
                     }
-                    $recipients[] = $phones;
+                    $recipients = implode(",", $phones);
                 }
                 // // Create a new instance of our awesome gateway class
-                $AT       = new AfricasTalking($username, $apiKey);
+                $AT= new AfricasTalking($username, $apiKey);
                 // Get one of the services
                 $sms = $AT->sms();
 
                 // Use the service
-                // $result   = $sms->send([
-                //     'to'      => $recipients,
-                //     'message' => $message
-                // ]);
-
-                try {
-                    // Thats it, hit send and we'll take care of the rest
-                    $result = $sms->send([
-                        'to'      => $recipients,
-                        'message' => $message
-                    ]);
-
-                    print_r($result);
-                } catch (Exception $e) {
-                    echo "Error: ".$e->getMessage();
-                }
+                $result   = $sms->send([
+                    'to'      => $recipients,
+                    'message' => $message
+                ]);
+                
             } else {
                 die("Unable to open file");
             }
