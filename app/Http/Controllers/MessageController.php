@@ -281,35 +281,35 @@ class MessageController extends Controller
                         ]);
 
                         //persist
-                        // $txt = new Sms();
-                        // $txt->author = $user;
-                        // $txt->receiver = "Broadcast";
-                        // $txt->phone = '0'.$num;
-                        // $cost = 50;
-                        // $txt->cost = $cost;
-                        // $txt->message = $message;
-                        // $txt->save();
+                        $txt = new Sms();
+                        $txt->author = $user;
+                        $txt->receiver = "Broadcast";
+                        $txt->phone = '0'.$num;
+                        $cost = 50;
+                        $txt->cost = $cost;
+                        $txt->message = $message;
+                        $txt->save();
 
 
                         //record
-                        // $ts = new Transactions();
-                        // $ts->transaction = $transaction_id;
-                        // $ts->amount = $cost." "."ohz";
-                        // $ts->wallet = $user_wallet;
-                        // $ts->description = " Sms ";
-                        // $ts->save();
+                        $ts = new Transactions();
+                        $ts->transaction = $transaction_id;
+                        $ts->amount = $cost." "."ohz";
+                        $ts->wallet = $user_wallet;
+                        $ts->description = " Sms ";
+                        $ts->save();
 
                         //notify
-                        // $not = new messages();
-                        // $not->author = "Notification";
-                        // $not->receiver = $user;
-                        // $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
-                        // $not->save();
+                        $not = new messages();
+                        $not->author = "Notification";
+                        $not->receiver = $user;
+                        $not->message = "You successfully redeemed ".$cost." "."ohz as sms with transaction id:"." ".$transaction_id;
+                        $not->save();
 
                         //update wallet
-                        // $updt = User::find($user_id);
-                        // $updt->wallet_balance = $user_balance-$cost;
-                        // $updt->save();
+                        $updt = User::find($user_id);
+                        $updt->wallet_balance = $user_balance-$cost;
+                        $updt->save();
 
                     }
                     // comma seperated list of phone numbers string

@@ -12,7 +12,7 @@
     	<h2>
         <i class="lnr lnr-alarm orange"></i> Notifications
     </h2>
-    <div class="table-responsive">
+    <div class="table-responsive container">
 
     <!-- <h2>Personal History</h2> -->
         <hr>

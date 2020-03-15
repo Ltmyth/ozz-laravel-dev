@@ -28,9 +28,9 @@
 
         <!-- <h2>Personal History</h2> -->
         <hr>
-        <table class="table-striped w-100">
+        <table class="table-striped container w-100">
             <thead>
-              <tr>
+              <tr class="p-3 mb-2 bg-light lt-al text-dark br-50">
                 <th scope="col" class="lt-al">When</th>
                 <th scope="col" class="lt-al">Transaction Id</th>
                 <th scope="col" class="lt-al">Transaction</th>

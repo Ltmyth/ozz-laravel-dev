@@ -16,10 +16,9 @@
     <div class="table-responsive">
         
       	<h2>Sent Airtime History</h2>
-      	<hr>
         <table class="table-striped w-100">
             <thead>
-                <tr>
+                <tr class="p-3 mb-2 bg-light lt-al text-dark br-50">
                     <th scope="col" class="lt-al">When</th>
                     <th scope="col" class="lt-al">Phone number</th>
                     <th scope="col" class="lt-al">(UGX) Amount</th>
