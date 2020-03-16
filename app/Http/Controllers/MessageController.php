@@ -255,7 +255,8 @@ class MessageController extends Controller
             $handle = fopen($receiverz, "r");
             if ($handle) {
                 $file_data = array_map('str_getcsv', file($receiverz));
-                $file_length = count($file_data);
+                $unique_file_data = array_unique($file_data);
+                $file_length = count($unique_file_data);
                 $r_cost = 50 * $file_length;
                 $receivers = array();
                 $phones = array();                
@@ -263,7 +264,7 @@ class MessageController extends Controller
                     // Create a new instance of our the at gateway class
                     $AT= new AfricasTalking($username, $apiKey);
 
-                    foreach($file_data as $line) {
+                    foreach($unique_file_data as $line) {
                         $nums = array_diff($line, [""]);
                         $receivers[] = implode(",", $nums);
                     }
