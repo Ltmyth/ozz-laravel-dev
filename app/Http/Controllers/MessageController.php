@@ -258,7 +258,7 @@ class MessageController extends Controller
                     $nums = array_diff($line, [""]);
                     $receivers[] = implode(",", $nums);
                 }
-                $uniq_receivers[] = array_unique($receivers) ;
+                $uniq_receivers[] = array_unique($file_data) ;
                 $file_length = count($uniq_receivers);
                 $r_cost = 50 * $file_length;
                 $phones = array();                               
