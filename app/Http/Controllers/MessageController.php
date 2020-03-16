@@ -248,25 +248,27 @@ class MessageController extends Controller
             
         //     $username = "sandbox";
         // $apiKey ="edc34ce3dbdc8c2d8aa8d2da5725079a702de848c2900ef154e307b75bca4e18";
+        
+
+            $customerArr = array(); 
 
             $handle = fopen($receiverz, "r");
             if ($handle) {
-                $file_data = array_map('str_getcsv', file($receiverz));            
-                $receivers = array();
-                $uniq_receivers = array(); 
-                foreach($file_data as $line) {
-                    $nums = array_diff($line, [""]);
-                    $receivers[] = implode(",", $nums);
-                }
-                $uniq_receivers[] = array_unique($file_data) ;
-                $file_length = count($uniq_receivers);
+                $file_data = array_map('str_getcsv', file($receiverz));
+                $file_length = count($file_data);
                 $r_cost = 50 * $file_length;
-                $phones = array();                               
+                $receivers = array();
+                $phones = array();                
                 if($file_length>=2 && $user_balance>$r_cost) {
                     // Create a new instance of our the at gateway class
                     $AT= new AfricasTalking($username, $apiKey);
 
-                    foreach($uniq_receivers as $phone) {
+                    foreach($file_data as $line) {
+                        $nums = array_diff($line, [""]);
+                        $receivers[] = implode(",", $nums);
+                    }
+
+                    foreach(array_unique($receivers) as $phone) {
                         $num = ltrim($phone, '0');
                         $phones[] = "+256".$num;
                         // Get one of the services
