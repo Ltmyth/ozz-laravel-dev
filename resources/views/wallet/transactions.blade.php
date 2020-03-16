@@ -18,11 +18,11 @@
     <!-- right side -->
     <div class="container">
       
-    	<h1 class="center" style="font-size:350%;">
+    	<h3 class="center" style="font-size:350%;">
     		<i class="lnr lnr-briefcase orange">
     			<strong>Transactions Ledger</strong>
     		</i>
-    	</h1>
+    	</h3>
     	<br>
     	<div class="container table-responsive">
 
