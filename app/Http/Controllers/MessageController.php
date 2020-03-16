@@ -314,8 +314,16 @@ class MessageController extends Controller
                     }
                     // comma seperated list of phone numbers string
                     $recipients = implode(",", $phones);
+                }elseif($file_length<2 && $user_balance>$r_cost){
+                    $error_message ="Error:List too short";
+                    // Failed !!
+                    return redirect('/bulk_sms')->with('error_message', $error_message);
+                }elseif($file_length>=2 && $user_balance<$r_cost){
+                    $error_message ="Error: Insufficient ohz";
+                    // Failed !!
+                    return redirect('/bulk_sms')->with('error_message', $error_message);
                 }else{
-                    $error_message ="Error F/F:Transaction failed";
+                    $error_message ="Error:Transaction failed";
                     // Failed !!
                     return redirect('/bulk_sms')->with('error_message', $error_message);
                 }
