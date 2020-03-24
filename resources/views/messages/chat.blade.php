@@ -34,7 +34,7 @@
     <hr>
     <div class="container">
         <div class="row bb bt"> 
-            <div class="col-lg-5 w-5">
+            <div class="col-lg-5">
                 <div class="row pull-right">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <h3 class="blue">
@@ -48,7 +48,7 @@
             <div class="col-lg-6 lt-al">
                 <div class="row bg-light br-10">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <h3 class="black pl-10 ml-10" >
+                        <h4 class="black pl-10 ml-10" >
                             {{ 'Passionate African Dev' }}
                         </h3> 
                     </a>
