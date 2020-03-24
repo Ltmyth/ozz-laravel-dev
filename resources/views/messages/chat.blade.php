@@ -35,17 +35,14 @@
     <div class="container">
         <div class="row bb bt"> 
             <div class="col-lg-6 w-5">
-                <div class="col-lg-1"></div>
-                <div class="col-lg-5">
-                    <div class="row">
-                        <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <h3 class="blue rt-al">
-                                <i class="lnr lnr-user white br-50 bg-secondary"></i>
-                                <strong>{{ 'Latim Mark' }}</strong>
-                                <span class="green_dot"></span>
-                            </h3> 
-                        </a>
-                    </div>
+                <div class="row container">
+                    <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
+                        <h3 class="blue rt-al">
+                            <i class="lnr lnr-user white br-50 bg-secondary"></i>
+                            <strong>{{ 'Latim Mark' }}</strong>
+                            <span class="green_dot"></span>
+                        </h3> 
+                    </a>
                 </div>
             </div>
             <div class="col-lg-6 lt-al">
