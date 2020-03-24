@@ -164,7 +164,7 @@
             <!-- background:#dff9fb; -->
             <div id="body" class="col-lg-12 nlight col-sm-12 container">
                 @auth
-                <div id="sidenav" class="nlight-bg br-10 col-lg-10 container  sidenav">
+                <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
                     @include('layouts.sidenav')   
                 </div>
                 <hr class="container col-lg-9">

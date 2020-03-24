@@ -19,7 +19,7 @@
     <div class="row">
         <div class="container">
             <button type="button" class="btn btn-lg btn-outline-success" disabled>
-              <i class="lnr lnr-users white"></i> On the<b class="orange">oh</b><b class="blue">z</b>
+              <i class="lnr lnr-users green"></i> On the<b class="orange">oh</b><b class="blue">z</b>
                 <span class="badge badge-light">
                     @if($chat>0)
                         {{$chat+=1}}
@@ -63,11 +63,7 @@
                     <div class="col-lg-5 w-5">
                         <div class="row">
                             <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <img 
-                                    class="w-10 mr-10 rt" 
-                                    src="{{ asset('/imgs/ozz-app.png') }}"
-                                    alt="Avator" 
-                                >
+                                <i class="lnr lnr-user green px100 br-50 bg-secondary"></i>
                             </a>
 
                         </div>
