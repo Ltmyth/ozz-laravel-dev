@@ -62,7 +62,7 @@
         @foreach ($onlines as $online)
             <div class="container">
                 <div class="row bb bt"> 
-                    <div class="col-lg-5 w-5">
+                    <div class="col-lg-5">
                         <div class="row pull-right">
                             <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <h3 class="blue">
@@ -77,7 +77,7 @@
                         <div class="row bg-light br-10">
                             <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <h3 class="black pl-10 ml-10" >
-                                    {{ 'Of theOhz' }}
+                                    {{ 'Of theohz' }}
                                 </h3> 
                             </a>
                         </div>
