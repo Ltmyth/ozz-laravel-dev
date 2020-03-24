@@ -49,7 +49,7 @@
                 <div class="row bg-light br-10">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <h3 class="black pl-10 ml-10" >
-                            <strong>{{ 'Passionate African Dev' }}</strong>
+                            {{ 'Passionate African Dev' }}
                         </h3> 
                     </a>
                 </div>
@@ -62,10 +62,8 @@
         @foreach ($onlines as $online)
             <div class="container">
                 <div class="row bb bt"> 
-                    <div class="col-lg-5 w-5 rt-al">
-                    </div>
-                    <div class="col-lg-7 lt-al">
-                        <div class="row">
+                    <div class="col-lg-5 w-5">
+                        <div class="row pull-right">
                             <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <h3 class="blue">
                                     <i class="lnr lnr-user white br-50 bg-secondary"></i>
@@ -75,6 +73,16 @@
                             </a>
                         </div>
                     </div>
+                    <div class="col-lg-6 lt-al">
+                        <div class="row bg-light br-10">
+                            <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <h3 class="black pl-10 ml-10" >
+                                    {{ 'Of theOhz' }}
+                                </h3> 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>                    
                 </div>                
             </div>
             <br><br>
