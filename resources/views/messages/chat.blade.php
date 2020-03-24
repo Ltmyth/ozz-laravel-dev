@@ -37,7 +37,7 @@
             <div class="col-lg-6 w-5">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5">
-                    <div class="row">
+                    <div class="row rt-al">
                         <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h3 class="blue">
                                 <i class="lnr lnr-user white br-50 bg-secondary"></i>
@@ -49,9 +49,9 @@
                 </div>
             </div>
             <div class="col-lg-6 lt-al">
-                <div class="row bg-secondary br-10">
+                <div class="row bg-light br-10">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <h3 class="white ml-10" >
+                        <h3 class="black pl-10 ml-10" >
                             <strong>{{ 'Passionate African Dev' }}</strong>
                         </h3> 
                     </a>
