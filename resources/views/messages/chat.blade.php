@@ -76,9 +76,9 @@
                     <div class="col-lg-6 lt-al">
                         <div class="row bg-light br-10">
                             <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <h3 class="black pl-10 ml-10" >
+                                <h4 class="black pl-10 ml-10" >
                                     {{ 'Of theohz' }}
-                                </h3> 
+                                </h4> 
                             </a>
                         </div>
                     </div>
