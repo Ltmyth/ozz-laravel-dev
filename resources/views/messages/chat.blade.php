@@ -35,20 +35,23 @@
     <div class="container">
         <div class="row bb bt"> 
             <div class="col-lg-6 w-5">
-                <div class="row">
-                    <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <h3 class="blue">
-                            <i class="lnr lnr-user white br-50 bg-secondary"></i>
-                            <strong>{{ 'Latim Mark' }}</strong>
-                            <span class="green_dot"></span>
-                        </h3> 
-                    </a>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <h3 class="blue">
+                                <i class="lnr lnr-user white br-50 bg-secondary"></i>
+                                <strong>{{ 'Latim Mark' }}</strong>
+                                <span class="green_dot"></span>
+                            </h3> 
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6 lt-al">
-                <div class="row bg-secondary text-white br-10">
+                <div class="row bg-secondary br-10">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <h3 >
+                        <h3 class="white ml-10" >
                             <strong>{{ 'Passionate African Dev' }}</strong>
                         </h3> 
                     </a>
