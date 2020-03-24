@@ -60,8 +60,8 @@
         @foreach ($onlines as $online)
             <div class="container">
                 <div class="row bb bt"> 
-                    <div class="col-lg-5 w-5">
-                        <div class="row rt-al">
+                    <div class="col-lg-5 w-5 rt-al">
+                        <div class="row">
                             <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <i class="lnr lnr-user white br-50 bg-secondary"></i>
                             </a>
