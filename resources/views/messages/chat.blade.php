@@ -34,8 +34,8 @@
     <hr>
     <div class="container">
         <div class="row bb bt"> 
-            <div class="col-lg-6 w-5">
-                <div class="row ml-20 pl-20 pull-right">
+            <div class="col-lg-5 w-5">
+                <div class="row pull-right">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
                         <h3 class="blue">
                             <i class="lnr lnr-user white br-50 bg-secondary"></i>
@@ -54,6 +54,7 @@
                     </a>
                 </div>
             </div>
+            <div class="col-lg-1"></div>
         </div>                
     </div>
     <br><br>
