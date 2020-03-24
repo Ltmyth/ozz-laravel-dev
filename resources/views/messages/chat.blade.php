@@ -61,9 +61,9 @@
             <div class="container">
                 <div class="row bb bt"> 
                     <div class="col-lg-5 w-5">
-                        <div class="row">
+                        <div class="row rt-al">
                             <a href="/user/{{ $online->name }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <i class="lnr lnr-user green px100 br-50 bg-secondary"></i>
+                                <i class="lnr lnr-user white br-50 bg-secondary"></i>
                             </a>
 
                         </div>
