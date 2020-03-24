@@ -37,9 +37,9 @@
             <div class="col-lg-6 w-5">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-5">
-                    <div class="row rt-al">
+                    <div class="row">
                         <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <h3 class="blue">
+                            <h3 class="blue rt-al">
                                 <i class="lnr lnr-user white br-50 bg-secondary"></i>
                                 <strong>{{ 'Latim Mark' }}</strong>
                                 <span class="green_dot"></span>
