@@ -48,9 +48,9 @@
             <div class="col-lg-6 lt-al">
                 <div class="row bg-light br-10">
                     <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <h4 class="black pl-10 ml-10" >
+                        <h5 class="black pl-10 ml-10" >
                             {{ 'Passionate African Dev' }}
-                        </h3> 
+                        </h5> 
                     </a>
                 </div>
             </div>
@@ -76,9 +76,9 @@
                     <div class="col-lg-6 lt-al">
                         <div class="row bg-light br-10">
                             <a href="/user/{{ 'Latim Mark' }}"  onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <h4 class="black pl-10 ml-10" >
-                                    {{ 'Of theohz' }}
-                                </h4> 
+                                <h5 class="black pl-10 ml-10" >
+                                    {{ 'Whats up fellow ohzers' }}
+                                </h5> 
                             </a>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
         </div>
         <div class="row">
             <div class="container">
-                <h3>No body awake</h3>
+                <h3>No body online</h3>
             </div>
         </div>
     @endif  
