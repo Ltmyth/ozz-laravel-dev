@@ -48,7 +48,7 @@
     			<h2>
     				<div class=" container">
               <div class="row col-lg-12">
-      					<div class="col-md-6 btn btn-lg blue-bg container">
+      					<div class="col-md-6 lt-al btn btn-lg blue-bg container">
       						<small class="white">
                     Balance
                   </small>	
