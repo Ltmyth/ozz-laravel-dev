@@ -48,16 +48,16 @@
     			<h2>
     				<div class=" container">
               <div class="row col-lg-12">
-      					<div class="col-md-8 container">
-      						<small class="green">
-                    Available Balance
+      					<div class="col-md-8 btn btn-lg btn-primary container">
+      						<small class="white">
+                    Balance
                   </small>	
                   : @if($balance)
-                      <b>{{ $balance }}</b>
+                      <b class="white">{{ $balance }}</b>
                     @else
-                      <b>0.0</b>
+                      <b class="white">0.0</b>
                     @endif 
-                  <i><strong class="orange">0h</strong><b>z</b></i>
+                    <i><strong class="white">0h</strong><b>z</b></i>
       					</div>
 
                 <div class="col-md-8 container">
