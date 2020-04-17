@@ -38,7 +38,7 @@ class PostsController extends Controller
             $uploadname = pathinfo($uploadfile,PATHINFO_FILENAME);  
             //jhus ext
             $extension = $request->file('upload')->getClientOriginalExtension(); 
-            //unique storage name
+            //unique storage file name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file in public/uploads/
             $path = $request->file('upload')->storeAs('/storage/uploads/',$upload_storage_name);
