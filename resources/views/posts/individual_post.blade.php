@@ -29,6 +29,8 @@
 									<small>
 										<i class="black fz-15">{{ $post->created_at->diffForHumans() }}</i>
 									</small>
+									&nbsp;&nbsp;
+									<button class="btn btn-sm btn-danger">Remove</button>
 								</h3>									
 							</a>
 
