@@ -40,9 +40,9 @@ class PostsController extends Controller
             $extension = $request->file('upload')->getClientOriginalExtension(); 
             //unique storage file name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
-            //store file in public/uploads/
-            // $path = $request->file('upload')->storeAs('/storage/uploads/',$upload_storage_name);
-            $path = Storage::putFileAs('uploads', $request->file('upload'), $upload_storage_name);
+            //store file 
+            $location = base_path().'/profile-pics/' . $upload_storage_name;
+            Image::make($request->file('upload'))->resize(950, 700)->save($location);
             $post->Post_upload = $upload_storage_name;
         }
         
