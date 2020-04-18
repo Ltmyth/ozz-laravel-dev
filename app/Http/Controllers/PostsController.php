@@ -1,7 +1,9 @@
 <?php
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+// use Illuminate\Support\Facades\Storage;
+use Storage;
+use File;
 use App\Post;
 use App\Comment;
 class PostsController extends Controller
@@ -41,7 +43,9 @@ class PostsController extends Controller
             //unique storage file name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file 
-            $path = $request->file('upload')->storeAs('/profile-pics/',$upload_storage_name);
+            $destinationPath = public_path().'/profile-pics/' ;
+            $file = $request->file('upload');
+            $path = $file->move($destinationPath,$upload_storage_name);
             $post->Post_upload = $upload_storage_name;
         }
         
