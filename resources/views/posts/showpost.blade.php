@@ -40,7 +40,7 @@
 
 							<div class="row nlight-bg br-10">
 								@if($post->Post_upload != "")
-									<img id="post-pic" class="br-10 ml-50 mb-20"  src="/storage/uploads/{{ $post->Post_upload }}">
+									<img id="post-pic" class="br-10 ml-50 mb-20"  src="/media/{{ $post->Post_upload }}">
 								@endif
 							</div>
 
