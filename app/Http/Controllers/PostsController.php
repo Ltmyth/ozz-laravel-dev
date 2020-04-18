@@ -42,7 +42,7 @@ class PostsController extends Controller
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file in public/uploads/
             // $path = $request->file('upload')->storeAs('/storage/uploads/',$upload_storage_name);
-            $path = Storage::putFile($upload_storage_name, $request->file('upload'));
+            $path = Storage::putFileAs('uploads', $request->file('upload'), $upload_storage_name);
             $post->Post_upload = $upload_storage_name;
         }
         
