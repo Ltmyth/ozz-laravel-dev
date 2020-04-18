@@ -43,7 +43,7 @@ class PostsController extends Controller
             //unique storage file name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file 
-            $destinationPath = public_path().'/profile-pics/' ;
+            $destinationPath = public_path().'/media/' ;
             $file = $request->file('upload');
             $path = $file->move($destinationPath,$upload_storage_name);
             $post->Post_upload = $upload_storage_name;
