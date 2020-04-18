@@ -58,7 +58,7 @@
 							<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">	
 								<div class="row col-lg-11">						
 									<img id="upload" class="brbr-10 blbr-10 mb-20"
-										src="{{ asset('storage/uploads/' . $post->Post_upload ) }}"
+										src="{{ asset('media/' . $post->Post_upload ) }}"
 									>		
 								</div>							
 							</a>	
