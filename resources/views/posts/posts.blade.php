@@ -57,7 +57,7 @@
 						@if($post->Post_upload != "")
 							<a href="/posts_show/{{ $post->id }}" onclick="javascript:document.getElementById('preloader').style.display='block';">	
 								<div class="row col-md-5">						
-									<img id="upload" class="brbr-10 blbr-10 mb-20"
+									<img id="upload" class="brbr-10 blbr-10 w-50 mb-20"
 										src="{{ asset('media/' . $post->Post_upload ) }}"
 									>		
 								</div>							
