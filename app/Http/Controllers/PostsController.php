@@ -41,7 +41,8 @@ class PostsController extends Controller
             //unique storage file name
             $upload_storage_name = $uploadname."_".time().".".$extension; 
             //store file in public/uploads/
-            $path = $request->file('upload')->storeAs('/storage/uploads/',$upload_storage_name);
+            // $path = $request->file('upload')->storeAs('/storage/uploads/',$upload_storage_name);
+            $path = Storage::putFile($upload_storage_name, $request->file('upload'));
             $post->Post_upload = $upload_storage_name;
         }
         
