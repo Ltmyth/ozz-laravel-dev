@@ -10,7 +10,7 @@
     </style>
     <script type="text/javascript">
         function getfile(){
-            var x = document.getElementById("myBtn"); 
+            var x = document.getElementById("uploadBtn"); 
             x.setAttribute("type", "file");
             x.setAttribute("accept", "file_extension|audio/*|video/*|image/*|media_type");
         }
@@ -66,7 +66,7 @@
                                 <br>
                                 <div class="form-group row" >
                                     &nbsp;&nbsp;
-                                   <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload"  value="Upload" onclick="getfile()"  id="myBtn">
+                                   <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload" class="btn btn-lg btn-outline-primary"  value="Upload" onclick="getfile()"  id="uploadBtn">
                                    &nbsp;&nbsp;
                                     <button type="submit" class="btn btn-lg btn-outline-primary lt">
                                         <i class="lnr lnr-cloud-upload">Post</i> 
