@@ -32,12 +32,15 @@
 									&nbsp;&nbsp;									
 								</h3>									
 							</a>
+							@if($post->author == Auth::user()->name)
 							<form  method="POST" action="/destroy_post/{{ $post->id }}">
+								@method('DELETE')
                 				@csrf
-								<button type="DELETE" class="btn btn-sm btn-danger">
+								<button type="submit" class="btn btn-sm btn-danger">
 									<i class="lnr lnr-trash"></i>
 								</button>
 							</form>
+							@endif
 						</div>
 
 						<a href="javascript:void(0)" onclick="location.href='/posts_show/{{ $post->id }}';document.getElementById('preloader').style.display='block';">
