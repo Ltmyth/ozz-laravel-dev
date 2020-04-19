@@ -29,16 +29,15 @@
 									<small>
 										<i class="black fz-15">{{ $post->created_at->diffForHumans() }}</i>
 									</small>
-									&nbsp;&nbsp;
-									<form  method="DELETE" action="/destroy_post/{{ $post->id }}">
-                        				@csrf
-										<button type="submit" class="btn btn-sm btn-danger">
-											<i class="lnr lnr-trash"></i>
-										</button>
-									</form>
+									&nbsp;&nbsp;									
 								</h3>									
 							</a>
-
+							<form  method="DELETE" action="/destroy_post/{{ $post->id }}">
+                				@csrf
+								<button type="submit" class="btn btn-sm btn-danger">
+									<i class="lnr lnr-trash"></i>
+								</button>
+							</form>
 						</div>
 
 						<a href="javascript:void(0)" onclick="location.href='/posts_show/{{ $post->id }}';document.getElementById('preloader').style.display='block';">
