@@ -33,10 +33,10 @@
 								</h3>									
 							</a>
 							@if($post->author == Auth::user()->name)
-							<form  method="POST" action="/destroy_post/{{ $post->id }}">
+							<form  method="POST">
 								@method('DELETE')
                 				@csrf
-								<button type="submit" class="btn btn-sm btn-danger">
+								<button type="submit" onclick="return confirm('Confirm delete!')" formaction="/destroy_post/{{ $post->id }}"  class="btn btn-sm btn-danger">
 									<i class="lnr lnr-trash"></i>
 								</button>
 							</form>
