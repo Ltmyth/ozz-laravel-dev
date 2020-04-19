@@ -34,7 +34,7 @@
 							</a>
 							<form  method="DELETE" action="/destroy_post/{{ $post->id }}">
                 				@csrf
-								<button type="submit" class="btn btn-sm btn-danger">
+								<button type="DELETE" class="btn btn-sm btn-danger">
 									<i class="lnr lnr-trash"></i>
 								</button>
 							</form>
