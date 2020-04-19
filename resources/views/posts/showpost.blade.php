@@ -38,7 +38,7 @@
 								</div>
 							</div>
 
-							<div class="row nlight-bg br-10">
+							<div class="row nlight-bg br-10 w-90">
 								@if($post->Post_upload != "")
 									<img id="post-pic" class="brbr-10 blbr-10 w-80 ml-50 mb-20"  src="/media/{{ $post->Post_upload }}">
 								@endif
