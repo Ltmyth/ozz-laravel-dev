@@ -30,7 +30,7 @@
 										<i class="black fz-15">{{ $post->created_at->diffForHumans() }}</i>
 									</small>
 									&nbsp;&nbsp;
-									<form  method="POST" action="/destroy_post/{{ $post->id }}">
+									<form  method="DELETE" action="/destroy_post/{{ $post->id }}">
                         				@csrf
 										<button type="submit" class="btn btn-sm btn-danger">
 											<i class="lnr lnr-trash"></i>
