@@ -82,8 +82,8 @@ class PostsController extends Controller
         //
         $post = Post::find($post_id);
         if($post->Post_upload != ""){
-            //delete from storage
-            Storage::delete('/public/uploads'.$post->Post_upload);
+            //delete 
+            File::delete('/public/media/'.$post->Post_upload);
         }
         $post->delete();
         $message ="Post removed";

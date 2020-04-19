@@ -30,7 +30,11 @@
 										<i class="black fz-15">{{ $post->created_at->diffForHumans() }}</i>
 									</small>
 									&nbsp;&nbsp;
-									<button class="btn btn-sm btn-danger">Remove</button>
+									<a href="/destroy_post/{{ $post->id }}">
+										<button class="btn btn-sm btn-danger">
+											<i class="lnr lnr-trash"></i>
+										</button>
+									</a>
 								</h3>									
 							</a>
 
