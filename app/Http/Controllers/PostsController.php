@@ -87,6 +87,6 @@ class PostsController extends Controller
         }
         $post->delete();
         $message ="Post removed";
-        return redirect('home')->with('message',$message);
+        return redirect('/profile')->with('message',$message);
     }
 }
