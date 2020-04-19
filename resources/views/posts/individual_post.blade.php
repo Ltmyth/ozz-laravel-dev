@@ -32,7 +32,7 @@
 									&nbsp;&nbsp;									
 								</h3>									
 							</a>
-							<form  method="DELETE" action="/destroy_post/{{ $post->id }}">
+							<form  method="POST" action="/destroy_post/{{ $post->id }}">
                 				@csrf
 								<button type="DELETE" class="btn btn-sm btn-danger">
 									<i class="lnr lnr-trash"></i>
