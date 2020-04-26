@@ -64,7 +64,7 @@
 
                
         </head>
-        <div id="preloader" class="preloader"></div>
+        <!-- <div id="preloader" class="preloader"></div> -->
         <header id="header" class="blbr-10 brbr-10">
 
             <div id="small_title">
@@ -281,7 +281,7 @@
             var myVar;
 
             function preload() {
-              myVar = setTimeout(showPage, 800);
+              myVar = setTimeout(showPage, 400);
             }
 
             function showPage() {
