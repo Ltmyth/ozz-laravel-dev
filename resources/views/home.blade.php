@@ -53,7 +53,7 @@
                         <div class="container lt-al row mt-20">
                             <div class="col-lg-9">
                                  <label for="name" class="col-form-label">
-                                    <h2><b class="black">Post something </b></h2>
+                                    <h2><b class="black">Share your thoughts</b></h2>
                                 </label> 
                                 <br>
                                 <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
@@ -94,11 +94,11 @@
                                     </button>
                                 </a>
 
-                                <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <!-- <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                     <button class="btn btn-lg btn-warning">
                                        <i class="lnr lnr-envelope white"></i> SMS
                                     </button>
-                                </a>
+                                </a> -->
                             </div>
                             
                             <!-- <div class="row blue-bg br-10 mt-30">

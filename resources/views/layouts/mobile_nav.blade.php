@@ -28,7 +28,7 @@
                 <div class="row">
 
                     <a class="btn btn-md btn-outline-warning white" href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-                        <i class="lnr lnr-users orange"></i> <b class="white">People</b> <span class="badge badge-danger"></span>
+                        <i class="lnr lnr-users orange"></i> <b class="white">4You</b> <span class="badge badge-danger"></span>
                     </a>
 
                     <a  href="/messages/{{Auth::user()->name}}" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
