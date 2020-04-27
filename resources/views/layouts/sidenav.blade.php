@@ -7,7 +7,7 @@
 
         <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
-                <span class="lnr-calender-full white"></span>
+                <span class="lnr-calendar-full white"></span>
                 <strong class="white">  
                     In4-Me <!-- <span class="orange_dot"></span> -->
                 </strong>
