@@ -9,7 +9,7 @@
             <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-users white"></span>
                 <strong class="white">  
-                    In4Me <!-- <span class="orange_dot"></span> -->
+                    In4-Me <!-- <span class="orange_dot"></span> -->
                 </strong>
             </button>
         </a>
