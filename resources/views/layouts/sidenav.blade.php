@@ -33,7 +33,7 @@
         <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-alarm"></span>
-                <strong class="white" >Alerts <!-- <span class="orange_dot"></span> --></strong>
+                <strong class="white" >Bulk SMS <!-- <span class="orange_dot"></span> --></strong>
             </button>
         </a>
 
