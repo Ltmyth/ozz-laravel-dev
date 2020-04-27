@@ -9,7 +9,7 @@
             <button id="home_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-users white"></span>
                 <strong class="white">  
-                    People <!-- <span class="orange_dot"></span> -->
+                    Info <!-- <span class="orange_dot"></span> -->
                 </strong>
             </button>
         </a>
@@ -30,19 +30,20 @@
             </button>
         </a>
 
-        <a href="/food/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+        <a href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
+            <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-alarm"></span>
+                <strong class="white" >Alerts <!-- <span class="orange_dot"></span> --></strong>
+            </button>
+        </a>
+
+
+        <!-- <a href="/food/" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="food_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-dinner white"></span>
                 <strong class="white" >Food</strong>
             </button>
-        </a>
-
-        <a href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
-            <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
-                <span class="lnr lnr-alarm"></span>
-                <strong class="white" >Notifications <!-- <span class="orange_dot"></span> --></strong>
-            </button>
-        </a>
+        </a> -->
         
         <!-- <div class="col-md-2">
             <a href="/transport/">
