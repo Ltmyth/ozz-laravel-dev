@@ -2,7 +2,6 @@
     <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon "></span>
     </button>
-    &nbsp;
     @guest
         <a class="navbar-brand" href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
     @endguest
