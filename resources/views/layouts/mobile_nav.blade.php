@@ -1,4 +1,8 @@
 <nav class="navbar navbar-expand-md navbar-dark blue-bg brbr-10 blbr-10">
+    <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+    </button>
+    &nbsp;
     @guest
         <a class="navbar-brand" href="/" onclick="javascript:document.getElementById('preloader').style.display='block';">
     @endguest
@@ -9,10 +13,8 @@
     <!-- 
         <img src="/imgs/ozz-app.png" class="w-10" alt="" title="" /> -->
         <strong class="white"><h3>the<b class="orange">oh</b><b><i>z</i></b></i></h3></strong>
-    </a>
-    <button class="btn btn-sm btn-outline-warning" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-    </button>
+    </a>   
+    
     
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         @auth 
@@ -61,9 +63,9 @@
                         <b class="white">Accommodation</b>
                     </a>
 
-                    <a class="btn btn-md btn-outline-warning white ml-10" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <!-- <a class="btn btn-md btn-outline-warning white ml-10" href="/food" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <b class="white">Food</b>
-                    </a>
+                    </a> -->
                 </div>
 
                 <hr>                
