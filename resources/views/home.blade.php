@@ -77,7 +77,7 @@
                     </form>
                 
                     <div class="row tb trbr-10">
-                        <div class="col-lg-9">
+                        <div class="col-md-9 col-lg-9">
                             <?php 
                                 use App\Http\Controllers\PostsController;
                                 echo PostsController::index();

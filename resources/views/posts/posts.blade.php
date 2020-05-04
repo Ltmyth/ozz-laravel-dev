@@ -27,7 +27,7 @@
 						</div>
 					</div>
 					
-					<div class="col-lg-8 w-100 nlight-bg br-10 lt-al">
+					<div class="col-md-8 col-lg-8 w-100 nlight-bg br-10 lt-al">
 						<div class="row  blbr-10">
 							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
@@ -46,11 +46,11 @@
 						<a href="javascript:void(0)" onclick="location.href='/posts_show/{{ $post->id }}';document.getElementById('preloader').style.display='block';">
 							<div class="row container white-bg pt-20 brbr-10 blbr-10 trbr-10">
 							
-								<p>
-									<h3 class="black ml-15">
+								<h4 class="black ml-15">
+									<p>
 										{{ $post->Post_content }}
-									</h3>
-								</p>
+									</p>
+								</h4>
 							</div>										
 						</a>
 						
