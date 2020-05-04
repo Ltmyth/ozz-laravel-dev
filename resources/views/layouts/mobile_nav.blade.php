@@ -71,7 +71,7 @@
                 <div class="row">
 
                     <a class="btn btn-md btn-outline-warning white" href="/notification" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                        <i class="lnr lnr-alarm orange"></i> <strong class="white" >Notifications</strong>
+                        <i class="lnr lnr-alarm orange"></i> <strong class="white" >Alerts</strong>
                     </a>
 
                     <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">

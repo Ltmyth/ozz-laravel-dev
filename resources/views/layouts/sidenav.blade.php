@@ -19,21 +19,21 @@
                 <span class="lnr lnr-tablet white"></span>
                 <strong class="white">Airtime</strong>
            </button>
-        </a>
-
-       <a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
-            <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
-                <span class="lnr lnr-apartment white"></span>
-                <strong class="white">  
-                    Accommodation
-                </strong>
-            </button>
-        </a>
+        </a>       
 
         <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
             <button id="notification_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
                 <span class="lnr lnr-alarm"></span>
                 <strong class="white" >Bulk SMS <!-- <span class="orange_dot"></span> --></strong>
+            </button>
+        </a>
+
+        <a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+            <button id="accoms_btn" class="btn btn-md btn-outline-warning blue-bg col-lg-2">
+                <span class="lnr lnr-apartment white"></span>
+                <strong class="white">  
+                    Accommodation
+                </strong>
             </button>
         </a>
 
