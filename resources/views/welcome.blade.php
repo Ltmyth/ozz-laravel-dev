@@ -17,7 +17,7 @@
                       
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
-                        <h3>Built for quick access to community-based services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
+                        <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
 
                         <br>
                         <a href="/register">
@@ -46,7 +46,7 @@
                     <h4 class="black">
                         <p class="lt-al">
                             <strong>Theohz</strong> is a social and transactional <strong>community</strong> web application,
-                            built by <strong>Latim Mark</strong> and silent partners for <strong>low cost</strong> community centered living within <strong>featured</strong> communities <strong>enabled</strong> by a crypto currency known as <b class="orange">oh</b><b>z</b>.
+                            built by <strong>Latim Mark</strong> and silent partners for informed <strong>low cost</strong> community centered living within <strong>featured</strong> communities.
                         </p>
                     </h4>
 
@@ -133,7 +133,7 @@
                 <div class="col-lg-11">
                     <h1 class="mb-10 ct-al"><strong>SERVICES</strong></h1>
                     <p>
-                        <h4 class="ct-al black"> Top up your wallet stash accordingly to get the following life pack at your finger tips.</h4>
+                        <h4 class="ct-al black"> Have the following life pack at your finger tips.</h4>
                     </p>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -146,14 +146,14 @@
 
                         <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <h4 class="ct-al">
-                                <strong>Communication</strong>
+                                <strong>Information & Communication</strong>
                             </h4>
                         </a>
 
                         <h4 class="lt-al black">
                             <p>
-                                Connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
-                                at as low as 50</b> <big>ohz</big> each.
+                                Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                at as low as 50 </b> <big>ohz</big> each.
                             </p>
 
                         </h4>
@@ -169,7 +169,7 @@
 
                         <a href="/login">
                             <h4 class="ct-al">
-                                <strong>Airtime</strong>
+                                <strong>Discounted Airtime</strong>
                             </h4>
                         </a>
                         
@@ -181,7 +181,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <div class="row">
                             <div class="conatainer">
@@ -201,7 +201,7 @@
                             </p>
                         </h4>
                     </div>  
-                </div>
+                </div> -->
                 <div class="col-lg-4 col-md-6">
                     <div class="single-services">
                         <div class="row">
