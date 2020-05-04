@@ -136,7 +136,7 @@
                         <h4 class="ct-al black"> Have the following life pack at your finger tips.</h4>
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
                         <div class="row">
                             <div class="conatainer">
@@ -159,7 +159,7 @@
                         </h4>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
                         <div class="row">
                             <div class="container">
@@ -202,7 +202,7 @@
                         </h4>
                     </div>  
                 </div> -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
                         <div class="row">
                             <div class="container">
@@ -230,7 +230,7 @@
                         </h4>                                            
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
                         <div class="row">
                             <div class="conatainer">
@@ -256,7 +256,7 @@
                         </h4>                        
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
                         <div class="row">
                             <div class="conatiner">
