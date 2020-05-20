@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
-                      
+                    <div class="card">  
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
                         <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
@@ -25,6 +25,7 @@
                                 Register Here
                             </button>
                         </a>
+                    </div>
                 </div>
             </div>
         </div>  
@@ -53,7 +54,7 @@
                     <h4 class="lt-al" >  
                         <strong class="blue">TARGET MARKET</strong>
                         <br>                      
-                        <p>The<strong><b>ohz</b></strong> is intended for <strong>individuals</strong> studying, living or commuting within communities on theohz platform and <strong>service providers</strong> within the respective communties.</p>                        
+                        <p>The<strong><b>ohz</b></strong> is intended for <strong>individuals</strong>, students and <strong>service providers</strong> within the respective communties on the platform.</p>                        
                     </h4>
 
                     <h4 class="lt-al"><b style="color:red;">MISSION</b></h4>
@@ -434,7 +435,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 500 to UGX 5,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
+                        <<!-- a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -454,7 +455,7 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 6,000 to UGX 50,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a>
+                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -497,9 +498,9 @@
                     </div>
                     <div class="bottom-part">
                         <h1>UGX 250,000 to UGX 1,000,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
+                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
-                        </a>
+                        </a> -->
                     </div>
                 </div>                                                                      
             </div>
