@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
-                    <div class="card">  
+                    <div class="card container">  
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
                         <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
