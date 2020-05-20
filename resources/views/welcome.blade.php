@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
-                    <div class="card container">  
+                    
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
                         <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
@@ -25,7 +25,6 @@
                                 Register Here
                             </button>
                         </a>
-                    </div>
                 </div>
             </div>
         </div>  
@@ -137,27 +136,29 @@
                         <h4 class="ct-al black"> Have the following life pack at your finger tips.</h4>
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-6  white-bg">
+                <div class="col-lg-4 col-md-6">
                     <div class="single-services">
-                        <div class="row">
-                            <div class="conatainer">
-                                <img class="br-10 w-50" src="/imgs/people.png" alt="">
+                        <div class="card container">
+                            <div class="row">
+                                <div class="conatainer">
+                                    <img class="br-10 w-50" src="/imgs/people.png" alt="">
+                                </div>
                             </div>
-                        </div>
 
-                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <h4 class="ct-al">
-                                <strong>Information & Communication</strong>
+                            <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <h4 class="ct-al">
+                                    <strong>Information & Communication</strong>
+                                </h4>
+                            </a>
+
+                            <h4 class="lt-al black">
+                                <p>
+                                    Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                    at as low as 50 </b> <big>ohz</big> each.
+                                </p>
+
                             </h4>
-                        </a>
-
-                        <h4 class="lt-al black">
-                            <p>
-                                Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
-                                at as low as 50 </b> <big>ohz</big> each.
-                            </p>
-
-                        </h4>
+                        </div> 
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6  white-bg">
@@ -205,6 +206,7 @@
                 </div> -->
                 <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
+                        
                         <div class="row">
                             <div class="container">
                                 <img class="br-10 w-30" src="/imgs/room.png" alt="">
