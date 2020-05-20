@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div  class="col-lg-6 col-md-6 banner-right">
-                    
+                      
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
                         <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
@@ -131,56 +131,54 @@
             </div>                      
             <div  class="row">
                 <div class="col-lg-11">
-                    <h1 class="ct-al"><strong>SERVICES</strong></h1>
+                    <h1 class="mb-10 ct-al"><strong>SERVICES</strong></h1>
                     <p>
                         <h4 class="ct-al black"> Have the following life pack at your finger tips.</h4>
                     </p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
-                        <div class="card container">
-                            <div class="row">
-                                <div class="conatainer">
-                                    <img class="br-10 w-50" src="/imgs/people.png" alt="">
-                                </div>
+                        <div class="row">
+                            <div class="conatainer">
+                                <img class="br-10 w-50" src="/imgs/people.png" alt="">
                             </div>
+                        </div>
 
-                            <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <h4 class="ct-al">
-                                    <strong>Information & Communication</strong>
-                                </h4>
-                            </a>
-
-                            <h4 class="lt-al black">
-                                <p>
-                                    Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
-                                    at as low as 50 </b> <big>ohz</big> each.
-                                </p>
-
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <h4 class="ct-al">
+                                <strong>Information & Communication</strong>
                             </h4>
-                        </div> 
+                        </a>
+
+                        <h4 class="lt-al black">
+                            <p>
+                                Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                at as low as 50 </b> <big>ohz</big> each.
+                            </p>
+
+                        </h4>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
-                        <div class="card container">
-                                <div class="container">
-                                    <img class="w-30" src="/imgs/phone.png" alt="">
-                                </div>
+                        <div class="row">
+                            <div class="container">
+                                <img class="w-30" src="/imgs/phone.png" alt="">
                             </div>
+                        </div>
 
-                            <a href="/login">
-                                <h4 class="ct-al">
-                                    <strong>Discounted Airtime</strong>
-                                </h4>
-                            </a>
-                            
-                            <h4 class="lt-al black">
-                                <p> 
-                                    With internet connectivity and <b>theohz</b> stash, <strong>buy</strong> airtime at a <b class="black">2%</b> discount from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
-                                    This is currently applicable in Uganda alone.
-                                </p>
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Discounted Airtime</strong>
                             </h4>
+                        </a>
+                        
+                        <h4 class="lt-al black">
+                            <p> 
+                                With internet connectivity and <b>theohz</b> stash, <strong>buy</strong> airtime at a <b class="black">2%</b> discount from <strong>anywhere</strong> you are <strong>24 hours a day everyday</strong> for your mobile phone number , a friend's number or  a list of acquaintances and associates on <big class="black">MTN, AIRTEL and AFRICELL.</big> <br>
+                                This is currently applicable in Uganda alone.
+                            </p>
+                        </h4>
                     </div>
                 </div>
                 <!-- <div class="col-lg-4 col-md-6">
@@ -206,60 +204,56 @@
                 </div> -->
                 <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
-                        <div class="card container">
-                            <div class="row">
-                                <div class="container">
-                                    <img class="br-10 w-30" src="/imgs/room.png" alt="">
-                                </div>
-                            </div> 
+                        <div class="row">
+                            <div class="container">
+                                <img class="br-10 w-30" src="/imgs/room.png" alt="">
+                            </div>
+                        </div> 
 
-                            <a href="/login">
-                                <h4 class="ct-al">
-                                    <strong>Accommodation</strong>
-                                </h4>
-                            </a>
+                        <a href="/login">
+                            <h4 class="ct-al">
+                                <strong>Accommodation</strong>
+                            </h4>
+                        </a>
 
-                            <h4 class="lt-al black">
-                                <p>
-                                    Using theohz  find and secure accommodation within a community or destination of interest.
-                                    Chose from a live listing of ;
-                                </p>
-                                <ul style="list-style-type:square;" >
-                                    <li>Hostels</li>
-                                    <li>Appartments</li>
-                                    <!-- <li>Rentals</li> -->
-                                    <!-- <li>Hotels</li>
-     -->                        </ul>
-                            </h4>            
-                        </div>                                
+                        <h4 class="lt-al black">
+                            <p>
+                                Using theohz  find and secure accommodation within a community or destination of interest.
+                                Chose from a live listing of ;
+                            </p>
+                            <ul style="list-style-type:square;" >
+                                <li>Hostels</li>
+                                <li>Appartments</li>
+                                <!-- <li>Rentals</li> -->
+                                <!-- <li>Hotels</li>
+ -->                            </ul>
+                        </h4>                                            
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6  white-bg">
                     <div class="single-services">
-                        <div class="card container">
-                            <div class="row">
-                                <div class="conatainer">
-                                    <img class="br-10 w-40" src="/imgs/pay.png" alt="">
-                                </div>
+                        <div class="row">
+                            <div class="conatainer">
+                                <img class="br-10 w-40" src="/imgs/pay.png" alt="">
                             </div>
+                        </div>
 
 
-                            <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <h4 class="ct-al">
-                                    <strong>Payments</strong>
-                                </h4>
-                            </a>
-                            
-                            <h4 class="lt-al black">
-                                <p>
-                                    Make payments for theohz services directly from your  wallet/stash to another user's wallet <b class="black">free</b> of charge.
-                                </p>
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <h4 class="ct-al">
+                                <strong>Payments</strong>
+                            </h4>
+                        </a>
+                        
+                        <h4 class="lt-al black">
+                            <p>
+                                Make payments for theohz services directly from your  wallet/stash to another user's wallet <b class="black">free</b> of charge.
+                            </p>
 
-                                <p>
-                                    You may also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts at a low service charge on each withdraw transaction that is used to cover infrastructure and transaction costs.
-                                </p>
-                            </h4>                       
-                        </div> 
+                            <p>
+                                You may also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts at a low service charge on each withdraw transaction that is used to cover infrastructure and transaction costs.
+                            </p>
+                        </h4>                        
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6  white-bg">
