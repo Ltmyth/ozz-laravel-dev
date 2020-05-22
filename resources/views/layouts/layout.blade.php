@@ -155,20 +155,19 @@
                                 </button>
                             </a>                                               
                         @endauth
-                    </div>
-                </div>                
+                    </div>                   
+                </div>    
+                @auth
+                <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
+                    @include('layouts.sidenav')   
+                </div>
+                @endauth            
             </div>
         </header>
 
         <div class="col-lg-12 col-sm-12  nlight-bg">
             <!-- background:#dff9fb; -->
-            <div id="body" class="col-lg-12 nlight col-sm-12 container">
-                @auth
-                <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
-                    @include('layouts.sidenav')   
-                </div>
-                <hr class="container col-lg-9">
-                @endauth
+            <div id="body" class="col-lg-12 nlight col-sm-12 container">             
 
                 @guest
                 <br>
