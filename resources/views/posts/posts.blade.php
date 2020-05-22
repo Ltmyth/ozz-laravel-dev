@@ -5,8 +5,13 @@
 		<div class="row bb brbr-10 mt-20">
 			<div class="container">
 				<h2 class="lt-al">
-					<p><b>On the<b class="orange">oh</b><b><i>z</i></b> around You</b></p>
+					<p><b>Categories</b></p>
 				</h2>
+				<div class="card">
+					<div class="container">
+						<button class="btn btn-md btn-secondary">All</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
