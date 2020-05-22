@@ -1,15 +1,13 @@
 @auth
 	
 	<div class="container">
-		
-		<div style="z-index: 1;" class="row bb brbr-10 mt-20">
+
+		<div class="row bb brbr-10 mt-20">
 			<div class="container">
 				<div class="row nlight-bg">
-					<div class="row">
-						<b class="fz-12">Categories</b>
-					</div>
-					<div class="row container">
+					<div class="container">
 						<br>
+						<h3>Categories</h3>
 						<button class="btn btn-md btn-secondary">All</button>
 						&nbsp;&nbsp;
 						<button class="btn btn-md btn-outline-secondary">History</button>
