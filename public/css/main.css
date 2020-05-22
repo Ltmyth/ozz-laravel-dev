@@ -222,7 +222,7 @@ $black      : #222;
   top: 0; /* Stay at the top */
   left:70%;
   overflow: hidden; /*horizontal scroll */
-  padding-top: 9%;
+  padding-top: 1%;
   transition: 0.8s all;
 }
 
