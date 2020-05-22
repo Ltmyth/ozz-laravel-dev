@@ -6,8 +6,7 @@
 			<div class="container">
 				<div class="row nlight-bg">
 					<div class="container">
-						<br>
-						<h3>Categories</h3>
+						<h3><b>Categories</b></h3>
 						<button class="btn btn-md btn-secondary">All</button>
 						&nbsp;&nbsp;
 						<button class="btn btn-md btn-outline-secondary">History</button>
