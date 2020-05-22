@@ -7,16 +7,16 @@
 				<h2 class="lt-al">
 					<p><b>Categories</b></p>
 				</h2>
-				<div class="card nlight-bg">
+				<div class="row nlight-bg">
 					<div class="container">
 						<br>
-						<button class="btn btn-sm btn-secondary">All</button>
+						<button class="btn btn-md btn-secondary">All</button>
 						&nbsp;&nbsp;
-						<button class="btn btn-sm btn-outline-secondary">History</button>
+						<button class="btn btn-md btn-outline-secondary">History</button>
 						&nbsp;&nbsp;
-						<button class="btn btn-sm btn-outline-secondary">Tech</button>
+						<button class="btn btn-md btn-outline-secondary">Tech</button>
 						&nbsp;&nbsp;
-						<button class="btn btn-sm btn-outline-secondary">Automotive</button>
+						<button class="btn btn-md btn-outline-secondary">Automotive</button>
 						<br>
 					</div>
 				</div>
