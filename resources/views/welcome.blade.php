@@ -17,7 +17,7 @@
                       
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
-                        <h3>A hub for quick access to community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
+                        <h3>A hub for quick access to Ugandan community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
 
                         <br>
                         <a href="/register">
@@ -60,7 +60,7 @@
                     <p > 
                        <h4 class="lt-al blue"> To connect 
                         <strong>community-based</strong> users with each other 
-                        and to respective community-based services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
+                        and to respective community-based informaton and services <strong>quickly</strong>, <strong>cheaply</strong> and <strong>click easily</strong>.</h4>
                     </p>
 
                     <br>
@@ -272,7 +272,7 @@
                         
                         <h4 class="lt-al black">
                             <p class="lt-al">
-                                With your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohz <strong class="red"> transactions ledger</strong> which is an encrypted live portal recording and displaying all recorded ohz transactions.
+                                With your user account and <strong>encrypted</strong> password,track your transactions from the distributed ohz <strong class="red"> transactions ledger</strong> which is an encrypted live portal that validates, records and displays a distributed ledger of all recorded ohz transactions.
                             </p>
                         </h4>                        
                     </div>              
@@ -473,10 +473,10 @@
                             </ul>
                         </strong>
                     </div>
-                    <div class="bottom-part">
+                    <!-- <div class="bottom-part">
                         <h1>UGX 60,000 to UGX 250,000</h1>
                         <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">

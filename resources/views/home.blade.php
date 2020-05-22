@@ -52,8 +52,8 @@
                         @csrf
                         <div class="container lt-al row mt-20">
                             <div class="col-lg-9">
-                                 <label for="name" class="col-form-label">
-                                    <h2><b class="black">Share your thoughts</b></h2>
+                                <label for="name" class="col-form-label">
+                                    <h2><b class="black">Shade some light</b></h2>
                                 </label> 
                                 <br>
                                 <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
@@ -69,7 +69,7 @@
                                    <!-- <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload" class="btn btn-sm btn-outline-primary"  value="Upload" onclick="getfile()"  id="uploadBtn"> -->
                                    &nbsp;&nbsp;
                                     <button type="submit" class="btn btn-lg btn-outline-primary lt">
-                                        <i class="lnr lnr-cloud-upload">Post</i> 
+                                        <i class="lnr lnr-cloud-upload">Inform</i> 
                                     </button> 
                                 </div> 
                             </div>
