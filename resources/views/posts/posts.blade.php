@@ -2,24 +2,20 @@
 	
 	<div class="container">
 
-		<div class="row bb brbr-10 mt-20">
-			<div class="container">
-				<div class="row nlight-bg">
-					<h2 class="ct-al">
-						<p><b>Categories</b></p>
-					</h2>
-					<div class="container">
-						<br>
-						<button class="btn btn-md btn-secondary">All</button>
-						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">History</button>
-						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">Tech</button>
-						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">Automotive</button>
-						<br>
-					</div>
+		<div class="row bb brbr-10 mt-10">
+			<div class="container nlight-bg">
+				<div class="row">
+					<b>Categories</b>
 				</div>
+				<div class="row">
+					<button class="btn btn-md btn-secondary">All</button>
+					&nbsp;&nbsp;
+					<button class="btn btn-md btn-outline-secondary">History</button>
+					&nbsp;&nbsp;
+					<button class="btn btn-md btn-outline-secondary">Tech</button>
+					&nbsp;&nbsp;
+					<button class="btn btn-md btn-outline-secondary">Automotive</button>
+				</div>						
 			</div>
 		</div>
 

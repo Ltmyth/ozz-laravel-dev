@@ -153,15 +153,14 @@
                                 <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20">
                                     <i class="lnr lnr-cog orange"></i> Logout
                                 </button>
-                            </a>                                               
+                            </a>   
+                            <br>
+                            <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
+                                @include('layouts.sidenav')   
+                            </div>
                         @endauth
                     </div>                   
-                </div>    
-                @auth
-                <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
-                    @include('layouts.sidenav')   
-                </div>
-                @endauth            
+                </div>           
             </div>
         </header>
 
