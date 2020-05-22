@@ -218,7 +218,7 @@ $black      : #222;
   height: 80vh; /* Set the width of the sidebar */
   width: 100%;
   position: fixed; /* (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
+  z-index: 0; /* Stay on top */
   top: 0; /* Stay at the top */
   left:70%;
   overflow: hidden; /*horizontal scroll */
