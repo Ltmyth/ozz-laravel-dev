@@ -53,7 +53,7 @@
                         <div class="container lt-al row mt-20">
                             <div class="col-lg-9">
                                 <label for="name" class="col-form-label">
-                                    <h2><b class="black">Shade some light</b></h2>
+                                    <h2><b class="black">Shed some Ugandan light :)</b></h2>
                                 </label> 
                                 <br>
                                 <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
