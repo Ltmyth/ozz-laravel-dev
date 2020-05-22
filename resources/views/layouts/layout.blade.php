@@ -92,7 +92,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-6">
+                   <!--  <div class="col-lg-6">
                         <br>
                         <form method="POST" class="w-100">
                             <div class="row ml-30">
@@ -107,7 +107,7 @@
                                 <div class="col-lg-1"></div>
                             </div>
                         </form>
-                    </div>
+                    </div> -->
 
 
                     <div class="col-lg-5">
