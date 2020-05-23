@@ -140,6 +140,32 @@
                     <div class="single-services">
                         <div class="row">
                             <div class="conatainer">
+                                <img class="br-10 w-40" src="/imgs/pay.png" alt="">
+                            </div>
+                        </div>
+
+
+                        <a href="/login" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <h4 class="ct-al">
+                                <strong>Rewards</strong>
+                            </h4>
+                        </a>
+                        
+                        <h4 class="lt-al black">
+                            <p>
+                                Get ohz rewards for contributing and using theohz services directly to your  wallet/stash.
+                            </p>
+
+                            <p>
+                                You may also liquidate or cashout ohz from your wallet stash into a mobile money account or list of accounts.
+                            </p>
+                        </h4>                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6  white-bg">
+                    <div class="single-services">
+                        <div class="row">
+                            <div class="conatainer">
                                 <img class="br-10 w-50" src="/imgs/people.png" alt="">
                             </div>
                         </div>
@@ -152,7 +178,7 @@
 
                         <h4 class="lt-al black">
                             <p>
-                                Get interesting information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
+                                Get insightful Ugandan information , connect and communicate with people in your community, district or neighborhood that are <strong>on</strong> the platform at no cost, or use your <big>ohz</big>  stash to send sms directly to a single or multiple user's mobile telephone number(s)
                                 at as low as 50 </b> <big>ohz</big> each.
                             </p>
 
@@ -412,7 +438,7 @@
 
                     <div id="packs" class="row col-lg-11">
                         <h4 class="lt-al black">
-                            Kindly choose your suitable ohz stash from the available packages below ;
+                            Kindly choose an optional suitable ohz stash from the available packages below ;
                         </h4>
                     </div>
 
@@ -429,6 +455,7 @@
                             <ul>
                                 <li><h4>Airtime</h4></li>
                                 <li><h4>Food</h4></li>
+                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
                             </ul>
                         </strong>
                     </div>
@@ -449,6 +476,7 @@
                                 <li><h4>Food</h4></li>
                                 <li><h4>Mobile Money</h4></li>
                                 <li><h4>Accommodation Booking fee</h4></li>
+                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
                             </ul>
                         </strong>
                     </div>
@@ -470,13 +498,14 @@
                                 <li><h4>Mobile Money</h4></li>
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
+                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
                             </ul>
                         </strong>
                     </div>
-                    <!-- <div class="bottom-part">
+                    <div class="bottom-part">
                         <h1>UGX 60,000 to UGX 250,000</h1>
-                        <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a>
-                    </div> -->
+                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a> -->
+                    </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
                     <div class="top-part">
@@ -492,11 +521,12 @@
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
                                 <li><h4>Accommodation Full Payment</h4></li>
+                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
                             </ul>
                         </strong>
                     </div>
                     <div class="bottom-part">
-                        <h1>UGX 250,000 to UGX 1,000,000</h1>
+                        
                         <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
                             REQUEST TOPUP
                         </a> -->
