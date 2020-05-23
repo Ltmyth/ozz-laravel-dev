@@ -17,7 +17,7 @@
                       
                        <h2>Latim Mark's <b class="orange">oh</b><b><i>z</i></b> one stop spot.</b></h2>
                        <br>
-                        <h3>A hub for quick access to Ugandan community-based information and services by community-based users through theohz in both rural and urban communities in Uganda.</h3>
+                        <h3>A hub for quick access to Ugandan community-based information and services by community-based users through theohz in both rural and urban communities.</h3>
 
                         <br>
                         <a href="/register">
@@ -455,13 +455,9 @@
                             <ul>
                                 <li><h4>Airtime</h4></li>
                                 <li><h4>Food</h4></li>
-                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
+                                <li><h3><b class="red">UGX</b> (500-5000)</h3></li>
                             </ul>
                         </strong>
-                    </div>
-                    <div class="bottom-part">
-                        <h1>UGX 500 to UGX 5,000</h1>
-                        <<!-- a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -476,13 +472,9 @@
                                 <li><h4>Food</h4></li>
                                 <li><h4>Mobile Money</h4></li>
                                 <li><h4>Accommodation Booking fee</h4></li>
-                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
+                                <li><h3><b class="red">UGX</b> (5001-50,000)</h3></li>
                             </ul>
                         </strong>
-                    </div>
-                    <div class="bottom-part">
-                        <h1>UGX 6,000 to UGX 50,000</h1>
-                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">REQUEST TOPUP</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -498,13 +490,9 @@
                                 <li><h4>Mobile Money</h4></li>
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
-                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
+                                <li><h3><b class="red">UGX</b> (50,001-100,000)</h3><h2>UGX 250,000 to UGX 1,000,000</h2></li>
                             </ul>
                         </strong>
-                    </div>
-                    <div class="bottom-part">
-                        <h1>UGX 60,000 to UGX 250,000</h1>
-                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" href="/login/">REQUEST TOPUP</a> -->
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 single-price">
@@ -521,15 +509,9 @@
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
                                 <li><h4>Accommodation Full Payment</h4></li>
-                                <li><h2>UGX 250,000 to UGX 1,000,000</h2></li>
+                                <li><h3><b class="red">UGX</b> (100,001-1,000,000)</h3></li>
                             </ul>
                         </strong>
-                    </div>
-                    <div class="bottom-part">
-                        
-                        <!-- <a class="btn btn-lg btn-outline-warning text-uppercase mt-30" onclick="javascript:document.getElementById('preloader').style.display='block';" href="/login/">
-                            REQUEST TOPUP
-                        </a> -->
                     </div>
                 </div>                                                                      
             </div>

@@ -128,14 +128,14 @@
                         @auth 
 
                             <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
+                                <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20 rt">
                                     <i class="lnr lnr-envelope orange"></i> 
                                     Messages 
                                 </button>
                             </a>   
 
                             <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20">
+                                <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20 rt">
                                     <i class="lnr lnr-briefcase orange"></i>
                                     Wallet <!-- <span class="orange_dot"></span> -->
                                 </button>
@@ -143,14 +143,14 @@
                             
 
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="profile_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20">
+                                <button id="profile_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20 rt">
                                     <i class="lnr lnr-user orange"></i>
                                     Profile <!-- <span class="orange_dot"></span> -->
                                 </button>
                             </a>           
                             
                             <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20">
+                                <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20 rt">
                                     <i class="lnr lnr-cog orange"></i> Logout
                                 </button>
                             </a>   
