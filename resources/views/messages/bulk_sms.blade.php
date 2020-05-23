@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     <style type="text/css">
-        #home_btn{
+        #bulksms_btn{
             background-color:orange;
             color:white;
             pointer-events: none;
