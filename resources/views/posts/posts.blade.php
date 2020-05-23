@@ -18,9 +18,7 @@
 						<a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
                                     <span class="lnr lnr-apartment white"></span>
-                                    <strong class="white">  
-                                        Accommodation
-                                    </strong>
+                                     Accommodation
                                 </button>
                             </a>
 						<br>
