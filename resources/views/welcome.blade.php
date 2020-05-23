@@ -490,7 +490,7 @@
                                 <li><h4>Mobile Money</h4></li>
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
-                                <li><h3><b class="red">UGX</b> (50,001-100,000)</h3><h2>UGX 250,000 to UGX 1,000,000</h2></li>
+                                <li><h3><b class="red">UGX</b> (50,001-100,000)</h3>
                             </ul>
                         </strong>
                     </div>
@@ -509,7 +509,7 @@
                                 <li><h4>Accommodation Booking fee</h4></li>
                                 <li><h4>Accommodation Payment Installation</h4></li>
                                 <li><h4>Accommodation Full Payment</h4></li>
-                                <li><h3><b class="red">UGX</b> (100,001-1,000,000)</h3></li>
+                                <li><h3>Above <b class="red">UGX</b> 100,001</h3></li>
                             </ul>
                         </strong>
                     </div>

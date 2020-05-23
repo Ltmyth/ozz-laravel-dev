@@ -145,21 +145,21 @@
                             </a> 
                                                        
                             <a href="/airtime/" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                               <button id="at_btn" class="btn btn-md btn-outline-warning rt">
+                               <button id="at_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
                                     <span class="lnr lnr-tablet white"></span>
                                     <strong class="white">Airtime</strong>
                                </button>
                             </a>       
 
                             <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="notification_btn" class="btn btn-md btn-outline-warning rt">
+                                <button id="notification_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
                                     <span class="lnr lnr-alarm"></span>
                                     <strong class="white" >Bulk SMS <!-- <span class="orange_dot"></span> --></strong>
                                 </button>
                             </a>
 
                             <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="home_btn" class="btn btn-md btn-outline-warning rt">
+                                <button id="home_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
                                     <span class="lnr lnr-calendar-full white"></span>
                                     <strong class="white">  
                                         Home <!-- <span class="orange_dot"></span> -->
