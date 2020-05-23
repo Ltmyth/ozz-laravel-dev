@@ -145,7 +145,7 @@
                             </a> 
                                    
                             <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="notification_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
+                                <button id="bulksms_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
                                     <span class="lnr lnr-alarm"></span>
                                     <strong class="white" >Bulk SMS <!-- <span class="orange_dot"></span> --></strong>
                                 </button>
