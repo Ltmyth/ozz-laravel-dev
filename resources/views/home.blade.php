@@ -49,7 +49,9 @@
                         <hr>
                     </div>
 
-                    @if(Auth::user()->name = "Latim Mark")
+                    <?php $author = Auth::user()->name; ?>
+
+                    @if($author == "Latim Mark")
                         <form enctype="multipart/form-data" method="POST" action="/posts_create">
                             @csrf
                             <div class="container lt-al row mt-20">
@@ -58,8 +60,7 @@
                                         <h2><b class="black">Shed some Ugandan light :)</b></h2>
                                     </label> 
                                     <br>
-                                    <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
-                                    <?php $author = Auth::user()->name; ?>
+                                    <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea> 
                                     <input type="hidden" name="author" value="{{ $author }}">
                                 </div>
                             </div>            
