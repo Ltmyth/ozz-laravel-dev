@@ -26,7 +26,7 @@
 				</div>
 			</div>
 		</div>
-
+		<br>
 		@if(count($posts)>0)	
 			@foreach ($posts as $post)	
 						

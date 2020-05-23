@@ -48,33 +48,37 @@
                         </a>
                         <hr>
                     </div>
-                    <form enctype="multipart/form-data" method="POST" action="/posts_create">
-                        @csrf
-                        <div class="container lt-al row mt-20">
-                            <div class="col-lg-9">
-                                <label for="name" class="col-form-label">
-                                    <h2><b class="black">Shed some Ugandan light :)</b></h2>
-                                </label> 
-                                <br>
-                                <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
-                                <?php $author = Auth::user()->name; ?>
-                                <input type="hidden" name="author" value="{{ $author }}">
+
+                    @if(Auth::user()->name = "Latim Mark")
+                        <form enctype="multipart/form-data" method="POST" action="/posts_create">
+                            @csrf
+                            <div class="container lt-al row mt-20">
+                                <div class="col-lg-9">
+                                    <label for="name" class="col-form-label">
+                                        <h2><b class="black">Shed some Ugandan light :)</b></h2>
+                                    </label> 
+                                    <br>
+                                    <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
+                                    <?php $author = Auth::user()->name; ?>
+                                    <input type="hidden" name="author" value="{{ $author }}">
+                                </div>
+                            </div>            
+                            <div class="row">
+                                <div class="col-lg-4 ml-30">
+                                    <br>
+                                    <div class="form-group row" >
+                                        &nbsp;&nbsp;
+                                       <!-- <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload" class="btn btn-sm btn-outline-primary"  value="Upload" onclick="getfile()"  id="uploadBtn"> -->
+                                       &nbsp;&nbsp;
+                                        <button type="submit" class="btn btn-lg btn-outline-primary lt">
+                                            <i class="lnr lnr-cloud-upload">Inform</i> 
+                                        </button> 
+                                    </div> 
+                                </div>
                             </div>
-                        </div>            
-                        <div class="row">
-                            <div class="col-lg-4 ml-30">
-                                <br>
-                                <div class="form-group row" >
-                                    &nbsp;&nbsp;
-                                   <!-- <big ><i class="lnr lnr-paperclip"></i></big><input type="button" name="upload" class="btn btn-sm btn-outline-primary"  value="Upload" onclick="getfile()"  id="uploadBtn"> -->
-                                   &nbsp;&nbsp;
-                                    <button type="submit" class="btn btn-lg btn-outline-primary lt">
-                                        <i class="lnr lnr-cloud-upload">Inform</i> 
-                                    </button> 
-                                </div> 
-                            </div>
-                        </div>
-                    </form>
+                        </form>
+
+                    @endif
                 
                     <div class="row tb trbr-10">
                         <div class="col-md-9 col-lg-9">
