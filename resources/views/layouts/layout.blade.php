@@ -125,39 +125,48 @@
                             </a>                           
                         @endguest
 
-                        @auth 
-
-                            <a  href="/messages/{{ Auth::user()->name }}" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="messages_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20 rt">
-                                    <i class="lnr lnr-envelope orange"></i> 
-                                    Messages 
+                        @auth  
+                            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20 rt">
+                                    <i class="lnr lnr-cog orange"></i> Logout
                                 </button>
-                            </a>   
-
-                            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20 rt">
-                                    <i class="lnr lnr-briefcase orange"></i>
-                                    Wallet <!-- <span class="orange_dot"></span> -->
-                                </button>
-                            </a>
-                            
-
+                            </a>  
                             <a  href="/profile" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                 <button id="profile_btn" class="btn btn-md btn-outline-warning white mr-5 mt-20 mb-20 rt">
                                     <i class="lnr lnr-user orange"></i>
                                     Profile <!-- <span class="orange_dot"></span> -->
                                 </button>
-                            </a>           
-                            
-                            <a  href="/logout" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button class="btn btn-sm btn-outline-danger white px100 mt-20 mb-20 rt">
-                                    <i class="lnr lnr-cog orange"></i> Logout
+                            </a> 
+                            <a  href="/wallet" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button id="wallet_btn" class="btn btn-md btn-outline-warning white  mr-5 mt-20 mb-20 rt">
+                                    <i class="lnr lnr-briefcase orange"></i>
+                                    Wallet <!-- <span class="orange_dot"></span> -->
                                 </button>
-                            </a>   
+                            </a> 
+                                                       
+                            <a href="/airtime/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                               <button id="at_btn" class="btn btn-md btn-outline-warning rt">
+                                    <span class="lnr lnr-tablet white"></span>
+                                    <strong class="white">Airtime</strong>
+                               </button>
+                            </a>       
+
+                            <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button id="notification_btn" class="btn btn-md btn-outline-warning rt">
+                                    <span class="lnr lnr-alarm"></span>
+                                    <strong class="white" >Bulk SMS <!-- <span class="orange_dot"></span> --></strong>
+                                </button>
+                            </a>
+
+                            <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button id="home_btn" class="btn btn-md btn-outline-warning rt">
+                                    <span class="lnr lnr-calendar-full white"></span>
+                                    <strong class="white">  
+                                        Home <!-- <span class="orange_dot"></span> -->
+                                    </strong>
+                                </button>
+                            </a>                             
                             <br>
-                            <div id="sidenav" class="bg-gradient-secondary text-white br-10 col-lg-10 container  sidenav">
-                                @include('layouts.sidenav')   
-                            </div>
                         @endauth
                     </div>                   
                 </div>           

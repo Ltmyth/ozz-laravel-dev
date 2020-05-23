@@ -14,6 +14,15 @@
 						<button class="btn btn-md btn-outline-secondary">Tech</button>
 						&nbsp;&nbsp;
 						<button class="btn btn-md btn-outline-secondary">Automotive</button>
+						&nbsp;&nbsp;
+						<a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
+                                    <span class="lnr lnr-apartment white"></span>
+                                    <strong class="white">  
+                                        Accommodation
+                                    </strong>
+                                </button>
+                            </a>
 						<br>
 					</div>
 				</div>
