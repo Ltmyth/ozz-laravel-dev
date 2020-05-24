@@ -82,14 +82,14 @@
                     @endif
                 
                     <div class="row tb trbr-10">
-                        <div class="col-md-9 col-lg-9">
+                        <div class="col-md-10 col-lg-10">
                             <?php 
                                 use App\Http\Controllers\PostsController;
                                 echo PostsController::index();
                             ?>
                         </div>
 
-                        <div id="side"  class="col-lg-3 nlight-bg lb br-10">
+                        <div id="side"  class="col-lg nlight-bg lb br-10">
                             <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>

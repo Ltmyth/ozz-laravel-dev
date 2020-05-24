@@ -170,8 +170,7 @@
                                         Home <!-- <span class="orange_dot"></span> -->
                                     </strong>
                                 </button>
-                            </a>                             
-                            <br>
+                            </a>       
                         @endauth
                     </div>                   
                 </div>           
