@@ -1,10 +1,18 @@
 @auth
 	
 	<div class="container">
+		<style type="text/css">
+			#sticki{
+			  position: -webkit-sticky;
+			  position: sticky;
+			  top: 10px;
+			}
 
-		<div id="sticky" class="row bb brbr-10 mt-20">
+		</style>
+
+		<div  class="row bb brbr-10 mt-20">
 			<div class="container">
-				<div class="row nlight-bg">
+				<div id="sticki" class="row nlight-bg">
 					<div class="container">
 						<h3 class="lt-al"><b>Categories</b></h3>
 						<button class="btn btn-md btn-secondary">All</button>
