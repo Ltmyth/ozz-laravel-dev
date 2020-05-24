@@ -357,7 +357,7 @@
                             <hr>
                             <h4 class="blue"><strong>Topup stash</strong></h4>
                             <hr>
-                            <h4 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose a package to topup from the following list;</p></h4>
+                            <h4 class="black"><p class="lt-al">Navigate to your stash and at the bottom of the portal, chose an optional package to topup from the following list;</p></h4>
                             <hr>
                             <a href="#stash" class="black">
                                 <h4>

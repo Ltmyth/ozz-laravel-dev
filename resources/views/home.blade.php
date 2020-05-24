@@ -89,7 +89,7 @@
                             ?>
                         </div>
 
-                        <div id="side"  class="col-lg nlight-bg lb br-10">
+                        <div id="side"  class="col-lg-1 nlight-bg lb br-10">
                             <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>
