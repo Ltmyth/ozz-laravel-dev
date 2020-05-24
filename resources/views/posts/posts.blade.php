@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="row nlight-bg">
 					<div class="container">
-						<h3><b>Categories</b></h3>
+						<h3 class="lt-al"><b>Categories</b></h3>
 						<button class="btn btn-md btn-secondary">All</button>
 						&nbsp;&nbsp;
 						<button class="btn btn-md btn-outline-secondary">History</button>
@@ -44,7 +44,7 @@
 						</div>
 					</div>
 					
-					<div class="col-md-8 col-lg-8 w-100 nlight-bg br-10 lt-al">
+					<div class="col-md-9 col-lg-9 w-100 nlight-bg br-10 lt-al">
 						<div class="row  blbr-10">
 							<a href="javascript:void(0)" onclick="location.href='/user/{{ $post->author }}';document.getElementById('preloader').style.display='block';">
 								<h3 class="blue  w-100">
