@@ -2,7 +2,7 @@
 	
 	<div class="container">
 
-		<div class="row bb brbr-10 mt-20">
+		<div id="sticky" class="row bb brbr-10 mt-20">
 			<div class="container">
 				<div class="row nlight-bg">
 					<div class="container">
