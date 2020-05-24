@@ -26,12 +26,12 @@
             }
         }
     </script>
-        <div class="row">
+        <div class="col-lg-12 lbr-10" >
            
 
             <!-- <div class="col-lg-1 rb rbr-10"></div> -->
 
-            <div class="col-lg-12 lbr-10">
+            <div class="row" >
                 <div class="container ">
                     <div id="mobile_chat" class="row mt-30">
                         <hr>
@@ -78,18 +78,17 @@
                                 </div>
                             </div>
                         </form>
-
                     @endif
                 
                     <div class="row tb trbr-10">
-                        <div class="col-md-10 col-lg-10">
+                        <div class="col-md-12 col-lg-12">
                             <?php 
                                 use App\Http\Controllers\PostsController;
                                 echo PostsController::index();
                             ?>
                         </div>
 
-                        <div id="side"  class="col-lg-1 nlight-bg lb br-10">
+                        <!-- <div id="side"  class="col-lg-1 nlight-bg lb br-10">
                             <div class="row br-10 ml-20 nlight-bg mt-30 mb-10">
                                 <img class="br-10" class="w-5" src="/imgs/people.png" alt="">
                                 <br>
@@ -97,14 +96,14 @@
                                     <button class="btn btn-lg btn-outline-success mr-10">
                                        Chat <i class="lnr lnr-users orange"></i>
                                     </button>
-                                </a>
+                                </a> -->
 
                                 <!-- <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
                                     <button class="btn btn-lg btn-warning">
                                        <i class="lnr lnr-envelope white"></i> SMS
                                     </button>
                                 </a> -->
-                            </div>
+                            <!-- </div> -->
                             
                             <!-- <div class="row blue-bg br-10 mt-30">
                                 <hr>
@@ -138,7 +137,7 @@
                                 </div>
                             </div> -->                        
 
-                        </div>
+                        <!-- </div> -->
                     </div>
                 </div>          
             </div>
