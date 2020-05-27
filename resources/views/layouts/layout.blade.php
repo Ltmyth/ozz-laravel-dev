@@ -244,6 +244,42 @@
 
                 <body onload="preload()" style="background-color: #f9f9ff;" class="blue">
                     <div class="br-10 black" id="content">
+                        <div  class="row bb brbr-10 mt-20">
+                            <div class="container">
+                                <div id="sticki" class="row nlight-bg">
+                                    <div class="container">
+                                        <h2 class="ct-al"><b>Categories</b></h2>
+                                        <button class="btn btn-md btn-secondary">Spotlight</button>
+                                        &nbsp;&nbsp;
+                                        <a class="btn btn-md btn-outline-secondary" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                                            <i class="lnr lnr-tablet"></i> Airtime
+                                        </a>
+                                        &nbsp;&nbsp;
+                                        <a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                            <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
+                                                <span class="lnr lnr-apartment"></span>
+                                                 Accommodation
+                                            </button>
+                                        </a>
+                                        &nbsp;&nbsp;
+                                        <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                            <button id="bulksms_btn" class="btn btn-md btn-outline-secondary">
+                                                <span class="lnr lnr-alarm"></span>
+                                                Bulk SMS
+                                            </button>
+                                        </a>
+                                        <!--&nbsp;&nbsp; <button class="btn btn-md btn-outline-secondary">Interesting</button> --><!-- 
+                                        &nbsp;&nbsp;
+                                        <button class="btn btn-md btn-outline-secondary">Tech</button> -->
+                                        &nbsp;&nbsp;
+                                        <a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                            <button class="btn btn-md btn-outline-secondary"><span class="lnr lnr-users"></span> People</button>
+                                        </a>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         @yield('content')
                     </div>
                 </body>
