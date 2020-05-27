@@ -18,12 +18,12 @@
 						<button class="btn btn-md btn-secondary">Spotlight</button>
 						&nbsp;&nbsp;
 						<a class="btn btn-md btn-outline-secondary" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
-	                        <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
+	                        <i class="lnr lnr-tablet"></i> Airtime
 	                    </a>
 	                    &nbsp;&nbsp;
 						<a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
-                                <span class="lnr lnr-apartment white"></span>
+                                <span class="lnr lnr-apartment"></span>
                                  Accommodation
                             </button>
                         </a>
@@ -31,7 +31,7 @@
 	                    <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
                             <button id="bulksms_btn" class="btn btn-md btn-outline-secondary">
                                 <span class="lnr lnr-alarm"></span>
-                                <strong class="white" >Bulk SMS</strong>
+                                Bulk SMS
                             </button>
                         </a>
                         <!--&nbsp;&nbsp; <button class="btn btn-md btn-outline-secondary">Interesting</button> --><!-- 
@@ -39,7 +39,7 @@
 						<button class="btn btn-md btn-outline-secondary">Tech</button> -->
 						&nbsp;&nbsp;
 						<a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
-							<button class="btn btn-md btn-outline-secondary">People</button>
+							<button class="btn btn-md btn-outline-secondary"><span class="lnr lnr-users"></span> People</button>
 						</a>
 						<br>
 					</div>
