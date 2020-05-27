@@ -14,21 +14,34 @@
 			<div class="container">
 				<div id="sticki" class="row nlight-bg">
 					<div class="container">
-						<h3 class="lt-al"><b>Categories</b></h3>
-						<button class="btn btn-md btn-secondary">All</button>
+						<h2 class="ct-al"><b>Categories</b></h2>
+						<button class="btn btn-md btn-secondary">Spotlight</button>
 						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">History</button>
-						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">Tech</button>
-						&nbsp;&nbsp;
-						<button class="btn btn-md btn-outline-secondary">Automotive</button>
-						&nbsp;&nbsp;
+						<a class="btn btn-md btn-outline-warning white ml-10" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+	                        <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
+	                    </a>
+	                    &nbsp;&nbsp;
 						<a href="/accommodation/" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
-                                    <span class="lnr lnr-apartment white"></span>
-                                     Accommodation
-                                </button>
-                            </a>
+                            <button id="accoms_btn" class="btn btn-md btn-outline-secondary">
+                                <span class="lnr lnr-apartment white"></span>
+                                 Accommodation
+                            </button>
+                        </a>
+	                    &nbsp;&nbsp;
+	                    <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                            <button id="bulksms_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
+                                <span class="lnr lnr-alarm"></span>
+                                <strong class="white" >Bulk SMS</strong>
+                            </button>
+                        </a>
+                        &nbsp;&nbsp;
+						<!-- <button class="btn btn-md btn-outline-secondary">Interesting</button> --><!-- 
+						&nbsp;&nbsp;
+						<button class="btn btn-md btn-outline-secondary">Tech</button> -->
+						&nbsp;&nbsp;
+						<a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
+							<button class="btn btn-md btn-outline-secondary">People</button>
+						</a>
 						<br>
 					</div>
 				</div>

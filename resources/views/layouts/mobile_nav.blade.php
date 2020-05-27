@@ -50,9 +50,9 @@
                         </button>
                     </a>
 
-                    <a class="btn btn-md btn-outline-warning white ml-10" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                    <!-- <a class="btn btn-md btn-outline-warning white ml-10" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                         <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
-                    </a>                    
+                    </a> -->                    
                 </div>
 
                 <hr>
