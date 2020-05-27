@@ -249,9 +249,12 @@
                                 <div id="sticki" class="row nlight-bg">
                                     <div class="container">
                                         <h2 class="ct-al"><b>Categories</b></h2>
-                                        <button class="btn btn-md btn-secondary">Spotlight</button>
+                                        <br>
+                                        <a href="/home" onclick="javascript:document.getElementById('preloader').style.display='block';">
+                                            <button id="home_btn" class="btn btn-md btn-outline-secondary">Spotlight</button>
+                                        </a>
                                         &nbsp;&nbsp;
-                                        <a class="btn btn-md btn-outline-secondary" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+                                        <a id="at_btn" class="btn btn-md btn-outline-secondary" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
                                             <i class="lnr lnr-tablet"></i> Airtime
                                         </a>
                                         &nbsp;&nbsp;
@@ -273,7 +276,7 @@
                                         <button class="btn btn-md btn-outline-secondary">Tech</button> -->
                                         &nbsp;&nbsp;
                                         <a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                                            <button class="btn btn-md btn-outline-secondary"><span class="lnr lnr-users"></span> People</button>
+                                            <button id="chat_btn" class="btn btn-md btn-outline-secondary"><span class="lnr lnr-users"></span> People</button>
                                         </a>
                                         <br>
                                     </div>
