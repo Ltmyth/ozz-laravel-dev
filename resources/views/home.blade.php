@@ -33,21 +33,7 @@
 
             <div class="row" >
                 <div class="container ">
-                    <div id="mobile_chat" class="row mt-30">
-                        <hr>
-                        <a href="/chat" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <button class="btn btn-lg btn-outline-success mr-10">
-                               Chat <i class="lnr lnr-users orange"></i>
-                            </button>
-                        </a>
-
-                        <a href="/sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <button class="btn btn-lg btn-warning">
-                               <i class="lnr lnr-envelope white"></i> SMS
-                            </button>
-                        </a>
-                        <hr>
-                    </div>
+                    
 
                     <?php $author = Auth::user()->name; ?>
 
