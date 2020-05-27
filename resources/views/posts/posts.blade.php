@@ -17,7 +17,7 @@
 						<h2 class="ct-al"><b>Categories</b></h2>
 						<button class="btn btn-md btn-secondary">Spotlight</button>
 						&nbsp;&nbsp;
-						<a class="btn btn-md btn-outline-warning white ml-10" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
+						<a class="btn btn-md btn-outline-secondary" href="/airtime" onclick="javascript:document.getElementById('preloader').style.display='block';close_nav();">
 	                        <i class="lnr lnr-tablet orange"></i> <b class="white">Airtime</b>
 	                    </a>
 	                    &nbsp;&nbsp;
@@ -29,13 +29,12 @@
                         </a>
 	                    &nbsp;&nbsp;
 	                    <a href="/bulk_sms" onclick="javascript:document.getElementById('preloader').style.display='block';">
-                            <button id="bulksms_btn" class="btn btn-md btn-outline-warning mr-5 mt-20 mb-20 rt">
+                            <button id="bulksms_btn" class="btn btn-md btn-outline-secondary">
                                 <span class="lnr lnr-alarm"></span>
                                 <strong class="white" >Bulk SMS</strong>
                             </button>
                         </a>
-                        &nbsp;&nbsp;
-						<!-- <button class="btn btn-md btn-outline-secondary">Interesting</button> --><!-- 
+                        <!--&nbsp;&nbsp; <button class="btn btn-md btn-outline-secondary">Interesting</button> --><!-- 
 						&nbsp;&nbsp;
 						<button class="btn btn-md btn-outline-secondary">Tech</button> -->
 						&nbsp;&nbsp;
