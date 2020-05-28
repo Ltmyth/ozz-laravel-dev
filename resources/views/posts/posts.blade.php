@@ -48,7 +48,7 @@
 							
 								<h4 class="black ml-15">
 									<p>
-										{{ $post->Post_content }}
+										{{!! $post->Post_content !!}}
 									</p>
 								</h4>
 							</div>										
