@@ -47,7 +47,7 @@
 							<div class="row white-bg pt-20 brbr-10 blbr-10 trbr-10">
 							
 								<h4 class="black ml-15">
-									<p>
+									<p class="black">
 										{{!! $post->Post_content !!}}
 									</p>
 								</h4>
