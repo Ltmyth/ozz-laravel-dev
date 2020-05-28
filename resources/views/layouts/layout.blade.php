@@ -247,6 +247,7 @@
                         <div  class="row bb brbr-10 mt-20">
                             <div class="container">
                                 <div id="sticki" class="row nlight-bg">
+                                    @auth
                                     <div class="container">
                                         <h2 class="ct-al"><b>Categories</b></h2>
                                         <br>
@@ -280,6 +281,7 @@
                                         </a>
                                         <br>
                                     </div>
+                                    @endauth
                                 </div>
                             </div>
                         </div>
