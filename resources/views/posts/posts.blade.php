@@ -45,12 +45,9 @@
 
 						<a href="javascript:void(0)" onclick="location.href='/posts_show/{{ $post->id }}';document.getElementById('preloader').style.display='block';">
 							<div class="row white-bg pt-20 brbr-10 blbr-10 trbr-10">
-							
-								<h4 class="black ml-15">
-									<p class="black">
-										{{!! $post->Post_content !!}}
-									</p>
-								</h4>
+								<h3 class="black">
+									{!! $post->Post_content !!}
+								</h3>
 							</div>										
 						</a>
 						

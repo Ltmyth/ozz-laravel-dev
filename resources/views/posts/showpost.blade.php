@@ -32,8 +32,8 @@
 							</div>
 
 							<div class="row white-bg brbr-10 blbr-10 trbr-10">
-								<div class="container">
-									<h3 class="black">{{!! $post->Post_content !!}}</h3>
+								<div class="container">									
+									<h3 class="black">{!! $post->Post_content !!}</h3>
 									<br>
 								</div>
 							</div>
