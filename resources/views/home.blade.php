@@ -50,6 +50,11 @@
                                     <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea> 
                                     <input type="hidden" name="author" value="{{ $author }}">
                                 </div>
+                                <script>
+                                    $(document).ready(function() {
+                                        $('#summernote').summernote();
+                                    });
+                                </script>
                             </div>            
                             <div class="row">
                                 <div class="col-lg-4 ml-30">
