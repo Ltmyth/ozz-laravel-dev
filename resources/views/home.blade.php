@@ -46,8 +46,8 @@
                                         <h2><b class="black">Shed some Ugandan light :)</b></h2>
                                     </label> 
                                     <br>                                    
-                                    <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
-                                    <br> 
+                                    <!-- <textarea  id="name" type="textarea" class="form-control w-100" name="post" value="post"autofocus required></textarea>
+                                    <br>  -->
                                     <textarea id="summernote" name="post" value="post"autofocus required></textarea>
                                     <input type="hidden" name="author" value="{{ $author }}">
                                 </div>
