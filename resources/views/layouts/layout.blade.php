@@ -12,9 +12,7 @@
             <!-- Site Title -->
             <title>theohz.com</title>
             <!-- scripts -->
-            
-            <script src="js/vendor/jquery-2.2.4.min.js"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"></script>
             <script src="js/popper.min.js"></script>
             <script src="js/vendor/bootstrap.min.js"></script>      
@@ -37,6 +35,10 @@
 
             <!-- Latest compiled JavaScript -->
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+            <!-- include summernote css/js -->
+            <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
 
             <!-- styles -->
             <link rel="stylesheet" href="/css/linearicons.css">
@@ -335,9 +337,7 @@
               document.getElementById("content").style.display = "block";
             }
 
-        </script> 
-
-        
+        </script>         
 </html>
 
      
