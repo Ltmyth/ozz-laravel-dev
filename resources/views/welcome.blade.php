@@ -308,6 +308,7 @@
                 <div class="col-lg-12"> 
 
                     <img class="br-10 w-40" src="/imgs/cog.png" alt=""> 
+                    <br>
                     <h1><strong>HOW IT WORKS</strong></h1>
                     
                     <div class="row">
