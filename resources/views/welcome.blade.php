@@ -78,14 +78,6 @@
                     <br><br> -->
                     <div class="row">
                         <div class="row">
-                            <div class="col-lg-6">
-                                <div class="row">
-                                    <hr>
-                                    <img class="br-10 w-30" src="/imgs/community.png" alt="">
-                                    <hr> 
-                                </div>
-                            </div>    
-                            <div class="col-lg-1"></div>            
                             <div id="services"  class="menu-content col-lg-5">
                                 <div class="title text-center">
                                     <h1 class="mb-10 lt-al text-uppercase"><strong>Featured communities</strong></h1>
