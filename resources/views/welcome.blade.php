@@ -78,7 +78,7 @@
                     <br><br> -->
                     <div class="row">
                         <div class="row">
-                            <div id="services"  class="menu-content col-lg-5">
+                            <div id="services"  class="menu-content">
                                 <div class="title text-center">
                                     <h1 class="mb-10 lt-al text-uppercase"><strong>Featured communities</strong></h1>
                                     <hr>
@@ -110,7 +110,6 @@
                                 </div>
                             </div>
                         </div> 
-                        <img class="br-10" src="/imgs/connected.png" alt="">
                     </div>
                 </div>
             </div>
