@@ -77,6 +77,47 @@
                     <img class="img-fluid w-40" src="imgs/pointing-up.svg" alt="">
                     <br><br> -->
                     <div class="row">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="row">
+                                    <hr>
+                                    <img class="br-10 w-30" src="/imgs/community.png" alt="">
+                                    <hr> 
+                                </div>
+                            </div>    
+                            <div class="col-lg-1"></div>            
+                            <div id="services"  class="menu-content col-lg-5">
+                                <div class="title text-center">
+                                    <h1 class="mb-10 lt-al text-uppercase"><strong>Featured communities</strong></h1>
+                                    <hr>
+                                    <h4 class="lt-al">
+                                        <p class="black">
+                                            Services are meant for good intentional use and to be accessible click easily over the internet within the featured communities which currently include;
+                                        </p>
+                                    </h4>
+                                    <ul style="list-style: circle; color:red;" class="lt-al fz-30">
+                                        <li>
+                                            <strong class="blue">Mukono (U)</strong>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <strong class="blue">Kampala (U)</strong>
+                                        </li>
+                                        <br>
+                                        <li>
+                                            <h4 class="green"> <i>More communities to be featured.</i></h4>
+                                        </li>
+                                    </ul>
+                                    <br>                        
+                                    <u><h4 class="red ct-al">NOTE</h4></u>
+                                    <h4 class="lt-al">
+                                        MTN, AIRTEL, AFRICELL and UTL airtime is internet accessible anywhere within Uganda.
+                                    </h4>
+                                    <br>
+                                    <hr>                        
+                                </div>
+                            </div>
+                        </div> 
                         <img class="br-10" src="/imgs/connected.png" alt="">
                     </div>
                 </div>
@@ -87,48 +128,7 @@
 
     <!-- Start services Area -->
     <section  class="services-area section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <hr>
-                        <img class="br-10 w-80" src="/imgs/community.png" alt="">
-                        <hr> 
-                    </div>
-                </div>    
-                <div class="col-lg-1"></div>            
-                <div id="services"  class="menu-content col-lg-5">
-                    <div class="title text-center">
-                        <h1 class="mb-10 lt-al text-uppercase"><strong>Featured communities</strong></h1>
-                        <hr>
-                        <h4 class="lt-al">
-                            <p class="black">
-                                Services are meant for good intentional use and to be accessible click easily over the internet within the featured communities which currently include;
-                            </p>
-                        </h4>
-                        <ul style="list-style: circle; color:red;" class="lt-al fz-30">
-                            <li>
-                                <strong class="blue">Mukono (U)</strong>
-                            </li>
-                            <br>
-                            <li>
-                                <strong class="blue">Kampala (U)</strong>
-                            </li>
-                            <br>
-                            <li>
-                                <h4 class="green"> <i>More communities to be featured.</i></h4>
-                            </li>
-                        </ul>
-                        <br>                        
-                        <u><h4 class="red ct-al">NOTE</h4></u>
-                        <h4 class="lt-al">
-                            MTN, AIRTEL, AFRICELL and UTL airtime is internet accessible anywhere within Uganda.
-                        </h4>
-                        <br>
-                        <hr>                        
-                    </div>
-                </div>
-            </div>                      
+        <div class="container">                                 
             <div  class="row">
                 <div class="col-lg-11">
                     <h1 class="mb-10 ct-al"><strong>SERVICES</strong></h1>
